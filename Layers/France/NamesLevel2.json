@@ -1,0 +1,560 @@
+[
+  {
+    "text": "AIN",
+    "type": "area-code",
+    "lat": 46.08475391612555,
+    "lng": 5.28508760556921
+  },
+  {
+    "text": "AISNE",
+    "type": "area-code",
+    "lat": 49.581819586934074,
+    "lng": 3.5775497290399416
+  },
+  {
+    "text": "ALLIER",
+    "type": "area-code",
+    "lat": 46.42491808294871,
+    "lng": 3.1676331214640996
+  },
+  {
+    "text": "ALPES-DE-HAUTE-PROVENCE",
+    "type": "area-code",
+    "lat": 44.0889038738304,
+    "lng": 6.2070417182024284
+  },
+  {
+    "text": "ALPES-MARITIMES",
+    "type": "area-code",
+    "lat": 43.94219935018737,
+    "lng": 7.180284553079095
+  },
+  {
+    "text": "ARDENNES",
+    "type": "area-code",
+    "lat": 49.61220725317441,
+    "lng": 4.642286125114237
+  },
+  {
+    "text": "ARDÈCHE",
+    "type": "area-code",
+    "lat": 44.77740338752313,
+    "lng": 4.43404322131236
+  },
+  {
+    "text": "ARIÈGE",
+    "type": "area-code",
+    "lat": 42.989919809402224,
+    "lng": 1.4842137844737335
+  },
+  {
+    "text": "AUBE",
+    "type": "area-code",
+    "lat": 48.3445704943397,
+    "lng": 4.134689128351687
+  },
+  {
+    "text": "AUDE",
+    "type": "area-code",
+    "lat": 43.13628893896861,
+    "lng": 2.4222516791399284
+  },
+  {
+    "text": "AVEYRON",
+    "type": "area-code",
+    "lat": 44.354560600037445,
+    "lng": 2.6364850775774284
+  },
+  {
+    "text": "BAS-RHIN",
+    "type": "area-code",
+    "lat": 48.66458541875258,
+    "lng": 7.531896704189438
+  },
+  {
+    "text": "BELFORT",
+    "type": "area-code",
+    "lat": 47.62833580519665,
+    "lng": 6.901054982077537
+  },
+  {
+    "text": "BOUCHES-DU-RHÔNE",
+    "type": "area-code",
+    "lat": 43.578678675551984,
+    "lng": 5.0260114447649284
+  },
+  {
+    "text": "CALVADOS",
+    "type": "area-code",
+    "lat": 49.12380898864765,
+    "lng": -0.2731582787725584
+  },
+  {
+    "text": "CANTAL",
+    "type": "area-code",
+    "lat": 45.16583955258219,
+    "lng": 2.6474714057024284
+  },
+  {
+    "text": "CHARENTE",
+    "type": "area-code",
+    "lat": 45.70931678476217,
+    "lng": 0.16611118043990292
+  },
+  {
+    "text": "CHARENTE-MARITIME",
+    "type": "area-code",
+    "lat": 45.83778215604672,
+    "lng": -0.7609400508251651
+  },
+  {
+    "text": "CHER",
+    "type": "area-code",
+    "lat": 47.081752062718785,
+    "lng": 2.4667244521100296
+  },
+  {
+    "text": "CORRÈZE",
+    "type": "area-code",
+    "lat": 45.33611122520591,
+    "lng": 1.8340870790217778
+  },
+  {
+    "text": "CREUSE",
+    "type": "area-code",
+    "lat": 46.04405882779337,
+    "lng": 2.062546277299835
+  },
+  {
+    "text": "CÔTE-D' OR",
+    "type": "area-code",
+    "lat": 47.44980346866563,
+    "lng": 4.735886553628834
+  },
+  {
+    "text": "CÔTES-D'ARMOR",
+    "type": "area-code",
+    "lat": 48.394958773777276,
+    "lng": -2.8150266827278436
+  },
+  {
+    "text": "DEUX-SÉVRES",
+    "type": "area-code",
+    "lat": 46.64918363129357,
+    "lng": -0.336623372446585
+  },
+  {
+    "text": "DORDOGNE",
+    "type": "area-code",
+    "lat": 45.16982755583001,
+    "lng": 0.7244679383967778
+  },
+  {
+    "text": "DOUBS",
+    "type": "area-code",
+    "lat": 47.18804824133955,
+    "lng": 6.355171803366599
+  },
+  {
+    "text": "DRÔME",
+    "type": "area-code",
+    "lat": 44.75285705093504,
+    "lng": 5.1303815619524284
+  },
+  {
+    "text": "ESSONNE",
+    "type": "area-code",
+    "lat": 48.52882470954421,
+    "lng": 2.25174597501256
+  },
+  {
+    "text": "EURE",
+    "type": "area-code",
+    "lat": 49.09504166464647,
+    "lng": 0.9298446509149416
+  },
+  {
+    "text": "EURE-ET-LOIRE",
+    "type": "area-code",
+    "lat": 48.40584665329041,
+    "lng": 1.3612310915059744
+  },
+  {
+    "text": "FINISTERE",
+    "type": "area-code",
+    "lat": 48.33757807853536,
+    "lng": -4.003016677210058
+  },
+  {
+    "text": "GARD",
+    "type": "area-code",
+    "lat": 44.01482161573469,
+    "lng": 4.1580915228899284
+  },
+  {
+    "text": "GERS",
+    "type": "area-code",
+    "lat": 43.71488471621593,
+    "lng": 0.4575167196383534
+  },
+  {
+    "text": "GIRONDE",
+    "type": "area-code",
+    "lat": 44.79866820124136,
+    "lng": -0.5816116131807902
+  },
+  {
+    "text": "HAUT-RHIN",
+    "type": "area-code",
+    "lat": 47.90797807109585,
+    "lng": 7.22847985600676
+  },
+  {
+    "text": "HAUTE-GARONNE",
+    "type": "area-code",
+    "lat": 43.51744314114834,
+    "lng": 1.3858614462008534
+  },
+  {
+    "text": "HAUTE-LOIRE",
+    "type": "area-code",
+    "lat": 45.155131550825175,
+    "lng": 3.6856794135149284
+  },
+  {
+    "text": "HAUTE-MARNE",
+    "type": "area-code",
+    "lat": 48.14356147111523,
+    "lng": 5.233494994034551
+  },
+  {
+    "text": "HAUTE-SAVOIE",
+    "type": "area-code",
+    "lat": 46.0758093772344,
+    "lng": 6.498259185042112
+  },
+  {
+    "text": "HAUTE-SAÔNE",
+    "type": "area-code",
+    "lat": 47.682232521953736,
+    "lng": 6.050301197897849
+  },
+  {
+    "text": "HAUTE-VIENNE",
+    "type": "area-code",
+    "lat": 45.916292526328206,
+    "lng": 1.2220921757373349
+  },
+  {
+    "text": "HAUTES-ALPES",
+    "type": "area-code",
+    "lat": 44.66582451382069,
+    "lng": 6.2729596869524284
+  },
+  {
+    "text": "HAUTES-PYRÈNÈES",
+    "type": "area-code",
+    "lat": 43.023615363598886,
+    "lng": 0.13034619720571516
+  },
+  {
+    "text": "HAUTS-DE-SEINE",
+    "type": "area-code",
+    "lat": 48.82217834637857,
+    "lng": 2.2254898038345994
+  },
+  {
+    "text": "HÈRAULT",
+    "type": "area-code",
+    "lat": 43.594594188558986,
+    "lng": 3.3231305853899284
+  },
+  {
+    "text": "ILLE-ET-VILAINE",
+    "type": "area-code",
+    "lat": 48.13533287655772,
+    "lng": -1.6504759014778436
+  },
+  {
+    "text": "INDRE",
+    "type": "area-code",
+    "lat": 46.79670835635935,
+    "lng": 1.5713387099225296
+  },
+  {
+    "text": "INDRE-ET-LOIRE",
+    "type": "area-code",
+    "lat": 47.34853339313326,
+    "lng": 0.6456666766471564
+  },
+  {
+    "text": "ISÈRE",
+    "type": "area-code",
+    "lat": 45.2520070640304,
+    "lng": 5.552959149334278
+  },
+  {
+    "text": "JURA",
+    "type": "area-code",
+    "lat": 46.77101725276702,
+    "lng": 5.690040654655708
+  },
+  {
+    "text": "LANDES",
+    "type": "area-code",
+    "lat": 44.02231845763715,
+    "lng": -0.8445548488322929
+  },
+  {
+    "text": "LOIR-ET-CHER",
+    "type": "area-code",
+    "lat": 47.60378854659637,
+    "lng": 1.3625245868034064
+  },
+  {
+    "text": "LOIRE",
+    "type": "area-code",
+    "lat": 45.81098639523652,
+    "lng": 4.064311688396778
+  },
+  {
+    "text": "LOIRE-ATLANTIQUE",
+    "type": "area-code",
+    "lat": 47.374579713110585,
+    "lng": -1.7136472881965936
+  },
+  {
+    "text": "LOIRET",
+    "type": "area-code",
+    "lat": 47.8918863303877,
+    "lng": 2.3787599383659064
+  },
+  {
+    "text": "LOT",
+    "type": "area-code",
+    "lat": 44.65415004338326,
+    "lng": 1.6147565619524284
+  },
+  {
+    "text": "LOT-ET-GARONNE",
+    "type": "area-code",
+    "lat": 44.403980549534914,
+    "lng": 0.41239400966723405
+  },
+  {
+    "text": "LOZÈRE",
+    "type": "area-code",
+    "lat": 44.553336883344244,
+    "lng": 3.5098981635149284
+  },
+  {
+    "text": "MAINE-ET-LOIRE",
+    "type": "area-code",
+    "lat": 47.41620228256882,
+    "lng": -0.5431896121435464
+  },
+  {
+    "text": "MANCHE",
+    "type": "area-code",
+    "lat": 49.150658384564686,
+    "lng": -1.3388321068975584
+  },
+  {
+    "text": "MARNE",
+    "type": "area-code",
+    "lat": 48.99728090277703,
+    "lng": 4.174876400514287
+  },
+  {
+    "text": "MAYENNE",
+    "type": "area-code",
+    "lat": 48.16190443781638,
+    "lng": -0.6781858624153436
+  },
+  {
+    "text": "MEURTHE-ET-MOSELLE",
+    "type": "area-code",
+    "lat": 48.67440315032773,
+    "lng": 6.152728086118051
+  },
+  {
+    "text": "MEUSE",
+    "type": "area-code",
+    "lat": 49.06571053561196,
+    "lng": 5.325534009619397
+  },
+  {
+    "text": "MORBIHAN",
+    "type": "area-code",
+    "lat": 47.892807157337515,
+    "lng": -2.8783576608829797
+  },
+  {
+    "text": "MOSELLE",
+    "type": "area-code",
+    "lat": 49.10383030131784,
+    "lng": 6.498797422055551
+  },
+  {
+    "text": "NIÈVRE",
+    "type": "area-code",
+    "lat": 47.13123952666401,
+    "lng": 3.444992998941334
+  },
+  {
+    "text": "NORD",
+    "type": "area-code",
+    "lat": 50.24153455068194,
+    "lng": 3.4731796118524416
+  },
+  {
+    "text": "OISE",
+    "type": "area-code",
+    "lat": 49.399842025122275,
+    "lng": 2.3470809790399416
+  },
+  {
+    "text": "ORNE",
+    "type": "area-code",
+    "lat": 48.6470136152423,
+    "lng": 0.07840422122744162
+  },
+  {
+    "text": "PAS-DE-CALAIS",
+    "type": "area-code",
+    "lat": 50.51477440583275,
+    "lng": 2.1960189673211916
+  },
+  {
+    "text": "PUY-DE-DÔME",
+    "type": "area-code",
+    "lat": 45.7841777366596,
+    "lng": 3.086528485271778
+  },
+  {
+    "text": "PYRÈNÈES-ATLANTIQUES",
+    "type": "area-code",
+    "lat": 43.24879828748707,
+    "lng": -0.7925053652942848
+  },
+  {
+    "text": "PYRÈNÈES-ORIENTALES",
+    "type": "area-code",
+    "lat": 42.587748718259114,
+    "lng": 2.5595807807024284
+  },
+  {
+    "text": "RHÔNE",
+    "type": "area-code",
+    "lat": 45.89133498576692,
+    "lng": 4.588908856365528
+  },
+  {
+    "text": "SARTHE",
+    "type": "area-code",
+    "lat": 48.00930457146157,
+    "lng": 0.21776620699855087
+  },
+  {
+    "text": "SAVOIE",
+    "type": "area-code",
+    "lat": 45.43190741007289,
+    "lng": 6.514738677229612
+  },
+  {
+    "text": "SAÔNE-ET-LOIRE",
+    "type": "area-code",
+    "lat": 46.66915039084299,
+    "lng": 4.512376558834097
+  },
+  {
+    "text": "SEINE-ET-MARNE",
+    "type": "area-code",
+    "lat": 48.65870946520649,
+    "lng": 2.966380306764287
+  },
+  {
+    "text": "SEINE-MARITIME",
+    "type": "area-code",
+    "lat": 49.651100472263614,
+    "lng": 1.0264672073629244
+  },
+  {
+    "text": "SEINE-SAINT-DENIS",
+    "type": "area-code",
+    "lat": 48.91657529974838,
+    "lng": 2.462382504029912
+  },
+  {
+    "text": "SOMME",
+    "type": "area-code",
+    "lat": 49.95081653317088,
+    "lng": 2.2811630102899416
+  },
+  {
+    "text": "TARN",
+    "type": "area-code",
+    "lat": 43.842660238146735,
+    "lng": 2.1611661241825386
+  },
+  {
+    "text": "TARN-ET-GARONNE",
+    "type": "area-code",
+    "lat": 44.08872207506449,
+    "lng": 1.2040627525623604
+  },
+  {
+    "text": "VAL-D' OISE",
+    "type": "area-code",
+    "lat": 49.11022922783307,
+    "lng": 2.105326839967412
+  },
+  {
+    "text": "VAL-DE-MARNE",
+    "type": "area-code",
+    "lat": 48.78102162201312,
+    "lng": 2.4630691495377244
+  },
+  {
+    "text": "VAR",
+    "type": "area-code",
+    "lat": 43.4880642408734,
+    "lng": 6.236988008282274
+  },
+  {
+    "text": "VAUCLUSE",
+    "type": "area-code",
+    "lat": 44.04246841807452,
+    "lng": 5.1193952338274284
+  },
+  {
+    "text": "VENDÉE",
+    "type": "area-code",
+    "lat": 46.70546024138345,
+    "lng": -1.3281796777359567
+  },
+  {
+    "text": "VIENNE",
+    "type": "area-code",
+    "lat": 46.61957186163731,
+    "lng": 0.44497035092492254
+  },
+  {
+    "text": "VOSGES",
+    "type": "area-code",
+    "lat": 48.183832896554115,
+    "lng": 6.287705401285084
+  },
+  {
+    "text": "YONNE",
+    "type": "area-code",
+    "lat": 47.84111010966569,
+    "lng": 3.5849084205464443
+  },
+  {
+    "text": "YVELINES",
+    "type": "area-code",
+    "lat": 48.834383185805706,
+    "lng": 1.8919437289188101
+  }
+]
