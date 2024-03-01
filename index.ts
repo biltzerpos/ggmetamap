@@ -17,115 +17,130 @@ interface markerLoc {
 }
 
 function createCountryChooser(map) {
-  const dropDownMenu = document.createElement('select');
+  countryMenu = document.createElement('select');
 
   // Set CSS for the control.
-  dropDownMenu.style.backgroundColor = '#fff';
-  dropDownMenu.style.border = '2px solid #fff';
-  dropDownMenu.style.borderRadius = '3px';
-  dropDownMenu.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-  dropDownMenu.style.color = 'rgb(25,25,25)';
-  dropDownMenu.style.cursor = 'pointer';
-  dropDownMenu.style.fontFamily = 'Roboto,Arial,sans-serif';
-  dropDownMenu.style.fontSize = '16px';
-  dropDownMenu.style.lineHeight = '38px';
-  dropDownMenu.style.margin = '8px 0 22px';
-  dropDownMenu.style.padding = '0 5px';
-  dropDownMenu.style.textAlign = 'center';
+  countryMenu.style.backgroundColor = '#fff';
+  countryMenu.style.border = '2px solid #fff';
+  countryMenu.style.borderRadius = '3px';
+  countryMenu.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+  countryMenu.style.color = 'rgb(25,25,25)';
+  countryMenu.style.cursor = 'pointer';
+  countryMenu.style.fontFamily = 'Roboto,Arial,sans-serif';
+  countryMenu.style.fontSize = '16px';
+  countryMenu.style.lineHeight = '38px';
+  countryMenu.style.margin = '8px 0 22px';
+  countryMenu.style.padding = '0 5px';
+  countryMenu.style.textAlign = 'center';
 
-  //controlButton.textContent = 'Select Country';
-  //controlButton.title = 'Click to load data about a country';
-  //controlButton.type = 'select';
   const top = new Option("Choose Country", "0");
   top.selected = true;
   top.disabled = true;
-  dropDownMenu.appendChild(top);
-  dropDownMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
-  dropDownMenu.appendChild(new Option("Chile", "Chile"));
-  dropDownMenu.appendChild(new Option("France", "France"));
-  dropDownMenu.appendChild(new Option("Romania", "Romania"));
-  dropDownMenu.onchange = () => {
-      console.log(dropDownMenu.value);
-      map.data.forEach(function (feature) {
-          map.data.remove(feature);
-      });
-      for (let i = 0; i < markers.length; i++) {
-          markers[i].setMap(null);
-      }
-      markers = [];
-      for (var i = 1; i < layerMenu.length; i++)
+  countryMenu.appendChild(top);
+  countryMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
+  countryMenu.appendChild(new Option("Chile", "Chile"));
+  countryMenu.appendChild(new Option("France", "France"));
+  countryMenu.appendChild(new Option("Romania", "Romania"));
+  countryMenu.onchange = () => {
+      console.log(countryMenu.value);
+      removeAllFeatures();
+      removeAllMarkers();
+      for (var i = layerMenu.length - 1; i > 0; i--)
           layerMenu.remove(i);
       layerMenu.options[0].selected = true;
-      if (dropDownMenu.value == "Bulgaria") {
+      if (countryMenu.value == "Bulgaria") {
           loadBoundaries('Layers/Bulgaria/Provinces.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+          };
       }
-      if (dropDownMenu.value == "France") {
+      if (countryMenu.value == "France") {
           loadBoundaries('Layers/France/Level2.geojson');
           const newtop = new Option("Department Names", "NamesLevel2");
           layerMenu.appendChild(newtop);
           const clusters = new Option("Placename Clusters", "Clusters");
           layerMenu.appendChild(clusters);
+          layerMenu.onchange = () => {
+              //console.log("NEW " + layerMenu.value);
+              if (layerMenu.value == "Clusters") {
+                  removeAllFeatures();
+                  removeAllMarkers();
+                  loadBoundaries("Layers/France/Brie.geojson");
+              }
+              else {
+                  removeAllFeatures();
+                  loadBoundaries('Layers/France/Level2.geojson');
+                  loadMarkerLayer(countryMenu.value, layerMenu.value);
+              }
+          };
       }
-      if (dropDownMenu.value == "Chile") {
+      if (countryMenu.value == "Chile") {
           loadBoundaries('Layers/Chile/Level1.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+          };
       }
-      if (dropDownMenu.value == "Romania") {
+      if (countryMenu.value == "Romania") {
           loadBoundaries('Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+          };
       }
   };
 
-  return dropDownMenu;
+  return countryMenu;
+}
+
+function removeAllFeatures() {
+    map.data.forEach(function (feature) {
+        map.data.remove(feature);
+    });
+}
+
+function removeAllMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].setMap(null);
+    }
+    markers = [];
 }
 
 function createLayerChooser(map) {
-    const dropDownMenu = document.createElement('select');
+    layerMenu = document.createElement('select');
 
     // Set CSS for the control.
-    dropDownMenu.style.backgroundColor = '#fff';
-    dropDownMenu.style.border = '2px solid #fff';
-    dropDownMenu.style.borderRadius = '3px';
-    dropDownMenu.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-    dropDownMenu.style.color = 'rgb(25,25,25)';
-    dropDownMenu.style.cursor = 'pointer';
-    dropDownMenu.style.fontFamily = 'Roboto,Arial,sans-serif';
-    dropDownMenu.style.fontSize = '16px';
-    dropDownMenu.style.lineHeight = '38px';
-    dropDownMenu.style.margin = '8px 0 22px';
-    dropDownMenu.style.padding = '0 5px';
-    dropDownMenu.style.textAlign = 'center';
+    layerMenu.style.backgroundColor = '#fff';
+    layerMenu.style.border = '2px solid #fff';
+    layerMenu.style.borderRadius = '3px';
+    layerMenu.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+    layerMenu.style.color = 'rgb(25,25,25)';
+    layerMenu.style.cursor = 'pointer';
+    layerMenu.style.fontFamily = 'Roboto,Arial,sans-serif';
+    layerMenu.style.fontSize = '16px';
+    layerMenu.style.lineHeight = '38px';
+    layerMenu.style.margin = '8px 0 22px';
+    layerMenu.style.padding = '0 5px';
+    layerMenu.style.textAlign = 'center';
 
-    //controlButton.textContent = 'Select Country';
-    //controlButton.title = 'Click to load data about a country';
-    //controlButton.type = 'select';
     const top = new Option("Choose Layer", "0");
     top.selected = true;
     top.disabled = true;
-    dropDownMenu.appendChild(top);
+    layerMenu.appendChild(top);
     const dummy = new Option("Must select country first", "1");
     dummy.disabled = true;
-    dropDownMenu.appendChild(dummy);
-    //dropDownMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
-    //dropDownMenu.appendChild(new Option("Romania", "Romania"));
-    dropDownMenu.onchange = () => {
-        console.log(dropDownMenu.value);
-        if ((countryMenu.value == "France") && (layerMenu.value == "Clusters")) {
-            // TODO: Remove boundaries
-            loadBoundaries("Layers/France/Brie.geojson");
-        }
-        else {
-            const path = 'Layers/' + countryMenu.value + '/' + layerMenu.value + '.json';
-            console.log(path);
-            loadMarkers(path);
-        }
-    };
+    layerMenu.appendChild(dummy);
+    return layerMenu;
+}
 
-    return dropDownMenu;
+function loadMarkerLayer(country, layer) {
+    const path = 'Layers/' + country + '/' + layer + '.json';
+    console.log(path);
+    loadMarkers(path);
 }
 
 function createSaveLocsControl(map) {
