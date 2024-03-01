@@ -1,0 +1,267 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:37:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155863",
+        "addr:postcode": "26470",
+        "name": "Bellegarde-en-Diois",
+        "name:oc": "Bèlagarda de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212600472",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Bellegarde-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4277878,
+          44.537799
+        ]
+      },
+      "id": "node/33155863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155875",
+        "addr:postcode": "26310",
+        "name": "Beaumont-en-Diois",
+        "name:oc": "Bèumont de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212600365",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q653256",
+        "wikimedia_commons": "Category:Beaumont-en-Diois",
+        "wikipedia": "fr:Beaumont-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4754752,
+          44.5700113
+        ]
+      },
+      "id": "node/33155875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155894",
+        "addr:postcode": "26310",
+        "name": "Luc-en-Diois",
+        "name:oc": "Luc",
+        "place": "village",
+        "ref:FR:SIREN": "212601678",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q782469",
+        "wikipedia": "fr:Luc-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4517754,
+          44.6152
+        ]
+      },
+      "id": "node/33155894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155899",
+        "addr:postcode": "26310",
+        "name": "Montlaur-en-Diois",
+        "name:oc": "Montlaur de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212602049",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q672159",
+        "wikipedia": "fr:Montlaur-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4291316,
+          44.632821
+        ]
+      },
+      "id": "node/33155899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155925",
+        "addr:postcode": "26150",
+        "name": "Aix-en-Diois",
+        "name:oc": "Ais de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212600019",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q328210",
+        "wikipedia": "fr:Aix-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4171121,
+          44.7082454
+        ]
+      },
+      "id": "node/33155925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155951",
+        "addr:postcode": "26150",
+        "name": "Marignac-en-Diois",
+        "name:oc": "Marinhac de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212601751",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q763873",
+        "wikipedia": "fr:Marignac-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.33358,
+          44.8018
+        ]
+      },
+      "id": "node/33155951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/339811818",
+        "addr:postcode": "26310",
+        "name": "Lesches-en-Diois",
+        "name:oc": "Leschas",
+        "place": "village",
+        "ref:FR:SIREN": "212601645",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q662707",
+        "wikipedia": "fr:Lesches-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5277552,
+          44.5976999
+        ]
+      },
+      "id": "node/339811818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/339939142",
+        "addr:postcode": "26310",
+        "name": "Saint-Dizier-en-Diois",
+        "name:oc": "Sant Disier de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212603005",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Saint-Dizier-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.47671,
+          44.5141069
+        ]
+      },
+      "id": "node/339939142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/354399539",
+        "addr:postcode": "26340",
+        "name": "Saint-Sauveur-en-Diois",
+        "name:oc": "Sant Sauvaor de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212603286",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Saint-Sauveur-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1565105,
+          44.6809924
+        ]
+      },
+      "id": "node/354399539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/419284702",
+        "addr:postcode": "26340",
+        "name": "Saint-Benoit-en-Diois",
+        "name:oc": "Sant Benest de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212602965",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Saint-Benoit-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2732557,
+          44.6628706
+        ]
+      },
+      "id": "node/419284702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5899740644",
+        "addr:postcode": "26410",
+        "name": "Châtillon-en-Diois",
+        "name:oc": "Chastilhon de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212600860",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Châtillon-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4851785,
+          44.6951492
+        ]
+      },
+      "id": "node/5899740644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5984056427",
+        "addr:postcode": "26150",
+        "name": "Montmaur-en-Diois",
+        "name:oc": "Montmaur de Diés",
+        "place": "village",
+        "ref:FR:SIREN": "212602056",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Montmaur-en-Diois"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3797073,
+          44.6759507
+        ]
+      },
+      "id": "node/5984056427"
+    }
+  ]
+}

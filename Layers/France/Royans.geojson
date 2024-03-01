@@ -1,0 +1,227 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:48:05Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26695324",
+        "addr:country": "FR",
+        "addr:postcode": "26190",
+        "name": "Saint-Jean-en-Royans",
+        "name:oc": "Sent Joan de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "212603070",
+        "source:name:oc": "ieo-bdtopoc",
+        "website": "https://www.saint-jean-en-royans.fr/",
+        "wikidata": "Q524056",
+        "wikipedia": "fr:Saint-Jean-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.290677,
+          45.0161452
+        ]
+      },
+      "id": "node/26695324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155979",
+        "addr:postcode": "26190",
+        "name": "Oriol-en-Royans",
+        "name:oc": "Auriòl de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "212602239",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Oriol-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.27394,
+          44.9968
+        ]
+      },
+      "id": "node/33155979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155983",
+        "addr:postcode": "26190",
+        "name": "Saint-Laurent-en-Royans",
+        "name:oc": "Sent Laurenç de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "212603112",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q529993",
+        "wikipedia": "fr:Saint-Laurent-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3260927,
+          45.0280551
+        ]
+      },
+      "id": "node/33155983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155986",
+        "addr:postcode": "26190",
+        "name": "Sainte-Eulalie-en-Royans",
+        "name:oc": "Senta Aulària de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "212603021",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Sainte-Eulalie-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3390411,
+          45.0482826
+        ]
+      },
+      "id": "node/33155986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155988",
+        "addr:postcode": "26190",
+        "name": "Saint-Thomas-en-Royans",
+        "name:oc": "Sent Tomàs de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "212603310",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q219371",
+        "wikipedia": "fr:Saint-Thomas-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.29508,
+          45.0489
+        ]
+      },
+      "id": "node/33155988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155992",
+        "addr:postcode": "26190",
+        "name": "Saint-Nazaire-en-Royans",
+        "name:oc": "Sent Nazari de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "212603203",
+        "source:name:oc": "ieo-bdtopoc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2472008,
+          45.0603491
+        ]
+      },
+      "id": "node/33155992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34054970",
+        "addr:postcode": "38680",
+        "name": "Auberives-en-Royans",
+        "name:oc": "Aubaribas de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "213800188",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q1008901",
+        "wikipedia": "fr:Auberives-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.30256,
+          45.0628
+        ]
+      },
+      "id": "node/34054970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34054982",
+        "addr:postcode": "38160",
+        "name": "Beauvoir-en-Royans",
+        "name:oc": "Bèlveser de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "213800360",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q475832",
+        "wikipedia": "fr:Beauvoir-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3374745,
+          45.1205383
+        ]
+      },
+      "id": "node/34054982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34055288",
+        "addr:postcode": "38680",
+        "alt_name": "Borna , 1107",
+        "name": "Pont-en-Royans",
+        "name:oc": "Lo Pònt de Roians",
+        "place": "village",
+        "population": "835",
+        "ref:FR:SIREN": "213803190",
+        "source:name:oc": "ieo-bdtopoc",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.34251,
+          45.0622
+        ]
+      },
+      "id": "node/34055288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34055315",
+        "addr:postcode": "38680",
+        "name": "Saint-André-en-Royans",
+        "name:oc": "Sent Andrieu de Roians",
+        "place": "village",
+        "ref:FR:SIREN": "213803562",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q1068452",
+        "wikipedia": "fr:Saint-André-en-Royans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3394344,
+          45.085425
+        ]
+      },
+      "id": "node/34055315"
+    }
+  ]
+}

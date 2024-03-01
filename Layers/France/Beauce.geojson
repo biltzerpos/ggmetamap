@@ -1,0 +1,306 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:09:13Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/61696603",
+        "addr:postcode": "41330",
+        "name": "Champigny-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.2537705,
+          47.714
+        ]
+      },
+      "id": "node/61696603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/126254986",
+        "addr:postcode": "41100",
+        "name": "Marcilly-en-Beauce",
+        "place": "village",
+        "wikipedia": "fr:Marcilly-en-Beauce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0012496,
+          47.763271
+        ]
+      },
+      "id": "node/126254986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286785526",
+        "addr:postcode": "28140",
+        "name": "Orgères-en-Beauce",
+        "place": "village",
+        "population": "1123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6847874,
+          48.1464982
+        ]
+      },
+      "id": "node/286785526"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/297408009",
+        "addr:postcode": "28700",
+        "name": "Garancières-en-Beauce",
+        "place": "village",
+        "population": "230"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9180837,
+          48.4357223
+        ]
+      },
+      "id": "node/297408009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310214803",
+        "addr:postcode": "45480",
+        "name": "Charmont-en-Beauce",
+        "place": "village",
+        "ref:FR:SIREN": "214500803"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1057842,
+          48.2319963
+        ]
+      },
+      "id": "node/310214803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310219126",
+        "addr:postcode": "45410",
+        "name": "Lion-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9346163,
+          48.1357047
+        ]
+      },
+      "id": "node/310219126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/355852553",
+        "addr:postcode": "28310",
+        "name": "Neuvy-en-Beauce",
+        "place": "village",
+        "population": "172",
+        "ref:FR:SIREN": "212802763"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8772561,
+          48.2682518
+        ]
+      },
+      "id": "node/355852553"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/563776678",
+        "addr:postcode": "91150",
+        "name": "Marolles-en-Beauce",
+        "place": "village",
+        "ref:SIREN": "219103744",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+        "wikipedia": "fr:Marolles-en-Beauce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2007015,
+          48.374781
+        ]
+      },
+      "id": "node/563776678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/842088848",
+        "addr:postcode": "41310",
+        "name": "Huisseau-en-Beauce",
+        "place": "village",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0090848,
+          47.7227666
+        ]
+      },
+      "id": "node/842088848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1599623770",
+        "addr:postcode": "45130",
+        "name": "Rozières-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.701072,
+          47.9420646
+        ]
+      },
+      "id": "node/1599623770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1613801297",
+        "addr:postcode": "41370",
+        "name": "Saint-Léonard-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.380471,
+          47.8315585
+        ]
+      },
+      "id": "node/1613801297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1691717429",
+        "addr:postcode": "28360",
+        "name": "Vitray-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.419143,
+          48.2760894
+        ]
+      },
+      "id": "node/1691717429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1766733239",
+        "addr:postcode": "45300",
+        "name": "Morville-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1719321,
+          48.2498185
+        ]
+      },
+      "id": "node/1766733239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1930305336",
+        "addr:postcode": "45130",
+        "name": "Épieds-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6182032,
+          47.9483904
+        ]
+      },
+      "id": "node/1930305336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1948278753",
+        "addr:postcode": "45480",
+        "name": "Greneville-en-Beauce",
+        "place": "village",
+        "wikipedia": "fr:Greneville-en-Beauce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1126919,
+          48.1812883
+        ]
+      },
+      "id": "node/1948278753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2987574613",
+        "name": "Allainville-en-Beauce",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0582769,
+          48.2379128
+        ]
+      },
+      "id": "node/2987574613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2993095937",
+        "name": "Bouzonville-en-Beauce",
+        "place": "hamlet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2275878,
+          48.2037949
+        ]
+      },
+      "id": "node/2993095937"
+    }
+  ]
+}

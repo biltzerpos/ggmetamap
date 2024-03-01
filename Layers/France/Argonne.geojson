@@ -1,0 +1,348 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T21:58:59Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/263747869",
+        "name": "Varennes-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0361742,
+          49.2268996
+        ]
+      },
+      "id": "node/263747869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1131489665",
+        "name": "Givry-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8864663,
+          48.9491314
+        ]
+      },
+      "id": "node/1131489665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1131544692",
+        "name": "Villers-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9364004,
+          49.0204545
+        ]
+      },
+      "id": "node/1131544692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1131544778",
+        "name": "Passavant-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0062652,
+          49.023246
+        ]
+      },
+      "id": "node/1131544778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1133102669",
+        "name": "Clermont-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0711503,
+          49.1068299
+        ]
+      },
+      "id": "node/1133102669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1133102897",
+        "name": "Neuvilly-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0589799,
+          49.1614603
+        ]
+      },
+      "id": "node/1133102897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1133123731",
+        "name": "Esnes-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2127976,
+          49.2084489
+        ]
+      },
+      "id": "node/1133123731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1134646550",
+        "name": "Beaumont-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0572887,
+          49.5385125
+        ]
+      },
+      "id": "node/1134646550"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1136501939",
+        "name": "Saint-Thomas-en-Argonne",
+        "place": "hamlet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8655136,
+          49.1851813
+        ]
+      },
+      "id": "node/1136501939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1136513449",
+        "name": "Brocourt-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1661878,
+          49.1151168
+        ]
+      },
+      "id": "node/1136513449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1136513487",
+        "name": "Dombasle-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1910848,
+          49.1380651
+        ]
+      },
+      "id": "node/1136513487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1425307319",
+        "name": "Belval-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0043425,
+          48.9490216
+        ]
+      },
+      "id": "node/1425307319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1551950089",
+        "name": "Florent-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9545028,
+          49.1347503
+        ]
+      },
+      "id": "node/1551950089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1557273541",
+        "name": "Gesnes-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0608237,
+          49.3058941
+        ]
+      },
+      "id": "node/1557273541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708015663",
+        "name": "Beaulieu-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.065612,
+          49.0316343
+        ]
+      },
+      "id": "node/1708015663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708015683",
+        "name": "Brabant-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.13593,
+          49.12322
+        ]
+      },
+      "id": "node/1708015683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708015814",
+        "name": "Jouy-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2222097,
+          49.1341601
+        ]
+      },
+      "id": "node/1708015814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708015929",
+        "name": "Pretz-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.14684,
+          48.95662
+        ]
+      },
+      "id": "node/1708015929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708050428",
+        "name": "Beaufort-en-Argonne",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1141267,
+          49.4721685
+        ]
+      },
+      "id": "node/1708050428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2491419894",
+        "name": "Auzéville-en-Argonne",
+        "place": "village",
+        "wikidata": "Q2873217",
+        "wikipedia": "fr:Auzéville-en-Argonne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0971307,
+          49.101507
+        ]
+      },
+      "id": "node/2491419894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3699455000",
+        "description": "1973 : fusion-association dans la Commune de Seuil-d'Argonne",
+        "name": "Triaucourt-en-Argonne",
+        "place": "hamlet",
+        "source": "Bing"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0629806,
+          48.9799629
+        ]
+      },
+      "id": "node/3699455000"
+    }
+  ]
+}

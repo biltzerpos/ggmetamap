@@ -1,0 +1,251 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:21:24Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26694774",
+        "addr:postcode": "45210",
+        "name": "Ferrières-en-Gâtinais",
+        "place": "village",
+        "ref:FR:SIREN": "214501454",
+        "wikipedia": "fr:Ferrières-en-Gâtinais"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7946987,
+          48.0927506
+        ]
+      },
+      "id": "node/26694774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/283206886",
+        "addr:postcode": "45340",
+        "name": "Barville-en-Gâtinais",
+        "place": "village",
+        "ref:FR:SIREN": "214500217"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4011526,
+          48.1116555
+        ]
+      },
+      "id": "node/283206886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/292305338",
+        "addr:postcode": "77570",
+        "name": "Maisoncelles-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.626637,
+          48.1874118
+        ]
+      },
+      "id": "node/292305338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/296200285",
+        "name": "Corbeilles-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5516283,
+          48.0731415
+        ]
+      },
+      "id": "node/296200285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/371179541",
+        "addr:postcode": "45290",
+        "name": "Oussoy-en-Gâtinais",
+        "place": "village",
+        "ref:FR:SIREN": "214502395"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6415217,
+          47.9068718
+        ]
+      },
+      "id": "node/371179541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/371225983",
+        "addr:postcode": "45260",
+        "name": "Chailly-en-Gâtinais",
+        "place": "village",
+        "ref:FR:SIREN": "214500662"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5418762,
+          47.947108
+        ]
+      },
+      "id": "node/371225983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/441930617",
+        "addr:postcode": "45210",
+        "name": "Pers-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9054937,
+          48.1200654
+        ]
+      },
+      "id": "node/441930617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1697375629",
+        "addr:postcode": "45340",
+        "name": "Batilly-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3806793,
+          48.0740918
+        ]
+      },
+      "id": "node/1697375629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1697375644",
+        "addr:postcode": "45300",
+        "name": "Bouilly-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.2860979,
+          48.095664
+        ]
+      },
+      "id": "node/1697375644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1766733245",
+        "addr:postcode": "45490",
+        "name": "Treilles-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6593899,
+          48.0785201
+        ]
+      },
+      "id": "node/1766733245"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1767292657",
+        "addr:postcode": "45340",
+        "name": "Bordeaux-en-Gâtinais",
+        "place": "village",
+        "population": "117"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5261259,
+          48.0986753
+        ]
+      },
+      "id": "node/1767292657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1767672041",
+        "addr:postcode": "45230",
+        "name": "Feins-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8403651,
+          47.7460101
+        ]
+      },
+      "id": "node/1767672041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1930365554",
+        "addr:postcode": "45270",
+        "name": "Auvilliers-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.4996902,
+          47.9642203
+        ]
+      },
+      "id": "node/1930365554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1930375300",
+        "addr:postcode": "45270",
+        "name": "Mézières-en-Gâtinais",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.490789,
+          48.034561
+        ]
+      },
+      "id": "node/1930375300"
+    }
+  ]
+}

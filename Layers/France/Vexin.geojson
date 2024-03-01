@@ -1,0 +1,488 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T20:50:59Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26695771",
+        "addr:postcode": "60240",
+        "name": "Chaumont-en-Vexin",
+        "place": "village",
+        "population": "3000",
+        "ref:FR:SIREN": "216001420"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8821405,
+          49.2625682
+        ]
+      },
+      "id": "node/26695771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26697135",
+        "addr:postcode": "95420",
+        "name": "Magny-en-Vexin",
+        "place": "village",
+        "population": "5752",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7864359,
+          49.1554403
+        ]
+      },
+      "id": "node/26697135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/464777480",
+        "addr:postcode": "95450",
+        "name": "Guiry-en-Vexin",
+        "place": "village",
+        "population": "154",
+        "ref:SIREN": "219502952",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8504387,
+          49.1099698
+        ]
+      },
+      "id": "node/464777480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/500849275",
+        "addr:postcode": "95750",
+        "name": "Le Bellay-en-Vexin",
+        "place": "village",
+        "population": "244",
+        "ref:SIREN": "219500543",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.88764,
+          49.15127
+        ]
+      },
+      "id": "node/500849275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/540155948",
+        "addr:postcode": "78440",
+        "name": "Brueil-en-Vexin",
+        "place": "village",
+        "ref:SIREN": "217801133"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8172217,
+          49.0311665
+        ]
+      },
+      "id": "node/540155948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/588558595",
+        "addr:postcode": "27510",
+        "name": "Mézières-en-Vexin",
+        "place": "village",
+        "population": "642",
+        "ref:FR:SIREN": "212704084",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 1989",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5043403,
+          49.1717929
+        ]
+      },
+      "id": "node/588558595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/596121590",
+        "addr:postcode": "78440",
+        "name": "Lainville-en-Vexin",
+        "place": "village",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 1981,1999"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8159203,
+          49.0604462
+        ]
+      },
+      "id": "node/596121590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/601604240",
+        "addr:postcode": "95420",
+        "name": "La Chapelle-en-Vexin",
+        "place": "village",
+        "population": "331",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7321978,
+          49.1833735
+        ]
+      },
+      "id": "node/601604240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/601604241",
+        "name": "Maudétour-en-Vexin",
+        "place": "village",
+        "population": "198",
+        "postal_code": "95420"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7755816,
+          49.1001721
+        ]
+      },
+      "id": "node/601604241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/601615161",
+        "addr:postcode": "95420",
+        "name": "Cléry-en-Vexin",
+        "place": "village",
+        "population": "405",
+        "ref:SIREN": "219501665",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8401715,
+          49.1273725
+        ]
+      },
+      "id": "node/601615161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602512272",
+        "addr:postcode": "27510",
+        "name": "Fontenay-en-Vexin",
+        "old_name": "Fontenay",
+        "place": "village",
+        "population": "325",
+        "ref:FR:SIREN": "212702559",
+        "source:name": "Décret n°2015-1487 du 16 novembre 2015 portant changement du nom de communes",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.569423,
+          49.2094816
+        ]
+      },
+      "id": "node/602512272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602512277",
+        "addr:postcode": "27630",
+        "name": "Fours-en-Vexin",
+        "place": "village",
+        "population": "188",
+        "ref:FR:SIREN": "212702641",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5997553,
+          49.1872791
+        ]
+      },
+      "id": "node/602512277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602991464",
+        "addr:postcode": "27150",
+        "name": "Nojeon-en-Vexin",
+        "place": "village",
+        "population": "313",
+        "ref:FR:SIREN": "212704373",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Nojeon-en-Vexin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5626196,
+          49.3315848
+        ]
+      },
+      "id": "node/602991464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602991467",
+        "addr:postcode": "27420",
+        "name": "Les Thilliers-en-Vexin",
+        "place": "village",
+        "population": "467",
+        "ref:FR:SIREN": "212706337",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6062251,
+          49.2378225
+        ]
+      },
+      "id": "node/602991467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602991468",
+        "addr:postcode": "27420",
+        "name": "Villers-en-Vexin",
+        "place": "village",
+        "population": "279",
+        "ref:FR:SIREN": "212706907",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5909382,
+          49.2495352
+        ]
+      },
+      "id": "node/602991468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602991469",
+        "addr:postcode": "27150",
+        "name": "Gamaches-en-Vexin",
+        "place": "village",
+        "population": "321",
+        "ref:FR:SIREN": "212702765",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6168061,
+          49.2703704
+        ]
+      },
+      "id": "node/602991469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602991471",
+        "addr:postcode": "27150",
+        "name": "Doudeauville-en-Vexin",
+        "place": "village",
+        "population": "313",
+        "ref:FR:SIREN": "212702047",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Doudeauville-en-Vexin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.5889665,
+          49.3273514
+        ]
+      },
+      "id": "node/602991471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/603019635",
+        "addr:postcode": "27440",
+        "name": "Houville-en-Vexin",
+        "place": "village",
+        "population": "203",
+        "ref:FR:SIREN": "212703466",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Houville-en-Vexin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3562496,
+          49.2965672
+        ]
+      },
+      "id": "node/603019635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/665089569",
+        "addr:postcode": "60240",
+        "name": "Montagny-en-Vexin",
+        "place": "village",
+        "population": "593",
+        "ref:FR:SIREN": "216004085",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8008866,
+          49.1950494
+        ]
+      },
+      "id": "node/665089569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/665091112",
+        "addr:postcode": "60240",
+        "name": "Boury-en-Vexin",
+        "place": "village",
+        "population": "341",
+        "ref:FR:SIREN": "216000950",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7358925,
+          49.2423211
+        ]
+      },
+      "id": "node/665091112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/687897617",
+        "addr:postcode": "95300",
+        "name": "Hérouville-en-Vexin",
+        "name:-2017-12-25": "Hérouville",
+        "name:2017-12-25-": "Hérouville-en-Vexin",
+        "old_name": "Hérouville",
+        "place": "village",
+        "population": "610",
+        "ref:SIREN": "219503083",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1280641,
+          49.0998904
+        ]
+      },
+      "id": "node/687897617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/690989874",
+        "addr:postcode": "95640",
+        "name": "Neuilly-en-Vexin",
+        "place": "village",
+        "population": "203",
+        "ref:SIREN": "219504479",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9779284,
+          49.1690965
+        ]
+      },
+      "id": "node/690989874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/702261540",
+        "addr:postcode": "95830",
+        "name": "Cormeilles-en-Vexin",
+        "place": "village",
+        "population": "1112",
+        "ref:SIREN": "219501772",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.020926,
+          49.1157322
+        ]
+      },
+      "id": "node/702261540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2066387106",
+        "addr:postcode": "60240",
+        "name": "Hardivillers-en-Vexin",
+        "place": "village",
+        "population": "125",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9363788,
+          49.3030994
+        ]
+      },
+      "id": "node/2066387106"
+    }
+  ]
+}

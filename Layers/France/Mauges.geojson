@@ -1,0 +1,241 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:40:57Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26698134",
+        "addr:postcode": "49450",
+        "name": "Saint-Macaire-en-Mauges",
+        "place": "village",
+        "population": "6829",
+        "ref:FR:SIREN": "214903015",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Saint-Macaire-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9946855,
+          47.1239952
+        ]
+      },
+      "id": "node/26698134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/292220371",
+        "addr:postcode": "49280",
+        "name": "Mazières-en-Mauges",
+        "name:fr": "Mazières-en-Mauges",
+        "name:uk": "Мазьєр-ан-Мож",
+        "place": "village",
+        "ref:FR:SIREN": "214901951",
+        "website": "http://www.mazieres-en-mauges.fr/",
+        "wikidata": "Q1384930",
+        "wikipedia": "fr:Mazières-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8164447,
+          47.0472852
+        ]
+      },
+      "id": "node/292220371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/311934509",
+        "addr:postcode": "49110",
+        "name": "Saint-Quentin-en-Mauges",
+        "place": "village",
+        "population": "1036",
+        "ref:FR:SIREN": "214903148",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Saint-Quentin-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9087708,
+          47.2939351
+        ]
+      },
+      "id": "node/311934509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/311934623",
+        "addr:postcode": "49290",
+        "name": "Bourgneuf-en-Mauges",
+        "place": "village",
+        "population": "679",
+        "ref:FR:SIREN": "214900391",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.835214,
+          47.3119527
+        ]
+      },
+      "id": "node/311934623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/512723971",
+        "addr:postcode": "49110",
+        "name": "Saint-Rémy-en-Mauges",
+        "place": "village",
+        "population": "1436",
+        "ref:FR:SIREN": "214903163",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Saint-Rémy-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0757192,
+          47.2718496
+        ]
+      },
+      "id": "node/512723971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/512724159",
+        "addr:postcode": "49110",
+        "name": "Botz-en-Mauges",
+        "place": "village",
+        "population": "811",
+        "ref:FR:SIREN": "214900342",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Botz-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0018543,
+          47.306413
+        ]
+      },
+      "id": "node/512724159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597323353",
+        "addr:postcode": "49600",
+        "name": "Saint-Philbert-en-Mauges",
+        "place": "village",
+        "population": "376",
+        "ref:FR:SIREN": "214903122",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.0154243,
+          47.1512923
+        ]
+      },
+      "id": "node/597323353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/599293008",
+        "addr:postcode": "49110",
+        "name": "Le Pin-en-Mauges",
+        "place": "village",
+        "population": "1332",
+        "ref:FR:SIREN": "214902397",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Le Pin-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8992867,
+          47.2537586
+        ]
+      },
+      "id": "node/599293008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/599295319",
+        "addr:postcode": "49120",
+        "name": "Neuvy-en-Mauges",
+        "place": "village",
+        "population": "822",
+        "ref:FR:SIREN": "214902256",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8258492,
+          47.2678157
+        ]
+      },
+      "id": "node/599295319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/599328603",
+        "addr:postcode": "49110",
+        "name": "Chaudron-en-Mauges",
+        "place": "village",
+        "population": "1446",
+        "ref:FR:SIREN": "214900839",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "source:population": "INSEE 2008",
+        "wikipedia": "fr:Chaudron-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9846658,
+          47.2870727
+        ]
+      },
+      "id": "node/599328603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1985907021",
+        "addr:postcode": "49122",
+        "name": "Bégrolles-en-Mauges",
+        "place": "village",
+        "ref:FR:SIREN": "214900276",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "wikipedia": "fr:Bégrolles-en-Mauges"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9390344,
+          47.1400787
+        ]
+      },
+      "id": "node/1985907021"
+    }
+  ]
+}

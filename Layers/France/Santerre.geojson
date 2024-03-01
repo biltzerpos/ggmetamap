@@ -1,0 +1,206 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:39:53Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670249117",
+        "addr:postcode": "80340",
+        "name": "Foucaucourt-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218003358",
+        "wikidata": "Q146325",
+        "wikipedia": "fr:Foucaucourt-en-Santerre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7736696,
+          49.8745497
+        ]
+      },
+      "id": "node/670249117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670348283",
+        "addr:postcode": "80170",
+        "name": "Beaufort-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218000677"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.669638,
+          49.7758518
+        ]
+      },
+      "id": "node/670348283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670348571",
+        "addr:postcode": "80170",
+        "name": "Rouvroy-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218006823"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7108368,
+          49.7694772
+        ]
+      },
+      "id": "node/670348571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670349165",
+        "addr:postcode": "80800",
+        "name": "Cayeux-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218001816",
+        "wikidata": "Q592873",
+        "wikipedia": "fr:Cayeux-en-Santerre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5993427,
+          49.8210043
+        ]
+      },
+      "id": "node/670349165"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670510634",
+        "addr:postcode": "80134",
+        "name": "Hangest-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218004158"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6042103,
+          49.7540304
+        ]
+      },
+      "id": "node/670510634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670513478",
+        "addr:postcode": "80110",
+        "name": "Mézières-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218005452"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5550564,
+          49.7873981
+        ]
+      },
+      "id": "node/670513478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1322879829",
+        "addr:postcode": "80110",
+        "name": "Beaucourt-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218000644"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.5861301,
+          49.7933928
+        ]
+      },
+      "id": "node/1322879829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1576776771",
+        "addr:postcode": "80200",
+        "name": "Berny-en-Santerre",
+        "place": "village",
+        "ref:FR:SIREN": "218000909"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.8498325,
+          49.8648448
+        ]
+      },
+      "id": "node/1576776771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1706096649",
+        "addr:postcode": "80200",
+        "name": "Belloy-en-Santerre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.85402,
+          49.88264
+        ]
+      },
+      "id": "node/1706096649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1706098401",
+        "addr:postcode": "80500",
+        "name": "Laboissière-en-Santerre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.6775419,
+          49.6652512
+        ]
+      },
+      "id": "node/1706098401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9439583004",
+        "name": "Rosières-en-Santerre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.7020278,
+          49.8130117
+        ]
+      },
+      "id": "node/9439583004"
+    }
+  ]
+}

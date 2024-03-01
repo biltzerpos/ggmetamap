@@ -1,0 +1,584 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T21:51:40Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/393915006",
+        "addr:postcode": "14620",
+        "name": "Les Moutiers-en-Auge",
+        "place": "village",
+        "population": "120",
+        "ref:FR:SIREN": "211404579",
+        "source": "http://fr.wikipedia.org/wiki/Les_Moutiers-en-Auge",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0094212,
+          48.900388
+        ]
+      },
+      "id": "node/393915006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/395273969",
+        "addr:postcode": "14160",
+        "name": "Périers-en-Auge",
+        "place": "village",
+        "population": "141",
+        "ref:FR:SIREN": "211404942",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q776919",
+        "wikipedia": "fr:Périers-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0783333,
+          49.2572222
+        ]
+      },
+      "id": "node/395273969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/409696164",
+        "addr:postcode": "14620",
+        "name": "Barou-en-Auge",
+        "place": "village",
+        "population": "95",
+        "ref:FR:SIREN": "211400437",
+        "source": "http://fr.wikipedia.org/wiki/Barou-en-Auge",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0443644,
+          48.9321068
+        ]
+      },
+      "id": "node/409696164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/409723496",
+        "addr:postcode": "14430",
+        "name": "Beuvron-en-Auge",
+        "place": "village",
+        "population": "242",
+        "postal_code": "14430",
+        "ref:FR:SIREN": "211400700",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Beuvron-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0460321,
+          49.1878748
+        ]
+      },
+      "id": "node/409723496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/423922796",
+        "addr:postcode": "14140",
+        "census": "2006",
+        "name": "Castillon-en-Auge",
+        "place": "village",
+        "population": "151",
+        "ref:FR:SIREN": "211401419",
+        "source": "http://fr.wikipedia.org/wiki/Castillon-en-Auge",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0935199,
+          49.0315206
+        ]
+      },
+      "id": "node/423922796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/438093450",
+        "addr:postcode": "14340",
+        "name": "Crèvecœur-en-Auge",
+        "place": "village",
+        "population": "515",
+        "ref:FR:SIREN": "211402011",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q848260",
+        "wikipedia": "fr:Crèvecœur-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0160235,
+          49.1185738
+        ]
+      },
+      "id": "node/438093450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/438094184",
+        "addr:postcode": "14430",
+        "census": "2006",
+        "name": "Cricqueville-en-Auge",
+        "name:uk": "Криквіль-ан-Ож",
+        "place": "village",
+        "population": "186",
+        "ref:FR:SIREN": "211402037",
+        "source": "http://fr.wikipedia.org/wiki/Cricqueville-en-Auge",
+        "wikidata": "Q848126",
+        "wikipedia": "fr:Cricqueville-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.062753,
+          49.2418736
+        ]
+      },
+      "id": "node/438094184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/438110462",
+        "addr:postcode": "14430",
+        "census": "2006",
+        "name": "Douville-en-Auge",
+        "name:uk": "Дувіль-ан-Ож",
+        "place": "village",
+        "population": "224",
+        "ref:FR:SIREN": "211402276",
+        "source": "http://fr.wikipedia.org/wiki/Douville-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q848279",
+        "wikipedia": "fr:Douville-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0226835,
+          49.2619024
+        ]
+      },
+      "id": "node/438110462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/441087904",
+        "addr:postcode": "14800",
+        "census": "2006",
+        "name": "Englesqueville-en-Auge",
+        "name:ru": "Англькевиль-ан-Ож",
+        "name:uk": "Англескевіль-ан-Ож",
+        "place": "village",
+        "population": "112",
+        "ref:FR:SIREN": "211402383",
+        "source": "http://fr.wikipedia.org/wiki/Englesqueville-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q426692",
+        "wikipedia": "fr:Englesqueville-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1431207,
+          49.33308
+        ]
+      },
+      "id": "node/441087904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/441761383",
+        "addr:postcode": "14810",
+        "census": "2006",
+        "name": "Gonneville-en-Auge",
+        "name:ru": "Гонвиль-ан-Ож",
+        "name:uk": "Гоннвіль-ан-Ож",
+        "place": "village",
+        "population": "430",
+        "ref:FR:SIREN": "211403068",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q839946",
+        "wikipedia": "fr:Gonneville-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1902724,
+          49.2604691
+        ]
+      },
+      "id": "node/441761383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/441792157",
+        "addr:postcode": "14430",
+        "census": "2006",
+        "name": "Hotot-en-Auge",
+        "name:uk": "Ото-ан-Ож",
+        "place": "village",
+        "population": "307",
+        "postal_code": "14430",
+        "ref:FR:SIREN": "211403357",
+        "source": "http://fr.wikipedia.org/wiki/Hotot-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q783438",
+        "wikipedia": "fr:Hotot-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0561634,
+          49.1663797
+        ]
+      },
+      "id": "node/441792157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/462271778",
+        "addr:postcode": "14340",
+        "census": "2006",
+        "name": "Montreuil-en-Auge",
+        "name:ru": "Монтрёй-ан-Ож",
+        "name:uk": "Монтрей-ан-Ож",
+        "place": "village",
+        "population": "46",
+        "ref:FR:SIREN": "211404488",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q863437",
+        "wikipedia": "fr:Montreuil-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0553575,
+          49.1717436
+        ]
+      },
+      "id": "node/462271778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/518830530",
+        "addr:postcode": "14620",
+        "census": "2006",
+        "name": "Norrey-en-Auge",
+        "name:ru": "Норре-ан-Ож",
+        "name:uk": "Норре-ан-Ож",
+        "place": "village",
+        "population": "100",
+        "ref:FR:SIREN": "211404694",
+        "source": "http://fr.wikipedia.org/wiki/Norrey-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q863269",
+        "wikipedia": "fr:Norrey-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0142036,
+          48.9130946
+        ]
+      },
+      "id": "node/518830530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/518895912",
+        "addr:postcode": "14270",
+        "census": "2006",
+        "name": "Percy-en-Auge",
+        "name:ru": "Перси-ан-Ож",
+        "name:uk": "Персі-ан-Ож",
+        "place": "village",
+        "population": "249",
+        "ref:FR:SIREN": "211404934",
+        "source": "http://fr.wikipedia.org/wiki/Percy-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q380725",
+        "wikipedia": "fr:Percy-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0625276,
+          49.0551122
+        ]
+      },
+      "id": "node/518895912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/518916804",
+        "addr:postcode": "14130",
+        "census": "2006",
+        "name": "Pierrefitte-en-Auge",
+        "name:uk": "П'єррфітт-ан-Ож",
+        "place": "village",
+        "population": "155",
+        "ref:FR:SIREN": "211405006",
+        "source": "http://fr.wikipedia.org/wiki/Pierrefitte-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q863189",
+        "wikipedia": "fr:Pierrefitte-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2010365,
+          49.2577362
+        ]
+      },
+      "id": "node/518916804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/519026513",
+        "addr:postcode": "14430",
+        "census": "2006",
+        "name": "Putot-en-Auge",
+        "name:ru": "Пюто-ан-Ож",
+        "name:uk": "Пюто-ан-Ож",
+        "place": "village",
+        "population": "295",
+        "ref:FR:SIREN": "211405246",
+        "wikidata": "Q863499",
+        "wikipedia": "fr:Putot-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0676875,
+          49.2182489
+        ]
+      },
+      "id": "node/519026513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/519995051",
+        "addr:postcode": "14140",
+        "census": "2006",
+        "name": "Saint-Georges-en-Auge",
+        "name:ru": "Сен-Жорж-ан-Ож",
+        "name:uk": "Сен-Жорж-ан-Ож",
+        "place": "village",
+        "population": "96",
+        "ref:FR:SIREN": "211405808",
+        "source": "http://fr.wikipedia.org/wiki/Saint-Georges-en-Auge",
+        "wikidata": "Q260563",
+        "wikipedia": "fr:Saint-Georges-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0611116,
+          48.991169
+        ]
+      },
+      "id": "node/519995051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520175427",
+        "addr:postcode": "14640",
+        "census": "2006",
+        "name": "Saint-Vaast-en-Auge",
+        "name:uk": "Сен-Вааст-ан-Ож",
+        "place": "village",
+        "population": "103",
+        "ref:FR:SIREN": "211406608",
+        "source": "http://fr.wikipedia.org/wiki/Saint-Vaast-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q1021439",
+        "wikipedia": "fr:Saint-Vaast-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0003843,
+          49.2912583
+        ]
+      },
+      "id": "node/520175427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520309877",
+        "addr:postcode": "14130",
+        "census": "2006",
+        "name": "Le Theil-en-Auge",
+        "name:ru": "Ле-Тей-ан-Ож",
+        "name:uk": "Ле-Тей-ан-Ож",
+        "place": "village",
+        "population": "182",
+        "ref:FR:SIREN": "211406871",
+        "source": "http://fr.wikipedia.org/wiki/Le_Theil-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q592076",
+        "wikipedia": "fr:Le Theil-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2478589,
+          49.3475208
+        ]
+      },
+      "id": "node/520309877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520354060",
+        "addr:postcode": "14130",
+        "census": "2006",
+        "name": "Tourville-en-Auge",
+        "name:ru": "Турвиль-ан-Ож",
+        "name:uk": "Турвіль-ан-Ож",
+        "place": "village",
+        "population": "250",
+        "ref:FR:SIREN": "211407069",
+        "source": "Microsoft Bing satellite imagery 2013",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q864980",
+        "wikipedia": "fr:Tourville-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2015085,
+          49.3225613
+        ]
+      },
+      "id": "node/520354060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520410747",
+        "addr:postcode": "14140",
+        "census": "2006",
+        "name": "Vieux-Pont-en-Auge",
+        "name:ru": "Вьё-Понт-ан-Ож",
+        "name:uk": "В'є-Пон-ан-Ож",
+        "place": "village",
+        "population": "300",
+        "ref:FR:SIREN": "211407507",
+        "source": "http://fr.wikipedia.org/wiki/Vieux-Pont-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q747650",
+        "wikipedia": "fr:Vieux-Pont-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0498954,
+          49.0383923
+        ]
+      },
+      "id": "node/520410747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/521240803",
+        "addr:postcode": "14130",
+        "census": "2006",
+        "name": "Le Breuil-en-Auge",
+        "name:ru": "Ле-Брёй-ан-Ож",
+        "name:uk": "Ле-Брей-ан-Ож",
+        "place": "village",
+        "population": "977",
+        "ref:FR:SIREN": "211401021",
+        "source": "http://fr.wikipedia.org/wiki/Le_Breuil-en-Auge",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q988894",
+        "wikipedia": "fr:Le Breuil-en-Auge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2256223,
+          49.2275687
+        ]
+      },
+      "id": "node/521240803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/784023964",
+        "addr:postcode": "61160",
+        "name": "Louvières-en-Auge",
+        "place": "village",
+        "population": "85",
+        "ref:FR:SIREN": "216102384",
+        "source": "wikipedia",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0312479,
+          48.8703627
+        ]
+      },
+      "id": "node/784023964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1288055758",
+        "addr:postcode": "14950",
+        "name": "Beaumont-en-Auge",
+        "place": "village",
+        "population": "450",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1109445,
+          49.2782545
+        ]
+      },
+      "id": "node/1288055758"
+    }
+  ]
+}

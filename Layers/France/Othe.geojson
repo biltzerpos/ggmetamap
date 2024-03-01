@@ -1,0 +1,255 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:29:44Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26695067",
+        "addr:postcode": "10160",
+        "name": "Aix-en-Othe",
+        "name:fa": "ایکس-ان-اوته",
+        "name:fr": "Aix-en-Othe",
+        "name:ru": "Экс-ан-От",
+        "name:sr": "Екс-он-От",
+        "name:uk": "Екс-ан-От",
+        "name:zh": "奥特地区艾克斯",
+        "place": "village",
+        "ref:FR:SIREN": "211000021",
+        "source:addr:postcode": "source of postcode is from galichon.com/INSEE",
+        "website": "http://www.ville-aix-en-othe.com/",
+        "wikidata": "Q990592",
+        "wikipedia": "fr:Aix-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7332585,
+          48.2234148
+        ]
+      },
+      "id": "node/26695067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/446294819",
+        "addr:postcode": "10160",
+        "name": "Nogent-en-Othe",
+        "place": "village",
+        "ref:FR:SIREN": "211002589",
+        "source:addr:postcode": "source of postcode is from galichon.com/INSEE",
+        "wikidata": "Q1376311",
+        "wikipedia": "fr:Nogent-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8043266,
+          48.1441626
+        ]
+      },
+      "id": "node/446294819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/446294820",
+        "addr:postcode": "10160",
+        "name": "Saint-Mards-en-Othe",
+        "name:ru": "Сен-Мар-ан-От",
+        "name:uk": "Сен-Мар-ан-От",
+        "name:ur": "سینٹ-مردس-این -اٹھے",
+        "name:zh": "奥特地区圣马尔德 (奥布省)",
+        "place": "village",
+        "ref:FR:SIREN": "211003397",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+        "wikidata": "Q1362624",
+        "wikipedia": "fr:Saint-Mards-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7998877,
+          48.1736377
+        ]
+      },
+      "id": "node/446294820"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/446294869",
+        "addr:postcode": "10160",
+        "name": "Villemoiron-en-Othe",
+        "place": "village",
+        "ref:FR:SIREN": "211004056",
+        "source:addr:postcode": "source of postcode is from galichon.com/INSEE",
+        "wikidata": "Q1104864",
+        "wikipedia": "fr:Villemoiron-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7773029,
+          48.2006296
+        ]
+      },
+      "id": "node/446294869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/473594546",
+        "addr:postcode": "10190",
+        "name": "Bucey-en-Othe",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8641102,
+          48.259184
+        ]
+      },
+      "id": "node/473594546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/946094436",
+        "addr:postcode": "89210",
+        "name": "Paroy-en-Othe",
+        "place": "village",
+        "population": "208",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.572558,
+          48.0342592
+        ]
+      },
+      "id": "node/946094436"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1166975476",
+        "addr:postcode": "10190",
+        "name": "Bercenay-en-Othe",
+        "place": "village",
+        "wikipedia": "fr:Bercenay-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8914306,
+          48.2088406
+        ]
+      },
+      "id": "node/1166975476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1646891641",
+        "addr:postcode": "10160",
+        "name": "Maraye-en-Othe",
+        "place": "village",
+        "source:addr:postcode": "source of postcode is from galichon.com/INSEE",
+        "wikidata": "Q1374727",
+        "wikipedia": "fr:Maraye-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8524717,
+          48.1633618
+        ]
+      },
+      "id": "node/1646891641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1696022736",
+        "addr:postcode": "89770",
+        "name": "Bœurs-en-Othe",
+        "place": "village",
+        "population": "329"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.70445,
+          48.13806
+        ]
+      },
+      "id": "node/1696022736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1696050288",
+        "addr:postcode": "89400",
+        "name": "Bussy-en-Othe",
+        "place": "village",
+        "population": "758",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.51373,
+          48.01846
+        ]
+      },
+      "id": "node/1696050288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1718959723",
+        "addr:postcode": "10130",
+        "name": "Coursan-en-Othe",
+        "place": "village",
+        "population": "99",
+        "source:population": "INSEE 2013",
+        "website": "http://www.coursan.net",
+        "wikidata": "Q610712",
+        "wikipedia": "fr:Coursan-en-Othe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8384626,
+          48.0720033
+        ]
+      },
+      "id": "node/1718959723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7367036437",
+        "name": "Bligny-en-Othe",
+        "place": "village",
+        "ref:FR:FANTOIR": "89055B327H",
+        "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6061143,
+          48.0180512
+        ]
+      },
+      "id": "node/7367036437"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:45:55Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155963",
+        "addr:postcode": "26420",
+        "name": "Vassieux-en-Vercors",
+        "name:oc": "Vaciu",
+        "place": "village",
+        "ref:FR:SIREN": "212603641",
+        "short_name": "Vassieux",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q266211",
+        "wikipedia": "fr:Vassieux-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3707565,
+          44.8954252
+        ]
+      },
+      "id": "node/33155963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155967",
+        "addr:postcode": "26420",
+        "name": "Saint-Agnan-en-Vercors",
+        "name:oc": "Sent Anhan de Vercòrs",
+        "place": "village",
+        "ref:FR:SIREN": "212602908",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Saint-Agnan-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4316198,
+          44.9354489
+        ]
+      },
+      "id": "node/33155967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155973",
+        "addr:postcode": "26420",
+        "name": "La Chapelle-en-Vercors",
+        "name:oc": "La Chapèla de Vercòrs",
+        "place": "village",
+        "ref:FR:SIREN": "212600746",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:La Chapelle-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4161361,
+          44.9681874
+        ]
+      },
+      "id": "node/33155973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155981",
+        "addr:postcode": "26420",
+        "name": "Saint-Martin-en-Vercors",
+        "name:oc": "Sent Martin de Vercòrs",
+        "place": "village",
+        "ref:FR:SIREN": "212603153",
+        "source:name:oc": "ieo-bdtopoc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4428431,
+          45.0216044
+        ]
+      },
+      "id": "node/33155981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/33155987",
+        "addr:postcode": "26420",
+        "name": "Saint-Julien-en-Vercors",
+        "name:oc": "Sent Julian de Vercòrs",
+        "place": "village",
+        "ref:FR:SIREN": "212603096",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikipedia": "fr:Saint-Julien-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4493797,
+          45.0502203
+        ]
+      },
+      "id": "node/33155987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34055047",
+        "addr:postcode": "38250",
+        "name": "Corrençon-en-Vercors",
+        "name:oc": "Corrançon",
+        "old_name": "Corrançon",
+        "place": "village",
+        "ref:FR:SIREN": "213801293",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q1069684",
+        "wikipedia": "fr:Corrençon-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5272737,
+          45.031815
+        ]
+      },
+      "id": "node/34055047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34055087",
+        "addr:postcode": "38650",
+        "name": "Gresse-en-Vercors",
+        "name:oc": "Gresa de Vercòrs",
+        "old_name": "Gresse",
+        "place": "village",
+        "ref:FR:SIREN": "213801863",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q1339563",
+        "wikipedia": "fr:Gresse-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5662216,
+          44.9011374
+        ]
+      },
+      "id": "node/34055087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34055134",
+        "addr:postcode": "38250",
+        "name": "Lans-en-Vercors",
+        "old_name": "Lans",
+        "place": "village",
+        "ref:FR:SIREN": "213802051",
+        "wikidata": "Q943082",
+        "wikipedia": "fr:Lans-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5885485,
+          45.1279159
+        ]
+      },
+      "id": "node/34055134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/246644219",
+        "addr:postcode": "38470",
+        "name": "Malleval-en-Vercors",
+        "place": "village",
+        "population": "55",
+        "population:date": "2020-01-01",
+        "ref:FR:SIREN": "213802168",
+        "source:population": "wikipedia",
+        "wikidata": "Q670295",
+        "wikipedia": "fr:Malleval-en-Vercors"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.43765,
+          45.1475014
+        ]
+      },
+      "id": "node/246644219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7747652387",
+        "name": "Les-Barraques-en-Vercors",
+        "place": "hamlet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4217891,
+          45.0020685
+        ]
+      },
+      "id": "node/7747652387"
+    }
+  ]
+}

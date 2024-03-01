@@ -1,0 +1,329 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:26:38Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/392050040",
+        "addr:postcode": "14520",
+        "census": "2016",
+        "name": "Port-en-Bessin",
+        "place": "village",
+        "population": "1943",
+        "ref:FR:SIREN": "211405154",
+        "source:population": "INSEE 2016",
+        "website": "https://www.portenbessin-huppain.fr",
+        "wikidata": "Q987304",
+        "wikipedia": "fr:Port-en-Bessin-Huppain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7526611,
+          49.3458498
+        ]
+      },
+      "id": "node/392050040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/392266963",
+        "addr:postcode": "14710",
+        "name": "Asnières-en-Bessin",
+        "place": "village",
+        "population": "58",
+        "ref:FR:SIREN": "211400239",
+        "source": "http://fr.wikipedia.org/wiki/Asnières-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q664308",
+        "wikipedia": "fr:Asnières-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9369444,
+          49.3686111
+        ]
+      },
+      "id": "node/392266963"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/392281964",
+        "addr:postcode": "14450",
+        "name": "Cricqueville-en-Bessin",
+        "name:fr": "Cricqueville-en-Bessin",
+        "name:ru": "Криквиль-ан-Бессен",
+        "name:uk": "Криквіль-ан-Бессен",
+        "place": "village",
+        "population": "189",
+        "ref:FR:SIREN": "211402045",
+        "source": "Wikipedia",
+        "source:population": "INSEE 2011",
+        "wikidata": "Q224449",
+        "wikipedia": "fr:Cricqueville-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.9982975,
+          49.3785955
+        ]
+      },
+      "id": "node/392281964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/452112050",
+        "addr:postcode": "14330",
+        "census": "2006",
+        "name": "Le Breuil-en-Bessin",
+        "name:ru": "Ле-Брёй-ан-Бессен",
+        "name:uk": "Ле-Брей-ан-Бессен",
+        "place": "village",
+        "population": "430",
+        "ref:FR:SIREN": "211401039",
+        "source": "http://fr.wikipedia.org/wiki/Le_Breuil-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q228278",
+        "wikipedia": "fr:Le Breuil-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8606317,
+          49.255147
+        ]
+      },
+      "id": "node/452112050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/454593416",
+        "addr:postcode": "14710",
+        "census": "2006",
+        "name": "Mandeville-en-Bessin",
+        "name:ru": "Мандевиль-ан-Бессен",
+        "name:uk": "Мандевіль-ан-Бессен",
+        "place": "village",
+        "population": "335",
+        "ref:FR:SIREN": "211403977",
+        "source": "http://fr.wikipedia.org/wiki/Mandeville-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q533715",
+        "wikipedia": "fr:Mandeville-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.8785901,
+          49.3028099
+        ]
+      },
+      "id": "node/454593416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/519033939",
+        "addr:postcode": "14740",
+        "census": "2006",
+        "name": "Putot-en-Bessin",
+        "name:uk": "Пюто-ан-Бессен",
+        "place": "village",
+        "population": "389",
+        "ref:FR:SIREN": "211405253",
+        "source": "http://fr.wikipedia.org/wiki/Putot-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q862694",
+        "wikipedia": "fr:Putot-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5409733,
+          49.2113876
+        ]
+      },
+      "id": "node/519033939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520277065",
+        "addr:postcode": "14740",
+        "census": "2006",
+        "name": "Secqueville-en-Bessin",
+        "name:uk": "Секвіль-ан-Бессен",
+        "place": "village",
+        "population": "355",
+        "ref:FR:SIREN": "211406707",
+        "source": "http://fr.wikipedia.org/wiki/Secqueville-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q862578",
+        "wikipedia": "fr:Secqueville-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5189443,
+          49.2340027
+        ]
+      },
+      "id": "node/520277065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520344115",
+        "addr:postcode": "14400",
+        "census": "2006",
+        "name": "Tour-en-Bessin",
+        "name:ru": "Тур-ан-Бессен",
+        "name:uk": "Тур-ан-Бессен",
+        "place": "village",
+        "population": "590",
+        "ref:FR:SIREN": "211407002",
+        "source": "http://fr.wikipedia.org/wiki/Tour-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q665547",
+        "wikipedia": "fr:Tour-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7794297,
+          49.2974782
+        ]
+      },
+      "id": "node/520344115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/520405839",
+        "addr:postcode": "14400",
+        "census": "2006",
+        "name": "Vienne-en-Bessin",
+        "name:uk": "В'єнн-ан-Бессен",
+        "place": "village",
+        "population": "281",
+        "ref:FR:SIREN": "211407440",
+        "source": "http://fr.wikipedia.org/wiki/Vienne-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q735435",
+        "wikipedia": "fr:Vienne-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6092817,
+          49.2790887
+        ]
+      },
+      "id": "node/520405839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1281576134",
+        "name": "Norrey-en-Bessin",
+        "place": "village",
+        "wikidata": "Q60882203"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5132489,
+          49.1979863
+        ]
+      },
+      "id": "node/1281576134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403144438",
+        "addr:postcode": "14400",
+        "census": "2006",
+        "name": "Monceaux-en-Bessin",
+        "name:ru": "Монсо-ан-Бессен",
+        "name:uk": "Монсо-ан-Бессен",
+        "place": "village",
+        "population": "514",
+        "ref:FR:SIREN": "211404363",
+        "source": "http://fr.wikipedia.org/wiki/Monceaux-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q609425",
+        "wikipedia": "fr:Monceaux-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6942991,
+          49.2485992
+        ]
+      },
+      "id": "node/1403144438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403156875",
+        "addr:postcode": "14310",
+        "census": "2006",
+        "name": "Monts-en-Bessin",
+        "name:ru": "Монз-ан-Бессен",
+        "name:uk": "Мон-ан-Бессен",
+        "place": "village",
+        "population": "425",
+        "ref:FR:SIREN": "211404496",
+        "source": "http://fr.wikipedia.org/wiki/Monts-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q864017",
+        "wikipedia": "fr:Monts-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6050493,
+          49.1136583
+        ]
+      },
+      "id": "node/1403156875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1403407316",
+        "addr:postcode": "14400",
+        "census": "2006",
+        "name": "Magny-en-Bessin",
+        "name:ru": "Маньи-ан-Бессен",
+        "name:uk": "Маньї-ан-Бессен",
+        "place": "village",
+        "population": "154",
+        "ref:FR:SIREN": "211403852",
+        "source": "http://fr.wikipedia.org/wiki/Magny-en-Bessin",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q196909",
+        "wikipedia": "fr:Magny-en-Bessin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.6640815,
+          49.3055779
+        ]
+      },
+      "id": "node/1403407316"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:20:28Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26695284",
+        "addr:postcode": "76460",
+        "name": "Saint-Valery-en-Caux",
+        "place": "village",
+        "ref:SIREN": "217606557"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.7106831,
+          49.8597004
+        ]
+      },
+      "id": "node/26695284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26698428",
+        "addr:postcode": "76490",
+        "name": "Caudebec-en-Caux",
+        "place": "village",
+        "ref:SIREN": "217601640"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.724685,
+          49.525364
+        ]
+      },
+      "id": "node/26698428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/351929308",
+        "addr:postcode": "76450",
+        "name": "Ourville-en-Caux",
+        "place": "village",
+        "ref:SIREN": "217604909",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6020575,
+          49.7291568
+        ]
+      },
+      "id": "node/351929308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/360060918",
+        "addr:postcode": "76730",
+        "name": "Bacqueville-en-Caux",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9996404,
+          49.7853769
+        ]
+      },
+      "id": "node/360060918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/386174738",
+        "addr:postcode": "76110",
+        "name": "Sausseuzemare-en-Caux",
+        "place": "village",
+        "ref:SIREN": "217606698",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3437234,
+          49.6663496
+        ]
+      },
+      "id": "node/386174738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/594941268",
+        "addr:postcode": "76640",
+        "name": "Fauville-en-Caux",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5915236,
+          49.6528071
+        ]
+      },
+      "id": "node/594941268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602289223",
+        "addr:postcode": "76560",
+        "name": "Héricourt-en-Caux",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6985668,
+          49.6976164
+        ]
+      },
+      "id": "node/602289223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/808415203",
+        "addr:postcode": "76560",
+        "name": "Saint-Laurent-en-Caux",
+        "place": "village",
+        "wikipedia": "fr:Saint-Laurent-en-Caux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8799089,
+          49.752549
+        ]
+      },
+      "id": "node/808415203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/941383384",
+        "addr:postcode": "76890",
+        "name": "Beauval-en-Caux",
+        "name:uk": "Боваль-ан-Ко",
+        "place": "village",
+        "wikidata": "Q1134787",
+        "wikipedia": "fr:Beauval-en-Caux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0191066,
+          49.7439519
+        ]
+      },
+      "id": "node/941383384"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/941892499",
+        "addr:postcode": "76560",
+        "name": "Berville-en-Caux",
+        "name:-2017-12-25": "Berville",
+        "name:2017-12-25-": "Berville-en-Caux",
+        "name:uk:-2017-12-25": "Бервіль",
+        "old_name": "Berville",
+        "place": "village",
+        "wikidata": "Q1134795",
+        "wikipedia": "fr:Berville (Seine-Maritime)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8325183,
+          49.7076762
+        ]
+      },
+      "id": "node/941892499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/983352019",
+        "addr:postcode": "76570",
+        "name": "Hugleville-en-Caux",
+        "name:uk": "Юглевіль-ан-Ко",
+        "place": "village",
+        "wikidata": "Q724286",
+        "wikipedia": "fr:Hugleville-en-Caux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9850346,
+          49.6342671
+        ]
+      },
+      "id": "node/983352019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1707098744",
+        "addr:postcode": "76890",
+        "name": "Belleville-en-Caux",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9866,
+          49.70796
+        ]
+      },
+      "id": "node/1707098744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1707098757",
+        "addr:postcode": "76111",
+        "name": "Criquebeuf-en-Caux",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.33204,
+          49.74033
+        ]
+      },
+      "id": "node/1707098757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1707098841",
+        "addr:postcode": "76850",
+        "name": "Montreuil-en-Caux",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.14842,
+          49.67907
+        ]
+      },
+      "id": "node/1707098841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1707099022",
+        "addr:postcode": "76730",
+        "name": "Tocqueville-en-Caux",
+        "place": "village",
+        "wikipedia": "fr:Tocqueville-en-Caux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.90738,
+          49.78123
+        ]
+      },
+      "id": "node/1707099022"
+    }
+  ]
+}

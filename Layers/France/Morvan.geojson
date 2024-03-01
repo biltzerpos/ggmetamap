@@ -1,0 +1,298 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:18:27Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/256137649",
+        "addr:postcode": "58230",
+        "name": "Ouroux-en-Morvan",
+        "place": "village",
+        "population": "654",
+        "ref:FR:SIREN": "215802059",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9456587,
+          47.1859364
+        ]
+      },
+      "id": "node/256137649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748456",
+        "name": "Chissey-en-Morvan",
+        "place": "village",
+        "population": "300",
+        "ref:SIREN": "217101294",
+        "wikipedia": "fr:Chissey-en-Morvan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2250525,
+          47.1188185
+        ]
+      },
+      "id": "node/282748456"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748539",
+        "name": "Cussy-en-Morvan",
+        "place": "village",
+        "population": "458",
+        "ref:SIREN": "217101658",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1630907,
+          47.0890357
+        ]
+      },
+      "id": "node/282748539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748660",
+        "name": "La Celle-en-Morvan",
+        "place": "village",
+        "ref:SIREN": "217105097"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1701002,
+          47.0114632
+        ]
+      },
+      "id": "node/282748660"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748785",
+        "name": "Roussillon-en-Morvan",
+        "place": "village",
+        "ref:SIREN": "217103761"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1199906,
+          47.0261683
+        ]
+      },
+      "id": "node/282748785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/847680804",
+        "addr:postcode": "58120",
+        "name": "Montigny-en-Morvan",
+        "name:ja": "モンティニー＝アン＝モルヴァン",
+        "place": "village",
+        "population": "320",
+        "ref:FR:SIREN": "215801770",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q773471",
+        "wikipedia": "fr:Montigny-en-Morvan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8552309,
+          47.1442775
+        ]
+      },
+      "id": "node/847680804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/906831120",
+        "addr:postcode": "58140",
+        "name": "Saint-André-en-Morvan",
+        "name:uk": "Сент-Андре-ан-Морван",
+        "place": "village",
+        "population": "295",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q41808",
+        "wikipedia": "fr:Saint-André-en-Morvan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8573459,
+          47.3926402
+        ]
+      },
+      "id": "node/906831120"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1252241839",
+        "addr:postcode": "58230",
+        "name": "Moux-en-Morvan",
+        "place": "village",
+        "population": "606",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1527453,
+          47.1706678
+        ]
+      },
+      "id": "node/1252241839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1390636513",
+        "addr:postcode": "58120",
+        "name": "Saint-Hilaire-en-Morvan",
+        "place": "village",
+        "population": "214",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q37170",
+        "wikipedia": "fr:Saint-Hilaire-en-Morvan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8883788,
+          47.0777998
+        ]
+      },
+      "id": "node/1390636513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1755754429",
+        "addr:postcode": "21390",
+        "name": "Dompierre-en-Morvan",
+        "place": "village",
+        "population": "226",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.23294,
+          47.39381
+        ]
+      },
+      "id": "node/1755754429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1756885858",
+        "addr:postcode": "21430",
+        "name": "Brazey-en-Morvan",
+        "place": "village",
+        "population": "161",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2884732,
+          47.1722544
+        ]
+      },
+      "id": "node/1756885858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1756885863",
+        "name": "Villiers-en-Morvan",
+        "place": "village",
+        "postal_code": "21430",
+        "wikipedia": "fr:Villiers-en-Morvan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.25498,
+          47.14597
+        ]
+      },
+      "id": "node/1756885863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1758052694",
+        "addr:postcode": "21210",
+        "name": "Champeau-en-Morvan",
+        "note": "Source des données : insee.fr (2017)",
+        "place": "village",
+        "population": "228",
+        "source": "local knowledge;insee.fr",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.143029,
+          47.2768894
+        ]
+      },
+      "id": "node/1758052694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1758053567",
+        "addr:postcode": "58230",
+        "name": "Alligny-en-Morvan",
+        "place": "village",
+        "population": "659",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1770004,
+          47.2002347
+        ]
+      },
+      "id": "node/1758053567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1870290195",
+        "name": "Chazelle-en-Morvan",
+        "place": "hamlet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3028896,
+          47.3171876
+        ]
+      },
+      "id": "node/1870290195"
+    }
+  ]
+}

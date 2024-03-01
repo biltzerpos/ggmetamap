@@ -1,0 +1,326 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:07:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26694668",
+        "addr:postcode": "76270",
+        "name": "Neufchâtel-en-Bray",
+        "place": "village",
+        "ref:SIREN": "217604628"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4421413,
+          49.7350035
+        ]
+      },
+      "id": "node/26694668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/137979795",
+        "addr:postcode": "60650",
+        "name": "Ons-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.9248054,
+          49.417579
+        ]
+      },
+      "id": "node/137979795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/306092595",
+        "addr:postcode": "60650",
+        "name": "Saint-Aubin-en-Bray",
+        "place": "village",
+        "population": "1013",
+        "ref:FR:SIREN": "216005611",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8767596,
+          49.4217312
+        ]
+      },
+      "id": "node/306092595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/317718024",
+        "addr:postcode": "76220",
+        "name": "Ferrières-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7445861,
+          49.4829543
+        ]
+      },
+      "id": "node/317718024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/333703233",
+        "addr:postcode": "60850",
+        "name": "Cuigy-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.8290375,
+          49.4268271
+        ]
+      },
+      "id": "node/333703233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/357138047",
+        "addr:postcode": "60390",
+        "name": "Berneuil-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0671795,
+          49.3476555
+        ]
+      },
+      "id": "node/357138047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/420529772",
+        "addr:postcode": "76220",
+        "name": "Gournay-en-Bray",
+        "place": "village",
+        "ref:SIREN": "217603125",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7241534,
+          49.4824794
+        ]
+      },
+      "id": "node/420529772"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667735350",
+        "name": "Saint-Léger-en-Bray",
+        "place": "village",
+        "wikidata": "Q1365388",
+        "wikipedia": "fr:Saint-Léger-en-Bray"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.0255422,
+          49.3922621
+        ]
+      },
+      "id": "node/667735350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/669094347",
+        "addr:postcode": "60650",
+        "name": "Hodenc-en-Bray",
+        "place": "village",
+        "population": "463",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.897151,
+          49.4669473
+        ]
+      },
+      "id": "node/669094347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/931491208",
+        "addr:postcode": "76440",
+        "name": "Roncherolles-en-Bray",
+        "place": "village",
+        "ref:SIREN": "217605351"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4633957,
+          49.6159473
+        ]
+      },
+      "id": "node/931491208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/935240086",
+        "addr:postcode": "76220",
+        "name": "Elbeuf-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6425438,
+          49.4878661
+        ]
+      },
+      "id": "node/935240086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/937121184",
+        "addr:postcode": "76220",
+        "name": "Dampierre-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6585227,
+          49.5331571
+        ]
+      },
+      "id": "node/937121184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/939137117",
+        "addr:postcode": "76220",
+        "name": "Avesnes-en-Bray",
+        "name:uk": "Авен-ан-Бре",
+        "place": "village",
+        "wikidata": "Q925388",
+        "wikipedia": "fr:Avesnes-en-Bray"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.6727612,
+          49.4698811
+        ]
+      },
+      "id": "node/939137117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/941969613",
+        "name": "Bures-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3365365,
+          49.779538
+        ]
+      },
+      "id": "node/941969613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1291386251",
+        "name": "Sigy-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4916971,
+          49.5467245
+        ]
+      },
+      "id": "node/1291386251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1691141790",
+        "addr:postcode": "76440",
+        "name": "Fontaine-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4306326,
+          49.6769948
+        ]
+      },
+      "id": "node/1691141790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1707098837",
+        "addr:postcode": "76270",
+        "name": "Mesnières-en-Bray",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.3812221,
+          49.7633039
+        ]
+      },
+      "id": "node/1707098837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1754963365",
+        "addr:postcode": "60850",
+        "name": "Puiseux-en-Bray",
+        "place": "village",
+        "population": "408"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7827347,
+          49.4149762
+        ]
+      },
+      "id": "node/1754963365"
+    }
+  ]
+}

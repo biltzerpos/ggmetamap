@@ -67,7 +67,27 @@ function createCountryChooser(map) {
               if (layerMenu.value == "Clusters") {
                   removeAllFeatures();
                   removeAllMarkers();
-                  loadBoundaries("Layers/France/Brie.geojson");
+                  //loadBoundaries("Layers/France/Cambresis.geojson");
+                  //loadBoundaries("Layers/France/Vexin.geojson");
+                  loadMarkerLayer("France", "Brie");
+                  loadMarkerLayer("France", "Vexin");
+                  loadMarkerLayer("France", "Auge");
+                  loadMarkerLayer("France", "Argonne");
+                  loadMarkerLayer("France", "Bresse");
+                  loadMarkerLayer("France", "Bray");
+                  loadMarkerLayer("France", "Beauce");
+                  loadMarkerLayer("France", "Woevre");
+                  loadMarkerLayer("France", "Morvan");
+                  loadMarkerLayer("France", "Caux");
+                  loadMarkerLayer("France", "Gatinais");
+                  loadMarkerLayer("France", "Bessin");
+                  loadMarkerLayer("France", "Othe");
+                  loadMarkerLayer("France", "Diois");
+                  loadMarkerLayer("France", "Santerre");
+                  loadMarkerLayer("France", "Mauges");
+                  loadMarkerLayer("France", "Vercors");
+                  loadMarkerLayer("France", "Royans");
+                  loadMarkerLayer("France", "Cambresis");
               }
               else {
                   removeAllFeatures();
@@ -195,7 +215,8 @@ function createSaveLocsControl(map) {
 }
 
 function placeNewMarker(map, position, content = "00", type = "area-code") {
-            console.log("START " + markers.length);
+    console.log("START " + markers.length);
+    
   const infoWindow = new google.maps.InfoWindow();
     var marker = new google.maps.marker.AdvancedMarkerElement({
         map: map,
@@ -349,7 +370,8 @@ function zoom(map: google.maps.Map) {
   const bounds = new google.maps.LatLngBounds();
 
   map.data.forEach((feature) => {
-    const geometry = feature.getGeometry();
+      const geometry = feature.getGeometry();
+      
 
     if (geometry) {
       processPoints(geometry, bounds.extend, bounds);
@@ -367,14 +389,18 @@ function processPoints(
   thisArg: google.maps.LatLngBounds
 ) {
   if (geometry instanceof google.maps.LatLng) {
-    callback.call(thisArg, geometry);
+      callback.call(thisArg, geometry);
   } else if (geometry instanceof google.maps.Data.Point) {
-    callback.call(thisArg, geometry.get());
+      callback.call(thisArg, geometry.get());
+      //console.log("poi " + geometry.get().lat());
+      let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
+      placeNewMarker(map, pos, ""); 
   } else {
     // @ts-ignore
     geometry.getArray().forEach((g) => {
       processPoints(g, callback, thisArg);
     });
+      console.log("huh");
   }
 }
 

@@ -1,0 +1,252 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:16:28Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/183477889",
+        "name": "Marchéville-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6813594,
+          49.0889983
+        ]
+      },
+      "id": "node/183477889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/197850304",
+        "name": "Ville-en-Woëvre",
+        "place": "village",
+        "wikidata": "Q1378554",
+        "wikipedia": "fr:Ville-en-Woëvre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6274901,
+          49.1305185
+        ]
+      },
+      "id": "node/197850304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/223923336",
+        "name": "Herméville-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5927618,
+          49.1789553
+        ]
+      },
+      "id": "node/223923336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/223923939",
+        "name": "Grimaucourt-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.556676,
+          49.1741974
+        ]
+      },
+      "id": "node/223923939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/226886980",
+        "name": "Jonville-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7855218,
+          49.0672948
+        ]
+      },
+      "id": "node/226886980"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/230225392",
+        "name": "Boinville-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6736014,
+          49.1850818
+        ]
+      },
+      "id": "node/230225392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/240043784",
+        "name": "Saint-Hilaire-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7054771,
+          49.080397
+        ]
+      },
+      "id": "node/240043784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/240063704",
+        "name": "Fresnes-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6307494,
+          49.0963224
+        ]
+      },
+      "id": "node/240063704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/242163672",
+        "description": "1973 : fusion-association dans la Commune de Vigneulles-lès-Hattonchâtel",
+        "name": "Saint-Benoit-en-Woëvre",
+        "place": "hamlet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7840011,
+          48.9858657
+        ]
+      },
+      "id": "node/242163672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/242163680",
+        "name": "Béney-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8271224,
+          48.9618611
+        ]
+      },
+      "id": "node/242163680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/243060720",
+        "name": "Rupt-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4903715,
+          49.0530253
+        ]
+      },
+      "id": "node/243060720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/243061896",
+        "description": "ancienne commune rattachée à Saint-Hilaire-en-Woëvre depuis 1972",
+        "name": "Wadonville-en-Woëvre",
+        "place": "hamlet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.688347,
+          49.0650957
+        ]
+      },
+      "id": "node/243061896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/243351823",
+        "name": "Rouvres-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6886377,
+          49.2194392
+        ]
+      },
+      "id": "node/243351823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282463711",
+        "name": "Manoncourt-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9250992,
+          48.7842427
+        ]
+      },
+      "id": "node/282463711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1708015868",
+        "name": "Latour-en-Woëvre",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8138,
+          49.08768
+        ]
+      },
+      "id": "node/1708015868"
+    }
+  ]
+}

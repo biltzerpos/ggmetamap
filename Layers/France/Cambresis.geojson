@@ -1,0 +1,176 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:51:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26697885",
+        "name": "Beauvois-en-Cambrésis",
+        "place": "village",
+        "ref:FR:SIREN": "215900630"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3794112,
+          50.1405903
+        ]
+      },
+      "id": "node/26697885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/315863679",
+        "name": "Forest-en-Cambrésis",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5702133,
+          50.1401977
+        ]
+      },
+      "id": "node/315863679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316269956",
+        "name": "Beaumont-en-Cambrésis",
+        "place": "village",
+        "ref:FR:SIREN": "215900598"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.454986,
+          50.1231053
+        ]
+      },
+      "id": "node/316269956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316279139",
+        "name": "Saint-Vaast-en-Cambrésis",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4251165,
+          50.1925792
+        ]
+      },
+      "id": "node/316279139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316288154",
+        "name": "Montigny-en-Cambrésis",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4094023,
+          50.0911362
+        ]
+      },
+      "id": "node/316288154"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316309614",
+        "name": "Ligny-en-Cambrésis",
+        "place": "village",
+        "wikipedia": "fr:Ligny-en-Cambrésis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3783707,
+          50.0984224
+        ]
+      },
+      "id": "node/316309614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316314852",
+        "name": "Boussières-en-Cambrésis",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3669841,
+          50.1652029
+        ]
+      },
+      "id": "node/316314852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316325705",
+        "name": "Haucourt-en-Cambrésis",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.3407448,
+          50.1051251
+        ]
+      },
+      "id": "node/316325705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316330521",
+        "name": "Rieux-en-Cambrésis",
+        "place": "village"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.353489,
+          50.2047612
+        ]
+      },
+      "id": "node/316330521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316466319",
+        "name": "Rumilly-en-Cambrésis",
+        "place": "village",
+        "population": "1429",
+        "population:date": "2021-01-01",
+        "source:population": "INSEE",
+        "wikidata": "Q630428",
+        "wikipedia": "fr:Rumilly-en-Cambrésis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2188323,
+          50.1287091
+        ]
+      },
+      "id": "node/316466319"
+    }
+  ]
+}

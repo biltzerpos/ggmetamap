@@ -1,0 +1,430 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-03-01T22:02:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26691470",
+        "addr:postcode": "01000",
+        "capital": "6",
+        "name": "Bourg-en-Bresse",
+        "name:ar": "بورغ أون بريس",
+        "name:ca": "Bôrg",
+        "name:fa": "بورگ-آن-برس",
+        "name:fr": "Bourg-en-Bresse",
+        "name:frp": "Bôrg",
+        "name:he": "בור-אן-ברס",
+        "name:hy": "Բուրկ ան Բրես",
+        "name:ja": "ブール＝カン＝ブレス",
+        "name:ko": "부르캉브레스",
+        "name:la": "Burgus Bressiae",
+        "name:lv": "Burganbresa",
+        "name:oc": "Borg de Bressa",
+        "name:ru": "Бурк-ан-Брес",
+        "name:sk": "Bourg-en-Bresse",
+        "name:sr": "Бург ан Брес",
+        "name:uk": "Бург-ан-Бресс",
+        "name:zh": "布雷斯地区布尔格",
+        "place": "town",
+        "ref:FR:SIREN": "210100533",
+        "source:name:oc": "ieo-bdtopoc",
+        "wikidata": "Q133069",
+        "wikipedia": "fr:Bourg-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2250324,
+          46.2051192
+        ]
+      },
+      "id": "node/26691470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/26698237",
+        "addr:postcode": "01340",
+        "name": "Montrevel-en-Bresse",
+        "place": "village",
+        "ref:FR:SIREN": "210102661",
+        "wikipedia": "fr:Montrevel-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.130295,
+          46.3373228
+        ]
+      },
+      "id": "node/26698237"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748363",
+        "addr:postcode": "71580",
+        "name": "Beaurepaire-en-Bresse",
+        "place": "village",
+        "population": "628",
+        "ref:SIREN": "217100270",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Beaurepaire-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3896965,
+          46.6697793
+        ]
+      },
+      "id": "node/282748363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748441",
+        "addr:postcode": "71380",
+        "name": "Châtenoy-en-Bresse",
+        "place": "village",
+        "population": "974",
+        "ref:SIREN": "217101179",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9137014,
+          46.7913701
+        ]
+      },
+      "id": "node/282748441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748536",
+        "addr:postcode": "71310",
+        "name": "Dampierre-en-Bresse",
+        "place": "village",
+        "population": "167",
+        "ref:SIREN": "217101682",
+        "source": "Bing",
+        "source:population": "INSEE 2013",
+        "wikipedia": "fr:Dampierre-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1992537,
+          46.8278076
+        ]
+      },
+      "id": "node/282748536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748571",
+        "addr:postcode": "71580",
+        "name": "Flacey-en-Bresse",
+        "place": "village",
+        "population": "362",
+        "ref:SIREN": "217101989",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3922539,
+          46.597288
+        ]
+      },
+      "id": "node/282748571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748606",
+        "addr:postcode": "71330",
+        "name": "Frangy-en-Bresse",
+        "place": "village",
+        "population": "642",
+        "ref:SIREN": "217102052",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q1434430",
+        "wikipedia": "fr:Frangy-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3339305,
+          46.7324477
+        ]
+      },
+      "id": "node/282748606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748714",
+        "addr:postcode": "71440",
+        "name": "Lessard-en-Bresse",
+        "place": "village",
+        "population": "528",
+        "ref:SIREN": "217102565",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q1602637",
+        "wikipedia": "fr:Lessard-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0929231,
+          46.741006
+        ]
+      },
+      "id": "node/282748714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748775",
+        "addr:postcode": "71470",
+        "name": "Montpont-en-Bresse",
+        "place": "village",
+        "population": "1114",
+        "ref:SIREN": "217103183",
+        "source:population": "INSEE 2013",
+        "wikidata": "Q839877",
+        "wikipedia": "fr:Montpont-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1645134,
+          46.5562476
+        ]
+      },
+      "id": "node/282748775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748781",
+        "addr:postcode": "71270",
+        "name": "Mouthier-en-Bresse",
+        "place": "village",
+        "population": "398",
+        "ref:SIREN": "217103266",
+        "source:population": "INSEE 2013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3889404,
+          46.8591495
+        ]
+      },
+      "id": "node/282748781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748791",
+        "addr:postcode": "71440",
+        "name": "Saint-André-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217103860",
+        "wikipedia": "fr:Saint-André-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0933027,
+          46.6508135
+        ]
+      },
+      "id": "node/282748791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748815",
+        "addr:postcode": "71370",
+        "name": "Saint-Étienne-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217104108",
+        "wikipedia": "fr:Saint-Étienne-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0515501,
+          46.7058122
+        ]
+      },
+      "id": "node/282748815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748818",
+        "addr:postcode": "71620",
+        "name": "Saint-Didier-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217104058",
+        "wikidata": "Q600518",
+        "wikipedia": "fr:Saint-Didier-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0914118,
+          46.8534413
+        ]
+      },
+      "id": "node/282748818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748842",
+        "addr:postcode": "71370",
+        "name": "Saint-Christophe-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217103985",
+        "wikidata": "Q536855",
+        "wikipedia": "fr:Saint-Christophe-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9888618,
+          46.7523306
+        ]
+      },
+      "id": "node/282748842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748843",
+        "addr:postcode": "71310",
+        "name": "Saint-Bonnet-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217103969",
+        "wikidata": "Q918115",
+        "wikipedia": "fr:Saint-Bonnet-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1751176,
+          46.8540616
+        ]
+      },
+      "id": "node/282748843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748850",
+        "addr:postcode": "71620",
+        "name": "Saint-Martin-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217104561",
+        "wikidata": "Q1465701",
+        "wikipedia": "fr:Saint-Martin-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0607381,
+          46.8174352
+        ]
+      },
+      "id": "node/282748850"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748882",
+        "addr:postcode": "71440",
+        "name": "Saint-Vincent-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217104892",
+        "wikipedia": "fr:Saint-Vincent-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0585539,
+          46.6664108
+        ]
+      },
+      "id": "node/282748882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/282748926",
+        "addr:postcode": "71310",
+        "name": "Serrigny-en-Bresse",
+        "place": "village",
+        "ref:SIREN": "217105196",
+        "wikidata": "Q1625897",
+        "wikipedia": "fr:Serrigny-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.116662,
+          46.8170204
+        ]
+      },
+      "id": "node/282748926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/291431947",
+        "addr:postcode": "39230",
+        "name": "La Chaux-en-Bresse",
+        "place": "village",
+        "ref:FR:SIREN": "213901325"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4796345,
+          46.8275056
+        ]
+      },
+      "id": "node/291431947"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1450929616",
+        "addr:postcode": "71470",
+        "name": "Sainte-Croix-en-Bresse",
+        "old_name": "Sainte-Croix",
+        "place": "village",
+        "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+        "wikipedia": "fr:Sainte-Croix-en-Bresse"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2452143,
+          46.5724172
+        ]
+      },
+      "id": "node/1450929616"
+    }
+  ]
+}
