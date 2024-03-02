@@ -62,13 +62,17 @@ function createCountryChooser(map) {
           layerMenu.appendChild(newtop);
           const clusters = new Option("Placename Clusters", "Clusters");
           layerMenu.appendChild(clusters);
+          const bigR = new Option("Major Rivers", "Major Rivers");
+          layerMenu.appendChild(bigR);
+          const smallR = new Option("Smaller Rivers", "Smaller Rivers");
+          layerMenu.appendChild(smallR);
           layerMenu.onchange = () => {
               //console.log("NEW " + layerMenu.value);
               if (layerMenu.value == "Clusters") {
                   removeAllFeatures();
                   removeAllMarkers();
-                  //loadBoundaries("Layers/France/Cambresis.geojson");
-                  //loadBoundaries("Layers/France/Vexin.geojson");
+                  //loadBoundaries("Layers/France/Seine.geojson");
+                  //loadBoundaries("Layers/France/Marne.geojson");
                   loadMarkerLayer("France", "Brie");
                   loadMarkerLayer("France", "Vexin");
                   loadMarkerLayer("France", "Auge");
@@ -89,8 +93,23 @@ function createCountryChooser(map) {
                   loadMarkerLayer("France", "Royans");
                   loadMarkerLayer("France", "Cambresis");
               }
+              else if (layerMenu.value == "Major Rivers") {
+                  removeAllFeatures();
+                  removeAllMarkers();
+                  //loadBoundaries("Layers/France/Seine.geojson");
+                  //loadBoundaries("Layers/France/Marne.geojson");
+                  loadMarkerLayer("France", "MajorRivers");
+              }
+              else if (layerMenu.value == "Smaller Rivers") {
+                  removeAllFeatures();
+                  removeAllMarkers();
+                  //loadBoundaries("Layers/France/Seine.geojson");
+                  //loadBoundaries("Layers/France/Marne.geojson");
+                  loadMarkerLayer("France", "MinorRivers");
+              }
               else {
                   removeAllFeatures();
+                  removeAllMarkers();
                   loadBoundaries('Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
               }
@@ -216,12 +235,14 @@ function createSaveLocsControl(map) {
 
 function placeNewMarker(map, position, content = "00", type = "area-code") {
     console.log("START " + markers.length);
-    
-  const infoWindow = new google.maps.InfoWindow();
+    let zIndex = 0;
+    if (content == "") zIndex = -1;
+    const infoWindow = new google.maps.InfoWindow();
     var marker = new google.maps.marker.AdvancedMarkerElement({
         map: map,
         position: position,
         gmpDraggable: true,
+        zIndex: zIndex,
     });
     setMarkerContent(marker, content, type);
     marker.addListener('click', function() {
@@ -412,8 +433,84 @@ async function loadBoundaries(path: string) {
   }
 }
 
+/* DOM (drag/drop) functions */
+function initEvents() {
+    [...document.getElementsByClassName("file")].forEach((fileElement) => {
+        fileElement.addEventListener(
+            "dragstart",
+            (e: Event) => {
+                // @ts-ignore
+                e.dataTransfer.setData(
+                    "text/plain",
+                    JSON.stringify(files[Number((e.target as HTMLElement).dataset.value)])
+                );
+                console.log(e);
+            },
+            false
+        );
+    });
+
+    // set up the drag & drop events
+    const mapContainer = document.getElementById("map") as HTMLElement;
+
+    mapContainer.addEventListener("dragenter", addClassToDropTarget, false);
+    mapContainer.addEventListener("dragover", addClassToDropTarget, false);
+    mapContainer.addEventListener("drop", handleDrop, false);
+    mapContainer.addEventListener("dragleave", removeClassFromDropTarget, false);
+}
+
+function addClassToDropTarget(e: Event) {
+    e.stopPropagation();
+    e.preventDefault();
+    document.getElementById("map")!.classList.add("over");
+    return false;
+}
+
+function removeClassFromDropTarget(e: Event) {
+    document.getElementById("map")!.classList.remove("over");
+}
+
+function handleDrop(e: DragEvent) {
+    e.preventDefault();
+    e.stopPropagation();
+    removeClassFromDropTarget(e);
+
+    const files = (e.dataTransfer as DataTransfer).files;
+
+    if (files.length) {
+        // process file(s) being dropped
+        // grab the file data from each file
+        for (let i = 0, file; (file = files[i]); i++) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                loadGeoJsonString(reader.result as string);
+            };
+
+            reader.onerror = function (e) {
+                console.error("reading failed");
+            };
+
+            reader.readAsText(file);
+        }
+    } else {
+        // process non-file (e.g. text or html) content being dropped
+        // grab the plain text version of the data
+        const plainText = (e.dataTransfer as DataTransfer).getData("text/plain");
+
+        console.log(plainText);
+
+        if (plainText) {
+            loadGeoJsonString(plainText);
+        }
+    }
+
+    // prevent drag event from bubbling further
+    return false;
+}
 function initialize() {
     initMap();
+    initEvents();
     //var latlng = new google.maps.LatLng(37.9069, -122.0792);
     //const customTxt = "<div>Blah blah sdfsddddddddddddddd ddddddddddddddddddddd<ul><li>Blah 1<li>blah 2 </ul></div>"
     //txt = new TxtOverlay(latlng, customTxt, "customBox", map);
