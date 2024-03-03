@@ -1,0 +1,182 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/1131662453",
+  "properties": {
+    "name": "Chaumont-sur-Aire",
+    "place": "village",
+    "id": "node/1131662453"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2562172,
+      48.927781
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1131662561",
+  "properties": {
+    "name": "Courcelles-sur-Aire",
+    "place": "village",
+    "id": "node/1131662561"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2439698,
+      48.9363947
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1394233765",
+  "properties": {
+    "name": "Saint-Aubin-sur-Aire",
+    "place": "village",
+    "id": "node/1394233765"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4429465,
+      48.705562
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1426434265",
+  "properties": {
+    "name": "Pierrefitte-sur-Aire",
+    "place": "village",
+    "id": "node/1426434265"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3299107,
+      48.9003286
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1426434280",
+  "properties": {
+    "name": "Longchamps-sur-Aire",
+    "place": "village",
+    "id": "node/1426434280"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3069081,
+      48.9095247
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1426434370",
+  "properties": {
+    "name": "Nicey-sur-Aire",
+    "place": "village",
+    "id": "node/1426434370"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3365518,
+      48.8853674
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1427507619",
+  "properties": {
+    "name": "Lignières-sur-Aire",
+    "place": "village",
+    "id": "node/1427507619"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3806679,
+      48.8091435
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1427507620",
+  "properties": {
+    "name": "Villotte-sur-Aire",
+    "old_name": "Villotte-devant-Saint-Mihiel",
+    "place": "village",
+    "id": "node/1427507620"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3425612,
+      48.8593289
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708015383",
+  "properties": {
+    "name": "Autrécourt-sur-Aire",
+    "place": "village",
+    "id": "node/1708015383"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.13777,
+      49.03504
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2091130537",
+  "properties": {
+    "name": "Fleury-sur-Aire",
+    "place": "hamlet",
+    "id": "node/2091130537"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1594865,
+      49.0180587
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/7243459733",
+  "properties": {
+    "name": "Beauzée-sur-Aire",
+    "place": "village",
+    "id": "node/7243459733"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1942866,
+      48.9687926
+    ]
+  }
+}
+]
+}

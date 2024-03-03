@@ -1,0 +1,361 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26696026",
+  "properties": {
+    "addr:postcode": "31120",
+    "name": "Portet-sur-Garonne",
+    "name:oc": "Portèth de Garona",
+    "place": "village",
+    "population": "9435",
+    "ref:FR:SIREN": "213104334",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "id": "node/26696026"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4018308,
+      43.5283006
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697314",
+  "properties": {
+    "addr:postcode": "33410",
+    "name": "Cadillac-sur-Garonne",
+    "name:oc": "Cadilhac",
+    "old_name": "Cadillac",
+    "place": "village",
+    "population": "2520",
+    "ref:FR:SIREN": "213300817",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q333571",
+    "wikipedia": "fr:Cadillac (Gironde)",
+    "id": "node/26697314"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3173533,
+      44.6360817
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/244884398",
+  "properties": {
+    "name": "Gensac-sur-Garonne",
+    "name:oc": "Gençac de Garona",
+    "place": "village",
+    "population": "401",
+    "ref:FR:SIREN": "213102197",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1428890",
+    "wikipedia": "fr:Gensac-sur-Garonne",
+    "id": "node/244884398"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.13252,
+      43.2177
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/244884401",
+  "properties": {
+    "addr:postcode": "31150",
+    "name": "Gagnac-sur-Garonne",
+    "name:oc": "Ganhac de Garona",
+    "place": "village",
+    "population": "2952",
+    "ref:FR:SIREN": "213102056",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "id": "node/244884401"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.374462,
+      43.6981454
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/244884663",
+  "properties": {
+    "addr:postcode": "31360",
+    "name": "Roquefort-sur-Garonne",
+    "name:oc": "Ròcahòrt de Garona",
+    "place": "village",
+    "population": "784",
+    "ref:FR:SIREN": "213104573",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "id": "node/244884663"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9727296,
+      43.161543
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/244884707",
+  "properties": {
+    "addr:postcode": "31220",
+    "name": "Saint-Julien-sur-Garonne",
+    "name:oc": "Sent Julian de Garona",
+    "place": "village",
+    "population": "516",
+    "ref:FR:SIREN": "213104920",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q691211",
+    "wikipedia": "fr:Saint-Julien-sur-Garonne",
+    "id": "node/244884707"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1522016,
+      43.2429151
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/244884760",
+  "properties": {
+    "addr:city": "Salles-sur-Garonne",
+    "addr:postcode": "31390",
+    "name": "Salles-sur-Garonne",
+    "name:oc": "Salas de Garona",
+    "place": "village",
+    "population": "516",
+    "ref:FR:SIREN": "213105257",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q602349",
+    "wikipedia": "fr:Salles-sur-Garonne",
+    "id": "node/244884760"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.17968,
+      43.273
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/360643140",
+  "properties": {
+    "addr:postcode": "33490",
+    "name": "Le Pian-sur-Garonne",
+    "name:oc": "Apian",
+    "place": "village",
+    "population": "745",
+    "ref:FR:SIREN": "213303233",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Le Pian-sur-Garonne",
+    "id": "node/360643140"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.2123303,
+      44.5851938
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/406990643",
+  "properties": {
+    "addr:postcode": "47180",
+    "name": "Couthures-sur-Garonne",
+    "name:oc": "Coturas de Garòna",
+    "place": "village",
+    "ref:FR:SIREN": "214700742",
+    "source": "http://fr.wikipedia.org/wiki/Couthures-sur-Garonne",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/406990643"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0791667,
+      44.5144444
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/408892845",
+  "properties": {
+    "addr:postcode": "82600",
+    "name": "Verdun-sur-Garonne",
+    "name:oc": "Verdun de Garona",
+    "place": "village",
+    "ref:FR:FANTOIR": "82190B242B",
+    "ref:FR:SIREN": "218201903",
+    "source": "http://fr.wikipedia.org/wiki/Verdun-sur-Garonne",
+    "source:name:oc": "Lo Congrès",
+    "id": "node/408892845"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2363889,
+      43.8538889
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/412310020",
+  "properties": {
+    "addr:postcode": "47310",
+    "census": "2009",
+    "name": "Sérignac-sur-Garonne",
+    "name:oc": "Serinhac de Garòna",
+    "place": "village",
+    "ref:FR:SIREN": "214703001",
+    "source": "http://fr.wikipedia.org/wiki/Sérignac-sur-Garonne",
+    "source:name:oc": "Lo Congrès",
+    "wikidata": "Q196548",
+    "wikipedia": "fr:Sérignac-sur-Garonne",
+    "id": "node/412310020"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.4858333,
+      44.2144444
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/412311696",
+  "properties": {
+    "addr:postcode": "47230",
+    "census": "2006",
+    "name": "Thouars-sur-Garonne",
+    "name:oc": "Toarç de Garòna",
+    "place": "village",
+    "ref:FR:SIREN": "214703084",
+    "source": "http://fr.wikipedia.org/wiki/Thouars-sur-Garonne",
+    "source:name:oc": "Lo Congrès",
+    "id": "node/412311696"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3363889,
+      44.2533333
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/461136328",
+  "properties": {
+    "addr:postcode": "47200",
+    "name": "Fourques-sur-Garonne",
+    "name:oc": "Horcas de Garòna",
+    "place": "village",
+    "ref:FR:SIREN": "214701013",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:name:oc": "Lo Congrès",
+    "source_ref": "http://fr.wikipedia.org/wiki/montpouillan",
+    "id": "node/461136328"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.1584086,
+      44.448574
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1559358562",
+  "properties": {
+    "addr:postcode": "33550",
+    "name": "Lestiac-sur-Garonne",
+    "name:oc": "Lestiac",
+    "place": "village",
+    "population": "620",
+    "source:name:oc": "Lo Congrès",
+    "source:population": "INSEE 2013",
+    "id": "node/1559358562"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3747284,
+      44.6938412
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1707930096",
+  "properties": {
+    "addr:postcode": "47430",
+    "name": "Caumont-sur-Garonne",
+    "name:oc": "Caumont de Garòna",
+    "place": "village",
+    "source:name:oc": "Lo Congrès",
+    "id": "node/1707930096"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.1818725,
+      44.4379961
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1710934115",
+  "properties": {
+    "addr:postcode": "47180",
+    "name": "Meilhan-sur-Garonne",
+    "name:oc": "Milhan de Garòna",
+    "place": "village",
+    "source:name:oc": "Lo Congrès",
+    "id": "node/1710934115"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0339713,
+      44.5208866
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,673 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691977",
+  "properties": {
+    "addr:postcode": "71100",
+    "capital": "7",
+    "name": "Chalon-sur-Saône",
+    "place": "town",
+    "population": "44985",
+    "ref:SIREN": "217100767",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q203645",
+    "wikipedia": "fr:Chalon-sur-Saône",
+    "id": "node/26691977"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8534326,
+      46.7831001
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692113",
+  "properties": {
+    "addr:postcode": "69400",
+    "capital": "7",
+    "name": "Villefranche-sur-Saône",
+    "name:br": "Velafranche",
+    "name:frp": "Velafranche",
+    "place": "town",
+    "population": "37266",
+    "ref:FR:SIREN": "216902643",
+    "source:population": "INSEE 2016",
+    "website": "http://www.villefranche.net",
+    "wikidata": "Q208770",
+    "wikipedia": "fr:Villefranche-sur-Saône",
+    "id": "node/26692113"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.726611,
+      45.9864749
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694893",
+  "properties": {
+    "addr:postcode": "70170",
+    "name": "Port-sur-Saône",
+    "place": "village",
+    "ref:SIREN": "217004217",
+    "id": "node/26694893"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.0454479,
+      47.6876801
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696016",
+  "properties": {
+    "addr:postcode": "69250",
+    "name": "Albigny-sur-Saône",
+    "place": "village",
+    "population": "2833",
+    "ref:FR:SIREN": "216900035",
+    "source:population": "INSEE 2016",
+    "website": "https://www.mairie-albignysursaone.fr",
+    "wikidata": "Q840195",
+    "wikipedia": "fr:Albigny-sur-Saône",
+    "id": "node/26696016"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8323149,
+      45.8706791
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696768",
+  "properties": {
+    "addr:postcode": "69270",
+    "name": "Fontaines-sur-Saône",
+    "place": "village",
+    "population": "7001",
+    "ref:FR:SIREN": "216900886",
+    "source:population": "INSEE 2016",
+    "website": "http://www.fontaines-sur-saone.fr",
+    "wikidata": "Q1617114",
+    "wikipedia": "fr:Fontaines-sur-Saône",
+    "id": "node/26696768"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8488338,
+      45.8325696
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696864",
+  "properties": {
+    "addr:postcode": "69250",
+    "name": "Neuville-sur-Saône",
+    "place": "village",
+    "population": "7435",
+    "ref:FR:SIREN": "216901439",
+    "source:population": "INSEE 2016",
+    "website": "https://www.mairie.neuvillesursaone.fr",
+    "wikidata": "Q522234",
+    "wikipedia": "fr:Neuville-sur-Saône",
+    "id": "node/26696864"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8395051,
+      45.8765557
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698069",
+  "properties": {
+    "addr:postcode": "01090",
+    "name": "Montmerle-sur-Saône",
+    "place": "village",
+    "ref:FR:SIREN": "210102638",
+    "wikipedia": "fr:Montmerle-sur-Saône",
+    "id": "node/26698069"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7614129,
+      46.0840019
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698459",
+  "properties": {
+    "addr:postcode": "71680",
+    "name": "Crêches-sur-Saône",
+    "place": "village",
+    "population": "2846",
+    "ref:SIREN": "217101500",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1423324",
+    "wikipedia": "fr:Crêches-sur-Saône",
+    "id": "node/26698459"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7867962,
+      46.246363
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36786854",
+  "properties": {
+    "addr:postcode": "01570",
+    "name": "Asnières-sur-Saône",
+    "place": "village",
+    "ref:FR:SIREN": "210100236",
+    "wikipedia": "fr:Asnières-sur-Saône",
+    "id": "node/36786854"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8824155,
+      46.3839438
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36786944",
+  "properties": {
+    "addr:postcode": "01290",
+    "name": "Cormoranche-sur-Saône",
+    "place": "village",
+    "ref:FR:SIREN": "210101234",
+    "wikipedia": "fr:Cormoranche-sur-Saône",
+    "id": "node/36786944"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8319922,
+      46.2401877
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36787040",
+  "properties": {
+    "addr:postcode": "01480",
+    "name": "Messimy-sur-Saône",
+    "place": "village",
+    "wikipedia": "fr:Messimy-sur-Saône",
+    "id": "node/36787040"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7650177,
+      46.0490837
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36787071",
+  "properties": {
+    "addr:postcode": "01140",
+    "name": "Peyzieux-sur-Saône",
+    "place": "village",
+    "ref:FR:SIREN": "210102950",
+    "id": "node/36787071"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.81662,
+      46.1269
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36787149",
+  "properties": {
+    "addr:postcode": "01750",
+    "name": "Saint-Laurent-sur-Saône",
+    "place": "village",
+    "ref:FR:SIREN": "210103701",
+    "id": "node/36787149"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8410969,
+      46.3046804
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282493356",
+  "properties": {
+    "name": "Châtillon-sur-Saône",
+    "place": "village",
+    "wikipedia": "fr:Châtillon-sur-Saône",
+    "id": "node/282493356"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.8836608,
+      47.948308
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282493533",
+  "properties": {
+    "name": "Monthureux-sur-Saône",
+    "place": "village",
+    "id": "node/282493533"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.9729,
+      48.0303
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748327",
+  "properties": {
+    "addr:postcode": "71350",
+    "name": "Allerey-sur-Saône",
+    "place": "village",
+    "population": "785",
+    "ref:SIREN": "217100031",
+    "source:population": "INSEE 2013",
+    "id": "node/282748327"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.981583,
+      46.9061974
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748383",
+  "properties": {
+    "addr:postcode": "71350",
+    "name": "Bragny-sur-Saône",
+    "place": "village",
+    "population": "588",
+    "ref:SIREN": "217100544",
+    "source:population": "INSEE 2013",
+    "id": "node/282748383"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0318928,
+      46.9102154
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748588",
+  "properties": {
+    "addr:postcode": "71240",
+    "name": "Gigny-sur-Saône",
+    "place": "village",
+    "population": "533",
+    "ref:SIREN": "217102193",
+    "source:population": "INSEE 2013",
+    "id": "node/282748588"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.9425246,
+      46.6615353
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291528329",
+  "properties": {
+    "addr:postcode": "70130",
+    "name": "Motey-sur-Saône",
+    "place": "hamlet",
+    "population": "25",
+    "ref:SIREN": "217003755",
+    "source:population": "INSEE 2013",
+    "id": "node/291528329"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.7426971,
+      47.5253107
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291528379",
+  "properties": {
+    "addr:postcode": "70130",
+    "name": "Ray-sur-Saône",
+    "place": "village",
+    "ref:SIREN": "217004381",
+    "id": "node/291528379"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.82827,
+      47.5854
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291528559",
+  "properties": {
+    "addr:postcode": "70360",
+    "name": "Rupt-sur-Saône",
+    "place": "village",
+    "ref:SIREN": "217004571",
+    "id": "node/291528559"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.93127,
+      47.6458
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1292583164",
+  "properties": {
+    "addr:postcode": "21760",
+    "name": "Lamarche-sur-Saône",
+    "place": "village",
+    "population": "1253",
+    "source:population": "INSEE 2013",
+    "id": "node/1292583164"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3860383,
+      47.2681496
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1529157384",
+  "properties": {
+    "addr:postcode": "69250",
+    "name": "Fleurieu-sur-Saône",
+    "place": "village",
+    "population": "1435",
+    "source:population": "INSEE 2016",
+    "website": "https://www.mairie-fleurieusursaone.fr/",
+    "wikidata": "Q977460",
+    "wikipedia": "fr:Fleurieu-sur-Saône",
+    "id": "node/1529157384"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8452328,
+      45.8629325
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1563938636",
+  "properties": {
+    "addr:postcode": "69270",
+    "name": "Rochetaillée-sur-Saône",
+    "place": "village",
+    "population": "1518",
+    "source:population": "INSEE 2016",
+    "website": "https://www.rochetaillee-sur-saone.fr/",
+    "wikidata": "Q910099",
+    "wikipedia": "fr:Rochetaillée-sur-Saône",
+    "id": "node/1563938636"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8357911,
+      45.8401918
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1692542456",
+  "properties": {
+    "addr:postcode": "71370",
+    "name": "Ouroux-sur-Saône",
+    "place": "village",
+    "population": "2987",
+    "ref:SIREN": "217103365",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1463078",
+    "wikipedia": "fr:Ouroux-sur-Saône",
+    "id": "node/1692542456"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.9536545,
+      46.721557
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1737997006",
+  "properties": {
+    "addr:postcode": "21170",
+    "name": "Laperrière-sur-Saône",
+    "place": "village",
+    "population": "419",
+    "id": "node/1737997006"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3411,
+      47.11108
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1737997017",
+  "properties": {
+    "addr:postcode": "21170",
+    "name": "Saint-Symphorien-sur-Saône",
+    "name:ja": "サン=サンフォリアン= シュル=ソーヌ",
+    "place": "village",
+    "id": "node/1737997017"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.30377,
+      47.10192
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1738000534",
+  "properties": {
+    "addr:postcode": "21270",
+    "name": "Heuilley-sur-Saône",
+    "place": "village",
+    "population": "301",
+    "source:population": "INSEE 2013",
+    "id": "node/1738000534"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4541767,
+      47.3294586
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1754763097",
+  "properties": {
+    "addr:postcode": "21270",
+    "name": "Maxilly-sur-Saône",
+    "place": "village",
+    "population": "339",
+    "id": "node/1754763097"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.42632,
+      47.33359
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1754763105",
+  "properties": {
+    "addr:postcode": "21270",
+    "name": "Pontailler-sur-Saône",
+    "place": "village",
+    "id": "node/1754763105"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4127512,
+      47.3047857
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1755914309",
+  "properties": {
+    "addr:postcode": "21170",
+    "name": "Charrey-sur-Saône",
+    "place": "village",
+    "population": "338",
+    "source:population": "INSEE 2013",
+    "id": "node/1755914309"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.16337,
+      47.08752
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1755916793",
+  "properties": {
+    "addr:postcode": "21250",
+    "name": "Auvillars-sur-Saône",
+    "place": "village",
+    "population": "310",
+    "wikipedia": "fr:Auvillars-sur-Saône",
+    "id": "node/1755916793"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1017,
+      47.06164
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1755920315",
+  "properties": {
+    "addr:postcode": "21250",
+    "name": "Pouilly-sur-Saône",
+    "place": "village",
+    "wikipedia": "fr:Pouilly-sur-Saône",
+    "id": "node/1755920315"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.11581,
+      47.01815
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2037516484",
+  "properties": {
+    "addr:postcode": "70130",
+    "name": "Mercey-sur-Saône",
+    "place": "village",
+    "ref:SIREN": "217003425",
+    "id": "node/2037516484"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.7294122,
+      47.5372193
+    ]
+  }
+}
+]
+}

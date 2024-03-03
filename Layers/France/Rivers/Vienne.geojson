@@ -1,0 +1,361 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695252",
+  "properties": {
+    "addr:postcode": "87920",
+    "name": "Condat-sur-Vienne",
+    "name:fr": "Condat-sur-Vienne",
+    "name:oc": "Condat",
+    "name:uk": "Конда-сюр-В'єнн",
+    "place": "village",
+    "ref:FR:SIREN": "218704807",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q195757",
+    "wikipedia": "fr:Condat-sur-Vienne",
+    "id": "node/26695252"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.231575,
+      45.7937549
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695522",
+  "properties": {
+    "addr:postcode": "87700",
+    "name": "Aixe-sur-Vienne",
+    "name:oc": "Aissa",
+    "name:ru": "Экс-сюр-Вьен",
+    "name:uk": "Екс-сюр-В'єнн",
+    "place": "village",
+    "ref:FR:SIREN": "218700102",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q274245",
+    "wikipedia": "fr:Aixe-sur-Vienne",
+    "id": "node/26695522"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1362125,
+      45.7967581
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698483",
+  "properties": {
+    "addr:postcode": "87430",
+    "name": "Verneuil-sur-Vienne",
+    "name:oc": "Vernuèlh (de Vinhana)",
+    "place": "village",
+    "ref:FR:SIREN": "218720100",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/26698483"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1273441,
+      45.8492352
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/407053725",
+  "properties": {
+    "addr:postcode": "87200",
+    "name": "Chaillac-sur-Vienne",
+    "name:fr": "Chaillac-sur-Vienne",
+    "name:oc": "Chalhac",
+    "name:uk": "Шаяк-сюр-В'єнн",
+    "place": "village",
+    "ref:FR:SIREN": "218703007",
+    "source": "http://fr.wikipedia.org/wiki/Chaillac-sur-Vienne",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q1019516",
+    "wikipedia": "fr:Chaillac-sur-Vienne",
+    "wikipedia:oc": "oc:Chalhac",
+    "id": "node/407053725"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8724999,
+      45.8791668
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/407998848",
+  "properties": {
+    "addr:postcode": "87410",
+    "name": "Le Palais-sur-Vienne",
+    "name:oc": "Lu Palaiç (de Vinhana)",
+    "place": "village",
+    "ref:FR:SIREN": "218711307",
+    "source": "http://fr.wikipedia.org/wiki/Le_Palais-sur-Vienne",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/407998848"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3241667,
+      45.865
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/408501213",
+  "properties": {
+    "addr:postcode": "87720",
+    "name": "Saillat-sur-Vienne",
+    "name:oc": "Salhac",
+    "place": "village",
+    "ref:FR:SIREN": "218713105",
+    "source": "http://fr.wikipedia.org/wiki/Saillat-sur-Vienne;https://oc.wikipedia.org/wiki/Salhac",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/408501213"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8153056,
+      45.8707107
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/664601325",
+  "properties": {
+    "name": "Vaux-sur-Vienne",
+    "place": "village",
+    "postal_code": "86220",
+    "ref:FR:SIREN": "218602795",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2010",
+    "id": "node/664601325"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.56088,
+      46.9128337
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/759465784",
+  "properties": {
+    "name": "Parçay-sur-Vienne",
+    "name:la": "Ecclesia Parciacensis",
+    "place": "village",
+    "id": "node/759465784"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.4775692,
+      47.104044
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/760640924",
+  "properties": {
+    "name": "Marcilly-sur-Vienne",
+    "name:la": "Marciliacus",
+    "place": "village",
+    "wikipedia": "fr:Marcilly-sur-Vienne",
+    "id": "node/760640924"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.5393022,
+      47.0434794
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/761478918",
+  "properties": {
+    "name": "Ports-sur-Vienne",
+    "name:la": "Portus",
+    "old_name": "Ports",
+    "place": "village",
+    "population": "363",
+    "wikipedia": "fr:Ports-sur-Vienne",
+    "id": "node/761478918"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.5534383,
+      47.0161003
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/762659402",
+  "properties": {
+    "name": "Rilly-sur-Vienne",
+    "name:la": "Villa de Ruiliaco",
+    "place": "village",
+    "id": "node/762659402"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.492524,
+      47.0566408
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1349667365",
+  "properties": {
+    "name": "Saint-Germain-sur-Vienne",
+    "name:la": "Sanctus Germanus",
+    "name:uk": "Сен-Жермен-сюр-В'єнн",
+    "name:ur": "سینٹ-گرمین-سر-وینے",
+    "name:zh": "维安河畔圣日尔曼",
+    "place": "village",
+    "id": "node/1349667365"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0999428,
+      47.1935069
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1621670667",
+  "properties": {
+    "name": "Ansac-sur-Vienne",
+    "name:oc": "Ançac",
+    "name:uk": "Ансак-сюр-В'єнн",
+    "place": "village",
+    "population": "820",
+    "population:date": "2008",
+    "postal_code": "16500",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q1352364",
+    "wikipedia": "fr:Ansac-sur-Vienne",
+    "id": "node/1621670667"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6461785,
+      45.9935688
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1697984968",
+  "properties": {
+    "name": "Cenon-sur-Vienne",
+    "place": "village",
+    "postal_code": "86530",
+    "id": "node/1697984968"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.5357531,
+      46.7742953
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1712990658",
+  "properties": {
+    "addr:postcode": "87200",
+    "name": "Saint-Brice-sur-Vienne",
+    "name:fr": "Saint-Brice-sur-Vienne",
+    "name:oc": "Sent Brecís",
+    "name:uk": "Сен-Брис-сюр-В'єнн",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre;mise à jour : 2012",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q1075490",
+    "wikipedia": "fr:Saint-Brice-sur-Vienne",
+    "wikipedia:oc": "oc:Sent Brecís",
+    "id": "node/1712990658"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9533796,
+      45.8796928
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1747284486",
+  "properties": {
+    "addr:postcode": "16150",
+    "name": "Exideuil-sur-Vienne",
+    "name:oc": "Eissiduelh de Vinhana",
+    "old_name": "Exideuil",
+    "place": "village",
+    "population": "1014",
+    "source:name:oc": "local knowledge, segon http://ujan.free.fr/charanto.htm http://www.oocities.org/toponimiaoccitana/16.html",
+    "source:population": "INSEE 2022",
+    "wikidata": "Q900620",
+    "wikipedia": "fr:Exideuil-sur-Vienne",
+    "id": "node/1747284486"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6728036,
+      45.8858628
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1749001313",
+  "properties": {
+    "name": "Vouneuil-sur-Vienne",
+    "place": "village",
+    "population": "1988",
+    "postal_code": "86210",
+    "source:population": "INSEE 2013",
+    "id": "node/1749001313"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.53969,
+      46.71676
+    ]
+  }
+}
+]
+}

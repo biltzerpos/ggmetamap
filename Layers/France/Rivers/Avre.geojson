@@ -1,0 +1,186 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26698022",
+  "properties": {
+    "addr:postcode": "28380",
+    "name": "Saint-Rémy-sur-Avre",
+    "place": "village",
+    "population": "3908",
+    "population:date": "2009",
+    "ref:FR:SIREN": "212803597",
+    "source": "Microsoft Bing satellite 2012",
+    "source:population": "INSEE",
+    "id": "node/26698022"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2405119,
+      48.7628087
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/804172983",
+  "properties": {
+    "addr:postcode": "27820",
+    "name": "Armentières-sur-Avre",
+    "place": "village",
+    "population": "186",
+    "ref:FR:SIREN": "212700199",
+    "source:population": "INSEE 2013",
+    "id": "node/804172983"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8118135,
+      48.6864096
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/804173293",
+  "properties": {
+    "addr:postcode": "27820",
+    "name": "Saint-Christophe-sur-Avre",
+    "place": "village",
+    "population": "147",
+    "ref:FR:SIREN": "212705214",
+    "source": "Microsoft Bing satellite imagery 2012",
+    "source:population": "INSEE 2013",
+    "id": "node/804173293"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8155694,
+      48.6995351
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/804173768",
+  "properties": {
+    "addr:postcode": "27130",
+    "name": "Saint-Victor-sur-Avre",
+    "place": "village",
+    "population": "65",
+    "ref:FR:SIREN": "212706105",
+    "source": "Microsoft Bing satellite imagery 2012",
+    "source:population": "INSEE 2013",
+    "id": "node/804173768"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8548541,
+      48.7018617
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/816452562",
+  "properties": {
+    "addr:postcode": "28270",
+    "name": "Montigny-sur-Avre",
+    "place": "village",
+    "ref:FR:SIREN": "212802631",
+    "source": "Microsoft Bing satellite imagery 2012",
+    "wikipedia": "fr:Montigny-sur-Avre",
+    "id": "node/816452562"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.0214069,
+      48.7294274
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/946788404",
+  "properties": {
+    "name": "Breux-sur-Avre",
+    "place": "village",
+    "population": "360",
+    "postal_code": "27570",
+    "ref:FR:SIREN": "212701155",
+    "source:population": "INSEE 2013",
+    "id": "node/946788404"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.0825261,
+      48.7619642
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1691693727",
+  "properties": {
+    "addr:postcode": "28350",
+    "name": "Dampierre-sur-Avre",
+    "place": "village",
+    "source": "Microsoft Bing satellite 2012",
+    "id": "node/1691693727"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1487261,
+      48.763316
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1691940518",
+  "properties": {
+    "addr:postcode": "27570",
+    "name": "Tillières-sur-Avre",
+    "place": "village",
+    "population": "1151",
+    "source": "Microsoft Bing satellite 2012",
+    "source:population": "INSEE 2013",
+    "id": "node/1691940518"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.0566716,
+      48.7575005
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1870940086",
+  "properties": {
+    "addr:postcode": "27320",
+    "name": "Saint-Germain-sur-Avre",
+    "place": "village",
+    "population": "1250",
+    "source:population": "INSEE 2013",
+    "id": "node/1870940086"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2612727,
+      48.7644806
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,209 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691560",
+  "properties": {
+    "addr:postcode": "91600",
+    "name": "Savigny-sur-Orge",
+    "place": "town",
+    "wikidata": "Q243956",
+    "id": "node/26691560"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3458417,
+      48.6794572
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692053",
+  "properties": {
+    "addr:postcode": "91220",
+    "name": "Brétigny-sur-Orge",
+    "place": "town",
+    "ref:SIREN": "219101037",
+    "wikidata": "Q837748",
+    "id": "node/26692053"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3075288,
+      48.6099887
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692201",
+  "properties": {
+    "addr:postcode": "91390",
+    "name": "Morsang-sur-Orge",
+    "place": "town",
+    "ref:SIREN": "219104346",
+    "wikidata": "Q990453",
+    "id": "node/26692201"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3527728,
+      48.6641415
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692277",
+  "properties": {
+    "addr:postcode": "91240",
+    "name": "Saint-Michel-sur-Orge",
+    "place": "town",
+    "ref:SIREN": "219105707",
+    "wikidata": "Q275562",
+    "wikipedia": "fr:Saint-Michel-sur-Orge",
+    "id": "node/26692277"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3027478,
+      48.6302735
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694412",
+  "properties": {
+    "addr:postcode": "91700",
+    "name": "Villiers-sur-Orge",
+    "place": "village",
+    "ref:SIREN": "219106853",
+    "id": "node/26694412"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3010786,
+      48.6585041
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694826",
+  "properties": {
+    "addr:postcode": "91310",
+    "name": "Longpont-sur-Orge",
+    "place": "village",
+    "ref:SIREN": "219103470",
+    "id": "node/26694826"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2919546,
+      48.64262
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695043",
+  "properties": {
+    "addr:postcode": "91310",
+    "name": "Leuville-sur-Orge",
+    "place": "village",
+    "ref:SIREN": "219103330",
+    "id": "node/26695043"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2674029,
+      48.6155573
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696266",
+  "properties": {
+    "addr:postcode": "91360",
+    "name": "Épinay-sur-Orge",
+    "place": "town",
+    "ref:FR:SIREN": "219102167",
+    "wikipedia": "fr:Épinay-sur-Orge",
+    "id": "node/26696266"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.324446,
+      48.6725622
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696779",
+  "properties": {
+    "addr:postcode": "91360",
+    "name": "Villemoisson-sur-Orge",
+    "place": "village",
+    "ref:SIREN": "219106671",
+    "wikipedia": "fr:Villemoisson-sur-Orge",
+    "id": "node/26696779"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3322424,
+      48.6612042
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/666068733",
+  "properties": {
+    "addr:postcode": "91260",
+    "name": "Juvisy-sur-Orge",
+    "place": "town",
+    "website": "http://www.ville-juvisy.fr/",
+    "wikidata": "Q752255",
+    "wikipedia": "fr:Juvisy-sur-Orge",
+    "id": "node/666068733"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.373809,
+      48.6904063
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1354143081",
+  "properties": {
+    "name": "Biencourt-sur-Orge",
+    "place": "village",
+    "id": "node/1354143081"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3482852,
+      48.563299
+    ]
+  }
+}
+]
+}

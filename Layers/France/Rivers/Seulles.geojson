@@ -1,0 +1,249 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/347453366",
+  "properties": {
+    "addr:postcode": "14240",
+    "name": "Feuguerolles-sur-Seulles",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008",
+    "id": "node/347453366"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6701036,
+      49.1137349
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/441168648",
+  "properties": {
+    "addr:postcode": "14400",
+    "census": "2006",
+    "name": "Esquay-sur-Seulles",
+    "name:uk": "Еске-сюр-Сель",
+    "place": "village",
+    "population": "338",
+    "ref:FR:SIREN": "211402508",
+    "source": "http://fr.wikipedia.org/wiki/Esquay-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q534775",
+    "wikipedia": "fr:Esquay-sur-Seulles",
+    "id": "node/441168648"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6199014,
+      49.272425
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/441812271",
+  "properties": {
+    "addr:postcode": "14250",
+    "census": "2006",
+    "name": "Juvigny-sur-Seulles",
+    "name:ru": "Жювиньи-сюр-Сёль",
+    "name:uk": "Жувіньї-сюр-Сель",
+    "place": "village",
+    "population": "70",
+    "ref:FR:SIREN": "211403480",
+    "source": "http://fr.wikipedia.org/wiki/Juvigny-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q745177",
+    "wikipedia": "fr:Juvigny-sur-Seulles",
+    "id": "node/441812271"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6132837,
+      49.1584976
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/520075298",
+  "properties": {
+    "addr:postcode": "14310",
+    "census": "2006",
+    "name": "Saint-Louet-sur-Seulles",
+    "name:ru": "Сен-Луэ-сюр-Сёль",
+    "name:uk": "Сен-Луе-сюр-Сель",
+    "place": "village",
+    "population": "189",
+    "ref:FR:SIREN": "211406079",
+    "source": "http://fr.wikipedia.org/wiki/Saint-Louet-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q848400",
+    "wikipedia": "fr:Saint-Louet-sur-Seulles",
+    "id": "node/520075298"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6722411,
+      49.0966505
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/520178019",
+  "properties": {
+    "addr:postcode": "14250",
+    "census": "2006",
+    "name": "Saint-Vaast-sur-Seulles",
+    "name:uk": "Сен-Вааст-сюр-Сель",
+    "place": "village",
+    "population": "137",
+    "ref:FR:SIREN": "211406616",
+    "source": "http://fr.wikipedia.org/wiki/Saint-Vaast-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q862841",
+    "wikipedia": "fr:Saint-Vaast-sur-Seulles",
+    "id": "node/520178019"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6322246,
+      49.1411565
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/520323858",
+  "properties": {
+    "addr:postcode": "14250",
+    "census": "2006",
+    "name": "Tilly-sur-Seulles",
+    "name:ru": "Тийи-сюр-Сёль",
+    "name:uk": "Тії-сюр-Сель",
+    "place": "village",
+    "population": "1537",
+    "ref:FR:SIREN": "211406921",
+    "source": "http://fr.wikipedia.org/wiki/Tilly-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q331551",
+    "wikipedia": "fr:Tilly-sur-Seulles",
+    "id": "node/520323858"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6251237,
+      49.1759393
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/520395462",
+  "properties": {
+    "addr:postcode": "14400",
+    "census": "2006",
+    "name": "Vaux-sur-Seulles",
+    "name:ru": "Во-сюр-Сёль",
+    "name:uk": "Во-сюр-Сель",
+    "place": "village",
+    "population": "292",
+    "ref:FR:SIREN": "211407333",
+    "source": "http://fr.wikipedia.org/wiki/Vaux-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q862323",
+    "wikipedia": "fr:Vaux-sur-Seulles",
+    "id": "node/520395462"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6282997,
+      49.2601755
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1397643097",
+  "properties": {
+    "addr:postcode": "14310",
+    "name": "Amayé-sur-Seulles",
+    "place": "village",
+    "population": "200",
+    "ref:FR:SIREN": "211400072",
+    "source": "http://fr.wikipedia.org/wiki/Amayé-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "id": "node/1397643097"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.717434,
+      49.0803647
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1403144428",
+  "properties": {
+    "addr:postcode": "14400",
+    "census": "2006",
+    "name": "Condé-sur-Seulles",
+    "name:ru": "Конде-сюр-Сёль",
+    "name:uk": "Конде-сюр-Сель",
+    "place": "village",
+    "population": "238",
+    "ref:FR:SIREN": "211401757",
+    "source": "http://fr.wikipedia.org/wiki/Condé-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q389041",
+    "wikipedia": "fr:Condé-sur-Seulles",
+    "id": "node/1403144428"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6350963,
+      49.224454
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1403313959",
+  "properties": {
+    "addr:postcode": "14480",
+    "census": "2006",
+    "name": "Colombiers-sur-Seulles",
+    "name:uk": "Коломб'є-сюр-Сель",
+    "place": "village",
+    "population": "170",
+    "ref:FR:SIREN": "211401690",
+    "source": "http://fr.wikipedia.org/wiki/Colombiers-sur-Seulles",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q274894",
+    "wikipedia": "fr:Colombiers-sur-Seulles",
+    "id": "node/1403313959"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5116312,
+      49.2941485
+    ]
+  }
+}
+]
+}

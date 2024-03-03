@@ -1,0 +1,1453 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691400",
+  "properties": {
+    "addr:postcode": "77350",
+    "name": "Le Mée-sur-Seine",
+    "name:fa": "لومه سور سن",
+    "name:ja": "ル・メ＝シュル＝セーヌ",
+    "name:kk": "Ле-Ме-сюр-Сен",
+    "name:ru": "Ле-Ме-сюр-Сен",
+    "name:uk": "Ле-Ме-сюр-Сен",
+    "place": "town",
+    "ref:FR:SIREN": "217702851",
+    "wikidata": "Q1058178",
+    "wikipedia": "fr:Le Mée-sur-Seine",
+    "id": "node/26691400"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6335912,
+      48.5381859
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691592",
+  "properties": {
+    "addr:postcode": "93800",
+    "name": "Épinay-sur-Seine",
+    "name:el": "Επιναί-συρ-Σεν",
+    "name:fr": "Épinay-sur-Seine",
+    "name:ja": "エピネー＝シュル＝セーヌ",
+    "place": "town",
+    "ref:SIREN": "219300316",
+    "wikidata": "Q206961",
+    "wikipedia": "fr:Épinay-sur-Seine",
+    "id": "node/26691592"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3145039,
+      48.9525181
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691760",
+  "properties": {
+    "addr:postcode": "94400",
+    "name": "Vitry-sur-Seine",
+    "name:ja": "ヴィトリー＝シュル＝セーヌ",
+    "name:ru": "Витри-сюр-Сен",
+    "place": "town",
+    "short_name": "Vitry-sur-S.",
+    "wikidata": "Q72248",
+    "wikipedia": "fr:Vitry-sur-Seine",
+    "id": "node/26691760"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.39164,
+      48.7876
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691761",
+  "properties": {
+    "addr:postcode": "92200",
+    "name": "Neuilly-sur-Seine",
+    "name:el": "Νεϊγί-συρ-Σεν",
+    "name:fr": "Neuilly-sur-Seine",
+    "name:ja": "ヌイイ＝シュル＝セーヌ",
+    "name:ru": "Нёйи-сюр-Сен",
+    "place": "town",
+    "population": "61754",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q48958",
+    "wikipedia": "fr:Neuilly-sur-Seine",
+    "id": "node/26691761"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2695658,
+      48.884683
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691830",
+  "properties": {
+    "addr:postcode": "95220",
+    "name": "Herblay-sur-Seine",
+    "old_name": "Herblay",
+    "place": "town",
+    "population": "26016",
+    "ref:SIREN": "219503067",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q318078",
+    "id": "node/26691830"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.166162,
+      48.9898588
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692132",
+  "properties": {
+    "addr:postcode": "91270",
+    "name": "Vigneux-sur-Seine",
+    "place": "town",
+    "ref:SIREN": "219106572",
+    "wikidata": "Q842037",
+    "id": "node/26692132"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4172117,
+      48.6998552
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692188",
+  "properties": {
+    "addr:postcode": "78420",
+    "name": "Carrières-sur-Seine",
+    "place": "town",
+    "population": "15450",
+    "ref:SIREN": "217801240",
+    "wikidata": "Q399827",
+    "id": "node/26692188"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1779083,
+      48.9134112
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692293",
+  "properties": {
+    "name": "Pierrefitte-sur-Seine",
+    "place": "town",
+    "id": "node/26692293"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3601022,
+      48.9637589
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692564",
+  "properties": {
+    "addr:postcode": "10100",
+    "name": "Romilly-sur-Seine",
+    "place": "town",
+    "ref:FR:SIREN": "211003124",
+    "wikipedia": "fr:Romilly-sur-Seine",
+    "id": "node/26692564"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7264161,
+      48.5195734
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692576",
+  "properties": {
+    "addr:postcode": "78480",
+    "name": "Verneuil-sur-Seine",
+    "place": "town",
+    "ref:SIREN": "217806421",
+    "wikidata": "Q642326",
+    "id": "node/26692576"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9756367,
+      48.9792052
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694622",
+  "properties": {
+    "addr:postcode": "95530",
+    "name": "La Frette-sur-Seine",
+    "place": "village",
+    "population": "4569",
+    "ref:SIREN": "219502572",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q265200",
+    "wikipedia": "fr:La Frette-sur-Seine",
+    "id": "node/26694622"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.178345,
+      48.9740461
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694769",
+  "properties": {
+    "addr:postcode": "78670",
+    "name": "Villennes-sur-Seine",
+    "place": "village",
+    "id": "node/26694769"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9987648,
+      48.9404491
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694872",
+  "properties": {
+    "addr:postcode": "78740",
+    "name": "Vaux-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217806389",
+    "id": "node/26694872"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9636465,
+      49.0061998
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694880",
+  "properties": {
+    "addr:postcode": "77870",
+    "name": "Vulaines-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217705334",
+    "wikipedia": "fr:Vulaines-sur-Seine",
+    "id": "node/26694880"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7637818,
+      48.430803
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694885",
+  "properties": {
+    "addr:postcode": "77430",
+    "name": "Champagne-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217700798",
+    "wikipedia": "fr:Champagne-sur-Seine",
+    "id": "node/26694885"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8028617,
+      48.3948577
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696206",
+  "properties": {
+    "addr:postcode": "10400",
+    "capital": "7",
+    "name": "Nogent-sur-Seine",
+    "name:fr": "Nogent-sur-Seine",
+    "name:ja": "ノジャン＝シュル＝セーヌ",
+    "name:la": "Novigentum ad Sequanam",
+    "name:ru": "Ножан-сюр-Сен",
+    "name:uk": "Ножан-сюр-Сен",
+    "name:zh": "塞纳河畔诺让",
+    "place": "village",
+    "ref:FR:SIREN": "211002605",
+    "wikipedia": "fr:Nogent-sur-Seine",
+    "id": "node/26696206"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4978181,
+      48.492439
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696388",
+  "properties": {
+    "addr:postcode": "91450",
+    "name": "Soisy-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "219106002",
+    "id": "node/26696388"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4490991,
+      48.6502928
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696588",
+  "properties": {
+    "addr:postcode": "94480",
+    "name": "Ablon-sur-Seine",
+    "name:uk": "Аблон-сюр-Сен",
+    "place": "village",
+    "short_name": "Ablon-sur-S.",
+    "wikidata": "Q1108377",
+    "wikipedia": "fr:Ablon-sur-Seine",
+    "id": "node/26696588"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.421509,
+      48.7247582
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696628",
+  "properties": {
+    "addr:postcode": "78970",
+    "name": "Mézières-sur-Seine",
+    "place": "village",
+    "id": "node/26696628"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.7961756,
+      48.9608736
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696776",
+  "properties": {
+    "addr:postcode": "78290",
+    "name": "Croissy-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217801901",
+    "website": "https://www.croissy.com/",
+    "wikimedia_commons": "Category:Croissy-sur-Seine",
+    "wikipedia": "Croissy-sur-Seine",
+    "id": "node/26696776"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1327881,
+      48.8791554
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696940",
+  "properties": {
+    "addr:postcode": "91250",
+    "name": "Saintry-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "219105772",
+    "id": "node/26696940"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4963163,
+      48.5926056
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696947",
+  "properties": {
+    "addr:postcode": "78270",
+    "name": "Bonnières-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217800895",
+    "id": "node/26696947"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.5809775,
+      49.037481
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697233",
+  "properties": {
+    "addr:postcode": "78410",
+    "name": "Flins-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217802388",
+    "id": "node/26697233"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.8684146,
+      48.9623407
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697703",
+  "properties": {
+    "addr:postcode": "10110",
+    "name": "Bar-sur-Seine",
+    "place": "village",
+    "source:addr:postcode": "source of postcode is from galichon.com/INSEE",
+    "wikidata": "Q328309",
+    "wikipedia": "fr:Bar-sur-Seine",
+    "id": "node/26697703"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.3759103,
+      48.1126529
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697739",
+  "properties": {
+    "addr:postcode": "77670",
+    "name": "Vernou-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217704949",
+    "id": "node/26697739"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8470169,
+      48.3889172
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697846",
+  "properties": {
+    "addr:postcode": "21400",
+    "name": "Châtillon-sur-Seine",
+    "name:ja": "シャティヨン＝シュル＝セーヌ",
+    "place": "town",
+    "population": "5564",
+    "ref:FR:SIREN": "212101547",
+    "source:population": "INSEE 2013",
+    "id": "node/26697846"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.5749139,
+      47.8607467
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697982",
+  "properties": {
+    "addr:postcode": "77480",
+    "name": "Bray-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217700517",
+    "id": "node/26697982"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2394035,
+      48.4149956
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698184",
+  "properties": {
+    "addr:postcode": "77130",
+    "name": "Varennes-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217704824",
+    "id": "node/26698184"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.9301414,
+      48.3766097
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698212",
+  "properties": {
+    "addr:postcode": "78710",
+    "name": "Rosny-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217805316",
+    "id": "node/26698212"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.6280317,
+      49.001733
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/265045794",
+  "properties": {
+    "addr:postcode": "21400",
+    "name": "Charrey-sur-Seine",
+    "place": "village",
+    "population": "166",
+    "ref:FR:SIREN": "212101497",
+    "source:population": "INSEE 2013",
+    "id": "node/265045794"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.5144948,
+      47.944155
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/281816370",
+  "properties": {
+    "addr:postcode": "77920",
+    "name": "Samois-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217704410",
+    "wikidata": "Q250106",
+    "wikipedia": "fr:Samois-sur-Seine",
+    "id": "node/281816370"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7496865,
+      48.4537449
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/290614600",
+  "properties": {
+    "addr:postcode": "27700",
+    "name": "Bernières-sur-Seine",
+    "place": "village",
+    "population": "328",
+    "ref:FR:SIREN": "212700587",
+    "source:population": "INSEE 2013",
+    "id": "node/290614600"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3397414,
+      49.2329673
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/292647535",
+  "properties": {
+    "addr:postcode": "27310",
+    "name": "Barneville-sur-Seine",
+    "place": "village",
+    "population": "467",
+    "ref:FR:SIREN": "212700397",
+    "source:population": "INSEE 2013",
+    "id": "node/292647535"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8476489,
+      49.3798961
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/292649979",
+  "properties": {
+    "addr:postcode": "76940",
+    "name": "La Mailleraye-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217604016",
+    "id": "node/292649979"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.7716823,
+      49.4812146
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/365555435",
+  "properties": {
+    "addr:postcode": "76113",
+    "name": "Hautot-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008",
+    "id": "node/365555435"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9773356,
+      49.3602514
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/366059620",
+  "properties": {
+    "name": "Berville-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008",
+    "id": "node/366059620"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9018061,
+      49.4725074
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/366240769",
+  "properties": {
+    "addr:postcode": "76530",
+    "name": "Yville-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2008",
+    "id": "node/366240769"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8782029,
+      49.3989889
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/393115945",
+  "properties": {
+    "addr:postcode": "10170",
+    "name": "Méry-sur-Seine",
+    "name:uk": "Мері-сюр-Сен",
+    "place": "village",
+    "wikidata": "Q976011",
+    "wikipedia": "fr:Méry-sur-Seine",
+    "id": "node/393115945"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8913919,
+      48.5080851
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/431686211",
+  "properties": {
+    "addr:postcode": "77126",
+    "name": "Châtenay-sur-Seine",
+    "place": "village",
+    "id": "node/431686211"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0961472,
+      48.4176813
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/470366814",
+  "properties": {
+    "addr:postcode": "21400",
+    "name": "Sainte-Colombe-sur-Seine",
+    "place": "village",
+    "id": "node/470366814"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.5424678,
+      47.8707146
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/560742253",
+  "properties": {
+    "addr:postcode": "21400",
+    "name": "Noiron-sur-Seine",
+    "place": "village",
+    "ref:FR:SIREN": "212104608",
+    "id": "node/560742253"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.4860131,
+      47.9475696
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/568021520",
+  "properties": {
+    "addr:postcode": "91250",
+    "name": "Morsang-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "219104353",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "id": "node/568021520"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4924457,
+      48.5708802
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/582532737",
+  "properties": {
+    "addr:postcode": "78250",
+    "name": "Mézy-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217804038",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 1983",
+    "id": "node/582532737"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.8802837,
+      49.0004243
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/602055857",
+  "properties": {
+    "addr:postcode": "78270",
+    "name": "Mousseaux-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217804376",
+    "id": "node/602055857"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.6518608,
+      49.0472102
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/602637578",
+  "properties": {
+    "addr:postcode": "27940",
+    "name": "Courcelles-sur-Seine",
+    "place": "village",
+    "population": "1731",
+    "ref:FR:SIREN": "212701809",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q511324",
+    "wikipedia": "fr:Courcelles-sur-Seine",
+    "id": "node/602637578"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3590126,
+      49.1828874
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/603143192",
+  "properties": {
+    "addr:postcode": "27340",
+    "name": "Criquebeuf-sur-Seine",
+    "place": "village",
+    "population": "1189",
+    "ref:FR:SIREN": "212701882",
+    "source:population": "INSEE 2013",
+    "id": "node/603143192"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.0965298,
+      49.3057868
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/603147647",
+  "properties": {
+    "addr:postcode": "27100",
+    "name": "Tournedos-sur-Seine",
+    "place": "village",
+    "population": "99",
+    "ref:FR:SIREN": "212706519",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Tournedos-sur-Seine",
+    "id": "node/603147647"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2602863,
+      49.2750778
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/647068919",
+  "properties": {
+    "addr:postcode": "77130",
+    "name": "Marolles-sur-Seine",
+    "place": "village",
+    "ref:SIREN": "217702794",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikipedia": "fr:Marolles-sur-Seine",
+    "id": "node/647068919"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0319111,
+      48.3860562
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/649261927",
+  "properties": {
+    "addr:postcode": "10180",
+    "name": "Saint-Benoît-sur-Seine",
+    "place": "village",
+    "ref:FR:SIREN": "211003256",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2010",
+    "id": "node/649261927"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.0306415,
+      48.3691112
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/683453655",
+  "properties": {
+    "addr:postcode": "27680",
+    "name": "Quillebeuf-sur-Seine",
+    "place": "village",
+    "population": "1024",
+    "ref:FR:SIREN": "212704852",
+    "source:population": "INSEE 2013",
+    "id": "node/683453655"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.526914,
+      49.4705499
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/690730558",
+  "properties": {
+    "addr:postcode": "21450",
+    "name": "Saint-Marc-sur-Seine",
+    "place": "village",
+    "id": "node/690730558"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6058773,
+      47.7001997
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1122619868",
+  "properties": {
+    "addr:postcode": "77171",
+    "name": "Melz-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1122619868"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3870965,
+      48.4983632
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1123897383",
+  "properties": {
+    "addr:postcode": "77114",
+    "name": "Villiers-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1123897383"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3742663,
+      48.4570001
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1125552347",
+  "properties": {
+    "addr:postcode": "77480",
+    "name": "Grisy-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1125552347"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3193004,
+      48.4394636
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1125561574",
+  "properties": {
+    "addr:postcode": "77114",
+    "name": "Noyen-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1125561574"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3508554,
+      48.452236
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1125569164",
+  "properties": {
+    "addr:postcode": "77480",
+    "name": "Passy-sur-Seine",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1125569164"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.349561,
+      48.425186
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1347760527",
+  "properties": {
+    "addr:postcode": "10400",
+    "name": "Pont-sur-Seine",
+    "name:fr": "Pont-sur-Seine",
+    "name:uk": "Пон-сюр-Сен",
+    "place": "village",
+    "population": "1086",
+    "ref:FR:SIREN": "211002894",
+    "source:population": "INSEE 2012",
+    "website": "http://www.commune-pontsurseine.fr/",
+    "wikidata": "Q818042",
+    "wikipedia": "fr:Pont-sur-Seine",
+    "id": "node/1347760527"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5955059,
+      48.5185158
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1347768842",
+  "properties": {
+    "addr:postcode": "10400",
+    "name": "Marnay-sur-Seine",
+    "name:fr": "Marnay-sur-Seine",
+    "name:uk": "Марне-сюр-Сен",
+    "place": "village",
+    "population": "231",
+    "ref:FR:SIREN": "211002183",
+    "source:population": "INSEE 2012",
+    "website": "https://www.marnay-sur-seine.fr/",
+    "wikidata": "Q1146249",
+    "wikipedia": "fr:Marnay-sur-Seine",
+    "id": "node/1347768842"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5590088,
+      48.5131164
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1358669038",
+  "properties": {
+    "addr:postcode": "92600",
+    "name": "Asnières-sur-Seine",
+    "name:fr": "Asnières-sur-Seine",
+    "name:ja": "アニエール＝シュル＝セーヌ",
+    "name:ru": "Аньер-сюр-Сен",
+    "name:uk": "Аньєр-сюр-Сен",
+    "place": "town",
+    "population": "81666",
+    "wikidata": "Q191415",
+    "wikipedia": "fr:Asnières-sur-Seine",
+    "id": "node/1358669038"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2890454,
+      48.9105948
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1391379638",
+  "properties": {
+    "addr:postcode": "94200",
+    "name": "Ivry-sur-Seine",
+    "name:ja": "イヴリー＝シュル＝セーヌ",
+    "name:ru": "Иври-сюр-Сен",
+    "name:uk": "Іврі-сюр-Сен",
+    "place": "town",
+    "short_name": "Ivry-sur-S.",
+    "source:addr:postcode": "source of postcode is from galichon.com/INSEE",
+    "wikidata": "Q193877",
+    "wikipedia": "fr:Ivry-sur-Seine",
+    "id": "node/1391379638"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3872525,
+      48.8122302
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1393686793",
+  "properties": {
+    "name": "Saint-Ouen-sur-Seine",
+    "name:ru": "Сант-Уан",
+    "name:uk": "Сент-Уан",
+    "place": "town",
+    "id": "node/1393686793"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.334267,
+      48.911729
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1453632010",
+  "properties": {
+    "name": "Marcilly-sur-Seine",
+    "name:uk": "Марсії-сюр-Сен",
+    "place": "village",
+    "id": "node/1453632010"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7104874,
+      48.5561602
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1453704374",
+  "properties": {
+    "name": "Conflans-sur-Seine",
+    "name:uk": "Конфлан-сюр-Сен",
+    "place": "village",
+    "id": "node/1453704374"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6802243,
+      48.5516509
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1644491798",
+  "properties": {
+    "addr:postcode": "10250",
+    "name": "Mussy-sur-Seine",
+    "place": "village",
+    "source": "Bing ; cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q740144",
+    "wikipedia": "fr:Mussy-sur-Seine",
+    "id": "node/1644491798"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.4975367,
+      47.9775941
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1654424477",
+  "properties": {
+    "addr:postcode": "10250",
+    "name": "Gyé-sur-Seine",
+    "place": "village",
+    "source": "Bing ; cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q683930",
+    "wikipedia": "fr:Gyé-sur-Seine",
+    "id": "node/1654424477"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.4296935,
+      48.0294269
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1753590359",
+  "properties": {
+    "addr:postcode": "21510",
+    "name": "Quemigny-sur-Seine",
+    "place": "village",
+    "id": "node/1753590359"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6681254,
+      47.6628649
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1753591860",
+  "properties": {
+    "addr:postcode": "21510",
+    "name": "Bellenod-sur-Seine",
+    "place": "village",
+    "population": "78",
+    "source:population": "INSEE 2013",
+    "id": "node/1753591860"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.64534,
+      47.69752
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1870936570",
+  "properties": {
+    "addr:postcode": "10250",
+    "name": "Neuville-sur-Seine",
+    "place": "village",
+    "population": "396",
+    "id": "node/1870936570"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.410544,
+      48.0418257
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871648164",
+  "properties": {
+    "addr:postcode": "77480",
+    "name": "Mouy-sur-Seine",
+    "place": "village",
+    "id": "node/1871648164"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.23787,
+      48.41975
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871697580",
+  "properties": {
+    "addr:postcode": "21400",
+    "name": "Aisey-sur-Seine",
+    "place": "village",
+    "population": "225",
+    "source:population": "INSEE 2013",
+    "id": "node/1871697580"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.5796206,
+      47.7506547
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871697658",
+  "properties": {
+    "addr:postcode": "21400",
+    "name": "Nod-sur-Seine",
+    "place": "village",
+    "wikidata": "Q298090",
+    "wikipedia": "fr:Nod-sur-Seine",
+    "id": "node/1871697658"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.57135,
+      47.76605
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3873458209",
+  "properties": {
+    "name": "Meudon-sur-Seine",
+    "place": "suburb",
+    "id": "node/3873458209"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2384571,
+      48.8180748
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/4382777699",
+  "properties": {
+    "name": "Livry-sur-Seine",
+    "place": "village",
+    "id": "node/4382777699"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6849333,
+      48.5110545
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/4407661785",
+  "properties": {
+    "addr:postcode": "78510",
+    "name": "Triel-sur-Seine",
+    "place": "town",
+    "ref:SIREN": "217806249",
+    "id": "node/4407661785"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.0030818,
+      48.980925
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/11538536997",
+  "properties": {
+    "name": "La Celle-sur-Seine",
+    "place": "village",
+    "id": "node/11538536997"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8243985,
+      48.3936008
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,1106 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691437",
+  "properties": {
+    "addr:postcode": "93330",
+    "name": "Neuilly-sur-Marne",
+    "place": "town",
+    "wikidata": "Q220906",
+    "id": "node/26691437"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5290045,
+      48.8565557
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691580",
+  "properties": {
+    "addr:postcode": "94360",
+    "name": "Bry-sur-Marne",
+    "name:ru": "Бри-сюр-Марн",
+    "name:uk": "Брі-сюр-Марн",
+    "place": "town",
+    "short_name": "Bry-sur-M.",
+    "wikidata": "Q369954",
+    "wikipedia": "fr:Bry-sur-Marne",
+    "id": "node/26691580"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5193322,
+      48.8352872
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691678",
+  "properties": {
+    "addr:postcode": "77360",
+    "name": "Vaires-sur-Marne",
+    "place": "town",
+    "ref:SIREN": "217704790",
+    "id": "node/26691678"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6398292,
+      48.8732841
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691909",
+  "properties": {
+    "addr:postcode": "94350",
+    "admin_level": "8",
+    "capital": "8",
+    "name": "Villiers-sur-Marne",
+    "place": "town",
+    "short_name": "Villiers-sur-M.",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2011",
+    "wikidata": "Q258636",
+    "wikipedia": "fr:Villiers-sur-Marne",
+    "id": "node/26691909"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5406696,
+      48.8262055
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691982",
+  "properties": {
+    "addr:postcode": "94130",
+    "capital": "7",
+    "name": "Nogent-sur-Marne",
+    "place": "town",
+    "ref:SIREN": "219400520",
+    "short_name": "Nogent-sur-M.",
+    "wikidata": "Q212274",
+    "wikipedia": "fr:Nogent-sur-Marne",
+    "id": "node/26691982"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4916592,
+      48.8387639
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691997",
+  "properties": {
+    "addr:postcode": "94500",
+    "name": "Champigny-sur-Marne",
+    "name:ja": "シャンピニー＝シュル＝マルヌ",
+    "place": "town",
+    "short_name": "Champigny-sur-M.",
+    "wikidata": "Q192378",
+    "wikipedia": "fr:Champigny-sur-Marne",
+    "id": "node/26691997"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5107384,
+      48.8137759
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692121",
+  "properties": {
+    "addr:postcode": "77400",
+    "name": "Lagny-sur-Marne",
+    "place": "town",
+    "ref:SIREN": "217702430",
+    "wikidata": "Q9155",
+    "id": "node/26692121"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7056056,
+      48.8773018
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692219",
+  "properties": {
+    "addr:postcode": "94170",
+    "name": "Le Perreux-sur-Marne",
+    "name:uk": "Ле-Перре-сюр-Марн",
+    "place": "town",
+    "ref:FR:SIREN": "219400587",
+    "short_name": "Le Perreux-sur-M.",
+    "wikidata": "Q990408",
+    "wikipedia": "fr:Le Perreux-sur-Marne",
+    "id": "node/26692219"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5077111,
+      48.840627
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692281",
+  "properties": {
+    "addr:postcode": "77420",
+    "name": "Champs-sur-Marne",
+    "place": "town",
+    "ref:SIREN": "217700830",
+    "wikidata": "Q242536",
+    "id": "node/26692281"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6027219,
+      48.8526892
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692298",
+  "properties": {
+    "addr:postcode": "94380",
+    "name": "Bonneuil-sur-Marne",
+    "name:uk": "Бонней-сюр-Марн",
+    "place": "town",
+    "short_name": "Bonneuil-sur-M.",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q670957",
+    "wikipedia": "fr:Bonneuil-sur-Marne",
+    "id": "node/26692298"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4869009,
+      48.7737116
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692517",
+  "properties": {
+    "addr:postcode": "94430",
+    "name": "Chennevières-sur-Marne",
+    "name:uk": "Шеннв'єр-сюр-Марн",
+    "place": "town",
+    "ref:FR:SIREN": "219400199",
+    "short_name": "Chennevières-sur-M.",
+    "wikidata": "Q1108408",
+    "wikipedia": "fr:Chennevières-sur-Marne",
+    "id": "node/26692517"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.530442,
+      48.7965001
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692523",
+  "properties": {
+    "addr:postcode": "94490",
+    "admin_level": "8",
+    "alt_name": "Ormesson",
+    "capital": "8",
+    "name": "Ormesson-sur-Marne",
+    "old_name": "Amboille",
+    "place": "town",
+    "ref:SIREN": "219400553",
+    "short_name": "Ormesson",
+    "wikidata": "Q243136",
+    "wikipedia": "fr:Ormesson-sur-Marne",
+    "id": "node/26692523"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5483998,
+      48.785641
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694462",
+  "properties": {
+    "addr:country": "FR",
+    "name": "Gournay-sur-Marne",
+    "place": "town",
+    "population": "7000",
+    "population:date": "2023",
+    "wikidata": "Q245479",
+    "wikipedia": "fr:Gournay-sur-Marne",
+    "id": "node/26694462"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5769908,
+      48.8597463
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694745",
+  "properties": {
+    "addr:postcode": "77410",
+    "name": "Annet-sur-Marne",
+    "place": "village",
+    "id": "node/26694745"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7189327,
+      48.9263555
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694892",
+  "properties": {
+    "addr:postcode": "77400",
+    "name": "Thorigny-sur-Marne",
+    "place": "village",
+    "ref:SIREN": "217704642",
+    "id": "node/26694892"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7115737,
+      48.8841856
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697946",
+  "properties": {
+    "addr:postcode": "02310",
+    "name": "Charly-sur-Marne",
+    "place": "village",
+    "population": "2500",
+    "ref:FR:SIREN": "210201505",
+    "id": "node/26697946"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2843296,
+      48.9754438
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95576677",
+  "properties": {
+    "addr:postcode": "02850",
+    "name": "Barzy-sur-Marne",
+    "place": "village",
+    "population": "400",
+    "ref:FR:SIREN": "210200507",
+    "id": "node/95576677"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5528175,
+      49.0864834
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95577919",
+  "properties": {
+    "addr:postcode": "02570",
+    "name": "Chézy-sur-Marne",
+    "place": "village",
+    "population": "1369",
+    "ref:FR:SIREN": "210201737",
+    "id": "node/95577919"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.36561,
+      48.9896
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95578075",
+  "properties": {
+    "addr:postcode": "02310",
+    "name": "Crouttes-sur-Marne",
+    "place": "village",
+    "population": "600",
+    "ref:FR:SIREN": "210202271",
+    "id": "node/95578075"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.24001,
+      48.9796
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95578811",
+  "properties": {
+    "addr:postcode": "02850",
+    "name": "Passy-sur-Marne",
+    "place": "village",
+    "id": "node/95578811"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5731984,
+      49.0614202
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95579144",
+  "properties": {
+    "addr:postcode": "02310",
+    "name": "Romeny-sur-Marne",
+    "place": "village",
+    "population": "400",
+    "ref:FR:SIREN": "210206280",
+    "id": "node/95579144"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.33477,
+      48.9755
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95579181",
+  "properties": {
+    "addr:postcode": "02850",
+    "name": "Trélou-sur-Marne",
+    "place": "village",
+    "population": "900",
+    "ref:FR:SIREN": "210207213",
+    "id": "node/95579181"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.60514,
+      49.0792
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/261660395",
+  "properties": {
+    "addr:postcode": "77440",
+    "name": "Mary-sur-Marne",
+    "place": "village",
+    "ref:SIREN": "217702802",
+    "id": "node/261660395"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0284612,
+      49.0155891
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/264144676",
+  "properties": {
+    "name": "Châtillon-sur-Marne",
+    "name:uk": "Шатійон-сюр-Марн",
+    "place": "village",
+    "id": "node/264144676"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7583528,
+      49.0989942
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/296321252",
+  "properties": {
+    "name": "Cloyes-sur-Marne",
+    "place": "village",
+    "id": "node/296321252"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6383086,
+      48.6637624
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/296321261",
+  "properties": {
+    "name": "Bignicourt-sur-Marne",
+    "place": "village",
+    "id": "node/296321261"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6104505,
+      48.6836855
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/301159029",
+  "properties": {
+    "addr:postcode": "52200",
+    "name": "Saint-Vallier-sur-Marne",
+    "place": "village",
+    "id": "node/301159029"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3946075,
+      47.8367138
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/301159099",
+  "properties": {
+    "addr:postcode": "52200",
+    "name": "Balesmes-sur-Marne",
+    "place": "village",
+    "population": "255",
+    "source:population": "INSEE 2013",
+    "id": "node/301159099"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3731498,
+      47.820349
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/412571652",
+  "properties": {
+    "addr:postcode": "02400",
+    "census": "2006",
+    "name": "Azy-sur-Marne",
+    "place": "village",
+    "population": "372",
+    "ref:FR:SIREN": "210200424",
+    "source": "Wikipedia",
+    "id": "node/412571652"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3669444,
+      49.0019444
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/415548209",
+  "properties": {
+    "addr:postcode": "02400",
+    "name": "Essômes-sur-Marne",
+    "name:fr": "Essômes-sur-Marne",
+    "name:ru": "Эссом-сюр-Марн",
+    "place": "village",
+    "population": "2735",
+    "ref:FR:SIREN": "210202735",
+    "source": "Wikipedia",
+    "source:population": "INSEE 2011",
+    "website": "http://messomes.free.fr/",
+    "wikidata": "Q989956",
+    "wikipedia": "fr:Essômes-sur-Marne",
+    "id": "node/415548209"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3745637,
+      49.0301415
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/415548645",
+  "properties": {
+    "addr:postcode": "02400",
+    "census": "2006",
+    "name": "Étampes-sur-Marne",
+    "place": "village",
+    "population": "1235",
+    "ref:FR:SIREN": "210202750",
+    "source": "Wikipedia",
+    "id": "node/415548645"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.419527,
+      49.0340023
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/451720069",
+  "properties": {
+    "addr:postcode": "52300",
+    "name": "Rouvroy-sur-Marne",
+    "place": "village",
+    "population": "379",
+    "id": "node/451720069"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1470911,
+      48.3580019
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/482234658",
+  "properties": {
+    "name": "Condé-sur-Marne",
+    "place": "village",
+    "wikipedia": "fr:Condé-sur-Marne",
+    "id": "node/482234658"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.1796065,
+      49.0437143
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/516268570",
+  "properties": {
+    "addr:postcode": "77260",
+    "name": "Ussy-sur-Marne",
+    "place": "village",
+    "ref:SIREN": "217704782",
+    "id": "node/516268570"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0708208,
+      48.9550995
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/654334336",
+  "properties": {
+    "name": "Loisy-sur-Marne",
+    "place": "village",
+    "id": "node/654334336"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.5441728,
+      48.7591151
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/726795125",
+  "properties": {
+    "name": "Tours-sur-Marne",
+    "place": "village",
+    "wikipedia": "fr:Tours-sur-Marne",
+    "id": "node/726795125"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.1203277,
+      49.0484724
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1006036885",
+  "properties": {
+    "addr:postcode": "77410",
+    "name": "Précy-sur-Marne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "id": "node/1006036885"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7746364,
+      48.9308622
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1006074001",
+  "properties": {
+    "addr:postcode": "77410",
+    "name": "Fresnes-sur-Marne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "id": "node/1006074001"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7398914,
+      48.9379907
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1133013869",
+  "properties": {
+    "name": "Rachecourt-sur-Marne",
+    "name:uk": "Рашкур-сюр-Марн",
+    "place": "village",
+    "id": "node/1133013869"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0996314,
+      48.5260831
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1134545066",
+  "properties": {
+    "name": "Prez-sur-Marne",
+    "name:uk": "Беар-сюр-Марн",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q740607",
+    "wikipedia": "fr:Prez-sur-Marne",
+    "id": "node/1134545066"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0524032,
+      48.5614932
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1143549718",
+  "properties": {
+    "name": "La Chaussée-sur-Marne",
+    "place": "village",
+    "id": "node/1143549718"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.519852,
+      48.834967
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1143892379",
+  "properties": {
+    "name": "Vésigneul-sur-Marne",
+    "place": "village",
+    "wikipedia": "fr:Vésigneul-sur-Marne",
+    "id": "node/1143892379"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.4581785,
+      48.8726678
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1513252241",
+  "properties": {
+    "name": "Fontaines-sur-Marne",
+    "place": "village",
+    "id": "node/1513252241"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1013312,
+      48.5443419
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1515845652",
+  "properties": {
+    "name": "Roches-sur-Marne",
+    "place": "village",
+    "id": "node/1515845652"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0387458,
+      48.6065328
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1698659117",
+  "properties": {
+    "name": "Mairy-sur-Marne",
+    "place": "village",
+    "wikipedia": "fr:Mairy-sur-Marne",
+    "id": "node/1698659117"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.4109028,
+      48.8821233
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1706129268",
+  "properties": {
+    "name": "Isle-sur-Marne",
+    "place": "village",
+    "id": "node/1706129268"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6882162,
+      48.6404458
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1707537535",
+  "properties": {
+    "addr:postcode": "77660",
+    "name": "Changis-sur-Marne",
+    "place": "village",
+    "id": "node/1707537535"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0139203,
+      48.9586795
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708394435",
+  "properties": {
+    "addr:postcode": "52300",
+    "name": "Mussey-sur-Marne",
+    "place": "village",
+    "population": "336",
+    "id": "node/1708394435"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1496728,
+      48.3785791
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708885571",
+  "properties": {
+    "addr:postcode": "52000",
+    "name": "Luzy-sur-Marne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708885571"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1852533,
+      48.0573907
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708885710",
+  "properties": {
+    "addr:postcode": "52800",
+    "name": "Marnay-sur-Marne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708885710"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2368184,
+      48.0098127
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708886091",
+  "properties": {
+    "addr:postcode": "52320",
+    "name": "Soncourt-sur-Marne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708886091"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.115736,
+      48.2529067
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708886177",
+  "properties": {
+    "addr:postcode": "52800",
+    "name": "Vesaignes-sur-Marne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708886177"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.264086,
+      48.0009754
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871648165",
+  "properties": {
+    "addr:postcode": "77730",
+    "name": "Méry-sur-Marne",
+    "place": "village",
+    "population": "670",
+    "id": "node/1871648165"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.20077,
+      48.96668
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871648168",
+  "properties": {
+    "addr:postcode": "77730",
+    "name": "Saâcy-sur-Marne",
+    "place": "village",
+    "id": "node/1871648168"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2082243,
+      48.9612712
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871805613",
+  "properties": {
+    "name": "Aulnay-sur-Marne",
+    "name:fr": "Aulnay-sur-Marne",
+    "name:sr": "Олне-на-Марни",
+    "name:uk": "Ольне-сюр-Марн",
+    "name:zh": "马恩河畔奥尔奈",
+    "place": "village",
+    "id": "node/1871805613"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.20285,
+      49.00668
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2110976940",
+  "properties": {
+    "name": "Bayard-sur-Marne",
+    "place": "village",
+    "id": "node/2110976940"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0769917,
+      48.55407
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2402489533",
+  "properties": {
+    "name": "Provenchères-sur-Marne",
+    "place": "village",
+    "id": "node/2402489533"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1194772,
+      48.3098959
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2436671665",
+  "properties": {
+    "addr:postcode": "52170",
+    "name": "Breuil-sur-Marne",
+    "place": "hamlet",
+    "wikidata": "Q750549",
+    "wikipedia": "fr:Breuil-sur-Marne",
+    "id": "node/2436671665"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.11344,
+      48.5065918
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3001988329",
+  "properties": {
+    "addr:postcode": "77730",
+    "name": "Nanteuil-sur-Marne",
+    "place": "village",
+    "ref:SIREN": "217703313",
+    "wikidata": "Q1459955",
+    "wikipedia": "fr:Nanteuil-sur-Marne",
+    "id": "node/3001988329"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2208862,
+      48.9780241
+    ]
+  }
+}
+]
+}

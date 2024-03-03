@@ -1,0 +1,266 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26694608",
+  "properties": {
+    "addr:postcode": "03150",
+    "name": "Varennes-sur-Allier",
+    "name:oc": "Varenas d'Alèir",
+    "place": "village",
+    "ref:FR:SIREN": "210302980",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikipedia": "fr:Varennes-sur-Allier",
+    "id": "node/26694608"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4033756,
+      46.3127469
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697270",
+  "properties": {
+    "addr:postcode": "63570",
+    "alt_name": "Auzat-la-Combelle",
+    "name": "Auzat-sur-Allier",
+    "name:oc": "v-Ausat",
+    "place": "hamlet",
+    "population": "2060",
+    "ref:FR:SIREN": "216300228",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2013",
+    "id": "node/26697270"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3164065,
+      45.452804
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82336304",
+  "properties": {
+    "addr:postcode": "03340",
+    "name": "Bessay-sur-Allier",
+    "place": "village",
+    "ref:FR:SIREN": "210300257",
+    "wikipedia": "fr:Bessay-sur-Allier",
+    "id": "node/82336304"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3631418,
+      46.442066
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82336407",
+  "properties": {
+    "addr:postcode": "03320",
+    "name": "Château-sur-Allier",
+    "place": "village",
+    "ref:FR:SIREN": "210300646",
+    "wikipedia": "fr:Château-sur-Allier",
+    "id": "node/82336407"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.02746,
+      46.7663
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82336840",
+  "properties": {
+    "addr:postcode": "03500",
+    "name": "Monétay-sur-Allier",
+    "place": "village",
+    "ref:FR:SIREN": "210301768",
+    "id": "node/82336840"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.30058,
+      46.3821
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82337164",
+  "properties": {
+    "addr:postcode": "03460",
+    "name": "Villeneuve-sur-Allier",
+    "name:oc": "Vilanòva d'Alèir",
+    "place": "village",
+    "ref:FR:SIREN": "210303160",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q261404",
+    "wikipedia": "fr:Villeneuve-sur-Allier",
+    "id": "node/82337164"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2488845,
+      46.6590166
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82337192",
+  "properties": {
+    "addr:postcode": "03400",
+    "name": "Toulon-sur-Allier",
+    "place": "village",
+    "ref:FR:SIREN": "210302865",
+    "wikipedia": "fr:Toulon-sur-Allier",
+    "id": "node/82337192"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3614638,
+      46.5147054
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/475584612",
+  "properties": {
+    "addr:postcode": "63800",
+    "name": "Saint-Georges-sur-Allier",
+    "name:oc": "Sent Jòrge d'Alèir",
+    "place": "village",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/475584612"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2441974,
+      45.7107569
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/722643191",
+  "properties": {
+    "addr:postcode": "03700",
+    "name": "Bellerive-sur-Allier",
+    "name:oc": "Vaissa",
+    "place": "village",
+    "population": "8617",
+    "ref:FR:SIREN": "210300232",
+    "source": "Wikipedia",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q245132",
+    "wikipedia": "fr:Bellerive-sur-Allier",
+    "id": "node/722643191"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4063997,
+      46.1156244
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1362888768",
+  "properties": {
+    "addr:postcode": "63800",
+    "alt_name": "Pérignat-ès-Allier",
+    "name": "Pérignat-sur-Allier",
+    "name:oc": "Pairinhat",
+    "place": "village",
+    "source": "wikipedia",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q241561",
+    "wikipedia": "fr:Pérignat-sur-Allier",
+    "id": "node/1362888768"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2329941,
+      45.7290686
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1435952908",
+  "properties": {
+    "addr:postcode": "18150",
+    "name": "Apremont-sur-Allier",
+    "place": "village",
+    "wikidata": "Q621803",
+    "wikipedia": "fr:Apremont-sur-Allier",
+    "id": "node/1435952908"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0475108,
+      46.9063966
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1696853467",
+  "properties": {
+    "addr:postcode": "18600",
+    "name": "Mornay-sur-Allier",
+    "place": "village",
+    "id": "node/1696853467"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0309561,
+      46.8208875
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1762743814",
+  "properties": {
+    "addr:postcode": "58240",
+    "name": "Mars-sur-Allier",
+    "place": "village",
+    "population": "284",
+    "id": "node/1762743814"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0879963,
+      46.8559125
+    ]
+  }
+}
+]
+}

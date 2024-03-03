@@ -1,0 +1,338 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695087",
+  "properties": {
+    "addr:postcode": "89140",
+    "name": "Pont-sur-Yonne",
+    "name:ja": "ポン＝シュル＝ヨンヌ",
+    "name:ru": "Пон-сюр-Йонна",
+    "name:zh": "约讷河桥村",
+    "place": "village",
+    "population": "3316",
+    "population:date": "2019-01-01",
+    "ref:FR:SIREN": "218903094",
+    "wikidata": "Q752938",
+    "wikipedia": "en:Pont-sur-Yonne",
+    "id": "node/26695087"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2045813,
+      48.2852895
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36162850",
+  "properties": {
+    "addr:postcode": "58800",
+    "name": "Marigny-sur-Yonne",
+    "place": "village",
+    "population": "210",
+    "source:population": "INSEE 2013",
+    "id": "node/36162850"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6515133,
+      47.2798748
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/325224436",
+  "properties": {
+    "addr:postcode": "58500",
+    "name": "Villiers-sur-Yonne",
+    "place": "village",
+    "population": "309",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q28553",
+    "wikipedia": "fr:Villiers-sur-Yonne",
+    "id": "node/325224436"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5755139,
+      47.4115435
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/767990915",
+  "properties": {
+    "addr:postcode": "89480",
+    "name": "Coulanges-sur-Yonne",
+    "place": "village",
+    "population": "556",
+    "ref:FR:SIREN": "218901197",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1434336",
+    "wikipedia": "fr:Coulanges-sur-Yonne",
+    "id": "node/767990915"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5394932,
+      47.5264213
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1136761378",
+  "properties": {
+    "addr:postcode": "89290",
+    "name": "Champs-sur-Yonne",
+    "name:ru": "Шан-сюр-Йонна",
+    "place": "village",
+    "population": "1573",
+    "source:population": "INSEE 2013",
+    "id": "node/1136761378"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6014046,
+      47.739362
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1273320895",
+  "properties": {
+    "addr:postcode": "89500",
+    "name": "Villeneuve-sur-Yonne",
+    "name:ja": "ヴィルヌーヴ＝シュル＝ヨンヌ",
+    "name:ru": "Вильнёв-сюр-Йон",
+    "place": "village",
+    "population": "5263",
+    "population:date": "2009",
+    "source:population": "INSEE",
+    "website": "https://www.villeneuve-yonne.fr/",
+    "wikidata": "Q898114",
+    "wikipedia": "fr:Villeneuve-sur-Yonne",
+    "id": "node/1273320895"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2942751,
+      48.0820102
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1574344322",
+  "properties": {
+    "addr:postcode": "89250",
+    "name": "Chemilly-sur-Yonne",
+    "name:ru": "Шемийи-сюр-Йонна",
+    "place": "village",
+    "population": "947",
+    "source": "bing 2011",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Chemilly-sur-Yonne",
+    "id": "node/1574344322"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5590171,
+      47.8985791
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1600299505",
+  "properties": {
+    "addr:postcode": "89660",
+    "name": "Lichères-sur-Yonne",
+    "place": "village",
+    "id": "node/1600299505"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5904397,
+      47.5055118
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1600299514",
+  "properties": {
+    "addr:postcode": "89480",
+    "admin_level": "8",
+    "name": "Lucy-sur-Yonne",
+    "place": "village",
+    "wikidata": "Q127814",
+    "wikipedia": "fr:Lucy-sur-Yonne",
+    "id": "node/1600299514"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5819604,
+      47.5237818
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1600299525",
+  "properties": {
+    "admin_level": "8",
+    "name": "Merry-sur-Yonne",
+    "place": "village",
+    "wikidata": "Q223606",
+    "wikipedia": "fr:Merry-sur-Yonne",
+    "id": "node/1600299525"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6421762,
+      47.5633943
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1668921087",
+  "properties": {
+    "addr:postcode": "89300",
+    "name": "Saint-Aubin-sur-Yonne",
+    "name:ja": "サン＝トーバン＝シュル＝ヨンヌ",
+    "place": "village",
+    "population": "452",
+    "source:population": "INSEE 2013",
+    "id": "node/1668921087"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3454569,
+      48.0009001
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1696051404",
+  "properties": {
+    "admin_level": "8",
+    "name": "Trucy-sur-Yonne",
+    "place": "village",
+    "population": "141",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q127789",
+    "wikipedia": "fr:Trucy-sur-Yonne",
+    "id": "node/1696051404"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6591,
+      47.62802
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1762738638",
+  "properties": {
+    "addr:postcode": "58800",
+    "name": "Mouron-sur-Yonne",
+    "place": "village",
+    "population": "99",
+    "wikipedia": "fr:Mouron-sur-Yonne",
+    "id": "node/1762738638"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7401765,
+      47.1901116
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1846612878",
+  "properties": {
+    "addr:postcode": "89140",
+    "name": "Courlon-sur-Yonne",
+    "name:ru": "Курлон-сюр-Йонна",
+    "name:uk": "Курлон-сюр-Іонн",
+    "place": "village",
+    "population": "1164",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1140269",
+    "wikipedia": "fr:Courlon-sur-Yonne",
+    "id": "node/1846612878"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.1666834,
+      48.3385316
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1868677808",
+  "properties": {
+    "addr:postcode": "89100",
+    "name": "Courtois-sur-Yonne",
+    "name:ja": "クルトワ＝シュル＝ヨンヌ",
+    "name:ru": "Куртуа-сюр-Йонна",
+    "name:zh": "约讷河畔库尔图瓦",
+    "place": "village",
+    "population": "799",
+    "source:population": "INSEE 2013",
+    "id": "node/1868677808"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2552521,
+      48.2260873
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871648162",
+  "properties": {
+    "addr:postcode": "77130",
+    "name": "Misy-sur-Yonne",
+    "place": "village",
+    "wikipedia": "fr:Misy-sur-Yonne",
+    "id": "node/1871648162"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0891,
+      48.35967
+    ]
+  }
+}
+]
+}

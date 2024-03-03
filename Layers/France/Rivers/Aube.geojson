@@ -1,0 +1,400 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695044",
+  "properties": {
+    "addr:postcode": "10700",
+    "name": "Arcis-sur-Aube",
+    "name:fr": "Arcis-sur-Aube",
+    "name:la": "Artiaca",
+    "name:ru": "Арси-сюр-Об",
+    "name:sr": "Арси-сир-Об",
+    "name:uk": "Арсі-сюр-Об",
+    "name:zh": "奥布河畔阿尔西",
+    "place": "village",
+    "ref:FR:SIREN": "211000054",
+    "wikidata": "Q269401",
+    "wikipedia": "fr:Arcis-sur-Aube",
+    "id": "node/26695044"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.1421213,
+      48.5362425
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697925",
+  "properties": {
+    "addr:postcode": "10200",
+    "capital": "7",
+    "name": "Bar-sur-Aube",
+    "name:fr": "Bar-sur-Aube",
+    "name:ja": "バール＝シュル＝オーブ",
+    "name:la": "Barium ad Albam",
+    "name:ru": "Бар-сюр-Об",
+    "name:sr": "Бар-сир-Об",
+    "name:uk": "Бар-сюр-Об",
+    "name:zh": "奥布河畔巴尔",
+    "place": "town",
+    "population": "4774",
+    "population:date": "2020",
+    "ref:FR:SIREN": "211000310",
+    "source:population": "https://www.insee.fr/fr/statistiques/6676182?geo=COM-10033",
+    "wikidata": "Q209093",
+    "wikipedia": "fr:Bar-sur-Aube",
+    "id": "node/26697925"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7058337,
+      48.2332047
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/296305437",
+  "properties": {
+    "name": "Granges-sur-Aube",
+    "name:uk": "Гранж-сюр-Об",
+    "place": "village",
+    "id": "node/296305437"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8513053,
+      48.582303
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/296306893",
+  "properties": {
+    "addr:postcode": "10700",
+    "name": "Champigny-sur-Aube",
+    "place": "village",
+    "wikidata": "Q945737",
+    "wikipedia": "fr:Champigny-sur-Aube",
+    "id": "node/296306893"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.0715171,
+      48.5603428
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/444301947",
+  "properties": {
+    "addr:postcode": "52120",
+    "name": "Laferté-sur-Aube",
+    "place": "village",
+    "id": "node/444301947"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7825937,
+      48.0974797
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/451671787",
+  "properties": {
+    "addr:postcode": "10500",
+    "name": "Blaincourt-sur-Aube",
+    "place": "village",
+    "population": "96",
+    "source:population": "INSEE 2014",
+    "id": "node/451671787"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.454929,
+      48.3903849
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/456040018",
+  "properties": {
+    "addr:postcode": "10500",
+    "name": "Molins-sur-Aube",
+    "place": "village",
+    "wikidata": "Q1104495",
+    "wikipedia": "fr:Molins-sur-Aube",
+    "id": "node/456040018"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.3818012,
+      48.4358565
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/465407488",
+  "properties": {
+    "name": "Rouvres-sur-Aube",
+    "place": "village",
+    "id": "node/465407488"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.9942318,
+      47.857099
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/467094036",
+  "properties": {
+    "name": "Bay-sur-Aube",
+    "place": "village",
+    "id": "node/467094036"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0640997,
+      47.8213999
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/470366678",
+  "properties": {
+    "addr:postcode": "10170",
+    "name": "Étrelles-sur-Aube",
+    "place": "village",
+    "wikidata": "Q1146691",
+    "wikipedia": "fr:Étrelles-sur-Aube",
+    "id": "node/470366678"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8722654,
+      48.5609436
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/569088658",
+  "properties": {
+    "addr:postcode": "10170",
+    "name": "Longueville-sur-Aube",
+    "place": "village",
+    "wikidata": "Q928475",
+    "wikipedia": "fr:Longueville-sur-Aube",
+    "id": "node/569088658"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.9125863,
+      48.5546173
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1278089706",
+  "properties": {
+    "addr:postcode": "10700",
+    "name": "Saint-Nabord-sur-Aube",
+    "name:ru": "Сен-Набор-сюр-Об",
+    "name:uk": "Сен-Набор-сюр-Об",
+    "name:ur": "سینٹ-نبورد-سر-ابے",
+    "name:zh": "奥布河畔圣纳博尔 (奥布省)",
+    "place": "village",
+    "wikidata": "Q1105133",
+    "wikipedia": "fr:Saint-Nabord-sur-Aube",
+    "id": "node/1278089706"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.214373,
+      48.5265275
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1347141341",
+  "properties": {
+    "addr:postcode": "10240",
+    "name": "Nogent-sur-Aube",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010;Bing",
+    "id": "node/1347141341"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.3089787,
+      48.4951633
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1419176067",
+  "properties": {
+    "name": "Aulnoy-sur-Aube",
+    "place": "village",
+    "id": "node/1419176067"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0329488,
+      47.8339517
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1706129384",
+  "properties": {
+    "name": "Saron-sur-Aube",
+    "place": "village",
+    "id": "node/1706129384"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.73056,
+      48.56797
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708394047",
+  "properties": {
+    "addr:postcode": "52210",
+    "name": "Aubepierre-sur-Aube",
+    "place": "village",
+    "population": "188",
+    "source:population": "INSEE 2013",
+    "id": "node/1708394047"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.9346,
+      47.91456
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708394409",
+  "properties": {
+    "addr:postcode": "52120",
+    "name": "Lanty-sur-Aube",
+    "place": "village",
+    "id": "node/1708394409"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7698292,
+      48.0246258
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709238134",
+  "properties": {
+    "addr:postcode": "10700",
+    "name": "Villette-sur-Aube",
+    "place": "village",
+    "wikipedia": "fr:Villette-sur-Aube",
+    "id": "node/1709238134"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.101141,
+      48.5348122
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1753570379",
+  "properties": {
+    "addr:postcode": "21520",
+    "name": "Montigny-sur-Aube",
+    "place": "village",
+    "id": "node/1753570379"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7781697,
+      47.9534615
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1753570380",
+  "properties": {
+    "name": "Veuxhaulles-sur-Aube",
+    "place": "village",
+    "postal_code": "21520",
+    "id": "node/1753570380"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8043978,
+      47.9431941
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/4612560183",
+  "properties": {
+    "name": "Ormoy-sur-Aube",
+    "place": "hamlet",
+    "id": "node/4612560183"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8129838,
+      48.002828
+    ]
+  }
+}
+]
+}

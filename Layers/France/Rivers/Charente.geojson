@@ -1,0 +1,208 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26697751",
+  "properties": {
+    "addr:postcode": "16120",
+    "name": "Châteauneuf-sur-Charente",
+    "name:oc": "Bardevila",
+    "place": "village",
+    "population": "3545",
+    "ref:FR:SIREN": "211600903",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2016",
+    "id": "node/26697751"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0543783,
+      45.6000693
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697818",
+  "properties": {
+    "addr:postcode": "16710",
+    "name": "Saint-Yrieix-sur-Charente",
+    "name:oc": "Sent Iriès",
+    "place": "village",
+    "population": "7025",
+    "ref:FR:SIREN": "211603584",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2013",
+    "id": "node/26697818"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.1156747,
+      45.6906297
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/359923421",
+  "properties": {
+    "addr:postcode": "17800",
+    "name": "Salignac-sur-Charente",
+    "name:oc": "Salinhac de Charanta",
+    "place": "village",
+    "ref:FR:SIREN": "211704184",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/359923421"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4292317,
+      45.6716143
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/359923439",
+  "properties": {
+    "addr:postcode": "17800",
+    "name": "Brives-sur-Charente",
+    "name:oc": "Brivas",
+    "place": "village",
+    "ref:FR:SIREN": "211700695",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/359923439"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.461066,
+      45.6712791
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/361169473",
+  "properties": {
+    "addr:postcode": "17100",
+    "name": "Bussac-sur-Charente",
+    "name:oc": "Buçac",
+    "place": "village",
+    "ref:FR:SIREN": "211700737",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/361169473"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6356127,
+      45.7899702
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/419851199",
+  "properties": {
+    "addr:postcode": "17780",
+    "name": "Saint-Nazaire-sur-Charente",
+    "name:oc": "Sent Nazari de Charenta",
+    "place": "village",
+    "ref:FR:SIREN": "211703756",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikipedia": "fr:Saint-Nazaire-sur-Charente",
+    "id": "node/419851199"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.051667,
+      45.936667
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/420185019",
+  "properties": {
+    "addr:postcode": "17610",
+    "name": "Dompierre-sur-Charente",
+    "name:oc": "Dompiare",
+    "place": "village",
+    "ref:FR:SIREN": "211701412",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/420185019"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4892852,
+      45.7006422
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1743953875",
+  "properties": {
+    "addr:postcode": "16510",
+    "name": "Verteuil-sur-Charente",
+    "name:oc": "Vertuelh",
+    "place": "village",
+    "population": "609",
+    "source:population": "INSEE 2013",
+    "id": "node/1743953875"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.2283329,
+      45.9823241
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1886466220",
+  "properties": {
+    "addr:postcode": "16150",
+    "name": "Saint-Quentin-sur-Charente",
+    "name:oc": "Sent Quentin",
+    "place": "village",
+    "population": "214",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2013",
+    "id": "node/1886466220"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6703058,
+      45.8377301
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/6985998996",
+  "properties": {
+    "name": "Coulonge-sur-Charente",
+    "name:oc": "Colonjas",
+    "place": "village",
+    "id": "node/6985998996"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6845373,
+      45.8547122
+    ]
+  }
+}
+]
+}

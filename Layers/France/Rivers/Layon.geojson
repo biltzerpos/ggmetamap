@@ -1,0 +1,224 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/244013214",
+  "properties": {
+    "addr:postcode": "49700",
+    "name": "Concourson-sur-Layon",
+    "place": "village",
+    "population": "543",
+    "ref:FR:SIREN": "214901043",
+    "source:population": "INSEE 2013",
+    "id": "node/244013214"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3405701,
+      47.1740801
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/581971590",
+  "properties": {
+    "addr:postcode": "49540",
+    "name": "Aubigné-sur-Layon",
+    "place": "village",
+    "ref:FR:SIREN": "214900128",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "id": "node/581971590"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4599973,
+      47.2124343
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/581972470",
+  "properties": {
+    "addr:postcode": "49750",
+    "name": "Beaulieu-sur-Layon",
+    "place": "village",
+    "ref:FR:SIREN": "214900227",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "id": "node/581972470"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5912118,
+      47.3109341
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/582466648",
+  "properties": {
+    "addr:postcode": "49750",
+    "name": "Rablay-sur-Layon",
+    "place": "village",
+    "population": "732",
+    "ref:FR:SIREN": "214902561",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:population": "INSEE 2013",
+    "id": "node/582466648"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5761591,
+      47.2950686
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/599328602",
+  "properties": {
+    "addr:postcode": "49560",
+    "name": "Cléré-sur-Layon",
+    "place": "village",
+    "ref:FR:SIREN": "214901027",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "id": "node/599328602"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4213655,
+      47.0915574
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/599328617",
+  "properties": {
+    "addr:postcode": "49290",
+    "name": "Chaudefonds-sur-Layon",
+    "place": "village",
+    "ref:FR:SIREN": "214900821",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "id": "node/599328617"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.7068333,
+      47.324941
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/599481783",
+  "properties": {
+    "addr:postcode": "49560",
+    "name": "Nueil-sur-Layon",
+    "place": "village",
+    "population": "1356",
+    "ref:FR:SIREN": "214902322",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:population": "INSEE 2008",
+    "id": "node/599481783"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3652079,
+      47.1177517
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/599481806",
+  "properties": {
+    "addr:postcode": "49700",
+    "name": "Les Verchers-sur-Layon",
+    "place": "village",
+    "population": "902",
+    "ref:FR:SIREN": "214903650",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:population": "INSEE 2013",
+    "id": "node/599481806"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.2966714,
+      47.1543033
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/599529039",
+  "properties": {
+    "addr:postcode": "49380",
+    "name": "Champ-sur-Layon",
+    "place": "village",
+    "population": "988",
+    "ref:FR:SIREN": "214900664",
+    "source:population": "INSEE 2008",
+    "id": "node/599529039"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5760136,
+      47.2653299
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2662061987",
+  "properties": {
+    "addr:postcode": "49560",
+    "name": "Passavant-sur-Layon",
+    "place": "village",
+    "ref:FR:SIREN": "214902363",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "id": "node/2662061987"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.390406,
+      47.107491
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/4461257555",
+  "properties": {
+    "addr:postcode": "49700",
+    "name": "Saint-Georges-sur-Layon",
+    "place": "village",
+    "population": "785",
+    "ref:FR:SIREN": "214902827",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:population": "INSEE 2013",
+    "id": "node/4461257555"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3671656,
+      47.1975245
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,211 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695077",
+  "properties": {
+    "addr:postcode": "21560",
+    "name": "Arc-sur-Tille",
+    "place": "village",
+    "population": "2479",
+    "ref:FR:SIREN": "212100218",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Arc-sur-Tille",
+    "id": "node/26695077"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1893967,
+      47.3450572
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697359",
+  "properties": {
+    "addr:postcode": "21120",
+    "name": "Is-sur-Tille",
+    "name:ja": "イス＝シュル＝ティーユ",
+    "place": "village",
+    "population": "4183",
+    "ref:FR:SIREN": "212103170",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q55345",
+    "wikipedia": "fr:Is-sur-Tille",
+    "id": "node/26697359"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1123622,
+      47.5219136
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/263901377",
+  "properties": {
+    "addr:postcode": "21120",
+    "name": "Marcilly-sur-Tille",
+    "place": "village",
+    "population": "1596",
+    "ref:FR:SIREN": "212103832",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q55343",
+    "wikipedia": "fr:Marcilly-sur-Tille",
+    "id": "node/263901377"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1333847,
+      47.5198319
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1351140231",
+  "properties": {
+    "addr:postcode": "21560",
+    "name": "Bressey-sur-Tille",
+    "name:ja": "ブレッセ＝シュル＝ティーユ",
+    "place": "village",
+    "population": "1127",
+    "ref:FR:SIREN": "212100218",
+    "source:population": "INSEE 2019",
+    "id": "node/1351140231"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1830598,
+      47.3091754
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1613274753",
+  "properties": {
+    "name": "Villey-sur-Tille",
+    "name:uk": "Вілї-сюр-Тій",
+    "place": "village",
+    "postal_code": "21120",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55362",
+    "wikipedia": "fr:Villey-sur-Tille",
+    "id": "node/1613274753"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1179619,
+      47.5639107
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1613285119",
+  "properties": {
+    "addr:postcode": "21120",
+    "name": "Crécey-sur-Tille",
+    "place": "village",
+    "population": "147",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55325",
+    "wikipedia": "fr:Crécey-sur-Tille",
+    "id": "node/1613285119"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1285092,
+      47.5590825
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1680155865",
+  "properties": {
+    "addr:postcode": "21120",
+    "name": "Marey-sur-Tille",
+    "name:uk": "Маре-сюр-Тій",
+    "place": "village",
+    "population": "327",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55342",
+    "wikipedia": "fr:Marey-sur-Tille",
+    "id": "node/1680155865"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0803586,
+      47.5974677
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1754770185",
+  "properties": {
+    "addr:postcode": "21110",
+    "name": "Magny-sur-Tille",
+    "place": "village",
+    "population": "833",
+    "source:population": "INSEE 2013",
+    "id": "node/1754770185"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1748412,
+      47.2768197
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1754778073",
+  "properties": {
+    "addr:postcode": "21110",
+    "name": "Cessey-sur-Tille",
+    "place": "village",
+    "population": "594",
+    "source:population": "INSEE 2013",
+    "id": "node/1754778073"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2219611,
+      47.2800731
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1755973944",
+  "properties": {
+    "addr:postcode": "21560",
+    "name": "Remilly-sur-Tille",
+    "place": "village",
+    "id": "node/1755973944"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2076304,
+      47.3177424
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,204 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26696020",
+  "properties": {
+    "addr:postcode": "91610",
+    "name": "Ballancourt-sur-Essonne",
+    "place": "village",
+    "ref:SIREN": "219100450",
+    "id": "node/26696020"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3858373,
+      48.5262129
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/235027271",
+  "properties": {
+    "addr:postcode": "91820",
+    "name": "Boutigny-sur-Essonne",
+    "place": "village",
+    "wikipedia": "fr:Boutigny-sur-Essonne",
+    "id": "node/235027271"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3805733,
+      48.437427
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/247590471",
+  "properties": {
+    "addr:postcode": "91720",
+    "name": "Prunay-sur-Essonne",
+    "place": "village",
+    "wikipedia": "fr:Prunay-sur-Essonne",
+    "id": "node/247590471"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3755413,
+      48.3571722
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/247650527",
+  "properties": {
+    "addr:postcode": "91720",
+    "name": "Gironville-sur-Essonne",
+    "place": "village",
+    "wikipedia": "fr:Gironville-sur-Essonne",
+    "id": "node/247650527"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3788223,
+      48.3729686
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/247798703",
+  "properties": {
+    "addr:postcode": "91720",
+    "name": "Courdimanche-sur-Essonne",
+    "place": "village",
+    "wikipedia": "fr:Courdimanche-sur-Essonne",
+    "id": "node/247798703"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3768291,
+      48.4188533
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/249243434",
+  "properties": {
+    "addr:postcode": "91820",
+    "name": "Vayres-sur-Essonne",
+    "place": "village",
+    "wikipedia": "fr:Vayres-sur-Essonne",
+    "id": "node/249243434"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.354275,
+      48.4383759
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/252690495",
+  "properties": {
+    "addr:postcode": "77760",
+    "name": "Nanteau-sur-Essonne",
+    "place": "village",
+    "wikipedia": "fr:Nanteau-sur-Essonne",
+    "id": "node/252690495"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4190431,
+      48.314727
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/591967999",
+  "properties": {
+    "addr:postcode": "91590",
+    "name": "Guigneville-sur-Essonne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "wikipedia": "fr:Guigneville-sur-Essonne",
+    "id": "node/591967999"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3547515,
+      48.4729516
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1697375649",
+  "properties": {
+    "addr:postcode": "45390",
+    "name": "Briarres-sur-Essonne",
+    "place": "village",
+    "id": "node/1697375649"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4273099,
+      48.2281338
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1766136440",
+  "properties": {
+    "addr:postcode": "45390",
+    "name": "Ondreville-sur-Essonne",
+    "place": "village",
+    "population": "386",
+    "wikipedia": "fr:Ondreville-sur-Essonne",
+    "id": "node/1766136440"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4078385,
+      48.2001619
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1766733219",
+  "properties": {
+    "addr:postcode": "45390",
+    "name": "La Neuville-sur-Essonne",
+    "place": "village",
+    "population": "365",
+    "id": "node/1766733219"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3750353,
+      48.1865824
+    ]
+  }
+}
+]
+}

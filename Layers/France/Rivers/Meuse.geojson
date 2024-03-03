@@ -1,0 +1,749 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26697291",
+  "properties": {
+    "name": "Belleville-sur-Meuse",
+    "place": "village",
+    "id": "node/26697291"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.370347,
+      49.1814053
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697322",
+  "properties": {
+    "name": "Thierville-sur-Meuse",
+    "place": "village",
+    "id": "node/26697322"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.348031,
+      49.1706321
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/262661520",
+  "properties": {
+    "name": "Rouvrois-sur-Meuse",
+    "place": "village",
+    "id": "node/262661520"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5179466,
+      48.9451382
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/262661522",
+  "properties": {
+    "name": "Lacroix-sur-Meuse",
+    "place": "village",
+    "id": "node/262661522"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5115114,
+      48.9725993
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/262661641",
+  "properties": {
+    "name": "Ambly-sur-Meuse",
+    "place": "village",
+    "id": "node/262661641"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4421207,
+      49.0194718
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/262661661",
+  "properties": {
+    "name": "Génicourt-sur-Meuse",
+    "place": "village",
+    "id": "node/262661661"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4361593,
+      49.0353344
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/262999866",
+  "properties": {
+    "name": "Dieue-sur-Meuse",
+    "place": "village",
+    "id": "node/262999866"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4272184,
+      49.0707181
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282493312",
+  "properties": {
+    "name": "Bazoilles-sur-Meuse",
+    "place": "village",
+    "id": "node/282493312"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6603,
+      48.3063
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282493523",
+  "properties": {
+    "name": "Maxey-sur-Meuse",
+    "place": "village",
+    "id": "node/282493523"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6983155,
+      48.4515649
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/286559850",
+  "properties": {
+    "addr:postcode": "52400",
+    "name": "Le Châtelet-sur-Meuse",
+    "old_name": "Pouilly-en-Bassigny",
+    "place": "village",
+    "population": "200",
+    "wikidata": "Q42014",
+    "id": "node/286559850"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6279055,
+      47.9829813
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/293497926",
+  "properties": {
+    "name": "Tilly-sur-Meuse",
+    "place": "village",
+    "id": "node/293497926"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4400166,
+      49.0049259
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/293501519",
+  "properties": {
+    "name": "Villers-sur-Meuse",
+    "place": "village",
+    "id": "node/293501519"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4176025,
+      49.0184604
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/293518942",
+  "properties": {
+    "name": "Dugny-sur-Meuse",
+    "place": "village",
+    "id": "node/293518942"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3859245,
+      49.1075044
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/306437215",
+  "properties": {
+    "addr:postcode": "52140",
+    "name": "Dammartin-sur-Meuse",
+    "place": "village",
+    "id": "node/306437215"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5779986,
+      47.9767114
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/417082556",
+  "properties": {
+    "name": "Bogny-sur-Meuse",
+    "name:fr": "Bogny-sur-Meuse",
+    "name:ru": "Боньи-сюр-Мёз",
+    "name:sr": "Боњи-сир-Мез",
+    "name:uk": "Боньї-сюр-Мез",
+    "name:zh": "默兹河畔博尼",
+    "place": "village",
+    "id": "node/417082556"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7677778,
+      49.8508333
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/417144216",
+  "properties": {
+    "name": "Nouvion-sur-Meuse",
+    "name:fr": "Nouvion-sur-Meuse",
+    "name:ru": "Нувьон-сюр-Мёз",
+    "name:uk": "Нувіон-сюр-Мез",
+    "name:zh": "默兹河畔努维永",
+    "place": "village",
+    "id": "node/417144216"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7958333,
+      49.7005556
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/507264229",
+  "properties": {
+    "name": "Brieulles-sur-Meuse",
+    "place": "village",
+    "id": "node/507264229"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1801879,
+      49.3358444
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/698491420",
+  "properties": {
+    "name": "Ugny-sur-Meuse",
+    "place": "village",
+    "id": "node/698491420"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.7037302,
+      48.6405013
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/698491461",
+  "properties": {
+    "name": "Saint-Germain-sur-Meuse",
+    "place": "village",
+    "id": "node/698491461"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6889611,
+      48.6492279
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/698491524",
+  "properties": {
+    "name": "Ourches-sur-Meuse",
+    "place": "village",
+    "id": "node/698491524"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.7013599,
+      48.6609607
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/787267071",
+  "properties": {
+    "name": "Pagny-sur-Meuse",
+    "place": "village",
+    "id": "node/787267071"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.7199277,
+      48.6883959
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1126207683",
+  "properties": {
+    "name": "Épiez-sur-Meuse",
+    "place": "village",
+    "id": "node/1126207683"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6409192,
+      48.5439978
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1133102555",
+  "properties": {
+    "name": "Dun-sur-Meuse",
+    "place": "village",
+    "id": "node/1133102555"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1861499,
+      49.3863627
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1241709433",
+  "properties": {
+    "name": "Sassey-sur-Meuse",
+    "place": "village",
+    "id": "node/1241709433"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1880855,
+      49.4134326
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1294396173",
+  "properties": {
+    "name": "Ailly-sur-Meuse",
+    "place": "village",
+    "id": "node/1294396173"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5499309,
+      48.8692035
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1294396338",
+  "properties": {
+    "name": "Han-sur-Meuse",
+    "place": "village",
+    "id": "node/1294396338"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5392879,
+      48.8657453
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1300728827",
+  "properties": {
+    "name": "Brabant-sur-Meuse",
+    "place": "village",
+    "id": "node/1300728827"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3115481,
+      49.2722741
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1428434024",
+  "properties": {
+    "name": "Pont-sur-Meuse",
+    "place": "village",
+    "id": "node/1428434024"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5478104,
+      48.8018829
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1428454512",
+  "properties": {
+    "name": "Boncourt-sur-Meuse",
+    "place": "village",
+    "wikipedia": "fr:Boncourt-sur-Meuse",
+    "id": "node/1428454512"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5702125,
+      48.8017057
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1464040358",
+  "properties": {
+    "name": "Sivry-sur-Meuse",
+    "place": "village",
+    "id": "node/1464040358"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2680077,
+      49.3213973
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1500708021",
+  "properties": {
+    "name": "Joigny-sur-Meuse",
+    "place": "village",
+    "id": "node/1500708021"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7617745,
+      49.8377166
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1699553051",
+  "properties": {
+    "name": "Ham-sur-Meuse",
+    "place": "village",
+    "id": "node/1699553051"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.780308,
+      50.1101646
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1699553053",
+  "properties": {
+    "name": "Montigny-sur-Meuse",
+    "place": "village",
+    "id": "node/1699553053"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7213404,
+      50.0486005
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708015686",
+  "properties": {
+    "name": "Bras-sur-Meuse",
+    "place": "village",
+    "id": "node/1708015686"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.37561,
+      49.20958
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708015697",
+  "properties": {
+    "name": "Charny-sur-Meuse",
+    "place": "village",
+    "id": "node/1708015697"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.36177,
+      49.20715
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708015751",
+  "properties": {
+    "name": "Forges-sur-Meuse",
+    "place": "village",
+    "id": "node/1708015751"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.29146,
+      49.26247
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708015932",
+  "properties": {
+    "name": "Regnéville-sur-Meuse",
+    "place": "village",
+    "id": "node/1708015932"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.32539,
+      49.25283
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708050439",
+  "properties": {
+    "name": "Laneuville-sur-Meuse",
+    "place": "village",
+    "id": "node/1708050439"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.16364,
+      49.49143
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708050441",
+  "properties": {
+    "name": "Martincourt-sur-Meuse",
+    "place": "village",
+    "id": "node/1708050441"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1731132,
+      49.5337428
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708050449",
+  "properties": {
+    "name": "Pouilly-sur-Meuse",
+    "place": "village",
+    "id": "node/1708050449"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.10767,
+      49.54006
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708884760",
+  "properties": {
+    "addr:postcode": "52150",
+    "name": "Brainville-sur-Meuse",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708884760"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5871627,
+      48.1779585
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708885048",
+  "properties": {
+    "addr:postcode": "52150",
+    "name": "Doncourt-sur-Meuse",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708885048"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.573079,
+      48.1491864
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708885631",
+  "properties": {
+    "addr:postcode": "52150",
+    "name": "Malaincourt-sur-Meuse",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708885631"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5975364,
+      48.1536802
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1708885960",
+  "properties": {
+    "addr:postcode": "52150",
+    "name": "Romain-sur-Meuse",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1708885960"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5351145,
+      48.1728852
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2209060508",
+  "properties": {
+    "name": "Provenchères-sur-Meuse",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2013",
+    "id": "node/2209060508"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5304642,
+      48.0099059
+    ]
+  }
+}
+]
+}

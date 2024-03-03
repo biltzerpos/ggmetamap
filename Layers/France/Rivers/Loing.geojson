@@ -1,0 +1,190 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691436",
+  "properties": {
+    "addr:postcode": "45120",
+    "name": "Chalette-sur-Loing",
+    "place": "town",
+    "population": "12576",
+    "population:date": "2017",
+    "ref:FR:SIREN": "214500688",
+    "source:population": "INSEE 2017",
+    "id": "node/26691436"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7320234,
+      48.0144639
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697225",
+  "properties": {
+    "addr:postcode": "77460",
+    "name": "Souppes-sur-Loing",
+    "place": "village",
+    "id": "node/26697225"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7426674,
+      48.1868057
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697480",
+  "properties": {
+    "addr:postcode": "77690",
+    "name": "Montigny-sur-Loing",
+    "place": "village",
+    "id": "node/26697480"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.757804,
+      48.3405032
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/252616719",
+  "properties": {
+    "addr:postcode": "77880",
+    "name": "Grez-sur-Loing",
+    "place": "village",
+    "wikipedia": "fr:Grez-sur-Loing",
+    "id": "node/252616719"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6885676,
+      48.3174256
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/252703801",
+  "properties": {
+    "addr:postcode": "45210",
+    "name": "Fontenay-sur-Loing",
+    "place": "village",
+    "ref:FR:SIREN": "214501488",
+    "wikipedia": "fr:Fontenay-sur-Loing",
+    "id": "node/252703801"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7730641,
+      48.1071178
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/311226156",
+  "properties": {
+    "addr:postcode": "77167",
+    "name": "Bagneaux-sur-Loing",
+    "place": "village",
+    "id": "node/311226156"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7042711,
+      48.2314677
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/372483659",
+  "properties": {
+    "addr:postcode": "45700",
+    "name": "Conflans-sur-Loing",
+    "place": "village",
+    "ref:FR:SIREN": "214501025",
+    "id": "node/372483659"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7876469,
+      47.9528908
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/372634402",
+  "properties": {
+    "addr:postcode": "45230",
+    "name": "Dammarie-sur-Loing",
+    "place": "village",
+    "ref:FR:SIREN": "214501215",
+    "id": "node/372634402"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8812008,
+      47.783723
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1048911965",
+  "properties": {
+    "addr:postcode": "89520",
+    "name": "Sainte-Colombe-sur-Loing",
+    "name:ru": "Сент-Коломб-сюр-Луан",
+    "place": "village",
+    "population": "179",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1423212",
+    "wikipedia": "fr:Sainte-Colombe-sur-Loing",
+    "id": "node/1048911965"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.2358421,
+      47.569569
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1146227202",
+  "properties": {
+    "addr:postcode": "77570",
+    "name": "La Madeleine-sur-Loing",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "id": "node/1146227202"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7043277,
+      48.2043305
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,336 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26694707",
+  "properties": {
+    "addr:postcode": "28190",
+    "name": "Saint-Georges-sur-Eure",
+    "place": "village",
+    "population": "2300",
+    "ref:FR:SIREN": "212803373",
+    "id": "node/26694707"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3552631,
+      48.4182576
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696423",
+  "properties": {
+    "addr:postcode": "27120",
+    "name": "Pacy-sur-Eure",
+    "place": "village",
+    "population": "4637",
+    "ref:FR:SIREN": "212704480",
+    "source:population": "INSEE 2013",
+    "id": "node/26696423"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.38128,
+      49.0141954
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696862",
+  "properties": {
+    "addr:postcode": "27530",
+    "name": "Ézy-sur-Eure",
+    "place": "village",
+    "population": "3270",
+    "ref:FR:SIREN": "212702302",
+    "source:population": "INSEE 2013",
+    "id": "node/26696862"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4198704,
+      48.8657529
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697347",
+  "properties": {
+    "addr:postcode": "28190",
+    "name": "Courville-sur-Eure",
+    "place": "village",
+    "population": "2400",
+    "ref:FR:SIREN": "212801161",
+    "id": "node/26697347"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2387543,
+      48.4502626
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/273797267",
+  "properties": {
+    "addr:postcode": "28210",
+    "name": "Villemeux-sur-Eure",
+    "place": "village",
+    "population": "1386",
+    "ref:FR:SIREN": "212804157",
+    "id": "node/273797267"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4605792,
+      48.6743562
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/286573875",
+  "properties": {
+    "addr:postcode": "28120",
+    "name": "Nogent-sur-Eure",
+    "place": "village",
+    "id": "node/286573875"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3602471,
+      48.3900182
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/293872403",
+  "properties": {
+    "addr:postcode": "28630",
+    "name": "Fontenay-sur-Eure",
+    "place": "village",
+    "id": "node/293872403"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4047509,
+      48.3961683
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/529429315",
+  "properties": {
+    "addr:postcode": "27810",
+    "name": "Marcilly-sur-Eure",
+    "place": "village",
+    "population": "1581",
+    "ref:FR:SIREN": "212703912",
+    "source:population": "INSEE 2013",
+    "id": "node/529429315"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3460776,
+      48.8257693
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/603134704",
+  "properties": {
+    "addr:postcode": "27490",
+    "name": "Cailly-sur-Eure",
+    "place": "village",
+    "population": "228",
+    "ref:FR:SIREN": "212701247",
+    "source:population": "INSEE 2013",
+    "id": "node/603134704"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2118102,
+      49.1175416
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/603134712",
+  "properties": {
+    "addr:postcode": "27400",
+    "name": "Heudreville-sur-Eure",
+    "place": "village",
+    "population": "1026",
+    "ref:FR:SIREN": "212703359",
+    "source:population": "INSEE 2013",
+    "id": "node/603134712"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1874548,
+      49.1403957
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/603134717",
+  "properties": {
+    "addr:postcode": "27490",
+    "name": "Écardenville-sur-Eure",
+    "place": "village",
+    "population": "531",
+    "ref:FR:SIREN": "212702112",
+    "source:population": "INSEE 2013",
+    "id": "node/603134717"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.2684196,
+      49.0996402
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/635808948",
+  "properties": {
+    "name": "Neuilly-sur-Eure",
+    "place": "village",
+    "population": "592",
+    "postal_code": "61290",
+    "source:population": "INSEE 2013",
+    "id": "node/635808948"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9043186,
+      48.5412818
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/690875226",
+  "properties": {
+    "addr:postcode": "27120",
+    "name": "Vaux-sur-Eure",
+    "place": "village",
+    "population": "262",
+    "ref:FR:SIREN": "212706741",
+    "source:population": "INSEE 2013",
+    "id": "node/690875226"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3400932,
+      49.0416807
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/690875227",
+  "properties": {
+    "addr:postcode": "27120",
+    "name": "Croisy-sur-Eure",
+    "place": "village",
+    "population": "232",
+    "ref:FR:SIREN": "212701908",
+    "source:population": "INSEE 2013",
+    "id": "node/690875227"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.346505,
+      49.0291802
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/691231154",
+  "properties": {
+    "addr:postcode": "27120",
+    "name": "Jouy-sur-Eure",
+    "place": "village",
+    "population": "566",
+    "ref:FR:SIREN": "212703581",
+    "source:population": "INSEE 2013",
+    "id": "node/691231154"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3006662,
+      49.0486104
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1618957069",
+  "properties": {
+    "addr:postcode": "27780",
+    "name": "Garennes-sur-Eure",
+    "place": "village",
+    "population": "1821",
+    "source": "Bing ; cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1137290",
+    "wikipedia": "fr:Garennes-sur-Eure",
+    "id": "node/1618957069"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4368217,
+      48.9109977
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709256673",
+  "properties": {
+    "addr:postcode": "61290",
+    "name": "La Lande-sur-Eure",
+    "place": "village",
+    "population": "169",
+    "source:population": "INSEE 2013",
+    "id": "node/1709256673"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8643423,
+      48.557098
+    ]
+  }
+}
+]
+}

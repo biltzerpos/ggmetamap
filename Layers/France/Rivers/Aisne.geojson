@@ -1,0 +1,254 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/95577981",
+  "properties": {
+    "addr:postcode": "02370",
+    "name": "Condé-sur-Aisne",
+    "place": "village",
+    "population": "300",
+    "ref:FR:SIREN": "210201950",
+    "id": "node/95577981"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.46759,
+      49.3973
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95578737",
+  "properties": {
+    "name": "Neufchâtel-sur-Aisne",
+    "place": "village",
+    "wikidata": "Q325831",
+    "wikipedia": "fr:Neufchâtel-sur-Aisne",
+    "id": "node/95578737"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.0341487,
+      49.4318178
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/95579378",
+  "properties": {
+    "addr:postcode": "02290",
+    "name": "Vic-sur-Aisne",
+    "name:fr": "Vic-sur-Aisne",
+    "name:ru": "Вик-сюр-Эн",
+    "name:uk": "Вік-сюр-Ен",
+    "name:zh": "埃纳河畔维克",
+    "place": "village",
+    "population": "1751",
+    "ref:FR:SIREN": "210207684",
+    "source:population": "INSEE 2012",
+    "website": "http://www.mairie-vicsuraisne.fr/",
+    "wikidata": "Q990682",
+    "wikipedia": "fr:Vic-sur-Aisne",
+    "id": "node/95579378"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.1121174,
+      49.4073129
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/413736241",
+  "properties": {
+    "addr:postcode": "02200",
+    "census": "2006",
+    "name": "Billy-sur-Aisne",
+    "place": "village",
+    "population": "1119",
+    "ref:FR:SIREN": "210200879",
+    "source": "http://fr.wikipedia.org/wiki/Billy-sur-Aisne",
+    "id": "node/413736241"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3844146,
+      49.3555905
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/414149498",
+  "properties": {
+    "addr:postcode": "02370",
+    "census": "2006",
+    "name": "Celles-sur-Aisne",
+    "place": "village",
+    "population": "245",
+    "ref:FR:SIREN": "210201356",
+    "source": "Wikipedia",
+    "id": "node/414149498"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4825,
+      49.4069444
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/416587634",
+  "properties": {
+    "addr:postcode": "02880",
+    "census": "2006",
+    "name": "Missy-sur-Aisne",
+    "place": "village",
+    "population": "712",
+    "ref:FR:SIREN": "210204640",
+    "source": "Wikipedia",
+    "id": "node/416587634"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4363889,
+      49.3872222
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/635040005",
+  "properties": {
+    "name": "Terron-sur-Aisne",
+    "name:fr": "Terron-sur-Aisne",
+    "name:ru": "Террон-сюр-Эн",
+    "name:uk": "Террон-сюр-Ен",
+    "place": "village",
+    "id": "node/635040005"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6963543,
+      49.452905
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/861738448",
+  "properties": {
+    "name": "Brienne-sur-Aisne",
+    "name:uk": "Брієнн-сюр-Ен",
+    "place": "village",
+    "wikidata": "Q335252",
+    "wikipedia": "fr:Brienne-sur-Aisne",
+    "id": "node/861738448"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.0535102,
+      49.4331122
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1362986086",
+  "properties": {
+    "name": "Savigny-sur-Aisne",
+    "place": "village",
+    "id": "node/1362986086"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7274043,
+      49.3603667
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1458593678",
+  "properties": {
+    "name": "Rilly-sur-Aisne",
+    "place": "village",
+    "id": "node/1458593678"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6328987,
+      49.4866796
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709818914",
+  "properties": {
+    "name": "Nanteuil-sur-Aisne",
+    "place": "village",
+    "id": "node/1709818914"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.29887,
+      49.51187
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1716682701",
+  "properties": {
+    "addr:postcode": "02370",
+    "name": "Vailly-sur-Aisne",
+    "place": "village",
+    "wikipedia": "fr:Vailly-sur-Aisne",
+    "id": "node/1716682701"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.516572,
+      49.4084666
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1751122512",
+  "properties": {
+    "addr:postcode": "60350",
+    "name": "Berneuil-sur-Aisne",
+    "place": "village",
+    "population": "1024",
+    "id": "node/1751122512"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0053992,
+      49.414722
+    ]
+  }
+}
+]
+}

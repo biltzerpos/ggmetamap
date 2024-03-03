@@ -1,0 +1,358 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/255689001",
+  "properties": {
+    "name": "Bey-sur-Seille",
+    "place": "village",
+    "id": "node/255689001"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3418036,
+      48.8040079
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/256577728",
+  "properties": {
+    "name": "Brin-sur-Seille",
+    "place": "village",
+    "id": "node/256577728"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3554985,
+      48.77972
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/268411178",
+  "properties": {
+    "name": "Vic-sur-Seille",
+    "name:de": "Wich",
+    "place": "village",
+    "id": "node/268411178"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.5303154,
+      48.7813233
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463735",
+  "properties": {
+    "name": "Mailly-sur-Seille",
+    "place": "village",
+    "id": "node/282463735"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.2454738,
+      48.9097492
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463745",
+  "properties": {
+    "name": "Morville-sur-Seille",
+    "place": "village",
+    "id": "node/282463745"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1557293,
+      48.9156127
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463753",
+  "properties": {
+    "name": "Moncel-sur-Seille",
+    "place": "village",
+    "id": "node/282463753"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.4266203,
+      48.7644047
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463790",
+  "properties": {
+    "name": "Port-sur-Seille",
+    "place": "village",
+    "id": "node/282463790"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1634921,
+      48.9033311
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748646",
+  "properties": {
+    "addr:postcode": "71290",
+    "name": "Huilly-sur-Seille",
+    "place": "village",
+    "population": "300",
+    "ref:SIREN": "217102342",
+    "id": "node/282748646"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0517904,
+      46.5915861
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748933",
+  "properties": {
+    "addr:postcode": "71330",
+    "name": "Sens-sur-Seille",
+    "place": "village",
+    "ref:SIREN": "217105147",
+    "wikipedia": "fr:Sens-sur-Seille",
+    "id": "node/282748933"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.3174962,
+      46.744883
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748939",
+  "properties": {
+    "addr:postcode": "71440",
+    "name": "Savigny-sur-Seille",
+    "place": "village",
+    "ref:SIREN": "217105089",
+    "wikipedia": "fr:Savigny-sur-Seille",
+    "id": "node/282748939"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1068633,
+      46.6235009
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287937815",
+  "properties": {
+    "name": "Aboncourt-sur-Seille",
+    "name:de": "Abenhofen",
+    "place": "village",
+    "population": "71",
+    "id": "node/287937815"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3412429,
+      48.8168096
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287937840",
+  "properties": {
+    "name": "Aulnois-sur-Seille",
+    "name:de": "Erlen",
+    "place": "village",
+    "population": "278",
+    "id": "node/287937840"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3147292,
+      48.8676496
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287937952",
+  "properties": {
+    "addr:postcode": "57420",
+    "name": "Coin-sur-Seille",
+    "name:de": "Selzeck",
+    "place": "village",
+    "ref:FR:SIREN": "215701475",
+    "short_name:fr": "Coin",
+    "id": "node/287937952"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1602525,
+      49.0086421
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287938048",
+  "properties": {
+    "name": "Haraucourt-sur-Seille",
+    "name:de": "Haraldshofen",
+    "place": "village",
+    "id": "node/287938048"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.604984,
+      48.7992008
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287938281",
+  "properties": {
+    "name": "Malaucourt-sur-Seille",
+    "name:de": "Mallhofen",
+    "place": "village",
+    "id": "node/287938281"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3594136,
+      48.8407225
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291431627",
+  "properties": {
+    "addr:postcode": "39210",
+    "name": "Blois-sur-Seille",
+    "place": "village",
+    "ref:FR:SIREN": "213900574",
+    "wikipedia": "fr:Blois-sur-Seille",
+    "id": "node/291431627"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6697449,
+      46.7486656
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291432024",
+  "properties": {
+    "addr:postcode": "39210",
+    "name": "Ladoye-sur-Seille",
+    "place": "village",
+    "ref:FR:SIREN": "213902729",
+    "wikipedia": "fr:Ladoye-sur-Seille",
+    "id": "node/291432024"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.684863,
+      46.7617372
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291432081",
+  "properties": {
+    "addr:postcode": "39210",
+    "name": "Nevy-sur-Seille",
+    "place": "village",
+    "ref:FR:SIREN": "213903883",
+    "wikipedia": "fr:Nevy-sur-Seille",
+    "id": "node/291432081"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.6329,
+      46.7391
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/291432176",
+  "properties": {
+    "addr:postcode": "39140",
+    "name": "Ruffey-sur-Seille",
+    "place": "village",
+    "ref:FR:SIREN": "213904717",
+    "wikipedia": "fr:Ruffey-sur-Seille",
+    "id": "node/291432176"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.4938882,
+      46.7443169
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1923911465",
+  "properties": {
+    "addr:postcode": "54610",
+    "name": "Manoncourt-sur-Seille",
+    "place": "hamlet",
+    "id": "node/1923911465"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1976647,
+      48.8752562
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,181 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26697988",
+  "properties": {
+    "name": "Pargny-sur-Saulx",
+    "place": "village",
+    "id": "node/26697988"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8449444,
+      48.7676192
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1131351991",
+  "properties": {
+    "name": "Ville-sur-Saulx",
+    "place": "village",
+    "id": "node/1131351991"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0583416,
+      48.7123941
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1131352009",
+  "properties": {
+    "name": "Bazincourt-sur-Saulx",
+    "place": "village",
+    "id": "node/1131352009"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.1388995,
+      48.6752663
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1136523971",
+  "properties": {
+    "name": "Le Bouchon-sur-Saulx",
+    "place": "village",
+    "id": "node/1136523971"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2307489,
+      48.6169538
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1136523974",
+  "properties": {
+    "name": "Ménil-sur-Saulx",
+    "place": "village",
+    "id": "node/1136523974"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2165126,
+      48.6266451
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1136524026",
+  "properties": {
+    "name": "Dammarie-sur-Saulx",
+    "place": "village",
+    "id": "node/1136524026"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2390799,
+      48.5932029
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1354160559",
+  "properties": {
+    "name": "Montiers-sur-Saulx",
+    "place": "village",
+    "id": "node/1354160559"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2677095,
+      48.5319985
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1421309163",
+  "properties": {
+    "name": "Trémont-sur-Saulx",
+    "place": "village",
+    "id": "node/1421309163"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0543718,
+      48.7475708
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1490039702",
+  "properties": {
+    "name": "Paroy-sur-Saulx",
+    "place": "village",
+    "id": "node/1490039702"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.2570761,
+      48.5133408
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1534375381",
+  "properties": {
+    "name": "Beurey-sur-Saulx",
+    "place": "village",
+    "id": "node/1534375381"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.0262236,
+      48.7571865
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1706129176",
+  "properties": {
+    "name": "Bignicourt-sur-Saulx",
+    "place": "village",
+    "id": "node/1706129176"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7755551,
+      48.7655313
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,250 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695738",
+  "properties": {
+    "addr:postcode": "38670",
+    "name": "Chasse-sur-Rhône",
+    "name:fr": "Chasse-sur-Rhône",
+    "name:sr": "Шас сир Рон",
+    "name:uk": "Шасс-сюр-Рон",
+    "name:zh": "罗讷河畔沙斯",
+    "place": "village",
+    "ref:FR:SIREN": "213800873",
+    "wikidata": "Q926254",
+    "wikipedia": "fr:Chasse-sur-Rhône",
+    "id": "node/26695738"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8114503,
+      45.5789437
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695764",
+  "properties": {
+    "addr:postcode": "26800",
+    "name": "Étoile-sur-Rhône",
+    "name:oc": "Estiala",
+    "place": "village",
+    "ref:FR:SIREN": "212601249",
+    "source:name:oc": "ieo-bdtopoc",
+    "wikidata": "Q859997",
+    "wikipedia": "fr:Étoile-sur-Rhône",
+    "id": "node/26695764"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8934402,
+      44.8363656
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695869",
+  "properties": {
+    "addr:postcode": "07800",
+    "alt_name:fr": "La Voulte",
+    "name": "La Voulte-sur-Rhône",
+    "name:fr": "La Voulte-sur-Rhône",
+    "name:oc": "La Vòuta",
+    "place": "village",
+    "ref:FR:SIREN": "210703492",
+    "source:name:oc": "ieo-bdtopoc",
+    "website": "https://www.lavoultesurrhone.fr/",
+    "wikidata": "Q325192",
+    "wikipedia": "fr:La Voulte-sur-Rhône",
+    "id": "node/26695869"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7813846,
+      44.8000756
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697826",
+  "properties": {
+    "addr:postcode": "07300",
+    "capital": "7",
+    "loc_name": "Tournon",
+    "name": "Tournon-sur-Rhône",
+    "name:fr": "Tournon-sur-Rhône",
+    "name:oc": "Tornon",
+    "place": "town",
+    "ref:FR:SIREN": "210703245",
+    "source:name:oc": "ieo-bdtopoc",
+    "website": "http://www.ville-tournon-sur-rhone.fr/",
+    "wikidata": "Q213155",
+    "wikipedia": "fr:Tournon-sur-Rhône",
+    "id": "node/26697826"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.832852,
+      45.0675156
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/33155923",
+  "properties": {
+    "addr:postcode": "26270",
+    "name": "Saulce-sur-Rhône",
+    "name:oc": "Sausse",
+    "place": "village",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/33155923"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.79935,
+      44.7031
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/33156012",
+  "properties": {
+    "addr:postcode": "26600",
+    "name": "Serves-sur-Rhône",
+    "name:oc": "Cervia",
+    "place": "village",
+    "ref:FR:SIREN": "212603419",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/33156012"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.81791,
+      45.1334
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/33207420",
+  "properties": {
+    "addr:postcode": "07800",
+    "name": "Charmes-sur-Rhône",
+    "name:oc": "Charmes sus Ròsne",
+    "place": "village",
+    "ref:FR:SIREN": "210700555",
+    "source:name:oc": "ieo-bdtopoc",
+    "website": "http://www.charmes-sur-rhone.fr/",
+    "wikidata": "Q323743",
+    "wikipedia": "fr:Charmes-sur-Rhône",
+    "id": "node/33207420"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.83424,
+      44.8621
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/33207797",
+  "properties": {
+    "addr:postcode": "07370",
+    "name": "Arras-sur-Rhône",
+    "name:oc": "Aràs dau Ròse",
+    "place": "village",
+    "ref:FR:SIREN": "210700159",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/33207797"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8067381,
+      45.139585
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/36787106",
+  "properties": {
+    "addr:postcode": "74910",
+    "name": "Saint-Germain-sur-Rhône",
+    "place": "village",
+    "ref:SIREN": "217402353",
+    "wikidata": "Q840830",
+    "wikipedia": "fr:Saint-Germain-sur-Rhône",
+    "id": "node/36787106"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.8174749,
+      46.0595319
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82344794",
+  "properties": {
+    "addr:postcode": "42410",
+    "name": "Saint-Michel-sur-Rhône",
+    "place": "village",
+    "population": "811",
+    "ref:FR:SIREN": "214202657",
+    "source:population": "INSEE 2016",
+    "website": "https://www.mairie-saintmichelsurrhone.fr",
+    "wikidata": "Q1106211",
+    "wikipedia": "fr:Saint-Michel-sur-Rhône",
+    "id": "node/82344794"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7444829,
+      45.4461149
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1551687764",
+  "properties": {
+    "addr:postcode": "69700",
+    "name": "Loire-sur-Rhône",
+    "name:uk": "Луар-сюр-Рон",
+    "place": "village",
+    "population": "2559",
+    "source:population": "INSEE 2016",
+    "website": "https://www.loire-sur-rhone.fr",
+    "wikidata": "Q1470408",
+    "wikipedia": "fr:Loire-sur-Rhône",
+    "id": "node/1551687764"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8063326,
+      45.5589736
+    ]
+  }
+}
+]
+}

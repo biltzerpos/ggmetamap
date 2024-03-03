@@ -1,0 +1,491 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691408",
+  "properties": {
+    "addr:postcode": "72300",
+    "capital:INSEE": "zone d'emploi",
+    "name": "Sablé-sur-Sarthe",
+    "place": "town",
+    "ref:SIREN": "217202647",
+    "wikipedia": "fr:Sablé-sur-Sarthe",
+    "id": "node/26691408"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3352048,
+      47.8400712
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694888",
+  "properties": {
+    "addr:postcode": "72130",
+    "name": "Fresnay-sur-Sarthe",
+    "place": "village",
+    "population": "2173",
+    "ref:SIREN": "217201383",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Fresnay-sur-Sarthe",
+    "id": "node/26694888"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0222512,
+      48.2807744
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696221",
+  "properties": {
+    "addr:postcode": "72210",
+    "name": "La Suze-sur-Sarthe",
+    "place": "village",
+    "population": "4192",
+    "ref:SIREN": "217203462",
+    "source:population": "INSEE 2013",
+    "id": "node/26696221"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0275915,
+      47.8895538
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697290",
+  "properties": {
+    "addr:postcode": "72190",
+    "name": "Neuville-sur-Sarthe",
+    "place": "village",
+    "population": "2386",
+    "ref:SIREN": "217202175",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Neuville-sur-Sarthe",
+    "id": "node/26697290"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.1897267,
+      48.0753824
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697424",
+  "properties": {
+    "addr:postcode": "49330",
+    "name": "Châteauneuf-sur-Sarthe",
+    "place": "village",
+    "population": "3016",
+    "ref:FR:SIREN": "214900805",
+    "source:population": "INSEE 2013",
+    "id": "node/26697424"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4878475,
+      47.6807588
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698219",
+  "properties": {
+    "addr:postcode": "72430",
+    "name": "Noyen-sur-Sarthe",
+    "place": "village",
+    "population": "2611",
+    "ref:SIREN": "217202233",
+    "source:population": "INSEE 2013",
+    "id": "node/26698219"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0992579,
+      47.8723118
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/52796484",
+  "properties": {
+    "addr:postcode": "72170",
+    "name": "Beaumont-sur-Sarthe",
+    "place": "village",
+    "population": "2097",
+    "source:population": "INSEE 2013",
+    "id": "node/52796484"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.132823,
+      48.2264796
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/331586532",
+  "properties": {
+    "addr:postcode": "72380",
+    "name": "Sainte-Jamme-sur-Sarthe",
+    "place": "village",
+    "population": "2077",
+    "ref:SIREN": "217202894",
+    "source:population": "INSEE 2013",
+    "id": "node/331586532"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.1700029,
+      48.140451
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/338282899",
+  "properties": {
+    "addr:postcode": "72300",
+    "name": "Parcé-sur-Sarthe",
+    "place": "village",
+    "population": "2077",
+    "ref:SIREN": "217202282",
+    "source:population": "INSEE 2013",
+    "id": "node/338282899"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.1986762,
+      47.8434492
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/348050321",
+  "properties": {
+    "addr:postcode": "61170",
+    "name": "Le Mêle-sur-Sarthe",
+    "place": "village",
+    "population": "771",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Le Mêle-sur-Sarthe",
+    "id": "node/348050321"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3543658,
+      48.5113932
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/371971164",
+  "properties": {
+    "addr:postcode": "72210",
+    "name": "Roëzé-sur-Sarthe",
+    "old_name": "Roézé-sur-Sarthe",
+    "place": "village",
+    "source:name": "Décret 2021-1921 du 30 décembre 2021 portant changement du nom de communes - Journal officiel de la République française: https://www.legifrance.gouv.fr/WAspad/UnTexteDeJorf?numjo=TERB2139103D",
+    "id": "node/371971164"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0683017,
+      47.8933701
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/432726535",
+  "properties": {
+    "addr:postcode": "49640",
+    "name": "Chemiré-sur-Sarthe",
+    "name:uk": "Шеміре-сюр-Сарт",
+    "place": "village",
+    "population": "272",
+    "ref:FR:SIREN": "214900938",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q959175",
+    "wikipedia": "fr:Chemiré-sur-Sarthe",
+    "id": "node/432726535"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4321839,
+      47.7497094
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/844775127",
+  "properties": {
+    "addr:postcode": "61170",
+    "name": "Saint-Léger-sur-Sarthe",
+    "place": "village",
+    "population": "341",
+    "ref:FR:SIREN": "216104158",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Saint-Léger-sur-Sarthe",
+    "id": "node/844775127"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3392037,
+      48.5041799
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396696676",
+  "properties": {
+    "addr:postcode": "72270",
+    "name": "Malicorne-sur-Sarthe",
+    "place": "village",
+    "id": "node/1396696676"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0881093,
+      47.8144856
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396771254",
+  "properties": {
+    "addr:postcode": "72170",
+    "name": "Moitron-sur-Sarthe",
+    "place": "village",
+    "population": "227",
+    "id": "node/1396771254"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0335368,
+      48.2401346
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396771369",
+  "properties": {
+    "addr:postcode": "72130",
+    "name": "Saint-Germain-sur-Sarthe",
+    "place": "village",
+    "population": "551",
+    "source:population": "INSEE 2013",
+    "id": "node/1396771369"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.095362,
+      48.2856234
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1417163496",
+  "properties": {
+    "addr:postcode": "61170",
+    "name": "Sainte-Scolasse-sur-Sarthe",
+    "place": "village",
+    "population": "550",
+    "source:population": "INSEE 2013",
+    "id": "node/1417163496"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3925408,
+      48.5768519
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1452948887",
+  "properties": {
+    "addr:postcode": "61170",
+    "name": "Coulonges-sur-Sarthe",
+    "place": "village",
+    "population": "492",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Coulonges-sur-Sarthe",
+    "id": "node/1452948887"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3999257,
+      48.5312053
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1454252855",
+  "properties": {
+    "addr:postcode": "61170",
+    "name": "Saint-Julien-sur-Sarthe",
+    "place": "village",
+    "population": "672",
+    "id": "node/1454252855"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3578075,
+      48.4904906
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709256395",
+  "properties": {
+    "addr:postcode": "61560",
+    "name": "Champeaux-sur-Sarthe",
+    "place": "village",
+    "population": "183",
+    "source:population": "INSEE 2013",
+    "id": "node/1709256395"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.4413813,
+      48.57648
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709256966",
+  "properties": {
+    "addr:postcode": "61170",
+    "name": "Saint-Agnan-sur-Sarthe",
+    "place": "village",
+    "population": "118",
+    "source:population": "INSEE 2013",
+    "id": "node/1709256966"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.42633,
+      48.60987
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1829574953",
+  "properties": {
+    "addr:postcode": "72430",
+    "name": "Fercé-sur-Sarthe",
+    "place": "village",
+    "id": "node/1829574953"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0307267,
+      47.9014492
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1829574964",
+  "properties": {
+    "addr:postcode": "72300",
+    "name": "Juigné-sur-Sarthe",
+    "place": "village",
+    "id": "node/1829574964"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.2867745,
+      47.8632521
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1829575103",
+  "properties": {
+    "addr:postcode": "72300",
+    "name": "Souvigné-sur-Sarthe",
+    "place": "village",
+    "population": "610",
+    "source:population": "INSEE 2013",
+    "id": "node/1829575103"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3888199,
+      47.826956
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2096062126",
+  "properties": {
+    "addr:postcode": "61250",
+    "name": "Condé-sur-Sarthe",
+    "place": "village",
+    "population": "2202",
+    "source:population": "INSEE 2013",
+    "id": "node/2096062126"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0341008,
+      48.4325372
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,409 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695827",
+  "properties": {
+    "addr:postcode": "57185",
+    "name": "Vitry-sur-Orne",
+    "name:de": "Wallingen",
+    "name:frk": "Walléngen",
+    "place": "village",
+    "ref:FR:SIREN": "215707241",
+    "wikidata": "Q22024",
+    "wikipedia": "fr:Vitry-sur-Orne",
+    "id": "node/26695827"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1062202,
+      49.2686949
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/263740609",
+  "properties": {
+    "name": "Maucourt-sur-Orne",
+    "place": "village",
+    "id": "node/263740609"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.5094093,
+      49.2477439
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/363804128",
+  "properties": {
+    "name": "Aunou-sur-Orne",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "wikidata": "Q1049125",
+    "wikipedia": "fr:Aunou-sur-Orne",
+    "id": "node/363804128"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.230308,
+      48.6117386
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/392018628",
+  "properties": {
+    "addr:postcode": "14210",
+    "name": "Amayé-sur-Orne",
+    "place": "village",
+    "population": "1026",
+    "ref:FR:SIREN": "211400064",
+    "source": "http://fr.wikipedia.org/wiki/Amayé-sur-Orne",
+    "source:population": "INSEE 2013",
+    "id": "node/392018628"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4363547,
+      49.0855902
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/409730691",
+  "properties": {
+    "name": "Blainville-sur-Orne",
+    "place": "village",
+    "population": "5813",
+    "ref:FR:SIREN": "211400767",
+    "source": "http://fr.wikipedia.org/wiki/Blainville-sur-Orne",
+    "source:population": "INSEE 2013",
+    "id": "node/409730691"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.300348,
+      49.2283209
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/423951700",
+  "properties": {
+    "addr:postcode": "14220",
+    "census": "2006",
+    "name": "Caumont-sur-Orne",
+    "place": "village",
+    "population": "84",
+    "ref:FR:SIREN": "211401443",
+    "source": "http://fr.wikipedia.org/wiki/Caumont-sur-Orne",
+    "source:population": "INSEE 2013",
+    "id": "node/423951700"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4809949,
+      48.9557891
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/429532127",
+  "properties": {
+    "addr:postcode": "14320",
+    "census": "2006",
+    "name": "Clinchamps-sur-Orne",
+    "name:ru": "Кленшан-сюр-Орн",
+    "name:uk": "Кленшам-сюр-Орн",
+    "place": "village",
+    "population": "1101",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q232056",
+    "wikipedia": "fr:Clinchamps-sur-Orne",
+    "id": "node/429532127"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3997222,
+      49.0808333
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/438103550",
+  "properties": {
+    "addr:postcode": "14220",
+    "census": "2006",
+    "name": "Curcy-sur-Orne",
+    "name:ru": "Кюрси-сюр-Орн",
+    "name:uk": "Кюрсі-сюр-Орн",
+    "place": "village",
+    "population": "443",
+    "ref:FR:SIREN": "211402136",
+    "source": "http://fr.wikipedia.org/wiki/Curcy-sur-Orne",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q848319",
+    "wikipedia": "fr:Curcy-sur-Orne",
+    "id": "node/438103550"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5179132,
+      49.0087131
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/441303459",
+  "properties": {
+    "addr:postcode": "14123",
+    "census": "2006",
+    "name": "Fleury-sur-Orne",
+    "name:ru": "Флёри-сюр-Орн",
+    "name:uk": "Флері-сюр-Орн",
+    "old_name": "Allemagne",
+    "place": "village",
+    "population": "4118",
+    "ref:FR:SIREN": "211402714",
+    "source:population": "INSEE 2010",
+    "wikidata": "Q516709",
+    "wikipedia": "fr:Fleury-sur-Orne",
+    "id": "node/441303459"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3753212,
+      49.1478994
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/454603050",
+  "properties": {
+    "addr:postcode": "14320",
+    "census": "2006",
+    "name": "May-sur-Orne",
+    "name:ru": "Ме-сюр-Орн",
+    "name:uk": "Ме-сюр-Орн",
+    "place": "village",
+    "population": "1823",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q217943",
+    "wikipedia": "fr:May-sur-Orne",
+    "id": "node/454603050"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3742274,
+      49.1011172
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/519918444",
+  "properties": {
+    "addr:postcode": "14320",
+    "census": "2006",
+    "name": "Saint-André-sur-Orne",
+    "name:ru": "Сент-Андре-сюр-Орн",
+    "name:uk": "Сент-Андре-сюр-Орн",
+    "place": "village",
+    "population": "1904",
+    "source": "http://fr.wikipedia.org/wiki/Saint-André-sur-Orne",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q645526",
+    "wikipedia": "fr:Saint-André-sur-Orne",
+    "id": "node/519918444"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.384899,
+      49.1160397
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/597263888",
+  "properties": {
+    "addr:postcode": "61430",
+    "name": "Ménil-Hubert-sur-Orne",
+    "place": "village",
+    "population": "412",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q750233",
+    "wikipedia": "fr:Ménil-Hubert-sur-Orne",
+    "id": "node/597263888"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4122248,
+      48.8533354
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/597276655",
+  "properties": {
+    "addr:postcode": "61210",
+    "name": "Sainte-Croix-sur-Orne",
+    "place": "village",
+    "population": "81",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q250814",
+    "wikipedia": "fr:Sainte-Croix-sur-Orne",
+    "id": "node/597276655"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.291105,
+      48.7789514
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/597285239",
+  "properties": {
+    "name": "Saint-Philbert-sur-Orne",
+    "place": "village",
+    "id": "node/597285239"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3771956,
+      48.8390702
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/598146146",
+  "properties": {
+    "addr:postcode": "61210",
+    "name": "Saint-Aubert-sur-Orne",
+    "place": "village",
+    "population": "114",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q250994",
+    "wikipedia": "fr:Saint-Aubert-sur-Orne",
+    "id": "node/598146146"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3305554,
+      48.7897045
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/784023356",
+  "properties": {
+    "addr:postcode": "61200",
+    "name": "Moulins-sur-Orne",
+    "place": "village",
+    "population": "313",
+    "ref:FR:SIREN": "216102988",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Moulins-sur-Orne",
+    "id": "node/784023356"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0707203,
+      48.759298
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396714352",
+  "properties": {
+    "addr:postcode": "72290",
+    "name": "Congé-sur-Orne",
+    "place": "village",
+    "population": "327",
+    "source:population": "INSEE 2013",
+    "id": "node/1396714352"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.2543141,
+      48.2000423
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1417206951",
+  "properties": {
+    "addr:postcode": "61200",
+    "name": "Fontenai-sur-Orne",
+    "place": "village",
+    "population": "246",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q212417",
+    "wikipedia": "fr:Fontenai-sur-Orne",
+    "id": "node/1417206951"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0706029,
+      48.7230882
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1714281278",
+  "properties": {
+    "addr:postcode": "61200",
+    "name": "Juvigny-sur-Orne",
+    "place": "village",
+    "population": "111",
+    "source:population": "INSEE 2013",
+    "id": "node/1714281278"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0221436,
+      48.7310215
+    ]
+  }
+}
+]
+}

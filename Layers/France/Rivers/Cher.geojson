@@ -1,0 +1,383 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26694939",
+  "properties": {
+    "addr:postcode": "41400",
+    "name": "Saint-Georges-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "214102113",
+    "id": "node/26694939"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1304784,
+      47.3258694
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696419",
+  "properties": {
+    "addr:postcode": "18400",
+    "name": "Saint-Florent-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "211802079",
+    "wikipedia": "fr:Saint-Florent-sur-Cher",
+    "id": "node/26696419"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2552381,
+      46.9921896
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696540",
+  "properties": {
+    "name": "Azay-sur-Cher",
+    "place": "village",
+    "id": "node/26696540"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8463048,
+      47.3482178
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697715",
+  "properties": {
+    "addr:postcode": "41130",
+    "name": "Selles-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "214102428",
+    "id": "node/26697715"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.56301,
+      47.2769
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697966",
+  "properties": {
+    "addr:postcode": "41140",
+    "name": "Noyers-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "214101644",
+    "wikipedia": "fr:Noyers-sur-Cher",
+    "id": "node/26697966"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3811918,
+      47.2797159
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698068",
+  "properties": {
+    "addr:postcode": "41200",
+    "name": "Villefranche-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "214102808",
+    "id": "node/26698068"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.7706494,
+      47.2936361
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/296161700",
+  "properties": {
+    "addr:postcode": "41110",
+    "name": "Mareuil-sur-Cher",
+    "place": "village",
+    "id": "node/296161700"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3291231,
+      47.2937709
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/296165390",
+  "properties": {
+    "addr:postcode": "41140",
+    "name": "Saint-Romain-sur-Cher",
+    "place": "village",
+    "wikipedia": "fr:Saint-Romain-sur-Cher",
+    "id": "node/296165390"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3986777,
+      47.3180387
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/357129560",
+  "properties": {
+    "addr:postcode": "18190",
+    "name": "Châteauneuf-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "211800586",
+    "id": "node/357129560"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3178127,
+      46.8580173
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/361538980",
+  "properties": {
+    "addr:postcode": "41320",
+    "name": "Saint-Julien-sur-Cher",
+    "place": "village",
+    "id": "node/361538980"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.7735316,
+      47.2808039
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/449675145",
+  "properties": {
+    "addr:postcode": "41320",
+    "name": "Châtres-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "214100448",
+    "source": "http://fr.wikipedia.org/wiki/Ch%C3%A2tres-sur-Cher",
+    "wikidata": "Q1172578",
+    "wikipedia": "fr:Châtres-sur-Cher",
+    "id": "node/449675145"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9077269,
+      47.2645938
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/457939184",
+  "properties": {
+    "addr:postcode": "18400",
+    "name": "Villeneuve-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "211802855",
+    "wikipedia": "fr:Villeneuve-sur-Cher",
+    "id": "node/457939184"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2234878,
+      47.0287368
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/457939355",
+  "properties": {
+    "addr:postcode": "18100",
+    "name": "Méry-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "211801501",
+    "id": "node/457939355"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.9875213,
+      47.2458229
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/631057638",
+  "properties": {
+    "addr:postcode": "18190",
+    "name": "Crézançay-sur-Cher",
+    "place": "village",
+    "ref:FR:SIREN": "211800784",
+    "id": "node/631057638"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.357495,
+      46.8118809
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1370526508",
+  "properties": {
+    "addr:postcode": "41320",
+    "name": "Mennetou-sur-Cher",
+    "place": "village",
+    "start_date": "1212",
+    "id": "node/1370526508"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.8669838,
+      47.2691517
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1577226455",
+  "properties": {
+    "addr:postcode": "41130",
+    "name": "Châtillon-sur-Cher",
+    "place": "village",
+    "id": "node/1577226455"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4941856,
+      47.2740542
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1732776680",
+  "properties": {
+    "addr:postcode": "63330",
+    "name": "Château-sur-Cher",
+    "name:oc": "Chastiau",
+    "place": "village",
+    "source:name:oc": "ieo-bdtopoc",
+    "id": "node/1732776680"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5558233,
+      46.1181746
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1760252880",
+  "properties": {
+    "addr:postcode": "41320",
+    "name": "Langon-sur-Cher",
+    "name:-2017-12-25": "Langon",
+    "name:2017-12-25-": "Langon-sur-Cher",
+    "place": "village",
+    "id": "node/1760252880"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.8275613,
+      47.2840525
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1760258971",
+  "properties": {
+    "addr:postcode": "41400",
+    "name": "Monthou-sur-Cher",
+    "place": "village",
+    "id": "node/1760258971"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.29389,
+      47.34641
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1760259559",
+  "properties": {
+    "addr:postcode": "41400",
+    "name": "Faverolles-sur-Cher",
+    "place": "village",
+    "id": "node/1760259559"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.18481,
+      47.32044
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1878769592",
+  "properties": {
+    "name": "Athée-sur-Cher",
+    "place": "village",
+    "wikipedia": "fr:Athée-sur-Cher",
+    "id": "node/1878769592"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9157178,
+      47.3208166
+    ]
+  }
+}
+]
+}

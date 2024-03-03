@@ -1,0 +1,318 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695554",
+  "properties": {
+    "name": "Fresse-sur-Moselle",
+    "place": "village",
+    "id": "node/26695554"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.7881018,
+      47.8767217
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697028",
+  "properties": {
+    "name": "Pagny-sur-Moselle",
+    "place": "village",
+    "id": "node/26697028"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.0197497,
+      48.9837551
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697543",
+  "properties": {
+    "addr:postcode": "57130",
+    "name": "Ars-sur-Moselle",
+    "name:de": "Ars an der Mosel",
+    "place": "village",
+    "population": "4846",
+    "ref:FR:SIREN": "215700329",
+    "source:population": "INSEE 2013",
+    "id": "node/26697543"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.0763114,
+      49.0769676
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/213580016",
+  "properties": {
+    "addr:postcode": "57300",
+    "name": "Ay-sur-Moselle",
+    "name:de": "Aich an der Mosel",
+    "name:lb": "Welsch Esch",
+    "place": "village",
+    "population": "1525",
+    "ref:FR:SIREN": "215700436",
+    "wikidata": "Q21912",
+    "wikipedia": "fr:Ay-sur-Moselle",
+    "id": "node/213580016"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.2089476,
+      49.2434985
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/226990490",
+  "properties": {
+    "alt_name:de": "Ancy an der Mosel",
+    "description": "ancienne commune devenue commune déléguée depuis 2016, membre de la nouvelle Commune de Ancy-Dornot",
+    "name": "Ancy-sur-Moselle",
+    "name:de": "Anzig",
+    "old_name:de": "Ancen an der Mosel",
+    "place": "village",
+    "id": "node/226990490"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.058474,
+      49.0565605
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/249331027",
+  "properties": {
+    "addr:postcode": "57680",
+    "name": "Novéant-sur-Moselle",
+    "name:de": "Neuburg",
+    "place": "village",
+    "population": "1823",
+    "ref:FR:SIREN": "215705153",
+    "id": "node/249331027"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.0436493,
+      49.0231964
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/254910904",
+  "properties": {
+    "name": "Flavigny-sur-Moselle",
+    "place": "village",
+    "id": "node/254910904"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1874642,
+      48.5675895
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/255099834",
+  "properties": {
+    "name": "Autreville-sur-Moselle",
+    "place": "village",
+    "id": "node/255099834"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.1158075,
+      48.8233167
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/256883448",
+  "properties": {
+    "name": "Champey-sur-Moselle",
+    "place": "village",
+    "id": "node/256883448"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.058202,
+      48.9580967
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/256898136",
+  "properties": {
+    "name": "Chaudeney-sur-Moselle",
+    "place": "village",
+    "id": "node/256898136"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.9069254,
+      48.6513258
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/260416130",
+  "properties": {
+    "name": "Saint-Maurice-sur-Moselle",
+    "place": "village",
+    "id": "node/260416130"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.8244935,
+      47.8588336
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463489",
+  "properties": {
+    "name": "Velle-sur-Moselle",
+    "place": "village",
+    "id": "node/282463489"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.2745716,
+      48.531383
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463624",
+  "properties": {
+    "name": "Fontenoy-sur-Moselle",
+    "place": "village",
+    "id": "node/282463624"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      5.9824543,
+      48.7108941
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282463770",
+  "properties": {
+    "name": "Neuviller-sur-Moselle",
+    "place": "village",
+    "id": "node/282463770"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.2888812,
+      48.4921993
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282493354",
+  "properties": {
+    "name": "Châtel-sur-Moselle",
+    "place": "village",
+    "wikipedia": "fr:Châtel-sur-Moselle",
+    "id": "node/282493354"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3932974,
+      48.3131315
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287937865",
+  "properties": {
+    "name": "Berg-sur-Moselle",
+    "name:de": "Berg",
+    "name:lb": "Bierg",
+    "place": "village",
+    "id": "node/287937865"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.3111933,
+      49.4307696
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/287937976",
+  "properties": {
+    "addr:postcode": "57680",
+    "name": "Corny-sur-Moselle",
+    "place": "village",
+    "ref:FR:SIREN": "215701533",
+    "id": "node/287937976"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.0596,
+      49.0351
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/9094503707",
+  "properties": {
+    "name": "Rupt-sur-Moselle",
+    "place": "village",
+    "id": "node/9094503707"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      6.6597589,
+      47.9269076
+    ]
+  }
+}
+]
+}

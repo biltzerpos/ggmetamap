@@ -1,0 +1,175 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/33783651",
+  "properties": {
+    "addr:postcode": "41100",
+    "name": "Villiers-sur-Loir",
+    "place": "village",
+    "id": "node/33783651"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9949158,
+      47.8059045
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/312337502",
+  "properties": {
+    "addr:postcode": "49140",
+    "name": "Montreuil-sur-Loir",
+    "place": "village",
+    "ref:FR:SIREN": "214902165",
+    "id": "node/312337502"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4032927,
+      47.607685
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/376044000",
+  "properties": {
+    "addr:postcode": "72500",
+    "name": "La Bruère-sur-Loir",
+    "place": "village",
+    "id": "node/376044000"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3480945,
+      47.6509533
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/516291369",
+  "properties": {
+    "addr:postcode": "72200",
+    "name": "Mareil-sur-Loir",
+    "place": "village",
+    "population": "623",
+    "source:population": "INSEE 2013",
+    "id": "node/516291369"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0119081,
+      47.7147814
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1363565995",
+  "properties": {
+    "addr:postcode": "41800",
+    "name": "Couture-sur-Loir",
+    "name:uk": "Кутюр-сюр-Луар",
+    "place": "village",
+    "wikidata": "Q628213",
+    "wikipedia": "fr:Couture-sur-Loir",
+    "id": "node/1363565995"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6883455,
+      47.7533005
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396696664",
+  "properties": {
+    "addr:postcode": "72200",
+    "name": "Cré-sur-Loir",
+    "old_name": "Cré",
+    "place": "village",
+    "population": "803",
+    "source:name": "Décret n° 2014-1447 du 3 décembre 2014 portant changement du nom de communes",
+    "source:population": "INSEE 2013",
+    "website:name": "http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000029837701",
+    "wikidata": "Q1220915",
+    "wikipedia": "fr:Cré (Sarthe)",
+    "id": "node/1396696664"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.1575527,
+      47.677121
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396737174",
+  "properties": {
+    "addr:postcode": "72340",
+    "name": "Ruillé-sur-Loir",
+    "place": "village",
+    "population": "1173",
+    "source:population": "INSEE 2013",
+    "id": "node/1396737174"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.620806,
+      47.7516353
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1396737215",
+  "properties": {
+    "addr:postcode": "72500",
+    "name": "Vouvray-sur-Loir",
+    "place": "village",
+    "population": "796",
+    "source:population": "INSEE 2013",
+    "id": "node/1396737215"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.4625769,
+      47.6957144
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1829575008",
+  "properties": {
+    "addr:postcode": "72500",
+    "name": "Nogent-sur-Loir",
+    "place": "village",
+    "id": "node/1829575008"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3954373,
+      47.6691897
+    ]
+  }
+}
+]
+}

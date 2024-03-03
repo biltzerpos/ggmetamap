@@ -1,0 +1,220 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/302664062",
+  "properties": {
+    "addr:postcode": "21410",
+    "name": "Gissey-sur-Ouche",
+    "name:ja": "ギセー＝シュル＝ウシュ",
+    "name:la": "Gisserium",
+    "place": "village",
+    "population": "364",
+    "source:population": "INSEE 2013",
+    "id": "node/302664062"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7695049,
+      47.2640098
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1475010312",
+  "properties": {
+    "name": "Thorey-sur-Ouche",
+    "place": "village",
+    "wikidata": "Q16238",
+    "wikipedia": "de:Thorey-sur-Ouche",
+    "id": "node/1475010312"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6963872,
+      47.146185
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1576553775",
+  "properties": {
+    "addr:postcode": "21360",
+    "name": "La Bussière-sur-Ouche",
+    "name:ja": "ラ・ビュシエール＝シュル＝ウシュ",
+    "name:la": "Buxeria",
+    "place": "village",
+    "population": "147",
+    "source:population": "INSEE 2013",
+    "id": "node/1576553775"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.72382,
+      47.2157406
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1756188883",
+  "properties": {
+    "addr:postcode": "21410",
+    "name": "Fleurey-sur-Ouche",
+    "name:ja": "フルーレー＝シュル＝ウシュ",
+    "place": "village",
+    "population": "1161",
+    "source:population": "INSEE 2013",
+    "id": "node/1756188883"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.8591826,
+      47.3115572
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1756188885",
+  "properties": {
+    "name": "Velars-sur-Ouche",
+    "name:ja": "ヴラール＝シュル＝ウシュ",
+    "place": "village",
+    "postal_code": "21370",
+    "id": "node/1756188885"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.9041174,
+      47.3193952
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1756205432",
+  "properties": {
+    "addr:postcode": "21410",
+    "name": "Sainte-Marie-sur-Ouche",
+    "name:fr": "Sainte-Marie-sur-Ouche",
+    "name:ja": "サント＝マリ＝シュル＝ウシュ",
+    "place": "village",
+    "id": "node/1756205432"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7967455,
+      47.2871706
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1757592161",
+  "properties": {
+    "name": "Veuvey-sur-Ouche",
+    "place": "village",
+    "postal_code": "21360",
+    "id": "node/1757592161"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7155,
+      47.18419
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1758207839",
+  "properties": {
+    "addr:postcode": "21410",
+    "name": "Barbirey-sur-Ouche",
+    "name:ja": "バルビーレ＝シュル＝ウシュ",
+    "place": "village",
+    "population": "266",
+    "source:population": "INSEE 2013",
+    "id": "node/1758207839"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7546181,
+      47.2527761
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1758210359",
+  "properties": {
+    "addr:postcode": "21410",
+    "name": "Saint-Victor-sur-Ouche",
+    "name:ja": "サン＝ヴィクトル＝シュル＝ウシュ",
+    "place": "village",
+    "wikidata": "Q134500",
+    "wikipedia": "fr:Saint-Victor-sur-Ouche",
+    "id": "node/1758210359"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.7456575,
+      47.2339062
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1871697613",
+  "properties": {
+    "addr:postcode": "21360",
+    "name": "Lusigny-sur-Ouche",
+    "name:uk": "Люзіньї-сюр-Уш",
+    "place": "village",
+    "population": "107",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q16233",
+    "wikipedia": "fr:Lusigny-sur-Ouche",
+    "id": "node/1871697613"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.67295,
+      47.09026
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1877225406",
+  "properties": {
+    "addr:postcode": "21360",
+    "name": "Bligny-sur-Ouche",
+    "place": "village",
+    "population": "848",
+    "wikipedia": "fr:Bligny-sur-Ouche",
+    "id": "node/1877225406"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.6696153,
+      47.1065912
+    ]
+  }
+}
+]
+}

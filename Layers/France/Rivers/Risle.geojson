@@ -1,0 +1,230 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/691607321",
+  "properties": {
+    "addr:postcode": "27290",
+    "name": "Freneuse-sur-Risle",
+    "place": "village",
+    "population": "343",
+    "ref:FR:SIREN": "212702674",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1074392",
+    "wikipedia": "fr:Freneuse-sur-Risle",
+    "id": "node/691607321"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.672014,
+      49.2518988
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/691607818",
+  "properties": {
+    "addr:postcode": "27290",
+    "name": "Montfort-sur-Risle",
+    "place": "village",
+    "population": "812",
+    "ref:FR:SIREN": "212704134",
+    "source:population": "INSEE 2013",
+    "id": "node/691607818"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6635289,
+      49.2955866
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/693068385",
+  "properties": {
+    "addr:postcode": "27500",
+    "name": "Manneville-sur-Risle",
+    "place": "village",
+    "population": "1468",
+    "ref:FR:SIREN": "212703854",
+    "source:population": "INSEE 2013",
+    "id": "node/693068385"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.5256758,
+      49.3652178
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/693069776",
+  "properties": {
+    "addr:postcode": "27500",
+    "name": "Corneville-sur-Risle",
+    "place": "village",
+    "population": "1248",
+    "ref:FR:SIREN": "212701742",
+    "source:population": "INSEE 2013",
+    "id": "node/693069776"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.5858134,
+      49.3411627
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1326415770",
+  "properties": {
+    "addr:postcode": "61300",
+    "name": "Saint-Sulpice-sur-Risle",
+    "place": "village",
+    "population": "1666",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q250712",
+    "wikipedia": "fr:Saint-Sulpice-sur-Risle",
+    "id": "node/1326415770"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6569686,
+      48.7807121
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1502764018",
+  "properties": {
+    "addr:postcode": "61270",
+    "name": "Saint-Hilaire-sur-Risle",
+    "place": "village",
+    "population": "321",
+    "source": "wikipedia",
+    "source:population": "INSEE 2013",
+    "id": "node/1502764018"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.4902124,
+      48.7308852
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1515242786",
+  "properties": {
+    "addr:postcode": "27760",
+    "name": "La Ferrière-sur-Risle",
+    "place": "village",
+    "population": "269",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:La Ferriére-sur-Risle",
+    "id": "node/1515242786"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.7854112,
+      48.9779367
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1555953921",
+  "properties": {
+    "addr:postcode": "27290",
+    "name": "Saint-Philbert-sur-Risle",
+    "place": "village",
+    "population": "753",
+    "source": "Bing ; cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q627243",
+    "wikipedia": "fr:Saint-Philbert-sur-Risle",
+    "id": "node/1555953921"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6497118,
+      49.2949288
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709222363",
+  "properties": {
+    "addr:postcode": "27290",
+    "name": "Glos-sur-Risle",
+    "place": "village",
+    "population": "438",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1008342",
+    "wikipedia": "fr:Glos-sur-Risle",
+    "id": "node/1709222363"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.68075,
+      49.26913
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1709222368",
+  "properties": {
+    "name": "Grosley-sur-Risle",
+    "place": "village",
+    "population": "549",
+    "source:population": "INSEE 2013",
+    "id": "node/1709222368"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8015148,
+      49.0455744
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1996684104",
+  "properties": {
+    "addr:postcode": "27290",
+    "name": "Condé-sur-Risle",
+    "place": "village",
+    "population": "553",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1009689",
+    "wikipedia": "fr:Condé-sur-Risle",
+    "id": "node/1996684104"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6162813,
+      49.3136251
+    ]
+  }
+}
+]
+}

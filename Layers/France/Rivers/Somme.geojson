@@ -1,0 +1,230 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26695031",
+  "properties": {
+    "addr:postcode": "80230",
+    "name": "Saint-Valery-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218006773",
+    "id": "node/26695031"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.6279147,
+      50.1887006
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697732",
+  "properties": {
+    "addr:postcode": "80470",
+    "name": "Ailly-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218000107",
+    "id": "node/26697732"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1980997,
+      49.928085
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748505",
+  "properties": {
+    "addr:postcode": "71760",
+    "name": "Cressy-sur-Somme",
+    "place": "village",
+    "population": "233",
+    "ref:SIREN": "217101526",
+    "source:population": "INSEE 2013",
+    "id": "node/282748505"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8683802,
+      46.6955192
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/526336839",
+  "properties": {
+    "name": "Eaucourt-sur-Somme",
+    "name:pcd": "Iucourt",
+    "place": "village",
+    "postal_code": "80580",
+    "ref:FR:SIREN": "218002517",
+    "source:name:pcd": "Agence régionale pour el langue picarde",
+    "id": "node/526336839"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.8849405,
+      50.0644957
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/644996639",
+  "properties": {
+    "addr:postcode": "80340",
+    "name": "Bray-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218001360",
+    "id": "node/644996639"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7179704,
+      49.9393722
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/670241401",
+  "properties": {
+    "addr:postcode": "80190",
+    "name": "Béthencourt-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218000974",
+    "id": "node/670241401"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.9638972,
+      49.7958939
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/685090474",
+  "properties": {
+    "addr:postcode": "80340",
+    "name": "Méricourt-sur-Somme",
+    "place": "village",
+    "population": "191",
+    "source:population": "INSEE 2013",
+    "id": "node/685090474"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6738976,
+      49.9060891
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/691211877",
+  "properties": {
+    "addr:postcode": "80800",
+    "name": "Vaux-sur-Somme",
+    "place": "village",
+    "id": "node/691211877"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.5493162,
+      49.9220575
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/825275630",
+  "properties": {
+    "addr:postcode": "80310",
+    "name": "Belloy-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218000784",
+    "id": "node/825275630"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1354393,
+      49.9668462
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1010928595",
+  "properties": {
+    "addr:postcode": "80510",
+    "name": "Fontaine-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218003143",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikipedia": "fr:Fontaine-sur-Somme",
+    "id": "node/1010928595"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.941005,
+      50.0291714
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1020283890",
+  "properties": {
+    "addr:postcode": "80310",
+    "name": "Hangest-sur-Somme",
+    "place": "village",
+    "ref:FR:SIREN": "218003986",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "id": "node/1020283890"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.0652324,
+      49.9802316
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1706097491",
+  "properties": {
+    "addr:postcode": "80200",
+    "name": "Cléry-sur-Somme",
+    "name:uk": "Клері-сюр-Сомм",
+    "place": "village",
+    "wikidata": "Q58858",
+    "wikipedia": "fr:Cléry-sur-Somme",
+    "id": "node/1706097491"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8836029,
+      49.957428
+    ]
+  }
+}
+]
+}

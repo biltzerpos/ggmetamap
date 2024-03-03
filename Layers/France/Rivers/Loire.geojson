@@ -1,0 +1,1542 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26691486",
+  "properties": {
+    "name": "Saint-Cyr-sur-Loire",
+    "name:la": "Sanctus Ciricus",
+    "place": "town",
+    "id": "node/26691486"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.6658199,
+      47.4052448
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26691751",
+  "properties": {
+    "addr:postcode": "58200",
+    "capital": "7",
+    "name": "Cosne-Cours-sur-Loire",
+    "name:fr": "Cosne-Cours-sur-Loire",
+    "name:ja": "コーヌ＝クール＝シュル＝ロワール",
+    "name:kk": "Кон-Кур-сюр-Луар",
+    "name:ru": "Кон-Кур-сюр-Луар",
+    "name:uk": "Кон-Кур-сюр-Луар",
+    "name:zh": "卢瓦尔河畔科斯内-库尔",
+    "place": "town",
+    "population": "10551",
+    "ref:FR:SIREN": "215800863",
+    "source:population": "INSEE 2012",
+    "website": "http://www.mairie-cosnesurloire.fr/",
+    "wikidata": "Q476253",
+    "wikipedia": "fr:Cosne-Cours-sur-Loire",
+    "id": "node/26691751"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.926032,
+      47.4112642
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26692082",
+  "properties": {
+    "addr:postcode": "44230",
+    "alt_name": "Saint-Sébastien Sud Loire",
+    "name": "Saint-Sébastien-sur-Loire",
+    "name:br": "Sant-Sebastian-an-Enk",
+    "name:fr": "Saint-Sébastien-sur-Loire",
+    "place": "town",
+    "population": "26838",
+    "ref:FR:SIREN": "214401903",
+    "source:population": "INSEE 2020",
+    "website": "https://www.saintsebastien.fr/",
+    "wikidata": "Q337636",
+    "wikipedia": "fr:Saint-Sébastien-sur-Loire",
+    "id": "node/26692082"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.4992075,
+      47.2035029
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694351",
+  "properties": {
+    "addr:postcode": "45130",
+    "name": "Meung-sur-Loire",
+    "place": "village",
+    "id": "node/26694351"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.6968055,
+      47.8268972
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694416",
+  "properties": {
+    "addr:postcode": "43120",
+    "name": "Monistrol-sur-Loire",
+    "name:oc": "Monistròl de Leir",
+    "place": "village",
+    "population": "8793",
+    "population:date": "2015-01-01",
+    "ref:FR:SIREN": "214301376",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE",
+    "wikidata": "Q1111476",
+    "wikipedia": "fr:Monistrol-sur-Loire",
+    "id": "node/26694416"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.1727546,
+      45.2926341
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694794",
+  "properties": {
+    "addr:postcode": "58400",
+    "name": "La Charité-sur-Loire",
+    "place": "village",
+    "population": "5129",
+    "ref:FR:SIREN": "215800590",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:La Charité-sur-Loire",
+    "id": "node/26694794"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0188106,
+      47.1771359
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695081",
+  "properties": {
+    "addr:postcode": "44470",
+    "name": "Thouaré-sur-Loire",
+    "name:br": "Tarvieg",
+    "name:fr": "Thouaré-sur-Loire",
+    "place": "town",
+    "population": "10025",
+    "ref:FR:SIREN": "214402042",
+    "source:population": "INSEE 2020",
+    "website": "https://www.thouare.fr/",
+    "wikidata": "Q1165100",
+    "wikipedia": "fr:Thouaré-sur-Loire",
+    "id": "node/26695081"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.4410916,
+      47.2668824
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695091",
+  "properties": {
+    "addr:postcode": "49350",
+    "name": "Les Rosiers-sur-Loire",
+    "place": "village",
+    "population": "2357",
+    "ref:FR:SIREN": "214902611",
+    "source:population": "INSEE 2013",
+    "id": "node/26695091"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.2248305,
+      47.3527378
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695372",
+  "properties": {
+    "addr:postcode": "41150",
+    "name": "Veuzain-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214101677",
+    "id": "node/26695372"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1721984,
+      47.5004881
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696791",
+  "properties": {
+    "addr:postcode": "45600",
+    "name": "Sully-sur-Loire",
+    "place": "village",
+    "wikidata": "Q504924",
+    "wikipedia": "fr:Sully-sur-Loire",
+    "id": "node/26696791"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3738968,
+      47.7654098
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697211",
+  "properties": {
+    "addr:postcode": "45110",
+    "name": "Châteauneuf-sur-Loire",
+    "place": "village",
+    "ref:INSEE": "45082",
+    "wikipedia": "châ",
+    "id": "node/26697211"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2283459,
+      47.8642836
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697254",
+  "properties": {
+    "addr:postcode": "49130",
+    "name": "Sainte-Gemmes-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214902785",
+    "id": "node/26697254"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5587967,
+      47.4243064
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697641",
+  "properties": {
+    "addr:postcode": "49290",
+    "name": "Chalonnes-sur-Loire",
+    "place": "village",
+    "population": "6492",
+    "ref:FR:SIREN": "214900631",
+    "source:population": "INSEE 2013",
+    "id": "node/26697641"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.76311,
+      47.3516207
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697806",
+  "properties": {
+    "addr:postcode": "45570",
+    "name": "Ouzouer-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214502445",
+    "id": "node/26697806"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.4794838,
+      47.7664387
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26697969",
+  "properties": {
+    "name": "Chouzé-sur-Loire",
+    "name:la": "Chelziacus",
+    "place": "village",
+    "id": "node/26697969"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.109958,
+      47.2439
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698222",
+  "properties": {
+    "addr:postcode": "49610",
+    "name": "Juigné-sur-Loire",
+    "place": "village",
+    "population": "2499",
+    "ref:FR:SIREN": "214901670",
+    "source:population": "INSEE 2013",
+    "id": "node/26698222"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.475902,
+      47.4077557
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698366",
+  "properties": {
+    "name": "Montlouis-sur-Loire",
+    "name:la": "Laudiacus Mons",
+    "place": "town",
+    "id": "node/26698366"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.8269289,
+      47.3881023
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698420",
+  "properties": {
+    "addr:postcode": "45360",
+    "name": "Châtillon-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214500878",
+    "wikidata": "Q748721",
+    "wikipedia": "fr:Châtillon-sur-Loire",
+    "id": "node/26698420"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7530968,
+      47.5904231
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698508",
+  "properties": {
+    "addr:postcode": "44470",
+    "name": "Mauves-sur-Loire",
+    "name:br": "Malvid",
+    "name:fr": "Mauves-sur-Loire",
+    "place": "village",
+    "population": "3215",
+    "ref:FR:SIREN": "214400947",
+    "source:population": "INSEE 2020",
+    "website": "https://www.mauvessurloire.fr/",
+    "wikidata": "Q747774",
+    "wikipedia": "fr:Mauves-sur-Loire",
+    "id": "node/26698508"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.393575,
+      47.2954249
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698525",
+  "properties": {
+    "addr:postcode": "44980",
+    "name": "Sainte-Luce-sur-Loire",
+    "name:br": "Santez-Lusenn",
+    "name:fr": "Sainte-Luce-sur-Loire",
+    "place": "town",
+    "population": "15360",
+    "ref:FR:SIREN": "214401721",
+    "source:population": "INSEE 2020",
+    "website": "https://www.sainte-luce-loire.com/",
+    "wikidata": "Q657190",
+    "wikipedia": "fr:Sainte-Luce-sur-Loire",
+    "id": "node/26698525"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.4865339,
+      47.2493864
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/68412213",
+  "properties": {
+    "addr:postcode": "41150",
+    "name": "Rilly-sur-Loire",
+    "place": "village",
+    "id": "node/68412213"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1353179,
+      47.4667668
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/68414095",
+  "properties": {
+    "addr:postcode": "41150",
+    "name": "Chaumont-sur-Loire",
+    "place": "village",
+    "id": "node/68414095"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1903903,
+      47.4781489
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82336591",
+  "properties": {
+    "addr:postcode": "03230",
+    "name": "Gannay-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "210301198",
+    "wikipedia": "fr:Gannay-sur-Loire",
+    "id": "node/82336591"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6122807,
+      46.7314214
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82336808",
+  "properties": {
+    "addr:postcode": "03470",
+    "name": "Monétay-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "210301776",
+    "id": "node/82336808"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8165554,
+      46.430326
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82336951",
+  "properties": {
+    "addr:postcode": "03470",
+    "name": "Pierrefitte-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "210302071",
+    "id": "node/82336951"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8154833,
+      46.5071128
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/82344737",
+  "properties": {
+    "addr:postcode": "42155",
+    "name": "Saint-Jean-Saint-Maurice-sur-Loire",
+    "place": "village",
+    "population": "1142",
+    "ref:FR:SIREN": "214202392",
+    "source:population": "INSEE 2016",
+    "wikidata": "Q1094593",
+    "wikipedia": "fr:Saint-Jean-Saint-Maurice-sur-Loire",
+    "id": "node/82344737"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.0035922,
+      45.9661145
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/267385231",
+  "properties": {
+    "name": "Nouan-sur-Loire",
+    "place": "village",
+    "id": "node/267385231"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.5601575,
+      47.6852808
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/267385341",
+  "properties": {
+    "addr:postcode": "41500",
+    "name": "Muides-sur-Loire",
+    "place": "village",
+    "id": "node/267385341"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.527379,
+      47.6699317
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/267385350",
+  "properties": {
+    "addr:postcode": "41500",
+    "name": "Saint-Dyé-sur-Loire",
+    "place": "village",
+    "id": "node/267385350"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.491863,
+      47.65568
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748598",
+  "properties": {
+    "addr:postcode": "71160",
+    "name": "Gilly-sur-Loire",
+    "place": "village",
+    "population": "478",
+    "source:population": "INSEE 2013",
+    "id": "node/282748598"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7792477,
+      46.537435
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748804",
+  "properties": {
+    "addr:postcode": "71160",
+    "name": "Perrigny-sur-Loire",
+    "place": "village",
+    "population": "135",
+    "source:population": "INSEE 2020",
+    "wikipedia": "fr:Perrigny-sur-Loire",
+    "id": "node/282748804"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.838459,
+      46.5388252
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282748837",
+  "properties": {
+    "addr:postcode": "71140",
+    "name": "Saint-Aubin-sur-Loire",
+    "place": "village",
+    "wikipedia": "fr:Saint-Aubin-sur-Loire",
+    "id": "node/282748837"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7468662,
+      46.569437
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/282749033",
+  "properties": {
+    "addr:postcode": "71140",
+    "name": "Vitry-sur-Loire",
+    "place": "village",
+    "id": "node/282749033"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.7072267,
+      46.6815878
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/295898437",
+  "properties": {
+    "addr:postcode": "49570",
+    "name": "Montjean-sur-Loire",
+    "place": "village",
+    "population": "2939",
+    "ref:FR:SIREN": "214902124",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1385384",
+    "wikipedia": "fr:Montjean-sur-Loire",
+    "id": "node/295898437"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.8611689,
+      47.3877012
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/297087836",
+  "properties": {
+    "name": "Saint-Michel-sur-Loire",
+    "name:la": "Sanctus Michaelis",
+    "old_name": "Saint-Micheau",
+    "place": "village",
+    "postal_code": "37130",
+    "id": "node/297087836"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3488333,
+      47.3076457
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/343620186",
+  "properties": {
+    "addr:postcode": "45730",
+    "name": "Saint-Benoît-sur-Loire",
+    "place": "village",
+    "population": "1872",
+    "id": "node/343620186"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3069095,
+      47.8101798
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/355745321",
+  "properties": {
+    "addr:postcode": "49190",
+    "name": "Rochefort-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214902595",
+    "id": "node/355745321"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6549574,
+      47.3577833
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/413958477",
+  "properties": {
+    "addr:postcode": "49123",
+    "name": "Le Fresne-sur-Loire",
+    "name:br": "Runonn",
+    "place": "village",
+    "population": "1001",
+    "ref:FR:SIREN": "214400608",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "source:population": "INSEE 2013",
+    "id": "node/413958477"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.9326784,
+      47.402253
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/434362323",
+  "properties": {
+    "addr:postcode": "43800",
+    "name": "Lavoûte-sur-Loire",
+    "name:oc": "La Vòuta de Leir",
+    "place": "village",
+    "population": "855",
+    "population:date": "2015-01-01",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE",
+    "wikidata": "Q1109554",
+    "wikipedia": "fr:Lavoûte-sur-Loire",
+    "id": "node/434362323"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.9065257,
+      45.1189171
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/442848394",
+  "properties": {
+    "addr:postcode": "44260",
+    "name": "Lavau-sur-Loire",
+    "name:br": "Gwal-Liger",
+    "place": "village",
+    "population": "767",
+    "ref:FR:SIREN": "214400806",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre ; mise à jour : 2009",
+    "source:population": "INSEE 2020",
+    "id": "node/442848394"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.966515,
+      47.3068471
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/538496092",
+  "properties": {
+    "addr:postcode": "18240",
+    "name": "Belleville-sur-Loire",
+    "place": "village",
+    "source": "http://fr.wikipedia.org/wiki/Belleville-sur-Loire",
+    "id": "node/538496092"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8506766,
+      47.5072951
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/538496138",
+  "properties": {
+    "addr:postcode": "45630",
+    "name": "Beaulieu-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214500290",
+    "source": "http://fr.wikipedia.org/wiki/Beaulieu-sur-Loire",
+    "id": "node/538496138"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8173796,
+      47.5429471
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/582087300",
+  "properties": {
+    "addr:postcode": "49123",
+    "name": "Champtocé-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214900680",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "id": "node/582087300"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.8649391,
+      47.4115866
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/582469676",
+  "properties": {
+    "addr:postcode": "49170",
+    "name": "Saint-Georges-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214902835",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "wikipedia": "fr:Saint-Georges-sur-Loire",
+    "id": "node/582469676"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.7610073,
+      47.4082853
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/582477553",
+  "properties": {
+    "addr:postcode": "49250",
+    "name": "Saint-Mathurin-sur-Loire",
+    "note": "La commune s'appelle Loire-Authion mais la ville porte toujours le même nom Saint-Mathurin-sur-Loire. Il n'y a pas de ville ou village (tag place=*) avec le nom Loire-Authion.",
+    "place": "village",
+    "wikidata": "Q1384834",
+    "wikipedia": "fr:Saint-Mathurin-sur-Loire",
+    "id": "node/582477553"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3209822,
+      47.4098877
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/599481842",
+  "properties": {
+    "addr:postcode": "49730",
+    "name": "Varennes-sur-Loire",
+    "place": "village",
+    "ref:FR:SIREN": "214903619",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+    "id": "node/599481842"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.0533379,
+      47.2384978
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/698807778",
+  "properties": {
+    "addr:postcode": "58400",
+    "name": "Mesves-sur-Loire",
+    "place": "village",
+    "population": "664",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Mesves-sur-Loire",
+    "id": "node/698807778"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.9937839,
+      47.2438029
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/819190537",
+  "properties": {
+    "addr:postcode": "58320",
+    "name": "Germigny-sur-Loire",
+    "place": "village",
+    "population": "710",
+    "ref:FR:SIREN": "215801242",
+    "source:population": "INSEE 2013",
+    "id": "node/819190537"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.0402599,
+      47.0810995
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/827694685",
+  "properties": {
+    "addr:postcode": "58240",
+    "name": "Fleury-sur-Loire",
+    "place": "village",
+    "population": "239",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q1108744",
+    "wikipedia": "fr:Fleury-sur-Loire",
+    "id": "node/827694685"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3199963,
+      46.8361641
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/828713447",
+  "properties": {
+    "addr:postcode": "58440",
+    "name": "La Celle-sur-Loire",
+    "place": "village",
+    "population": "844",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q890348",
+    "wikipedia": "fr:La Celle-sur-Loire",
+    "id": "node/828713447"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.9287924,
+      47.4735933
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/918983606",
+  "properties": {
+    "addr:postcode": "58150",
+    "name": "Tracy-sur-Loire",
+    "place": "village",
+    "population": "960",
+    "source:population": "INSEE 2013",
+    "id": "node/918983606"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.9084928,
+      47.3193211
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1133805270",
+  "properties": {
+    "addr:postcode": "58160",
+    "name": "Saint-Ouen-sur-Loire",
+    "place": "village",
+    "population": "535",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Saint-Ouen-sur-Loire",
+    "id": "node/1133805270"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3018056,
+      46.8833531
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1426459843",
+  "properties": {
+    "name": "La Chapelle-sur-Loire",
+    "name:la": "Capella Alba",
+    "place": "village",
+    "id": "node/1426459843"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.222443,
+      47.2482404
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1617647830",
+  "properties": {
+    "addr:postcode": "58150",
+    "name": "Pouilly-sur-Loire",
+    "name:ja": "プイィ・スュル・ロワール",
+    "place": "village",
+    "population": "1732",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Pouilly-sur-Loire",
+    "id": "node/1617647830"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.9584492,
+      47.281411
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1675132656",
+  "properties": {
+    "addr:postcode": "43370",
+    "name": "Solignac-sur-Loire",
+    "place": "village",
+    "population": "1260",
+    "population:date": "2015-01-01",
+    "source:population": "INSEE",
+    "wikidata": "Q752984",
+    "wikipedia": "fr:Solignac-sur-Loire",
+    "id": "node/1675132656"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8869298,
+      44.9685654
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1699563592",
+  "properties": {
+    "addr:postcode": "41500",
+    "name": "Cour-sur-Loire",
+    "place": "village",
+    "id": "node/1699563592"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.4238723,
+      47.6503494
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1704203807",
+  "properties": {
+    "addr:postcode": "43800",
+    "name": "Chamalières-sur-Loire",
+    "name:oc": "Chamaleiras de Léger",
+    "place": "village",
+    "population": "495",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2016",
+    "website": "http://www.chamalieres-sur-loire.fr",
+    "wikidata": "Q1065733",
+    "wikipedia": "fr:Chamalières-sur-Loire",
+    "id": "node/1704203807"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.9841765,
+      45.2007785
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1704938800",
+  "properties": {
+    "addr:postcode": "43110",
+    "name": "Aurec-sur-Loire",
+    "name:oc": "Aurec",
+    "place": "village",
+    "population": "6111",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2016",
+    "website": "http://www.mairie-aurec.fr",
+    "wikidata": "Q250555",
+    "wikipedia": "fr:Aurec-sur-Loire",
+    "id": "node/1704938800"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.2008542,
+      45.3698465
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1704971573",
+  "properties": {
+    "addr:postcode": "43370",
+    "name": "Cussac-sur-Loire",
+    "name:oc": "Cuçac (de Léger)",
+    "place": "village",
+    "population": "1731",
+    "source:name:oc": "ieo-bdtopoc",
+    "source:population": "INSEE 2016",
+    "website": "http://www.cussac-sur-loire.fr",
+    "wikidata": "Q275391",
+    "wikipedia": "fr:Cussac-sur-Loire",
+    "id": "node/1704971573"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.8834735,
+      44.9886673
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1760568695",
+  "properties": {
+    "addr:postcode": "41000",
+    "name": "Saint-Denis-sur-Loire",
+    "place": "village",
+    "id": "node/1760568695"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.38622,
+      47.62414
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1762749257",
+  "properties": {
+    "addr:postcode": "58300",
+    "name": "Sougy-sur-Loire",
+    "place": "village",
+    "population": "602",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Sougy-sur-Loire",
+    "id": "node/1762749257"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3909919,
+      46.8566269
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1766136445",
+  "properties": {
+    "addr:postcode": "45500",
+    "name": "Saint-Brisson-sur-Loire",
+    "place": "village",
+    "id": "node/1766136445"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.6835896,
+      47.6469679
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1767672037",
+  "properties": {
+    "addr:postcode": "45420",
+    "name": "Bonny-sur-Loire",
+    "place": "village",
+    "population": "1909",
+    "wikipedia": "fr:Bonny-sur-Loire",
+    "id": "node/1767672037"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8397824,
+      47.5606119
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1767672043",
+  "properties": {
+    "addr:postcode": "45250",
+    "name": "Ousson-sur-Loire",
+    "place": "village",
+    "population": "732",
+    "wikipedia": "fr:Ousson-sur-Loire",
+    "id": "node/1767672043"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7866706,
+      47.5896098
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1870152132",
+  "properties": {
+    "addr:postcode": "45600",
+    "name": "Saint-Père-sur-Loire",
+    "place": "village",
+    "id": "node/1870152132"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3718156,
+      47.7748215
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1878761696",
+  "properties": {
+    "name": "Lussault-sur-Loire",
+    "place": "village",
+    "id": "node/1878761696"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9173863,
+      47.3967047
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1897066481",
+  "properties": {
+    "addr:postcode": "58450",
+    "name": "Neuvy-sur-Loire",
+    "place": "village",
+    "population": "1470",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "source:population": "INSEE 2013",
+    "wikipedia": "fr:Neuvy-sur-Loire",
+    "id": "node/1897066481"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.8827484,
+      47.5231992
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1930350403",
+  "properties": {
+    "addr:postcode": "45360",
+    "name": "Saint-Firmin-sur-Loire",
+    "place": "village",
+    "wikipedia": "fr:Saint-Firmin-sur-Loire",
+    "id": "node/1930350403"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.7312788,
+      47.6253509
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2105953248",
+  "properties": {
+    "addr:postcode": "58300",
+    "name": "Lamenay-sur-Loire",
+    "place": "village",
+    "population": "63",
+    "source:population": "INSEE 2013",
+    "id": "node/2105953248"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.5677344,
+      46.7589502
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2105953250",
+  "properties": {
+    "addr:postcode": "58000",
+    "name": "Sermoise-sur-Loire",
+    "place": "village",
+    "population": "1635",
+    "source:population": "INSEE 2013",
+    "id": "node/2105953250"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.1847642,
+      46.9509067
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/2108583188",
+  "properties": {
+    "addr:postcode": "58300",
+    "name": "Avril-sur-Loire",
+    "place": "village",
+    "population": "244",
+    "source:population": "INSEE 2013",
+    "id": "node/2108583188"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.3574914,
+      46.819658
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3259436544",
+  "properties": {
+    "name": "Saint-Victor-sur-Loire",
+    "place": "village",
+    "id": "node/3259436544"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.2606434,
+      45.4468849
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/3983068058",
+  "properties": {
+    "name": "Dampierre-sur-Loire",
+    "place": "village",
+    "id": "node/3983068058"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.0274849,
+      47.2421922
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/5999713152",
+  "properties": {
+    "name": "Le Chambon-sur-Loire",
+    "place": "hamlet",
+    "id": "node/5999713152"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.1583735,
+      45.3286053
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/7697502458",
+  "properties": {
+    "name": "Saint-Just-sur-Loire",
+    "place": "village",
+    "wikipedia": "fr:Saint-Just-Saint-Rambert",
+    "id": "node/7697502458"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.2629313,
+      45.5028467
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/7697502459",
+  "properties": {
+    "name": "Saint-Rambert-sur-Loire",
+    "place": "village",
+    "wikipedia": "fr:Saint-Just-Saint-Rambert",
+    "id": "node/7697502459"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.2418747,
+      45.5005052
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/9419918889",
+  "properties": {
+    "name": "Saint-Saturnin-sur-Loire",
+    "place": "village",
+    "id": "node/9419918889"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4356873,
+      47.3946562
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/10779746934",
+  "properties": {
+    "admin_level": "8",
+    "name": "Coteaux-sur-Loire",
+    "place": "village",
+    "id": "node/10779746934"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.3077816,
+      47.2881771
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/10951781941",
+  "properties": {
+    "name": "Vézelin-sur-Loire",
+    "place": "village",
+    "population": "803",
+    "population:date": "2020",
+    "id": "node/10951781941"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      4.0850315,
+      45.8850553
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,322 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26692275",
+  "properties": {
+    "addr:postcode": "60180",
+    "name": "Nogent-sur-Oise",
+    "place": "town",
+    "population": "18833",
+    "ref:FR:SIREN": "216004580",
+    "source:population": "INSEE 2013",
+    "wikidata": "Q693488",
+    "id": "node/26692275"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.469591,
+      49.2720766
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694291",
+  "properties": {
+    "addr:postcode": "95340",
+    "name": "Bernes-sur-Oise",
+    "place": "village",
+    "population": "2381",
+    "ref:SIREN": "219500584",
+    "id": "node/26694291"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2985653,
+      49.1620172
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26694670",
+  "properties": {
+    "addr:postcode": "95270",
+    "name": "Asnières-sur-Oise",
+    "place": "village",
+    "population": "2527",
+    "ref:SIREN": "219500261",
+    "source:population": "INSEE 2013",
+    "id": "node/26694670"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3541273,
+      49.1339089
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695170",
+  "properties": {
+    "addr:postcode": "60820",
+    "name": "Boran-sur-Oise",
+    "place": "village",
+    "population": "2100",
+    "ref:FR:SIREN": "216000869",
+    "id": "node/26695170"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3586472,
+      49.16734
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695349",
+  "properties": {
+    "addr:postcode": "95660",
+    "name": "Champagne-sur-Oise",
+    "place": "village",
+    "population": "4657",
+    "ref:SIREN": "219501343",
+    "source:population": "INSEE 2013",
+    "id": "node/26695349"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2312397,
+      49.1339431
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695713",
+  "properties": {
+    "addr:postcode": "95260",
+    "name": "Beaumont-sur-Oise",
+    "place": "village",
+    "population": "8993",
+    "ref:SIREN": "219500527",
+    "id": "node/26695713"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.2849324,
+      49.1419322
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695730",
+  "properties": {
+    "addr:postcode": "60460",
+    "name": "Précy-sur-Oise",
+    "place": "village",
+    "population": "3236",
+    "ref:FR:SIREN": "216005074",
+    "source:population": "INSEE 2013",
+    "id": "node/26695730"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3722215,
+      49.2066545
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26695877",
+  "properties": {
+    "addr:postcode": "95820",
+    "name": "Bruyères-sur-Oise",
+    "place": "village",
+    "population": "3700",
+    "ref:SIREN": "219501160",
+    "source:population": "INSEE 2013",
+    "id": "node/26695877"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3301301,
+      49.1573165
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696560",
+  "properties": {
+    "addr:postcode": "95540",
+    "name": "Méry-sur-Oise",
+    "place": "village",
+    "population": "9260",
+    "ref:SIREN": "219503943",
+    "source:population": "INSEE 2013",
+    "id": "node/26696560"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1836324,
+      49.0634561
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26696925",
+  "properties": {
+    "addr:postcode": "95430",
+    "name": "Auvers-sur-Oise",
+    "place": "village",
+    "population": "6792",
+    "ref:SIREN": "219500394",
+    "source:population": "INSEE 2013",
+    "id": "node/26696925"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1718687,
+      49.0701875
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/414166518",
+  "properties": {
+    "addr:postcode": "02240",
+    "census": "2006",
+    "name": "Châtillon-sur-Oise",
+    "place": "village",
+    "population": "135",
+    "ref:FR:SIREN": "210201570",
+    "source": "Wikipedia",
+    "id": "node/414166518"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4195244,
+      49.7910697
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/416587089",
+  "properties": {
+    "addr:postcode": "02240",
+    "census": "2006",
+    "name": "Mézières-sur-Oise",
+    "place": "village",
+    "population": "554",
+    "ref:FR:SIREN": "210204608",
+    "source": "Wikipedia",
+    "id": "node/416587089"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.4002778,
+      49.7838889
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/416680761",
+  "properties": {
+    "census": "2006",
+    "name": "Monceau-sur-Oise",
+    "place": "village",
+    "id": "node/416680761"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      3.6963889,
+      49.9022222
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/601608448",
+  "properties": {
+    "addr:postcode": "95000",
+    "name": "Neuville-sur-Oise",
+    "place": "village",
+    "population": "2036",
+    "ref:SIREN": "219504503",
+    "source:population": "INSEE 2013",
+    "id": "node/601608448"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.0623676,
+      49.0135534
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/634978626",
+  "properties": {
+    "addr:postcode": "95270",
+    "name": "Noisy-sur-Oise",
+    "place": "village",
+    "population": "688",
+    "ref:SIREN": "219504560",
+    "source:population": "INSEE 2013",
+    "id": "node/634978626"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.3299877,
+      49.1382558
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/665509901",
+  "properties": {
+    "addr:postcode": "95430",
+    "name": "Butry-sur-Oise",
+    "place": "village",
+    "population": "2250",
+    "ref:SIREN": "219501202",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "id": "node/665509901"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.1979556,
+      49.0856723
+    ]
+  }
+}
+]
+}

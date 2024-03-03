@@ -1,0 +1,180 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "node/26697054",
+  "properties": {
+    "name": "Artannes-sur-Indre",
+    "name:la": "Artana",
+    "place": "village",
+    "ref:FR:SIREN": "213700065",
+    "id": "node/26697054"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.5996983,
+      47.2729908
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/26698160",
+  "properties": {
+    "name": "Châtillon-sur-Indre",
+    "place": "village",
+    "wikipedia": "fr:Châtillon-sur-Indre",
+    "id": "node/26698160"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.1745103,
+      46.9865819
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/254184402",
+  "properties": {
+    "name": "Reignac-sur-Indre",
+    "name:la": "Brixis",
+    "old_name": "Bray",
+    "place": "village",
+    "wikipedia": "fr:Reignac-sur-Indre",
+    "id": "node/254184402"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9163536,
+      47.2323025
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/401426662",
+  "properties": {
+    "name": "Chambourg-sur-Indre",
+    "name:la": "Camborcum",
+    "place": "village",
+    "source": "wikipedia",
+    "id": "node/401426662"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9684561,
+      47.1824204
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/401426993",
+  "properties": {
+    "name": "Azay-sur-Indre",
+    "place": "village",
+    "source": "wikipedia",
+    "wikipedia": "fr:Azay-sur-Indre",
+    "id": "node/401426993"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.9458652,
+      47.2091376
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/867330992",
+  "properties": {
+    "name": "Verneuil-sur-Indre",
+    "name:la": "Vernolium",
+    "place": "village",
+    "id": "node/867330992"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.0418702,
+      47.0558883
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/992016613",
+  "properties": {
+    "name": "Palluau-sur-Indre",
+    "place": "village",
+    "wikipedia": "fr:Palluau-sur-Indre",
+    "id": "node/992016613"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.3135032,
+      46.9437378
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1031493178",
+  "properties": {
+    "name": "Mers-sur-Indre",
+    "place": "village",
+    "id": "node/1031493178"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.8814274,
+      46.6583137
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1420042323",
+  "properties": {
+    "name": "Sainte-Sévère-sur-Indre",
+    "name:oc": "Senta Sevèra",
+    "place": "village",
+    "source:name:oc": "wikipedia",
+    "id": "node/1420042323"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.0674766,
+      46.4866053
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "node/1863167144",
+  "properties": {
+    "name": "Villedieu-sur-Indre",
+    "place": "village",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "id": "node/1863167144"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.5375901,
+      46.8474516
+    ]
+  }
+}
+]
+}
