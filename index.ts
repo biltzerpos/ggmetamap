@@ -49,7 +49,7 @@ function createCountryChooser(map) {
           layerMenu.remove(i);
       layerMenu.options[0].selected = true;
       if (countryMenu.value == "Bulgaria") {
-          loadBoundaries('Layers/Bulgaria/Provinces.geojson');
+          loadBoundaries('./Layers/Bulgaria/Provinces.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -57,7 +57,7 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "France") {
-          loadBoundaries('Layers/France/Level2.geojson');
+          loadBoundaries('./Layers/France/Level2.geojson');
           const newtop = new Option("Department Names", "NamesLevel2");
           layerMenu.appendChild(newtop);
           const clusters = new Option("Placename Clusters", "Clusters");
@@ -71,8 +71,6 @@ function createCountryChooser(map) {
               if (layerMenu.value == "Clusters") {
                   removeAllFeatures();
                   removeAllMarkers();
-                  //loadBoundaries("Layers/France/Seine.geojson");
-                  //loadBoundaries("Layers/France/Marne.geojson");
                   loadMarkerLayer("France", "Brie");
                   loadMarkerLayer("France", "Vexin");
                   loadMarkerLayer("France", "Auge");
@@ -96,27 +94,23 @@ function createCountryChooser(map) {
               else if (layerMenu.value == "Major Rivers") {
                   removeAllFeatures();
                   removeAllMarkers();
-                  //loadBoundaries("Layers/France/Seine.geojson");
-                  //loadBoundaries("Layers/France/Marne.geojson");
                   loadMarkerLayer("France", "MajorRivers");
               }
               else if (layerMenu.value == "Smaller Rivers") {
                   removeAllFeatures();
                   removeAllMarkers();
-                  //loadBoundaries("Layers/France/Seine.geojson");
-                  //loadBoundaries("Layers/France/Marne.geojson");
                   loadMarkerLayer("France", "MinorRivers");
               }
               else {
                   removeAllFeatures();
                   removeAllMarkers();
-                  loadBoundaries('Layers/France/Level2.geojson');
+                  loadBoundaries('./Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
               }
           };
       }
       if (countryMenu.value == "Chile") {
-          loadBoundaries('Layers/Chile/Level1.geojson');
+          loadBoundaries('./Layers/Chile/Level1.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -124,7 +118,7 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Romania") {
-          loadBoundaries('Layers/Romania/Counties.geojson');
+          loadBoundaries('./Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -177,7 +171,7 @@ function createLayerChooser(map) {
 }
 
 function loadMarkerLayer(country, layer) {
-    const path = 'Layers/' + country + '/' + layer + '.json';
+    const path = './Layers/' + country + '/' + layer + '.json';
     console.log(path);
     loadMarkers(path);
 }
