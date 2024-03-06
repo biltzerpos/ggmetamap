@@ -41,6 +41,8 @@ function createCountryChooser(map) {
   countryMenu.appendChild(new Option("Chile", "Chile"));
   countryMenu.appendChild(new Option("France", "France"));
   countryMenu.appendChild(new Option("Romania", "Romania"));
+  countryMenu.appendChild(new Option("Sweden", "Sweden"));
+
   countryMenu.onchange = () => {
       console.log(countryMenu.value);
       removeAllFeatures();
@@ -123,6 +125,31 @@ function createCountryChooser(map) {
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
+          };
+      }
+      if (countryMenu.value == "Sweden") {
+          loadBoundaries('./Layers/Sweden/Level1.geojson');
+          const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
+          layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              //loadMarkerLayer(countryMenu.value, layerMenu.value);
+              const img = document.createElement('img');
+              img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+              //img.width = 100;
+              //let scaleFactor(origScale, countryZoom, lat)
+              //img.style.transform = 'translateY(50%) scale(0.6,0.6)';
+              img.style.transform = getTransform(0.6, 5);
+
+              const marker = new google.maps.marker.AdvancedMarkerElement({
+                  map,
+                  position: { lat: 66.868003323504, lng: 20.102020566463448 },
+                  gmpDraggable: true,
+                  content: img,
+                  title: 'huh',                  
+              });
+              
+              markers.push(marker);
+
           };
       }
   };
@@ -227,6 +254,15 @@ function createSaveLocsControl(map) {
   return controlButton;
 }
 
+function getTransform(origScale, countryZoom) {
+    let zoom = map.getZoom() - countryZoom;
+    let factor = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
+    let sc = origScale * factor;
+    let tr = "scale(" + sc + "," + sc + ")";
+    let transform = 'translateY(50%) ' + tr;
+    return transform;
+}
+
 function placeNewMarker(map, position, content = "00", type = "area-code") {
     console.log("START " + markers.length);
     let zIndex = 0;
@@ -293,6 +329,23 @@ function initMap(): void {
     placeNewMarker(map, e.latLng);
     //google.maps.event.trigger(this.getMap(),'dblclick',e);
   });
+
+    map.addListener('zoom_changed', function () {
+        console.log(map.getZoom());
+        for (let i = 0; i < markers.length; i++) {
+            //let img = document.createElement('img');
+            //img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+            //let zoom = map.getZoom()-5;
+            //let factor = Math.pow(2, zoom) / Math.cos(markers[i].position.lat * Math.PI / 180)
+            //let sc = 0.6 * factor;
+            //console.log(sc);
+            //let tr = "scale(" + sc + "," + sc + ")";
+            //markers[i].content.style.transform = 'translateY(50%) ' + tr;
+            markers[i].content.style.transform = getTransform(0.6, 5);
+            // if (markers[i].content instanceof google.maps.LatLng)
+        }
+
+    });
 
   // Create the Save Locs button.
   const saveLocsDiv = document.createElement('div');
@@ -415,7 +468,6 @@ function processPoints(
     geometry.getArray().forEach((g) => {
       processPoints(g, callback, thisArg);
     });
-      console.log("huh");
   }
 }
 
