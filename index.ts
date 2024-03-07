@@ -8,12 +8,14 @@
 
 let map: google.maps.Map;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
+var fszlArray: number[] = []; // Parallel array with markers
 let countryMenu, layerMenu: HTMLSelectElement;
 interface markerLoc {
-  text: string;
-  type: string;
-  lat: number;
-  lng: number;
+    text: string;
+    type: string;
+    lat: number;
+    lng: number;
+    scale: number;
 }
 
 function createCountryChooser(map) {
@@ -132,24 +134,18 @@ function createCountryChooser(map) {
           const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
-              //loadMarkerLayer(countryMenu.value, layerMenu.value);
-              const img = document.createElement('img');
-              img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
-              //img.width = 100;
-              //let scaleFactor(origScale, countryZoom, lat)
-              //img.style.transform = 'translateY(50%) scale(0.6,0.6)';
-              img.style.transform = getTransform(0.6, 5);
-
-              const marker = new google.maps.marker.AdvancedMarkerElement({
-                  map,
-                  position: { lat: 66.868003323504, lng: 20.102020566463448 },
-                  gmpDraggable: true,
-                  content: img,
-                  title: 'huh',                  
-              });
-              
-              markers.push(marker);
-
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+              //const img = document.createElement('img');
+              //img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+              //img.style.transform = getTransform(0.6, 5);
+              //const marker = new google.maps.marker.AdvancedMarkerElement({
+              //    map,
+              //    position: { lat: 66.868003323504, lng: 20.102020566463448 },
+              //    gmpDraggable: true,
+              //    content: img,
+              //    title: 'huh',                  
+              //});
+              //markers.push(marker);
           };
       }
   };
@@ -168,6 +164,7 @@ function removeAllMarkers() {
         markers[i].setMap(null);
     }
     markers = [];
+    fszlArray = [];
 }
 
 function createLayerChooser(map) {
@@ -199,8 +196,10 @@ function createLayerChooser(map) {
 
 function loadMarkerLayer(country, layer) {
     const path = './Layers/' + country + '/' + layer + '.json';
+    const imagepath = './Layers/' + country + '/' + layer + ' Images/';
     console.log(path);
-    loadMarkers(path);
+    console.log(imagepath);
+    loadMarkers(path, imagepath);
 }
 
 function createSaveLocsControl(map) {
@@ -227,10 +226,24 @@ function createSaveLocsControl(map) {
   // Setup the click event listener
   controlButton.addEventListener('click', () => {
     let markerLocData: markerLoc[] = [];
-    for (var marker of markers)
+      for (let i = 0; i < markers.length; i++)
     { 
-      console.log(marker.content.textContent + " " + marker.position.lat);
-      markerLocData.push({text:marker.content.textContent, type:marker.content.className, lat:marker.position.lat, lng: marker.position.lng})
+        //console.log(marker.content.textContent + " " + marker.position.lat);
+        //console.log(marker.content);
+        //console.log(marker.content.className);
+        //console.log(marker.content.title);
+        //console.log(marker.content.style);
+        //console.log(marker.content.style.transform);
+        let text, type;
+        if (markers[i].content instanceof HTMLImageElement) {
+            text = markers[i].content.alt;
+            type = "image";
+        }
+        else {
+            text = markers[i].content.textContent;
+            type = markers[i].content.className;
+        }
+        markerLocData.push({ text: text, type: type, lat: markers[i].position.lat, lng: markers[i].position.lng, flsz: fszlArray[i] });
     }
     markerLocData.sort((a, b) => {
       if (a.text < b.text) {
@@ -254,53 +267,59 @@ function createSaveLocsControl(map) {
   return controlButton;
 }
 
-function getTransform(origScale, countryZoom) {
-    let zoom = map.getZoom() - countryZoom;
+function getTransform(fszl, isImage) {
+    let zoom = map.getZoom() - fszl;
+    if ((!isImage) && (zoom > 0)) zoom = 0; 
     let factor = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
-    let sc = origScale * factor;
-    let tr = "scale(" + sc + "," + sc + ")";
-    let transform = 'translateY(50%) ' + tr;
+    let sc = factor; // fszl * factor;
+    let transform = "scale(" + sc + "," + sc + ")";
+    if (isImage) transform = 'translateY(50%) ' + transform;
     return transform;
 }
 
-function placeNewMarker(map, position, content = "00", type = "area-code") {
-    console.log("START " + markers.length);
+function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = "6") {
+    console.log("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
-    const infoWindow = new google.maps.InfoWindow();
+    //const infoWindow = new google.maps.InfoWindow();
     var marker = new google.maps.marker.AdvancedMarkerElement({
         map: map,
         position: position,
         gmpDraggable: true,
         zIndex: zIndex,
     });
-    setMarkerContent(marker, content, type);
-    marker.addListener('click', function() {
-      var result = prompt("Enter a value of comment for Marker.");
-      if (result) {
-        if (result == "delete") {
-            console.log(markers.length);
-            marker.setMap(null);
-            const index = markers.indexOf(marker);
-            if (index > -1) { // only splice array when item is found
-              markers.splice(index, 1); // 2nd parameter means remove one item only
-            }      
-            console.log(markers.length);
-          }
-        else if (result == "city") {
-           marker.content.className = "city-code";
-        }
-        else
-          setMarkerContent(marker, result, marker.content.className);
-      }
-    });
+    setMarkerContent(marker, content, imagepath, type, fszl);
+    marker.addListener('click', () => {
+            var result = prompt("Enter a value of comment for Marker.");
+            if (result) {
+                if (result == "delete") {
+                    console.log(markers.length);
+                    marker.setMap(null);
+                    const index = markers.indexOf(marker);
+                    if (index > -1) { // only splice array when item is found
+                        markers.splice(index, 1); // 2nd parameter means remove one item only
+                        fszlArray.splice(index, 1);
+                    }
+                    console.log(markers.length);
+                }
+                else if (result == "city") {
+                    marker.content.className = "city-code-sdf";
+                }
+
+
+
+                else
+                    setMarkerContent(marker, result, marker.content.src, marker.content.className, fszl);
+            }
+        });
   //marker.addListener('dragend', (event) => {
         //const position = marker.position as google.maps.LatLng;
         //infoWindow.close();
         //infoWindow.setContent(`Pin dropped at: ${position.lat}, ${position.lng}`);
         //infoWindow.open(marker.map, marker);
     //});
-  markers.push(marker);
+    markers.push(marker);
+    fszlArray.push(fszl);
 }
 
 function initMap(): void {
@@ -333,18 +352,9 @@ function initMap(): void {
     map.addListener('zoom_changed', function () {
         console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
-            //let img = document.createElement('img');
-            //img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
-            //let zoom = map.getZoom()-5;
-            //let factor = Math.pow(2, zoom) / Math.cos(markers[i].position.lat * Math.PI / 180)
-            //let sc = 0.6 * factor;
-            //console.log(sc);
-            //let tr = "scale(" + sc + "," + sc + ")";
-            //markers[i].content.style.transform = 'translateY(50%) ' + tr;
-            markers[i].content.style.transform = getTransform(0.6, 5);
+            markers[i].content.style.transform = getTransform(fszlArray[i], markers[i].content instanceof HTMLImageElement);
             // if (markers[i].content instanceof google.maps.LatLng)
         }
-
     });
 
   // Create the Save Locs button.
@@ -366,23 +376,35 @@ function initMap(): void {
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
 }
 
-function setMarkerContent(marker, content, type) {
+function setMarkerContent(marker, text, imagepath, type, fszl) {
 
-  const phoneCode = document.createElement('div');
-  phoneCode.className = type;
-  let code = content;
-  phoneCode.textContent = code.toString();
-  marker.content = phoneCode;
+    if (type == "image") {
+        const img = document.createElement('img');
+        img.src = imagepath; // './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+        img.style.transform = getTransform(fszl, true);
+        img.alt = text;
+        marker.content = img;
+        
+    }
+    else {
+        const markerDiv = document.createElement('div');
+        markerDiv.className = type;
+        //let text = text;
+        markerDiv.textContent = text.toString();
+        marker.content = markerDiv;
+    }
 }
 
-async function loadMarkers(path:string): void {
+async function loadMarkers(path:string, imagepathdir:string): void {
 
   let response = await fetch(path);
   let markerLocData = await response.json();
 
   for (let markerLoc of markerLocData) {
-    let position = { lat: markerLoc.lat, lng: markerLoc.lng };
-    placeNewMarker(map, position, markerLoc.text.toString(), markerLoc.type);
+      let position = { lat: markerLoc.lat, lng: markerLoc.lng };
+      let text = markerLoc.text.toString();
+      let imagepath = imagepathdir + text + '.jpg';
+      placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl);
   }
 }
 
@@ -428,7 +450,7 @@ function loadGeoJsonString(geoString: string) {
     fillOpacity: '0'
   });
 
-  zoom(map);
+    zoom(map);
 }
 
 /**
