@@ -10,6 +10,8 @@ let map: google.maps.Map;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 var fszlArray: number[] = []; // Parallel array with markers
 let countryMenu, layerMenu: HTMLSelectElement;
+let layerMin = 0;
+let infoWindow; 
 interface markerLoc {
     text: string;
     type: string;
@@ -41,7 +43,8 @@ function createCountryChooser(map) {
   countryMenu.appendChild(top);
   countryMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
   countryMenu.appendChild(new Option("Chile", "Chile"));
-  countryMenu.appendChild(new Option("France", "France"));
+    countryMenu.appendChild(new Option("France", "France"));
+    countryMenu.appendChild(new Option("Jordan", "Jordan"));
   countryMenu.appendChild(new Option("Romania", "Romania"));
   countryMenu.appendChild(new Option("Sweden", "Sweden"));
 
@@ -121,6 +124,15 @@ function createCountryChooser(map) {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
+      if (countryMenu.value == "Jordan") {
+          loadBoundaries('./Layers/Jordan/Level0.geojson');          
+          const newtop = new Option("Misc Meta", "Misc Meta");
+          layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+              layerMin = 0.1; // So images do not get too small
+          };
+      }
       if (countryMenu.value == "Romania") {
           loadBoundaries('./Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
@@ -135,6 +147,7 @@ function createCountryChooser(map) {
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
+              layerMin = 0.1; // Images can get arbitrarily small
               //const img = document.createElement('img');
               //img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
               //img.style.transform = getTransform(0.6, 5);
@@ -243,7 +256,7 @@ function createSaveLocsControl(map) {
             text = markers[i].content.textContent;
             type = markers[i].content.className;
         }
-        markerLocData.push({ text: text, type: type, lat: markers[i].position.lat, lng: markers[i].position.lng, flsz: fszlArray[i] });
+        markerLocData.push({ text: text, type: type, lat: markers[i].position.lat, lng: markers[i].position.lng, fszl: fszlArray[i] });
     }
     markerLocData.sort((a, b) => {
       if (a.text < b.text) {
@@ -270,18 +283,18 @@ function createSaveLocsControl(map) {
 function getTransform(fszl, isImage) {
     let zoom = map.getZoom() - fszl;
     if ((!isImage) && (zoom > 0)) zoom = 0; 
-    let factor = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
-    let sc = factor; // fszl * factor;
+    let sc = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
+    if (sc < layerMin) sc = 0.1;//  sc = factor; // fszl * factor;
     let transform = "scale(" + sc + "," + sc + ")";
     if (isImage) transform = 'translateY(50%) ' + transform;
     return transform;
 }
 
-function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = "6") {
+function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = map.getZoom()) {
     console.log("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
-    //const infoWindow = new google.maps.InfoWindow();
+    
     var marker = new google.maps.marker.AdvancedMarkerElement({
         map: map,
         position: position,
@@ -290,6 +303,14 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
     });
     setMarkerContent(marker, content, imagepath, type, fszl);
     marker.addListener('click', () => {
+        if (type = "image") {
+            infoWindow.close();
+            const img = document.createElement('img');
+            img.src = imagepath; 
+            infoWindow.setContent(img);
+            infoWindow.open(map, marker);
+        }
+        else {
             var result = prompt("Enter a value of comment for Marker.");
             if (result) {
                 if (result == "delete") {
@@ -303,14 +324,12 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
                     console.log(markers.length);
                 }
                 else if (result == "city") {
-                    marker.content.className = "city-code-sdf";
+                    marker.content.className = "city-code";
                 }
-
-
-
                 else
                     setMarkerContent(marker, result, marker.content.src, marker.content.className, fszl);
             }
+        }
         });
   //marker.addListener('dragend', (event) => {
         //const position = marker.position as google.maps.LatLng;
@@ -340,7 +359,7 @@ function initMap(): void {
   });
 
   map.addListener('dblclick', function(e) {
-    placeNewMarker(map, e.latLng);
+      placeNewMarker(map, e.latLng);
   });
 
   map.data.addListener('dblclick',function(e){
@@ -357,6 +376,7 @@ function initMap(): void {
         }
     });
 
+  infoWindow  = new google.maps.InfoWindow();
   // Create the Save Locs button.
   const saveLocsDiv = document.createElement('div');
   const saveLocs = createSaveLocsControl(map);
@@ -400,10 +420,10 @@ async function loadMarkers(path:string, imagepathdir:string): void {
   let response = await fetch(path);
   let markerLocData = await response.json();
 
-  for (let markerLoc of markerLocData) {
-      let position = { lat: markerLoc.lat, lng: markerLoc.lng };
-      let text = markerLoc.text.toString();
-      let imagepath = imagepathdir + text + '.jpg';
+    for (let markerLoc of markerLocData) {
+        let position = { lat: markerLoc.lat, lng: markerLoc.lng };
+        let text = markerLoc.text.toString();
+        let imagepath = imagepathdir + text;
       placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl);
   }
 }
@@ -503,20 +523,21 @@ async function loadBoundaries(path: string) {
 
 /* DOM (drag/drop) functions */
 function initEvents() {
-    [...document.getElementsByClassName("file")].forEach((fileElement) => {
-        fileElement.addEventListener(
-            "dragstart",
-            (e: Event) => {
-                // @ts-ignore
-                e.dataTransfer.setData(
-                    "text/plain",
-                    JSON.stringify(files[Number((e.target as HTMLElement).dataset.value)])
-                );
-                console.log(e);
-            },
-            false
-        );
-    });
+    //[...document.getElementsByClassName("file")].forEach((fileElement) => {
+    //    fileElement.addEventListener(
+    //        "dragstart",
+    //        (e: Event) => {
+    //            // @ts-ignore
+    //            e.dataTransfer.setData(
+    //                "text/plain",
+    //                JSON.stringify(files[Number((e.target as HTMLElement).dataset.value)])
+    //            );
+    //            console.log(e);
+    //            console.log("ERTERT");
+    //        },
+    //        false
+    //    );
+    //});
 
     // set up the drag & drop events
     const mapContainer = document.getElementById("map") as HTMLElement;
@@ -549,17 +570,34 @@ function handleDrop(e: DragEvent) {
         // process file(s) being dropped
         // grab the file data from each file
         for (let i = 0, file; (file = files[i]); i++) {
-            const reader = new FileReader();
+            
+            if (file.type == 'application/geo+json') {
+                const reader = new FileReader();
 
-            reader.onload = function (e) {
-                loadGeoJsonString(reader.result as string);
-            };
+                reader.onload = function (e) {
+                    loadGeoJsonString(reader.result as string);
+                };
 
-            reader.onerror = function (e) {
-                console.error("reading failed");
-            };
+                reader.onerror = function (e) {
+                    console.error("reading failed");
+                };
 
-            reader.readAsText(file);
+                reader.readAsText(file);
+            }
+            else if (file.type == 'image/jpeg') {
+                
+                // read the image...
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    placeNewMarker(map, map.getCenter(), file.name, e.target.result, "image");
+                    console.log(file);
+                    
+                }
+                reader.readAsDataURL(file); 
+                //console.log(e.target.);
+            }
+            else
+                alert("Unsupported file format. Only geojson and jpg supported at the moment.");
         }
     } else {
         // process non-file (e.g. text or html) content being dropped
@@ -576,14 +614,10 @@ function handleDrop(e: DragEvent) {
     // prevent drag event from bubbling further
     return false;
 }
+
 function initialize() {
     initMap();
     initEvents();
-    //var latlng = new google.maps.LatLng(37.9069, -122.0792);
-    //const customTxt = "<div>Blah blah sdfsddddddddddddddd ddddddddddddddddddddd<ul><li>Blah 1<li>blah 2 </ul></div>"
-    //txt = new TxtOverlay(latlng, customTxt, "customBox", map);
-  //loadBoundaries();
-  //loadMarkers();
 }
 
 declare global {
