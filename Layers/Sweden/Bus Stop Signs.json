@@ -1,9 +1,149 @@
 [
   {
+    "text": "Blekinge.jpg",
+    "type": "image",
+    "lat": 56.29942154449253,
+    "lng": 15.319756565498887,
+    "fszl": 10
+  },
+  {
+    "text": "Dalarna.jpg",
+    "type": "image",
+    "lat": 60.91856435435315,
+    "lng": 14.366083759466232,
+    "fszl": 8
+  },
+  {
+    "text": "Gavleborg.jpg",
+    "type": "image",
+    "lat": 61.56766764120657,
+    "lng": 16.272711775148988,
+    "fszl": 8
+  },
+  {
+    "text": "Gotland.jpg",
+    "type": "image",
+    "lat": 57.47134289948748,
+    "lng": 18.467666509444594,
+    "fszl": 10
+  },
+  {
+    "text": "Halland.jpg",
+    "type": "image",
+    "lat": 56.99042747544262,
+    "lng": 12.792518337140558,
+    "fszl": 10
+  },
+  {
+    "text": "Jamtland.jpg",
+    "type": "image",
+    "lat": 63.26553775416178,
+    "lng": 14.121350816334365,
+    "fszl": 7
+  },
+  {
+    "text": "Jonkoping.jpg",
+    "type": "image",
+    "lat": 57.56548580623686,
+    "lng": 14.520094714010833,
+    "fszl": 9
+  },
+  {
+    "text": "Kalmar.jpg",
+    "type": "image",
+    "lat": 57.32801083598415,
+    "lng": 16.103507469291568,
+    "fszl": 9
+  },
+  {
+    "text": "Kronoberg.jpg",
+    "type": "image",
+    "lat": 56.7128598015628,
+    "lng": 14.502491962979315,
+    "fszl": 10
+  },
+  {
     "text": "Norrbotten.jpg",
     "type": "image",
     "lat": 66.86684075310491,
     "lng": 19.815478423548893,
     "fszl": 6
+  },
+  {
+    "text": "Orebro.jpg",
+    "type": "image",
+    "lat": 59.19546696395134,
+    "lng": 15.008177294279216,
+    "fszl": 9
+  },
+  {
+    "text": "Oster Gotland.jpg",
+    "type": "image",
+    "lat": 58.36516055689388,
+    "lng": 15.833817136357306,
+    "fszl": 9
+  },
+  {
+    "text": "Skane.jpg",
+    "type": "image",
+    "lat": 55.94461289493822,
+    "lng": 13.664617895032046,
+    "fszl": 10
+  },
+  {
+    "text": "Sodermanland.jpg",
+    "type": "image",
+    "lat": 59.12502182958394,
+    "lng": 16.655777993495345,
+    "fszl": 9
+  },
+  {
+    "text": "Stockholm.jpg",
+    "type": "image",
+    "lat": 59.400812731189525,
+    "lng": 18.185180111671567,
+    "fszl": 9
+  },
+  {
+    "text": "Uppsala.jpg",
+    "type": "image",
+    "lat": 60.11135099053065,
+    "lng": 17.881414743955016,
+    "fszl": 10
+  },
+  {
+    "text": "Varmland.jpg",
+    "type": "image",
+    "lat": 59.73247898499947,
+    "lng": 13.27975792775494,
+    "fszl": 8
+  },
+  {
+    "text": "Vasterbotten.jpg",
+    "type": "image",
+    "lat": 64.75989674663174,
+    "lng": 17.565090603078485,
+    "fszl": 8
+  },
+  {
+    "text": "Vasternorrland.jpg",
+    "type": "image",
+    "lat": 63.44933289423272,
+    "lng": 17.641493662143827,
+    "fszl": 9
+  },
+  {
+    "text": "Vastmanland.jpg",
+    "type": "image",
+    "lat": 59.78586230431725,
+    "lng": 16.19033979519713,
+    "fszl": 9
+  },
+  {
+    "text": "Vastra Gotaland.jpg",
+    "type": "image",
+    "lat": 58.26397310770503,
+    "lng": 12.777125055785058,
+    "fszl": 8
   }
 ]

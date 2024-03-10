@@ -8,10 +8,11 @@
 
 let map: google.maps.Map;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
-var fszlArray: number[] = []; // Parallel array with markers
+//var fszlArray: number[] = []; // Parallel array with markers, -1 means do not resize with zoom
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
-let infoWindow; 
+let infoWindow;
+let clickBehaviour = 0;
 interface markerLoc {
     text: string;
     type: string;
@@ -147,7 +148,7 @@ function createCountryChooser(map) {
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
-              layerMin = 0.1; // Images can get arbitrarily small
+              layerMin = 0; // Images can get arbitrarily small
               //const img = document.createElement('img');
               //img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
               //img.style.transform = getTransform(0.6, 5);
@@ -177,7 +178,43 @@ function removeAllMarkers() {
         markers[i].setMap(null);
     }
     markers = [];
-    fszlArray = [];
+    //fszlArray = [];
+}
+
+function createClickControl(map) {
+    const clickB = document.createElement('select');
+
+    // Set CSS for the control.
+    clickB.style.backgroundColor = '#fff';
+    clickB.style.border = '2px solid #fff';
+    clickB.style.borderRadius = '3px';
+    clickB.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+    clickB.style.color = 'rgb(25,25,25)';
+    clickB.style.cursor = 'pointer';
+    clickB.style.fontFamily = 'Roboto,Arial,sans-serif';
+    clickB.style.fontSize = '16px';
+    clickB.style.lineHeight = '38px';
+    clickB.style.margin = '8px 0 22px';
+    clickB.style.padding = '0 5px';
+    clickB.style.textAlign = 'center';
+
+    const def = new Option("Click: Show/change info", "0");
+    def.selected = true;
+    //top.disabled = true;
+    clickB.appendChild(def);
+    const zoomFix = new Option("Click: Fix/unfix zoom level", "1");
+    //zoomFix.disabled = true;
+    clickB.appendChild(zoomFix);
+    const del = new Option("Click: Delete marker", "2");
+    //zoomFix.disabled = true;
+    clickB.appendChild(del);
+    const blue = new Option("Click: Swap brown/blue colour", "3");
+    //zoomFix.disabled = true;
+    clickB.appendChild(blue);
+    clickB.onchange = () => {
+        clickBehaviour = clickB.value;
+    };
+    return clickB;
 }
 
 function createLayerChooser(map) {
@@ -206,7 +243,6 @@ function createLayerChooser(map) {
     layerMenu.appendChild(dummy);
     return layerMenu;
 }
-
 function loadMarkerLayer(country, layer) {
     const path = './Layers/' + country + '/' + layer + '.json';
     const imagepath = './Layers/' + country + '/' + layer + ' Images/';
@@ -256,7 +292,8 @@ function createSaveLocsControl(map) {
             text = markers[i].content.textContent;
             type = markers[i].content.className;
         }
-        markerLocData.push({ text: text, type: type, lat: markers[i].position.lat, lng: markers[i].position.lng, fszl: fszlArray[i] });
+        let fszl = Number(markers[i].getAttribute("fszl"));
+        markerLocData.push({ text: text, type: type, lat: markers[i].position.lat, lng: markers[i].position.lng, fszl: fszl });
     }
     markerLocData.sort((a, b) => {
       if (a.text < b.text) {
@@ -281,16 +318,19 @@ function createSaveLocsControl(map) {
 }
 
 function getTransform(fszl, isImage) {
-    let zoom = map.getZoom() - fszl;
-    if ((!isImage) && (zoom > 0)) zoom = 0; 
-    let sc = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
-    if (sc < layerMin) sc = 0.1;//  sc = factor; // fszl * factor;
+    let sc = 1;
+    if (fszl >= 0) {
+        let zoom = map.getZoom() - fszl;
+        if ((!isImage) && (zoom > 0)) zoom = 0;
+        sc = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
+        if (sc < layerMin) sc = 0.1;//  sc = factor; // fszl * factor;
+    }
     let transform = "scale(" + sc + "," + sc + ")";
     if (isImage) transform = 'translateY(50%) ' + transform;
     return transform;
 }
 
-function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = map.getZoom()) {
+function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = -1) {
     console.log("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
@@ -301,51 +341,51 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
         gmpDraggable: true,
         zIndex: zIndex,
     });
+    marker.setAttribute("fszl", fszl.toString());
     setMarkerContent(marker, content, imagepath, type, fszl);
     marker.addListener('click', () => {
-        if (type = "image") {
-            infoWindow.close();
-            const img = document.createElement('img');
-            img.src = imagepath; 
-            infoWindow.setContent(img);
-            infoWindow.open(map, marker);
-        }
-        else {
-            var result = prompt("Enter a value of comment for Marker.");
-            if (result) {
-                if (result == "delete") {
-                    console.log(markers.length);
-                    marker.setMap(null);
-                    const index = markers.indexOf(marker);
-                    if (index > -1) { // only splice array when item is found
-                        markers.splice(index, 1); // 2nd parameter means remove one item only
-                        fszlArray.splice(index, 1);
-                    }
-                    console.log(markers.length);
-                }
-                else if (result == "city") {
-                    marker.content.className = "city-code";
-                }
-                else
-                    setMarkerContent(marker, result, marker.content.src, marker.content.className, fszl);
+        if (clickBehaviour == 0) {
+            console.log(type);
+            if (type == "image") {
+                infoWindow.close();
+                const img = document.createElement('img');
+                img.src = imagepath;
+                infoWindow.setContent(img);
+                infoWindow.open(map, marker);
             }
+            else {
+                var result = prompt("Enter new value for marker:");
+                setMarkerContent(marker, result, marker.content.src, marker.content.className, fszl);
+            }
+        } else if (clickBehaviour == 1) { 
+            let fszl = Number(marker.getAttribute("fszl"));
+            if (fszl == -1) marker.setAttribute("fszl", map.getZoom().toString());
+            else marker.setAttribute("fszl", Number(-1).toString());
+        } else if (clickBehaviour == 2) {
+            console.log(markers.length);
+            marker.setMap(null);
+            const index = markers.indexOf(marker);
+            if (index > -1) { // only splice array when item is found
+                markers.splice(index, 1); // 2nd parameter means remove one item only
+                //fszlArray.splice(index, 1);
+            }
+            console.log(markers.length);
+        } else if (clickBehaviour == 3) {
+            if (marker.content.className == "area-code")
+                marker.content.className = "city-code";
+            else if (marker.content.className == "city-code")
+                marker.content.className = "area-code";
         }
-        });
-  //marker.addListener('dragend', (event) => {
-        //const position = marker.position as google.maps.LatLng;
-        //infoWindow.close();
-        //infoWindow.setContent(`Pin dropped at: ${position.lat}, ${position.lng}`);
-        //infoWindow.open(marker.map, marker);
-    //});
+    });
     markers.push(marker);
-    fszlArray.push(fszl);
+    //fszlArray.push(fszl);
 }
 
 function initMap(): void {
   
   map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-    center: new google.maps.LatLng(20, 40),
-    zoom: 4,
+    center: new google.maps.LatLng(0, 0),
+    zoom: 2,
     mapId: 'DEMO_MAP_ID',
     zoomControl: false,
     scaleControl: true,
@@ -362,6 +402,14 @@ function initMap(): void {
       placeNewMarker(map, e.latLng);
   });
 
+    map.addListener('click', function (e) {
+        infoWindow.close();
+    });
+
+    map.data.addListener('click', function (e) {
+        infoWindow.close();
+    });
+
   map.data.addListener('dblclick',function(e){
     console.log(e);
     placeNewMarker(map, e.latLng);
@@ -371,7 +419,8 @@ function initMap(): void {
     map.addListener('zoom_changed', function () {
         console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
-            markers[i].content.style.transform = getTransform(fszlArray[i], markers[i].content instanceof HTMLImageElement);
+            let fszl = Number(markers[i].getAttribute("fszl"));
+            markers[i].content.style.transform = getTransform(fszl, markers[i].content instanceof HTMLImageElement);
             // if (markers[i].content instanceof google.maps.LatLng)
         }
     });
@@ -381,7 +430,13 @@ function initMap(): void {
   const saveLocsDiv = document.createElement('div');
   const saveLocs = createSaveLocsControl(map);
   saveLocsDiv.appendChild(saveLocs);
-  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsDiv);
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsDiv);
+
+    // Create the Click Behaviour button.
+    const clickDiv = document.createElement('div');
+    const clickButton = createClickControl(map);
+    clickDiv.appendChild(clickButton);
+    map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(clickDiv);
 
   // Create the country drop down menu
   const countrySelectDiv = document.createElement('div');
@@ -403,8 +458,8 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
         img.src = imagepath; // './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
         img.style.transform = getTransform(fszl, true);
         img.alt = text;
+        img.setAttribute("fszl", fszl.toString());
         marker.content = img;
-        
     }
     else {
         const markerDiv = document.createElement('div');
@@ -589,7 +644,7 @@ function handleDrop(e: DragEvent) {
                 // read the image...
                 var reader = new FileReader();
                 reader.onload = function (e) {
-                    placeNewMarker(map, map.getCenter(), file.name, e.target.result, "image");
+                    placeNewMarker(map, map.getCenter(), file.name, e.target.result, "image", -1);
                     console.log(file);
                     
                 }
