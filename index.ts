@@ -57,7 +57,7 @@ function createCountryChooser(map) {
           layerMenu.remove(i);
       layerMenu.options[0].selected = true;
       if (countryMenu.value == "Bulgaria") {
-          loadBoundaries('./Layers/Bulgaria/Provinces.geojson');
+          loadBoundaries('/Layers/Bulgaria/Provinces.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -65,7 +65,7 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "France") {
-          loadBoundaries('./Layers/France/Level2.geojson');
+          loadBoundaries('/Layers/France/Level2.geojson');
           const newtop = new Option("Department Names", "NamesLevel2");
           layerMenu.appendChild(newtop);
           const clusters = new Option("Placename Clusters", "Clusters");
@@ -112,13 +112,13 @@ function createCountryChooser(map) {
               else {
                   removeAllFeatures();
                   removeAllMarkers();
-                  loadBoundaries('./Layers/France/Level2.geojson');
+                  loadBoundaries('/Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
               }
           };
       }
       if (countryMenu.value == "Chile") {
-          loadBoundaries('./Layers/Chile/Level1.geojson');
+          loadBoundaries('/Layers/Chile/Level1.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -126,7 +126,7 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Jordan") {
-          loadBoundaries('./Layers/Jordan/Level0.geojson');          
+          loadBoundaries('/Layers/Jordan/Level0.geojson');          
           const newtop = new Option("Misc Meta", "Misc Meta");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -135,7 +135,7 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Romania") {
-          loadBoundaries('./Layers/Romania/Counties.geojson');
+          loadBoundaries('/Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -143,14 +143,14 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Sweden") {
-          loadBoundaries('./Layers/Sweden/Level1.geojson');
+          loadBoundaries('/Layers/Sweden/Level1.geojson');
           const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0; // Images can get arbitrarily small
               //const img = document.createElement('img');
-              //img.src = './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+              //img.src = '/Layers/Sweden/BusStopSigns/Norrbotten.jpg';
               //img.style.transform = getTransform(0.6, 5);
               //const marker = new google.maps.marker.AdvancedMarkerElement({
               //    map,
@@ -244,8 +244,8 @@ function createLayerChooser(map) {
     return layerMenu;
 }
 function loadMarkerLayer(country, layer) {
-    const path = './Layers/' + country + '/' + layer + '.json';
-    const imagepath = './Layers/' + country + '/' + layer + ' Images/';
+    const path = '/Layers/' + country + '/' + layer + '.json';
+    const imagepath = '/Layers/' + country + '/' + layer + ' Images/';
     console.log(path);
     console.log(imagepath);
     loadMarkers(path, imagepath);
@@ -455,7 +455,7 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
 
     if (type == "image") {
         const img = document.createElement('img');
-        img.src = imagepath; // './Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+        img.src = imagepath; // '/Layers/Sweden/BusStopSigns/Norrbotten.jpg';
         img.style.transform = getTransform(fszl, true);
         img.alt = text;
         img.setAttribute("fszl", fszl.toString());
