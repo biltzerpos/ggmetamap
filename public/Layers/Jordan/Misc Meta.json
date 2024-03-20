@@ -1,10 +1,52 @@
 [
   {
+    "text": "Aqaba.jpg",
+    "type": "image",
+    "lat": 29.54196375657915,
+    "lng": 35.00549539175944,
+    "fszl": 16
+  },
+  {
+    "text": "Ar-Ramtha.jpg",
+    "type": "image",
+    "lat": 32.55939150408145,
+    "lng": 36.00922123479785,
+    "fszl": 16
+  },
+  {
+    "text": "Jerash.jpg",
+    "type": "image",
+    "lat": 32.277653487675146,
+    "lng": 35.896905827775015,
+    "fszl": 17
+  },
+  {
+    "text": "Karak35NorthOf50.jpg",
+    "type": "image",
+    "lat": 31.18039472912715,
+    "lng": 35.738068695881054,
+    "fszl": 19
+  },
+  {
     "text": "Kerak.jpg",
     "type": "image",
     "lat": 31.189086699227815,
     "lng": 35.710718142074654,
     "fszl": 15
+  },
+  {
+    "text": "Madaba.jpg",
+    "type": "image",
+    "lat": 31.719637659082252,
+    "lng": 35.79299858940311,
+    "fszl": 17
+  },
+  {
+    "text": "MeccaSt.jpg",
+    "type": "image",
+    "lat": 31.976188285439935,
+    "lng": 35.85254317589596,
+    "fszl": 19
   },
   {
     "text": "Nejel.jpg",
@@ -19,5 +61,12 @@
     "lat": 30.53435262194191,
     "lng": 35.58256217509493,
     "fszl": 13
+  },
+  {
+    "text": "South of RahmaOn65UnnamedVillage.jpg",
+    "type": "image",
+    "lat": 29.821451617525238,
+    "lng": 35.09121336328343,
+    "fszl": 17
   }
 ]
