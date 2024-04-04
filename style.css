@@ -3,6 +3,11 @@
  * Copyright 2019 Google LLC. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0
  */
+
+:root {
+      --marker-color: #AA6666;
+    }
+
 html {
   height: 100%;
 }
@@ -85,30 +90,24 @@ body {
 }
 
 /* HTML marker styles */
-.city-code {
-  background-color: #4285F4;
-  border-radius: 8px;
-  color: #FFFFFF;
-  font-size: 16px;
-  padding: 5px 5px;
-  position: relative;
-}
 
-.city-code::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, 0);
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #4285F4;
+.buttons {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  boxShadow: 0 2px 6px rgba(0,0,0,.3);
+  color: rgb(25,25,25);
+  cursor: pointer;
+  fontFamily: Roboto,Arial,sans-serif;
+  font-size: 16px;
+  lineHeight: 38px;
+  margin: 8px 0 22px;
+  padding: 0 5px;
+  textAlign: center;
 }
 
 .area-code {
-  background-color: #AA6666;
+  background-color: var(--marker-color);
   border-radius: 8px;
   color: #FFFFFF;
   font-size: 16px;
@@ -126,5 +125,5 @@ body {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #AA6666;
+  border-top: 8px solid var(--marker-color);
 }

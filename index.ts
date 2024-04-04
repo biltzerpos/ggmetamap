@@ -7,12 +7,14 @@
 //import * as TxtOverlay from './txtOverlay.js'
 
 let map: google.maps.Map;
+let boundaryLayer, secondaryLayer, auxButton;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
-//var fszlArray: number[] = []; // Parallel array with markers, -1 means do not resize with zoom
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
 let infoWindow;
 let clickBehaviour = 0;
+let showAreas = true;
+let colourDigit = 1; // which digit is used for area code colouring
 interface markerLoc {
     text: string;
     type: string;
@@ -21,22 +23,17 @@ interface markerLoc {
     scale: number;
 }
 
-function createCountryChooser(map) {
-  countryMenu = document.createElement('select');
+function showAllAreas() {
+    loadGeoJSONFile('Layers/Mexico/' + "Phone Codes200" + '.geojson', "secondaryLayerClear");
+    for (let i = 3; i <= 9; i++) {
+        let layerName = "Phone Codes" + i + "00";
+        loadGeoJSONFile('Layers/Mexico/' + layerName + '.geojson', "secondaryLayer");
+    }
+}
 
-  // Set CSS for the control.
-  countryMenu.style.backgroundColor = '#fff';
-  countryMenu.style.border = '2px solid #fff';
-  countryMenu.style.borderRadius = '3px';
-  countryMenu.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-  countryMenu.style.color = 'rgb(25,25,25)';
-  countryMenu.style.cursor = 'pointer';
-  countryMenu.style.fontFamily = 'Roboto,Arial,sans-serif';
-  countryMenu.style.fontSize = '16px';
-  countryMenu.style.lineHeight = '38px';
-  countryMenu.style.margin = '8px 0 22px';
-  countryMenu.style.padding = '0 5px';
-  countryMenu.style.textAlign = 'center';
+function createCountryChooser(map) {
+    countryMenu = document.createElement('select');
+    countryMenu.className = "buttons";
 
   const top = new Option("Choose Country", "0");
   top.selected = true;
@@ -44,8 +41,9 @@ function createCountryChooser(map) {
   countryMenu.appendChild(top);
   countryMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
   countryMenu.appendChild(new Option("Chile", "Chile"));
-    countryMenu.appendChild(new Option("France", "France"));
-    countryMenu.appendChild(new Option("Jordan", "Jordan"));
+  countryMenu.appendChild(new Option("France", "France"));
+  countryMenu.appendChild(new Option("Jordan", "Jordan"));
+  countryMenu.appendChild(new Option("Mexico", "Mexico"));
   countryMenu.appendChild(new Option("Romania", "Romania"));
   countryMenu.appendChild(new Option("Sweden", "Sweden"));
 
@@ -57,7 +55,8 @@ function createCountryChooser(map) {
           layerMenu.remove(i);
       layerMenu.options[0].selected = true;
       if (countryMenu.value == "Bulgaria") {
-          loadBoundaries('/Layers/Bulgaria/Provinces.geojson');
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/Bulgaria/Provinces.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -65,7 +64,8 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "France") {
-          loadBoundaries('/Layers/France/Level2.geojson');
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/France/Level2.geojson');
           const newtop = new Option("Department Names", "NamesLevel2");
           layerMenu.appendChild(newtop);
           const clusters = new Option("Placename Clusters", "Clusters");
@@ -112,13 +112,14 @@ function createCountryChooser(map) {
               else {
                   removeAllFeatures();
                   removeAllMarkers();
-                  loadBoundaries('/Layers/France/Level2.geojson');
+                  loadGeoJSONFile('/Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
               }
           };
       }
       if (countryMenu.value == "Chile") {
-          loadBoundaries('/Layers/Chile/Level1.geojson');
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/Chile/Level1.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -126,7 +127,8 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Jordan") {
-          loadBoundaries('/Layers/Jordan/Level0.geojson');          
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/Jordan/Level0.geojson');          
           const newtop = new Option("Misc Meta", "Misc Meta");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -134,8 +136,53 @@ function createCountryChooser(map) {
               layerMin = 0.1; // So images do not get too small
           };
       }
-      if (countryMenu.value == "Romania") {
-          loadBoundaries('/Layers/Romania/Counties.geojson');
+      if (countryMenu.value == "Mexico") {
+          loadGeoJSONFile('/Layers/Mexico/States.geojson');
+          const code200 = new Option("Phone Codes (200)", "Phone Codes200");
+          const code300 = new Option("Phone Codes (300)", "Phone Codes300");
+          const code400 = new Option("Phone Codes (400)", "Phone Codes400");
+          const code500 = new Option("Phone Codes (500)", "Phone Codes500");
+          const code600 = new Option("Phone Codes (600)", "Phone Codes600");
+          const code700 = new Option("Phone Codes (700)", "Phone Codes700");
+          const code800 = new Option("Phone Codes (800)", "Phone Codes800");
+          const code900 = new Option("Phone Codes (900)", "Phone Codes900");
+          const codeAll = new Option("Phone Codes (all)", "Phone Codesall");
+          layerMenu.appendChild(code200);
+          layerMenu.appendChild(code300);
+          layerMenu.appendChild(code400);
+          layerMenu.appendChild(code500);
+          layerMenu.appendChild(code600);
+          layerMenu.appendChild(code700);
+          layerMenu.appendChild(code800);
+          layerMenu.appendChild(code900);
+          layerMenu.appendChild(codeAll);
+          
+          layerMenu.onchange = async () => {
+              removeAllMarkers();
+              colourDigit = 0;
+              showAuxButton();
+              auxButton.textContent = "Hide Area Boundaries";
+              showAreas = true;
+              if (layerMenu.value == "Phone Codesall") {
+                  showAllAreas();
+                  
+                  for (let i = 2; i <= 9; i++) {
+                      let layerName = "Phone Codes" + i + "00";
+                      loadMarkerLayer(countryMenu.value, layerName);
+                  }
+                  zoom(map);
+              }
+              else {
+                  colourDigit = 1;
+                  loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  await loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
+                  zoom(map, "secondaryLayer");
+              }
+              
+          };
+      } if (countryMenu.value == "Romania") {
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -143,7 +190,8 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Sweden") {
-          loadBoundaries('/Layers/Sweden/Level1.geojson');
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/Sweden/Level1.geojson');
           const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
@@ -168,8 +216,11 @@ function createCountryChooser(map) {
 }
 
 function removeAllFeatures() {
-    map.data.forEach(function (feature) {
-        map.data.remove(feature);
+    boundaryLayer.forEach(function (feature) {
+        boundaryLayer.remove(feature);
+    });
+    secondaryLayer.forEach(function (feature) {
+        secondaryLayer.remove(feature);
     });
 }
 
@@ -178,38 +229,20 @@ function removeAllMarkers() {
         markers[i].setMap(null);
     }
     markers = [];
-    //fszlArray = [];
 }
 
 function createClickControl(map) {
     const clickB = document.createElement('select');
-
-    // Set CSS for the control.
-    clickB.style.backgroundColor = '#fff';
-    clickB.style.border = '2px solid #fff';
-    clickB.style.borderRadius = '3px';
-    clickB.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-    clickB.style.color = 'rgb(25,25,25)';
-    clickB.style.cursor = 'pointer';
-    clickB.style.fontFamily = 'Roboto,Arial,sans-serif';
-    clickB.style.fontSize = '16px';
-    clickB.style.lineHeight = '38px';
-    clickB.style.margin = '8px 0 22px';
-    clickB.style.padding = '0 5px';
-    clickB.style.textAlign = 'center';
+    clickB.className = "buttons";
 
     const def = new Option("Click: Show/change info", "0");
     def.selected = true;
-    //top.disabled = true;
     clickB.appendChild(def);
     const zoomFix = new Option("Click: Fix/unfix zoom level", "1");
-    //zoomFix.disabled = true;
     clickB.appendChild(zoomFix);
     const del = new Option("Click: Delete marker", "2");
-    //zoomFix.disabled = true;
     clickB.appendChild(del);
     const blue = new Option("Click: Swap brown/blue colour", "3");
-    //zoomFix.disabled = true;
     clickB.appendChild(blue);
     clickB.onchange = () => {
         clickBehaviour = clickB.value;
@@ -219,20 +252,7 @@ function createClickControl(map) {
 
 function createLayerChooser(map) {
     layerMenu = document.createElement('select');
-
-    // Set CSS for the control.
-    layerMenu.style.backgroundColor = '#fff';
-    layerMenu.style.border = '2px solid #fff';
-    layerMenu.style.borderRadius = '3px';
-    layerMenu.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-    layerMenu.style.color = 'rgb(25,25,25)';
-    layerMenu.style.cursor = 'pointer';
-    layerMenu.style.fontFamily = 'Roboto,Arial,sans-serif';
-    layerMenu.style.fontSize = '16px';
-    layerMenu.style.lineHeight = '38px';
-    layerMenu.style.margin = '8px 0 22px';
-    layerMenu.style.padding = '0 5px';
-    layerMenu.style.textAlign = 'center';
+    layerMenu.className = "buttons";
 
     const top = new Option("Choose Layer", "0");
     top.selected = true;
@@ -243,6 +263,7 @@ function createLayerChooser(map) {
     layerMenu.appendChild(dummy);
     return layerMenu;
 }
+
 function loadMarkerLayer(country, layer) {
     const path = '/Layers/' + country + '/' + layer + '.json';
     const imagepath = '/Layers/' + country + '/' + layer + ' Images/';
@@ -252,45 +273,28 @@ function loadMarkerLayer(country, layer) {
 }
 
 function createSaveLocsControl(map) {
-  const controlButton = document.createElement('button');
+    const saveLocsButton = document.createElement('button');
+    saveLocsButton.className = "buttons";
 
-  // Set CSS for the control.
-  controlButton.style.backgroundColor = '#fff';
-  controlButton.style.border = '2px solid #fff';
-  controlButton.style.borderRadius = '3px';
-  controlButton.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
-  controlButton.style.color = 'rgb(25,25,25)';
-  controlButton.style.cursor = 'pointer';
-  controlButton.style.fontFamily = 'Roboto,Arial,sans-serif';
-  controlButton.style.fontSize = '16px';
-  controlButton.style.lineHeight = '38px';
-  controlButton.style.margin = '8px 0 22px';
-  controlButton.style.padding = '0 5px';
-  controlButton.style.textAlign = 'center';
-
-  controlButton.textContent = 'Save locs';
-  controlButton.title = 'Click to save the location of the markers';
-  controlButton.type = 'button';
+  saveLocsButton.textContent = 'Save locs';
+  saveLocsButton.title = 'Click to save the location of the markers';
+  saveLocsButton.type = 'button';
 
   // Setup the click event listener
-  controlButton.addEventListener('click', () => {
+  saveLocsButton.addEventListener('click', () => {
     let markerLocData: markerLoc[] = [];
       for (let i = 0; i < markers.length; i++)
     { 
-        //console.log(marker.content.textContent + " " + marker.position.lat);
-        //console.log(marker.content);
-        //console.log(marker.content.className);
-        //console.log(marker.content.title);
-        //console.log(marker.content.style);
-        //console.log(marker.content.style.transform);
         let text, type;
         if (markers[i].content instanceof HTMLImageElement) {
             text = markers[i].content.alt;
             type = "image";
         }
         else {
+            //console.log(markers[1].style.getProperty('--marker-color'));
+            //console.log(markers[1].);
             text = markers[i].content.textContent;
-            type = markers[i].content.className;
+            type = markers[i].getAttribute("ggmmtype");
         }
         let fszl = Number(markers[i].getAttribute("fszl"));
         markerLocData.push({ text: text, type: type, lat: markers[i].position.lat, lng: markers[i].position.lng, fszl: fszl });
@@ -314,9 +318,61 @@ function createSaveLocsControl(map) {
     document.body.removeChild(a);
   });
 
-  return controlButton;
+  return saveLocsButton;
 }
 
+function createAuxButton() {  
+    auxButton = document.createElement('button');
+    auxButton.className = "buttons";
+    auxButton.textContent = "Hide Area Boundaries";
+    auxButton.type = 'button';
+    auxButton.addEventListener('click', () => {
+        showAreas = !showAreas;
+        if (showAreas) {
+            auxButton.textContent = "Hide Area Boundaries";
+            if (layerMenu.value == "Phone Codesall") showAllAreas();
+            else loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
+        }
+        else {
+            clearSecondaryLayer();
+            auxButton.textContent = "Show Area Boundaries";
+        }
+    });
+}
+
+function showAuxButton() {
+    const buttons = map.controls[google.maps.ControlPosition.TOP_CENTER];
+    if (buttons.length == 3) buttons.pop();
+    buttons.push(auxButton);
+}
+
+function hideAuxButton() {
+    const buttons = map.controls[google.maps.ControlPosition.TOP_CENTER];
+    if (buttons.length == 3) buttons.pop();
+    //buttons.push(auxButton);
+}
+
+
+//function setAuxButton(title) {
+//    const buttons = map.controls[google.maps.ControlPosition.TOP_CENTER];
+//    if (!title) {
+//        if (buttons.length == 3) buttons.pop();
+//    }
+//    else {
+//        //if (!auxButton)
+//        auxButton = document.createElement('button');
+//        auxButton.className = "buttons";
+
+//        auxButton.textContent = title;
+//        //auxButton.title = 'Click to remove the area code boundary curves';
+//        auxButton.type = 'button';
+
+//        // Setup the click event listener
+//        auxButton.addEventListener('click', auxfunc);
+//        if (buttons.length == 3) buttons.pop();
+//        buttons.push(auxButton);
+//    }
+//}
 function getTransform(fszl, isImage) {
     let sc = 1;
     if (fszl >= 0) {
@@ -341,11 +397,12 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
         gmpDraggable: true,
         zIndex: zIndex,
     });
+    marker.setAttribute("ggmmtype", type.toString());
     marker.setAttribute("fszl", fszl.toString());
     setMarkerContent(marker, content, imagepath, type, fszl);
     marker.addListener('click', () => {
         if (clickBehaviour == 0) {
-            console.log(type);
+            console.log(position);
             if (type == "image") {
                 infoWindow.close();
                 const img = document.createElement('img');
@@ -355,7 +412,8 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
             }
             else {
                 var result = prompt("Enter new value for marker:");
-                setMarkerContent(marker, result, marker.content.src, marker.content.className, fszl);
+                let thistype = marker.getAttribute("ggmmtype");
+                if (result) setMarkerContent(marker, result, marker.content.src, marker.getAttribute("ggmmtype"), fszl);
             }
         } else if (clickBehaviour == 1) { 
             let fszl = Number(marker.getAttribute("fszl"));
@@ -398,19 +456,24 @@ function initMap(): void {
     },
   });
 
-  map.addListener('dblclick', function(e) {
-      placeNewMarker(map, e.latLng);
-  });
+    boundaryLayer = new google.maps.Data();
+    boundaryLayer.setMap(map);
+    secondaryLayer = new google.maps.Data();
+    secondaryLayer.setMap(map);
+
+    map.addListener('dblclick', function(e) {
+        placeNewMarker(map, e.latLng);
+    });
 
     map.addListener('click', function (e) {
         infoWindow.close();
     });
 
-    map.data.addListener('click', function (e) {
+    boundaryLayer.addListener('click', function (e) {
         infoWindow.close();
     });
 
-  map.data.addListener('dblclick',function(e){
+  boundaryLayer.addListener('dblclick',function(e){
     console.log(e);
     placeNewMarker(map, e.latLng);
     //google.maps.event.trigger(this.getMap(),'dblclick',e);
@@ -448,23 +511,40 @@ function initMap(): void {
   const layerSelectDiv = document.createElement('div');
   layerMenu = createLayerChooser(map);
   layerSelectDiv.appendChild(layerMenu);
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
+
+    // Create the aux button
+    //const auxDiv = document.createElement('div');
+    //auxButton =
+    createAuxButton();
+    //auxDiv.appendChild(auxButton);
+    //map.controls[google.maps.ControlPosition.TOP_CENTER].push(auxButton);
 }
 
 function setMarkerContent(marker, text, imagepath, type, fszl) {
 
     if (type == "image") {
         const img = document.createElement('img');
-        img.src = imagepath; // '/Layers/Sweden/BusStopSigns/Norrbotten.jpg';
+        img.src = imagepath;
         img.style.transform = getTransform(fszl, true);
         img.alt = text;
         img.setAttribute("fszl", fszl.toString());
         marker.content = img;
     }
-    else {
+    else { // We are dealing with a text marker
         const markerDiv = document.createElement('div');
-        markerDiv.className = type;
-        //let text = text;
+        markerDiv.className = "area-code";
+        if (type == "city-code") {
+            markerDiv.style.setProperty('--marker-color', '#4285F4');
+        }
+        else if (type == "digit2") {
+            const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
+            let ch = text[colourDigit];
+            if (!isNaN(ch)) {
+                console.log(ch);
+                markerDiv.style.setProperty('--marker-color', colors[ch]);
+            }
+        }
         markerDiv.textContent = text.toString();
         marker.content = markerDiv;
     }
@@ -512,37 +592,65 @@ for (let i = 0; i<70; i++) {
 }
 }
 
-function loadGeoJsonString(geoString: string) {
+function clearSecondaryLayer() {
+    secondaryLayer.forEach(function (feature) {
+        console.log("DFG");
+        secondaryLayer.remove(feature);
+    });
+}
+
+function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options) {
   try {
     const geojson = JSON.parse(geoString) as any;
-
-    map.data.addGeoJson(geojson);
+      if (layer == "boundaryLayer") {
+          boundaryLayer.addGeoJson(geojson);
+          if (options) boundaryLayer.setStyle(options);
+          else boundaryLayer.setStyle({
+              fillOpacity: '0'
+          });
+          zoom(map);
+      }
+      else if (layer.startsWith("secondaryLayer")) {
+          if (layer == "secondaryLayerClear") clearSecondaryLayer();
+          secondaryLayer.addGeoJson(geojson);
+          if (options) secondaryLayer.setStyle(options);
+          else boundaryLayer.setStyle({
+              fillOpacity: '0',
+              strokeOpacity: '0.1'
+          });
+      }
+      else console.log("Unknown layer");
   } catch (e) {
     alert("Not a GeoJSON file!");
   }
 
-  map.data.setStyle({
-    fillOpacity: '0'
-  });
-
-    zoom(map);
+    
 }
 
 /**
  * Update a map's viewport to fit each geometry in a dataset
  */
-function zoom(map: google.maps.Map) {
-  const bounds = new google.maps.LatLngBounds();
-
-  map.data.forEach((feature) => {
-      const geometry = feature.getGeometry();
-      
-
-    if (geometry) {
-      processPoints(geometry, bounds.extend, bounds);
+function zoom(map: google.maps.Map, layer = "boundaryLayer") {
+    const bounds = new google.maps.LatLngBounds();
+    if (layer == "boundaryLayer") {
+        boundaryLayer.forEach((feature) => {
+            const geometry = feature.getGeometry();
+            if (geometry) {
+                processPoints(geometry, bounds.extend, bounds);
+            }
+        });
     }
-  });
-  map.fitBounds(bounds);
+    else if (layer == "secondaryLayer") {
+        secondaryLayer.forEach((feature) => {
+            const geometry = feature.getGeometry();
+            console.log("sdfg");
+            if (geometry) {
+                processPoints(geometry, bounds.extend, bounds);
+            }
+        });
+    }
+    else console.log("Weird 001");
+    map.fitBounds(bounds);
 }
 
 /**
@@ -553,11 +661,11 @@ function processPoints(
   callback: any,
   thisArg: google.maps.LatLngBounds
 ) {
-  if (geometry instanceof google.maps.LatLng) {
+    if (geometry instanceof google.maps.LatLng) {
       callback.call(thisArg, geometry);
   } else if (geometry instanceof google.maps.Data.Point) {
       callback.call(thisArg, geometry.get());
-      //console.log("poi " + geometry.get().lat());
+      console.log("poi " + geometry.get().lat());
       let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
       placeNewMarker(map, pos, ""); 
   } else {
@@ -568,11 +676,11 @@ function processPoints(
   }
 }
 
-async function loadBoundaries(path: string) {
+async function loadGeoJSONFile(path: string, layer, options) {
   let response = await fetch(path);
   let contents = await response.text();
   if (contents) {
-    loadGeoJsonString(contents);
+    loadGeoJsonString(contents, layer, options);
   }
 }
 
@@ -638,6 +746,25 @@ function handleDrop(e: DragEvent) {
                 };
 
                 reader.readAsText(file);
+            } else if (file.type == 'application/json') {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    let markerLocData = JSON.parse(reader.result as string);
+                    console.log(markerLocData);
+                    for (let markerLoc of markerLocData) {
+                        let position = { lat: markerLoc.lat, lng: markerLoc.lng };
+                        let text = markerLoc.text.toString();
+                        let imagepath = "";
+                        placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl);
+                    }
+                };
+
+                reader.onerror = function (e) {
+                    console.error("reading failed");
+                };
+
+                reader.readAsText(file);
             }
             else if (file.type == 'image/jpeg') {
                 
@@ -652,7 +779,7 @@ function handleDrop(e: DragEvent) {
                 //console.log(e.target.);
             }
             else
-                alert("Unsupported file format. Only geojson and jpg supported at the moment.");
+                alert("Unsupported file format. Only geojson, jpg, json (array of markers), and text (mex style) supported at the moment.");
         }
     } else {
         // process non-file (e.g. text or html) content being dropped
@@ -662,7 +789,50 @@ function handleDrop(e: DragEvent) {
         console.log(plainText);
 
         if (plainText) {
-            loadGeoJsonString(plainText);
+            //loadGeoJsonString(plainText);
+            let lines = separateLines(plainText);
+            console.log(lines);
+            let tracking = [];
+            for (let i = 0; i < lines.length; i = i + 1) {
+                //console.log(lines[i]);
+                if (isNaN(lines[i].substring(0, 2))) {
+                    //console.log(lines[i]);
+                    tracking.push(i);
+                    //console.log(tracking);
+                }
+            }
+            tracking.push(lines.length - 1);
+            console.log(tracking);
+            let codeStart = [];
+            let currentCode = lines[tracking[1] - 1];
+            codeStart.push(0);
+            for (let i = 1; i < tracking.length; i = i + 1) {
+                if (currentCode != lines[tracking[i + 1] - 1]) {
+                    codeStart.push(i);
+                    currentCode = lines[tracking[i + 1] - 1];
+                }
+            }
+            let allGood = true;
+            for (let i = 0; i < tracking.length - 1; i = i + 1) {
+                let d = tracking[i + 1] - tracking[i];
+                if (d > 4) allGood = false;
+                let locs = (d - 2) / 2;
+                for (let j = 1; j <= locs; j++) {
+                    let name = lines[tracking[i]];
+                    console.log(name);
+                    let lat = Number(lines[tracking[i] + j]);
+                    let lng = Number(lines[tracking[i] + j + locs]);
+                    //let code = lines[i + 3];
+                    let tt = "area-code";
+                    if (locs > 1) tt = "city-code";
+                    //markerObjects.push({ text: name.substring(0, 5), type: tt, lat: lat, lng: lng });
+                    placeNewMarker(map, { lat: lat, lng: lng }, name.substring(0, 5), "", tt);
+                }
+                //if (codeStart.includes(i+1)) {
+                //    if (allGood) removeAllMarkers();
+                //    else break;
+                //}
+            }
         }
     }
 
@@ -670,6 +840,15 @@ function handleDrop(e: DragEvent) {
     return false;
 }
 
+//function startsWithLetter(str) {
+//    return /^[A-Za-z]/.test(str);
+//}
+
+function separateLines(str) {
+    // Split the string into an array of lines
+    const lines = str.split(/\r?\n/);
+    return lines;
+}
 function initialize() {
     initMap();
     initEvents();
