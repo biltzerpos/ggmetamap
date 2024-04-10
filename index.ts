@@ -386,7 +386,7 @@ function getTransform(fszl, isImage) {
     return transform;
 }
 
-function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = -1) {
+function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = -1, draggable = true) {
     console.log("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
@@ -394,7 +394,7 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
     var marker = new google.maps.marker.AdvancedMarkerElement({
         map: map,
         position: position,
-        gmpDraggable: true,
+        gmpDraggable: draggable,
         zIndex: zIndex,
     });
     marker.setAttribute("ggmmtype", type.toString());
@@ -476,7 +476,6 @@ function initMap(): void {
   boundaryLayer.addListener('dblclick',function(e){
     console.log(e);
     placeNewMarker(map, e.latLng);
-    //google.maps.event.trigger(this.getMap(),'dblclick',e);
   });
 
     map.addListener('zoom_changed', function () {
@@ -559,7 +558,7 @@ async function loadMarkers(path:string, imagepathdir:string): void {
         let position = { lat: markerLoc.lat, lng: markerLoc.lng };
         let text = markerLoc.text.toString();
         let imagepath = imagepathdir + text;
-      placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl);
+        placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl, false);
   }
 }
 
@@ -665,9 +664,9 @@ function processPoints(
       callback.call(thisArg, geometry);
   } else if (geometry instanceof google.maps.Data.Point) {
       callback.call(thisArg, geometry.get());
-      console.log("poi " + geometry.get().lat());
-      let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
-      placeNewMarker(map, pos, ""); 
+      //console.log("poi " + geometry.get().lat());
+      //let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
+      //placeNewMarker(map, pos, ""); // Why was this here?
   } else {
     // @ts-ignore
     geometry.getArray().forEach((g) => {
