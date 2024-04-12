@@ -338,6 +338,7 @@ function createAuxButton() {
             auxButton.textContent = "Show Area Boundaries";
         }
     });
+    return auxButton;
 }
 
 function showAuxButton() {
@@ -513,10 +514,9 @@ function initMap(): void {
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
 
     // Create the aux button
-    //const auxDiv = document.createElement('div');
-    //auxButton =
-    createAuxButton();
-    //auxDiv.appendChild(auxButton);
+    const auxDiv = document.createElement('div');
+    auxButton = createAuxButton();
+    auxDiv.appendChild(auxButton);
     //map.controls[google.maps.ControlPosition.TOP_CENTER].push(auxButton);
 }
 
