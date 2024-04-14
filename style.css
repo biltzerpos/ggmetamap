@@ -6,6 +6,7 @@
 
 :root {
       --marker-color: #AA6666;
+      --iwmh: 700px;
     }
 
 html {
@@ -91,6 +92,13 @@ body {
 
 /* HTML marker styles */
 
+.custom-infowindow {
+    background-color: white;
+    border: 1px solid black; /* Add a border */
+    border-radius: 10px; /* Make corners round */
+    padding: 10px;
+}
+
 .buttons {
   background-color: #fff;
   border: 2px solid #fff;
@@ -126,4 +134,20 @@ body {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid var(--marker-color);
+}
+
+.gm-style-iw-d {
+  max-height: var(--iwmh) !important;
+}
+
+.gm-style-iw {
+  max-height: var(--iwmh) !important;
+} 
+
+.gm-style-iw-c {
+  max-height: var(--iwmh) !important;
+} 
+
+.gm-style-iw-tc::after {
+  height: 0px !important;
 }

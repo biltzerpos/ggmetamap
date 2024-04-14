@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-//import * as TxtOverlay from './txtOverlay.js'
+//import Popup from './popup.js'
 
 let map: google.maps.Map;
 let boundaryLayer, secondaryLayer, auxButton;
@@ -45,7 +45,8 @@ function createCountryChooser(map) {
   countryMenu.appendChild(new Option("Jordan", "Jordan"));
   countryMenu.appendChild(new Option("Mexico", "Mexico"));
   countryMenu.appendChild(new Option("Romania", "Romania"));
-  countryMenu.appendChild(new Option("Sweden", "Sweden"));
+    countryMenu.appendChild(new Option("Sweden", "Sweden"));
+    countryMenu.appendChild(new Option("USA", "USA"));
 
   countryMenu.onchange = () => {
       console.log(countryMenu.value);
@@ -197,17 +198,16 @@ function createCountryChooser(map) {
           layerMenu.onchange = () => {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0; // Images can get arbitrarily small
-              //const img = document.createElement('img');
-              //img.src = '/Layers/Sweden/BusStopSigns/Norrbotten.jpg';
-              //img.style.transform = getTransform(0.6, 5);
-              //const marker = new google.maps.marker.AdvancedMarkerElement({
-              //    map,
-              //    position: { lat: 66.868003323504, lng: 20.102020566463448 },
-              //    gmpDraggable: true,
-              //    content: img,
-              //    title: 'huh',                  
-              //});
-              //markers.push(marker);
+          };
+      }
+      if (countryMenu.value == "USA") {
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/USA/States.geojson');
+          const newtop = new Option("License Plates", "License Plates");
+          layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+              layerMin = 0; // Images can get arbitrarily small
           };
       }
   };
@@ -406,10 +406,72 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
             console.log(position);
             if (type == "image") {
                 infoWindow.close();
+                //const iwDiv = document.createElement('div');
+                //iwDiv.class = "gm-style-iw";
+                ////iwDiv.style.height = "800px";
                 const img = document.createElement('img');
+                //img.style.maxHeight = "800px";
+                //iwDiv.appendChild(img);
+                //iwDiv.style.maxHeight = "800px";
                 img.src = imagepath;
-                infoWindow.setContent(img);
-                infoWindow.open(map, marker);
+                img.onload = function () {
+                    // Once the image is loaded, get its dimensions
+                    var width = this.naturalWidth; // Image width
+                    var height = this.naturalHeight; // Image height
+                    const maxh = Math.floor(window.screen.height * 0.9);
+                    if (height > maxh) {
+                        // Set max height
+                        img.style.setProperty('--iwmh', maxh.toString());
+                    }
+                    else {
+                        img.style.setProperty('--iwmh', height.toString());
+                    }
+                    const maxw = Math.floor(window.screen.width * 0.9);
+                    if (width > maxw) {
+                        // Set max width
+                        infoWindow.setOptions({
+                            maxWidth: maxw
+                        });
+                    }
+                    else {
+                        infoWindow.setOptions({
+                            maxWidth: Math.floor(width * 1.1)
+                        });
+                    }
+                    infoWindow.setContent(img);
+                    infoWindow.class = "custom-infowindow";
+
+                    const bounds = map.getBounds();
+                    const northLat = bounds.getNorthEast().lat();
+                    const southLat = bounds.getSouthWest().lat();
+                    const latDifference = northLat - southLat;
+                    const mapHeight = map.getDiv().offsetHeight;
+                    //const lat0 = map.getBounds().getNorthEast().lat();
+                    //const lng0 = map.getBounds().getNorthEast().lng();
+                    //const lat1 = map.getBounds().getSouthWest().lat();
+                    //const lng1 = map.getBounds().getSouthWest().lng();
+                    //const options = { anchor: { lat: lat0, lng: lng0 }, map: map };
+                    //const options = { anchor: map.getCenter(), map: map };
+                    //infoWindow.setOptions({ shouldFocus: false });
+                    //const pos = { lat: lat1, lng: (lng0 + lng1) / 2 };
+                    const cen = map.getCenter();
+                    //const goDown = 0.9 * (cen.lat() - lat1);
+                    const goDown = (height / 2) * latDifference / mapHeight;
+                    const newLat = cen.lat() - goDown;
+                    
+                    //console.log(lat0);
+                    //console.log(lat1);
+                    //console.log(lng0);
+                    //console.log(lng1);
+
+                    
+                    infoWindow.setPosition({ lat: newLat, lng: cen.lng() });
+                    
+                    infoWindow.open(map);
+                };
+
+                
+
             }
             else {
                 var result = prompt("Enter new value for marker:");
@@ -488,7 +550,12 @@ function initMap(): void {
         }
     });
 
-  infoWindow  = new google.maps.InfoWindow();
+    const maxw = Math.floor(window.screen.width * 0.9);
+    infoWindow = new google.maps.InfoWindow({
+        maxWidth: maxw // Set a maximum width for the InfoWindow
+        // maxHeight: 1800 // No such option
+    });
+
   // Create the Save Locs button.
   const saveLocsDiv = document.createElement('div');
   const saveLocs = createSaveLocsControl(map);
@@ -558,6 +625,7 @@ async function loadMarkers(path:string, imagepathdir:string): void {
         let position = { lat: markerLoc.lat, lng: markerLoc.lng };
         let text = markerLoc.text.toString();
         let imagepath = imagepathdir + text;
+        console.log(imagepath);
         placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl, false);
   }
 }

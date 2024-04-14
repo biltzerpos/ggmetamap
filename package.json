@@ -26,10 +26,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/google.maps": "^3.53.5",
+    "@types/google.maps": "^3.55.7",
+    "@types/googlemaps": "^3.43.3",
     "typescript": "^5.2.2",
     "vite": "^5.0.12"
   },
-  "private": true,
-  "dependencies": {}
+  "private": true
 }
