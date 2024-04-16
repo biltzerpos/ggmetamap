@@ -46,6 +46,7 @@ function createCountryChooser(map) {
   countryMenu.appendChild(new Option("Mexico", "Mexico"));
   countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
+    countryMenu.appendChild(new Option("South Africa", "South Africa"));
     countryMenu.appendChild(new Option("USA", "USA"));
 
   countryMenu.onchange = () => {
@@ -161,6 +162,7 @@ function createCountryChooser(map) {
           layerMenu.onchange = async () => {
               removeAllMarkers();
               colourDigit = 0;
+              boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' });
               showAuxButton();
               auxButton.textContent = "Hide Area Boundaries";
               showAreas = true;
@@ -198,6 +200,41 @@ function createCountryChooser(map) {
           layerMenu.onchange = () => {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0; // Images can get arbitrarily small
+          };
+      }
+      if (countryMenu.value == "South Africa") {
+          hideAuxButton();
+          loadGeoJSONFile('/Layers/South Africa/Level1.geojson');
+          for (let i = 2; i <= 8; i++) {
+              const optionName = " " + i + "x Highway Numbers";
+              layerMenu.appendChild(new Option(optionName, optionName));
+          }
+          //R114 copied into R100 that does not exist to keep loading simple
+          layerMenu.appendChild(new Option("Parallel routes", "10x highways"));
+          for (let i = 30; i <= 72; i++) {
+              const optionName = i + "x Highway Numbers";
+              layerMenu.appendChild(new Option(optionName, optionName));
+              if (i == 41) i = 49;
+              if (i == 57) i = 59;
+              if (i == 62) i = 69;
+          }
+          layerMenu.onchange = async () => {
+              removeAllMarkers();
+              boundaryLayer.setStyle({ strokeOpacity: '0.1', fillOpacity: '0' });
+              showAuxButton();
+              auxButton.textContent = "Next group";
+              const styleOptions = {
+                  strokeColor: 'black',
+                  strokeOpacity: '1',
+                  strokeWeight: '5'
+              }
+              const group = layerMenu.value.substring(0, 2).replace(/\s/g, '');
+              clearSecondaryLayer();
+              for (let i = 0; i < 10; i++) {
+                  const geopath = 'Layers/South Africa/geojson/R' + group + i + '.geojson';
+                  await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
+              }
+              loadMarkerLayer("South Africa", "markers/" + group);
           };
       }
       if (countryMenu.value == "USA") {
@@ -238,11 +275,13 @@ function createClickControl(map) {
     const def = new Option("Click: Show/change info", "0");
     def.selected = true;
     clickB.appendChild(def);
-    const zoomFix = new Option("Click: Fix/unfix zoom level", "1");
-    clickB.appendChild(zoomFix);
-    const del = new Option("Click: Delete marker", "2");
+    const incImage = new Option("Click: Increase image marker size", "1");
+    clickB.appendChild(incImage);
+    const redImage = new Option("Click: Reduce image marker size", "2");
+    clickB.appendChild(redImage);
+    const del = new Option("Click: Delete marker", "3");
     clickB.appendChild(del);
-    const blue = new Option("Click: Swap brown/blue colour", "3");
+    const blue = new Option("Click: Swap brown/blue colour", "4");
     clickB.appendChild(blue);
     clickB.onchange = () => {
         clickBehaviour = clickB.value;
@@ -324,18 +363,33 @@ function createSaveLocsControl(map) {
 function createAuxButton() {  
     auxButton = document.createElement('button');
     auxButton.className = "buttons";
-    auxButton.textContent = "Hide Area Boundaries";
+    auxButton.textContent = "Default text";
     auxButton.type = 'button';
     auxButton.addEventListener('click', () => {
-        showAreas = !showAreas;
-        if (showAreas) {
-            auxButton.textContent = "Hide Area Boundaries";
-            if (layerMenu.value == "Phone Codesall") showAllAreas();
-            else loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
+        if (countryMenu.value == "Mexico") {
+            showAreas = !showAreas;
+            if (showAreas) {
+                auxButton.textContent = "Hide Area Boundaries";
+                if (layerMenu.value == "Phone Codesall") showAllAreas();
+                else loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
+            }
+            else {
+                clearSecondaryLayer();
+                auxButton.textContent = "Show Area Boundaries";
+            }
         }
-        else {
-            clearSecondaryLayer();
-            auxButton.textContent = "Show Area Boundaries";
+        else if (countryMenu.value == "South Africa") {
+            // Advance
+            // Get the currently selected index
+            const currentSelection = layerMenu.selectedIndex;
+
+            // Check if there is a next option
+            if (currentSelection < layerMenu.options.length - 1) {
+                // Select the next option
+                layerMenu.selectedIndex = currentSelection + 1;
+            }
+            const event = new Event("change");
+            layerMenu.dispatchEvent(event);
         }
     });
     return auxButton;
@@ -418,6 +472,8 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
                     // Once the image is loaded, get its dimensions
                     var width = this.naturalWidth; // Image width
                     var height = this.naturalHeight; // Image height
+                    console.log(window.screen.height);
+                    console.log(window.screen.width);
                     const maxh = Math.floor(window.screen.height * 0.9);
                     if (height > maxh) {
                         // Set max height
@@ -480,18 +536,29 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
             }
         } else if (clickBehaviour == 1) { 
             let fszl = Number(marker.getAttribute("fszl"));
-            if (fszl == -1) marker.setAttribute("fszl", map.getZoom().toString());
-            else marker.setAttribute("fszl", Number(-1).toString());
+            if (fszl == -1) console.log("Should not happen fszl=-1");
+            else {
+                fszl--;
+                marker.setAttribute("fszl", fszl);
+                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
+            }
         } else if (clickBehaviour == 2) {
+            let fszl = Number(marker.getAttribute("fszl"));
+            if (fszl == -1) console.log("Should not happen fszl=-1");
+            else {
+                fszl++;
+                marker.setAttribute("fszl", fszl);
+                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
+            }
+        } else if (clickBehaviour == 3) {
             console.log(markers.length);
             marker.setMap(null);
             const index = markers.indexOf(marker);
             if (index > -1) { // only splice array when item is found
                 markers.splice(index, 1); // 2nd parameter means remove one item only
-                //fszlArray.splice(index, 1);
             }
             console.log(markers.length);
-        } else if (clickBehaviour == 3) {
+        } else if (clickBehaviour == 4) {
             if (marker.content.className == "area-code")
                 marker.content.className = "city-code";
             else if (marker.content.className == "city-code")
@@ -499,7 +566,6 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
         }
     });
     markers.push(marker);
-    //fszlArray.push(fszl);
 }
 
 function initMap(): void {
@@ -592,10 +658,20 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
     if (type == "image") {
         const img = document.createElement('img');
         img.src = imagepath;
-        img.style.transform = getTransform(fszl, true);
-        img.alt = text;
-        img.setAttribute("fszl", fszl.toString());
-        marker.content = img;
+        img.onload = function () {
+            var height = this.height;
+            let zoomReduction = 0;
+            while (height > 200) {
+                zoomReduction++;
+                height = height / 2.0;
+            }
+            if (fszl == -1) fszl = map.getZoom() + zoomReduction;
+            img.style.transform = getTransform(fszl, true);
+            img.alt = text;
+            //img.setAttribute("fszl", fszl.toString());
+            marker.setAttribute("fszl", fszl.toString());
+            marker.content = img;
+        }; 
     }
     else { // We are dealing with a text marker
         const markerDiv = document.createElement('div');
@@ -661,7 +737,6 @@ for (let i = 0; i<70; i++) {
 
 function clearSecondaryLayer() {
     secondaryLayer.forEach(function (feature) {
-        console.log("DFG");
         secondaryLayer.remove(feature);
     });
 }
@@ -673,7 +748,8 @@ function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options) 
           boundaryLayer.addGeoJson(geojson);
           if (options) boundaryLayer.setStyle(options);
           else boundaryLayer.setStyle({
-              fillOpacity: '0'
+              fillOpacity: '0',
+              strokeOpacity: '1'
           });
           zoom(map);
       }
@@ -681,9 +757,10 @@ function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options) 
           if (layer == "secondaryLayerClear") clearSecondaryLayer();
           secondaryLayer.addGeoJson(geojson);
           if (options) secondaryLayer.setStyle(options);
-          else boundaryLayer.setStyle({
+          else secondaryLayer.setStyle({
               fillOpacity: '0',
-              strokeOpacity: '0.1'
+              strokeOpacity: '1',
+              strokeColor: 'black'
           });
       }
       else console.log("Unknown layer");
@@ -833,20 +910,19 @@ function handleDrop(e: DragEvent) {
 
                 reader.readAsText(file);
             }
-            else if (file.type == 'image/jpeg') {
+            else if ((file.type == 'image/jpeg') || (file.type == 'image/svg+xml')) {
                 
                 // read the image...
                 var reader = new FileReader();
+                reader.readAsDataURL(file); 
                 reader.onload = function (e) {
                     placeNewMarker(map, map.getCenter(), file.name, e.target.result, "image", -1);
                     console.log(file);
                     
                 }
-                reader.readAsDataURL(file); 
-                //console.log(e.target.);
             }
             else
-                alert("Unsupported file format. Only geojson, jpg, json (array of markers), and text (mex style) supported at the moment.");
+                alert("Unsupported file format. Only geojson, jpg, svg, json (array of markers), and text (mex style) supported at the moment.");
         }
     } else {
         // process non-file (e.g. text or html) content being dropped

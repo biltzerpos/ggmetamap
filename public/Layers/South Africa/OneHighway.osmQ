@@ -1,0 +1,7 @@
+[timeout:255];
+area["name:en"~"South Africa"]->.my;
+(
+  nwr(area.my)["ref"="RNNN"];
+
+);
+out geom;
