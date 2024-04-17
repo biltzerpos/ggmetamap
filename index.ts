@@ -205,12 +205,12 @@ function createCountryChooser(map) {
       if (countryMenu.value == "South Africa") {
           hideAuxButton();
           loadGeoJSONFile('/Layers/South Africa/Level1.geojson');
-          for (let i = 2; i <= 8; i++) {
+          for (let i = 2; i <= 7; i++) {
               const optionName = " " + i + "x Highway Numbers";
               layerMenu.appendChild(new Option(optionName, optionName));
           }
-          //R114 copied into R100 that does not exist to keep loading simple
-          layerMenu.appendChild(new Option("Parallel routes", "10x highways"));
+          layerMenu.appendChild(new Option(" 8x 9x Highway Numbers", " 8x 9x Highway Numbers"));
+          layerMenu.appendChild(new Option("Parallel routes (R1xy)", "Parallel routes"));
           for (let i = 30; i <= 72; i++) {
               const optionName = i + "x Highway Numbers";
               layerMenu.appendChild(new Option(optionName, optionName));
@@ -230,10 +230,8 @@ function createCountryChooser(map) {
               }
               const group = layerMenu.value.substring(0, 2).replace(/\s/g, '');
               clearSecondaryLayer();
-              for (let i = 0; i < 10; i++) {
-                  const geopath = 'Layers/South Africa/geojson/R' + group + i + '.geojson';
-                  await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
-              }
+              const geopath = 'Layers/South Africa/geojson/' + group + 'x.geojson';
+              loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
               loadMarkerLayer("South Africa", "markers/" + group);
           };
       }
@@ -379,15 +377,12 @@ function createAuxButton() {
             }
         }
         else if (countryMenu.value == "South Africa") {
-            // Advance
             // Get the currently selected index
             const currentSelection = layerMenu.selectedIndex;
-
-            // Check if there is a next option
             if (currentSelection < layerMenu.options.length - 1) {
-                // Select the next option
                 layerMenu.selectedIndex = currentSelection + 1;
             }
+            else layerMenu.selectedIndex = 1;
             const event = new Event("change");
             layerMenu.dispatchEvent(event);
         }
@@ -608,7 +603,7 @@ function initMap(): void {
   });
 
     map.addListener('zoom_changed', function () {
-        console.log(map.getZoom());
+        //console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
             let fszl = Number(markers[i].getAttribute("fszl"));
             markers[i].content.style.transform = getTransform(fszl, markers[i].content instanceof HTMLImageElement);
@@ -683,7 +678,7 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
             const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
             let ch = text[colourDigit];
             if (!isNaN(ch)) {
-                console.log(ch);
+                //console.log(ch);
                 markerDiv.style.setProperty('--marker-color', colors[ch]);
             }
         }
@@ -694,18 +689,25 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
 
 async function loadMarkers(path:string, imagepathdir:string): void {
 
-  let response = await fetch(path);
-  let markerLocData = await response.json();
-
-    for (let markerLoc of markerLocData) {
-        let position = { lat: markerLoc.lat, lng: markerLoc.lng };
-        let text = markerLoc.text.toString();
-        let imagepath = imagepathdir + text;
-        console.log(imagepath);
-        placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl, false);
-  }
+    let response = await fetch(path);
+    if (!response.ok) {
+        console.log(path + " does not exist");
+    }
+    else {
+        const contentType = response.headers.get('Content-Type');
+        if (contentType && contentType.includes('application/json')) {
+            let markerLocData = await response.json();
+            for (let markerLoc of markerLocData) {
+                let position = { lat: markerLoc.lat, lng: markerLoc.lng };
+                let text = markerLoc.text.toString();
+                let imagepath = imagepathdir + text;
+                //console.log(imagepath);
+                placeNewMarker(map, position, text, imagepath, markerLoc.type, markerLoc.fszl, false);
+            }
+        }
+    }
 }
-
+        
 function loadMarkersBootStrap(): void {
 
   const infoWindow = new google.maps.InfoWindow();
