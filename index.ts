@@ -140,6 +140,7 @@ function createCountryChooser(map) {
       }
       if (countryMenu.value == "Mexico") {
           loadGeoJSONFile('/Layers/Mexico/States.geojson');
+          const plates = new Option("License Plates", "License Plates");
           const code200 = new Option("Phone Codes (200)", "Phone Codes200");
           const code300 = new Option("Phone Codes (300)", "Phone Codes300");
           const code400 = new Option("Phone Codes (400)", "Phone Codes400");
@@ -149,6 +150,7 @@ function createCountryChooser(map) {
           const code800 = new Option("Phone Codes (800)", "Phone Codes800");
           const code900 = new Option("Phone Codes (900)", "Phone Codes900");
           const codeAll = new Option("Phone Codes (all)", "Phone Codesall");
+          layerMenu.appendChild(plates);
           layerMenu.appendChild(code200);
           layerMenu.appendChild(code300);
           layerMenu.appendChild(code400);
@@ -162,11 +164,16 @@ function createCountryChooser(map) {
           layerMenu.onchange = async () => {
               removeAllMarkers();
               colourDigit = 0;
-              boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' });
-              showAuxButton();
-              auxButton.textContent = "Hide Area Boundaries";
+              boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' });    
+              
               showAreas = true;
-              if (layerMenu.value == "Phone Codesall") {
+              if (layerMenu.value == "License Plates") {
+                  hideAuxButton();
+                  loadMarkerLayer(countryMenu.value, layerMenu.value);
+              } 
+              else if (layerMenu.value == "Phone Codesall") {
+                  showAuxButton("Hide Area Boundaries");
+                  //auxButton.textContent = "Hide Area Boundaries";
                   showAllAreas();
                   
                   for (let i = 2; i <= 9; i++) {
@@ -176,6 +183,8 @@ function createCountryChooser(map) {
                   zoom(map);
               }
               else {
+                  showAuxButton("Hide Area Boundaries");
+                  //auxButton.textContent = "Hide Area Boundaries";
                   colourDigit = 1;
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
                   await loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
@@ -221,8 +230,8 @@ function createCountryChooser(map) {
           layerMenu.onchange = async () => {
               removeAllMarkers();
               boundaryLayer.setStyle({ strokeOpacity: '0.1', fillOpacity: '0' });
-              showAuxButton();
-              auxButton.textContent = "Next group";
+              showAuxButton("Next group");
+              //auxButton.textContent = "Next group";
               const styleOptions = {
                   strokeColor: 'black',
                   strokeOpacity: '1',
@@ -390,9 +399,10 @@ function createAuxButton() {
     return auxButton;
 }
 
-function showAuxButton() {
+function showAuxButton(name) {
     const buttons = map.controls[google.maps.ControlPosition.TOP_CENTER];
     if (buttons.length == 3) buttons.pop();
+    auxButton.textContent = name;
     buttons.push(auxButton);
 }
 
@@ -455,23 +465,17 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
             console.log(position);
             if (type == "image") {
                 infoWindow.close();
-                //const iwDiv = document.createElement('div');
-                //iwDiv.class = "gm-style-iw";
-                ////iwDiv.style.height = "800px";
                 const img = document.createElement('img');
-                //img.style.maxHeight = "800px";
-                //iwDiv.appendChild(img);
-                //iwDiv.style.maxHeight = "800px";
                 img.src = imagepath;
                 img.onload = function () {
                     // Once the image is loaded, get its dimensions
-                    var width = this.naturalWidth; // Image width
-                    var height = this.naturalHeight; // Image height
+                    var width = this.naturalWidth;
+                    var height = this.naturalHeight;
                     console.log(window.screen.height);
                     console.log(window.screen.width);
                     const maxh = Math.floor(window.screen.height * 0.9);
-                    if (height > maxh) {
-                        // Set max height
+                    // Set max height
+                    if (height > maxh) {                        
                         img.style.setProperty('--iwmh', maxh.toString());
                     }
                     else {
@@ -497,32 +501,12 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
                     const southLat = bounds.getSouthWest().lat();
                     const latDifference = northLat - southLat;
                     const mapHeight = map.getDiv().offsetHeight;
-                    //const lat0 = map.getBounds().getNorthEast().lat();
-                    //const lng0 = map.getBounds().getNorthEast().lng();
-                    //const lat1 = map.getBounds().getSouthWest().lat();
-                    //const lng1 = map.getBounds().getSouthWest().lng();
-                    //const options = { anchor: { lat: lat0, lng: lng0 }, map: map };
-                    //const options = { anchor: map.getCenter(), map: map };
-                    //infoWindow.setOptions({ shouldFocus: false });
-                    //const pos = { lat: lat1, lng: (lng0 + lng1) / 2 };
                     const cen = map.getCenter();
-                    //const goDown = 0.9 * (cen.lat() - lat1);
                     const goDown = (height / 2) * latDifference / mapHeight;
                     const newLat = cen.lat() - goDown;
-                    
-                    //console.log(lat0);
-                    //console.log(lat1);
-                    //console.log(lng0);
-                    //console.log(lng1);
-
-                    
                     infoWindow.setPosition({ lat: newLat, lng: cen.lng() });
-                    
                     infoWindow.open(map);
                 };
-
-                
-
             }
             else {
                 var result = prompt("Enter new value for marker:");
