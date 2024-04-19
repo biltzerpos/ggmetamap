@@ -23,6 +23,19 @@ interface markerLoc {
     scale: number;
 }
 
+function newCountryReset() {
+    removeAllFeatures();
+    removeAllMarkers();
+    hideAuxButton();
+}
+
+function newLayerReset() {
+    boundaryLayer.setStyle({ strokeOpacity: '0.1', fillOpacity: '0' });
+    clearSecondaryLayer();
+    removeAllMarkers();
+    hideAuxButton();
+}
+
 function showAllAreas() {
     loadGeoJSONFile('Layers/Mexico/' + "Phone Codes200" + '.geojson', "secondaryLayerClear");
     for (let i = 3; i <= 9; i++) {
@@ -51,13 +64,11 @@ function createCountryChooser(map) {
 
   countryMenu.onchange = () => {
       console.log(countryMenu.value);
-      removeAllFeatures();
-      removeAllMarkers();
+      newCountryReset();
       for (var i = layerMenu.length - 1; i > 0; i--)
           layerMenu.remove(i);
       layerMenu.options[0].selected = true;
       if (countryMenu.value == "Bulgaria") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/Bulgaria/Provinces.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
@@ -66,7 +77,6 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "France") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/France/Level2.geojson');
           const newtop = new Option("Department Names", "NamesLevel2");
           layerMenu.appendChild(newtop);
@@ -77,10 +87,8 @@ function createCountryChooser(map) {
           const smallR = new Option("Smaller Rivers", "Smaller Rivers");
           layerMenu.appendChild(smallR);
           layerMenu.onchange = () => {
-              //console.log("NEW " + layerMenu.value);
+              newLayerReset();
               if (layerMenu.value == "Clusters") {
-                  removeAllFeatures();
-                  removeAllMarkers();
                   loadMarkerLayer("France", "Brie");
                   loadMarkerLayer("France", "Vexin");
                   loadMarkerLayer("France", "Auge");
@@ -102,25 +110,18 @@ function createCountryChooser(map) {
                   loadMarkerLayer("France", "Cambresis");
               }
               else if (layerMenu.value == "Major Rivers") {
-                  removeAllFeatures();
-                  removeAllMarkers();
                   loadMarkerLayer("France", "MajorRivers");
               }
               else if (layerMenu.value == "Smaller Rivers") {
-                  removeAllFeatures();
-                  removeAllMarkers();
                   loadMarkerLayer("France", "MinorRivers");
               }
               else {
-                  removeAllFeatures();
-                  removeAllMarkers();
                   loadGeoJSONFile('/Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
               }
           };
       }
       if (countryMenu.value == "Chile") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/Chile/Level1.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
@@ -129,7 +130,6 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Jordan") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/Jordan/Level0.geojson');          
           const newtop = new Option("Misc Meta", "Misc Meta");
           layerMenu.appendChild(newtop);
@@ -162,20 +162,16 @@ function createCountryChooser(map) {
           layerMenu.appendChild(codeAll);
           
           layerMenu.onchange = async () => {
-              removeAllMarkers();
+              newLayerReset();
               colourDigit = 0;
-              boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' });    
-              
+              //boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' }); 
               showAreas = true;
               if (layerMenu.value == "License Plates") {
-                  hideAuxButton();
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
               } 
               else if (layerMenu.value == "Phone Codesall") {
                   showAuxButton("Hide Area Boundaries");
-                  //auxButton.textContent = "Hide Area Boundaries";
                   showAllAreas();
-                  
                   for (let i = 2; i <= 9; i++) {
                       let layerName = "Phone Codes" + i + "00";
                       loadMarkerLayer(countryMenu.value, layerName);
@@ -184,16 +180,14 @@ function createCountryChooser(map) {
               }
               else {
                   showAuxButton("Hide Area Boundaries");
-                  //auxButton.textContent = "Hide Area Boundaries";
                   colourDigit = 1;
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
                   await loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
                   zoom(map, "secondaryLayer");
-              }
-              
+              }   
           };
-      } if (countryMenu.value == "Romania") {
-          hideAuxButton();
+      }
+      if (countryMenu.value == "Romania") {
           loadGeoJSONFile('/Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
@@ -202,7 +196,6 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "Sweden") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/Sweden/Level1.geojson');
           const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
           layerMenu.appendChild(newtop);
@@ -212,8 +205,8 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "South Africa") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/South Africa/Level1.geojson');
+          layerMenu.appendChild(new Option("Most useful highway clusters", "Clusters"));
           for (let i = 2; i <= 7; i++) {
               const optionName = " " + i + "x Highway Numbers";
               layerMenu.appendChild(new Option(optionName, optionName));
@@ -228,24 +221,26 @@ function createCountryChooser(map) {
               if (i == 62) i = 69;
           }
           layerMenu.onchange = async () => {
-              removeAllMarkers();
-              boundaryLayer.setStyle({ strokeOpacity: '0.1', fillOpacity: '0' });
-              showAuxButton("Next group");
-              //auxButton.textContent = "Next group";
+              newLayerReset();
+              showAuxButton("Next option");
               const styleOptions = {
                   strokeColor: 'black',
                   strokeOpacity: '1',
                   strokeWeight: '5'
+              }       
+              if (layerMenu.value == "Clusters") {
+                  loadGeoJSONFile('Layers/South Africa/Clusters.geojson', "secondaryLayer", styleOptions);
+                  loadMarkerLayer(countryMenu.value, layerMenu.value);
               }
-              const group = layerMenu.value.substring(0, 2).replace(/\s/g, '');
-              clearSecondaryLayer();
-              const geopath = 'Layers/South Africa/geojson/' + group + 'x.geojson';
-              loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
-              loadMarkerLayer("South Africa", "markers/" + group);
+              else {
+                  const group = layerMenu.value.substring(0, 2).replace(/\s/g, '');
+                  const geopath = 'Layers/South Africa/geojson/' + group + 'x.geojson';
+                  loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
+                  loadMarkerLayer("South Africa", "markers/" + group);
+              }
           };
       }
       if (countryMenu.value == "USA") {
-          hideAuxButton();
           loadGeoJSONFile('/Layers/USA/States.geojson');
           const newtop = new Option("License Plates", "License Plates");
           layerMenu.appendChild(newtop);
