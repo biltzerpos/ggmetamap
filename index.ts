@@ -7,12 +7,12 @@
 //import Popup from './popup.js'
 
 let map: google.maps.Map;
-let boundaryLayer, secondaryLayer, auxButton;
+let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
 let infoWindow;
-let clickBehaviour = 0;
+let editMode = false;
 let showAreas = true;
 let colourDigit = 1; // which digit is used for area code colouring
 interface markerLoc {
@@ -27,6 +27,8 @@ function newCountryReset() {
     removeAllFeatures();
     removeAllMarkers();
     hideAuxButton();
+    editMode = false;
+    editModeButton.textContent = 'Turn Edit Mode ON';
 }
 
 function newLayerReset() {
@@ -270,25 +272,27 @@ function removeAllMarkers() {
     markers = [];
 }
 
-function createClickControl(map) {
-    const clickB = document.createElement('select');
-    clickB.className = "buttons";
+function createEditModeButton(map) {
+    editModeButton = document.createElement('button');
+    editModeButton.className = "buttons";
+    editModeButton.textContent = 'Turn Edit Mode ON';
+    editModeButton.title = 'Click to edit the map';
+    editModeButton.type = 'button';
 
-    const def = new Option("Click: Show/change info", "0");
-    def.selected = true;
-    clickB.appendChild(def);
-    const incImage = new Option("Click: Increase image marker size", "1");
-    clickB.appendChild(incImage);
-    const redImage = new Option("Click: Reduce image marker size", "2");
-    clickB.appendChild(redImage);
-    const del = new Option("Click: Delete marker", "3");
-    clickB.appendChild(del);
-    const blue = new Option("Click: Swap brown/blue colour", "4");
-    clickB.appendChild(blue);
-    clickB.onchange = () => {
-        clickBehaviour = clickB.value;
-    };
-    return clickB;
+    // Setup the click event listener
+    editModeButton.addEventListener('click', () => {
+        editMode = !editMode;
+        if (editMode) {
+            markers.forEach(m => { m.gmpDraggable = true; })
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsButton);
+            editModeButton.textContent = 'Turn Edit Mode OFF';
+        } else {
+            markers.forEach(m => { m.gmpDraggable = false; })
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].pop();
+            editModeButton.textContent = 'Turn Edit Mode ON';
+        }
+    });
+    return editModeButton;
 }
 
 function createLayerChooser(map) {
@@ -404,30 +408,8 @@ function showAuxButton(name) {
 function hideAuxButton() {
     const buttons = map.controls[google.maps.ControlPosition.TOP_CENTER];
     if (buttons.length == 3) buttons.pop();
-    //buttons.push(auxButton);
 }
 
-
-//function setAuxButton(title) {
-//    const buttons = map.controls[google.maps.ControlPosition.TOP_CENTER];
-//    if (!title) {
-//        if (buttons.length == 3) buttons.pop();
-//    }
-//    else {
-//        //if (!auxButton)
-//        auxButton = document.createElement('button');
-//        auxButton.className = "buttons";
-
-//        auxButton.textContent = title;
-//        //auxButton.title = 'Click to remove the area code boundary curves';
-//        auxButton.type = 'button';
-
-//        // Setup the click event listener
-//        auxButton.addEventListener('click', auxfunc);
-//        if (buttons.length == 3) buttons.pop();
-//        buttons.push(auxButton);
-//    }
-//}
 function getTransform(fszl, isImage) {
     let sc = 1;
     if (fszl >= 0) {
@@ -456,7 +438,36 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
     marker.setAttribute("fszl", fszl.toString());
     setMarkerContent(marker, content, imagepath, type, fszl);
     marker.addListener('click', () => {
-        if (clickBehaviour == 0) {
+        if (editMode && event.shiftKey && event.metaKey) { // Shift-Command-Click = Increase size
+            let fszl = Number(marker.getAttribute("fszl"));
+            if (fszl == -1) console.log("Should not happen fszl=-1");
+            else {
+                fszl--;
+                marker.setAttribute("fszl", fszl);
+                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
+            }
+        } else if (editMode && event.shiftKey && event.altKey) { // Shift-Option-Click = Decrease size
+            let fszl = Number(marker.getAttribute("fszl"));
+            if (fszl == -1) console.log("Should not happen fszl=-1");
+            else {
+                fszl++;
+                marker.setAttribute("fszl", fszl);
+                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
+            }
+        } else if (editMode && event.shiftKey) { // Option-Click = DELETE
+            console.log(markers.length);
+            marker.setMap(null);
+            const index = markers.indexOf(marker);
+            if (index > -1) { // only splice array when item is found
+                markers.splice(index, 1); // 2nd parameter means remove one item only
+            }
+            console.log(markers.length);
+        } else if (editMode && event.altKey) { // Ctrl-Click = Cycle through colours
+            if (marker.content.className == "area-code")
+                marker.content.className = "transp";
+            else if (marker.content.className == "transp")
+                marker.content.className = "area-code";
+        } else { // Default Operation
             console.log(position);
             if (type == "image") {
                 infoWindow.close();
@@ -503,41 +514,12 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
                     infoWindow.open(map);
                 };
             }
-            else {
-                var result = prompt("Enter new value for marker:");
+            else if (editMode) {
+                var result = prompt("Enter new value for marker:", marker.content.textContent);
                 let thistype = marker.getAttribute("ggmmtype");
                 if (result) setMarkerContent(marker, result, marker.content.src, marker.getAttribute("ggmmtype"), fszl);
             }
-        } else if (clickBehaviour == 1) { 
-            let fszl = Number(marker.getAttribute("fszl"));
-            if (fszl == -1) console.log("Should not happen fszl=-1");
-            else {
-                fszl--;
-                marker.setAttribute("fszl", fszl);
-                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
-            }
-        } else if (clickBehaviour == 2) {
-            let fszl = Number(marker.getAttribute("fszl"));
-            if (fszl == -1) console.log("Should not happen fszl=-1");
-            else {
-                fszl++;
-                marker.setAttribute("fszl", fszl);
-                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
-            }
-        } else if (clickBehaviour == 3) {
-            console.log(markers.length);
-            marker.setMap(null);
-            const index = markers.indexOf(marker);
-            if (index > -1) { // only splice array when item is found
-                markers.splice(index, 1); // 2nd parameter means remove one item only
-            }
-            console.log(markers.length);
-        } else if (clickBehaviour == 4) {
-            if (marker.content.className == "area-code")
-                marker.content.className = "city-code";
-            else if (marker.content.className == "city-code")
-                marker.content.className = "area-code";
-        }
+        } 
     });
     markers.push(marker);
 }
@@ -597,16 +579,16 @@ function initMap(): void {
     });
 
   // Create the Save Locs button.
-  const saveLocsDiv = document.createElement('div');
-  const saveLocs = createSaveLocsControl(map);
-  saveLocsDiv.appendChild(saveLocs);
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsDiv);
+  //const saveLocsDiv = document.createElement('div');
+  saveLocsButton = createSaveLocsControl(map);
+  //saveLocsDiv.appendChild(saveLocs);
+    //map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsDiv);
 
-    // Create the Click Behaviour button.
-    const clickDiv = document.createElement('div');
-    const clickButton = createClickControl(map);
-    clickDiv.appendChild(clickButton);
-    map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(clickDiv);
+    // Create the Edit Mode button.
+    const editModeDiv = document.createElement('div');
+    const editModeButton = createEditModeButton(map);
+    editModeDiv.appendChild(editModeButton);
+    map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(editModeDiv);
 
   // Create the country drop down menu
   const countrySelectDiv = document.createElement('div');
@@ -621,9 +603,9 @@ function initMap(): void {
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
 
     // Create the aux button
-    const auxDiv = document.createElement('div');
+    //const auxDiv = document.createElement('div');
     auxButton = createAuxButton();
-    auxDiv.appendChild(auxButton);
+    //auxDiv.appendChild(auxButton);
     //map.controls[google.maps.ControlPosition.TOP_CENTER].push(auxButton);
 }
 

@@ -114,6 +114,15 @@ body {
   text-align: center;
 }
 
+.transp {
+  background: none;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px 5px;
+  position: relative;
+}
+
 .area-code {
   background-color: var(--marker-color);
   border-radius: 8px;
