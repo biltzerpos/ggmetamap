@@ -1,0 +1,79 @@
+[
+  {
+    "text": "D705",
+    "type": "area-code",
+    "lat": 37.1630431,
+    "lng": 32.4936252,
+    "fszl": -1
+  },
+  {
+    "text": "D715",
+    "type": "area-code",
+    "lat": 37.1834295,
+    "lng": 33.1896815,
+    "fszl": -1
+  },
+  {
+    "text": "D750",
+    "type": "area-code",
+    "lat": 39.9636354,
+    "lng": 32.6786166,
+    "fszl": -1
+  },
+  {
+    "text": "D753",
+    "type": "area-code",
+    "lat": 39.3531242,
+    "lng": 33.2390665,
+    "fszl": -1
+  },
+  {
+    "text": "D755",
+    "type": "area-code",
+    "lat": 40.9925316,
+    "lng": 32.593209,
+    "fszl": -1
+  },
+  {
+    "text": "D757",
+    "type": "area-code",
+    "lat": 38.960106,
+    "lng": 34.1967862,
+    "fszl": -1
+  },
+  {
+    "text": "D759",
+    "type": "area-code",
+    "lat": 41.7067179,
+    "lng": 33.5027475,
+    "fszl": -1
+  },
+  {
+    "text": "D765",
+    "type": "area-code",
+    "lat": 38.624976,
+    "lng": 34.715006,
+    "fszl": -1
+  },
+  {
+    "text": "D775",
+    "type": "area-code",
+    "lat": 41.27459166700413,
+    "lng": 33.97361330818634,
+    "fszl": -1
+  },
+  {
+    "text": "D785",
+    "type": "area-code",
+    "lat": 41.5113589,
+    "lng": 34.7531493,
+    "fszl": -1
+  },
+  {
+    "text": "D795",
+    "type": "area-code",
+    "lat": 40.63288113246385,
+    "lng": 35.13077524554137,
+    "fszl": -1
+  }
+]

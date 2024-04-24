@@ -8,6 +8,7 @@
 
 let map: google.maps.Map;
 let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton;
+let boundaryFeatures = [], secondaryFeatures = [];
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
@@ -62,6 +63,7 @@ function createCountryChooser(map) {
   countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));
+    countryMenu.appendChild(new Option("Turkey", "Turkey"));
     countryMenu.appendChild(new Option("USA", "USA"));
 
   countryMenu.onchange = () => {
@@ -118,8 +120,9 @@ function createCountryChooser(map) {
                   loadMarkerLayer("France", "MinorRivers");
               }
               else {
-                  loadGeoJSONFile('/Layers/France/Level2.geojson');
-                  loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  //loadGeoJSONFile('/Layers/France/Level2.geojson');
+                  //loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  displayNames();
               }
           };
       }
@@ -240,6 +243,48 @@ function createCountryChooser(map) {
                   loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
                   loadMarkerLayer("South Africa", "markers/" + group);
               }
+          };
+      }
+      if (countryMenu.value == "Turkey") {
+          loadGeoJSONFile('/Layers/Turkey/Level1.geojson');
+          //layerMenu.appendChild(new Option("Most useful highway clusters", "Clusters"));
+          for (let i = 0; i <= 9; i++) {
+              const optionName = "D" + i + "xx Highway Numbers";
+              layerMenu.appendChild(new Option(optionName, optionName));
+          }
+          //layerMenu.appendChild(new Option(" 8x 9x Highway Numbers", " 8x 9x Highway Numbers"));
+          //layerMenu.appendChild(new Option("Parallel routes (R1xy)", "Parallel routes"));
+          //for (let i = 30; i <= 72; i++) {
+          //    const optionName = i + "x Highway Numbers";
+          //    layerMenu.appendChild(new Option(optionName, optionName));
+          //    if (i == 41) i = 49;
+          //    if (i == 57) i = 59;
+          //    if (i == 62) i = 69;
+          //}
+          layerMenu.onchange = async () => {
+              newLayerReset();
+              showAuxButton("Next option");
+              const styleOptions = {
+                  strokeColor: 'black',
+                  strokeOpacity: '1',
+                  strokeWeight: '5'
+              }
+              const group = layerMenu.value.substring(1, 2);
+              //Explore code
+              //for (let i = 0; i <= 9; i++) {
+              //    const geopath = 'Layers/Turkey/geojson/D' + group + "0" + i + '.geojson';
+              //    await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions, true);
+              //    //loadMarkerLayer("Turkey", "markers/" + group);
+              //}
+              //for (let i = 10; i <= 99; i++) {
+              //    const geopath = 'Layers/Turkey/geojson/D' + group + i + '.geojson';
+              //    await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions, true);
+              //    //loadMarkerLayer("Turkey", "markers/" + group);
+              //}
+              
+              const geopath = 'Layers/Turkey/D' + group + '.geojson';
+              loadGeoJSONFile(geopath, "secondaryLayer", styleOptions);
+              loadMarkerLayer("Turkey", "D" + group);
           };
       }
       if (countryMenu.value == "USA") {
@@ -384,7 +429,7 @@ function createAuxButton() {
                 auxButton.textContent = "Show Area Boundaries";
             }
         }
-        else if (countryMenu.value == "South Africa") {
+        else if ((countryMenu.value == "South Africa") || (countryMenu.value == "Turkey")) {
             // Get the currently selected index
             const currentSelection = layerMenu.selectedIndex;
             if (currentSelection < layerMenu.options.length - 1) {
@@ -704,11 +749,16 @@ function clearSecondaryLayer() {
     });
 }
 
-function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options) {
+function printArg(arg) {
+    console.log("arg = " + arg);
+}
+
+function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options, displayNames = false) {
   try {
     const geojson = JSON.parse(geoString) as any;
       if (layer == "boundaryLayer") {
-          boundaryLayer.addGeoJson(geojson);
+          let newFeatures = boundaryLayer.addGeoJson(geojson);
+          boundaryFeatures.concat(newFeatures);
           if (options) boundaryLayer.setStyle(options);
           else boundaryLayer.setStyle({
               fillOpacity: '0',
@@ -718,7 +768,43 @@ function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options) 
       }
       else if (layer.startsWith("secondaryLayer")) {
           if (layer == "secondaryLayerClear") clearSecondaryLayer();
-          secondaryLayer.addGeoJson(geojson);
+          let newFeatures = secondaryLayer.addGeoJson(geojson);
+          if (displayNames) {
+              if (newFeatures.length > 0) {
+                  let first = newFeatures[0];
+                  let name = "bog";
+                  if (('Gg' in first) && ('ref' in first.Gg)) {
+                      name = first.Gg.ref;
+                      name = name.replace(/\s/g, '').replace(/-/g, '');
+                      console.log(name);
+                  }
+                  let pointsArray = [];
+                  newFeatures.forEach((feature) => {
+                      const geometry = feature.getGeometry();
+                      if (geometry) {
+                          processPoints2(geometry, pointsArray, (p, a) => { a.push(p) });
+                      }
+                  });
+                  console.log(pointsArray.length);
+                  if (pointsArray.length > 0) {
+                      let lat = pointsArray[0].lat();
+                      let lng = pointsArray[0].lng();
+                      placeNewMarker(map, { lat, lng }, name);
+                  }
+               
+                  //let arr = first.getGeometry().getArray();
+                  //if (arr) {
+                  //    if ('Fg' in arr[0]) {
+                  //        let lat = arr[0].Fg[0].lat();
+                  //        let lng = arr[0].Fg[0].lng();
+                  //        placeNewMarker(map, { lat, lng }, name);
+                  //    } else console.log("No Fg " + name);
+                  //} else console.log("No arr" + name);
+              }
+          }
+          
+          //secondaryFeatures.concat(newFeatures);
+          
           if (options) secondaryLayer.setStyle(options);
           else secondaryLayer.setStyle({
               fillOpacity: '0',
@@ -728,10 +814,9 @@ function loadGeoJsonString(geoString: string, layer = "boundaryLayer", options) 
       }
       else console.log("Unknown layer");
   } catch (e) {
+      console.log(e);
     alert("Not a GeoJSON file!");
   }
-
-    
 }
 
 /**
@@ -760,6 +845,36 @@ function zoom(map: google.maps.Map, layer = "boundaryLayer") {
     map.fitBounds(bounds);
 }
 
+function displayNames() {
+    boundaryFeatures.forEach((feature) => {
+        //console.log("dsfg");
+        console.log(feature.Gg.NAME_2);
+        const geometry = feature.getGeometry();
+        //console.log(geometry.Fg);
+        //let loc = { lat: map.getCenter().lat, lng: map.getCenter.lng };
+        if (geometry) {
+            let loc = processPoints2(geometry);
+        }
+    });
+}
+
+function displayGeoJSONFeatureNames() {
+    console.log("dsfg");
+    secondaryFeatures.forEach((feature) => {
+        console.log("inner");
+        console.log(feature);
+        const geometry = feature.getGeometry();
+        //console.log(geometry.Fg);
+        //let loc = { lat: map.getCenter().lat, lng: map.getCenter.lng };
+        //if (geometry) {
+        //    let loc = processPoints2(geometry);
+        //}
+    });
+}
+
+function locWhat(loc, geometry) {
+    loc.lat += 0.01;
+}
 /**
  * Process each point in a Geometry, regardless of how deep the points may lie.
  */
@@ -783,11 +898,38 @@ function processPoints(
   }
 }
 
-async function loadGeoJSONFile(path: string, layer, options) {
+function processPoints2(
+    geometry: google.maps.LatLng | google.maps.Data.Geometry,
+    arr: any,
+    callback: any
+) {
+    //let n = 0;
+    //let avgLat, avgLng = 0;
+    if (geometry instanceof google.maps.LatLng) {
+        //console.log("before " + geometry);
+        callback(geometry,arr);
+        //avgLat = n * avgLat / (n + 1) + geometry.lat() / (n + 1);
+        //avgLng = n * avgLng / (n + 1) + geometry.lng() / (n + 1);
+    } else if (geometry instanceof google.maps.Data.Point) {
+        callback(geometry.get(),arr);
+        //console.log("poi " + geometry.get().lat());
+        //avgLat = n * avgLat / (n + 1) + geometry.get().lat() / (n + 1);
+        //avgLng = n * avgLng / (n + 1) + geometry.get().lng() / (n + 1);
+        //let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
+        //placeNewMarker(map, pos, ""); // Why was this here?
+    } else {
+        // @ts-ignore
+        geometry.getArray().forEach((g) => {
+            processPoints2(g,arr,callback);
+        });
+    }
+}
+
+async function loadGeoJSONFile(path: string, layer, options, displayNames = false) {
   let response = await fetch(path);
   let contents = await response.text();
   if (contents) {
-    loadGeoJsonString(contents, layer, options);
+    loadGeoJsonString(contents, layer, options, displayNames);
   }
 }
 
