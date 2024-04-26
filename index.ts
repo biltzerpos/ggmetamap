@@ -125,7 +125,7 @@ function createCountryChooser(map) {
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));
     countryMenu.appendChild(new Option("Turkey", "Turkey"));
-    if (localMode) countryMenu.appendChild(new Option("Turkey (with colors)", "Turkey Sandbox"));
+    countryMenu.appendChild(new Option("Turkey (with colors)", "Turkey Sandbox"));
     countryMenu.appendChild(new Option("USA", "USA"));
 
   countryMenu.onchange = () => {
