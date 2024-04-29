@@ -61,7 +61,7 @@ function showAllAreas() {
     }
 }
 
-function markerInMiddle(farr) {
+function markerInMiddle(farr, split = false) {
 
               if (farr.length > 0) {
                   
@@ -76,6 +76,20 @@ function markerInMiddle(farr) {
                       //    colog(name);
                       //}
                       let name = feature.Gg.NAME_2;
+                      if (split) {
+                              let result = '';
+                              for (let i = 0; i < name.length; i++) {
+                                  const char = name[i];
+                                  // Check if the character is uppercase and not the first character
+                                  if (char !== char.toLowerCase() && i !== 0) {
+                                      // If it's uppercase and not the first character, add a space before it
+                                      result += ' ';
+                                  }
+                                  // Add the current character to the result
+                                  result += char;
+                              }
+                              name = result;
+                      }
                       const geometry = feature.getGeometry();
                       if (geometry) {
                           processPoints2(geometry, pointsArray, (p, a) => { a.push(p) });
@@ -88,7 +102,7 @@ function markerInMiddle(farr) {
                               avgLng = n * avgLng / (n + 1) + p.lng() / (n + 1);
                               n++;
                           });
-                          placeNewMarker(map, { lat: avgLat, lng: avgLng }, name);
+                          placeNewMarker(map, { lat: avgLat, lng: avgLng }, name, null, "name", 8);
                       }
                   });
     }
@@ -119,7 +133,9 @@ function createCountryChooser(map) {
   countryMenu.appendChild(new Option("Chile", "Chile"));
     countryMenu.appendChild(new Option("France", "France"));
     if (localMode) countryMenu.appendChild(new Option("France Sandbox", "France Sandbox"));
-  countryMenu.appendChild(new Option("Jordan", "Jordan"));
+    if (localMode) countryMenu.appendChild(new Option("Indonesia Sandbox", "Indonesia Sandbox"));
+    countryMenu.appendChild(new Option("Indonesia", "Indonesia"));
+    countryMenu.appendChild(new Option("Jordan", "Jordan"));
   countryMenu.appendChild(new Option("Mexico", "Mexico"));
   countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
@@ -143,7 +159,18 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "France Sandbox") {
-          loadGeoJSONFile('/Layers/France/Level2.geojson', "boundaryLayer", null, markerInMiddle);
+          loadGeoJSONFile('/Layers/France/Level2.geojson', "boundaryLayer", markerInMiddle);
+      }
+      if (countryMenu.value == "Indonesia") {
+          loadGeoJSONFile('/Layers/Indonesia/Level2.geojson');
+          const newtop = new Option("Kabupaten", "Kabupaten");
+          layerMenu.appendChild(newtop);
+          layerMenu.onchange = () => {
+              loadMarkerLayer(countryMenu.value, layerMenu.value);
+          };
+      }
+      if (countryMenu.value == "Indonesia Sandbox") {
+          loadGeoJSONFile('/Layers/Indonesia/Level2.geojson', "boundaryLayer", partial(markerInMiddle, true));
       }
       if (countryMenu.value == "France") {
           loadGeoJSONFile('/Layers/France/Level2.geojson');
@@ -566,13 +593,17 @@ function hideAuxButton() {
     if (buttons.length == 3) buttons.pop();
 }
 
-function getTransform(fszl, isImage) {
+function getTransform(marker) {
     let sc = 1;
+    let fszl = Number(marker.getAttribute("fszl"));
+    let isImage = marker.getAttribute("ggmmtype") == "image";
     if (fszl >= 0) {
         let zoom = map.getZoom() - fszl;
         if ((!isImage) && (zoom > 0)) zoom = 0;
         sc = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
         if (sc < layerMin) sc = 0.1;//  sc = factor; // fszl * factor;
+        let isName = marker.getAttribute("ggmmtype") == "name";
+        if (isName && sc > 1) sc = 1;
     }
     let transform = "scale(" + sc + "," + sc + ")";
     if (isImage) transform = 'translateY(50%) ' + transform;
@@ -600,7 +631,7 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
             else {
                 fszl--;
                 marker.setAttribute("fszl", fszl);
-                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
+                marker.content.style.transform = getTransform(marker);
             }
         } else if (editMode && event.shiftKey && event.altKey) { // Shift-Option-Click = Decrease size
             let fszl = Number(marker.getAttribute("fszl"));
@@ -608,7 +639,7 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
             else {
                 fszl++;
                 marker.setAttribute("fszl", fszl);
-                marker.content.style.transform = getTransform(fszl, marker.content instanceof HTMLImageElement);
+                marker.content.style.transform = getTransform(marker);
             }
         } else if (editMode && event.shiftKey) { // Option-Click = DELETE
             colog(markers.length);
@@ -729,10 +760,10 @@ function initMap(): void {
   });
 
     map.addListener('zoom_changed', function () {
-        //console.log(map.getZoom());
+        console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
-            let fszl = Number(markers[i].getAttribute("fszl"));
-            markers[i].content.style.transform = getTransform(fszl, markers[i].content instanceof HTMLImageElement);
+            //let fszl = Number(markers[i].getAttribute("fszl"));
+            markers[i].content.style.transform = getTransform(markers[i]);
             // if (markers[i].content instanceof google.maps.LatLng)
         }
     });
@@ -787,16 +818,15 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
                 height = height / 2.0;
             }
             if (fszl == -1) fszl = map.getZoom() + zoomReduction;
-            img.style.transform = getTransform(fszl, true);
-            img.alt = text;
-            //img.setAttribute("fszl", fszl.toString());
             marker.setAttribute("fszl", fszl.toString());
+            img.style.transform = getTransform(marker);
+            img.alt = text;
             marker.content = img;
         }; 
     }
     else { // We are dealing with a text marker
         const markerDiv = document.createElement('div');
-        markerDiv.className = "area-code";
+        markerDiv.className = "area-code"; // Also applies to type == name
         if (type == "city-code") {
             markerDiv.style.setProperty('--marker-color', '#4285F4');
         }
@@ -809,6 +839,7 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
         }
         markerDiv.textContent = text.toString();
         marker.content = markerDiv;
+        marker.content.style.transform = getTransform(marker);
     }
 }
 
