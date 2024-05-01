@@ -14,7 +14,7 @@ let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
 let infoWindow;
 let editMode = false, debugMode = false, localMode = false;
-let showAreas = true;
+let showAreas = true, showBorders = false;
 const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
 let colourDigit = 1; // which digit is used for area code colouring
 interface markerLoc {
@@ -121,6 +121,22 @@ function colorCoding(farr, col) {
     }
 }
 
+function thickRed(farr) {
+    //colog(farr);
+    if (farr.length > 0) {
+        farr.forEach((feature) => {
+            //colog("t2");
+            let styleOptions = {
+                strokeColor: 'blue',
+                strokeWeight: '10',
+                strokeOpacity: '0.2',
+                zIndex: '1'
+            }
+            secondaryLayer.overrideStyle(feature, styleOptions);
+        });
+    }
+}
+
 function createCountryChooser(map) {
     countryMenu = document.createElement('select');
     countryMenu.className = "buttons";
@@ -163,9 +179,12 @@ function createCountryChooser(map) {
       }
       if (countryMenu.value == "Indonesia") {
           loadGeoJSONFile('/Layers/Indonesia/Level2.geojson');
+          
           const newtop = new Option("Kabupaten", "Kabupaten");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              showAuxButton("Show Province borders");
+              
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
@@ -577,6 +596,17 @@ function createAuxButton() {
             const event = new Event("change");
             layerMenu.dispatchEvent(event);
         }
+        else if (countryMenu.value == "Indonesia") {
+            showBorders = !showBorders;
+            if (showBorders) {
+                auxButton.textContent = "Hide Province Borders";
+                loadGeoJSONFile('/Layers/Indonesia/Level1.geojson', "secondaryLayer", thickRed);
+            }
+            else {
+                clearSecondaryLayer();
+                auxButton.textContent = "Show Province Borders";
+            }
+        }
     });
     return auxButton;
 }
@@ -719,7 +749,7 @@ function initMap(): void {
     mapId: 'DEMO_MAP_ID',
     zoomControl: false,
     scaleControl: true,
-    streetViewControl: false,
+    streetViewControl: true,
     disableDoubleClickZoom: true,
     mapTypeControl: true,
     mapTypeControlOptions: {
