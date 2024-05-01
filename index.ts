@@ -7,13 +7,14 @@
 //import Popup from './popup.js'
 
 let map: google.maps.Map;
-let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton;
+let streetViewLayer;
+let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton, coverageButton;
 let boundaryFeatures = [], secondaryFeatures = [];
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
 let infoWindow;
-let editMode = false, debugMode = false, localMode = false;
+let editMode = false, debugMode = false, localMode = false, coverageMode = false;
 let showAreas = true, showBorders = false;
 const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
 let colourDigit = 1; // which digit is used for area code colouring
@@ -179,12 +180,10 @@ function createCountryChooser(map) {
       }
       if (countryMenu.value == "Indonesia") {
           loadGeoJSONFile('/Layers/Indonesia/Level2.geojson');
-          
           const newtop = new Option("Kabupaten", "Kabupaten");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
               showAuxButton("Show Province borders");
-              
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
@@ -473,6 +472,26 @@ function removeAllMarkers() {
     }
     markers = [];
 }
+function createCoverageButton(map) {
+    coverageButton = document.createElement('button');
+    coverageButton.className = "buttons";
+    coverageButton.textContent = 'Show Coverage';
+    coverageButton.title = 'Click to show/hide streetview coverage';
+    coverageButton.type = 'button';
+
+    // Setup the click event listener
+    coverageButton.addEventListener('click', () => {
+        coverageMode = !coverageMode;
+        if (coverageMode) {
+            streetViewLayer.setMap(map);
+            coverageButton.textContent = 'Hide Coverage';
+        } else {
+            streetViewLayer.setMap(null);
+            coverageButton.textContent = 'Show Coverage';
+        }
+    });
+    return coverageButton;
+}
 
 function createEditModeButton(map) {
     editModeButton = document.createElement('button');
@@ -741,7 +760,13 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
     markers.push(marker);
 }
 
-function initMap(): void {
+async function initMap(): void {
+
+    //@ts-ignore
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const { StreetViewCoverageLayer } = await google.maps.importLibrary("streetView");
+    streetViewLayer = new google.maps.StreetViewCoverageLayer();
   
   map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
     center: new google.maps.LatLng(0, 0),
@@ -815,6 +840,12 @@ function initMap(): void {
     const editModeButton = createEditModeButton(map);
     editModeDiv.appendChild(editModeButton);
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(editModeDiv);
+
+    // Create the Coverage button.
+    const coverageDiv = document.createElement('div');
+    const coverageButton = createCoverageButton(map);
+    coverageDiv.appendChild(coverageButton);
+    map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(coverageDiv);
 
   // Create the country drop down menu
   const countrySelectDiv = document.createElement('div');
@@ -1230,10 +1261,11 @@ function separateLines(str) {
     const lines = str.split(/\r?\n/);
     return lines;
 }
+
 function initialize() {
     const currentURL = window.location.href;
     if (currentURL.startsWith("http://localhost")) {
-        editMode = true;
+        //editMode = true;
         debugMode = true;
         localMode = true;
     }
@@ -1242,11 +1274,12 @@ function initialize() {
     initEvents();
 }
 
-declare global {
-  interface Window {
-    initialize: () => void;
-  }
-}
+//declare global {
+//  interface Window {
+//    initialize: () => void;
+//  }
+//}
 
-window.initialize = initialize;
+//window.initialize = initialize;
+initialize();
 export {};
