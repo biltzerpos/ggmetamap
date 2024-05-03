@@ -4,17 +4,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-//import Popup from './popup.js'
-
 let map: google.maps.Map;
 let streetViewLayer;
+let lastCountry, lastLayer;
 let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton, coverageButton;
 let boundaryFeatures = [], secondaryFeatures = [];
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
 let infoWindow;
-let editMode = false, debugMode = false, localMode = false, coverageMode = false;
+let editMode = false, debugMode = false, localMode = false, coverageMode = false, askToSave = false;
 let showAreas = true, showBorders = false;
 const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
 let colourDigit = 1; // which digit is used for area code colouring
@@ -39,19 +38,35 @@ function partial(fn, ...fixedArgs) {
 }
 
 function newCountryReset() {
+    lastCountry = countryMenu.value;
     boundaryLayer.setStyle({ strokeOpacity: '1', fillOpacity: '0' });
     removeAllFeatures();
     removeAllMarkers();
     hideAuxButton();
+    askToSave = false;
     editMode = false;
     editModeButton.textContent = 'Turn Edit Mode ON';
 }
 
-function newLayerReset() {
-    boundaryLayer.setStyle({ strokeOpacity: '0.1', fillOpacity: '0' });
-    clearSecondaryLayer();
-    removeAllMarkers();
-    hideAuxButton();
+function newLayerReset(opacity = 0.1) {
+    let goOn = true;
+    if (askToSave) {
+        // Display a confirmation dialog with "OK" and "Cancel" buttons
+        goOn = confirm('Unsaved edits will be discarded. Do you want to continue?');
+    }
+    if (goOn) {
+        lastLayer = layerMenu.options[layerMenu.selectedIndex].textContent;
+        boundaryLayer.setStyle({ strokeOpacity: opacity, fillOpacity: '0' });
+        clearSecondaryLayer();
+        removeAllMarkers();
+        hideAuxButton();
+        askToSave = false;
+        editMode = false;
+        editModeButton.textContent = 'Turn Edit Mode ON';
+    } else {
+        selectOption(layerMenu, lastLayer);
+    }
+    return goOn;
 }
 
 function showAllAreas() {
@@ -59,6 +74,20 @@ function showAllAreas() {
     for (let i = 3; i <= 9; i++) {
         let layerName = "Phone Codes" + i + "00";
         loadGeoJSONFile('Layers/Mexico/' + layerName + '.geojson', "secondaryLayer");
+    }
+}
+
+function selectOption(menu, option) {
+    
+    // Loop through all options in the select element
+    for (let i = 0; i < menu.options.length; i++) {
+        // Check if the current option's text matches the specified name
+        if (menu.options[i].textContent === option) {
+            // Set the value of the select element to the value of the matching option
+            menu.value = menu.options[i].value;
+            // Exit the loop since we've found the matching option
+            break;
+        }
     }
 }
 
@@ -122,7 +151,7 @@ function colorCoding(farr, col) {
     }
 }
 
-function thickRed(farr) {
+function thickBlue(farr) {
     //colog(farr);
     if (farr.length > 0) {
         farr.forEach((feature) => {
@@ -161,8 +190,14 @@ function createCountryChooser(map) {
     countryMenu.appendChild(new Option("Turkey (with colors)", "Turkey Sandbox"));
     countryMenu.appendChild(new Option("USA", "USA"));
 
-  countryMenu.onchange = () => {
-      console.log(countryMenu.value);
+    countryMenu.onchange = (event) => {
+      colog(countryMenu.value);
+      let goOn = true;
+      if (askToSave) {
+          // Display a confirmation dialog with "OK" and "Cancel" buttons
+          goOn = confirm('Unsaved edits will be discarded. Do you want to continue?');
+      }
+      if (goOn) {          
       newCountryReset();
       for (var i = layerMenu.length - 1; i > 0; i--)
           layerMenu.remove(i);
@@ -172,6 +207,7 @@ function createCountryChooser(map) {
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset(1)) return;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
@@ -183,6 +219,7 @@ function createCountryChooser(map) {
           const newtop = new Option("Kabupaten", "Kabupaten");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset(1)) return;
               showAuxButton("Show Province borders");
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
@@ -201,7 +238,7 @@ function createCountryChooser(map) {
           const smallR = new Option("Smaller Rivers", "Smaller Rivers");
           layerMenu.appendChild(smallR);
           layerMenu.onchange = () => {
-              newLayerReset();
+              if (!newLayerReset()) return;
               if (layerMenu.value == "Clusters") {
                   loadMarkerLayer("France", "Brie");
                   loadMarkerLayer("France", "Vexin");
@@ -230,6 +267,7 @@ function createCountryChooser(map) {
                   loadMarkerLayer("France", "MinorRivers");
               }
               else {
+                  boundaryLayer.setStyle({ strokeOpacity: '1', fillOpacity: '0' });
                   loadGeoJSONFile('/Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);                  
               }
@@ -240,6 +278,7 @@ function createCountryChooser(map) {
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset(1)) return;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
@@ -248,6 +287,7 @@ function createCountryChooser(map) {
           const newtop = new Option("Misc Meta", "Misc Meta");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset()) return;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0.1; // So images do not get too small
           };
@@ -276,7 +316,7 @@ function createCountryChooser(map) {
           layerMenu.appendChild(codeAll);
           
           layerMenu.onchange = async () => {
-              newLayerReset();
+              if (!newLayerReset()) return;
               colourDigit = 0;
               //boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' }); 
               showAreas = true;
@@ -306,6 +346,7 @@ function createCountryChooser(map) {
           const newtop = new Option("Phone Codes", "Phone Codes");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset(1)) return;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
@@ -314,6 +355,7 @@ function createCountryChooser(map) {
           const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset(1)) return;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0; // Images can get arbitrarily small
           };
@@ -335,7 +377,7 @@ function createCountryChooser(map) {
               if (i == 62) i = 69;
           }
           layerMenu.onchange = async () => {
-              newLayerReset();
+              if (!newLayerReset()) return;
               showAuxButton("Next option");
               const styleOptions = {
                   strokeColor: 'black',
@@ -362,7 +404,7 @@ function createCountryChooser(map) {
               layerMenu.appendChild(new Option(optionName, optionName));
           }
           layerMenu.onchange = async () => {
-              newLayerReset();
+              if (!newLayerReset()) return;
               showAuxButton("Next option");
               const styleOptions = {
                   strokeColor: 'black',
@@ -406,7 +448,7 @@ function createCountryChooser(map) {
           hnames.push(["805", "815", "817", "825", "827", "835", "850", "851", "855", "865", "875", "877", "883", "885", "887"]);
           hnames.push(["905", "915", "925", "950", "955", "957", "959", "965", "975", "977"]);
               layerMenu.onchange = async () => {
-              newLayerReset();
+                  if (!newLayerReset()) return;
               showAuxButton("Next option");
                   const styleOptions = {
                       strokeColor: 'black',
@@ -448,10 +490,17 @@ function createCountryChooser(map) {
           const newtop = new Option("License Plates", "License Plates");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
+              if (!newLayerReset()) return;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0; // Images can get arbitrarily small
           };
       }
+          } else {
+              // User clicked "Cancel" or closed the dialog
+              console.log('User clicked Cancel or closed the dialog');
+          event.preventDefault();
+          selectOption(countryMenu, lastCountry);
+          }
   };
 
   return countryMenu;
@@ -504,6 +553,7 @@ function createEditModeButton(map) {
     editModeButton.addEventListener('click', () => {
         editMode = !editMode;
         if (editMode) {
+            askToSave = true;
             markers.forEach(m => { m.gmpDraggable = true; })
             map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsButton);
             editModeButton.textContent = 'Turn Edit Mode OFF';
@@ -533,8 +583,6 @@ function createLayerChooser(map) {
 function loadMarkerLayer(country, layer) {
     const path = '/Layers/' + country + '/' + layer + '.json';
     const imagepath = '/Layers/' + country + '/' + layer + ' Images/';
-    colog(path);
-    colog(imagepath);
     loadMarkers(path, imagepath);
 }
 
@@ -619,7 +667,7 @@ function createAuxButton() {
             showBorders = !showBorders;
             if (showBorders) {
                 auxButton.textContent = "Hide Province Borders";
-                loadGeoJSONFile('/Layers/Indonesia/Level1.geojson', "secondaryLayer", thickRed);
+                loadGeoJSONFile('/Layers/Indonesia/Level1.geojson', "secondaryLayer", thickBlue);
             }
             else {
                 clearSecondaryLayer();
@@ -660,7 +708,7 @@ function getTransform(marker) {
 }
 
 function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = -1, draggable = true) {
-    colog("New marker " + markers.length);
+    //colog("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
     
@@ -815,7 +863,7 @@ async function initMap(): void {
   });
 
     map.addListener('zoom_changed', function () {
-        console.log(map.getZoom());
+        //console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
             //let fszl = Number(markers[i].getAttribute("fszl"));
             markers[i].content.style.transform = getTransform(markers[i]);
@@ -1000,7 +1048,6 @@ function zoom(map: google.maps.Map, layer = "boundaryLayer") {
     else if (layer == "secondaryLayer") {
         secondaryLayer.forEach((feature) => {
             const geometry = feature.getGeometry();
-            console.log("sdfg");
             if (geometry) {
                 processPoints(geometry, bounds.extend, bounds);
             }
@@ -1009,33 +1056,6 @@ function zoom(map: google.maps.Map, layer = "boundaryLayer") {
     else console.log("Weird 001");
     map.fitBounds(bounds);
 }
-
-//function displayNames() {
-//    boundaryFeatures.forEach((feature) => {
-//        //console.log("dsfg");
-//        console.log(feature.Gg.NAME_2);
-//        const geometry = feature.getGeometry();
-//        //console.log(geometry.Fg);
-//        //let loc = { lat: map.getCenter().lat, lng: map.getCenter.lng };
-//        if (geometry) {
-//            let loc = processPoints2(geometry);
-//        }
-//    });
-//}
-
-//function displayGeoJSONFeatureNames() {
-//    console.log("dsfg");
-//    secondaryFeatures.forEach((feature) => {
-//        console.log("inner");
-//        console.log(feature);
-//        const geometry = feature.getGeometry();
-//        //console.log(geometry.Fg);
-//        //let loc = { lat: map.getCenter().lat, lng: map.getCenter.lng };
-//        //if (geometry) {
-//        //    let loc = processPoints2(geometry);
-//        //}
-//    });
-//}
 
 function locWhat(loc, geometry) {
     loc.lat += 0.01;
@@ -1052,9 +1072,6 @@ function processPoints(
       callback.call(thisArg, geometry);
   } else if (geometry instanceof google.maps.Data.Point) {
       callback.call(thisArg, geometry.get());
-      //console.log("poi " + geometry.get().lat());
-      //let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
-      //placeNewMarker(map, pos, ""); // Why was this here?
   } else {
     // @ts-ignore
     geometry.getArray().forEach((g) => {
@@ -1068,19 +1085,10 @@ function processPoints2(
     arr: any,
     callback: any
 ) {
-    //let n = 0;
-    //let avgLat, avgLng = 0;
     if (geometry instanceof google.maps.LatLng) {
-        //console.log("before " + geometry);
         callback(geometry,arr);
-        
     } else if (geometry instanceof google.maps.Data.Point) {
         callback(geometry.get(),arr);
-        //console.log("poi " + geometry.get().lat());
-        //avgLat = n * avgLat / (n + 1) + geometry.get().lat() / (n + 1);
-        //avgLng = n * avgLng / (n + 1) + geometry.get().lng() / (n + 1);
-        //let pos = { lat: geometry.get().lat(), lng: geometry.get().lng() };
-        //placeNewMarker(map, pos, ""); // Why was this here?
     } else {
         // @ts-ignore
         geometry.getArray().forEach((g) => {
@@ -1265,11 +1273,18 @@ function separateLines(str) {
 function initialize() {
     const currentURL = window.location.href;
     if (currentURL.startsWith("http://localhost")) {
-        //editMode = true;
         debugMode = true;
         localMode = true;
     }
-    //if (currentUrl.
+    window.addEventListener('beforeunload', function (event) {
+        if (askToSave) {
+            // Cancel the default behavior to prevent the browser from immediately refreshing the page
+            event.preventDefault();
+            // Show an alert to confirm whether the user wants to refresh the page
+            event.returnValue = ''; // Some browsers require a non-empty string for the dialog message
+            return ''; // For compatibility with older browsers
+        }
+    });
     initMap();
     initEvents();
 }
