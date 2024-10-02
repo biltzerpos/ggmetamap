@@ -1,0 +1,3142 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/25899177",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/25899177"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6089771,
+        59.1969349
+      ],
+      [
+        9.6081175,
+        59.1967511
+      ],
+      [
+        9.6072565,
+        59.1965774
+      ],
+      [
+        9.606216,
+        59.1963736
+      ],
+      [
+        9.6061123,
+        59.1963533
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/25899178",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "ref": "59",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/25899178"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6091546,
+        59.202511
+      ],
+      [
+        9.6092559,
+        59.2023586
+      ],
+      [
+        9.6093558,
+        59.2022157
+      ],
+      [
+        9.6095254,
+        59.2019912
+      ],
+      [
+        9.6098367,
+        59.2015972
+      ],
+      [
+        9.6098406,
+        59.2015923
+      ],
+      [
+        9.6099546,
+        59.2014501
+      ],
+      [
+        9.6101457,
+        59.2012009
+      ],
+      [
+        9.6102301,
+        59.2010803
+      ],
+      [
+        9.6102972,
+        59.2009705
+      ],
+      [
+        9.610365,
+        59.2008493
+      ],
+      [
+        9.6104173,
+        59.2007339
+      ],
+      [
+        9.6104756,
+        59.2005773
+      ],
+      [
+        9.6105259,
+        59.2004414
+      ],
+      [
+        9.6105608,
+        59.2003422
+      ],
+      [
+        9.610593,
+        59.2001993
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/25909002",
+  "properties": {
+    "destination": "Seljord",
+    "destination:ref:to": "E18;36",
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/25909002"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6082574,
+        59.20601
+      ],
+      [
+        9.6083868,
+        59.2058357
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/25984985",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/25984985"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.610598,
+        59.1972547
+      ],
+      [
+        9.6106043,
+        59.1971784
+      ],
+      [
+        9.610624,
+        59.1970688
+      ],
+      [
+        9.6106432,
+        59.1970105
+      ],
+      [
+        9.6106781,
+        59.1969305
+      ],
+      [
+        9.6107069,
+        59.1968797
+      ],
+      [
+        9.6107566,
+        59.1968134
+      ],
+      [
+        9.6108397,
+        59.1967152
+      ],
+      [
+        9.6109711,
+        59.1965483
+      ],
+      [
+        9.6110221,
+        59.1964707
+      ],
+      [
+        9.6110489,
+        59.1964116
+      ],
+      [
+        9.611067,
+        59.1963423
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/25984987",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/25984987"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6111407,
+        59.1909703
+      ],
+      [
+        9.6121358,
+        59.1897993
+      ],
+      [
+        9.6122845,
+        59.1896261
+      ],
+      [
+        9.6124946,
+        59.1893854
+      ],
+      [
+        9.6126075,
+        59.189249
+      ],
+      [
+        9.6126728,
+        59.1891701
+      ],
+      [
+        9.6130262,
+        59.1887519
+      ],
+      [
+        9.6131332,
+        59.1886253
+      ],
+      [
+        9.6134317,
+        59.1882721
+      ],
+      [
+        9.6143588,
+        59.1871842
+      ],
+      [
+        9.6144202,
+        59.1871169
+      ],
+      [
+        9.6144399,
+        59.1870905
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26015057",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "placement": "middle_of:1",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "id": "way/26015057"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6097193,
+        59.1931462
+      ],
+      [
+        9.6096776,
+        59.1930748
+      ],
+      [
+        9.6096468,
+        59.1929917
+      ],
+      [
+        9.6096334,
+        59.1929614
+      ],
+      [
+        9.6096113,
+        59.1928656
+      ],
+      [
+        9.6096099,
+        59.1928278
+      ],
+      [
+        9.6096079,
+        59.1927612
+      ],
+      [
+        9.6096139,
+        59.1927056
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26333485",
+  "properties": {
+    "highway": "primary",
+    "junction": "roundabout",
+    "maxspeed": "50",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26333485"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5945731,
+        59.1942891
+      ],
+      [
+        9.594512,
+        59.1942613
+      ],
+      [
+        9.5944699,
+        59.1942254
+      ],
+      [
+        9.5944505,
+        59.1941847
+      ],
+      [
+        9.5944555,
+        59.194143
+      ],
+      [
+        9.5944846,
+        59.1941038
+      ],
+      [
+        9.5945289,
+        59.194074
+      ],
+      [
+        9.5945872,
+        59.1940512
+      ],
+      [
+        9.5946553,
+        59.1940373
+      ],
+      [
+        9.5947281,
+        59.1940332
+      ],
+      [
+        9.5948005,
+        59.1940391
+      ],
+      [
+        9.5948854,
+        59.1940613
+      ],
+      [
+        9.5949501,
+        59.1940971
+      ],
+      [
+        9.5949867,
+        59.1941422
+      ],
+      [
+        9.5949908,
+        59.1941909
+      ],
+      [
+        9.5949617,
+        59.1942374
+      ],
+      [
+        9.5949056,
+        59.1942747
+      ],
+      [
+        9.5948284,
+        59.1943003
+      ],
+      [
+        9.594739,
+        59.1943113
+      ],
+      [
+        9.5946475,
+        59.1943064
+      ],
+      [
+        9.5945731,
+        59.1942891
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26333486",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26333486"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5944699,
+        59.1942254
+      ],
+      [
+        9.5942275,
+        59.1941006
+      ],
+      [
+        9.5937131,
+        59.19398
+      ],
+      [
+        9.594275,
+        59.1940373
+      ],
+      [
+        9.5944481,
+        59.1940459
+      ],
+      [
+        9.5945872,
+        59.1940512
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26333487",
+  "properties": {
+    "highway": "primary",
+    "junction": "roundabout",
+    "maxspeed": "50",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26333487"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6012078,
+        59.1954764
+      ],
+      [
+        9.6011995,
+        59.195438
+      ],
+      [
+        9.6012172,
+        59.1954063
+      ],
+      [
+        9.6012491,
+        59.1953741
+      ],
+      [
+        9.6012854,
+        59.1953563
+      ],
+      [
+        9.601385,
+        59.195335
+      ],
+      [
+        9.6014605,
+        59.1953361
+      ],
+      [
+        9.601508,
+        59.1953442
+      ],
+      [
+        9.6015763,
+        59.1953697
+      ],
+      [
+        9.601617,
+        59.1954022
+      ],
+      [
+        9.601621,
+        59.1954098
+      ],
+      [
+        9.6016318,
+        59.19543
+      ],
+      [
+        9.6016183,
+        59.1954865
+      ],
+      [
+        9.6015786,
+        59.1955193
+      ],
+      [
+        9.6015544,
+        59.1955301
+      ],
+      [
+        9.6015386,
+        59.1955372
+      ],
+      [
+        9.6014465,
+        59.1955554
+      ],
+      [
+        9.6013361,
+        59.1955486
+      ],
+      [
+        9.6012554,
+        59.1955199
+      ],
+      [
+        9.6012078,
+        59.1954764
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26333488",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26333488"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6003382,
+        59.1952431
+      ],
+      [
+        9.5995634,
+        59.1950954
+      ],
+      [
+        9.5984571,
+        59.1948798
+      ],
+      [
+        9.5978191,
+        59.1947582
+      ],
+      [
+        9.5975523,
+        59.1947038
+      ],
+      [
+        9.5972268,
+        59.1946441
+      ],
+      [
+        9.5958617,
+        59.1943859
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26401252",
+  "properties": {
+    "bridge": "yes",
+    "bridge:description": "Damfoss",
+    "highway": "primary",
+    "layer": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26401252"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6088221,
+        59.2033316
+      ],
+      [
+        9.6090088,
+        59.2027644
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26401265",
+  "properties": {
+    "bridge": "movable",
+    "bridge:description": "Skien Kanalbru",
+    "bridge:movable": "bascule",
+    "highway": "primary",
+    "layer": "1",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26401265"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6091775,
+        59.2043206
+      ],
+      [
+        9.6091033,
+        59.2042252
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26401267",
+  "properties": {
+    "bridge": "yes",
+    "bridge:description": "Skien Kanalbru",
+    "highway": "primary",
+    "layer": "1",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/26401267"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6091033,
+        59.2042252
+      ],
+      [
+        9.6089716,
+        59.2040934
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26401274",
+  "properties": {
+    "bridge": "yes",
+    "bridge:description": "Klosterfoss",
+    "bridge:structure": "arch",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "placement": "middle_of:1",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "id": "way/26401274"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6105538,
+        59.1983208
+      ],
+      [
+        9.6105715,
+        59.1979015
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26401276",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "placement": "middle_of:1",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "id": "way/26401276"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6105715,
+        59.1979015
+      ],
+      [
+        9.6105755,
+        59.1978006
+      ],
+      [
+        9.6105815,
+        59.1977069
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/35541558",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Ulefossvegen",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/35541558"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.592529,
+        59.1937618
+      ],
+      [
+        9.5920917,
+        59.1936805
+      ],
+      [
+        9.5914426,
+        59.1935528
+      ],
+      [
+        9.5909124,
+        59.1934592
+      ],
+      [
+        9.5905226,
+        59.1934031
+      ],
+      [
+        9.5901737,
+        59.1933555
+      ],
+      [
+        9.5897687,
+        59.1933112
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/158538453",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "2",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/158538453"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6083868,
+        59.2058357
+      ],
+      [
+        9.6085407,
+        59.2056143
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/158538454",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/158538454"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6090753,
+        59.2048498
+      ],
+      [
+        9.6090989,
+        59.2048077
+      ],
+      [
+        9.6091291,
+        59.2047539
+      ],
+      [
+        9.609172,
+        59.2046708
+      ],
+      [
+        9.6092002,
+        59.2045956
+      ],
+      [
+        9.6092143,
+        59.2045369
+      ],
+      [
+        9.6092197,
+        59.2044806
+      ],
+      [
+        9.6092163,
+        59.2044233
+      ],
+      [
+        9.6092036,
+        59.2043728
+      ],
+      [
+        9.6091775,
+        59.2043206
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/515966608",
+  "properties": {
+    "destination": "Siljan;Skotfoss;Stevneplassen",
+    "destination:ref": "32",
+    "destination:ref:to": "357",
+    "destination:symbol": "ferry;train_station",
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/515966608"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6085588,
+        59.2058607
+      ],
+      [
+        9.608467,
+        59.2059505
+      ],
+      [
+        9.6084177,
+        59.206024
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/515966609",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "id": "way/515966609"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6090753,
+        59.2048498
+      ],
+      [
+        9.6090775,
+        59.2049235
+      ],
+      [
+        9.608938,
+        59.2051844
+      ],
+      [
+        9.6087776,
+        59.205473
+      ],
+      [
+        9.6086911,
+        59.2056272
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/515966610",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/515966610"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6085407,
+        59.2056143
+      ],
+      [
+        9.6086432,
+        59.2054572
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/515966611",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "2",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "id": "way/515966611"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6086911,
+        59.2056272
+      ],
+      [
+        9.6086077,
+        59.2057727
+      ],
+      [
+        9.6085588,
+        59.2058607
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/539583971",
+  "properties": {
+    "highway": "primary",
+    "layer": "1",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/539583971"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6089716,
+        59.2040934
+      ],
+      [
+        9.6089036,
+        59.2040346
+      ],
+      [
+        9.6088119,
+        59.2039378
+      ],
+      [
+        9.6087495,
+        59.2038579
+      ],
+      [
+        9.6087221,
+        59.203806
+      ],
+      [
+        9.6087124,
+        59.2037449
+      ],
+      [
+        9.6087207,
+        59.2036735
+      ],
+      [
+        9.6087373,
+        59.2035928
+      ],
+      [
+        9.6088221,
+        59.2033316
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199050",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Bruene",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/637199050"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6086432,
+        59.2054572
+      ],
+      [
+        9.6087261,
+        59.2053227
+      ],
+      [
+        9.608826,
+        59.2051679
+      ],
+      [
+        9.608995,
+        59.2049122
+      ],
+      [
+        9.6090753,
+        59.2048498
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199054",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|right",
+    "id": "way/637199054"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6089771,
+        59.1969349
+      ],
+      [
+        9.6095717,
+        59.1970369
+      ],
+      [
+        9.6099526,
+        59.1971097
+      ],
+      [
+        9.6103026,
+        59.1971632
+      ],
+      [
+        9.6103799,
+        59.1971682
+      ],
+      [
+        9.6106043,
+        59.1971784
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199056",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/637199056"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.611067,
+        59.1963423
+      ],
+      [
+        9.6110724,
+        59.1962664
+      ],
+      [
+        9.6110677,
+        59.1962193
+      ],
+      [
+        9.6110503,
+        59.1961568
+      ],
+      [
+        9.6110344,
+        59.1961138
+      ],
+      [
+        9.6110053,
+        59.1960353
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199059",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/637199059"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6105815,
+        59.1977069
+      ],
+      [
+        9.6105883,
+        59.1974995
+      ],
+      [
+        9.610595,
+        59.1973319
+      ],
+      [
+        9.610598,
+        59.1972547
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199060",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/637199060"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6107197,
+        59.1972141
+      ],
+      [
+        9.610598,
+        59.1972547
+      ],
+      [
+        9.6105024,
+        59.1972666
+      ],
+      [
+        9.6104153,
+        59.197268
+      ],
+      [
+        9.6103278,
+        59.1972635
+      ],
+      [
+        9.6100773,
+        59.1972347
+      ],
+      [
+        9.6097903,
+        59.1971681
+      ],
+      [
+        9.6094443,
+        59.1970774
+      ],
+      [
+        9.6089771,
+        59.1969349
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199063",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "placement": "middle_of:1",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "id": "way/637199063"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6105473,
+        59.1987013
+      ],
+      [
+        9.6105507,
+        59.1985234
+      ],
+      [
+        9.6105538,
+        59.1984025
+      ],
+      [
+        9.6105538,
+        59.1983208
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199064",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through;right",
+    "id": "way/637199064"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6105641,
+        59.1996657
+      ],
+      [
+        9.6105641,
+        59.1995401
+      ],
+      [
+        9.6105651,
+        59.1994929
+      ],
+      [
+        9.6105654,
+        59.1994515
+      ],
+      [
+        9.61055,
+        59.1992887
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/637199065",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/637199065"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.61055,
+        59.1992887
+      ],
+      [
+        9.6105467,
+        59.1991246
+      ],
+      [
+        9.6105473,
+        59.1987013
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/696134567",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/696134567"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6097653,
+        59.192692
+      ],
+      [
+        9.6097501,
+        59.1927396
+      ],
+      [
+        9.6097473,
+        59.1928269
+      ],
+      [
+        9.6097501,
+        59.1928642
+      ],
+      [
+        9.6097776,
+        59.192959
+      ],
+      [
+        9.6098211,
+        59.1930624
+      ],
+      [
+        9.6098634,
+        59.1931613
+      ],
+      [
+        9.6099286,
+        59.1933237
+      ],
+      [
+        9.6099512,
+        59.1934786
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/696134568",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/696134568"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6101135,
+        59.1920823
+      ],
+      [
+        9.610265,
+        59.1919449
+      ],
+      [
+        9.610367,
+        59.1918377
+      ],
+      [
+        9.6105708,
+        59.1916008
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/696134569",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/696134569"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6111407,
+        59.1909703
+      ],
+      [
+        9.6111217,
+        59.191036
+      ],
+      [
+        9.6109074,
+        59.191326
+      ],
+      [
+        9.6107197,
+        59.1915918
+      ],
+      [
+        9.6106707,
+        59.1916537
+      ],
+      [
+        9.6104937,
+        59.1918669
+      ],
+      [
+        9.6103925,
+        59.1919734
+      ],
+      [
+        9.6103106,
+        59.1920452
+      ],
+      [
+        9.6102181,
+        59.1921183
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/696134570",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/696134570"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6100404,
+        59.1923062
+      ],
+      [
+        9.609907,
+        59.1924538
+      ],
+      [
+        9.6098466,
+        59.192529
+      ],
+      [
+        9.6098234,
+        59.1925605
+      ],
+      [
+        9.6097782,
+        59.1926493
+      ],
+      [
+        9.6097653,
+        59.192692
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/696134578",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/696134578"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6108019,
+        59.1955625
+      ],
+      [
+        9.61078,
+        59.1955239
+      ],
+      [
+        9.6107371,
+        59.1954267
+      ],
+      [
+        9.610693,
+        59.1953206
+      ],
+      [
+        9.6103777,
+        59.1944895
+      ],
+      [
+        9.6103703,
+        59.1944709
+      ],
+      [
+        9.6101525,
+        59.1939251
+      ],
+      [
+        9.6100035,
+        59.1935919
+      ],
+      [
+        9.6099512,
+        59.1934786
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/696134579",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/696134579"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6096139,
+        59.1927056
+      ],
+      [
+        9.6096387,
+        59.19263
+      ],
+      [
+        9.6096789,
+        59.1925414
+      ],
+      [
+        9.6097742,
+        59.1924223
+      ],
+      [
+        9.6099003,
+        59.1922814
+      ],
+      [
+        9.6099734,
+        59.1922111
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466718",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/698466718"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6106043,
+        59.1971784
+      ],
+      [
+        9.6107197,
+        59.1972141
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466719",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/698466719"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.610593,
+        59.2001993
+      ],
+      [
+        9.6105748,
+        59.2000652
+      ],
+      [
+        9.6105762,
+        59.1998917
+      ],
+      [
+        9.6105641,
+        59.1996657
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466720",
+  "properties": {
+    "bridge": "yes",
+    "bridge:description": "Klosterfoss",
+    "bridge:structure": "arch",
+    "highway": "primary",
+    "layer": "1",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "toll": "yes",
+    "id": "way/698466720"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6106727,
+        59.1979033
+      ],
+      [
+        9.6106426,
+        59.1983201
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466721",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "toll": "yes",
+    "id": "way/698466721"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6107197,
+        59.1972141
+      ],
+      [
+        9.6107183,
+        59.1973473
+      ],
+      [
+        9.6106915,
+        59.1977099
+      ],
+      [
+        9.6106821,
+        59.1978027
+      ],
+      [
+        9.6106727,
+        59.1979033
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466722",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/698466722"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6111824,
+        59.1964315
+      ],
+      [
+        9.6111529,
+        59.1964951
+      ],
+      [
+        9.6110965,
+        59.1965847
+      ],
+      [
+        9.6109557,
+        59.1967509
+      ],
+      [
+        9.6108893,
+        59.1968326
+      ],
+      [
+        9.6108336,
+        59.1968961
+      ],
+      [
+        9.6108029,
+        59.1969473
+      ],
+      [
+        9.6107599,
+        59.1970421
+      ],
+      [
+        9.6107434,
+        59.1970775
+      ],
+      [
+        9.6107197,
+        59.1972141
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466723",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "toll": "yes",
+    "turn:lanes": "left|through;right",
+    "id": "way/698466723"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6106573,
+        59.198854
+      ],
+      [
+        9.6106534,
+        59.1990837
+      ],
+      [
+        9.610656,
+        59.1991241
+      ],
+      [
+        9.6106774,
+        59.1992884
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466724",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/698466724"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6106774,
+        59.1992884
+      ],
+      [
+        9.6106841,
+        59.1994508
+      ],
+      [
+        9.6106836,
+        59.1994922
+      ],
+      [
+        9.6106815,
+        59.1996627
+      ],
+      [
+        9.6106661,
+        59.1998958
+      ],
+      [
+        9.6106431,
+        59.2000645
+      ],
+      [
+        9.610593,
+        59.2001993
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466725",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/698466725"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6110053,
+        59.1960353
+      ],
+      [
+        9.6109547,
+        59.1959325
+      ],
+      [
+        9.6108793,
+        59.1957794
+      ],
+      [
+        9.6108531,
+        59.1957331
+      ],
+      [
+        9.6108278,
+        59.195687
+      ],
+      [
+        9.6108019,
+        59.1955625
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466726",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "toll": "yes",
+    "id": "way/698466726"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6106426,
+        59.1983201
+      ],
+      [
+        9.610641,
+        59.198403
+      ],
+      [
+        9.6106385,
+        59.1985234
+      ],
+      [
+        9.6106493,
+        59.1987054
+      ],
+      [
+        9.6106573,
+        59.198854
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/698466727",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/698466727"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6108019,
+        59.1955625
+      ],
+      [
+        9.6108999,
+        59.1956748
+      ],
+      [
+        9.6109303,
+        59.1957201
+      ],
+      [
+        9.6109772,
+        59.1957746
+      ],
+      [
+        9.6110355,
+        59.1958636
+      ],
+      [
+        9.6111048,
+        59.1959674
+      ],
+      [
+        9.6111532,
+        59.1960533
+      ],
+      [
+        9.6111917,
+        59.1961462
+      ],
+      [
+        9.6112078,
+        59.1962087
+      ],
+      [
+        9.6112179,
+        59.1962729
+      ],
+      [
+        9.6112105,
+        59.1963337
+      ],
+      [
+        9.6111985,
+        59.1963886
+      ],
+      [
+        9.6111824,
+        59.1964315
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853279433",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/853279433"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.601621,
+        59.1954098
+      ],
+      [
+        9.6017036,
+        59.1954555
+      ],
+      [
+        9.6017921,
+        59.1954829
+      ],
+      [
+        9.6019986,
+        59.1955345
+      ],
+      [
+        9.6023098,
+        59.1955963
+      ],
+      [
+        9.6031463,
+        59.1957584
+      ],
+      [
+        9.6036334,
+        59.1958518
+      ],
+      [
+        9.6042061,
+        59.1959596
+      ],
+      [
+        9.6043269,
+        59.1959831
+      ],
+      [
+        9.6043968,
+        59.1959966
+      ],
+      [
+        9.6044548,
+        59.1960079
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853279434",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/853279434"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6061123,
+        59.1963533
+      ],
+      [
+        9.6060166,
+        59.1963538
+      ],
+      [
+        9.6059401,
+        59.1963463
+      ],
+      [
+        9.6051542,
+        59.1962165
+      ],
+      [
+        9.6049474,
+        59.1961831
+      ],
+      [
+        9.6047856,
+        59.1961517
+      ],
+      [
+        9.6044172,
+        59.1960763
+      ],
+      [
+        9.6043466,
+        59.1960618
+      ],
+      [
+        9.6042477,
+        59.1960427
+      ],
+      [
+        9.6040264,
+        59.1959919
+      ],
+      [
+        9.6038172,
+        59.1959417
+      ],
+      [
+        9.6035878,
+        59.1958916
+      ],
+      [
+        9.6033183,
+        59.1958346
+      ],
+      [
+        9.6031249,
+        59.195797
+      ],
+      [
+        9.6028556,
+        59.1957446
+      ],
+      [
+        9.6021113,
+        59.1956045
+      ],
+      [
+        9.6019731,
+        59.1955771
+      ],
+      [
+        9.6018592,
+        59.1955578
+      ],
+      [
+        9.6017505,
+        59.1955448
+      ],
+      [
+        9.6016499,
+        59.1955407
+      ],
+      [
+        9.6015544,
+        59.1955301
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853279435",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/853279435"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6049365,
+        59.1961033
+      ],
+      [
+        9.6054949,
+        59.1962075
+      ],
+      [
+        9.6059696,
+        59.1963016
+      ],
+      [
+        9.6060436,
+        59.1963233
+      ],
+      [
+        9.6061123,
+        59.1963533
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853279436",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/853279436"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6044548,
+        59.1960079
+      ],
+      [
+        9.6046701,
+        59.1960503
+      ],
+      [
+        9.6049365,
+        59.1961033
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853374306",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through;right",
+    "id": "way/853374306"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5885031,
+        59.1932324
+      ],
+      [
+        9.5882394,
+        59.1932101
+      ],
+      [
+        9.5880456,
+        59.1932018
+      ],
+      [
+        9.5878466,
+        59.1932002
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853374307",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/853374307"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5878997,
+        59.1930563
+      ],
+      [
+        9.5880349,
+        59.1930954
+      ],
+      [
+        9.588161,
+        59.1931218
+      ],
+      [
+        9.5883474,
+        59.1931507
+      ],
+      [
+        9.5885017,
+        59.1931682
+      ],
+      [
+        9.5885726,
+        59.193177
+      ],
+      [
+        9.5888574,
+        59.1932049
+      ],
+      [
+        9.5893287,
+        59.1932486
+      ],
+      [
+        9.5895544,
+        59.1932719
+      ],
+      [
+        9.5897687,
+        59.1933112
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/853374308",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/853374308"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5897687,
+        59.1933112
+      ],
+      [
+        9.5895283,
+        59.1933064
+      ],
+      [
+        9.5892908,
+        59.193287
+      ],
+      [
+        9.5889494,
+        59.1932647
+      ],
+      [
+        9.5887275,
+        59.1932482
+      ],
+      [
+        9.5886123,
+        59.19324
+      ],
+      [
+        9.5885445,
+        59.1932351
+      ],
+      [
+        9.5885031,
+        59.1932324
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/976744202",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/976744202"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6105708,
+        59.1916008
+      ],
+      [
+        9.6108236,
+        59.1913099
+      ],
+      [
+        9.6110627,
+        59.1910243
+      ],
+      [
+        9.6111407,
+        59.1909703
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/976744203",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/976744203"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6102181,
+        59.1921183
+      ],
+      [
+        9.6101363,
+        59.1921928
+      ],
+      [
+        9.6100404,
+        59.1923062
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/976744204",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Grogata",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/976744204"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6099512,
+        59.1934786
+      ],
+      [
+        9.6098334,
+        59.1933251
+      ],
+      [
+        9.6097193,
+        59.1931462
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1149485133",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1149485133"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6099734,
+        59.1922111
+      ],
+      [
+        9.6100196,
+        59.1921667
+      ],
+      [
+        9.6101135,
+        59.1920823
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1149485145",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Klostergata",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1149485145"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6090088,
+        59.2027644
+      ],
+      [
+        9.6090426,
+        59.2026895
+      ],
+      [
+        9.6090922,
+        59.2026047
+      ],
+      [
+        9.6091546,
+        59.202511
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1216183762",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "oneway_type": "roundabout_flare",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1216183762"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6160797,
+        59.1853735
+      ],
+      [
+        9.6162186,
+        59.1851484
+      ],
+      [
+        9.6162143,
+        59.1850878
+      ],
+      [
+        9.6161895,
+        59.185007
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1240081618",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1240081618"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6154847,
+        59.1859491
+      ],
+      [
+        9.615494,
+        59.1859398
+      ],
+      [
+        9.6157421,
+        59.1856863
+      ],
+      [
+        9.6159071,
+        59.1855674
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1240081619",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/1240081619"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6153572,
+        59.1860765
+      ],
+      [
+        9.6154847,
+        59.1859491
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1240081620",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "placement": "middle_of:2",
+    "ref": "59",
+    "surface": "asphalt",
+    "turn:lanes": "left|through",
+    "id": "way/1240081620"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6153572,
+        59.1862111
+      ],
+      [
+        9.6151787,
+        59.1863954
+      ],
+      [
+        9.6148792,
+        59.1866923
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1240081621",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1240081621"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6148792,
+        59.1866923
+      ],
+      [
+        9.6147859,
+        59.1867813
+      ],
+      [
+        9.6146678,
+        59.1869003
+      ],
+      [
+        9.6144399,
+        59.1870905
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1240081622",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1240081622"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6144399,
+        59.1870905
+      ],
+      [
+        9.6145807,
+        59.1868803
+      ],
+      [
+        9.6147494,
+        59.1866974
+      ],
+      [
+        9.6148228,
+        59.1866282
+      ],
+      [
+        9.6153063,
+        59.1861321
+      ],
+      [
+        9.6153572,
+        59.1860765
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1240081623",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1240081623"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6159071,
+        59.1855674
+      ],
+      [
+        9.6158414,
+        59.185713
+      ],
+      [
+        9.6157281,
+        59.18584
+      ],
+      [
+        9.6155742,
+        59.1859872
+      ],
+      [
+        9.6154093,
+        59.1861592
+      ],
+      [
+        9.6153572,
+        59.1862111
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519688",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "oneway": "yes",
+    "oneway_type": "roundabout_flare",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519688"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6164732,
+        59.1850389
+      ],
+      [
+        9.6163282,
+        59.1851621
+      ],
+      [
+        9.6160797,
+        59.1853735
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519689",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Porsgrunnsvegen",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519689"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6159071,
+        59.1855674
+      ],
+      [
+        9.6159836,
+        59.1854776
+      ],
+      [
+        9.6160797,
+        59.1853735
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519700",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "oneway_type": "roundabout_flare",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519700"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6012078,
+        59.1954764
+      ],
+      [
+        9.6010341,
+        59.1954117
+      ],
+      [
+        9.6003382,
+        59.1952431
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519704",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "oneway_type": "roundabout_flare",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519704"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.6003382,
+        59.1952431
+      ],
+      [
+        9.601078,
+        59.1953495
+      ],
+      [
+        9.6011985,
+        59.1953577
+      ],
+      [
+        9.6012854,
+        59.1953563
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519753",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "oneway_type": "roundabout_flare",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519753"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5958617,
+        59.1943859
+      ],
+      [
+        9.5954432,
+        59.1943337
+      ],
+      [
+        9.5951679,
+        59.194304
+      ],
+      [
+        9.5949056,
+        59.1942747
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519754",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "oneway": "yes",
+    "oneway_type": "roundabout_flare",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519754"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5949867,
+        59.1941422
+      ],
+      [
+        9.5952095,
+        59.1942477
+      ],
+      [
+        9.5954801,
+        59.1942976
+      ],
+      [
+        9.5958617,
+        59.1943859
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1267519756",
+  "properties": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Ulefossvegen",
+    "ref": "59",
+    "surface": "asphalt",
+    "id": "way/1267519756"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.5937131,
+        59.19398
+      ],
+      [
+        9.5933278,
+        59.1939104
+      ],
+      [
+        9.592529,
+        59.1937618
+      ]
+    ]
+  }
+}
+]
+}

@@ -1,0 +1,16 @@
+[timeout:255];
+area["name:en"~"Estonia"]->.my;
+(
+  rel(area.my)["waterway"="river"]["name"~"handu"];
+rel(area.my)["waterway"="river"]["name"~"Pärnu"];
+rel(area.my)["waterway"="river"]["name"~"Põltsamaa"];
+  rel(area.my)["waterway"="river"]["name"~"Pedja"];
+  rel(area.my)["waterway"="river"]["name"~"Keila"];
+  rel(area.my)["waterway"="river"]["name"~"Kasari"];
+  rel(area.my)["waterway"="river"]["name"~"Piusa"];
+  rel(area.my)["waterway"="river"]["name"~"Pirita"];
+  rel(area.my)["waterway"="river"]["name"~"Emajõgi"];
+  rel(area.my)["waterway"="river"]["name"~"Navesti"];
+);
+out geom;
+

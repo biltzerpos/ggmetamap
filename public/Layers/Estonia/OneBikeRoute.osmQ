@@ -1,0 +1,6 @@
+[timeout:255];
+area["name:en"~"Estonia"]->.my;
+(
+  nwr(area.my)["route"="bicycle"]["ref"~"^SSSS$"];
+);
+out geom;

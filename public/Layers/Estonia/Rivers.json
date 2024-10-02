@@ -1,0 +1,79 @@
+[
+  {
+    "text": "Emajõgi",
+    "type": "name",
+    "lat": 58.4041999829877,
+    "lng": 26.747961344078988,
+    "fszl": 6
+  },
+  {
+    "text": "Kasari jõgi",
+    "type": "name",
+    "lat": 58.85417351308717,
+    "lng": 24.22183049826696,
+    "fszl": 6
+  },
+  {
+    "text": "Keila jõgi",
+    "type": "name",
+    "lat": 59.27759460028332,
+    "lng": 24.61738174810037,
+    "fszl": 6
+  },
+  {
+    "text": "Navesti jõgi",
+    "type": "name",
+    "lat": 58.60543008848909,
+    "lng": 25.52690498104112,
+    "fszl": 6
+  },
+  {
+    "text": "Pedja jõgi",
+    "type": "name",
+    "lat": 58.75395117003926,
+    "lng": 26.41353551972178,
+    "fszl": 6
+  },
+  {
+    "text": "Pirita jõgi",
+    "type": "name",
+    "lat": 59.24626925381901,
+    "lng": 25.07958921056137,
+    "fszl": 6
+  },
+  {
+    "text": "Piusa jõgi",
+    "type": "name",
+    "lat": 57.85421653223185,
+    "lng": 27.48817603902238,
+    "fszl": 6
+  },
+  {
+    "text": "Pärnu jõgi",
+    "type": "name",
+    "lat": 58.78023099690568,
+    "lng": 25.297520301731197,
+    "fszl": 6
+  },
+  {
+    "text": "Põltsamaa jõgi",
+    "type": "name",
+    "lat": 58.84273072321733,
+    "lng": 26.00605837111145,
+    "fszl": 6
+  },
+  {
+    "text": "Väike Emajõgi",
+    "type": "name",
+    "lat": 57.891003641445394,
+    "lng": 26.211120623078216,
+    "fszl": 6
+  },
+  {
+    "text": "Võhandu jõgi",
+    "type": "name",
+    "lat": 57.89588033231337,
+    "lng": 26.959996347151137,
+    "fszl": 6
+  }
+]

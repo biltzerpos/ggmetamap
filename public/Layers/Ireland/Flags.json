@@ -1,0 +1,191 @@
+[
+  {
+    "text": "Colours_of_Carlow.svg",
+    "type": "image",
+    "lat": 52.73756488135655,
+    "lng": -6.851702928543091,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Clare.svg",
+    "type": "image",
+    "lat": 52.87536543434905,
+    "lng": -9.212669173673751,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Cork (1).svg",
+    "type": "image",
+    "lat": 51.76237484947296,
+    "lng": -8.887652394570912,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Cork.svg",
+    "type": "image",
+    "lat": 53.89419160813054,
+    "lng": -6.3352597155133505,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Donegal_GAA.svg",
+    "type": "image",
+    "lat": 54.924362886732126,
+    "lng": -7.992264071897628,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Dublin.svg",
+    "type": "image",
+    "lat": 53.292356409642736,
+    "lng": -6.207972804502608,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Fingal.svg",
+    "type": "image",
+    "lat": 53.403388636976835,
+    "lng": -6.393855259268621,
+    "fszl": 10
+  },
+  {
+    "text": "Colours_of_Galway (1).svg",
+    "type": "image",
+    "lat": 53.33891604566954,
+    "lng": -8.53867397213598,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Galway (1).svg",
+    "type": "image",
+    "lat": 53.52221222861259,
+    "lng": -7.39214981575113,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Kerry_GAA.svg",
+    "type": "image",
+    "lat": 52.10613217506032,
+    "lng": -9.698029135854574,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Kildare.svg",
+    "type": "image",
+    "lat": 53.209627019771474,
+    "lng": -6.832603787572713,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Kilkenny.svg",
+    "type": "image",
+    "lat": 52.5684819064656,
+    "lng": -7.199087702454379,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Laois (1).svg",
+    "type": "image",
+    "lat": 53.00131379864022,
+    "lng": -7.349917045690648,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Laois.svg",
+    "type": "image",
+    "lat": 53.94966427863091,
+    "lng": -7.253948489622237,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Leinster_Council.svg",
+    "type": "image",
+    "lat": 52.55848778381125,
+    "lng": -8.737319943704213,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Leitrim.svg",
+    "type": "image",
+    "lat": 54.315922098689875,
+    "lng": -8.197434184350575,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Longford_GAA (1).svg",
+    "type": "image",
+    "lat": 53.7388851658725,
+    "lng": -7.733796690947014,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Longford_GAA (1).svg",
+    "type": "image",
+    "lat": 52.562125990465354,
+    "lng": -7.87041631029008,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Longford_GAA (1).svg",
+    "type": "image",
+    "lat": 52.984384531035815,
+    "lng": -6.119369555607534,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Mayo.svg",
+    "type": "image",
+    "lat": 53.973245872406316,
+    "lng": -9.561032532746243,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Meath_GAA.svg",
+    "type": "image",
+    "lat": 53.62990688437537,
+    "lng": -6.689895269508363,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Monaghan.svg",
+    "type": "image",
+    "lat": 54.174853611959215,
+    "lng": -6.963702296263176,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Monaghan.svg",
+    "type": "image",
+    "lat": 52.091081486762334,
+    "lng": -7.338335340025159,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Offaly.svg",
+    "type": "image",
+    "lat": 53.259407919287284,
+    "lng": -7.605029200560051,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Roscommon.svg",
+    "type": "image",
+    "lat": 53.64299334376529,
+    "lng": -8.110099886900384,
+    "fszl": 9
+  },
+  {
+    "text": "Colours_of_Sligo.svg",
+    "type": "image",
+    "lat": 54.20514850425365,
+    "lng": -8.658665274626214,
+    "fszl": 8
+  },
+  {
+    "text": "Colours_of_Wexford.svg",
+    "type": "image",
+    "lat": 52.38883713574956,
+    "lng": -6.372178648954827,
+    "fszl": 8
+  }
+]

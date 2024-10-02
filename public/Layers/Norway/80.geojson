@@ -1,0 +1,1305 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/172140405",
+  "properties": {
+    "destination": "Fauske",
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/172140405"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4595729,
+        67.2768518
+      ],
+      [
+        14.4606381,
+        67.2769271
+      ],
+      [
+        14.4623265,
+        67.2770382
+      ],
+      [
+        14.4627205,
+        67.2770806
+      ],
+      [
+        14.463588,
+        67.2771518
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172140407",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/172140407"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.463588,
+        67.2771518
+      ],
+      [
+        14.4626963,
+        67.2771168
+      ],
+      [
+        14.4617026,
+        67.2770849
+      ],
+      [
+        14.4611889,
+        67.2770629
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172140408",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/172140408"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.454858,
+        67.2765611
+      ],
+      [
+        14.4569033,
+        67.2766624
+      ],
+      [
+        14.4575093,
+        67.2766891
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172140420",
+  "properties": {
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "ref": "80",
+    "surface": "asphalt",
+    "toll": "yes",
+    "width": "10",
+    "id": "way/172140420"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4395643,
+        67.2762996
+      ],
+      [
+        14.4395997,
+        67.2762907
+      ],
+      [
+        14.4402905,
+        67.276121
+      ],
+      [
+        14.4409433,
+        67.2760052
+      ],
+      [
+        14.4415016,
+        67.2759179
+      ],
+      [
+        14.4420513,
+        67.2758485
+      ],
+      [
+        14.4427699,
+        67.275792
+      ],
+      [
+        14.4434835,
+        67.2757553
+      ],
+      [
+        14.4441676,
+        67.2757482
+      ],
+      [
+        14.4448542,
+        67.2757482
+      ],
+      [
+        14.445824,
+        67.2757972
+      ],
+      [
+        14.4469382,
+        67.2758878
+      ],
+      [
+        14.4488756,
+        67.2760634
+      ],
+      [
+        14.4517348,
+        67.2763242
+      ],
+      [
+        14.453238,
+        67.2764511
+      ],
+      [
+        14.4547021,
+        67.2765511
+      ],
+      [
+        14.454858,
+        67.2765611
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172679673",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/172679673"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4743063,
+        67.2777666
+      ],
+      [
+        14.4754834,
+        67.2777736
+      ],
+      [
+        14.4761605,
+        67.2777826
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172679675",
+  "properties": {
+    "highway": "primary",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "15",
+    "id": "way/172679675"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4811821,
+        67.2780198
+      ],
+      [
+        14.4825014,
+        67.2781318
+      ],
+      [
+        14.4847932,
+        67.2783392
+      ],
+      [
+        14.4855773,
+        67.278396
+      ],
+      [
+        14.4859736,
+        67.278418
+      ],
+      [
+        14.4863717,
+        67.2784354
+      ],
+      [
+        14.4868105,
+        67.2784441
+      ],
+      [
+        14.4872779,
+        67.2784433
+      ],
+      [
+        14.4879149,
+        67.2784401
+      ],
+      [
+        14.4882661,
+        67.2784275
+      ],
+      [
+        14.4888008,
+        67.2783957
+      ],
+      [
+        14.4893043,
+        67.2783583
+      ],
+      [
+        14.489719,
+        67.2783214
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172679693",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/172679693"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4811821,
+        67.2780198
+      ],
+      [
+        14.4799749,
+        67.2779771
+      ],
+      [
+        14.4791474,
+        67.2779509
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/172679697",
+  "properties": {
+    "highway": "primary",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "12",
+    "id": "way/172679697"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.463588,
+        67.2771518
+      ],
+      [
+        14.4658451,
+        67.2772857
+      ],
+      [
+        14.4706082,
+        67.2775572
+      ],
+      [
+        14.4730528,
+        67.2776985
+      ],
+      [
+        14.4743063,
+        67.2777666
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/223408687",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/223408687"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4327464,
+        67.2780379
+      ],
+      [
+        14.4330257,
+        67.2780103
+      ],
+      [
+        14.4331117,
+        67.2779948
+      ],
+      [
+        14.4331934,
+        67.2779743
+      ],
+      [
+        14.4337855,
+        67.2778145
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/223408696",
+  "properties": {
+    "highway": "primary",
+    "junction": "roundabout",
+    "oneway": "yes",
+    "ref": "80",
+    "id": "way/223408696"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.5026288,
+        67.2770931
+      ],
+      [
+        14.5026314,
+        67.2771308
+      ],
+      [
+        14.5026176,
+        67.2771557
+      ],
+      [
+        14.5025918,
+        67.2771791
+      ],
+      [
+        14.5025549,
+        67.2772002
+      ],
+      [
+        14.5024798,
+        67.2772264
+      ],
+      [
+        14.5023884,
+        67.2772431
+      ],
+      [
+        14.5022884,
+        67.2772488
+      ],
+      [
+        14.5021984,
+        67.2772442
+      ],
+      [
+        14.5021147,
+        67.2772307
+      ],
+      [
+        14.5020429,
+        67.2772092
+      ],
+      [
+        14.5019893,
+        67.277182
+      ],
+      [
+        14.5019553,
+        67.2771505
+      ],
+      [
+        14.5019482,
+        67.2771307
+      ],
+      [
+        14.5019432,
+        67.2771166
+      ],
+      [
+        14.5019538,
+        67.2770827
+      ],
+      [
+        14.5019737,
+        67.2770607
+      ],
+      [
+        14.5020032,
+        67.2770403
+      ],
+      [
+        14.5020414,
+        67.2770223
+      ],
+      [
+        14.5020873,
+        67.277007
+      ],
+      [
+        14.5021757,
+        67.2769894
+      ],
+      [
+        14.5022383,
+        67.2769848
+      ],
+      [
+        14.5022736,
+        67.2769822
+      ],
+      [
+        14.5023737,
+        67.2769862
+      ],
+      [
+        14.5024665,
+        67.2770012
+      ],
+      [
+        14.5025443,
+        67.2770259
+      ],
+      [
+        14.5025989,
+        67.2770571
+      ],
+      [
+        14.5026288,
+        67.2770931
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331870785",
+  "properties": {
+    "destination:lanes": "Bestemorenga;Grønnåsen|Fauske|Fauske;Bodøsjøen;Jensvoll",
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxheight": "4.4",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "placement": "left_of:3",
+    "ref": "80",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through;right",
+    "id": "way/331870785"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4575093,
+        67.2766891
+      ],
+      [
+        14.4585872,
+        67.276776
+      ],
+      [
+        14.4592355,
+        67.2768287
+      ],
+      [
+        14.4595729,
+        67.2768518
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331911126",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/331911126"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4777406,
+        67.2779179
+      ],
+      [
+        14.4763337,
+        67.277889
+      ],
+      [
+        14.4754598,
+        67.2778528
+      ],
+      [
+        14.4743063,
+        67.2777666
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331911127",
+  "properties": {
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "placement": "right_of:2",
+    "ref": "80",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through;right",
+    "id": "way/331911127"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4791474,
+        67.2779509
+      ],
+      [
+        14.4781885,
+        67.2779261
+      ],
+      [
+        14.4779638,
+        67.2779207
+      ],
+      [
+        14.4777406,
+        67.2779179
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331911128",
+  "properties": {
+    "destination:lanes": "Stille Dal|Fauske|Fauske;Alstad",
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "placement": "right_of:2",
+    "ref": "80",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through;right",
+    "id": "way/331911128"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4761605,
+        67.2777826
+      ],
+      [
+        14.4767629,
+        67.2777969
+      ],
+      [
+        14.4772314,
+        67.2778057
+      ],
+      [
+        14.477535,
+        67.2778125
+      ],
+      [
+        14.4777395,
+        67.2778154
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331911129",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/331911129"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4779797,
+        67.2778206
+      ],
+      [
+        14.4782011,
+        67.2778259
+      ],
+      [
+        14.479158,
+        67.2778578
+      ],
+      [
+        14.4795334,
+        67.2778759
+      ],
+      [
+        14.479984,
+        67.2778988
+      ],
+      [
+        14.4811821,
+        67.2780198
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331914396",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "12",
+    "id": "way/331914396"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.5021147,
+        67.2772307
+      ],
+      [
+        14.5019571,
+        67.2772231
+      ],
+      [
+        14.5015468,
+        67.277235
+      ],
+      [
+        14.501237,
+        67.2772148
+      ],
+      [
+        14.5009393,
+        67.2771676
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/331914397",
+  "properties": {
+    "highway": "primary",
+    "lit": "yes",
+    "maxheight": "4.4",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "12",
+    "id": "way/331914397"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.489719,
+        67.2783214
+      ],
+      [
+        14.4900457,
+        67.278284
+      ],
+      [
+        14.4903622,
+        67.2782446
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/551841580",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxheight": "4.4",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/551841580"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.459507,
+        67.2769481
+      ],
+      [
+        14.4586462,
+        67.2768754
+      ],
+      [
+        14.45777,
+        67.276799
+      ],
+      [
+        14.4568809,
+        67.2767249
+      ],
+      [
+        14.454858,
+        67.2765611
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/655125107",
+  "properties": {
+    "highway": "primary",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "12",
+    "id": "way/655125107"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4958699,
+        67.2772636
+      ],
+      [
+        14.495623,
+        67.2772971
+      ],
+      [
+        14.4950676,
+        67.2773916
+      ],
+      [
+        14.4944568,
+        67.2775045
+      ],
+      [
+        14.4932407,
+        67.2777362
+      ],
+      [
+        14.4920058,
+        67.2779806
+      ],
+      [
+        14.4913986,
+        67.278098
+      ],
+      [
+        14.4908206,
+        67.2781891
+      ],
+      [
+        14.4903622,
+        67.2782446
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/686533467",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/686533467"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4338901,
+        67.2778709
+      ],
+      [
+        14.433509,
+        67.2779739
+      ],
+      [
+        14.4333687,
+        67.2780217
+      ],
+      [
+        14.4332268,
+        67.2780994
+      ],
+      [
+        14.4332149,
+        67.2781112
+      ],
+      [
+        14.4331429,
+        67.2781826
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/686533468",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/686533468"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4337855,
+        67.2778145
+      ],
+      [
+        14.4342894,
+        67.277681
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/686533469",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/686533469"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4344069,
+        67.2777313
+      ],
+      [
+        14.4338901,
+        67.2778709
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/686533470",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "10",
+    "id": "way/686533470"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4342894,
+        67.277681
+      ],
+      [
+        14.4364565,
+        67.2770934
+      ],
+      [
+        14.437834,
+        67.276721
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/784557110",
+  "properties": {
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "placement": "left_of:3",
+    "ref": "80",
+    "surface": "asphalt",
+    "turn:lanes": "left|through|through;right",
+    "id": "way/784557110"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4611889,
+        67.2770629
+      ],
+      [
+        14.4598988,
+        67.2769728
+      ],
+      [
+        14.459507,
+        67.2769481
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/784557111",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/784557111"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.437943,
+        67.276786
+      ],
+      [
+        14.4365462,
+        67.2771578
+      ],
+      [
+        14.4344069,
+        67.2777313
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/784557211",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/784557211"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.437834,
+        67.276721
+      ],
+      [
+        14.4386517,
+        67.2765033
+      ],
+      [
+        14.4395643,
+        67.2762996
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/784557212",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/784557212"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4395643,
+        67.2762996
+      ],
+      [
+        14.4387503,
+        67.2765674
+      ],
+      [
+        14.437943,
+        67.276786
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1061824573",
+  "properties": {
+    "highway": "primary",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Bodøveien",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "12",
+    "id": "way/1061824573"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.5009393,
+        67.2771676
+      ],
+      [
+        14.5006724,
+        67.2771402
+      ],
+      [
+        14.5003317,
+        67.2771132
+      ],
+      [
+        14.4996974,
+        67.2770748
+      ],
+      [
+        14.4990375,
+        67.2770573
+      ],
+      [
+        14.4980632,
+        67.2770764
+      ],
+      [
+        14.497393,
+        67.2771129
+      ],
+      [
+        14.4967434,
+        67.2771635
+      ],
+      [
+        14.4961844,
+        67.277221
+      ],
+      [
+        14.4958699,
+        67.2772636
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1061824574",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "width": "12",
+    "id": "way/1061824574"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.5009393,
+        67.2771676
+      ],
+      [
+        14.5012477,
+        67.2771811
+      ],
+      [
+        14.5015535,
+        67.2771858
+      ],
+      [
+        14.5018539,
+        67.2771437
+      ],
+      [
+        14.5019538,
+        67.2770827
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1241554713",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "60",
+    "name": "Bodøveien",
+    "oneway": "yes",
+    "ref": "80",
+    "surface": "asphalt",
+    "id": "way/1241554713"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.4777395,
+        67.2778154
+      ],
+      [
+        14.4779797,
+        67.2778206
+      ]
+    ]
+  }
+}
+]
+}

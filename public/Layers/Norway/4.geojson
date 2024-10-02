@@ -1,0 +1,3701 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/3235490",
+  "properties": {
+    "cycleway:right": "lane",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Jens Bjelkes gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk": "separate",
+    "surface": "asphalt",
+    "turn:lanes": "left|left;through;right",
+    "wikidata": "Q19376204",
+    "id": "way/3235490"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7657607,
+        59.91784
+      ],
+      [
+        10.7650364,
+        59.91844
+      ],
+      [
+        10.7648425,
+        59.9185954
+      ],
+      [
+        10.764807,
+        59.9186268
+      ],
+      [
+        10.7647752,
+        59.9186573
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3235496",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "no|",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "turn:lanes": "|through;right",
+    "wikidata": "Q19384163",
+    "id": "way/3235496"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7616375,
+        59.9154249
+      ],
+      [
+        10.7628091,
+        59.9158728
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3235509",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/3235509"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7661142,
+        59.9175731
+      ],
+      [
+        10.7661047,
+        59.9176205
+      ],
+      [
+        10.7661032,
+        59.9176602
+      ],
+      [
+        10.7661123,
+        59.9176903
+      ],
+      [
+        10.7661259,
+        59.9177159
+      ],
+      [
+        10.7661471,
+        59.9177473
+      ],
+      [
+        10.7661866,
+        59.9177902
+      ],
+      [
+        10.7663402,
+        59.9179183
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3236403",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19384163",
+    "id": "way/3236403"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7603053,
+        59.9149923
+      ],
+      [
+        10.7602765,
+        59.9149213
+      ],
+      [
+        10.7602389,
+        59.9148671
+      ],
+      [
+        10.7602059,
+        59.9148283
+      ],
+      [
+        10.7598599,
+        59.9144993
+      ],
+      [
+        10.7597385,
+        59.9143808
+      ],
+      [
+        10.7596307,
+        59.9142759
+      ],
+      [
+        10.7595104,
+        59.9141516
+      ],
+      [
+        10.7593714,
+        59.9139975
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3236425",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/3236425"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7781747,
+        59.9331137
+      ],
+      [
+        10.7781441,
+        59.9330578
+      ],
+      [
+        10.7781058,
+        59.9330198
+      ],
+      [
+        10.7780186,
+        59.9329571
+      ],
+      [
+        10.7772597,
+        59.9325621
+      ],
+      [
+        10.7770188,
+        59.9324402
+      ],
+      [
+        10.7760361,
+        59.9318857
+      ],
+      [
+        10.7753362,
+        59.9315948
+      ],
+      [
+        10.7747541,
+        59.9314133
+      ],
+      [
+        10.7741292,
+        59.9312621
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3236462",
+  "properties": {
+    "highway": "primary",
+    "lane_markings": "no",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "parking:lane:both": "no",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "width": "3",
+    "id": "way/3236462"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7777677,
+        59.9285937
+      ],
+      [
+        10.7777471,
+        59.9285179
+      ],
+      [
+        10.7777099,
+        59.9284436
+      ],
+      [
+        10.777532,
+        59.928179
+      ],
+      [
+        10.7772737,
+        59.9277952
+      ],
+      [
+        10.7768521,
+        59.9272282
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3236463",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/3236463"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.778004,
+        59.928529
+      ],
+      [
+        10.7780339,
+        59.9287408
+      ],
+      [
+        10.7782266,
+        59.9297899
+      ],
+      [
+        10.7782552,
+        59.9299528
+      ],
+      [
+        10.778392,
+        59.9307284
+      ],
+      [
+        10.7784078,
+        59.9308066
+      ],
+      [
+        10.7784651,
+        59.931338
+      ],
+      [
+        10.7784853,
+        59.9314616
+      ],
+      [
+        10.7785377,
+        59.9318804
+      ],
+      [
+        10.7786028,
+        59.9323802
+      ],
+      [
+        10.7786561,
+        59.9326771
+      ],
+      [
+        10.778677,
+        59.9327506
+      ],
+      [
+        10.7786967,
+        59.9328251
+      ],
+      [
+        10.778716,
+        59.9328704
+      ],
+      [
+        10.7787432,
+        59.9329139
+      ],
+      [
+        10.7787809,
+        59.9329675
+      ],
+      [
+        10.7788496,
+        59.9330633
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/3236464",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/3236464"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7784584,
+        59.9327535
+      ],
+      [
+        10.7784273,
+        59.9325803
+      ],
+      [
+        10.7783869,
+        59.9323878
+      ],
+      [
+        10.7783602,
+        59.9322982
+      ],
+      [
+        10.7783123,
+        59.9319009
+      ],
+      [
+        10.7782556,
+        59.931468
+      ],
+      [
+        10.778171,
+        59.9308243
+      ],
+      [
+        10.7781584,
+        59.9307396
+      ],
+      [
+        10.7780184,
+        59.9299727
+      ],
+      [
+        10.7780006,
+        59.92987
+      ],
+      [
+        10.7779174,
+        59.9293895
+      ],
+      [
+        10.7778898,
+        59.9292301
+      ],
+      [
+        10.7778069,
+        59.9287516
+      ],
+      [
+        10.7777677,
+        59.9285937
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/4682713",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19384163",
+    "id": "way/4682713"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7595099,
+        59.9139673
+      ],
+      [
+        10.7596486,
+        59.9141152
+      ],
+      [
+        10.7597769,
+        59.9142463
+      ],
+      [
+        10.7598769,
+        59.9143411
+      ],
+      [
+        10.7600167,
+        59.9144716
+      ],
+      [
+        10.7601173,
+        59.9145682
+      ],
+      [
+        10.7601569,
+        59.9146061
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/26309412",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Fagerheimgata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "width:lanes": "4.5|4.5",
+    "id": "way/26309412"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7714671,
+        59.9309534
+      ],
+      [
+        10.7712616,
+        59.9309156
+      ],
+      [
+        10.7710581,
+        59.9308751
+      ],
+      [
+        10.7709467,
+        59.9308465
+      ],
+      [
+        10.7708304,
+        59.9308159
+      ],
+      [
+        10.7706182,
+        59.9307458
+      ],
+      [
+        10.7705142,
+        59.9307058
+      ],
+      [
+        10.7704543,
+        59.9306796
+      ],
+      [
+        10.7701924,
+        59.9305348
+      ],
+      [
+        10.7699711,
+        59.9304071
+      ],
+      [
+        10.7695258,
+        59.9301473
+      ],
+      [
+        10.7693481,
+        59.9300446
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/31928236",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "50",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:lanes": "slight_left;through|through;slight_right",
+    "wikidata": "Q19384163",
+    "id": "way/31928236"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7584621,
+        59.9129617
+      ],
+      [
+        10.7582216,
+        59.9126911
+      ],
+      [
+        10.7581247,
+        59.9125812
+      ],
+      [
+        10.7580714,
+        59.9125305
+      ],
+      [
+        10.7580131,
+        59.9124849
+      ],
+      [
+        10.7579544,
+        59.9124491
+      ],
+      [
+        10.7578864,
+        59.9124124
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/36950427",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/36950427"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7624895,
+        59.9160763
+      ],
+      [
+        10.7626596,
+        59.9160216
+      ],
+      [
+        10.7627027,
+        59.916011
+      ],
+      [
+        10.7627461,
+        59.9160019
+      ],
+      [
+        10.7628154,
+        59.9159944
+      ],
+      [
+        10.7628699,
+        59.9159915
+      ],
+      [
+        10.7629093,
+        59.9159898
+      ],
+      [
+        10.7629308,
+        59.9159889
+      ],
+      [
+        10.7629933,
+        59.9159906
+      ],
+      [
+        10.7631503,
+        59.9160029
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/36950428",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19384163",
+    "id": "way/36950428"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7624868,
+        59.9158849
+      ],
+      [
+        10.7624484,
+        59.9158577
+      ],
+      [
+        10.7623961,
+        59.9158302
+      ],
+      [
+        10.7611813,
+        59.9153664
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/36951783",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19384163",
+    "id": "way/36951783"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7582594,
+        59.9123614
+      ],
+      [
+        10.7582598,
+        59.9124219
+      ],
+      [
+        10.7582691,
+        59.9124764
+      ],
+      [
+        10.7582882,
+        59.9125303
+      ],
+      [
+        10.7583086,
+        59.9125711
+      ],
+      [
+        10.7583374,
+        59.9126248
+      ],
+      [
+        10.75838,
+        59.9126813
+      ],
+      [
+        10.7584939,
+        59.912814
+      ],
+      [
+        10.7585965,
+        59.9129318
+      ],
+      [
+        10.7590882,
+        59.9134866
+      ],
+      [
+        10.7595099,
+        59.9139673
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/36962691",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "no|",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "sidewalk": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/36962691"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7635996,
+        59.9161626
+      ],
+      [
+        10.7640996,
+        59.9163461
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/36962702",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:bicycle:lanes": "through|none",
+    "turn:bus:lanes": "through|none",
+    "turn:lanes": "through|right",
+    "wikidata": "Q11982988",
+    "id": "way/36962702"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7643844,
+        59.9184633
+      ],
+      [
+        10.7640131,
+        59.9182772
+      ],
+      [
+        10.7639109,
+        59.9182267
+      ],
+      [
+        10.7637571,
+        59.9181494
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/70540448",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxwidth": "3.1",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "width": "4",
+    "id": "way/70540448"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7763251,
+        59.926232
+      ],
+      [
+        10.7763631,
+        59.9262632
+      ],
+      [
+        10.7763996,
+        59.9262976
+      ],
+      [
+        10.7764613,
+        59.9263599
+      ],
+      [
+        10.777052,
+        59.9270919
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/101716985",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/101716985"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.775549,
+        59.9241714
+      ],
+      [
+        10.7754084,
+        59.9240821
+      ],
+      [
+        10.775264,
+        59.923989
+      ],
+      [
+        10.7750714,
+        59.9238762
+      ],
+      [
+        10.7742407,
+        59.9233823
+      ],
+      [
+        10.7741798,
+        59.923346
+      ],
+      [
+        10.7741227,
+        59.923307
+      ],
+      [
+        10.77403,
+        59.9231928
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/102296653",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/102296653"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.772449,
+        59.9309807
+      ],
+      [
+        10.7728377,
+        59.9310065
+      ],
+      [
+        10.773348,
+        59.9310636
+      ],
+      [
+        10.7738234,
+        59.9311385
+      ],
+      [
+        10.7741741,
+        59.9312077
+      ],
+      [
+        10.7748078,
+        59.9313589
+      ],
+      [
+        10.7749513,
+        59.9313982
+      ],
+      [
+        10.775418,
+        59.9315507
+      ],
+      [
+        10.7757394,
+        59.9316747
+      ],
+      [
+        10.7759534,
+        59.9317557
+      ],
+      [
+        10.7761221,
+        59.9318402
+      ],
+      [
+        10.7771517,
+        59.9323777
+      ],
+      [
+        10.7773879,
+        59.9325039
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/102296699",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "turn:lanes": "through|through;right",
+    "id": "way/102296699"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7773879,
+        59.9325039
+      ],
+      [
+        10.7780063,
+        59.9328481
+      ],
+      [
+        10.7781379,
+        59.9329054
+      ],
+      [
+        10.7782337,
+        59.9329518
+      ],
+      [
+        10.778313,
+        59.9329767
+      ],
+      [
+        10.778413,
+        59.9330087
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/110577606",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/110577606"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7749701,
+        59.9237177
+      ],
+      [
+        10.7751106,
+        59.9237311
+      ],
+      [
+        10.7751779,
+        59.9237352
+      ],
+      [
+        10.775236,
+        59.9237323
+      ],
+      [
+        10.7752934,
+        59.9237227
+      ],
+      [
+        10.7753462,
+        59.9237054
+      ],
+      [
+        10.7754123,
+        59.9236742
+      ],
+      [
+        10.7754703,
+        59.9236423
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/110577636",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "no|",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/110577636"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7749701,
+        59.9237177
+      ],
+      [
+        10.7750606,
+        59.9237664
+      ],
+      [
+        10.7751169,
+        59.9237906
+      ],
+      [
+        10.7751679,
+        59.9238051
+      ],
+      [
+        10.775241,
+        59.9238195
+      ],
+      [
+        10.7753201,
+        59.9238289
+      ],
+      [
+        10.7753858,
+        59.9238353
+      ],
+      [
+        10.7754334,
+        59.9238387
+      ],
+      [
+        10.7755013,
+        59.9238432
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/111089621",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle": "no",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "psv": "designated",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/111089621"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7640996,
+        59.9163461
+      ],
+      [
+        10.7642066,
+        59.9164071
+      ],
+      [
+        10.7643163,
+        59.916456
+      ],
+      [
+        10.7643916,
+        59.9164845
+      ],
+      [
+        10.7644726,
+        59.9165125
+      ],
+      [
+        10.7646386,
+        59.9165475
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/113869447",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "|no",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/113869447"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7663402,
+        59.9179183
+      ],
+      [
+        10.7661369,
+        59.9178454
+      ],
+      [
+        10.7660712,
+        59.917833
+      ],
+      [
+        10.7660061,
+        59.9178229
+      ],
+      [
+        10.7659558,
+        59.9178195
+      ],
+      [
+        10.7658904,
+        59.9178205
+      ],
+      [
+        10.7658215,
+        59.9178295
+      ],
+      [
+        10.7657607,
+        59.91784
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/113869487",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:lanes": "left;through|through;right",
+    "wikidata": "Q11999604",
+    "id": "way/113869487"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7715511,
+        59.921632
+      ],
+      [
+        10.7717368,
+        59.9217329
+      ],
+      [
+        10.7718149,
+        59.9217812
+      ],
+      [
+        10.7718739,
+        59.9218217
+      ],
+      [
+        10.7719504,
+        59.9218753
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/113871543",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn": "through",
+    "wikidata": "Q11982988",
+    "id": "way/113871543"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7631412,
+        59.917851
+      ],
+      [
+        10.7629026,
+        59.9176976
+      ],
+      [
+        10.7628103,
+        59.9176527
+      ],
+      [
+        10.7626609,
+        59.9175677
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/113871551",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn": "right",
+    "turn:bicycle": "none",
+    "turn:bus": "none",
+    "wikidata": "Q11982988",
+    "id": "way/113871551"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7631412,
+        59.917851
+      ],
+      [
+        10.7628379,
+        59.9177312
+      ],
+      [
+        10.7627477,
+        59.9176929
+      ],
+      [
+        10.7626755,
+        59.9176608
+      ],
+      [
+        10.7626172,
+        59.9176304
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/113871563",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/113871563"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7624548,
+        59.9173998
+      ],
+      [
+        10.7624365,
+        59.9173488
+      ],
+      [
+        10.7623194,
+        59.9169755
+      ],
+      [
+        10.7622792,
+        59.9168673
+      ],
+      [
+        10.7622517,
+        59.9168088
+      ],
+      [
+        10.7622235,
+        59.9167567
+      ],
+      [
+        10.7621746,
+        59.916668
+      ],
+      [
+        10.7621214,
+        59.9165253
+      ],
+      [
+        10.7621071,
+        59.9164773
+      ],
+      [
+        10.7621064,
+        59.9164344
+      ],
+      [
+        10.7621086,
+        59.9163972
+      ],
+      [
+        10.7621192,
+        59.9163614
+      ],
+      [
+        10.7621409,
+        59.9163284
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/124738121",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Fagerheimgata; Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "width:lanes": "4.5|4.5",
+    "id": "way/124738121"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7685879,
+        59.9295595
+      ],
+      [
+        10.7688548,
+        59.9296414
+      ],
+      [
+        10.7696305,
+        59.930096
+      ],
+      [
+        10.769989,
+        59.930306
+      ],
+      [
+        10.7702527,
+        59.9304578
+      ],
+      [
+        10.7705236,
+        59.9306065
+      ],
+      [
+        10.770641,
+        59.930654
+      ],
+      [
+        10.7707621,
+        59.9306995
+      ],
+      [
+        10.7708864,
+        59.9307387
+      ],
+      [
+        10.7710259,
+        59.93078
+      ],
+      [
+        10.7711667,
+        59.9308163
+      ],
+      [
+        10.7713173,
+        59.9308523
+      ],
+      [
+        10.7715078,
+        59.9308929
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/124804367",
+  "properties": {
+    "cycleway:right": "lane",
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Jens Bjelkes gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19376204",
+    "id": "way/124804367"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7661142,
+        59.9175731
+      ],
+      [
+        10.7659555,
+        59.9176745
+      ],
+      [
+        10.7658941,
+        59.91772
+      ],
+      [
+        10.7658286,
+        59.9177778
+      ],
+      [
+        10.7657607,
+        59.91784
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/133800842",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "motor_vehicle:lanes:forward": "no|",
+    "name": "Sars' gate",
+    "placement:forward": "left_of:1",
+    "psv:lanes:forward": "designated|",
+    "ref": "4",
+    "sidewalk": "left",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/133800842"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.772273,
+        59.9221431
+      ],
+      [
+        10.772354,
+        59.9221923
+      ],
+      [
+        10.7731187,
+        59.922647
+      ],
+      [
+        10.7733744,
+        59.9228001
+      ],
+      [
+        10.77403,
+        59.9231928
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/133800843",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "parking:lane:both": "parallel",
+    "ref": "4",
+    "sidewalk": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/133800843"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7692921,
+        59.9197722
+      ],
+      [
+        10.7680228,
+        59.9189815
+      ],
+      [
+        10.766874,
+        59.9182568
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/133800844",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/133800844"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.772273,
+        59.9221431
+      ],
+      [
+        10.7720295,
+        59.9220311
+      ],
+      [
+        10.7719576,
+        59.9219912
+      ],
+      [
+        10.771817,
+        59.9219083
+      ],
+      [
+        10.7717342,
+        59.9218554
+      ],
+      [
+        10.771686,
+        59.9218161
+      ],
+      [
+        10.7716376,
+        59.9217643
+      ],
+      [
+        10.7715511,
+        59.921632
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/133801576",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Jens Bjelkes gate",
+    "oneway": "no",
+    "ref": "4",
+    "sidewalk": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "wikidata": "Q19376204",
+    "id": "way/133801576"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7665532,
+        59.9171961
+      ],
+      [
+        10.7664893,
+        59.9172495
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/136831551",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "width": "4",
+    "id": "way/136831551"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7763187,
+        59.926548
+      ],
+      [
+        10.7762424,
+        59.9264509
+      ],
+      [
+        10.7762045,
+        59.9264065
+      ],
+      [
+        10.7761524,
+        59.926347
+      ],
+      [
+        10.7761461,
+        59.9263416
+      ],
+      [
+        10.7761174,
+        59.9263169
+      ],
+      [
+        10.7760806,
+        59.9262918
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/315066339",
+  "properties": {
+    "highway": "primary",
+    "lane_markings": "no",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "parking:lane:both": "no",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/315066339"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7771202,
+        59.9271789
+      ],
+      [
+        10.7775679,
+        59.9277905
+      ],
+      [
+        10.777797,
+        59.928149
+      ],
+      [
+        10.7779594,
+        59.9284033
+      ],
+      [
+        10.7779859,
+        59.9284665
+      ],
+      [
+        10.778004,
+        59.928529
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/338350794",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "no|",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/338350794"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.774306,
+        59.9233056
+      ],
+      [
+        10.7743548,
+        59.923334
+      ],
+      [
+        10.7748708,
+        59.9236579
+      ],
+      [
+        10.7749298,
+        59.9236945
+      ],
+      [
+        10.7749701,
+        59.9237177
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766488",
+  "properties": {
+    "bus:lanes": "designated|",
+    "cycleway:right": "lane",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "no|",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/377766488"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7656622,
+        59.9169196
+      ],
+      [
+        10.7659871,
+        59.9170364
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766489",
+  "properties": {
+    "cycleway:right": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "no|",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/377766489"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7646386,
+        59.9165475
+      ],
+      [
+        10.7647823,
+        59.9165968
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766490",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "no",
+    "surface": "asphalt",
+    "turn": "left",
+    "turn:bicycle": "none",
+    "turn:bus": "none",
+    "wikidata": "Q19394153",
+    "id": "way/377766490"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7650584,
+        59.9166965
+      ],
+      [
+        10.7652947,
+        59.9168139
+      ],
+      [
+        10.7653987,
+        59.9168504
+      ],
+      [
+        10.7654691,
+        59.9168751
+      ],
+      [
+        10.7655477,
+        59.9168932
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766491",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/377766491"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7640996,
+        59.9163461
+      ],
+      [
+        10.7643121,
+        59.9163949
+      ],
+      [
+        10.7643776,
+        59.9164162
+      ],
+      [
+        10.7644487,
+        59.916444
+      ],
+      [
+        10.764513,
+        59.9164688
+      ],
+      [
+        10.7646386,
+        59.9165475
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766492",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "turn": "through",
+    "wikidata": "Q19394153",
+    "id": "way/377766492"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7650584,
+        59.9166965
+      ],
+      [
+        10.7653595,
+        59.9167741
+      ],
+      [
+        10.7654537,
+        59.9168081
+      ],
+      [
+        10.7655182,
+        59.9168309
+      ],
+      [
+        10.7655815,
+        59.9168699
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766493",
+  "properties": {
+    "bus": "designated",
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "vehicle": "no",
+    "wikidata": "Q19394153",
+    "id": "way/377766493"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7659871,
+        59.9170364
+      ],
+      [
+        10.766112,
+        59.9171138
+      ],
+      [
+        10.7662956,
+        59.9171821
+      ],
+      [
+        10.7663669,
+        59.9172067
+      ],
+      [
+        10.7664893,
+        59.9172495
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377766494",
+  "properties": {
+    "cycleway:right": "lane",
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn": "left;right",
+    "wikidata": "Q19394153",
+    "id": "way/377766494"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7659871,
+        59.9170364
+      ],
+      [
+        10.766173,
+        59.9170745
+      ],
+      [
+        10.7663602,
+        59.9171346
+      ],
+      [
+        10.7664304,
+        59.9171575
+      ],
+      [
+        10.7665532,
+        59.9171961
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787236",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "parking:lane:both": "parallel",
+    "ref": "4",
+    "sidewalk": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/377787236"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7706401,
+        59.920827
+      ],
+      [
+        10.7699092,
+        59.9202026
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787237",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "no|",
+    "name": "Sars' gate",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "surface": "asphalt",
+    "id": "way/377787237"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7755013,
+        59.9238432
+      ],
+      [
+        10.7756218,
+        59.923843
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787238",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "parking:lane:left": "parallel",
+    "ref": "4",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "turn:lanes:forward": "left;through|through;right",
+    "wikidata": "Q11999604",
+    "id": "way/377787238"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7711446,
+        59.9212977
+      ],
+      [
+        10.7715005,
+        59.92159
+      ],
+      [
+        10.7715511,
+        59.921632
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787239",
+  "properties": {
+    "cycleway:right": "no",
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/377787239"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7699092,
+        59.9202026
+      ],
+      [
+        10.7697449,
+        59.9201355
+      ],
+      [
+        10.7696654,
+        59.9200763
+      ],
+      [
+        10.7695741,
+        59.9200087
+      ],
+      [
+        10.7695047,
+        59.9199573
+      ],
+      [
+        10.7694466,
+        59.9199199
+      ],
+      [
+        10.769385,
+        59.9198803
+      ],
+      [
+        10.7692921,
+        59.9197722
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787240",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/377787240"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7709416,
+        59.9210292
+      ],
+      [
+        10.7710064,
+        59.9210984
+      ],
+      [
+        10.7710373,
+        59.9211346
+      ],
+      [
+        10.7710809,
+        59.9211898
+      ],
+      [
+        10.7711446,
+        59.9212977
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787242",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/377787242"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7692921,
+        59.9197722
+      ],
+      [
+        10.7694792,
+        59.9198515
+      ],
+      [
+        10.7695298,
+        59.9198858
+      ],
+      [
+        10.7695886,
+        59.9199257
+      ],
+      [
+        10.7696669,
+        59.919979
+      ],
+      [
+        10.769715,
+        59.9200118
+      ],
+      [
+        10.7697567,
+        59.9200467
+      ],
+      [
+        10.7698319,
+        59.9201048
+      ],
+      [
+        10.7699092,
+        59.9202026
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377787243",
+  "properties": {
+    "cycleway:right": "no",
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/377787243"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7711446,
+        59.9212977
+      ],
+      [
+        10.7709843,
+        59.9212077
+      ],
+      [
+        10.7709274,
+        59.9211601
+      ],
+      [
+        10.7708859,
+        59.9211175
+      ],
+      [
+        10.7708187,
+        59.9210514
+      ],
+      [
+        10.7707564,
+        59.9209913
+      ],
+      [
+        10.7707162,
+        59.9209528
+      ],
+      [
+        10.7706835,
+        59.9209066
+      ],
+      [
+        10.7706401,
+        59.920827
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377796824",
+  "properties": {
+    "cycleway:right": "lane",
+    "highway": "primary",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Jens Bjelkes gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "turn:lanes": "through|through|slight_right",
+    "wikidata": "Q19376204",
+    "id": "way/377796824"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7664893,
+        59.9172495
+      ],
+      [
+        10.7661142,
+        59.9175731
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/377796838",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/377796838"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7706401,
+        59.920827
+      ],
+      [
+        10.7707563,
+        59.9208881
+      ],
+      [
+        10.7708159,
+        59.9209273
+      ],
+      [
+        10.7709416,
+        59.9210292
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/467248322",
+  "properties": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "||no",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "psv:lanes": "||designated",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:lanes": "slight_left|slight_right|slight_right",
+    "wikidata": "Q11982988",
+    "id": "way/467248322"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7621409,
+        59.9163284
+      ],
+      [
+        10.762177,
+        59.9162954
+      ],
+      [
+        10.7622333,
+        59.916253
+      ],
+      [
+        10.7624895,
+        59.9160763
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/467248328",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "|no",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/467248328"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7624895,
+        59.9160763
+      ],
+      [
+        10.7625256,
+        59.9160179
+      ],
+      [
+        10.7625337,
+        59.9159966
+      ],
+      [
+        10.7625352,
+        59.9159766
+      ],
+      [
+        10.7625348,
+        59.9159551
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/467248332",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "surface": "asphalt",
+    "id": "way/467248332"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7625348,
+        59.9159551
+      ],
+      [
+        10.7625185,
+        59.9159163
+      ],
+      [
+        10.7624868,
+        59.9158849
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/467248337",
+  "properties": {
+    "bridge": "yes",
+    "highway": "primary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19384163",
+    "id": "way/467248337"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7593714,
+        59.9139975
+      ],
+      [
+        10.7589481,
+        59.9135119
+      ],
+      [
+        10.7584621,
+        59.9129617
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/467248338",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "|no",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "psv:lanes": "|designated",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "turn:lanes": "slight_left;through|",
+    "wikidata": "Q19384163",
+    "id": "way/467248338"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7601569,
+        59.9146061
+      ],
+      [
+        10.76024,
+        59.9146845
+      ],
+      [
+        10.7603063,
+        59.9147462
+      ],
+      [
+        10.7603762,
+        59.9148031
+      ],
+      [
+        10.7603998,
+        59.9148192
+      ],
+      [
+        10.7604395,
+        59.9148463
+      ],
+      [
+        10.760493,
+        59.9148764
+      ],
+      [
+        10.7605984,
+        59.9149298
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/467631579",
+  "properties": {
+    "highway": "primary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "motor_vehicle:lanes:forward": "|no",
+    "name": "Sars' gate",
+    "parking:lane:both": "parallel",
+    "placement:forward": "left_of:1",
+    "psv:lanes:forward": "|designated",
+    "ref": "4",
+    "sidewalk": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/467631579"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.766874,
+        59.9182568
+      ],
+      [
+        10.7663402,
+        59.9179183
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/638847083",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/638847083"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7637571,
+        59.9181494
+      ],
+      [
+        10.7636633,
+        59.9181048
+      ],
+      [
+        10.763561,
+        59.9180564
+      ],
+      [
+        10.7634241,
+        59.9179894
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/877962725",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/877962725"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7626172,
+        59.9176304
+      ],
+      [
+        10.7625488,
+        59.9175892
+      ],
+      [
+        10.7625008,
+        59.9175557
+      ],
+      [
+        10.7624772,
+        59.9175257
+      ],
+      [
+        10.7624574,
+        59.9174671
+      ],
+      [
+        10.7624548,
+        59.9173998
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/877962726",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/877962726"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7626609,
+        59.9175677
+      ],
+      [
+        10.7626213,
+        59.917538
+      ],
+      [
+        10.7625737,
+        59.9174997
+      ],
+      [
+        10.7625515,
+        59.9174818
+      ],
+      [
+        10.7625086,
+        59.9174491
+      ],
+      [
+        10.7624548,
+        59.9173998
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387990",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/880387990"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7655477,
+        59.9168932
+      ],
+      [
+        10.7656622,
+        59.9169196
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387991",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/880387991"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7655815,
+        59.9168699
+      ],
+      [
+        10.7656622,
+        59.9169196
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387992",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "30",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:bicycle:lanes": "none|",
+    "turn:bus:lanes": "none|",
+    "turn:lanes": "left|through",
+    "wikidata": "Q19394153",
+    "id": "way/880387992"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7647823,
+        59.9165968
+      ],
+      [
+        10.7650584,
+        59.9166965
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387993",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/880387993"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7628091,
+        59.9158728
+      ],
+      [
+        10.7629142,
+        59.9159124
+      ],
+      [
+        10.7631503,
+        59.9160029
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387994",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Vahls gate",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q19394153",
+    "id": "way/880387994"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7631503,
+        59.9160029
+      ],
+      [
+        10.7635996,
+        59.9161626
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387995",
+  "properties": {
+    "cycleway:both": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "wikidata": "Q19384163",
+    "id": "way/880387995"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7611813,
+        59.9153664
+      ],
+      [
+        10.7611243,
+        59.9153456
+      ],
+      [
+        10.7609459,
+        59.9152756
+      ],
+      [
+        10.760849,
+        59.9152418
+      ],
+      [
+        10.7607108,
+        59.915202
+      ],
+      [
+        10.7606211,
+        59.9151829
+      ],
+      [
+        10.7605566,
+        59.9151722
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/880387996",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Nylandsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "wikidata": "Q19384163",
+    "id": "way/880387996"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7607741,
+        59.9150545
+      ],
+      [
+        10.7608309,
+        59.9150929
+      ],
+      [
+        10.7608739,
+        59.9151177
+      ],
+      [
+        10.7609348,
+        59.9151519
+      ],
+      [
+        10.7610244,
+        59.9151908
+      ],
+      [
+        10.7611713,
+        59.9152484
+      ],
+      [
+        10.7613184,
+        59.9153029
+      ],
+      [
+        10.7616375,
+        59.9154249
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/882463955",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Fagerheimgata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:lanes": "through|right",
+    "width:lanes": "4.5|4.5",
+    "id": "way/882463955"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7693481,
+        59.9300446
+      ],
+      [
+        10.76921,
+        59.929965
+      ],
+      [
+        10.7687467,
+        59.9296929
+      ],
+      [
+        10.7685879,
+        59.9295595
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/968251914",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "no|",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "placement": "transition",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/968251914"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.77403,
+        59.9231928
+      ],
+      [
+        10.774217,
+        59.9232692
+      ],
+      [
+        10.774306,
+        59.9233056
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/968251915",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "motor_vehicle:lanes": "no|",
+    "name": "Sars' gate",
+    "oneway": "yes",
+    "psv:lanes": "designated|",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11999604",
+    "id": "way/968251915"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7719504,
+        59.9218753
+      ],
+      [
+        10.7720608,
+        59.9219504
+      ],
+      [
+        10.7721246,
+        59.92199
+      ],
+      [
+        10.772273,
+        59.9221431
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1073706984",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxwidth": "3.1",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "good",
+    "surface": "asphalt",
+    "width": "4",
+    "id": "way/1073706984"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.777052,
+        59.9270919
+      ],
+      [
+        10.7771202,
+        59.9271789
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1073707093",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "width": "4",
+    "id": "way/1073707093"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7768521,
+        59.9272282
+      ],
+      [
+        10.7767883,
+        59.9271452
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1094778074",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "id": "way/1094778074"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7784707,
+        59.9330011
+      ],
+      [
+        10.7784679,
+        59.9329186
+      ],
+      [
+        10.7784627,
+        59.9328371
+      ],
+      [
+        10.7784584,
+        59.9327535
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1096220367",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "width": "4",
+    "id": "way/1096220367"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7767883,
+        59.9271452
+      ],
+      [
+        10.7766682,
+        59.9269925
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1096220368",
+  "properties": {
+    "highway": "primary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Trondheimsveien",
+    "oneway": "yes",
+    "parking:lane:left": "no",
+    "parking:lane:right": "parallel",
+    "parking:lane:right:parallel": "street_side",
+    "ref": "4",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "width": "4",
+    "id": "way/1096220368"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7766682,
+        59.9269925
+      ],
+      [
+        10.7765213,
+        59.9268057
+      ],
+      [
+        10.7763187,
+        59.926548
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1123681947",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:lanes": "left;through|through",
+    "id": "way/1123681947"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7741292,
+        59.9312621
+      ],
+      [
+        10.7733151,
+        59.9311204
+      ],
+      [
+        10.7728149,
+        59.931072
+      ],
+      [
+        10.7724307,
+        59.9310401
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1123681948",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:lanes": "through|through;right",
+    "id": "way/1123681948"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7715078,
+        59.9308929
+      ],
+      [
+        10.771683,
+        59.9309195
+      ],
+      [
+        10.7719023,
+        59.9309366
+      ],
+      [
+        10.772449,
+        59.9309807
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1123681949",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Mailundveien",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "id": "way/1123681949"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7724307,
+        59.9310401
+      ],
+      [
+        10.7714671,
+        59.9309534
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1128241619",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "turn:bicycle:lanes": "through|none",
+    "turn:bus:lanes": "through|none",
+    "turn:lanes": "through|right",
+    "wikidata": "Q11982988",
+    "id": "way/1128241619"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7634241,
+        59.9179894
+      ],
+      [
+        10.7631412,
+        59.917851
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1128241620",
+  "properties": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "maxspeed:type": "sign",
+    "name": "Lakkegata",
+    "oneway": "yes",
+    "ref": "4",
+    "surface": "asphalt",
+    "wikidata": "Q11982988",
+    "id": "way/1128241620"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.7647752,
+        59.9186573
+      ],
+      [
+        10.7646442,
+        59.9185935
+      ],
+      [
+        10.7643844,
+        59.9184633
+      ]
+    ]
+  }
+}
+]
+}

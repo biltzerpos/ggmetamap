@@ -4,11 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import TxtOverlay from './ov.jsx';
+
 let map: google.maps.Map;
 let streetViewLayer;
 let lastCountry, lastLayer;
 let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton, coverageButton;
 let boundaryFeatures = [], secondaryFeatures = [];
+let overlay;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
@@ -16,7 +19,7 @@ let infoWindow;
 let editMode = false, debugMode = false, localMode = false, coverageMode = false, askToSave = false;
 let showAreas = true, showBorders = false;
 const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
-let colourDigit = 1; // which digit is used for area code colouring
+let colourDigit = 1; // which digit is used for colour selection
 interface markerLoc {
     text: string;
     type: string;
@@ -24,7 +27,22 @@ interface markerLoc {
     lng: number;
     scale: number;
 }
-
+let colll = {
+    "E 6": 0,
+    "E 12": 1,
+    "E 14": 2,
+    "E 16": 3,
+    "E 18": 4,
+    "E 39": 5,
+    "E 69": 9,
+    "E 134": 7,
+    "E 136": 8,
+    "E 8": 1,
+    "E 10": 2,
+    "E 45": 3,
+    "E 75": 4,
+    "E 105": 5
+};
 
 function colog(a) {
     if (debugMode) console.log(a);
@@ -43,6 +61,7 @@ function newCountryReset() {
     removeAllFeatures();
     removeAllMarkers();
     hideAuxButton();
+    if (overlay) overlay.setMap(null);
     askToSave = false;
     editMode = false;
     editModeButton.textContent = 'Turn Edit Mode ON';
@@ -58,8 +77,12 @@ function newLayerReset(opacity = 0.1) {
         lastLayer = layerMenu.options[layerMenu.selectedIndex].textContent;
         boundaryLayer.setStyle({ strokeOpacity: opacity, fillOpacity: '0' });
         clearSecondaryLayer();
+        secondaryLayer.setStyle({
+            strokeColor: 0,
+            strokeWeight: 3});
         removeAllMarkers();
         hideAuxButton();
+        if (overlay) overlay.setMap(null);
         askToSave = false;
         editMode = false;
         editModeButton.textContent = 'Turn Edit Mode ON';
@@ -91,21 +114,18 @@ function selectOption(menu, option) {
     }
 }
 
-function markerInMiddle(farr, split = false) {
+function markerInMiddle(farr, split = false, col) {
 
               if (farr.length > 0) {
-                  
-                  
                   farr.forEach((feature) => {
+                      let styleOptions = {
+                          strokeColor: colors[col]
+                      }
+                      secondaryLayer.overrideStyle(feature, styleOptions);  
                       let pointsArray = [];
-                      //let first = farr[0];
-                      //let name = "bog";
-                      //if (('Gg' in first) && ('ref' in first.Gg)) {
-                      //    name = first.Gg.ref;
-                      //    name = name.replace(/\s/g, '').replace(/-/g, '');
-                      //    colog(name);
-                      //}
-                      let name = feature.Gg.NAME_2;
+                      //colog(feature);
+                      let name = feature.Fg.ref;
+                      //colog(name);
                       if (split) {
                               let result = '';
                               for (let i = 0; i < name.length; i++) {
@@ -124,7 +144,7 @@ function markerInMiddle(farr, split = false) {
                       if (geometry) {
                           processPoints2(geometry, pointsArray, (p, a) => { a.push(p) });
                       }
-                      console.log(pointsArray.length);
+                      //colog(pointsArray.length);
                       if (pointsArray.length > 0) {
                           let n = 0, avgLat = 0, avgLng = 0;
                           pointsArray.forEach(p => {
@@ -132,21 +152,62 @@ function markerInMiddle(farr, split = false) {
                               avgLng = n * avgLng / (n + 1) + p.lng() / (n + 1);
                               n++;
                           });
-                          placeNewMarker(map, { lat: avgLat, lng: avgLng }, name, null, "name", 8);
+                          //let pp = new google.maps.LatLng(avgLat, avgLng);
+                          //const overlay = new TxtOverlay(pp, name, "transp", 6, map);
+                          //overlay.setMap(map);
+                          placeNewMarker(map, { lat: avgLat, lng: avgLng }, name, null, "name", 6);
                       }
                   });
     }
 }
 
-function colorCoding(farr, col) {
-    //colog(farr);
+function colorCoding(farr, col, w = 5) {
+
+    let arbitrary = false;
+    if (col < 0) {
+        arbitrary = true;
+        col = 0;
+    }
     if (farr.length > 0) {
         farr.forEach((feature) => {
-            //colog("t2");
+
+            //colog(w);
+            //colog(col);
+            colog(feature.Fg.ref);
+            if (arbitrary) col = (Number(feature.Fg.ref)) % 10;
             let styleOptions = {
-                strokeColor: colors[col]
+                strokeColor: colors[col],
+                strokeWeight: w,
             }
             secondaryLayer.overrideStyle(feature, styleOptions);  
+        });
+    }
+}
+
+function colorCoding2(farr, field, field2, digit, colArray, w = 5) {
+
+    if (farr.length > 0) {
+        farr.forEach((feature) => {
+
+            let col = 3;
+            let name = feature[field][field2].toString();
+            colog("here" + name);
+            
+            if (digit < 0) {
+                let index = name.indexOf(";");
+                let rname = index !== -1 ? name.substring(0, index) : name;
+                if (rname in colArray) col = Number(colArray[rname]);   
+            }
+            else {
+                col = Number(name[digit]);
+            }
+            let styleOptions = {
+                strokeColor: colors[col],
+                strokeWeight: w,
+            }
+            secondaryLayer.overrideStyle(feature, styleOptions);
+
+            //markerInMiddle(feature);
         });
     }
 }
@@ -171,19 +232,23 @@ function createCountryChooser(map) {
     countryMenu = document.createElement('select');
     countryMenu.className = "buttons";
 
-  const top = new Option("Choose Country", "0");
-  top.selected = true;
-  top.disabled = true;
-  countryMenu.appendChild(top);
-  countryMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
-  countryMenu.appendChild(new Option("Chile", "Chile"));
+    const top = new Option("Choose Country", "0");
+    top.selected = true;
+    top.disabled = true;
+    countryMenu.appendChild(top);
+    countryMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
+    countryMenu.appendChild(new Option("Chile", "Chile"));
+    countryMenu.appendChild(new Option("Estonia", "Estonia"));
     countryMenu.appendChild(new Option("France", "France"));
     if (localMode) countryMenu.appendChild(new Option("France Sandbox", "France Sandbox"));
+    if (localMode) countryMenu.appendChild(new Option("Greece Sandbox", "Greece Sandbox"));
     if (localMode) countryMenu.appendChild(new Option("Indonesia Sandbox", "Indonesia Sandbox"));
     countryMenu.appendChild(new Option("Indonesia", "Indonesia"));
+    countryMenu.appendChild(new Option("Ireland", "Ireland"));
     countryMenu.appendChild(new Option("Jordan", "Jordan"));
-  countryMenu.appendChild(new Option("Mexico", "Mexico"));
-  countryMenu.appendChild(new Option("Romania", "Romania"));
+    countryMenu.appendChild(new Option("Mexico", "Mexico"));
+    countryMenu.appendChild(new Option("Norway", "Norway"));
+    countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));
     countryMenu.appendChild(new Option("Turkey", "Turkey"));
@@ -216,16 +281,19 @@ function createCountryChooser(map) {
       }
       if (countryMenu.value == "Indonesia") {
           loadGeoJSONFile('/Layers/Indonesia/Level2.geojson');
-          const newtop = new Option("Kabupaten", "Kabupaten");
-          layerMenu.appendChild(newtop);
+          layerMenu.appendChild(new Option("Kabupaten", "Kabupaten"));
+          //layerMenu.appendChild(new Option("Kecamatan", "Kecamatan"));
           layerMenu.onchange = () => {
               if (!newLayerReset(1)) return;
               showAuxButton("Show Province borders");
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
-      if (countryMenu.value == "Indonesia Sandbox") {
-          loadGeoJSONFile('/Layers/Indonesia/Level2.geojson', "boundaryLayer", partial(markerInMiddle, true));
+          if (countryMenu.value == "Greece Sandbox") {
+              loadGeoJSONFile('/Layers/Greece/Level3.geojson', "boundaryLayer", partial(markerInMiddle));
+          }
+          if (countryMenu.value == "Indonesia Sandbox") {
+          loadGeoJSONFile('/Layers/Indonesia/Level3.geojson', "boundaryLayer", partial(markerInMiddle, true));
       }
       if (countryMenu.value == "France") {
           loadGeoJSONFile('/Layers/France/Level2.geojson');
@@ -282,6 +350,82 @@ function createCountryChooser(map) {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
+          if (countryMenu.value == "Estonia") {
+              loadGeoJSONFile('/Layers/Estonia/Level1.geojson');
+              layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
+              layerMenu.appendChild(new Option("Bike routes 1-16", "Bike routes 1-16"));
+              layerMenu.appendChild(new Option("3-digit bike routes", "3-digit bike routes"));
+              layerMenu.appendChild(new Option("Highways", "Highways"));
+              layerMenu.appendChild(new Option("Rivers", "Rivers"));
+              layerMenu.onchange = () => {
+                  if (!newLayerReset(1)) return;
+                  if (layerMenu.value == "Phone Codes") {
+                      loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  }
+                  else if (layerMenu.value == "Bike routes 1-16") {
+                      showAuxButton("Next route");
+                      const geopath = 'Layers/Estonia/geojson/B1.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
+                  }
+                  else if (layerMenu.value == "3-digit bike routes") {
+                      showAuxButton("Next set of routes");
+                      const geopath = 'Layers/Estonia/geojson/B14x.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
+                  }
+                  else if (layerMenu.value == "Highways") {
+                      showAuxButton("Next set of highways");
+                      const geopath = 'Layers/Estonia/geojson/H1.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Highways 12-19");
+                  }
+                  else if (layerMenu.value == "Rivers") {
+                      //showAuxButton("Next set of highways");
+                      const geopath = 'Layers/Estonia/Rivers.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
+                      loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  }
+              };
+          }
+              if (countryMenu.value == "Estonia") {
+              loadGeoJSONFile('/Layers/Estonia/Level1.geojson');
+              layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
+              layerMenu.appendChild(new Option("Bike routes 1-16", "Bike routes 1-16"));
+              layerMenu.appendChild(new Option("3-digit bike routes", "3-digit bike routes"));
+              layerMenu.appendChild(new Option("Highways", "Highways"));
+              layerMenu.appendChild(new Option("Rivers", "Rivers"));
+              layerMenu.onchange = () => {
+                  if (!newLayerReset(1)) return;
+                  if (layerMenu.value == "Phone Codes") {
+                      loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  }
+                  else if (layerMenu.value == "Bike routes 1-16") {
+                      showAuxButton("Next route");
+                      const geopath = 'Layers/Estonia/geojson/B1.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
+                  }
+                  else if (layerMenu.value == "3-digit bike routes") {
+                      showAuxButton("Next set of routes");
+                      const geopath = 'Layers/Estonia/geojson/B14x.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
+                  }
+                  else if (layerMenu.value == "Highways") {
+                      showAuxButton("Next set of highways");
+                      const geopath = 'Layers/Estonia/geojson/H1.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Highways 12-19");
+                  }
+                  else if (layerMenu.value == "Rivers") {
+                      //showAuxButton("Next set of highways");
+                      const geopath = 'Layers/Estonia/Rivers.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
+                      loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  }
+              };
+          }
       if (countryMenu.value == "Jordan") {
           loadGeoJSONFile('/Layers/Jordan/Level0.geojson');          
           const newtop = new Option("Misc Meta", "Misc Meta");
@@ -341,6 +485,45 @@ function createCountryChooser(map) {
               }   
           };
       }
+          if (countryMenu.value == "Norway") {
+              loadGeoJSONFile('/Layers/Norway/Level1.geojson');
+              //layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
+              //layerMenu.appendChild(new Option("Bike routes 1-16", "Bike routes 1-16"));
+              //layerMenu.appendChild(new Option("3-digit bike routes", "3-digit bike routes"));
+              layerMenu.appendChild(new Option("Highways", "Highways"));
+              //layerMenu.appendChild(new Option("Rivers", "Rivers"));
+              layerMenu.onchange = () => {
+                  if (!newLayerReset(0)) return;
+                  //if (layerMenu.value == "Phone Codes") {
+                  //    loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  //}
+                  //else if (layerMenu.value == "Bike routes 1-16") {
+                  //    showAuxButton("Next route");
+                  //    const geopath = 'Layers/Estonia/geojson/B1.geojson';
+                  //    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                  //    placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
+                  //}
+                  //else if (layerMenu.value == "3-digit bike routes") {
+                  //    showAuxButton("Next set of routes");
+                  //    const geopath = 'Layers/Estonia/geojson/B14x.geojson';
+                  //    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+                  //    placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
+                  //}
+                  if (layerMenu.value == "Highways") {
+                      showAuxButton("Next set of highways");
+                      const geopath = 'Layers/Norway/HE.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", -1, colll));
+                      loadMarkerLayer(countryMenu.value, "Ex")
+                      //placeNewMarker(map, { lat: 65.7, lng: 8.9 }, "European Highways");
+                  }
+                  //else if (layerMenu.value == "Rivers") {
+                  //    //showAuxButton("Next set of highways");
+                  //    const geopath = 'Layers/Estonia/Rivers.geojson';
+                  //    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
+                  //    loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  //}
+              };
+          }
       if (countryMenu.value == "Romania") {
           loadGeoJSONFile('/Layers/Romania/Counties.geojson');
           const newtop = new Option("Phone Codes", "Phone Codes");
@@ -360,6 +543,33 @@ function createCountryChooser(map) {
               layerMin = 0; // Images can get arbitrarily small
           };
       }
+          if (countryMenu.value == "Ireland") {
+              loadGeoJSONFile('/Layers/Ireland/Level1.geojson');
+              layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
+              layerMenu.appendChild(new Option("Flags", "Flags"));
+              layerMenu.onchange = () => {
+                  if (!newLayerReset(0)) return;
+                  
+                      loadMarkerLayer(countryMenu.value, layerMenu.value);
+                  
+                  if (layerMenu.value == "Phone Codes") {
+                      const imageBounds = {
+                          north: 55.39670541542703,
+                          south: 51.39515298809492,
+                          east: -5.794921399305524,
+                          west: -10.724657727430525,
+                      };
+
+                      overlay = new google.maps.GroundOverlay(
+                          "/Layers/Ireland/Codes.png",
+                          imageBounds,
+                      );
+                      overlay.setMap(map);
+                  }
+                  
+                  //layerMin = 0; // Images can get arbitrarily small
+              };
+          }
       if (countryMenu.value == "South Africa") {
           loadGeoJSONFile('/Layers/South Africa/Level1.geojson');
           layerMenu.appendChild(new Option("Most useful highway clusters", "Clusters"));
@@ -521,6 +731,7 @@ function removeAllMarkers() {
     }
     markers = [];
 }
+
 function createCoverageButton(map) {
     coverageButton = document.createElement('button');
     coverageButton.className = "buttons";
@@ -674,6 +885,80 @@ function createAuxButton() {
                 auxButton.textContent = "Show Province Borders";
             }
         }
+        else if ((countryMenu.value == "Estonia") && (layerMenu.value == "Bike routes 1-16")) {
+            clearSecondaryLayer();
+            let numb = Number(markers[0].content.textContent.substring(11));
+            numb++;
+            if (numb == 7) numb = 11;
+            if (numb == 17) numb = 1;
+            const geopath = 'Layers/Estonia/geojson/B' + numb + '.geojson';
+            loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+            //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
+            markers[0].content.textContent = "Bike Route " + numb;
+        }
+        else if ((countryMenu.value == "Estonia") && (layerMenu.value == "3-digit bike routes")) {
+            clearSecondaryLayer();
+            let numb = Number(markers[0].content.textContent.substring(12, 14));
+            colog(numb);
+            numb++;
+            if (numb == 15) numb = 16;
+            if (numb == 17) numb = 20;
+            if (numb == 21) numb = 22;
+            if (numb == 24) numb = 26;
+            if (numb == 27) numb = 28;
+            if (numb == 29) numb = 30;
+            if (numb == 31) numb = 32;
+            if (numb == 38) numb = 14;
+            const geopath = 'Layers/Estonia/geojson/B' + numb + 'x.geojson';
+            loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+            //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
+            markers[0].content.textContent = "Bike Routes " + numb + "0-" + numb + "9";
+        }
+        else if ((countryMenu.value == "Estonia") && (layerMenu.value == "Highways")) {
+            clearSecondaryLayer();
+            let numb = Number(markers[0].content.textContent.substring(9, 10));
+            colog(numb);
+            numb++;
+            if (numb == 10) numb = 1;
+            const geopath = 'Layers/Estonia/geojson/H' + numb + '.geojson';
+            loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
+            //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
+            markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
+        }
+        else if ((countryMenu.value == "Norway") && (layerMenu.value == "Highways")) {
+            clearSecondaryLayer();
+            let spornum = markers[0].content.textContent.substring(9, 10);
+            let numb;
+            if (spornum == "H") numb = 0;
+            else if (spornum == " ") numb = 1;
+            else {
+                numb = Number(spornum);
+                numb++;
+            }
+            colog(numb);
+            if (numb == 10) {
+                const geopath = 'Layers/Norway/HE.geojson';
+                
+                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", -1, colll));
+                removeAllMarkers();
+                loadMarkerLayer(countryMenu.value, "Ex");
+                //markers[0].content.textContent = "European Highways";
+            }
+            else if (numb == 0) {
+                const geopath = 'Layers/Norway/H .geojson';
+                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", 0));
+                removeAllMarkers();
+                loadMarkerLayer(countryMenu.value, "0x");
+                //markers[0].content.textContent = "Highways  2-9";
+            }
+            else {
+                const geopath = 'Layers/Norway/H' + numb + '.geojson';
+                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", 1));
+                //markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
+                removeAllMarkers();
+                loadMarkerLayer(countryMenu.value, numb + "x");
+            }
+        }
     });
     return auxButton;
 }
@@ -693,14 +978,17 @@ function hideAuxButton() {
 function getTransform(marker) {
     let sc = 1;
     let fszl = Number(marker.getAttribute("fszl"));
-    let isImage = marker.getAttribute("ggmmtype") == "image";
+    let mtype = marker.getAttribute("ggmmtype");
+    let isImage = mtype == "image";
     if (fszl >= 0) {
         let zoom = map.getZoom() - fszl;
-        if ((!isImage) && (zoom > 0)) zoom = 0;
-        sc = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
-        if (sc < layerMin) sc = 0.1;//  sc = factor; // fszl * factor;
-        let isName = marker.getAttribute("ggmmtype") == "name";
-        if (isName && sc > 1) sc = 1;
+        if ((!isImage) && (zoom > 0)) sc = 1;
+        else {
+            sc = Math.pow(2, zoom); // Math.cos(lat * Math.PI / 180);
+            if (sc < layerMin) sc = 0.1;
+        }
+        //let isName = marker.getAttribute("ggmmtype") == "name";
+        //if ((mtype == "name") && (sc > 1)) sc = 1;
     }
     let transform = "scale(" + sc + "," + sc + ")";
     if (isImage) transform = 'translateY(50%) ' + transform;
@@ -708,7 +996,7 @@ function getTransform(marker) {
 }
 
 function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = -1, draggable = true) {
-    //colog("New marker " + markers.length);
+    colog("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
     
@@ -863,7 +1151,7 @@ async function initMap(): void {
   });
 
     map.addListener('zoom_changed', function () {
-        //console.log(map.getZoom());
+        console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
             //let fszl = Number(markers[i].getAttribute("fszl"));
             markers[i].content.style.transform = getTransform(markers[i]);
@@ -912,6 +1200,8 @@ async function initMap(): void {
     auxButton = createAuxButton();
     //auxDiv.appendChild(auxButton);
     //map.controls[google.maps.ControlPosition.TOP_CENTER].push(auxButton);
+
+    
 }
 
 function setMarkerContent(marker, text, imagepath, type, fszl) {
@@ -1008,10 +1298,6 @@ function clearSecondaryLayer() {
     });
 }
 
-function printArg(arg) {
-    console.log("arg = " + arg);
-}
-
 function loadGeoJsonString(geoString: string, layer = "boundaryLayer", postProcess) {
   try {
     const geojson = JSON.parse(geoString) as any;
@@ -1057,9 +1343,9 @@ function zoom(map: google.maps.Map, layer = "boundaryLayer") {
     map.fitBounds(bounds);
 }
 
-function locWhat(loc, geometry) {
-    loc.lat += 0.01;
-}
+//function locWhat(loc, geometry) {
+//    loc.lat += 0.01;
+//}
 /**
  * Process each point in a Geometry, regardless of how deep the points may lie.
  */
@@ -1187,9 +1473,10 @@ function handleDrop(e: DragEvent) {
 
                 reader.readAsText(file);
             }
-            else if ((file.type == 'image/jpeg') || (file.type == 'image/svg+xml')) {
+            else if (file.type.startsWith("image")) { //((file.type == 'image/jpeg') || (file.type == 'image/svg+xml')) {
                 
                 // read the image...
+                colog("Image dropped");
                 var reader = new FileReader();
                 reader.readAsDataURL(file); 
                 reader.onload = function (e) {
