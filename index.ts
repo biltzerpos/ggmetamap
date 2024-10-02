@@ -252,7 +252,7 @@ function createCountryChooser(map) {
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));
     countryMenu.appendChild(new Option("Turkey", "Turkey"));
-    countryMenu.appendChild(new Option("Turkey (with colors)", "Turkey Sandbox"));
+    //countryMenu.appendChild(new Option("Turkey (with colors)", "Turkey Sandbox"));
     countryMenu.appendChild(new Option("USA", "USA"));
 
     countryMenu.onchange = (event) => {
@@ -388,44 +388,7 @@ function createCountryChooser(map) {
                   }
               };
           }
-              if (countryMenu.value == "Estonia") {
-              loadGeoJSONFile('/Layers/Estonia/Level1.geojson');
-              layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
-              layerMenu.appendChild(new Option("Bike routes 1-16", "Bike routes 1-16"));
-              layerMenu.appendChild(new Option("3-digit bike routes", "3-digit bike routes"));
-              layerMenu.appendChild(new Option("Highways", "Highways"));
-              layerMenu.appendChild(new Option("Rivers", "Rivers"));
-              layerMenu.onchange = () => {
-                  if (!newLayerReset(1)) return;
-                  if (layerMenu.value == "Phone Codes") {
-                      loadMarkerLayer(countryMenu.value, layerMenu.value);
-                  }
-                  else if (layerMenu.value == "Bike routes 1-16") {
-                      showAuxButton("Next route");
-                      const geopath = 'Layers/Estonia/geojson/B1.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
-                  }
-                  else if (layerMenu.value == "3-digit bike routes") {
-                      showAuxButton("Next set of routes");
-                      const geopath = 'Layers/Estonia/geojson/B14x.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
-                  }
-                  else if (layerMenu.value == "Highways") {
-                      showAuxButton("Next set of highways");
-                      const geopath = 'Layers/Estonia/geojson/H1.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Highways 12-19");
-                  }
-                  else if (layerMenu.value == "Rivers") {
-                      //showAuxButton("Next set of highways");
-                      const geopath = 'Layers/Estonia/Rivers.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
-                      loadMarkerLayer(countryMenu.value, layerMenu.value);
-                  }
-              };
-          }
+       
       if (countryMenu.value == "Jordan") {
           loadGeoJSONFile('/Layers/Jordan/Level0.geojson');          
           const newtop = new Option("Misc Meta", "Misc Meta");
@@ -607,40 +570,40 @@ function createCountryChooser(map) {
               }
           };
       }
-      if (countryMenu.value == "Turkey") {
-          loadGeoJSONFile('/Layers/Turkey/Level1.geojson');
-          for (let i = 0; i <= 9; i++) {
-              const optionName = "D" + i + "xx Highway Numbers";
-              layerMenu.appendChild(new Option(optionName, optionName));
-          }
-          layerMenu.onchange = async () => {
-              if (!newLayerReset()) return;
-              showAuxButton("Next option");
-              const styleOptions = {
-                  strokeColor: 'black',
-                  strokeOpacity: '1',
-                  strokeWeight: '5'
-              };
-              secondaryLayer.setStyle(styleOptions);
-              const group = layerMenu.value.substring(1, 2);
-              //Explore code
-              //for (let i = 0; i <= 9; i++) {
-              //    const geopath = 'Layers/Turkey/geojson/D' + group + "0" + i + '.geojson';
-              //    await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions, true);
-              //    //loadMarkerLayer("Turkey", "markers/" + group);
-              //}
-              //for (let i = 10; i <= 99; i++) {
-              //    const geopath = 'Layers/Turkey/geojson/D' + group + i + '.geojson';
-              //    await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions, true);
-              //    //loadMarkerLayer("Turkey", "markers/" + group);
-              //}
+      //if (countryMenu.value == "Turkey") {
+      //    loadGeoJSONFile('/Layers/Turkey/Level1.geojson');
+      //    for (let i = 0; i <= 9; i++) {
+      //        const optionName = "D" + i + "xx Highway Numbers";
+      //        layerMenu.appendChild(new Option(optionName, optionName));
+      //    }
+      //    layerMenu.onchange = async () => {
+      //        if (!newLayerReset()) return;
+      //        showAuxButton("Next option");
+      //        const styleOptions = {
+      //            strokeColor: 'black',
+      //            strokeOpacity: '1',
+      //            strokeWeight: '5'
+      //        };
+      //        secondaryLayer.setStyle(styleOptions);
+      //        const group = layerMenu.value.substring(1, 2);
+      //        //Explore code
+      //        //for (let i = 0; i <= 9; i++) {
+      //        //    const geopath = 'Layers/Turkey/geojson/D' + group + "0" + i + '.geojson';
+      //        //    await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions, true);
+      //        //    //loadMarkerLayer("Turkey", "markers/" + group);
+      //        //}
+      //        //for (let i = 10; i <= 99; i++) {
+      //        //    const geopath = 'Layers/Turkey/geojson/D' + group + i + '.geojson';
+      //        //    await loadGeoJSONFile(geopath, "secondaryLayer", styleOptions, true);
+      //        //    //loadMarkerLayer("Turkey", "markers/" + group);
+      //        //}
               
-              const geopath = 'Layers/Turkey/D' + group + '.geojson';
-              loadGeoJSONFile(geopath, "secondaryLayer");
-              loadMarkerLayer("Turkey", "D" + group);
-          };
-      }
-      if (countryMenu.value == "Turkey Sandbox") {
+      //        const geopath = 'Layers/Turkey/D' + group + '.geojson';
+      //        loadGeoJSONFile(geopath, "secondaryLayer");
+      //        loadMarkerLayer("Turkey", "D" + group);
+      //    };
+      //}
+      if (countryMenu.value == "Turkey") {
           loadGeoJSONFile('/Layers/Turkey/Level1.geojson');
           for (let i = 0; i <= 9; i++) {
               const optionName = "D" + i + "xx Highway Numbers";

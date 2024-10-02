@@ -31,5 +31,9 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.12"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@turf/turf": "^7.1.0",
+    "decimate": "^1.0.1"
+  }
 }
