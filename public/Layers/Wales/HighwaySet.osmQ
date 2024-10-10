@@ -1,0 +1,7 @@
+[timeout:255];
+
+area["name:en"~"Wales"]->.my;
+
+nwr["highway"]["ref"~"^SSSS"](area.my);
+
+out geom;

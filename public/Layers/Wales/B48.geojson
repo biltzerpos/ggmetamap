@@ -1,0 +1,817 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+  "type": "Feature",
+  "id": "way/8105193",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "20 mph",
+    "name": "Dolfor Road",
+    "old_ref": "A483",
+    "oneway": "no",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/8105193"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3178139,
+        52.5107263
+      ],
+      [
+        -3.317762,
+        52.5106265
+      ],
+      [
+        -3.3177343,
+        52.5105638
+      ],
+      [
+        -3.3177238,
+        52.5104618
+      ],
+      [
+        -3.3177378,
+        52.5102539
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/28479643",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "20 mph",
+    "name": "Kerry Road",
+    "old_ref": "A489",
+    "ref": "B4801",
+    "sidewalk": "both",
+    "id": "way/28479643"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3073565,
+        52.5131362
+      ],
+      [
+        -3.3074077,
+        52.5131677
+      ],
+      [
+        -3.3074465,
+        52.5131868
+      ],
+      [
+        -3.3075301,
+        52.5132265
+      ],
+      [
+        -3.307894,
+        52.513404
+      ],
+      [
+        -3.3089794,
+        52.5140385
+      ],
+      [
+        -3.3090924,
+        52.5141422
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/501837817",
+  "properties": {
+    "covered": "yes",
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxheight": "13'3\"",
+    "maxspeed": "20 mph",
+    "name": "Dolfor Road",
+    "old_ref": "A483",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "source": "survey",
+    "surface": "asphalt",
+    "id": "way/501837817"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3177378,
+        52.5102539
+      ],
+      [
+        -3.3177488,
+        52.5101188
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/501837818",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "20 mph",
+    "name": "Dolfor Road",
+    "old_ref": "A483",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/501837818"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3177488,
+        52.5101188
+      ],
+      [
+        -3.3178079,
+        52.5098289
+      ],
+      [
+        -3.3179073,
+        52.5093881
+      ],
+      [
+        -3.317933,
+        52.5092547
+      ],
+      [
+        -3.3180953,
+        52.5084844
+      ],
+      [
+        -3.3181332,
+        52.5083075
+      ],
+      [
+        -3.3181717,
+        52.5081807
+      ],
+      [
+        -3.3182259,
+        52.5080289
+      ],
+      [
+        -3.3184652,
+        52.5075286
+      ],
+      [
+        -3.3186931,
+        52.5071208
+      ],
+      [
+        -3.3187526,
+        52.5069904
+      ],
+      [
+        -3.3187984,
+        52.506872
+      ],
+      [
+        -3.3188198,
+        52.5067302
+      ],
+      [
+        -3.3187625,
+        52.5061915
+      ],
+      [
+        -3.3187455,
+        52.5061032
+      ],
+      [
+        -3.318712,
+        52.5059512
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/621961281",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "lit": "no",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "yes",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/621961281"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3187287,
+        52.5034819
+      ],
+      [
+        -3.3186083,
+        52.5035935
+      ],
+      [
+        -3.3185227,
+        52.5036886
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/621961284",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "yes",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/621961284"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3183884,
+        52.5036453
+      ],
+      [
+        -3.3187287,
+        52.5034819
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/621961285",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "yes",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/621961285"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3182259,
+        52.5041941
+      ],
+      [
+        -3.3180475,
+        52.504017
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/621961288",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "yes",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/621961288"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3183962,
+        52.5040607
+      ],
+      [
+        -3.3182259,
+        52.5041941
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/624776996",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30 mph",
+    "name": "Kerry Road",
+    "oneway": "yes",
+    "ref": "B4801",
+    "surface": "asphalt",
+    "id": "way/624776996"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.2944651,
+        52.512197
+      ],
+      [
+        -3.2941184,
+        52.5120951
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/624777000",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "20 mph",
+    "name": "Kerry Road",
+    "old_ref": "A489",
+    "ref": "B4801",
+    "surface": "asphalt",
+    "id": "way/624777000"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3006902,
+        52.5125098
+      ],
+      [
+        -3.3009958,
+        52.5125056
+      ],
+      [
+        -3.3011706,
+        52.5125112
+      ],
+      [
+        -3.3016619,
+        52.5125426
+      ],
+      [
+        -3.3018969,
+        52.5125681
+      ],
+      [
+        -3.3020737,
+        52.5125915
+      ],
+      [
+        -3.3024887,
+        52.5126627
+      ],
+      [
+        -3.3031188,
+        52.5128048
+      ],
+      [
+        -3.3038336,
+        52.5129844
+      ],
+      [
+        -3.3043174,
+        52.5130818
+      ],
+      [
+        -3.3043533,
+        52.513089
+      ],
+      [
+        -3.3047417,
+        52.5131271
+      ],
+      [
+        -3.3049563,
+        52.5131323
+      ],
+      [
+        -3.305171,
+        52.5131242
+      ],
+      [
+        -3.3057697,
+        52.5130623
+      ],
+      [
+        -3.3062497,
+        52.513007
+      ],
+      [
+        -3.3066554,
+        52.5129879
+      ],
+      [
+        -3.3068451,
+        52.5130026
+      ],
+      [
+        -3.3070063,
+        52.5130211
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/624777001",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30 mph",
+    "name": "Kerry Road",
+    "oneway": "yes",
+    "ref": "B4801",
+    "surface": "asphalt",
+    "id": "way/624777001"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.2944472,
+        52.5119738
+      ],
+      [
+        -3.2944651,
+        52.512197
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/659759220",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "lit": "no",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "yes",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/659759220"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3217202,
+        52.5011348
+      ],
+      [
+        -3.3214817,
+        52.501057
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/670685686",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "no",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "no",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/670685686"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3217202,
+        52.5011348
+      ],
+      [
+        -3.321849,
+        52.5014549
+      ],
+      [
+        -3.3219081,
+        52.5017292
+      ],
+      [
+        -3.3218873,
+        52.5019119
+      ],
+      [
+        -3.3218031,
+        52.5021424
+      ],
+      [
+        -3.3216851,
+        52.5023168
+      ],
+      [
+        -3.3215027,
+        52.5025005
+      ],
+      [
+        -3.3212932,
+        52.502659
+      ],
+      [
+        -3.3210386,
+        52.5027996
+      ],
+      [
+        -3.3207698,
+        52.5029117
+      ],
+      [
+        -3.3204782,
+        52.5029953
+      ],
+      [
+        -3.3199081,
+        52.5031346
+      ],
+      [
+        -3.3190797,
+        52.5033492
+      ],
+      [
+        -3.3188815,
+        52.503414
+      ],
+      [
+        -3.3187287,
+        52.5034819
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/670685687",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "oneway": "yes",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/670685687"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3216947,
+        52.5009723
+      ],
+      [
+        -3.3217202,
+        52.5011348
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/887846985",
+  "properties": {
+    "bridge": "yes",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "1",
+    "maxspeed": "20 mph",
+    "name": "Kerry Road",
+    "old_ref": "A489",
+    "ref": "B4801",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "id": "way/887846985"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.3070063,
+        52.5130211
+      ],
+      [
+        -3.3073565,
+        52.5131362
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/887846986",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40 mph",
+    "name": "Kerry Road",
+    "old_ref": "A489",
+    "ref": "B4801",
+    "surface": "asphalt",
+    "id": "way/887846986"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.2945928,
+        52.5122953
+      ],
+      [
+        -3.2948225,
+        52.5123975
+      ],
+      [
+        -3.2951243,
+        52.5125023
+      ],
+      [
+        -3.2954494,
+        52.5125627
+      ],
+      [
+        -3.2957325,
+        52.5125888
+      ],
+      [
+        -3.2960644,
+        52.5126028
+      ],
+      [
+        -3.2965086,
+        52.5125899
+      ],
+      [
+        -3.2968512,
+        52.5125727
+      ],
+      [
+        -3.2971824,
+        52.5125416
+      ],
+      [
+        -3.2977081,
+        52.5125258
+      ],
+      [
+        -3.2983589,
+        52.512524
+      ],
+      [
+        -3.2988202,
+        52.5125472
+      ],
+      [
+        -3.2993929,
+        52.5125821
+      ],
+      [
+        -3.2997718,
+        52.5125784
+      ],
+      [
+        -3.3002241,
+        52.5125314
+      ],
+      [
+        -3.3004341,
+        52.5125221
+      ],
+      [
+        -3.3006902,
+        52.5125098
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/887846987",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30 mph",
+    "name": "Kerry Road",
+    "old_ref": "A489",
+    "ref": "B4801",
+    "surface": "asphalt",
+    "id": "way/887846987"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.2944651,
+        52.512197
+      ],
+      [
+        -3.2945928,
+        52.5122953
+      ]
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "id": "way/1218054450",
+  "properties": {
+    "highway": "secondary",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "30 mph",
+    "name": "Dolfor Road",
+    "old_ref": "A483",
+    "operator": "Welsh Government",
+    "ref": "B4800",
+    "surface": "asphalt",
+    "id": "way/1218054450"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -3.318712,
+        52.5059512
+      ],
+      [
+        -3.3186467,
+        52.5057412
+      ],
+      [
+        -3.3184809,
+        52.5052356
+      ],
+      [
+        -3.3183511,
+        52.5049429
+      ],
+      [
+        -3.3182288,
+        52.5047384
+      ],
+      [
+        -3.3181924,
+        52.5046067
+      ],
+      [
+        -3.3181746,
+        52.5044749
+      ],
+      [
+        -3.3181886,
+        52.5043302
+      ],
+      [
+        -3.3182259,
+        52.5041941
+      ]
+    ]
+  }
+}
+]
+}

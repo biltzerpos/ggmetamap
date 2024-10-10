@@ -1,0 +1,156 @@
+[
+  {
+    "text": "Blaenau Gwent",
+    "type": "name",
+    "lat": 51.790232516823586,
+    "lng": -3.2125765567892106,
+    "fszl": 6
+  },
+  {
+    "text": "Bridgend",
+    "type": "name",
+    "lat": 51.55157953867814,
+    "lng": -3.579954635079272,
+    "fszl": 6
+  },
+  {
+    "text": "Caerphilly",
+    "type": "name",
+    "lat": 51.651992525207206,
+    "lng": -3.203237815959018,
+    "fszl": 6
+  },
+  {
+    "text": "Cardiff",
+    "type": "name",
+    "lat": 51.50200637392272,
+    "lng": -3.2110919641522995,
+    "fszl": 6
+  },
+  {
+    "text": "Ceredigion",
+    "type": "name",
+    "lat": 52.24819417019333,
+    "lng": -4.036744269398593,
+    "fszl": 6
+  },
+  {
+    "text": "Conwy",
+    "type": "name",
+    "lat": 53.16372865498001,
+    "lng": -3.741894037871343,
+    "fszl": 6
+  },
+  {
+    "text": "Denbighshire",
+    "type": "name",
+    "lat": 53.064328464393014,
+    "lng": -3.333114908354564,
+    "fszl": 6
+  },
+  {
+    "text": "Flintshire",
+    "type": "name",
+    "lat": 53.218129144430925,
+    "lng": -3.1664724524644683,
+    "fszl": 6
+  },
+  {
+    "text": "Gwynedd",
+    "type": "name",
+    "lat": 52.897373668251646,
+    "lng": -3.985954433461092,
+    "fszl": 6
+  },
+  {
+    "text": "Merthyr Tydfil",
+    "type": "name",
+    "lat": 51.7490923435926,
+    "lng": -3.369212742606789,
+    "fszl": 6
+  },
+  {
+    "text": "Monmouthshire",
+    "type": "name",
+    "lat": 51.774637538449994,
+    "lng": -2.863766275199824,
+    "fszl": 6
+  },
+  {
+    "text": "Neath Port Talbot",
+    "type": "name",
+    "lat": 51.69729021720319,
+    "lng": -3.7299056930071206,
+    "fszl": 6
+  },
+  {
+    "text": "Newport",
+    "type": "name",
+    "lat": 51.57653134735387,
+    "lng": -2.9554468383838484,
+    "fszl": 6
+  },
+  {
+    "text": "Pembrokeshire",
+    "type": "name",
+    "lat": 51.840879071384514,
+    "lng": -4.929359906914628,
+    "fszl": 6
+  },
+  {
+    "text": "Powys",
+    "type": "name",
+    "lat": 52.36420621642933,
+    "lng": -3.415239086237838,
+    "fszl": 6
+  },
+  {
+    "text": "Rhondda Cynon Taf",
+    "type": "name",
+    "lat": 51.603678785516784,
+    "lng": -3.4096966474668045,
+    "fszl": 6
+  },
+  {
+    "text": "Sir Gaerfyrddin / Carmarthenshire",
+    "type": "name",
+    "lat": 51.92859241471983,
+    "lng": -4.118727230316705,
+    "fszl": 6
+  },
+  {
+    "text": "Swansea",
+    "type": "name",
+    "lat": 51.62336350718958,
+    "lng": -4.0570756828037835,
+    "fszl": 6
+  },
+  {
+    "text": "Torfaen",
+    "type": "name",
+    "lat": 51.691794446807975,
+    "lng": -3.0495866850516906,
+    "fszl": 6
+  },
+  {
+    "text": "Vale of Glamorgan",
+    "type": "name",
+    "lat": 51.42961704322473,
+    "lng": -3.4131976565203423,
+    "fszl": 6
+  },
+  {
+    "text": "Wrexham",
+    "type": "name",
+    "lat": 53.00817694081334,
+    "lng": -2.98135366542551,
+    "fszl": 6
+  },
+  {
+    "text": "Ynys Môn / Isle of Anglesey",
+    "type": "name",
+    "lat": 53.28416449406601,
+    "lng": -4.392075031500249,
+    "fszl": 6
+  }
+]

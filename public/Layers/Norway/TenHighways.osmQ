@@ -1,6 +1,6 @@
 [timeout:255];
 area["name:en"~"Norway"]->.my;
 (
-  nwr(area.my)["highway"~"primary|trunk"]["ref"~"^SSSS[0-9]$"];
+  nwr(area.my)["highway"~"primary|trunk"]["ref"~"^8SSSS[0-9]$"];
 );
 out geom;

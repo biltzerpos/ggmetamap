@@ -1,0 +1,4557 @@
+<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API 0.7.62.1 084b4234">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2024-10-05T20:18:24Z" areas="2024-10-05T18:00:15Z"/>
+
+  <relation id="404139">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vaksdal"/>
+    <tag k="old_ref" v="1251"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3870"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4628"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48928"/>
+  </relation>
+  <relation id="404140">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Modalen"/>
+    <tag k="old_ref" v="1252"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="389"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4629"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q202605"/>
+  </relation>
+  <relation id="404141">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Osterøy"/>
+    <tag k="old_ref" v="1253"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8186"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4630"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488067"/>
+  </relation>
+  <relation id="404143">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Masfjorden"/>
+    <tag k="old_ref" v="1266"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1692"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4634"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48299"/>
+  </relation>
+  <relation id="404145">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Austrheim"/>
+    <tag k="old_ref" v="1264"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2906"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4632"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484080"/>
+  </relation>
+  <relation id="404146">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fedje"/>
+    <tag k="old_ref" v="1265"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="519"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4633"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484213"/>
+  </relation>
+  <relation id="404149">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ulvik"/>
+    <tag k="official_name" v="Ulvik herad"/>
+    <tag k="old_ref" v="1233"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1094"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4620"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q487711"/>
+  </relation>
+  <relation id="404151">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Eidfjord"/>
+    <tag k="note" v="Boundary adjusted 2022-01-01"/>
+    <tag k="old_ref" v="1232"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="961"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4619"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483977"/>
+  </relation>
+  <relation id="404155">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kvam herad"/>
+    <tag k="old_ref" v="1238"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8505"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4622"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q487529"/>
+  </relation>
+  <relation id="404157">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Askøy"/>
+    <tag k="old_ref" v="1247"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="30181"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4627"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q215374"/>
+  </relation>
+  <relation id="404159">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name:ar" v="برجن"/>
+    <tag k="alt_name:gd" v="A' Bhoirbh;Beirbhe;Boirbhe"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bergen"/>
+    <tag k="name:ar" v="برغن"/>
+    <tag k="name:el" v="Μπέργκεν"/>
+    <tag k="name:fkv" v="Peruna"/>
+    <tag k="name:gd" v="A' Bheirbh"/>
+    <tag k="name:nn" v="Bergen"/>
+    <tag k="name:no" v="Bergen"/>
+    <tag k="name:ps" v="برګين"/>
+    <tag k="old_ref" v="1201"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="292482"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4601"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q10428388"/>
+    <tag k="wikipedia" v="nn:Bergen kommune"/>
+    <tag k="wikipedia:ps" v="برګين"/>
+  </relation>
+  <relation id="404160">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Samnanger"/>
+    <tag k="old_ref" v="1242"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2493"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4623"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488234"/>
+  </relation>
+  <relation id="404164">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Austevoll"/>
+    <tag k="old_ref" v="1244"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5330"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4625"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484008"/>
+  </relation>
+  <relation id="404165">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tysnes"/>
+    <tag k="old_ref" v="1223"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2941"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4616"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48316"/>
+  </relation>
+  <relation id="404166">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fitjar"/>
+    <tag k="old_ref" v="1222"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3187"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4615"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113491"/>
+  </relation>
+  <relation id="404167">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kvinnherad"/>
+    <tag k="old_ref" v="1224"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13089"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4617"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484070"/>
+  </relation>
+  <relation id="404168">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Etne"/>
+    <tag k="old_ref" v="1211"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4060"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4611"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48782"/>
+  </relation>
+  <relation id="404169">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stord"/>
+    <tag k="old_ref" v="1221"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="19317"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4614"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q485253"/>
+  </relation>
+  <relation id="404170">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bømlo"/>
+    <tag k="old_ref" v="1219"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="12287"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4613"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113552"/>
+  </relation>
+  <relation id="404171">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sveio"/>
+    <tag k="old_ref" v="1216"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5742"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4612"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48518"/>
+  </relation>
+  <relation id="404590">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Horten"/>
+    <tag k="name:is" v="Hortin"/>
+    <tag k="old_ref" v="0701"/>
+    <tag k="old_ref:2022" v="3801"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="28001"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3901"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109048"/>
+  </relation>
+  <relation id="404591">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Larvik"/>
+    <tag k="name:is" v="Lagarvík"/>
+    <tag k="old_ref" v="0712"/>
+    <tag k="old_ref:2022" v="3805"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="48743"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3909"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q156125"/>
+    <tag k="wikipedia" v="en:Larvik"/>
+  </relation>
+  <relation id="404592">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sandefjord"/>
+    <tag k="name:is" v="Sandar"/>
+    <tag k="old_ref" v="0710"/>
+    <tag k="old_ref:2022" v="3804"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="66366"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3907"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109005"/>
+    <tag k="wikipedia" v="en:Sandefjord"/>
+  </relation>
+  <relation id="404594">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Færder"/>
+    <tag k="old_ref" v="0729"/>
+    <tag k="old_ref:2022" v="3811"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="27511"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3911"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q42320251"/>
+  </relation>
+  <relation id="404672">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fjaler"/>
+    <tag k="old_ref" v="1429"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2878"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4646"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499397"/>
+    <tag k="wikipedia" v="en:Fjaler"/>
+  </relation>
+  <relation id="404673">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Askvoll"/>
+    <tag k="old_ref" v="1428"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2970"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4645"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q504817"/>
+    <tag k="wikipedia" v="en:Askvoll"/>
+  </relation>
+  <relation id="404674">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hyllestad"/>
+    <tag k="old_ref" v="1413"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1266"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4637"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494037"/>
+  </relation>
+  <relation id="404731">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Solund"/>
+    <tag k="old_ref" v="1412"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="742"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4636"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48647"/>
+  </relation>
+  <relation id="405157">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vinje"/>
+    <tag k="name:is" v="Vinjar"/>
+    <tag k="old_ref" v="0834"/>
+    <tag k="old_ref:2022" v="3825"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3842"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4036"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2245"/>
+  </relation>
+  <relation id="405158">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tinn"/>
+    <tag k="name:is" v="Tinnur"/>
+    <tag k="old_ref" v="0826"/>
+    <tag k="old_ref:2022" v="3818"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5535"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4026"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2365"/>
+  </relation>
+  <relation id="405159">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Notodden"/>
+    <tag k="name:is" v="Notoddinn"/>
+    <tag k="old_ref" v="0807"/>
+    <tag k="old_ref:2022" v="3808"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13315"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4005"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2326"/>
+  </relation>
+  <relation id="405160">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hjartdal"/>
+    <tag k="name:is" v="Hjartadalir"/>
+    <tag k="old_ref" v="0827"/>
+    <tag k="old_ref:2022" v="3819"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1636"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4024"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2354"/>
+  </relation>
+  <relation id="405161">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Seljord"/>
+    <tag k="name:is" v="Seljugerði"/>
+    <tag k="old_ref" v="0828"/>
+    <tag k="old_ref:2022" v="3820"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2980"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4022"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2236"/>
+  </relation>
+  <relation id="405163">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kviteseid"/>
+    <tag k="name:is" v="Hvítiseið"/>
+    <tag k="old_ref" v="0829"/>
+    <tag k="old_ref:2022" v="3821"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2454"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4028"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2232"/>
+  </relation>
+  <relation id="405164">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nome"/>
+    <tag k="name:is" v="Númi"/>
+    <tag k="old_ref" v="0819"/>
+    <tag k="old_ref:2022" v="3816"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6580"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4018"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2375"/>
+  </relation>
+  <relation id="405166">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Skien"/>
+    <tag k="name:is" v="Skiðan"/>
+    <tag k="old_ref" v="0806"/>
+    <tag k="old_ref:2022" v="3807"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="56769"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4003"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2272"/>
+  </relation>
+  <relation id="405167">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Drangedal"/>
+    <tag k="name:is" v="Drangadalur"/>
+    <tag k="old_ref" v="0817"/>
+    <tag k="old_ref:2022" v="3815"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4077"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4016"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2367"/>
+  </relation>
+  <relation id="405168">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fyresdal"/>
+    <tag k="name:is" v="Fyrirdalur"/>
+    <tag k="old_ref" v="0831"/>
+    <tag k="old_ref:2022" v="3823"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1260"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4032"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q1881"/>
+  </relation>
+  <relation id="405169">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tokke"/>
+    <tag k="name:is" v="Þotki"/>
+    <tag k="old_ref" v="0833"/>
+    <tag k="old_ref:2022" v="3824"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2226"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4034"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2241"/>
+  </relation>
+  <relation id="405170">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Siljan"/>
+    <tag k="old_ref" v="0811"/>
+    <tag k="old_ref:2022" v="3812"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2378"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4010"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2308"/>
+  </relation>
+  <relation id="405171">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Porsgrunn"/>
+    <tag k="name:is" v="Porsgrund"/>
+    <tag k="old_ref" v="0805"/>
+    <tag k="old_ref:2022" v="3806"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="37144"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4001"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2290"/>
+  </relation>
+  <relation id="405172">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bamble"/>
+    <tag k="name:is" v="Bamblar"/>
+    <tag k="old_ref" v="0814"/>
+    <tag k="old_ref:2022" v="3813"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="14311"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4012"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484052"/>
+  </relation>
+  <relation id="405173">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kragerø"/>
+    <tag k="old_ref" v="0815"/>
+    <tag k="old_ref:2022" v="3814"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10478"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4014"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2372"/>
+  </relation>
+  <relation id="405174">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nissedal"/>
+    <tag k="name:is" v="Niðsærdalur"/>
+    <tag k="old_ref" v="0830"/>
+    <tag k="old_ref:2022" v="3822"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1461"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4030"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2229"/>
+  </relation>
+  <relation id="405219">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Frøya"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5496"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5014"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484119"/>
+  </relation>
+  <relation id="405267">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Smøla"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2167"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1573"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483899"/>
+  </relation>
+  <relation id="405317">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Osen"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="889"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5020"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484257"/>
+  </relation>
+  <relation id="405322">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gulen"/>
+    <tag k="old_ref" v="1411"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2270"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4635"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q217793"/>
+  </relation>
+  <relation id="405652">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Randaberg"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11809"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1127"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q492115"/>
+  </relation>
+  <relation id="405653">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sola"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="28808"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1124"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488948"/>
+  </relation>
+  <relation id="405655">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Klepp"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="20990"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1120"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q500223"/>
+  </relation>
+  <relation id="405657">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Strand"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13738"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1130"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48591"/>
+  </relation>
+  <relation id="405658">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kvitsøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="543"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1144"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494024"/>
+  </relation>
+  <relation id="405786">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Time"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="19941"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1121"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493981"/>
+  </relation>
+  <relation id="405787">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hå"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="19918"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1119"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q485608"/>
+    <tag k="wikipedia" v="no:Hå"/>
+  </relation>
+  <relation id="405788">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sokndal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3371"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1111"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48858"/>
+  </relation>
+  <relation id="405824">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lund"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3223"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1112"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q515536"/>
+  </relation>
+  <relation id="405825">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Eigersund"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="15262"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1101"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483877"/>
+    <tag k="wikipedia" v="en:Eigersund"/>
+  </relation>
+  <relation id="405826">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bjerkreim"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2902"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1114"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493308"/>
+  </relation>
+  <relation id="405827">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gjesdal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="12413"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1122"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q255148"/>
+  </relation>
+  <relation id="405829">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hjelmeland"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2655"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1133"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q250055"/>
+  </relation>
+  <relation id="405830">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Suldal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3923"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1134"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48577"/>
+  </relation>
+  <relation id="405831">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Utsira"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="218"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1151"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499485"/>
+  </relation>
+  <relation id="405832">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Karmøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="43404"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1149"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483902"/>
+  </relation>
+  <relation id="405833">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bokn"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="890"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1145"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q489351"/>
+  </relation>
+  <relation id="405834">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Haugesund"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="38362"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1106"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109036"/>
+    <tag k="wikipedia" v="en:Haugesund"/>
+  </relation>
+  <relation id="405835">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tysvær"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11628"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1146"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493977"/>
+  </relation>
+  <relation id="405837">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sauda"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4594"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1135"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q485297"/>
+  </relation>
+  <relation id="405845">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vindafjord"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8972"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1160"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q502197"/>
+  </relation>
+  <relation id="405951">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Indre Fosen"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10030"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5054"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q25428806"/>
+  </relation>
+  <relation id="405973">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Flekkefjord"/>
+    <tag k="old_ref" v="1004"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9290"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4207"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493481"/>
+    <tag k="wikipedia" v="en:Flekkefjord"/>
+  </relation>
+  <relation id="405974">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sirdal"/>
+    <tag k="old_ref" v="1046"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1867"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4228"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q281835"/>
+  </relation>
+  <relation id="405975">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kvinesdal"/>
+    <tag k="old_ref" v="1037"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6166"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4227"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488747"/>
+  </relation>
+  <relation id="405976">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Åseral"/>
+    <tag k="old_ref" v="1026"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="921"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4224"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q271275"/>
+  </relation>
+  <relation id="405980">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vennesla"/>
+    <tag k="old_ref" v="1014"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="15510"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4223"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q500227"/>
+  </relation>
+  <relation id="405986">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Farsund"/>
+    <tag k="old_ref" v="1003"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9890"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4206"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q490462"/>
+    <tag k="wikipedia" v="en:Farsund"/>
+  </relation>
+  <relation id="405987">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hægebostad"/>
+    <tag k="old_ref" v="1034"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1771"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4226"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488962"/>
+  </relation>
+  <relation id="406025">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Risør"/>
+    <tag k="old_ref" v="0901"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6833"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4201"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90595"/>
+  </relation>
+  <relation id="406026">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tvedestrand"/>
+    <tag k="old_ref" v="0914"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6313"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4213"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90597"/>
+  </relation>
+  <relation id="406027">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bykle"/>
+    <tag k="old_ref" v="0941"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1026"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4222"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q88806"/>
+  </relation>
+  <relation id="406028">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Valle"/>
+    <tag k="old_ref" v="0940"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1199"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4221"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90598"/>
+  </relation>
+  <relation id="406029">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bygland"/>
+    <tag k="old_ref" v="0938"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1176"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4220"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q88804"/>
+  </relation>
+  <relation id="406030">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Åmli"/>
+    <tag k="old_ref" v="0929"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1801"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4217"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90601"/>
+  </relation>
+  <relation id="406031">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Evje og Hornnes"/>
+    <tag k="old_ref" v="0937"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3935"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4219"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q88808"/>
+  </relation>
+  <relation id="406032">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Iveland"/>
+    <tag k="old_ref" v="0935"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1378"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4218"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90592"/>
+  </relation>
+  <relation id="406033">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Birkenes"/>
+    <tag k="old_ref" v="0928"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5465"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4216"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q88802"/>
+  </relation>
+  <relation id="406034">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lillesand"/>
+    <tag k="old_ref" v="0926"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11549"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4215"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90593"/>
+  </relation>
+  <relation id="406035">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Grimstad"/>
+    <tag k="old_ref" v="0904"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="25093"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4202"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90590"/>
+  </relation>
+  <relation id="406036">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Arendal"/>
+    <tag k="name:is" v="Arnardalur"/>
+    <tag k="old_ref" v="0906"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="46406"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4203"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57919"/>
+    <tag k="wikipedia" v="en:Arendal"/>
+  </relation>
+  <relation id="406037">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vegårshei"/>
+    <tag k="old_ref" v="0912"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2271"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4212"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q90600"/>
+  </relation>
+  <relation id="406038">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gjerstad"/>
+    <tag k="old_ref" v="0911"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2465"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4211"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q88813"/>
+  </relation>
+  <relation id="406073">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Marker"/>
+    <tag k="old_ref" v="0119"/>
+    <tag k="old_ref:2022" v="3013"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3656"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3122"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486736"/>
+  </relation>
+  <relation id="406074">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Aremark"/>
+    <tag k="old_ref" v="0118"/>
+    <tag k="old_ref:2022" v="3012"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1346"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3124"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48393"/>
+  </relation>
+  <relation id="406075">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Halden"/>
+    <tag k="name:uk" v="Галден"/>
+    <tag k="old_ref" v="0101"/>
+    <tag k="old_ref:2022" v="3001"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="31965"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3101"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109042"/>
+    <tag k="wikipedia" v="en:Halden"/>
+  </relation>
+  <relation id="406076">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hvaler"/>
+    <tag k="old_ref" v="0111"/>
+    <tag k="old_ref:2022" v="3011"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4774"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3110"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488435"/>
+  </relation>
+  <relation id="406077">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fredrikstad"/>
+    <tag k="old_ref" v="0106"/>
+    <tag k="old_ref:2022" v="3004"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="85267"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3107"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q107135"/>
+  </relation>
+  <relation id="406078">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sarpsborg"/>
+    <tag k="old_ref" v="0105"/>
+    <tag k="old_ref:2022" v="3003"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="59906"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3105"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q108025"/>
+  </relation>
+  <relation id="406079">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rakkestad"/>
+    <tag k="old_ref" v="0128"/>
+    <tag k="old_ref:2022" v="3016"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8439"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3120"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483969"/>
+  </relation>
+  <relation id="406083">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Skiptvet"/>
+    <tag k="old_ref" v="0127"/>
+    <tag k="old_ref:2022" v="3015"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3913"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3116"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q156420"/>
+  </relation>
+  <relation id="406086">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Våler i Viken;Våler i Østfold"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Våler"/>
+    <tag k="old_ref" v="0137"/>
+    <tag k="old_ref:2022" v="3018"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6151"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3114"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499446"/>
+  </relation>
+  <relation id="406089">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Råde"/>
+    <tag k="old_ref" v="0135"/>
+    <tag k="old_ref:2022" v="3017"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7850"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3112"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483906"/>
+  </relation>
+  <relation id="406116">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hurdal"/>
+    <tag k="old_ref" v="0239"/>
+    <tag k="old_ref:2022" v="3037"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3058"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3242"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57858"/>
+  </relation>
+  <relation id="406117">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Eidsvoll"/>
+    <tag k="name:is" v="Eiðsvöllur"/>
+    <tag k="name:ps" v="آیدسوول"/>
+    <tag k="old_ref" v="0237"/>
+    <tag k="old_ref:2022" v="3035"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="28074"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3240"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57080"/>
+  </relation>
+  <relation id="406118">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ullensaker"/>
+    <tag k="old_ref" v="0235"/>
+    <tag k="old_ref:2022" v="3033"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="44175"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3209"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57917"/>
+  </relation>
+  <relation id="406119">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nes"/>
+    <tag k="old_ref" v="0236"/>
+    <tag k="old_ref:2022" v="3034"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="24678"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3228"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488026"/>
+  </relation>
+  <relation id="406121">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nannestad"/>
+    <tag k="old_ref" v="0238"/>
+    <tag k="old_ref:2022" v="3036"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="16189"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3238"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57862"/>
+  </relation>
+  <relation id="406122">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nittedal"/>
+    <tag k="old_ref" v="0233"/>
+    <tag k="old_ref:2022" v="3031"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="25929"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3232"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57865"/>
+  </relation>
+  <relation id="406123">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gjerdrum"/>
+    <tag k="old_ref" v="0234"/>
+    <tag k="old_ref:2022" v="3032"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7409"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3230"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57084"/>
+    <tag k="wikipedia" v="en:Gjerdrum"/>
+  </relation>
+  <relation id="406126">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lørenskog"/>
+    <tag k="name:ps" v="لورېن سکوګ"/>
+    <tag k="old_ref" v="0230"/>
+    <tag k="old_ref:2022" v="3029"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="48554"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3222"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57860"/>
+  </relation>
+  <relation id="406127">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rælingen"/>
+    <tag k="old_ref" v="0228"/>
+    <tag k="old_ref:2022" v="3027"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="20262"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3224"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57870"/>
+  </relation>
+  <relation id="406129">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Enebakk"/>
+    <tag k="old_ref" v="0229"/>
+    <tag k="old_ref:2022" v="3028"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11480"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3220"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57081"/>
+  </relation>
+  <relation id="406133">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vestby"/>
+    <tag k="old_ref" v="0211"/>
+    <tag k="old_ref:2022" v="3019"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="19576"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3216"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57918"/>
+  </relation>
+  <relation id="406134">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Frogn"/>
+    <tag k="old_ref" v="0215"/>
+    <tag k="old_ref:2022" v="3022"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="16250"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3214"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57083"/>
+    <tag k="wikipedia" v="en:Frogn"/>
+  </relation>
+  <relation id="406135">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nesodden"/>
+    <tag k="old_ref" v="0216"/>
+    <tag k="old_ref:2022" v="3023"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="20544"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3212"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57864"/>
+  </relation>
+  <relation id="406136">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bærum"/>
+    <tag k="old_ref" v="0219"/>
+    <tag k="old_ref:2022" v="3024"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="131136"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3201"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q57076"/>
+    <tag k="wikipedia" v="en:Bærum"/>
+  </relation>
+  <relation id="406462">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rennebu"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2498"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5022"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488124"/>
+  </relation>
+  <relation id="406463">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Oppdal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7413"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5021"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113595"/>
+  </relation>
+  <relation id="406476">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Midtre Gauldal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6117"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5027"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q492244"/>
+  </relation>
+  <relation id="406477">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Holtålen"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2022"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5026"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484084"/>
+    <tag k="wikipedia" v="en:Holtålen"/>
+  </relation>
+  <relation id="406493">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name:sma" v="Plaassje"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Røros"/>
+    <tag k="name:sma" v="Plassje"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5700"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5025"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q108999"/>
+    <tag k="wikipedia" v="en:Røros"/>
+  </relation>
+  <relation id="406502">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tydal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="776"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5033"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494053"/>
+  </relation>
+  <relation id="406510">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sør-Varanger"/>
+    <tag k="name:de" v="Süd-Varanger"/>
+    <tag k="name:en" v="South Varanki"/>
+    <tag k="name:fi" v="Etelä-Varanki"/>
+    <tag k="name:se" v="Máttá-Várjjat"/>
+    <tag k="old_ref" v="2030"/>
+    <tag k="old_ref:2022" v="5444"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10035"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5605"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48827"/>
+  </relation>
+  <relation id="406520">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Selbu"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4231"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5032"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q492209"/>
+  </relation>
+  <relation id="406537">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Melhus"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="17630"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5028"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488762"/>
+  </relation>
+  <relation id="406540">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Skaun"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8510"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5029"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q500186"/>
+  </relation>
+  <relation id="406554">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Malvik"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="14958"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5031"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493988"/>
+  </relation>
+  <relation id="406643">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Loppa"/>
+    <tag k="name:fkv" v="Lappea"/>
+    <tag k="name:se" v="Láhppi"/>
+    <tag k="old_ref" v="2014"/>
+    <tag k="old_ref:2022" v="5432"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="860"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5614"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48848"/>
+  </relation>
+  <relation id="406644">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hasvik"/>
+    <tag k="name:fkv" v="Hasviik"/>
+    <tag k="name:se" v="Ákŋoluokta"/>
+    <tag k="old_ref" v="2015"/>
+    <tag k="old_ref:2022" v="5433"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="977"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5616"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109841"/>
+  </relation>
+  <relation id="406646">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Måsøy"/>
+    <tag k="name:fkv" v="Moseija"/>
+    <tag k="name:no" v="Måsøy"/>
+    <tag k="name:se" v="Muosát"/>
+    <tag k="old_ref" v="2018"/>
+    <tag k="old_ref:2022" v="5434"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1113"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5618"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113697"/>
+  </relation>
+  <relation id="406647">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nordkapp"/>
+    <tag k="name:se" v="Davvinjárga"/>
+    <tag k="old_ref" v="2019"/>
+    <tag k="old_ref:2022" v="5435"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2966"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5620"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q62641"/>
+    <tag k="wikipedia" v="en:Nordkapp"/>
+  </relation>
+  <relation id="406648">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Porsanger"/>
+    <tag k="name:fi" v="Porsanki"/>
+    <tag k="name:fkv" v="Porsanki"/>
+    <tag k="name:no" v="Porsanger"/>
+    <tag k="name:se" v="Porsáŋgu"/>
+    <tag k="old_ref" v="2020"/>
+    <tag k="old_ref:2022" v="5436"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3890"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5622"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483885"/>
+  </relation>
+  <relation id="406649">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gamvik"/>
+    <tag k="name:se" v="Gáŋgaviika"/>
+    <tag k="old_ref" v="2023"/>
+    <tag k="old_ref:2022" v="5439"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1064"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5626"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113729"/>
+  </relation>
+  <relation id="406650">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Berlevåg"/>
+    <tag k="name:fkv" v="Päärlyvooki"/>
+    <tag k="name:se" v="Bearalváhki"/>
+    <tag k="old_ref" v="2024"/>
+    <tag k="old_ref:2022" v="5440"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="896"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5630"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109489"/>
+  </relation>
+  <relation id="406651">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Båtsfjord"/>
+    <tag k="old_ref" v="2028"/>
+    <tag k="old_ref:2022" v="5443"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2113"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5632"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48813"/>
+  </relation>
+  <relation id="406652">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vardø"/>
+    <tag k="name:fi" v="Vuoreija"/>
+    <tag k="name:no" v="Vardø"/>
+    <tag k="old_ref" v="2002"/>
+    <tag k="old_ref:2022" v="5404"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1971"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5634"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q108983"/>
+  </relation>
+  <relation id="406653">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vadsø"/>
+    <tag k="name:fkv" v="Vesisaari"/>
+    <tag k="name:no" v="Vadsø"/>
+    <tag k="name:se" v="Čáhcesuolu"/>
+    <tag k="old_ref" v="2003"/>
+    <tag k="old_ref:2022" v="5405"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5796"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5607"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q104379"/>
+    <tag k="wikipedia" v="en:Vadsø"/>
+  </relation>
+  <relation id="406654">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nesseby"/>
+    <tag k="name:fi" v="Uuniemi"/>
+    <tag k="name:fkv" v="Uuniemi"/>
+    <tag k="name:no" v="Nesseby"/>
+    <tag k="name:se" v="Unjárga"/>
+    <tag k="old_ref" v="2027"/>
+    <tag k="old_ref:2022" v="5442"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="855"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5636"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113662"/>
+  </relation>
+  <relation id="406655">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tana"/>
+    <tag k="name:fi" v="Teno"/>
+    <tag k="name:fkv" v="Taana"/>
+    <tag k="name:no" v="Tana"/>
+    <tag k="name:se" v="Deatnu"/>
+    <tag k="old_ref" v="2025"/>
+    <tag k="old_ref:2022" v="5441"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2794"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5628"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483964"/>
+  </relation>
+  <relation id="406656">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Karasjok"/>
+    <tag k="name:fi" v="Kaarasjoki"/>
+    <tag k="name:no" v="Karasjok"/>
+    <tag k="name:se" v="Kárášjohka"/>
+    <tag k="old_ref" v="2021"/>
+    <tag k="old_ref:2022" v="5437"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2550"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5610"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q1825"/>
+    <tag k="wikipedia" v="no:Karasjok"/>
+  </relation>
+  <relation id="406657">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kautokeino"/>
+    <tag k="name:fi" v="Koutokeino"/>
+    <tag k="name:fkv" v="Koutokeino"/>
+    <tag k="name:no" v="Kautokeino"/>
+    <tag k="name:se" v="Guovdageaidnu"/>
+    <tag k="old_ref" v="2011"/>
+    <tag k="old_ref:2022" v="5430"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2849"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5612"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q6459"/>
+  </relation>
+  <relation id="406658">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lebesby"/>
+    <tag k="name:fkv" v="Lebespyy"/>
+    <tag k="name:se" v="Davvesiida"/>
+    <tag k="old_ref" v="2022"/>
+    <tag k="old_ref:2022" v="5438"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1232"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5624"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48760"/>
+  </relation>
+  <relation id="406659">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Alta"/>
+    <tag k="name:fkv" v="Alattio"/>
+    <tag k="name:se" v="Áltá"/>
+    <tag k="old_ref" v="2012"/>
+    <tag k="old_ref:2022" v="5403"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="21725"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5601"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q6535"/>
+  </relation>
+  <relation id="406833">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Aure"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3406"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1576"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499429"/>
+  </relation>
+  <relation id="406835">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rindal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1954"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5061"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488242"/>
+  </relation>
+  <relation id="406836">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Surnadal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5960"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1566"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48545"/>
+  </relation>
+  <relation id="406837">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Kristiansund N"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kristiansund"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="24505"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1505"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109483"/>
+    <tag k="wikipedia" v="en:Kristiansund"/>
+  </relation>
+  <relation id="406838">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tingvoll"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3079"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1560"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488252"/>
+  </relation>
+  <relation id="406839">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sunndal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7269"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1563"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48521"/>
+  </relation>
+  <relation id="406840">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Averøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5949"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1554"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484111"/>
+  </relation>
+  <relation id="406841">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gjemnes"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2705"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1557"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493283"/>
+  </relation>
+  <relation id="406844">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rauma"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7169"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1539"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q500205"/>
+  </relation>
+  <relation id="406847">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Aukra"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3685"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1547"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q489342"/>
+  </relation>
+  <relation id="406850">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vestnes"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7128"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1535"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488060"/>
+  </relation>
+  <relation id="406852">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stranda"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4333"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1525"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48501"/>
+  </relation>
+  <relation id="406856">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Haram"/>
+    <tag k="note" v="Municipality boundary until 1.1.2020 and after 1.1.2024"/>
+    <tag k="old_ref" v="1534"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9359"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1580"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499575"/>
+  </relation>
+  <relation id="406857">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sykkylven"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7619"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1528"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48508"/>
+  </relation>
+  <relation id="406859">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Giske"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8717"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1532"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494670"/>
+  </relation>
+  <relation id="406860">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ørsta"/>
+    <tag k="note" v="New municipality boundary 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10978"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1520"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q156453"/>
+  </relation>
+  <relation id="406862">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vanylven"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3031"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1511"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493992"/>
+    <tag k="wikipedia" v="en:Vanylven"/>
+  </relation>
+  <relation id="406863">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sula"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9725"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1531"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q507524"/>
+  </relation>
+  <relation id="406864">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hareid"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5303"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1517"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494029"/>
+  </relation>
+  <relation id="406865">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ulstein"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8841"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1516"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493961"/>
+  </relation>
+  <relation id="406866">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Herøy i Møre og Romsdal"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Herøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9012"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1515"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493762"/>
+  </relation>
+  <relation id="406867">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sande"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2439"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1514"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q501510"/>
+  </relation>
+  <relation id="407178">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Leka"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="599"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5052"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q503591"/>
+  </relation>
+  <relation id="407200">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Høylandet"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1213"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5046"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q162144"/>
+  </relation>
+  <relation id="407201">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Namsskogan"/>
+    <tag k="name:se" v="Nååmesje"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="817"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5044"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493996"/>
+    <tag k="wikipedia" v="en:Namsskogan"/>
+  </relation>
+  <relation id="407202">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Røyrvik"/>
+    <tag k="name:sma" v="Raarvihke"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="443"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5043"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484088"/>
+  </relation>
+  <relation id="407211">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Overhalla"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3945"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5047"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499761"/>
+  </relation>
+  <relation id="407216">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Grong"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2318"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5045"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q258084"/>
+  </relation>
+  <relation id="407217">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lierne"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1304"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5042"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493999"/>
+  </relation>
+  <relation id="407245">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Flatanger"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1111"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5049"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48276"/>
+  </relation>
+  <relation id="407273">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Snåsa"/>
+    <tag k="name:sma" v="Snåase"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2100"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5041"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493846"/>
+  </relation>
+  <relation id="407278">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Verdal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="15266"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5038"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q503660"/>
+  </relation>
+  <relation id="407287">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Frosta"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2647"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5036"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q489374"/>
+  </relation>
+  <relation id="407290">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Levanger"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="20659"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5037"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q216430"/>
+  </relation>
+  <relation id="407291">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stjørdal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="24748"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5035"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q217802"/>
+  </relation>
+  <relation id="407292">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Meråker"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2464"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5034"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48732"/>
+  </relation>
+  <relation id="407595">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Froland"/>
+    <tag k="old_ref" v="0919"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6257"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4214"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q88810"/>
+  </relation>
+  <relation id="407747">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nordreisa"/>
+    <tag k="name:fkv" v="Raisi"/>
+    <tag k="name:no" v="Nordreisa"/>
+    <tag k="name:se" v="Ráisa"/>
+    <tag k="old_ref" v="1942"/>
+    <tag k="old_ref:2022" v="5428"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4855"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5544"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494059"/>
+  </relation>
+  <relation id="407748">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kvænangen"/>
+    <tag k="name:fkv" v="Naavuono"/>
+    <tag k="name:se" v="Návuotna"/>
+    <tag k="old_ref" v="1943"/>
+    <tag k="old_ref:2022" v="5429"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1146"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5546"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488959"/>
+  </relation>
+  <relation id="407749">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Skjervøy"/>
+    <tag k="name:fkv" v="Kieruan"/>
+    <tag k="name:se" v="Skiervá"/>
+    <tag k="old_ref" v="1941"/>
+    <tag k="old_ref:2022" v="5427"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2802"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5542"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q128762"/>
+    <tag k="wikipedia" v="en:Skjervøy"/>
+  </relation>
+  <relation id="407750">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kåfjord"/>
+    <tag k="name:fkv" v="Kaivuono"/>
+    <tag k="name:no" v="Kåfjord"/>
+    <tag k="name:se" v="Gáivuotna"/>
+    <tag k="old_ref" v="1940"/>
+    <tag k="old_ref:2022" v="5426"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1969"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5540"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493942"/>
+  </relation>
+  <relation id="407751">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name:fi" v="Omasenvuono;Isovuono"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Storfjord"/>
+    <tag k="name:fkv" v="Omasvuono"/>
+    <tag k="name:no" v="Storfjord"/>
+    <tag k="name:se" v="Omasvuotna"/>
+    <tag k="old_ref" v="1939"/>
+    <tag k="old_ref:2022" v="5425"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1835"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5538"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48657"/>
+  </relation>
+  <relation id="407752">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lyngen"/>
+    <tag k="name:fkv" v="Yykeä"/>
+    <tag k="name:se" v="Ivgu"/>
+    <tag k="old_ref" v="1938"/>
+    <tag k="old_ref:2022" v="5424"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2728"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5536"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494018"/>
+  </relation>
+  <relation id="407753">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Karlsøy"/>
+    <tag k="name:se" v="Gálsa"/>
+    <tag k="old_ref" v="1936"/>
+    <tag k="old_ref:2022" v="5423"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2225"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5534"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48728"/>
+  </relation>
+  <relation id="407754">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name:se" v="Tromsa"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tromsø"/>
+    <tag k="name:ar" v="ترومسو"/>
+    <tag k="name:fi" v="Tromssa"/>
+    <tag k="name:he" v="טרומסה"/>
+    <tag k="name:ja" v="トロムソ"/>
+    <tag k="name:ko" v="트롬쇠"/>
+    <tag k="name:la" v="Tromsonda"/>
+    <tag k="name:lt" v="Trumsė"/>
+    <tag k="name:lv" v="Trumse"/>
+    <tag k="name:no" v="Tromsø"/>
+    <tag k="name:pnb" v="ٹرومسو"/>
+    <tag k="name:ru" v="Тромсё"/>
+    <tag k="name:se" v="Romsa"/>
+    <tag k="name:th" v="ทรมเซอ"/>
+    <tag k="name:zh" v="特罗姆瑟"/>
+    <tag k="old_ref" v="1902"/>
+    <tag k="old_ref:2022" v="5401"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="78908"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5501"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q26087"/>
+    <tag k="wikipedia" v="en:Tromsø"/>
+  </relation>
+  <relation id="407755">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Balsfjord"/>
+    <tag k="name:ar" v="بالسفيورد"/>
+    <tag k="name:fkv" v="Paatsivuono"/>
+    <tag k="name:no" v="Balsfjord"/>
+    <tag k="name:ru" v="Балсфьорд"/>
+    <tag k="name:se" v="Báhccavuotna"/>
+    <tag k="name:zh" v="巴爾斯菲尤爾"/>
+    <tag k="old_ref" v="1933"/>
+    <tag k="old_ref:2022" v="5422"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5584"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5532"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486717"/>
+  </relation>
+  <relation id="407756">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Målselv"/>
+    <tag k="name:se" v="Málatvuopmi"/>
+    <tag k="old_ref" v="1924"/>
+    <tag k="old_ref:2022" v="5418"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6746"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5524"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488955"/>
+  </relation>
+  <relation id="407757">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bardu"/>
+    <tag k="name:fkv" v="Perttula"/>
+    <tag k="name:se" v="Beardu"/>
+    <tag k="old_ref" v="1922"/>
+    <tag k="old_ref:2022" v="5416"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4008"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5520"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493315"/>
+  </relation>
+  <relation id="407761">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sørreisa"/>
+    <tag k="name:se" v="Ráisavuotna"/>
+    <tag k="old_ref" v="1925"/>
+    <tag k="old_ref:2022" v="5419"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3484"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5526"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48325"/>
+    <tag k="wikipedia" v="en:Sørreisa"/>
+  </relation>
+  <relation id="407762">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Dyrøy"/>
+    <tag k="name:se" v="Divrrát"/>
+    <tag k="old_ref" v="1926"/>
+    <tag k="old_ref:2022" v="5420"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1064"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5528"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q252381"/>
+  </relation>
+  <relation id="407763">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Salangen"/>
+    <tag k="name:se" v="Siellat"/>
+    <tag k="old_ref" v="1923"/>
+    <tag k="old_ref:2022" v="5417"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2075"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5522"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q500194"/>
+  </relation>
+  <relation id="407764">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lavangen"/>
+    <tag k="name:se" v="Loabák"/>
+    <tag k="old_ref" v="1920"/>
+    <tag k="old_ref:2022" v="5415"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="986"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5518"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q502217"/>
+  </relation>
+  <relation id="407765">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gratangen"/>
+    <tag k="name:se" v="Rivttát"/>
+    <tag k="old_ref" v="1919"/>
+    <tag k="old_ref:2022" v="5414"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1079"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5516"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q175704"/>
+  </relation>
+  <relation id="407767">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Harstad"/>
+    <tag k="name:se" v="Hárstták"/>
+    <tag k="note" v="Merged with neighbouring Bjarkøy 1.1.2013"/>
+    <tag k="old_ref" v="1903"/>
+    <tag k="old_ref:2022" v="5402"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="25119"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5503"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q62140"/>
+  </relation>
+  <relation id="407768">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kvæfjord"/>
+    <tag k="name:se" v="Giehtavuotna"/>
+    <tag k="old_ref" v="1911"/>
+    <tag k="old_ref:2022" v="5411"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2886"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5510"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q649541"/>
+  </relation>
+  <relation id="407772">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ibestad"/>
+    <tag k="name:se" v="Ivvárstáđiid"/>
+    <tag k="old_ref" v="1917"/>
+    <tag k="old_ref:2022" v="5413"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1305"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5514"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488258"/>
+    <tag k="wikipedia" v="en:Ibestad"/>
+  </relation>
+  <relation id="408160">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Andøy"/>
+    <tag k="name:se" v="Ánddasuolu"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4572"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1871"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113710"/>
+  </relation>
+  <relation id="408200">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hattfjelldal"/>
+    <tag k="name:se" v="Árbordi"/>
+    <tag k="name:sma" v="Aarborte"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1289"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1826"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488384"/>
+  </relation>
+  <relation id="408201">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hemnes"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4465"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1832"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488776"/>
+  </relation>
+  <relation id="408202">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rana"/>
+    <tag k="name:se" v="Rátnu"/>
+    <tag k="name:smj" v="Raavta"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="25988"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1833"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484322"/>
+  </relation>
+  <relation id="408203">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Saltdal"/>
+    <tag k="name:se" v="Sálát"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4877"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1840"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48880"/>
+  </relation>
+  <relation id="408204">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fauske - Fuossko"/>
+    <tag k="name:no" v="Fauske"/>
+    <tag k="name:sma" v="Fuossko"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9813"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1841"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48696"/>
+  </relation>
+  <relation id="408205">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sørfold"/>
+    <tag k="name:se" v="Oarjje-Fuolldá"/>
+    <tag k="name:smj" v="Oarjelij Foalda"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1849"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1845"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484097"/>
+  </relation>
+  <relation id="408208">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Steigen"/>
+    <tag k="name:se" v="Stáigu"/>
+    <tag k="name:smj" v="Stájgo"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2657"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1848"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494005"/>
+  </relation>
+  <relation id="408209">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Grane"/>
+    <tag k="name:sma" v="Gaala"/>
+    <tag k="name:smj" v="Gaala"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1435"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1825"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493758"/>
+  </relation>
+  <relation id="408210">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bindal"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1395"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1811"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q489362"/>
+  </relation>
+  <relation id="408211">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sømna"/>
+    <tag k="name:sma" v="Sïebne"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1985"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1812"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48610"/>
+  </relation>
+  <relation id="408212">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Brønnøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7825"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1813"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q112855"/>
+    <tag k="wikipedia" v="en:Brønnøy"/>
+  </relation>
+  <relation id="408213">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vefsn"/>
+    <tag k="name:sma" v="Vaapste"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13498"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1824"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q503654"/>
+    <tag k="wikipedia" v="en:Vefsn"/>
+  </relation>
+  <relation id="408214">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vevelstad"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="480"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1816"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494068"/>
+  </relation>
+  <relation id="408215">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vega"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1206"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1815"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488375"/>
+  </relation>
+  <relation id="408216">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Alstahaug"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7449"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1820"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q217808"/>
+    <tag k="wikipedia" v="en:Alstahaug"/>
+  </relation>
+  <relation id="408217">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Herøy i Nordland"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Herøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1853"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1818"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493932"/>
+  </relation>
+  <relation id="408218">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Leirfjord"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2336"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1822"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48870"/>
+  </relation>
+  <relation id="408219">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Dønna"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1418"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1827"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q489347"/>
+  </relation>
+  <relation id="408220">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nesna"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1799"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1828"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494062"/>
+  </relation>
+  <relation id="408221">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lurøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1907"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1834"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48341"/>
+  </relation>
+  <relation id="408222">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Træna"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="444"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1835"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48620"/>
+  </relation>
+  <relation id="408223">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rødøy"/>
+    <tag k="name:sma" v="Ruovada"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1148"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1836"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488046"/>
+  </relation>
+  <relation id="408478">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Moskenes"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="957"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1874"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q487636"/>
+    <tag k="wikipedia" v="en:Moskenes"/>
+  </relation>
+  <relation id="408479">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Flakstad"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1226"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1859"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q494680"/>
+  </relation>
+  <relation id="408480">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vestvågøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11607"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1860"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q507201"/>
+    <tag k="wikipedia" v="en:Vestvågøy"/>
+  </relation>
+  <relation id="408481">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vågan"/>
+    <tag k="name:se" v="Vuogát"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9816"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1865"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q490246"/>
+  </relation>
+  <relation id="408482">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bø"/>
+    <tag k="name:se" v="Bievát"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2640"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1867"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484012"/>
+  </relation>
+  <relation id="408483">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Øksnes"/>
+    <tag k="name:se" v="Ikšnášši"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4577"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1868"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q308134"/>
+  </relation>
+  <relation id="408484">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sortland"/>
+    <tag k="name:sma" v="Suorta"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10675"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1870"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48844"/>
+  </relation>
+  <relation id="409032">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Røst"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="459"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1856"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q130048"/>
+  </relation>
+  <relation id="409033">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Værøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="677"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1857"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48629"/>
+  </relation>
+  <relation id="409034">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hadsel"/>
+    <tag k="name:se" v="Ulbi"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8306"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1866"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484043"/>
+  </relation>
+  <relation id="409036">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Evenes"/>
+    <tag k="name:se" v="Evenášši"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1337"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1853"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48897"/>
+  </relation>
+  <relation id="409037">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bodø"/>
+    <tag k="name:sma" v="Budejju"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="53698"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1804"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q221119"/>
+    <tag k="wikipedia" v="en:Bodø"/>
+  </relation>
+  <relation id="409038">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gildeskål"/>
+    <tag k="name:se" v="Oarjje-Báidár"/>
+    <tag k="name:sje" v="Oarjelij Bájjdár"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1982"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1838"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484208"/>
+  </relation>
+  <relation id="409039">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Beiarn"/>
+    <tag k="name:se" v="Báidár"/>
+    <tag k="name:sje" v="Bájjdár"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1063"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1839"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q487524"/>
+  </relation>
+  <relation id="409040">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Meløy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6165"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1837"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48323"/>
+  </relation>
+  <relation id="409041">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lødingen"/>
+    <tag k="name:se" v="Lodegat"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2060"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1851"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484252"/>
+  </relation>
+  <relation id="409073">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Høyanger"/>
+    <tag k="note" v="New municipality boundary 1.1.2020"/>
+    <tag k="old_ref" v="1416"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3883"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4638"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113720"/>
+  </relation>
+  <relation id="409074">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vik"/>
+    <tag k="old_ref" v="1417"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2564"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4639"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q303521"/>
+  </relation>
+  <relation id="409075">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Aurland"/>
+    <tag k="old_ref" v="1421"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1809"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4641"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486700"/>
+  </relation>
+  <relation id="409076">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lærdal"/>
+    <tag k="old_ref" v="1422"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2165"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4642"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488975"/>
+  </relation>
+  <relation id="409077">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Årdal"/>
+    <tag k="old_ref" v="1424"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5229"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4643"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q271140"/>
+  </relation>
+  <relation id="409078">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Luster"/>
+    <tag k="old_ref" v="1426"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5398"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4644"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q503612"/>
+  </relation>
+  <relation id="409079">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stryn"/>
+    <tag k="old_ref" v="1449"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7303"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4651"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q5223"/>
+  </relation>
+  <relation id="409082">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gloppen"/>
+    <tag k="old_ref" v="1445"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5911"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4650"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q383492"/>
+    <tag k="wikipedia" v="en:Gloppen"/>
+  </relation>
+  <relation id="409083">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bremanger"/>
+    <tag k="old_ref" v="1438"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3382"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4648"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q499455"/>
+  </relation>
+  <relation id="409940">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ås"/>
+    <tag k="old_ref" v="0214"/>
+    <tag k="old_ref:2022" v="3021"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="22112"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3218"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q54062"/>
+  </relation>
+  <relation id="410880">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Løten"/>
+    <tag k="old_ref" v="0415"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7939"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3412"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488951"/>
+  </relation>
+  <relation id="410881">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Elverum"/>
+    <tag k="name:is" v="Alvarheimur"/>
+    <tag k="name:ps" v="الوروم"/>
+    <tag k="old_ref" v="0427"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="21775"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3420"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109140"/>
+  </relation>
+  <relation id="410882">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name:ps" v="هامار"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hamar"/>
+    <tag k="name:ps" v="هامار"/>
+    <tag k="old_ref" v="0403"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="33059"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3403"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q104400"/>
+    <tag k="wikipedia" v="en:Hamar Municipality"/>
+  </relation>
+  <relation id="410883">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stange"/>
+    <tag k="old_ref" v="0417"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="21580"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3413"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48542"/>
+  </relation>
+  <relation id="410884">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Våler i Innlandet;Våler i Hedmark"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Våler"/>
+    <tag k="old_ref" v="0426"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3581"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3419"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q501413"/>
+  </relation>
+  <relation id="410885">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Åmot"/>
+    <tag k="name:is" v="Ámót"/>
+    <tag k="old_ref" v="0429"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4293"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3422"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q271063"/>
+  </relation>
+  <relation id="411313">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ringsaker"/>
+    <tag k="name:ps" v="رینگساکیر"/>
+    <tag k="old_ref" v="0412"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="35762"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3411"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113466"/>
+  </relation>
+  <relation id="411383">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lier"/>
+    <tag k="old_ref" v="0626"/>
+    <tag k="old_ref:2022" v="3049"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="28570"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3312"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488607"/>
+  </relation>
+  <relation id="411384">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hole"/>
+    <tag k="old_ref" v="0612"/>
+    <tag k="old_ref:2022" v="3038"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6973"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3310"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488622"/>
+  </relation>
+  <relation id="412349">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kongsberg"/>
+    <tag k="old_ref" v="0604"/>
+    <tag k="old_ref:2022" v="3006"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="28878"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3303"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q108988"/>
+    <tag k="wikipedia" v="nn:Kongsberg kommune"/>
+  </relation>
+  <relation id="412350">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Øvre Eiker"/>
+    <tag k="note" v="Boundary adjusted 1.1.2022"/>
+    <tag k="old_ref" v="0624"/>
+    <tag k="old_ref:2022" v="3048"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="20809"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3314"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q110311"/>
+  </relation>
+  <relation id="412351">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Flesberg"/>
+    <tag k="old_ref" v="0631"/>
+    <tag k="old_ref:2022" v="3050"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2793"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3334"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q93633"/>
+  </relation>
+  <relation id="412352">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rollag"/>
+    <tag k="old_ref" v="0632"/>
+    <tag k="old_ref:2022" v="3051"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1407"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3336"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483911"/>
+  </relation>
+  <relation id="412353">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nore og Uvdal"/>
+    <tag k="old_ref" v="0633"/>
+    <tag k="old_ref:2022" v="3052"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2485"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3338"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48924"/>
+  </relation>
+  <relation id="412354">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hol"/>
+    <tag k="old_ref" v="0620"/>
+    <tag k="old_ref:2022" v="3044"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4516"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3330"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484057"/>
+  </relation>
+  <relation id="412355">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ål"/>
+    <tag k="old_ref" v="0619"/>
+    <tag k="old_ref:2022" v="3043"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4950"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3328"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113538"/>
+    <tag k="wikipedia" v="en:Ål"/>
+  </relation>
+  <relation id="412356">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hemsedal"/>
+    <tag k="old_ref" v="0618"/>
+    <tag k="old_ref:2022" v="3042"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2670"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3326"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q497248"/>
+  </relation>
+  <relation id="412357">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gol"/>
+    <tag k="old_ref" v="0617"/>
+    <tag k="old_ref:2022" v="3041"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4994"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3324"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q493301"/>
+    <tag k="wikipedia" v="en:Gol, Norway"/>
+  </relation>
+  <relation id="412358">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nesbyen"/>
+    <tag k="old_name" v="Nes;Nes i Buskerud"/>
+    <tag k="old_ref" v="0616"/>
+    <tag k="old_ref:2022" v="3040"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3287"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3322"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483986"/>
+  </relation>
+  <relation id="412359">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Flå"/>
+    <tag k="old_ref" v="0615"/>
+    <tag k="old_ref:2022" v="3039"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1126"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3320"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q93703"/>
+  </relation>
+  <relation id="412360">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ringerike"/>
+    <tag k="name:is" v="Hringaríki"/>
+    <tag k="old_ref" v="0605"/>
+    <tag k="old_ref:2022" v="3007"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="31629"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3305"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q110848"/>
+  </relation>
+  <relation id="412361">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Krødsherad"/>
+    <tag k="old_ref" v="0622"/>
+    <tag k="old_ref:2022" v="3046"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2257"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3318"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48886"/>
+  </relation>
+  <relation id="412362">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sigdal"/>
+    <tag k="old_ref" v="0621"/>
+    <tag k="old_ref:2022" v="3045"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3502"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3332"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486726"/>
+  </relation>
+  <relation id="412363">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Modum"/>
+    <tag k="old_ref" v="0623"/>
+    <tag k="old_ref:2022" v="3047"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="14621"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3316"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484001"/>
+  </relation>
+  <relation id="412406">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Skjåk"/>
+    <tag k="old_ref" v="0513"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2146"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3433"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484116"/>
+  </relation>
+  <relation id="412407">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lesja"/>
+    <tag k="name:is" v="Lesjar"/>
+    <tag k="old_ref" v="0512"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1980"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3432"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488405"/>
+  </relation>
+  <relation id="412408">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Dovre"/>
+    <tag k="name:is" v="Dofrar"/>
+    <tag k="old_ref" v="0511"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2512"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3431"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486677"/>
+    <tag k="wikipedia" v="en:Dovre"/>
+  </relation>
+  <relation id="412409">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lom"/>
+    <tag k="old_ref" v="0514"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2216"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3434"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488395"/>
+  </relation>
+  <relation id="412410">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vågå"/>
+    <tag k="old_ref" v="0515"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3535"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3435"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q113438"/>
+    <tag k="wikipedia" v="en:Vågå"/>
+  </relation>
+  <relation id="412411">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sel"/>
+    <tag k="old_ref" v="0517"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5758"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3437"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q507499"/>
+  </relation>
+  <relation id="412412">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nord-Fron"/>
+    <tag k="old_ref" v="0516"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5588"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3436"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488401"/>
+  </relation>
+  <relation id="412413">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sør-Fron"/>
+    <tag k="old_ref" v="0519"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3123"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3438"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488054"/>
+  </relation>
+  <relation id="412414">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ringebu"/>
+    <tag k="old_ref" v="0520"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4383"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3439"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48637"/>
+  </relation>
+  <relation id="412415">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Øyer"/>
+    <tag k="note" v="Boundary adjusted 2022-01-01"/>
+    <tag k="old_ref" v="0521"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5104"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3440"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q316779"/>
+  </relation>
+  <relation id="412416">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lillehammer"/>
+    <tag k="note" v="Boundary adjusted 2022-01-01"/>
+    <tag k="old_ref" v="0501"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="28831"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3405"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q101341"/>
+    <tag k="wikipedia" v="en:Lillehammer"/>
+  </relation>
+  <relation id="412417">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gausdal"/>
+    <tag k="name:is" v="Gausdalur"/>
+    <tag k="old_ref" v="0522"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6176"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3441"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486713"/>
+  </relation>
+  <relation id="412418">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gjøvik"/>
+    <tag k="name:is" v="Djúpvík"/>
+    <tag k="name:ps" v="يوويک"/>
+    <tag k="old_ref" v="0502"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="31007"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3407"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q108031"/>
+    <tag k="wikipedia" v="en:Gjøvik"/>
+  </relation>
+  <relation id="412419">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Østre Toten"/>
+    <tag k="old_ref" v="0528"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="14834"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3442"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q308420"/>
+  </relation>
+  <relation id="412420">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vestre Toten"/>
+    <tag k="old_ref" v="0529"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13690"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3443"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48717"/>
+  </relation>
+  <relation id="412421">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Gran"/>
+    <tag k="old_ref" v="0534"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13630"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3446"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q501518"/>
+  </relation>
+  <relation id="412422">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Søndre Land"/>
+    <tag k="old_ref" v="0536"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5595"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3447"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484093"/>
+  </relation>
+  <relation id="412423">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nordre Land"/>
+    <tag k="old_ref" v="0538"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6498"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3448"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486741"/>
+  </relation>
+  <relation id="412424">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sør-Aurdal"/>
+    <tag k="old_ref" v="0540"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2844"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3449"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48414"/>
+    <tag k="wikipedia" v="no:Sør-Aurdal"/>
+  </relation>
+  <relation id="412425">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nord-Aurdal"/>
+    <tag k="old_ref" v="0542"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6615"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3451"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484074"/>
+  </relation>
+  <relation id="412426">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vestre Slidre"/>
+    <tag k="old_ref" v="0543"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2105"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3452"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488439"/>
+  </relation>
+  <relation id="412427">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Vang"/>
+    <tag k="old_ref" v="0545"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1665"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3454"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q503637"/>
+    <tag k="wikipedia" v="en:Vang, Innlandet"/>
+  </relation>
+  <relation id="412428">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Etnedal"/>
+    <tag k="name:is" v="Etnadalur"/>
+    <tag k="old_ref" v="0541"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1327"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3450"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488049"/>
+  </relation>
+  <relation id="412429">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Jevnaker"/>
+    <tag k="name:is" v="Jafnakur"/>
+    <tag k="old_ref" v="0532"/>
+    <tag k="old_ref:2022" v="3053"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7036"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3236"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q486704"/>
+  </relation>
+  <relation id="412430">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lunner"/>
+    <tag k="old_ref" v="0533"/>
+    <tag k="old_ref:2022" v="3054"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9391"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3234"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488398"/>
+  </relation>
+  <relation id="412431">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Øystre Slidre"/>
+    <tag k="old_ref" v="0544"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="3292"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3453"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q329894"/>
+  </relation>
+  <relation id="412533">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Eidskog"/>
+    <tag k="name:is" v="Eiðaskógur"/>
+    <tag k="old_ref" v="0420"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6018"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3416"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48913"/>
+  </relation>
+  <relation id="412534">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kongsvinger"/>
+    <tag k="name:ps" v="کونګسوينګر"/>
+    <tag k="old_ref" v="0402"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="18104"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3401"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109499"/>
+  </relation>
+  <relation id="412535">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sør-Odal"/>
+    <tag k="old_ref" v="0419"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="8140"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3415"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48615"/>
+  </relation>
+  <relation id="412536">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nord-Odal"/>
+    <tag k="old_ref" v="0418"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4981"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3414"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484218"/>
+  </relation>
+  <relation id="412537">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Grue"/>
+    <tag k="old_ref" v="0423"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4515"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3417"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488783"/>
+  </relation>
+  <relation id="412538">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Åsnes"/>
+    <tag k="name:is" v="Ásnes"/>
+    <tag k="old_ref" v="0425"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="7335"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3418"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48769"/>
+  </relation>
+  <relation id="412539">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Trysil"/>
+    <tag k="old_ref" v="0428"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6574"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3421"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48529"/>
+  </relation>
+  <relation id="412540">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stor-Elvdal"/>
+    <tag k="old_ref" v="0430"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2274"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3423"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48526"/>
+  </relation>
+  <relation id="412541">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Rendalen"/>
+    <tag k="old_ref" v="0432"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1841"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3424"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488229"/>
+  </relation>
+  <relation id="412542">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Engerdal"/>
+    <tag k="old_ref" v="0434"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1350"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3425"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48909"/>
+  </relation>
+  <relation id="412543">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Os"/>
+    <tag k="old_ref" v="0441"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1882"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3430"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q507562"/>
+    <tag k="wikipedia" v="en:Os, Innlandet"/>
+  </relation>
+  <relation id="412544">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tolga"/>
+    <tag k="old_ref" v="0436"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1604"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3426"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q507549"/>
+  </relation>
+  <relation id="412545">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tynset"/>
+    <tag k="old_ref" v="0437"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5740"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3427"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488779"/>
+  </relation>
+  <relation id="412546">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Alvdal"/>
+    <tag k="name:is" v="Elvardalur"/>
+    <tag k="old_ref" v="0438"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2523"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3428"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48723"/>
+  </relation>
+  <relation id="412547">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Folldal"/>
+    <tag k="old_ref" v="0439"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="1528"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3429"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q484064"/>
+  </relation>
+  <relation id="2167163">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Inderøy"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6999"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5053"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488970"/>
+  </relation>
+  <relation id="2775550">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Oslo"/>
+    <tag k="name:ru" v="Осло"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="719852"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="0301"/>
+    <tag k="ref:LOCODE" v="NOOSL"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q5245991"/>
+  </relation>
+  <relation id="10143340">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hammerfest"/>
+    <tag k="name:se" v="Hámmerfeasta"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="5406"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11351"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5603"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q107351"/>
+  </relation>
+  <relation id="10143346">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tjeldsund"/>
+    <tag k="name:se" v="Dielddanuorri"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="5412"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4270"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5512"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48801"/>
+  </relation>
+  <relation id="10143357">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Senja"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="5421"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="14860"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5530"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q56249968"/>
+  </relation>
+  <relation id="10143373">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Narvik"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="21571"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1806"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q1215658"/>
+    <tag k="wikipedia" v="en:Narvik"/>
+  </relation>
+  <relation id="10143387">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hamarøy"/>
+    <tag k="name:se" v="Hábmir"/>
+    <tag k="name:smj" v="Hábmer"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2747"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1875"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q487538"/>
+  </relation>
+  <relation id="10143398">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nærøysund"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9989"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5060"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q52368284"/>
+  </relation>
+  <relation id="10143402">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Namsos"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="15093"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5007"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q111039"/>
+  </relation>
+  <relation id="10143415">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Åfjord"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="4346"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5058"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q270835"/>
+  </relation>
+  <relation id="10143420">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Steinkjer"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="24066"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5006"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q110431"/>
+    <tag k="wikipedia" v="en:Steinkjer"/>
+  </relation>
+  <relation id="10143423">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ørland"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10557"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5057"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q308245"/>
+    <tag k="wikipedia" v="en:Ørland"/>
+  </relation>
+  <relation id="10143441">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hitra"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="5342"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5056"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109025"/>
+    <tag k="wikipedia" v="en:Hitra"/>
+  </relation>
+  <relation id="10143451">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Heim"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="6115"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5055"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q48475310"/>
+  </relation>
+  <relation id="10143469">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Orkland"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="18808"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5059"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q41030999"/>
+  </relation>
+  <relation id="10143487">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name:ar" v="ترونديم"/>
+    <tag k="alt_name:ps" v="تروندهايم"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Trondheim"/>
+    <tag k="name:ar" v="تروندهايم"/>
+    <tag k="name:ps" v="تروندهايم"/>
+    <tag k="name:se" v="Troandin"/>
+    <tag k="name:sma" v="Tråante"/>
+    <tag k="name:smj" v="Tråante"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="215121"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="5001"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q25804"/>
+    <tag k="wikipedia" v="en:Trondheim"/>
+  </relation>
+  <relation id="10148086">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Molde"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="32920"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1506"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q104095"/>
+  </relation>
+  <relation id="10148272">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Hustadvika"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="13423"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1579"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q60777023"/>
+  </relation>
+  <relation id="10148303">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Fjord"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="2502"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1578"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q65230514"/>
+  </relation>
+  <relation id="10148316">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Volda"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11093"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1577"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q488445"/>
+  </relation>
+  <relation id="10148356">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stad"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="9609"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4649"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q61015259"/>
+  </relation>
+  <relation id="10150594">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kinn"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="17400"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4602"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q56405940"/>
+  </relation>
+  <relation id="10150607">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sunnfjord"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="22536"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4647"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q56406057"/>
+  </relation>
+  <relation id="10150612">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sogndal"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="12331"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4640"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q490923"/>
+  </relation>
+  <relation id="10150615">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Voss"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="official_name" v="Voss herad"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="16567"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4621"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109031"/>
+    <tag k="wikipedia" v="en:Voss"/>
+  </relation>
+  <relation id="10150624">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Alver"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="30074"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4631"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q56404228"/>
+  </relation>
+  <relation id="10150629">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Øygarden"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="39845"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4626"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q63644915"/>
+  </relation>
+  <relation id="10150641">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Bjørnafjorden"/>
+    <tag k="note" v="New municipality boundary 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="26121"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4624"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q60742846"/>
+  </relation>
+  <relation id="10150643">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ullensvang"/>
+    <tag k="note" v="New municipality 1.1.2020; Boundary adjusted 01.01.2022"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="11006"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4618"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q80678654"/>
+  </relation>
+  <relation id="10150658">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Stavanger"/>
+    <tag k="name:is" v="Stafangur"/>
+    <tag k="name:ps" v="ستوانګر"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="149330"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1103"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q25416"/>
+  </relation>
+  <relation id="10150660">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Sandnes"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="83958"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1108"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q27587"/>
+  </relation>
+  <relation id="10152428">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lyngdal"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10854"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4225"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q505952"/>
+    <tag k="wikipedia" v="en:Lyngdal"/>
+  </relation>
+  <relation id="10152440">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Kristiansand S"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Kristiansand"/>
+    <tag k="name:ps" v="کريستيان ساند"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="117213"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4204"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q2415"/>
+  </relation>
+  <relation id="10152441">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lindesnes"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="23730"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4205"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q80571266"/>
+  </relation>
+  <relation id="10152443">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Midt-Telemark"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3817"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="10898"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="4020"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q56405258"/>
+  </relation>
+  <relation id="10152542">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Tønsberg"/>
+    <tag k="name:is" v="Túnsberg"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3803"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="59237"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3905"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q107392"/>
+    <tag k="wikipedia" v="en:Tønsberg"/>
+  </relation>
+  <relation id="10155374">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Lillestrøm"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3030"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="94585"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3205"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q60806432"/>
+  </relation>
+  <relation id="10155381">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Aurskog-Høland"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3026"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="18143"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3226"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q56915"/>
+  </relation>
+  <relation id="10155388">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Nordre Follo"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3020"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="63794"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3207"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q45303406"/>
+  </relation>
+  <relation id="10155447">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Indre Østfold"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3014"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="47127"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3118"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q42293305"/>
+  </relation>
+  <relation id="10155463">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Moss"/>
+    <tag k="note" v="New municipality 1.1.2020"/>
+    <tag k="old_ref:2022" v="3002"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="52213"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3103"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q109021"/>
+  </relation>
+  <relation id="10483726">
+    <tag k="admin_level" v="7"/>
+    <tag k="alt_name" v="Municipality of Drammen"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Drammen"/>
+    <tag k="note" v="New municipality boundary 1.1.2020; Adjusted 1.1.2022"/>
+    <tag k="old_ref:2022" v="3005"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="104625"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3301"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q26525"/>
+  </relation>
+  <relation id="10483727">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Holmestrand"/>
+    <tag k="name:is" v="Hólmsströnd"/>
+    <tag k="old_ref:2022" v="3802"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="26932"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3903"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q483871"/>
+  </relation>
+  <relation id="10483728">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Asker"/>
+    <tag k="note" v="New municipality boundary 1.1.2020"/>
+    <tag k="old_ref:2022" v="3025"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="99214"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="3203"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q80593157"/>
+  </relation>
+  <relation id="16873323">
+    <tag k="admin_level" v="7"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name" v="Ålesund"/>
+    <tag k="name:is" v="Álasund"/>
+    <tag k="note" v="New municipality 1.1.2024"/>
+    <tag k="place" v="municipality"/>
+    <tag k="population" v="58683"/>
+    <tag k="population:date" v="2024-04-01"/>
+    <tag k="ref" v="1508"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q62266"/>
+  </relation>
+
+</osm>
