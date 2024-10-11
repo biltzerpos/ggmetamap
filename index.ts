@@ -189,13 +189,16 @@ function colorCoding(farr, col, w = 5) {
     }
 }
 
-function colorCoding2(farr, field, field2, digit, colArray, w = 5) {
+function colorCoding2(farr, field, field2, digit = 0, colArray, w = 5) {
 
     if (farr.length > 0) {
         farr.forEach((feature) => {
 
             let col = 3;
-            let name = feature[field][field2].toString();
+            colog(feature);
+            let name = "333";
+            if (feature[field] && feature[field][field2])
+                name = feature[field][field2].toString();
             colog("here" + name);
             
             if (digit < 0) {
@@ -668,28 +671,32 @@ function createCountryChooser(map) {
           if (countryMenu.value == "Wales") {
               loadGeoJSONFile('/Layers/Wales/Level3.geojson');
               layerMenu.appendChild(new Option("Counties", "Counties"));
-              //layerMenu.appendChild(new Option("Bike routes 1-16", "Bike routes 1-16"));
-              //layerMenu.appendChild(new Option("3-digit bike routes", "3-digit bike routes"));
+              layerMenu.appendChild(new Option("Bins", "Bins"));
               layerMenu.appendChild(new Option("Most useful highway meta", "Most useful highway meta"));
               layerMenu.appendChild(new Option("A Highways", "A Highways"));
               layerMenu.appendChild(new Option("B Highways", "B Highways"));
-              
+              layerMenu.appendChild(new Option("Main bike routes", "Main bike routes"));
+              layerMenu.appendChild(new Option("All bike routes", "All bike routes"));
+
               layerMenu.onchange = () => {
                   if (!newLayerReset(1)) return;
                   if (layerMenu.value == "Counties") {
                       loadMarkerLayer(countryMenu.value, layerMenu.value);
                   }
-                  else if (layerMenu.value == "Bike routes 1-16") {
-                      showAuxButton("Next route");
-                      const geopath = 'Layers/Estonia/geojson/B1.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
+                  else if (layerMenu.value == "Bins") {
+                      //showAuxButton("Next route");
+                      loadMarkerLayer(countryMenu.value, "Bins");
+                  }else if (layerMenu.value == "Main bike routes") {
+                      //showAuxButton("Next route");
+                      const geopath = 'Layers/Wales/Bike458.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref"));
+                      loadMarkerLayer(countryMenu.value, "Bike458");
                   }
-                  else if (layerMenu.value == "3-digit bike routes") {
-                      showAuxButton("Next set of routes");
-                      const geopath = 'Layers/Estonia/geojson/B14x.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                      placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
+                  else if (layerMenu.value == "All bike routes") {
+                      //showAuxButton("Next set of routes");
+                      const geopath = 'Layers/Wales/BikeAll.geojson';
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref"));
+                      loadMarkerLayer(countryMenu.value, "BikeAll");
                   }
                   else if (layerMenu.value == "Most useful highway meta") {
                       showAuxButton("Next set of highways");
@@ -1076,7 +1083,7 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
                 marker.setAttribute("fszl", fszl);
                 marker.content.style.transform = getTransform(marker);
             }
-        } else if (editMode && event.shiftKey) { // Option-Click = DELETE
+        } else if (editMode && event.shiftKey) { // Shift-Click = DELETE
             colog(markers.length);
             marker.setMap(null);
             const index = markers.indexOf(marker);

@@ -1,0 +1,128 @@
+[
+  {
+    "text": "Anglesey.jpg",
+    "type": "image",
+    "lat": 53.28217476288606,
+    "lng": -4.360184535405343,
+    "fszl": 13
+  },
+  {
+    "text": "BlaenauGwentBin.jpg",
+    "type": "image",
+    "lat": 51.77559667685036,
+    "lng": -3.197564081706885,
+    "fszl": 15
+  },
+  {
+    "text": "Bridgend.jpg",
+    "type": "image",
+    "lat": 51.56186583013756,
+    "lng": -3.5863175793841218,
+    "fszl": 13
+  },
+  {
+    "text": "Ceredigion.jpg",
+    "type": "image",
+    "lat": 52.307641463438436,
+    "lng": -4.12880776369122,
+    "fszl": 12
+  },
+  {
+    "text": "Conwy.jpg",
+    "type": "image",
+    "lat": 53.18375368204023,
+    "lng": -3.749157170887265,
+    "fszl": 13
+  },
+  {
+    "text": "Denbighshire.jpg",
+    "type": "image",
+    "lat": 53.07206087412412,
+    "lng": -3.3427274032786225,
+    "fszl": 13
+  },
+  {
+    "text": "Flintshire.jpg",
+    "type": "image",
+    "lat": 53.20880762259072,
+    "lng": -3.1427955433085297,
+    "fszl": 13
+  },
+  {
+    "text": "Gwynedd.png",
+    "type": "image",
+    "lat": 52.85727236858361,
+    "lng": -3.8916875882529056,
+    "fszl": 10
+  },
+  {
+    "text": "Merthyr Tydfill.jpg",
+    "type": "image",
+    "lat": 51.747776559680474,
+    "lng": -3.376370863475684,
+    "fszl": 15
+  },
+  {
+    "text": "Monmouthshire.jpg",
+    "type": "image",
+    "lat": 51.760468876636445,
+    "lng": -2.868201542395017,
+    "fszl": 13
+  },
+  {
+    "text": "Pembrokeshire.jpg",
+    "type": "image",
+    "lat": 51.91222249658994,
+    "lng": -4.889931544682686,
+    "fszl": 13
+  },
+  {
+    "text": "Pontypridd.jpg",
+    "type": "image",
+    "lat": 51.61734007842615,
+    "lng": -3.4058508843221458,
+    "fszl": 14
+  },
+  {
+    "text": "Powys.jpg",
+    "type": "image",
+    "lat": 52.255066344058044,
+    "lng": -3.4275624984365582,
+    "fszl": 11
+  },
+  {
+    "text": "Saundersfoot, Pembrokeshire.jpg",
+    "type": "image",
+    "lat": 51.758944516441126,
+    "lng": -4.804454044856909,
+    "fszl": 13
+  },
+  {
+    "text": "Swansea.jpg",
+    "type": "image",
+    "lat": 51.652103166077765,
+    "lng": -3.979785839782275,
+    "fszl": 13
+  },
+  {
+    "text": "TorfaenBin.jpg",
+    "type": "image",
+    "lat": 51.70289885987238,
+    "lng": -3.053596847639668,
+    "fszl": 15
+  },
+  {
+    "text": "WrexhamBin.jpg",
+    "type": "image",
+    "lat": 53.01261667792391,
+    "lng": -2.942395905719317,
+    "fszl": 14
+  },
+  {
+    "text": "WrexhamLitter.jpg",
+    "type": "image",
+    "lat": 53.01975519331741,
+    "lng": -3.052768806682147,
+    "fszl": 13
+  }
+]
