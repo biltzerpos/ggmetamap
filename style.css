@@ -93,6 +93,14 @@ body {
 
 /* HTML marker styles */
 
+.popup-infowindow {
+    color: red;
+    background-color: yellow;
+    border: 1px solid black; /* Add a border */
+    border-radius: 10px; /* Make corners round */
+    padding: 10px;
+}
+
 .custom-infowindow {
     background-color: white;
     border: 1px solid black; /* Add a border */
@@ -127,7 +135,7 @@ body {
   transform: translate(-50%, -50%); */
 }
 
-.area-code {
+.text-marker {
   background-color: var(--marker-color);
   border-radius: 8px;
   color: #FFFFFF;
@@ -136,7 +144,7 @@ body {
   position: relative;
 }
 
-.area-code::after {
+.text-marker::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -164,3 +172,9 @@ body {
 .gm-style-iw-tc::after {
   height: 0px !important;
 }
+
+/* Hides the close button in the InfoWindow */
+.gm-style-iw button.gm-ui-hover-effect {
+    display: none !important;
+}
+

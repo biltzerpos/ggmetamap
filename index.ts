@@ -4,19 +4,25 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+//import turf from './turf.min.js';
 import TxtOverlay from './ov.jsx';
 
+
 let map: google.maps.Map;
+const currentUrl = new URL(window.location.href);
+const params = new URLSearchParams(currentUrl.search);
+let urlCountry, urlLayer;
 let streetViewLayer;
 let lastCountry, lastLayer;
-let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, editModeButton, coverageButton;
+let boundaryLayer, secondaryLayer, auxButton, saveLocsButton, saveGeoJsonButton, editModeButton, coverageButton;
 let boundaryFeatures = [], secondaryFeatures = [];
 let overlay;
 var markers: google.maps.marker.AdvancedMarkerElement[] = [];
 let countryMenu, layerMenu: HTMLSelectElement;
 let layerMin = 0;
 let infoWindow;
-let editMode = false, debugMode = false, localMode = false, coverageMode = false, askToSave = false;
+let popupPropertyName = "Not yet defined";
+let editMode = false, debugMode = false, localMode = false, coverageMode = false, askToSave = false, displayPopups = true;
 let showAreas = true, showBorders = false;
 const colors = ["#000000", "#CD66FF", "#FF6599", "#FF0000", "#FF8E00", "#9B870C", "#008E00", "#00C0C0", "#400098", "#8E008E"];
 let colourDigit = 1; // which digit is used for colour selection
@@ -48,6 +54,31 @@ function colog(a) {
     if (debugMode) console.log(a);
 }
 
+function updateURL(country, layer) {
+
+
+// Step 3: Set or update parameters
+params.set('country', country);
+params.set('layer', layer);
+
+// Step 4: Update the URL
+currentUrl.search = params.toString(); // Set the updated query string
+
+// Step 5: Use history.pushState or history.replaceState
+history.pushState(null, '', currentUrl); // This will change the URL without reloading the page
+
+// If you want to replace the current history state instead of pushing a new one:
+ // history.replaceState(null, '', currentUrl);
+
+}
+
+function removeAccentsAndUpperCase(str) {
+    return str
+        .normalize('NFD') // Normalize the string to decompose accented characters
+        .replace(/[\u0300-\u036f]/g, '') // Remove diacritical marks
+        .toUpperCase(); // Convert to uppercase
+}
+
 // Define a function that partially applies another function
 function partial(fn, ...fixedArgs) {
     return function (...freeArgs) {
@@ -57,13 +88,14 @@ function partial(fn, ...fixedArgs) {
 
 function newCountryReset() {
     lastCountry = countryMenu.value;
-    boundaryLayer.setStyle({ strokeOpacity: '1', fillOpacity: '0' });
+    boundaryLayer.setStyle({ strokeOpacity: '1', fillOpacity: '0', zIndex: 1 });
     removeAllFeatures();
     removeAllMarkers();
     hideAuxButton();
     if (overlay) overlay.setMap(null);
     askToSave = false;
     editMode = false;
+    displayPopups = true;
     editModeButton.textContent = 'Turn Edit Mode ON';
 }
 
@@ -75,17 +107,17 @@ function newLayerReset(opacity = 0.1) {
     }
     if (goOn) {
         lastLayer = layerMenu.options[layerMenu.selectedIndex].textContent;
-        boundaryLayer.setStyle({ strokeOpacity: opacity, fillOpacity: '0' });
+        boundaryLayer.setStyle({ strokeOpacity: opacity, fillOpacity: '0', zIndex: 1 });
         clearSecondaryLayer();
-        secondaryLayer.setStyle({
-            strokeColor: 0,
-            strokeWeight: 3});
+        secondaryLayer.setStyle({ strokeColor: 0, strokeWeight: 3, zIndex: 2 });
         removeAllMarkers();
         hideAuxButton();
         if (overlay) overlay.setMap(null);
         askToSave = false;
         editMode = false;
+        displayPopups = true;
         editModeButton.textContent = 'Turn Edit Mode ON';
+        updateURL(countryMenu.value, layerMenu.value);
     } else {
         selectOption(layerMenu, lastLayer);
     }
@@ -114,35 +146,18 @@ function selectOption(menu, option) {
     }
 }
 
-function markerInMiddle(farr, field1, field2, split = false, col = 0) {
+function markerInMiddle(farr, field, split = false) {
 
               if (farr.length > 0) {
                   farr.forEach((feature) => {
-                      let styleOptions = {
-                          strokeColor: colors[col]
-                      }
-                      secondaryLayer.overrideStyle(feature, styleOptions);  
-                      let pointsArray = [];
-                      let id = feature[field1]["@id"].toString();
-                      if (id.startsWith("relation")) {
-                          //colog(feature);
-                          //colog(feature[field1]["@id"]);
-                          let name = feature[field1][field2].toString();
+                      //colog(feature);
+                      let pointsArray: google.maps.LatLng[] = [];
+                      let name = feature.getProperty(field);
                           //colog(name);
                           if (split) {
-                              let result = '';
-                              for (let i = 0; i < name.length; i++) {
-                                  const char = name[i];
-                                  // Check if the character is uppercase and not the first character
-                                  if (char !== char.toLowerCase() && i !== 0) {
-                                      // If it's uppercase and not the first character, add a space before it
-                                      result += ' ';
-                                  }
-                                  // Add the current character to the result
-                                  result += char;
-                              }
-                              name = result;
+                              name = splitCamelCase(name);
                           }
+                          name = removeAccentsAndUpperCase(name);
                           const geometry = feature.getGeometry();
                           if (geometry) {
                               processPoints2(geometry, pointsArray, (p, a) => { a.push(p) });
@@ -158,12 +173,27 @@ function markerInMiddle(farr, field1, field2, split = false, col = 0) {
                               //let pp = new google.maps.LatLng(avgLat, avgLng);
                               //const overlay = new TxtOverlay(pp, name, "transp", 6, map);
                               //overlay.setMap(map);
-                              placeNewMarker(map, { lat: avgLat, lng: avgLng }, name, null, "name", 6);
+                              placeNewMarker(map, { lat: avgLat, lng: avgLng }, name, "", "name", 6);
                           }
-                      }
+                      //}
                   });
               }
 
+}
+
+function splitCamelCase(name: any) {
+    let result = '';
+    for (let i = 0; i < name.length; i++) {
+        const char = name[i];
+        // Check if the character is uppercase and not the first character
+        if (char !== char.toLowerCase() && i !== 0 && name[i - 1] !== '-') {
+            // If it's uppercase and not the first character, add a space before it
+            result += ' ';
+        }
+        // Add the current character to the result
+        result += char;
+    }
+    return result;
 }
 
 function colorCoding(farr, col, w = 5) {
@@ -189,17 +219,26 @@ function colorCoding(farr, col, w = 5) {
     }
 }
 
-function colorCoding2(farr, field, field2, digit = 0, colArray, w = 5) {
+function colorCoding2(farr, field, digit = 0, colArray, w = 5) {
 
     if (farr.length > 0) {
         farr.forEach((feature) => {
-
+            
             let col = 3;
-            colog(feature);
-            let name = "333";
-            if (feature[field] && feature[field][field2])
-                name = feature[field][field2].toString();
-            colog("here" + name);
+            //colog(feature);
+            let name = "";
+            // if (feature[field] )
+            //&& feature[field][field2])
+            //     name = feature[field][field2].toString();
+            // if (field in feature.properties) 
+            name = feature.getProperty(field);
+            if (name === undefined)
+            {
+                name = "00000000000";
+                colog("Feature with no " + field);
+                colog(feature);
+            }
+            //colog("here " + name);
             
             if (digit < 0) {
                 let index = name.indexOf(";");
@@ -207,6 +246,7 @@ function colorCoding2(farr, field, field2, digit = 0, colArray, w = 5) {
                 if (rname in colArray) col = Number(colArray[rname]);   
             }
             else {
+                if (digit == 9) digit = name.length - 1;
                 col = Number(name[digit]);
             }
             let styleOptions = {
@@ -228,8 +268,9 @@ function thickBlue(farr) {
             let styleOptions = {
                 strokeColor: 'blue',
                 strokeWeight: '10',
+                fillOpacity: '0',
                 strokeOpacity: '0.2',
-                zIndex: '1'
+                zIndex: '3'
             }
             secondaryLayer.overrideStyle(feature, styleOptions);
         });
@@ -240,7 +281,7 @@ function createCountryChooser(map) {
     countryMenu = document.createElement('select');
     countryMenu.className = "buttons";
 
-    const top = new Option("Choose Country", "0");
+    const top = new Option("Choose Country", "Choose Country");
     top.selected = true;
     top.disabled = true;
     countryMenu.appendChild(top);
@@ -248,6 +289,7 @@ function createCountryChooser(map) {
     countryMenu.appendChild(new Option("Chile", "Chile"));
     countryMenu.appendChild(new Option("Estonia", "Estonia"));
     countryMenu.appendChild(new Option("France", "France"));
+    countryMenu.appendChild(new Option("Greece", "Greece"));
     if (localMode) countryMenu.appendChild(new Option("France Sandbox", "France Sandbox"));
     if (localMode) countryMenu.appendChild(new Option("Greece Sandbox", "Greece Sandbox"));
     if (localMode) countryMenu.appendChild(new Option("Indonesia Sandbox", "Indonesia Sandbox"));
@@ -287,23 +329,34 @@ function createCountryChooser(map) {
           };
       }
       if (countryMenu.value == "France Sandbox") {
-          loadGeoJSONFile('/Layers/France/Level2.geojson', "boundaryLayer", markerInMiddle);
+          loadGeoJSONFile('/Layers/France/Level2.geojson', "boundaryLayer", partial(markerInMiddle, "NAME_2"));
       }
       if (countryMenu.value == "Indonesia") {
           loadGeoJSONFile('/Layers/Indonesia/Level2.geojson');
+          popupPropertyName = "NAME_2";
           layerMenu.appendChild(new Option("Kabupaten", "Kabupaten"));
           //layerMenu.appendChild(new Option("Kecamatan", "Kecamatan"));
           layerMenu.onchange = () => {
               if (!newLayerReset(1)) return;
+              displayPopups = false;
               showAuxButton("Show Province borders");
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
+      if (countryMenu.value == "Greece") {
+        loadGeoJSONFile('/Layers/Greece/Level3.geojson');
+        layerMenu.appendChild(new Option("Municipalities", "Municipalities"));
+        layerMenu.onchange = () => {
+            if (!newLayerReset(1)) return;
+            //showAuxButton("Show Province borders");
+            loadMarkerLayer(countryMenu.value, layerMenu.value);
+        };
+    }
           if (countryMenu.value == "Greece Sandbox") {
-              loadGeoJSONFile('/Layers/Greece/Level3.geojson', "boundaryLayer", partial(markerInMiddle));
+              loadGeoJSONFile('/Layers/Greece/Level3.geojson', "boundaryLayer", partial(markerInMiddle, "NL_NAME_3", true));
           }
           if (countryMenu.value == "Wales Sandbox") {
-              await loadGeoJSONFile('/Layers/Wales/Level3.geojson', "boundaryLayer", partial(markerInMiddle, "Fg", "name"));
+              await loadGeoJSONFile('/Layers/Wales/Level3.geojson', "boundaryLayer", partial(markerInMiddle, "name"));
               boundaryLayer.forEach((feature) => {
                   colog(feature);
                   let id = feature["Fg"]["@id"].toString();
@@ -325,7 +378,7 @@ function createCountryChooser(map) {
               });
           }
           if (countryMenu.value == "Indonesia Sandbox") {
-          loadGeoJSONFile('/Layers/Indonesia/Level3.geojson', "boundaryLayer", partial(markerInMiddle, true));
+          loadGeoJSONFile('/Layers/Indonesia/Level2.geojson', "boundaryLayer", partial(markerInMiddle, "NAME_2", true));
       }
       if (countryMenu.value == "France") {
           loadGeoJSONFile('/Layers/France/Level2.geojson');
@@ -367,7 +420,7 @@ function createCountryChooser(map) {
                   loadMarkerLayer("France", "MinorRivers");
               }
               else {
-                  boundaryLayer.setStyle({ strokeOpacity: '1', fillOpacity: '0' });
+                  boundaryLayer.setStyle({ strokeOpacity: '1', fillOpacity: '0', zIndex: 1 });
                   loadGeoJSONFile('/Layers/France/Level2.geojson');
                   loadMarkerLayer(countryMenu.value, layerMenu.value);                  
               }
@@ -457,7 +510,6 @@ function createCountryChooser(map) {
           layerMenu.onchange = async () => {
               if (!newLayerReset()) return;
               colourDigit = 0;
-              //boundaryLayer.setStyle({ strokeOpacity: '0.2', fillOpacity: '0' }); 
               showAreas = true;
               if (layerMenu.value == "License Plates") {
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
@@ -482,41 +534,15 @@ function createCountryChooser(map) {
       }
           if (countryMenu.value == "Norway") {
               loadGeoJSONFile('/Layers/Norway/Level1.geojson');
-              //layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
-              //layerMenu.appendChild(new Option("Bike routes 1-16", "Bike routes 1-16"));
-              //layerMenu.appendChild(new Option("3-digit bike routes", "3-digit bike routes"));
               layerMenu.appendChild(new Option("Highways", "Highways"));
-              //layerMenu.appendChild(new Option("Rivers", "Rivers"));
               layerMenu.onchange = () => {
                   if (!newLayerReset(0)) return;
-                  //if (layerMenu.value == "Phone Codes") {
-                  //    loadMarkerLayer(countryMenu.value, layerMenu.value);
-                  //}
-                  //else if (layerMenu.value == "Bike routes 1-16") {
-                  //    showAuxButton("Next route");
-                  //    const geopath = 'Layers/Estonia/geojson/B1.geojson';
-                  //    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                  //    placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
-                  //}
-                  //else if (layerMenu.value == "3-digit bike routes") {
-                  //    showAuxButton("Next set of routes");
-                  //    const geopath = 'Layers/Estonia/geojson/B14x.geojson';
-                  //    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3));
-                  //    placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
-                  //}
                   if (layerMenu.value == "Highways") {
                       showAuxButton("Next set of highways");
                       const geopath = 'Layers/Norway/HE.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", -1, colll));
-                      loadMarkerLayer(countryMenu.value, "Ex")
-                      //placeNewMarker(map, { lat: 65.7, lng: 8.9 }, "European Highways");
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "ref", -1, colll));
+                      loadMarkerLayer(countryMenu.value, "Ex");
                   }
-                  //else if (layerMenu.value == "Rivers") {
-                  //    //showAuxButton("Next set of highways");
-                  //    const geopath = 'Layers/Estonia/Rivers.geojson';
-                  //    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
-                  //    loadMarkerLayer(countryMenu.value, layerMenu.value);
-                  //}
               };
           }
       if (countryMenu.value == "Romania") {
@@ -540,6 +566,7 @@ function createCountryChooser(map) {
       }
           if (countryMenu.value == "Ireland") {
               loadGeoJSONFile('/Layers/Ireland/Level1.geojson');
+              popupPropertyName = "NAME_1";
               layerMenu.appendChild(new Option("Phone Codes", "Phone Codes"));
               layerMenu.appendChild(new Option("Flags", "Flags"));
               layerMenu.onchange = () => {
@@ -567,6 +594,7 @@ function createCountryChooser(map) {
           }
       if (countryMenu.value == "South Africa") {
           loadGeoJSONFile('/Layers/South Africa/Level1.geojson');
+          popupPropertyName = "NAME_1";
           layerMenu.appendChild(new Option("Most useful highway clusters", "Clusters"));
           for (let i = 2; i <= 7; i++) {
               const optionName = " " + i + "x Highway Numbers";
@@ -584,12 +612,12 @@ function createCountryChooser(map) {
           layerMenu.onchange = async () => {
               if (!newLayerReset()) return;
               showAuxButton("Next option");
-              const styleOptions = {
-                  strokeColor: 'black',
-                  strokeOpacity: '1',
-                  strokeWeight: '5'
-              };
-              secondaryLayer.setStyle(styleOptions);
+            //   const styleOptions = {
+            //       strokeColor: 'black',
+            //       strokeOpacity: '1',
+            //       strokeWeight: '5'
+            //   };
+            //  secondaryLayer.setStyle(styleOptions);
               if (layerMenu.value == "Clusters") {
                   loadGeoJSONFile('Layers/South Africa/Clusters.geojson', "secondaryLayer");
                   loadMarkerLayer(countryMenu.value, layerMenu.value);
@@ -597,7 +625,7 @@ function createCountryChooser(map) {
               else {
                   const group = layerMenu.value.substring(0, 2).replace(/\s/g, '');
                   const geopath = 'Layers/South Africa/geojson/' + group + 'x.geojson';
-                  loadGeoJSONFile(geopath, "secondaryLayer");
+                  loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "ref", 9));
                   loadMarkerLayer("South Africa", "markers/" + group);
               }
           };
@@ -609,7 +637,7 @@ function createCountryChooser(map) {
               const optionName = "D" + i + "xx Highway Numbers";
               layerMenu.appendChild(new Option(optionName, optionName));
           }
-          let hnames = [];
+          let hnames: string[][] = [];
           hnames.push(["010", "014", "016", "020", "030", "040", "050", "060", "062", "070", "080"]);
           hnames.push(["100", "110", "120", "130", "140", "150", "160", "170", "180", "190"]);
           hnames.push(["200","210","230","240","250","260","270","280","290"]);
@@ -623,12 +651,12 @@ function createCountryChooser(map) {
               layerMenu.onchange = async () => {
                   if (!newLayerReset()) return;
               showAuxButton("Next option");
-                  const styleOptions = {
-                      strokeColor: 'black',
-                      strokeOpacity: '1',
-                      strokeWeight: '5'
-                  };
-                  secondaryLayer.setStyle(styleOptions);
+                //   const styleOptions = {
+                //       strokeColor: 'black',
+                //       strokeOpacity: '1',
+                //       strokeWeight: '5'
+                //   };
+                //   secondaryLayer.setStyle(styleOptions);
               const group = layerMenu.value.substring(1, 2);
               
                   hnames[group].forEach(async (name, index) => {
@@ -670,6 +698,7 @@ function createCountryChooser(map) {
       }
           if (countryMenu.value == "Wales") {
               loadGeoJSONFile('/Layers/Wales/Level3.geojson');
+              popupPropertyName = "name:en";
               layerMenu.appendChild(new Option("Counties", "Counties"));
               layerMenu.appendChild(new Option("Bins", "Bins"));
               layerMenu.appendChild(new Option("Most useful highway meta", "Most useful highway meta"));
@@ -689,13 +718,13 @@ function createCountryChooser(map) {
                   }else if (layerMenu.value == "Main bike routes") {
                       //showAuxButton("Next route");
                       const geopath = 'Layers/Wales/Bike458.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref"));
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "ref"));
                       loadMarkerLayer(countryMenu.value, "Bike458");
                   }
                   else if (layerMenu.value == "All bike routes") {
                       //showAuxButton("Next set of routes");
                       const geopath = 'Layers/Wales/BikeAll.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref"));
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "ref"));
                       loadMarkerLayer(countryMenu.value, "BikeAll");
                   }
                   else if (layerMenu.value == "Most useful highway meta") {
@@ -708,7 +737,7 @@ function createCountryChooser(map) {
                   else if (layerMenu.value == "A Highways") {
                       showAuxButton("Next set of highways");
                       const geopath = 'Layers/Wales/A40.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 3));
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
                       placeNewMarker(map, { lat: 52.5, lng: -4.8 }, "A40xx");
                       //placeNewMarker(map, { lat: 53.5, lng: -4.42 }, "All A408x are up here except for A4081");
                       //placeNewMarker(map, { lat: 52.36, lng: -3.4 }, "A4081");
@@ -716,7 +745,7 @@ function createCountryChooser(map) {
                   else if (layerMenu.value == "B Highways") {
                       showAuxButton("Next set of highways");
                       const geopath = 'Layers/Wales/B42.geojson';
-                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 3));
+                      loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, 3, 7));
                       placeNewMarker(map, { lat: 52.5, lng: -4.8 }, "B42xx");
                   }
               };
@@ -742,10 +771,20 @@ function removeAllFeatures() {
 }
 
 function removeAllMarkers() {
+    hideAllMarkers();
+    markers = [];
+}
+
+function hideAllMarkers() {
     for (let i = 0; i < markers.length; i++) {
         markers[i].setMap(null);
     }
-    markers = [];
+}
+
+function showAllMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
 }
 
 function createCoverageButton(map) {
@@ -783,9 +822,11 @@ function createEditModeButton(map) {
             askToSave = true;
             markers.forEach(m => { m.gmpDraggable = true; })
             map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsButton);
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveGeoJsonButton);
             editModeButton.textContent = 'Turn Edit Mode OFF';
         } else {
             markers.forEach(m => { m.gmpDraggable = false; })
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].pop();
             map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].pop();
             editModeButton.textContent = 'Turn Edit Mode ON';
         }
@@ -860,6 +901,86 @@ function createSaveLocsControl(map) {
   });
 
   return saveLocsButton;
+}
+
+function exportFeaturesToGeoJSON(dataLayer) {
+    const geoJson = turf.featureCollection([]);
+    colog("Les?");
+    colog(geoJson);
+
+    dataLayer.forEach((feature) => {
+
+        const geometry = feature.getGeometry();
+        //const properties = feature.getProperties();
+        // Retrieve all properties from the Google Maps feature
+        const properties = {};
+        feature.forEachProperty((value, key) => {
+            properties[key] = value;
+        });
+
+        if (geometry) {
+            let turfFeature;
+
+            // Convert Google Maps geometry to Turf.js compatible GeoJSON
+            switch (geometry.getType()) {
+                case 'Point':
+                    turfFeature = turf.point(geometry.get());
+                    break;
+                case 'Polygon':
+                    turfFeature = turf.polygon(geometry.get().coordinates);
+                    break;
+                case 'LineString':
+                    turfFeature = turf.lineString(geometry.getArray().map(coord => [coord.lng(), coord.lat()]));
+                    break;
+                case 'MultiLineString':
+                    const multiLineCoords = geometry.getArray().map(line =>
+                        line.getArray().map(coord => [coord.lng(), coord.lat()])
+                    );
+                    turfFeature = turf.multiLineString(multiLineCoords);
+                    break;
+                default:
+                    console.warn('Unsupported geometry type:', geometry.getType());
+                    return; // Skip unsupported types
+            }
+
+            // Set properties on the Turf feature
+            if (turfFeature) {
+                turfFeature.properties = properties;
+                geoJson.features.push(turfFeature);
+            }
+        }
+    });
+
+    // Convert the GeoJSON object to a Blob
+    const blob = new Blob([JSON.stringify(geoJson)], { type: 'application/json' });
+
+    // Create a download link
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'features.geojson';
+
+    // Append the link to the body and trigger the download
+    document.body.appendChild(link);
+    link.click();
+
+    // Clean up
+    document.body.removeChild(link);
+}
+
+function createSaveGeoJsonControl(map) {
+    const saveGeoJsonButton = document.createElement('button');
+    saveGeoJsonButton.className = "buttons";
+
+  saveGeoJsonButton.textContent = 'Save GeoJson';
+  saveGeoJsonButton.title = 'Click to save the displayed geojson objects';
+  saveGeoJsonButton.type = 'button';
+
+  // Setup the click event listener
+  saveGeoJsonButton.addEventListener('click', () => {
+    exportFeaturesToGeoJSON(secondaryLayer);
+  });
+
+  return saveGeoJsonButton;
 }
 
 function createAuxButton() {  
@@ -996,21 +1117,21 @@ function createAuxButton() {
             if (numb == 10) {
                 const geopath = 'Layers/Norway/HE.geojson';
                 
-                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", -1, colll));
+                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", -1, colll));
                 removeAllMarkers();
                 loadMarkerLayer(countryMenu.value, "Ex");
                 //markers[0].content.textContent = "European Highways";
             }
             else if (numb == 0) {
                 const geopath = 'Layers/Norway/H .geojson';
-                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", 0));
+                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", 0));
                 removeAllMarkers();
                 loadMarkerLayer(countryMenu.value, "0x");
                 //markers[0].content.textContent = "Highways  2-9";
             }
             else {
                 const geopath = 'Layers/Norway/H' + numb + '.geojson';
-                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "Fg", "ref", 1));
+                loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding2, "ref", 1));
                 //markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
                 removeAllMarkers();
                 loadMarkerLayer(countryMenu.value, numb + "x");
@@ -1052,7 +1173,7 @@ function getTransform(marker) {
     return transform;
 }
 
-function placeNewMarker(map, position, content = "00", imagepath, type = "area-code", fszl = -1, draggable = true) {
+function placeNewMarker(map, position, content = "00", imagepath = "", type = "name", fszl = -1, draggable = true) {
     colog("New marker " + markers.length);
     let zIndex = 0;
     if (content == "") zIndex = -1;
@@ -1066,24 +1187,24 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
     marker.setAttribute("ggmmtype", type.toString());
     marker.setAttribute("fszl", fszl.toString());
     setMarkerContent(marker, content, imagepath, type, fszl);
-    marker.addListener('click', () => {
-        if (editMode && event.shiftKey && event.metaKey) { // Shift-Command-Click = Increase size
+    marker.addListener('click', (event) => {
+        if (editMode && event.domEvent.shiftKey && event.domEvent.metaKey) { // Shift-Command-Click = Increase size
             let fszl = Number(marker.getAttribute("fszl"));
             if (fszl == -1) console.log("Should not happen fszl=-1");
             else {
                 fszl--;
-                marker.setAttribute("fszl", fszl);
+                marker.setAttribute("fszl", fszl.toString());
                 marker.content.style.transform = getTransform(marker);
             }
-        } else if (editMode && event.shiftKey && event.altKey) { // Shift-Option-Click = Decrease size
+        } else if (editMode && event.domEvent.shiftKey && event.domEvent.altKey) { // Shift-Option-Click = Decrease size
             let fszl = Number(marker.getAttribute("fszl"));
             if (fszl == -1) console.log("Should not happen fszl=-1");
             else {
                 fszl++;
-                marker.setAttribute("fszl", fszl);
+                marker.setAttribute("fszl", fszl.toString());
                 marker.content.style.transform = getTransform(marker);
             }
-        } else if (editMode && event.shiftKey) { // Shift-Click = DELETE
+        } else if (editMode && event.domEvent.shiftKey) { // Shift-Click = DELETE
             colog(markers.length);
             marker.setMap(null);
             const index = markers.indexOf(marker);
@@ -1091,11 +1212,21 @@ function placeNewMarker(map, position, content = "00", imagepath, type = "area-c
                 markers.splice(index, 1); // 2nd parameter means remove one item only
             }
             colog(markers.length);
-        } else if (editMode && event.altKey) { // Ctrl-Click = Cycle through colours
-            if (marker.content.className == "area-code")
-                marker.content.className = "transp";
-            else if (marker.content.className == "transp")
-                marker.content.className = "area-code";
+        } else if (editMode && event.domEvent.altKey) { // Option-Click = Change to red backgroung
+            const mtype = marker.getAttribute("ggmmtype");
+            colog(mtype);
+            if (mtype == "name") {
+                marker.content.style.setProperty('--marker-color', colors[3]);
+                marker.setAttribute("ggmmtype", "text3");
+            }
+            else if (mtype.startsWith("text")) {
+                let col = Number(mtype[4]);
+                col++;
+                if (col == 10) col = 0;
+                colog(col);
+                marker.content.style.setProperty('--marker-color', colors[col]);
+                marker.setAttribute("ggmmtype", "text" + col);
+            }
         } else { // Default Operation
             colog(position);
             if (type == "image") {
@@ -1179,19 +1310,22 @@ async function initMap(): void {
     boundaryLayer = new google.maps.Data();
     boundaryLayer.setMap(map);
     boundaryLayer.setStyle({
+        zIndex: 1,
         fillOpacity: '0',
         strokeOpacity: '1'
     });
+
     secondaryLayer = new google.maps.Data();
     secondaryLayer.setMap(map);
     secondaryLayer.setStyle({
+        zIndex: 2,
         fillOpacity: '0',
         strokeOpacity: '1',
         strokeColor: 'black'
     });
 
     map.addListener('dblclick', function(e) {
-        placeNewMarker(map, e.latLng);
+        if (editMode) placeNewMarker(map, e.latLng);
     });
 
     map.addListener('click', function (e) {
@@ -1201,11 +1335,73 @@ async function initMap(): void {
     boundaryLayer.addListener('click', function (e) {
         infoWindow.close();
     });
+    
+    boundaryLayer.addListener('mouseup', function (e) {
+        infoWindow.close();
+    });
 
-  boundaryLayer.addListener('dblclick',function(e){
-    console.log(e);
-    placeNewMarker(map, e.latLng);
-  });
+    boundaryLayer.addListener('mousedown', function (e) {
+        infoWindow.close();
+        colog(e.feature);
+        if (displayPopups) {
+            let name = e.feature.getProperty(popupPropertyName);
+            if (name) {
+                name = removeAccentsAndUpperCase(splitCamelCase(name));
+                infoWindow.setContent('<h2 style="color: black;">' + name + '</h2>');
+                //infoWindow.setStyle = "popup-infowindow";
+                infoWindow.setPosition(e.latLng);
+                infoWindow.open(map);
+            };
+        }
+    });
+
+    secondaryLayer.addListener('click', function (e) {
+        infoWindow.close();
+    });
+
+    secondaryLayer.addListener('mouseup', function (e) {
+        infoWindow.close();
+    });
+
+    secondaryLayer.addListener('mousedown', function (e) {
+        infoWindow.close();
+        //To remove the feature being clicked on
+        if (editMode && e.domEvent.shiftKey) secondaryLayer.remove(e.feature);
+        else {
+            //colog(e);
+            let name = e.feature.getProperty('ref');
+            if (name) {
+                infoWindow.setContent('<h2 style="color: black;">' + name + '</h2>');
+                //infoWindow.content.class = "popup-infowindow";
+                infoWindow.setPosition(e.latLng);
+                infoWindow.open(map);
+            };
+        }
+    });
+
+    boundaryLayer.addListener('dblclick',function(e){
+      if (editMode) placeNewMarker(map, e.latLng);
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (!event.repeat) {
+            if (event.key === 'Escape') {
+                boundaryLayer.setMap(null);
+                secondaryLayer.setMap(null);
+                hideAllMarkers();
+            }
+        }
+    });
+
+    document.addEventListener('keyup', function (event) {
+        if (!event.repeat) {
+            if (event.key === 'Escape') {
+                boundaryLayer.setMap(map);
+                secondaryLayer.setMap(map);
+                showAllMarkers();
+            }
+        }
+    });
 
     map.addListener('zoom_changed', function () {
         console.log(map.getZoom());
@@ -1222,11 +1418,9 @@ async function initMap(): void {
         // maxHeight: 1800 // No such option
     });
 
-  // Create the Save Locs button.
-  //const saveLocsDiv = document.createElement('div');
-  saveLocsButton = createSaveLocsControl(map);
-  //saveLocsDiv.appendChild(saveLocs);
-    //map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(saveLocsDiv);
+  
+    saveLocsButton = createSaveLocsControl(map);
+    saveGeoJsonButton = createSaveGeoJsonControl(map);
 
     // Create the Edit Mode button.
     const editModeDiv = document.createElement('div');
@@ -1240,24 +1434,33 @@ async function initMap(): void {
     coverageDiv.appendChild(coverageButton);
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(coverageDiv);
 
-  // Create the country drop down menu
-  const countrySelectDiv = document.createElement('div');
-  countryMenu = createCountryChooser(map);
-  countrySelectDiv.appendChild(countryMenu);
+    // Create the country drop down menu
+    const countrySelectDiv = document.createElement('div');
+    countryMenu = createCountryChooser(map);
+    countrySelectDiv.appendChild(countryMenu);
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(countryMenu);
+    
 
-  // Create the layer drop down menu
-  const layerSelectDiv = document.createElement('div');
-  layerMenu = createLayerChooser(map);
-  layerSelectDiv.appendChild(layerMenu);
-    map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
+    // Create the layer drop down menu
+    const layerSelectDiv = document.createElement('div');
+    layerMenu = createLayerChooser(map);
+    layerSelectDiv.appendChild(layerMenu);
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);  
 
     // Create the aux button
     //const auxDiv = document.createElement('div');
     auxButton = createAuxButton();
     //auxDiv.appendChild(auxButton);
     //map.controls[google.maps.ControlPosition.TOP_CENTER].push(auxButton);
-
+    
+    if (urlCountry) {
+        countryMenu.value =  urlCountry;
+        countryMenu.dispatchEvent(new Event('change'));
+    }
+    if (urlLayer) {
+        layerMenu.value = urlLayer;
+        layerMenu.dispatchEvent(new Event('change'));
+    }
     
 }
 
@@ -1282,9 +1485,10 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
     }
     else { // We are dealing with a text marker
         const markerDiv = document.createElement('div');
-        markerDiv.className = "area-code"; // Also applies to type == name
-        if (type == "city-code") {
-            markerDiv.style.setProperty('--marker-color', '#4285F4');
+        markerDiv.className = "text-marker";
+        if (type.startsWith("text") && (type.length == 5)) {
+            const col = Number(type[4]);
+            markerDiv.style.setProperty('--marker-color', colors[col]);
         }
         else if (type == "digit2") {
             let ch = text[colourDigit];
@@ -1440,7 +1644,7 @@ function processPoints2(
     }
 }
 
-async function loadGeoJSONFile(path: string, layer, postProcess) {
+async function loadGeoJSONFile(path: string, layer = "boundaryLayer", postProcess?) {
   let response = await fetch(path);
   let contents = await response.text();
   if (contents) {
@@ -1566,6 +1770,7 @@ function handleDrop(e: DragEvent) {
     } else {
         // process non-file (e.g. text or html) content being dropped
         // grab the plain text version of the data
+        // Left over from working on Mexico
         const plainText = (e.dataTransfer as DataTransfer).getData("text/plain");
 
         console.log(plainText);
@@ -1626,7 +1831,7 @@ function handleDrop(e: DragEvent) {
 //    return /^[A-Za-z]/.test(str);
 //}
 
-function separateLines(str) {
+function separateLines(str: string) {
     // Split the string into an array of lines
     const lines = str.split(/\r?\n/);
     return lines;
@@ -1638,6 +1843,18 @@ function initialize() {
         debugMode = true;
         localMode = true;
     }
+    // Step 1: Get the current URL's query string
+const queryString = window.location.search;
+
+// Step 2: Create a URLSearchParams object from the query string
+const urlParams = new URLSearchParams(queryString);
+
+// Step 3: Get the values of specific parameters
+urlCountry = urlParams.get('country');
+colog("ST " + urlCountry);
+urlLayer = urlParams.get('layer');
+colog("ST" + urlLayer);
+
     window.addEventListener('beforeunload', function (event) {
         if (askToSave) {
             // Cancel the default behavior to prevent the browser from immediately refreshing the page
