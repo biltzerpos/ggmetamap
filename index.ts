@@ -7,6 +7,10 @@
 //import turf from './turf.min.js';
 import TxtOverlay from './ov.jsx';
 
+let rectangle;
+let startLatLng;
+let rec = false;
+
 
 let map: google.maps.Map;
 const currentUrl = new URL(window.location.href);
@@ -287,6 +291,7 @@ function createCountryChooser(map) {
     countryMenu.appendChild(top);
     countryMenu.appendChild(new Option("Bulgaria", "Bulgaria"));
     countryMenu.appendChild(new Option("Chile", "Chile"));
+    countryMenu.appendChild(new Option("Colombia", "Colombia"));
     countryMenu.appendChild(new Option("Estonia", "Estonia"));
     countryMenu.appendChild(new Option("France", "France"));
     countryMenu.appendChild(new Option("Greece", "Greece"));
@@ -554,12 +559,37 @@ function createCountryChooser(map) {
               loadMarkerLayer(countryMenu.value, layerMenu.value);
           };
       }
+      if (countryMenu.value == "Colombia") {
+        loadGeoJSONFile('/Layers/Colombia/Level1.geojson');
+        popupPropertyName = "NAME_1";
+        layerMenu.appendChild(new Option("Highways", "Highways"));
+        layerMenu.appendChild(new Option("Department Abbreviations", "Department Abbreviations"));
+        layerMenu.onchange = () => {
+            let v = 0.1;
+            if (layerMenu.value == "Department Abbreviations") v = 1;
+            if (!newLayerReset(v)) return;
+            if (layerMenu.value == "Department Abbreviations") loadMarkerLayer(countryMenu.value, layerMenu.value);
+            else if (layerMenu.value == "Highways") {
+                loadMarkerLayer(countryMenu.value, layerMenu.value);
+                loadGeoJSONFile('Layers/Colombia/05.geojson', "secondaryLayer", partial(colorCoding, 0));
+                //loadGeoJSONFile('Layers/Colombia/25.geojson', "secondaryLayer");
+                loadGeoJSONFile('Layers/Colombia/4001.geojson', "secondaryLayer", partial(colorCoding, 1));
+                loadGeoJSONFile('Layers/Colombia/4002345.geojson', "secondaryLayer", partial(colorCoding, 6));
+                loadGeoJSONFile('Layers/Colombia/400678.geojson', "secondaryLayer", partial(colorCoding, 7));
+                loadGeoJSONFile('Layers/Colombia/2501A.geojson', "secondaryLayer", partial(colorCoding, 2));
+                loadGeoJSONFile('Layers/Colombia/2501B.geojson', "secondaryLayer", partial(colorCoding, 3));
+                loadGeoJSONFile('Layers/Colombia/2504A.geojson', "secondaryLayer", partial(colorCoding, 4));
+                loadGeoJSONFile('Layers/Colombia/2505B.geojson', "secondaryLayer", partial(colorCoding, 5));
+            }
+        };
+    }
       if (countryMenu.value == "Sweden") {
           loadGeoJSONFile('/Layers/Sweden/Level1.geojson');
           const newtop = new Option("Bus Stop Signs", "Bus Stop Signs");
           layerMenu.appendChild(newtop);
           layerMenu.onchange = () => {
               if (!newLayerReset(1)) return;
+              displayPopups = false;
               loadMarkerLayer(countryMenu.value, layerMenu.value);
               layerMin = 0; // Images can get arbitrarily small
           };
@@ -1175,7 +1205,7 @@ function getTransform(marker) {
 
 function placeNewMarker(map, position, content = "00", imagepath = "", type = "name", fszl = -1, draggable = true) {
     colog("New marker " + markers.length);
-    let zIndex = 0;
+    let zIndex = 10;
     if (content == "") zIndex = -1;
     
     var marker = new google.maps.marker.AdvancedMarkerElement({
@@ -1324,26 +1354,201 @@ async function initMap(): void {
         strokeColor: 'black'
     });
 
-    map.addListener('dblclick', function(e) {
-        if (editMode) placeNewMarker(map, e.latLng);
+    // List of events you want to propagate from the data layer to the map
+const eventsToPropagate = ["click", "mouseup", "dblclick"];
+
+// Function to propagate events from the data layer to the map
+eventsToPropagate.forEach((eventType) => {
+  boundaryLayer.addListener(eventType, (event) => {
+    google.maps.event.trigger(map, eventType, event);
+    //google.maps.event.trigger(map, `layer_${eventType}`, event);
+  });
+  secondaryLayer.addListener(eventType, (event) => {
+    google.maps.event.trigger(map, eventType, event);
+    //google.maps.event.trigger(map, `layer_${eventType}`, event);
+  });
+});
+
+    map.addListener('dblclick', function(event) {
+        if (editMode) {
+            if (event.domEvent.shiftKey) {
+                if (!rec) {
+                    startLatLng = event.latLng;
+                    const newLatLng = new google.maps.LatLng(
+                        startLatLng.lat() + 1,
+                        startLatLng.lng() + 1
+                      );
+                    rectangle = new google.maps.Rectangle({
+                        bounds: new google.maps.LatLngBounds(startLatLng, newLatLng),
+                        map: map,
+                        editable: true,
+                        draggable: true,
+                    });
+                    rec = true;
+                }
+                else if (rec) {
+                    const bounds = rectangle.getBounds();
+                    secondaryLayer.forEach((feature) => {
+                        const geometry = feature.getGeometry();
+                        
+                        // For Point geometries
+                        if (geometry.getType() === "Point") {
+                          const position = geometry.get();
+                          if (bounds.contains(position)) {
+                            // Do something with the feature (e.g., highlight it)
+                            console.log("Feature within bounds:", feature);
+                            secondaryLayer.remove(feature);
+                          }
+                        }
+                      
+                        // For other geometry types like LineString or Polygon
+                        else {
+                          let isInBounds = false;
+                          geometry.forEachLatLng((latLng) => {
+                            if (bounds.contains(latLng)) {
+                              isInBounds = true;
+                            }
+                          });
+                          if (isInBounds) {
+                            console.log("Feature within bounds:", feature);
+                            secondaryLayer.remove(feature);
+                          }
+                        }
+                      });
+                      
+                    console.log("Rectangle Bounds:", bounds.toJSON());
+                    rectangle.setMap(null);
+                    rec = false;
+                }
+            }
+                else placeNewMarker(map, event.latLng);
+        }
     });
 
-    map.addListener('click', function (e) {
+    map.addListener('click', function (event) {
+        if (editMode && event.feature) secondaryLayer.remove(event.feature);
+        else infoWindow.close();
+        // if (editMode && event.domEvent.shiftKey) {
+        //     if (!rec) {
+        //         startLatLng = event.latLng;
+        //         const newLatLng = new google.maps.LatLng(
+        //             startLatLng.lat() + 1,
+        //             startLatLng.lng() + 1
+        //           );
+        //         rectangle = new google.maps.Rectangle({
+        //             bounds: new google.maps.LatLngBounds(startLatLng, newLatLng),
+        //             map: map,
+        //             editable: true,
+        //             draggable: true,
+        //         });
+        //         rec = true;
+        //     }
+        //     else if (rec) {
+        //         const bounds = rectangle.getBounds();
+        //         console.log("Rectangle Bounds:", bounds.toJSON());
+        //         rec = false;
+        //     }
+        // }
+    });
+
+    map.addListener('mouseup', function (e) {
         infoWindow.close();
     });
 
-    boundaryLayer.addListener('click', function (e) {
-        infoWindow.close();
-    });
+//       // Start drawing the rectangle on mouse down
+//   map.addListener("mousedown", (event) => {
+//     startLatLng = event.latLng;
+//     rectangle = new google.maps.Rectangle({
+//       bounds: new google.maps.LatLngBounds(startLatLng, startLatLng),
+//       map: map,
+//       editable: true,
+//       draggable: true,
+//     });
+//     rec = true;
+//     // map.addListener("mousemove", onMouseMove);
+//     // map.addListener("mouseup", onMouseUp);
+//   });
+
+//   map.addListener("mousemove", (event) => {
+//     if (editMode && event.domEvent.shiftKey && rec) {
+//     const bounds = new google.maps.LatLngBounds(startLatLng, event.latLng);
+//     rectangle.setBounds(bounds);
+//     }
+//   });
+
+//   map.addListener("mouseup", (event) => {
+//     if (rec) {
+//         const bounds = rectangle.getBounds();
+//         console.log("Rectangle Bounds:", bounds.toJSON());
+//         rec = false;
+//         map.setOptions({ draggable: true });
+//     }
+//   });
+
+// // Update the rectangle as the mouse moves
+// function onMouseMove(event) {
+//   const bounds = new google.maps.LatLngBounds(startLatLng, event.latLng);
+//   rectangle.setBounds(bounds);
+// }
+
+// // Stop drawing on mouse up
+// function onMouseUp() {
+//   google.maps.event.clearListeners(map, "mousemove");
+//   google.maps.event.clearListeners(map, "mouseup");
+  
+//   // Log the coordinates of the rectangle bounds
+//   const bounds = rectangle.getBounds();
+//   console.log("Rectangle Bounds:", bounds.toJSON());
+// }
+ 
+// map.addListener("mousedown", (event) => {
+// // Initialize the Drawing Manager
+// const drawingManager = new google.maps.drawing.DrawingManager({
+//     drawingMode: google.maps.drawing.OverlayType.RECTANGLE,
+//     drawingControl: true,
+//     drawingControlOptions: {
+//       position: google.maps.ControlPosition.TOP_CENTER,
+//       //drawingModes: ["rectangle"], // Only enable rectangle drawing
+//     },
+//     rectangleOptions: {
+//       fillColor: "#FF0000",
+//       fillOpacity: 0.2,
+//       strokeWeight: 2,
+//       clickable: true,
+//       editable: true,
+//       draggable: true,
+//     },
+//   });
+
+//   // Add the Drawing Manager to the map
+//   drawingManager.setMap(map);
+
+//   // Add an event listener to capture the bounds of the drawn rectangle
+//   google.maps.event.addListener(drawingManager, "rectanglecomplete", function(rectangle) {
+//     const bounds = rectangle.getBounds();
+//     console.log("Rectangle bounds:", bounds.toString());
+
+//     // You can use `bounds.getNorthEast()` and `bounds.getSouthWest()` 
+//     // to get the coordinates of the corners if needed.
+
+//     // Optional: Remove the rectangle after drawing
+//     drawingManager.setDrawingMode(null); // Switch off drawing mode
+//   });
+// });
+
+// boundaryLayer.addListener('click', function (e) {
+//         infoWindow.close();
+//         colog(e.feature);
+//     });
     
-    boundaryLayer.addListener('mouseup', function (e) {
-        infoWindow.close();
-    });
+//     boundaryLayer.addListener('mouseup', function (e) {
+//         infoWindow.close();
+//     });
 
     boundaryLayer.addListener('mousedown', function (e) {
-        infoWindow.close();
-        colog(e.feature);
-        if (displayPopups) {
+        // infoWindow.close();
+        // colog(e.feature);
+        if (displayPopups && !editMode) {
             let name = e.feature.getProperty(popupPropertyName);
             if (name) {
                 name = removeAccentsAndUpperCase(splitCamelCase(name));
@@ -1355,18 +1560,18 @@ async function initMap(): void {
         }
     });
 
-    secondaryLayer.addListener('click', function (e) {
-        infoWindow.close();
-    });
+    // secondaryLayer.addListener('click', function (e) {
+    //     infoWindow.close();
+    // });
 
-    secondaryLayer.addListener('mouseup', function (e) {
-        infoWindow.close();
-    });
+    // secondaryLayer.addListener('mouseup', function (e) {
+    //     infoWindow.close();
+    // });
 
     secondaryLayer.addListener('mousedown', function (e) {
         infoWindow.close();
         //To remove the feature being clicked on
-        if (editMode && e.domEvent.shiftKey) secondaryLayer.remove(e.feature);
+        if (editMode && e.domEvent.shiftKey) colog("hi"); //secondaryLayer.remove(e.feature);
         else {
             //colog(e);
             let name = e.feature.getProperty('ref');
@@ -1379,9 +1584,9 @@ async function initMap(): void {
         }
     });
 
-    boundaryLayer.addListener('dblclick',function(e){
-      if (editMode) placeNewMarker(map, e.latLng);
-    });
+    // boundaryLayer.addListener('dblclick',function(e){
+    //   if (editMode) placeNewMarker(map, e.latLng);
+    // });
 
     document.addEventListener('keydown', function (event) {
         if (!event.repeat) {
@@ -1724,7 +1929,7 @@ function handleDrop(e: DragEvent) {
                 const reader = new FileReader();
 
                 reader.onload = function (e) {
-                    loadGeoJsonString(reader.result as string);
+                    loadGeoJsonString(reader.result as string, "secondaryLayer");
                 };
 
                 reader.onerror = function (e) {

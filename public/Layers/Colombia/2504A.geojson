@@ -1,0 +1,7441 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-11-08T16:07:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87617485",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt",
+        "unsigned_ref": "25 VL B"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3375413,
+            3.5242395
+          ],
+          [
+            -76.3375275,
+            3.5247751
+          ]
+        ]
+      },
+      "id": "way/87617485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/140993116",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4216279,
+            3.2162626
+          ],
+          [
+            -76.4214884,
+            3.2162525
+          ],
+          [
+            -76.4213329,
+            3.2162483
+          ],
+          [
+            -76.4211316,
+            3.2162539
+          ],
+          [
+            -76.4209436,
+            3.2162703
+          ],
+          [
+            -76.4207331,
+            3.2163018
+          ],
+          [
+            -76.4201523,
+            3.2164646
+          ],
+          [
+            -76.4187292,
+            3.2168534
+          ],
+          [
+            -76.4185112,
+            3.2169038
+          ],
+          [
+            -76.4177316,
+            3.217084
+          ],
+          [
+            -76.4164358,
+            3.2173835
+          ],
+          [
+            -76.4160837,
+            3.2174648
+          ],
+          [
+            -76.4154722,
+            3.2176062
+          ]
+        ]
+      },
+      "id": "way/140993116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/166607868",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "90",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3377611,
+            3.5237091
+          ],
+          [
+            -76.3377441,
+            3.5228768
+          ],
+          [
+            -76.3377707,
+            3.5219476
+          ]
+        ]
+      },
+      "id": "way/166607868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/166607869",
+        "access": "yes",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt",
+        "unsigned_ref": "25 VL B"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3377156,
+            3.5247511
+          ],
+          [
+            -76.3377307,
+            3.5242243
+          ]
+        ]
+      },
+      "id": "way/166607869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/171541831",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3537955,
+            3.3960887
+          ],
+          [
+            -76.353783,
+            3.3961672
+          ],
+          [
+            -76.3537473,
+            3.3963847
+          ],
+          [
+            -76.3536977,
+            3.3966036
+          ],
+          [
+            -76.3536467,
+            3.3968131
+          ],
+          [
+            -76.353611,
+            3.3969229
+          ],
+          [
+            -76.3534717,
+            3.3975481
+          ],
+          [
+            -76.3532211,
+            3.3985327
+          ],
+          [
+            -76.3530681,
+            3.3991834
+          ],
+          [
+            -76.3529019,
+            3.399842
+          ],
+          [
+            -76.3525128,
+            3.4014418
+          ],
+          [
+            -76.3522836,
+            3.4022531
+          ],
+          [
+            -76.3520435,
+            3.4032411
+          ],
+          [
+            -76.3518852,
+            3.4038944
+          ],
+          [
+            -76.3517885,
+            3.4043144
+          ]
+        ]
+      },
+      "id": "way/171541831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/171541833",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3516923,
+            3.404728
+          ],
+          [
+            -76.3514734,
+            3.4057195
+          ],
+          [
+            -76.3514087,
+            3.4062697
+          ],
+          [
+            -76.351339,
+            3.4070348
+          ],
+          [
+            -76.3513198,
+            3.4076269
+          ],
+          [
+            -76.3513015,
+            3.4083352
+          ],
+          [
+            -76.3512888,
+            3.4086665
+          ],
+          [
+            -76.3512705,
+            3.4089295
+          ],
+          [
+            -76.3512286,
+            3.4092118
+          ],
+          [
+            -76.3511913,
+            3.409369
+          ],
+          [
+            -76.351008,
+            3.4100301
+          ],
+          [
+            -76.3508812,
+            3.4104326
+          ],
+          [
+            -76.3507549,
+            3.4108335
+          ],
+          [
+            -76.350477,
+            3.4116613
+          ],
+          [
+            -76.3501972,
+            3.4125115
+          ],
+          [
+            -76.349574,
+            3.414414
+          ]
+        ]
+      },
+      "id": "way/171541833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/171541834",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3498094,
+            3.415127
+          ],
+          [
+            -76.3497982,
+            3.4148726
+          ],
+          [
+            -76.3498011,
+            3.4146953
+          ],
+          [
+            -76.3498336,
+            3.4144851
+          ],
+          [
+            -76.3498658,
+            3.4143057
+          ],
+          [
+            -76.3500184,
+            3.4137823
+          ],
+          [
+            -76.3504851,
+            3.4122507
+          ],
+          [
+            -76.3508816,
+            3.4110008
+          ],
+          [
+            -76.351153,
+            3.4101978
+          ],
+          [
+            -76.3513853,
+            3.4093717
+          ],
+          [
+            -76.3514349,
+            3.4090472
+          ],
+          [
+            -76.3514591,
+            3.4086953
+          ],
+          [
+            -76.3515281,
+            3.4074874
+          ],
+          [
+            -76.3516025,
+            3.4061303
+          ],
+          [
+            -76.3516613,
+            3.4056999
+          ],
+          [
+            -76.3517365,
+            3.4053561
+          ],
+          [
+            -76.3518836,
+            3.4047672
+          ]
+        ]
+      },
+      "id": "way/171541834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174654405",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3376671,
+            3.5206975
+          ],
+          [
+            -76.3376519,
+            3.5212731
+          ],
+          [
+            -76.3376149,
+            3.5223242
+          ],
+          [
+            -76.3375518,
+            3.5239914
+          ]
+        ]
+      },
+      "id": "way/174654405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174654424",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3344454,
+            3.5079219
+          ],
+          [
+            -76.3327611,
+            3.5046425
+          ],
+          [
+            -76.3321736,
+            3.5033672
+          ],
+          [
+            -76.3319135,
+            3.5027431
+          ],
+          [
+            -76.3316444,
+            3.5021137
+          ],
+          [
+            -76.3311826,
+            3.5009721
+          ],
+          [
+            -76.330685,
+            3.4998504
+          ],
+          [
+            -76.3302277,
+            3.4987152
+          ],
+          [
+            -76.3297678,
+            3.4975773
+          ],
+          [
+            -76.3294995,
+            3.4967529
+          ],
+          [
+            -76.3292648,
+            3.4959216
+          ],
+          [
+            -76.3287847,
+            3.4942617
+          ],
+          [
+            -76.3285466,
+            3.4934264
+          ],
+          [
+            -76.3282871,
+            3.4926058
+          ],
+          [
+            -76.328043,
+            3.4917759
+          ],
+          [
+            -76.32774,
+            3.4909619
+          ]
+        ]
+      },
+      "id": "way/174654424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174654427",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed:forward": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3289082,
+            3.4837938
+          ],
+          [
+            -76.3290522,
+            3.4833865
+          ]
+        ]
+      },
+      "id": "way/174654427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174654437",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3287565,
+            3.484223
+          ],
+          [
+            -76.3286466,
+            3.4844455
+          ],
+          [
+            -76.327853,
+            3.4856019
+          ],
+          [
+            -76.3274278,
+            3.4862682
+          ],
+          [
+            -76.3268427,
+            3.487158
+          ],
+          [
+            -76.3267207,
+            3.4874491
+          ],
+          [
+            -76.3266618,
+            3.4878831
+          ],
+          [
+            -76.3267047,
+            3.4882472
+          ],
+          [
+            -76.3269381,
+            3.4890611
+          ]
+        ]
+      },
+      "id": "way/174654437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174654438",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3269381,
+            3.4890611
+          ],
+          [
+            -76.3270319,
+            3.4893877
+          ]
+        ]
+      },
+      "id": "way/174654438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/174654440",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3378204,
+            3.5205768
+          ],
+          [
+            -76.3378791,
+            3.5185074
+          ],
+          [
+            -76.3378869,
+            3.5182867
+          ],
+          [
+            -76.3379244,
+            3.5170592
+          ],
+          [
+            -76.3379304,
+            3.5166911
+          ],
+          [
+            -76.3379435,
+            3.5158842
+          ],
+          [
+            -76.3379512,
+            3.5154128
+          ],
+          [
+            -76.3378144,
+            3.5146739
+          ],
+          [
+            -76.3372351,
+            3.5133728
+          ],
+          [
+            -76.3368542,
+            3.5126258
+          ]
+        ]
+      },
+      "id": "way/174654440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/194296573",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4467573,
+            3.1894398
+          ],
+          [
+            -76.4466677,
+            3.1896782
+          ],
+          [
+            -76.4465568,
+            3.1899075
+          ],
+          [
+            -76.4464255,
+            3.1901259
+          ],
+          [
+            -76.4463033,
+            3.1903334
+          ]
+        ]
+      },
+      "id": "way/194296573"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206034915",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed:forward": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3290522,
+            3.4833865
+          ],
+          [
+            -76.3291297,
+            3.4831856
+          ]
+        ]
+      },
+      "id": "way/206034915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206037617",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3291297,
+            3.4831856
+          ],
+          [
+            -76.3292132,
+            3.4829011
+          ],
+          [
+            -76.3293112,
+            3.4822582
+          ],
+          [
+            -76.3295719,
+            3.4805475
+          ]
+        ]
+      },
+      "id": "way/206037617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038034",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3361793,
+            3.4591226
+          ],
+          [
+            -76.3360757,
+            3.4593954
+          ]
+        ]
+      },
+      "id": "way/206038034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038035",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3361776,
+            3.4594368
+          ],
+          [
+            -76.3362871,
+            3.4591584
+          ]
+        ]
+      },
+      "id": "way/206038035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038036",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3360757,
+            3.4593954
+          ],
+          [
+            -76.3358047,
+            3.4601171
+          ]
+        ]
+      },
+      "id": "way/206038036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038139",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3358047,
+            3.4601171
+          ],
+          [
+            -76.3361106,
+            3.459582
+          ],
+          [
+            -76.3361776,
+            3.4594368
+          ]
+        ]
+      },
+      "id": "way/206038139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038185",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3364877,
+            3.4583102
+          ],
+          [
+            -76.3366449,
+            3.4579297
+          ],
+          [
+            -76.3370602,
+            3.4568926
+          ],
+          [
+            -76.3374798,
+            3.4558447
+          ],
+          [
+            -76.3376311,
+            3.4554671
+          ],
+          [
+            -76.3381248,
+            3.4542342
+          ],
+          [
+            -76.3398732,
+            3.4499161
+          ],
+          [
+            -76.34035,
+            3.4486773
+          ],
+          [
+            -76.3415181,
+            3.4457603
+          ],
+          [
+            -76.3416174,
+            3.4455123
+          ],
+          [
+            -76.3423902,
+            3.4436006
+          ]
+        ]
+      },
+      "id": "way/206038185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038186",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3362871,
+            3.4591584
+          ],
+          [
+            -76.3363396,
+            3.4589981
+          ],
+          [
+            -76.3363997,
+            3.4587781
+          ],
+          [
+            -76.3364877,
+            3.4583102
+          ]
+        ]
+      },
+      "id": "way/206038186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038200",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3364877,
+            3.4583102
+          ],
+          [
+            -76.3363525,
+            3.4586633
+          ],
+          [
+            -76.3362687,
+            3.4588872
+          ],
+          [
+            -76.3361793,
+            3.4591226
+          ]
+        ]
+      },
+      "id": "way/206038200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038225",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3463196,
+            3.4342672
+          ],
+          [
+            -76.3464108,
+            3.4341387
+          ]
+        ]
+      },
+      "id": "way/206038225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038226",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3464108,
+            3.4341387
+          ],
+          [
+            -76.3466361,
+            3.4337799
+          ],
+          [
+            -76.3470251,
+            3.4331588
+          ],
+          [
+            -76.3473981,
+            3.4325523
+          ],
+          [
+            -76.3478148,
+            3.4318746
+          ],
+          [
+            -76.3479467,
+            3.4316602
+          ],
+          [
+            -76.3488758,
+            3.4302699
+          ],
+          [
+            -76.3492379,
+            3.4296969
+          ],
+          [
+            -76.3495729,
+            3.42918
+          ],
+          [
+            -76.3496752,
+            3.4290089
+          ],
+          [
+            -76.349762,
+            3.4288407
+          ],
+          [
+            -76.3498277,
+            3.4286933
+          ],
+          [
+            -76.3499036,
+            3.4284905
+          ],
+          [
+            -76.3499656,
+            3.4282814
+          ],
+          [
+            -76.3500162,
+            3.428049
+          ],
+          [
+            -76.3500494,
+            3.4278071
+          ],
+          [
+            -76.3500627,
+            3.4275955
+          ],
+          [
+            -76.3500556,
+            3.4272805
+          ],
+          [
+            -76.3499673,
+            3.4267405
+          ],
+          [
+            -76.3499084,
+            3.4259753
+          ],
+          [
+            -76.3498789,
+            3.4256674
+          ],
+          [
+            -76.3498416,
+            3.4252404
+          ],
+          [
+            -76.3497448,
+            3.4244974
+          ],
+          [
+            -76.3497019,
+            3.4240931
+          ],
+          [
+            -76.3496751,
+            3.4236406
+          ],
+          [
+            -76.3496885,
+            3.4231988
+          ],
+          [
+            -76.349777,
+            3.4226607
+          ],
+          [
+            -76.3498311,
+            3.4224859
+          ],
+          [
+            -76.3499521,
+            3.4221579
+          ],
+          [
+            -76.3501966,
+            3.4215758
+          ]
+        ]
+      },
+      "id": "way/206038226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038267",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.350248,
+            3.4214468
+          ],
+          [
+            -76.3503489,
+            3.4212444
+          ],
+          [
+            -76.3504345,
+            3.4210352
+          ],
+          [
+            -76.3505045,
+            3.4208203
+          ],
+          [
+            -76.3505584,
+            3.4206008
+          ],
+          [
+            -76.3505959,
+            3.4203779
+          ],
+          [
+            -76.3506168,
+            3.4201528
+          ],
+          [
+            -76.350621,
+            3.4199269
+          ],
+          [
+            -76.3506086,
+            3.4197012
+          ],
+          [
+            -76.3505795,
+            3.4194771
+          ],
+          [
+            -76.3505339,
+            3.4192557
+          ],
+          [
+            -76.350472,
+            3.4190383
+          ],
+          [
+            -76.3503943,
+            3.418826
+          ]
+        ]
+      },
+      "id": "way/206038267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/206038268",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3501966,
+            3.4215758
+          ],
+          [
+            -76.350248,
+            3.4214468
+          ]
+        ]
+      },
+      "id": "way/206038268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/231879974",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "2",
+        "maxspeed": "80",
+        "name": "Vía Villa Rica - Santander de Quilichao",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4597819,
+            3.1585209
+          ],
+          [
+            -76.4599825,
+            3.1580304
+          ]
+        ]
+      },
+      "id": "way/231879974"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/231880001",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4518198,
+            3.1766208
+          ],
+          [
+            -76.4514843,
+            3.1770947
+          ],
+          [
+            -76.4512902,
+            3.1774009
+          ],
+          [
+            -76.4511493,
+            3.1776411
+          ],
+          [
+            -76.4510126,
+            3.1778914
+          ],
+          [
+            -76.4508011,
+            3.1783193
+          ],
+          [
+            -76.4505125,
+            3.1790165
+          ],
+          [
+            -76.4500624,
+            3.1799464
+          ],
+          [
+            -76.4492814,
+            3.1817968
+          ],
+          [
+            -76.448654,
+            3.183274
+          ],
+          [
+            -76.4481857,
+            3.1843077
+          ]
+        ]
+      },
+      "id": "way/231880001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/231880007",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Villa Rica - Santander de Quilichao",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4599825,
+            3.1580304
+          ],
+          [
+            -76.4600415,
+            3.1578426
+          ],
+          [
+            -76.4601179,
+            3.1573083
+          ],
+          [
+            -76.4601393,
+            3.1569682
+          ],
+          [
+            -76.4601151,
+            3.1565852
+          ],
+          [
+            -76.4600696,
+            3.156233
+          ],
+          [
+            -76.4599811,
+            3.1557965
+          ],
+          [
+            -76.4599273,
+            3.1555285
+          ]
+        ]
+      },
+      "id": "way/231880007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661381",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3368542,
+            3.5126258
+          ],
+          [
+            -76.3367362,
+            3.5123983
+          ]
+        ]
+      },
+      "id": "way/236661381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661382",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3275764,
+            3.4908977
+          ],
+          [
+            -76.3276219,
+            3.4910072
+          ]
+        ]
+      },
+      "id": "way/236661382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661383",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3378156,
+            3.5207108
+          ],
+          [
+            -76.3378204,
+            3.5205768
+          ]
+        ]
+      },
+      "id": "way/236661383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661385",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.32774,
+            3.4909619
+          ],
+          [
+            -76.3277052,
+            3.4908655
+          ]
+        ]
+      },
+      "id": "way/236661385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661386",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "30",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3278334,
+            3.4871628
+          ],
+          [
+            -76.3280216,
+            3.4865181
+          ],
+          [
+            -76.32826,
+            3.4857862
+          ],
+          [
+            -76.3287565,
+            3.484223
+          ]
+        ]
+      },
+      "id": "way/236661386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661387",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3270319,
+            3.4893877
+          ],
+          [
+            -76.3270802,
+            3.4895617
+          ],
+          [
+            -76.3275764,
+            3.4908977
+          ]
+        ]
+      },
+      "id": "way/236661387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661625",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3343113,
+            3.5079646
+          ],
+          [
+            -76.3343515,
+            3.5080449
+          ]
+        ]
+      },
+      "id": "way/236661625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661626",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3367362,
+            3.5123983
+          ],
+          [
+            -76.3344831,
+            3.507997
+          ]
+        ]
+      },
+      "id": "way/236661626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661627",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.336586,
+            3.512417
+          ],
+          [
+            -76.3367173,
+            3.5126684
+          ]
+        ]
+      },
+      "id": "way/236661627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661629",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3343515,
+            3.5080449
+          ],
+          [
+            -76.336586,
+            3.512417
+          ]
+        ]
+      },
+      "id": "way/236661629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661630",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3344831,
+            3.507997
+          ],
+          [
+            -76.3344454,
+            3.5079219
+          ]
+        ]
+      },
+      "id": "way/236661630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661679",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3367173,
+            3.5126684
+          ],
+          [
+            -76.3369184,
+            3.5130566
+          ],
+          [
+            -76.3375381,
+            3.5143553
+          ],
+          [
+            -76.3376614,
+            3.5147325
+          ],
+          [
+            -76.3377474,
+            3.5152173
+          ],
+          [
+            -76.3377795,
+            3.5157635
+          ],
+          [
+            -76.3377121,
+            3.518625
+          ],
+          [
+            -76.3376719,
+            3.5205637
+          ]
+        ]
+      },
+      "id": "way/236661679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/236661680",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3376719,
+            3.5205637
+          ],
+          [
+            -76.3376671,
+            3.5206975
+          ]
+        ]
+      },
+      "id": "way/236661680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/243228892",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4285732,
+            3.2142808
+          ],
+          [
+            -76.4280656,
+            3.2149697
+          ],
+          [
+            -76.4277675,
+            3.2153981
+          ],
+          [
+            -76.4275075,
+            3.2157665
+          ],
+          [
+            -76.4273278,
+            3.2159835
+          ],
+          [
+            -76.427132,
+            3.2161897
+          ],
+          [
+            -76.4269067,
+            3.2163905
+          ],
+          [
+            -76.4267027,
+            3.2165469
+          ],
+          [
+            -76.4264827,
+            3.2166996
+          ],
+          [
+            -76.4263166,
+            3.2167788
+          ],
+          [
+            -76.4260591,
+            3.2168913
+          ],
+          [
+            -76.4257854,
+            3.2169807
+          ],
+          [
+            -76.4257516,
+            3.2169894
+          ],
+          [
+            -76.4255708,
+            3.217037
+          ],
+          [
+            -76.4252167,
+            3.2170959
+          ],
+          [
+            -76.4248868,
+            3.217112
+          ],
+          [
+            -76.4246374,
+            3.2170959
+          ],
+          [
+            -76.4243772,
+            3.2170544
+          ],
+          [
+            -76.4240554,
+            3.2169792
+          ],
+          [
+            -76.4238998,
+            3.2169513
+          ]
+        ]
+      },
+      "id": "way/243228892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/243233005",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.404162,
+            3.22303
+          ],
+          [
+            -76.4038251,
+            3.2230726
+          ]
+        ]
+      },
+      "id": "way/243233005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/243233006",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4219276,
+            3.2163064
+          ],
+          [
+            -76.4216279,
+            3.2162626
+          ]
+        ]
+      },
+      "id": "way/243233006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/245903356",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4038251,
+            3.2230726
+          ],
+          [
+            -76.40311,
+            3.2231535
+          ],
+          [
+            -76.4025521,
+            3.2232204
+          ],
+          [
+            -76.4022409,
+            3.2232793
+          ],
+          [
+            -76.4019969,
+            3.2233463
+          ],
+          [
+            -76.4014361,
+            3.2235991
+          ]
+        ]
+      },
+      "id": "way/245903356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268673455",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Villa Rica - Santander de Quilichao",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4587158,
+            3.1611241
+          ],
+          [
+            -76.4587687,
+            3.1609479
+          ],
+          [
+            -76.4590798,
+            3.1600266
+          ],
+          [
+            -76.4593239,
+            3.1594508
+          ],
+          [
+            -76.4597819,
+            3.1585209
+          ]
+        ]
+      },
+      "id": "way/268673455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268673459",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4594311,
+            3.1565054
+          ],
+          [
+            -76.4593715,
+            3.1568332
+          ],
+          [
+            -76.4593183,
+            3.1571578
+          ],
+          [
+            -76.4592993,
+            3.1572737
+          ]
+        ]
+      },
+      "id": "way/268673459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268696765",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3532442,
+            3.3894666
+          ],
+          [
+            -76.3531915,
+            3.388938
+          ],
+          [
+            -76.3530466,
+            3.387476
+          ],
+          [
+            -76.3528887,
+            3.3861018
+          ],
+          [
+            -76.3528495,
+            3.3858033
+          ],
+          [
+            -76.3527642,
+            3.3850046
+          ],
+          [
+            -76.3527121,
+            3.3845381
+          ],
+          [
+            -76.3526309,
+            3.3838774
+          ],
+          [
+            -76.3525826,
+            3.3834399
+          ],
+          [
+            -76.3525531,
+            3.3831079
+          ],
+          [
+            -76.3525156,
+            3.382769
+          ],
+          [
+            -76.3524888,
+            3.3824476
+          ],
+          [
+            -76.3524915,
+            3.3818157
+          ],
+          [
+            -76.3525049,
+            3.3810232
+          ],
+          [
+            -76.3525017,
+            3.3803395
+          ]
+        ]
+      },
+      "id": "way/268696765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268696766",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3525017,
+            3.3803395
+          ],
+          [
+            -76.3525037,
+            3.3800205
+          ]
+        ]
+      },
+      "id": "way/268696766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268708258",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3512791,
+            3.2863745
+          ],
+          [
+            -76.3515048,
+            3.2860554
+          ]
+        ]
+      },
+      "id": "way/268708258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268708261",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "20",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3512791,
+            3.2863745
+          ],
+          [
+            -76.3505093,
+            3.2874858
+          ],
+          [
+            -76.3496483,
+            3.2887551
+          ],
+          [
+            -76.3486961,
+            3.2901636
+          ],
+          [
+            -76.3481812,
+            3.2909214
+          ],
+          [
+            -76.3480264,
+            3.2911799
+          ],
+          [
+            -76.3473336,
+            3.2921703
+          ],
+          [
+            -76.3472429,
+            3.2923055
+          ],
+          [
+            -76.3466496,
+            3.2931895
+          ],
+          [
+            -76.3455043,
+            3.2948722
+          ],
+          [
+            -76.3446658,
+            3.2961065
+          ],
+          [
+            -76.3443027,
+            3.2966411
+          ],
+          [
+            -76.3436831,
+            3.2975864
+          ],
+          [
+            -76.3429857,
+            3.2986093
+          ],
+          [
+            -76.3420308,
+            3.3000258
+          ],
+          [
+            -76.3413287,
+            3.3011155
+          ],
+          [
+            -76.3407725,
+            3.3019218
+          ],
+          [
+            -76.3404608,
+            3.3023653
+          ],
+          [
+            -76.3402421,
+            3.3027315
+          ],
+          [
+            -76.3400957,
+            3.3030324
+          ],
+          [
+            -76.3400131,
+            3.3032507
+          ],
+          [
+            -76.339958,
+            3.3034931
+          ],
+          [
+            -76.3399146,
+            3.3037383
+          ],
+          [
+            -76.3399065,
+            3.3039862
+          ],
+          [
+            -76.3399173,
+            3.3042567
+          ],
+          [
+            -76.3399468,
+            3.3045657
+          ],
+          [
+            -76.3399816,
+            3.3048753
+          ],
+          [
+            -76.3400782,
+            3.3058216
+          ],
+          [
+            -76.3401057,
+            3.3060905
+          ],
+          [
+            -76.3401962,
+            3.3069746
+          ],
+          [
+            -76.3403786,
+            3.3087082
+          ],
+          [
+            -76.3405743,
+            3.3104621
+          ],
+          [
+            -76.3407245,
+            3.3119884
+          ],
+          [
+            -76.3408104,
+            3.3128452
+          ],
+          [
+            -76.3408372,
+            3.3131773
+          ],
+          [
+            -76.3408694,
+            3.313362
+          ],
+          [
+            -76.3409123,
+            3.3135548
+          ],
+          [
+            -76.3410035,
+            3.3138547
+          ],
+          [
+            -76.3410383,
+            3.3139592
+          ],
+          [
+            -76.3411243,
+            3.3141616
+          ],
+          [
+            -76.3412503,
+            3.3143796
+          ],
+          [
+            -76.34143,
+            3.3146276
+          ],
+          [
+            -76.3416258,
+            3.3148777
+          ],
+          [
+            -76.3421193,
+            3.3154614
+          ],
+          [
+            -76.3424733,
+            3.3159246
+          ],
+          [
+            -76.3431869,
+            3.3168244
+          ]
+        ]
+      },
+      "id": "way/268708261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268731050",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3634093,
+            3.2689263
+          ],
+          [
+            -76.3634839,
+            3.2688148
+          ]
+        ]
+      },
+      "id": "way/268731050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268731053",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3634093,
+            3.2689263
+          ],
+          [
+            -76.3630535,
+            3.2694392
+          ],
+          [
+            -76.3627326,
+            3.2699019
+          ],
+          [
+            -76.3626797,
+            3.2699782
+          ],
+          [
+            -76.3623106,
+            3.2705103
+          ],
+          [
+            -76.3619866,
+            3.2709744
+          ],
+          [
+            -76.3618643,
+            3.2711509
+          ],
+          [
+            -76.3615818,
+            3.2715552
+          ],
+          [
+            -76.3613306,
+            3.2719231
+          ],
+          [
+            -76.361247,
+            3.2720436
+          ],
+          [
+            -76.3604215,
+            3.2732337
+          ],
+          [
+            -76.3596467,
+            3.2743507
+          ],
+          [
+            -76.3594758,
+            3.2745972
+          ],
+          [
+            -76.3586339,
+            3.275811
+          ],
+          [
+            -76.3575294,
+            3.2774033
+          ]
+        ]
+      },
+      "id": "way/268731053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268736056",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3937787,
+            3.2331567
+          ],
+          [
+            -76.3936833,
+            3.2333339
+          ],
+          [
+            -76.3935491,
+            3.2334805
+          ],
+          [
+            -76.3934019,
+            3.2336142
+          ],
+          [
+            -76.393243,
+            3.2337338
+          ],
+          [
+            -76.3930739,
+            3.2338385
+          ],
+          [
+            -76.3928958,
+            3.2339272
+          ],
+          [
+            -76.3927104,
+            3.2339992
+          ],
+          [
+            -76.3925191,
+            3.234054
+          ],
+          [
+            -76.3923236,
+            3.234091
+          ]
+        ]
+      },
+      "id": "way/268736056"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268751691",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4238998,
+            3.2169513
+          ],
+          [
+            -76.4231005,
+            3.2166808
+          ],
+          [
+            -76.4227116,
+            3.2165362
+          ],
+          [
+            -76.4224515,
+            3.2164494
+          ],
+          [
+            -76.4221966,
+            3.2163675
+          ],
+          [
+            -76.4220787,
+            3.216337
+          ],
+          [
+            -76.4219276,
+            3.2163064
+          ]
+        ]
+      },
+      "id": "way/268751691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268751695",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4286593,
+            3.2150906
+          ],
+          [
+            -76.4289034,
+            3.2147465
+          ],
+          [
+            -76.4295583,
+            3.2138236
+          ],
+          [
+            -76.4297984,
+            3.2134852
+          ],
+          [
+            -76.4298222,
+            3.2134516
+          ],
+          [
+            -76.4302045,
+            3.2129128
+          ],
+          [
+            -76.4303362,
+            3.2127273
+          ]
+        ]
+      },
+      "id": "way/268751695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268767389",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4306839,
+            3.2122238
+          ],
+          [
+            -76.4311879,
+            3.2115152
+          ],
+          [
+            -76.4314637,
+            3.2111273
+          ],
+          [
+            -76.4320288,
+            3.2103327
+          ],
+          [
+            -76.4320865,
+            3.2102516
+          ],
+          [
+            -76.43268,
+            3.2094171
+          ],
+          [
+            -76.4335438,
+            3.2082025
+          ],
+          [
+            -76.4339745,
+            3.2075969
+          ],
+          [
+            -76.434525,
+            3.2068227
+          ],
+          [
+            -76.4350818,
+            3.2060398
+          ],
+          [
+            -76.435553,
+            3.2053773
+          ],
+          [
+            -76.4359778,
+            3.20478
+          ],
+          [
+            -76.4373078,
+            3.2029098
+          ],
+          [
+            -76.4376047,
+            3.2024924
+          ],
+          [
+            -76.4379052,
+            3.2020698
+          ],
+          [
+            -76.437993,
+            3.2019463
+          ],
+          [
+            -76.4385876,
+            3.2011102
+          ],
+          [
+            -76.4389593,
+            3.2005875
+          ],
+          [
+            -76.439018,
+            3.2005051
+          ],
+          [
+            -76.4390359,
+            3.2004798
+          ],
+          [
+            -76.4390543,
+            3.2004539
+          ],
+          [
+            -76.4392492,
+            3.2001726
+          ]
+        ]
+      },
+      "id": "way/268767389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268767398",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4565722,
+            3.1701188
+          ],
+          [
+            -76.4567357,
+            3.1700252
+          ],
+          [
+            -76.4568789,
+            3.1699
+          ],
+          [
+            -76.4570015,
+            3.1697546
+          ],
+          [
+            -76.4571,
+            3.1695918
+          ],
+          [
+            -76.4571717,
+            3.1694157
+          ],
+          [
+            -76.4571959,
+            3.1693287
+          ],
+          [
+            -76.4572459,
+            3.1690133
+          ]
+        ]
+      },
+      "id": "way/268767398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268767405",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4561392,
+            3.169786
+          ],
+          [
+            -76.4557632,
+            3.1706576
+          ]
+        ]
+      },
+      "id": "way/268767405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268767409",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4482366,
+            3.1860915
+          ],
+          [
+            -76.4481968,
+            3.1859941
+          ],
+          [
+            -76.4481608,
+            3.1858953
+          ],
+          [
+            -76.448114,
+            3.1857403
+          ],
+          [
+            -76.4480779,
+            3.1855825
+          ],
+          [
+            -76.4480527,
+            3.1854225
+          ],
+          [
+            -76.4480386,
+            3.1852612
+          ],
+          [
+            -76.4480356,
+            3.1850993
+          ],
+          [
+            -76.4480437,
+            3.1849376
+          ],
+          [
+            -76.4480629,
+            3.1847769
+          ],
+          [
+            -76.448093,
+            3.1846178
+          ],
+          [
+            -76.448134,
+            3.1844611
+          ],
+          [
+            -76.4481857,
+            3.1843077
+          ]
+        ]
+      },
+      "id": "way/268767409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268767420",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4519905,
+            3.1763901
+          ],
+          [
+            -76.4518198,
+            3.1766208
+          ]
+        ]
+      },
+      "id": "way/268767420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268767421",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4584643,
+            3.1623539
+          ],
+          [
+            -76.4582389,
+            3.1634136
+          ],
+          [
+            -76.4581114,
+            3.1641454
+          ],
+          [
+            -76.4579762,
+            3.1648418
+          ]
+        ]
+      },
+      "id": "way/268767421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268980251",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3517885,
+            3.4043144
+          ],
+          [
+            -76.3516923,
+            3.404728
+          ]
+        ]
+      },
+      "id": "way/268980251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268980252",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3518836,
+            3.4047672
+          ],
+          [
+            -76.3519762,
+            3.4043801
+          ]
+        ]
+      },
+      "id": "way/268980252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/268980253",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.353339,
+            3.3988199
+          ],
+          [
+            -76.3535073,
+            3.3982172
+          ],
+          [
+            -76.3536394,
+            3.3976813
+          ],
+          [
+            -76.3538288,
+            3.3969567
+          ],
+          [
+            -76.353869,
+            3.3967234
+          ],
+          [
+            -76.3539316,
+            3.3963252
+          ],
+          [
+            -76.3539592,
+            3.3961303
+          ],
+          [
+            -76.3539846,
+            3.3958155
+          ],
+          [
+            -76.3539921,
+            3.3957063
+          ],
+          [
+            -76.3539982,
+            3.395597
+          ],
+          [
+            -76.3540016,
+            3.3954639
+          ],
+          [
+            -76.3540089,
+            3.3951429
+          ],
+          [
+            -76.3540013,
+            3.3947983
+          ],
+          [
+            -76.3539802,
+            3.3944542
+          ],
+          [
+            -76.3539402,
+            3.3939238
+          ],
+          [
+            -76.3538363,
+            3.393297
+          ]
+        ]
+      },
+      "id": "way/268980253"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/269975491",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "maxspeed:backward": "80",
+        "maxspeed:forward": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3520274,
+            3.3238453
+          ],
+          [
+            -76.3521723,
+            3.3240328
+          ],
+          [
+            -76.3522835,
+            3.3242242
+          ],
+          [
+            -76.3523881,
+            3.3244036
+          ],
+          [
+            -76.3524593,
+            3.3245967
+          ],
+          [
+            -76.352533,
+            3.3247811
+          ],
+          [
+            -76.3525772,
+            3.3249806
+          ],
+          [
+            -76.3526081,
+            3.3251493
+          ],
+          [
+            -76.3526228,
+            3.3253354
+          ],
+          [
+            -76.3526148,
+            3.3255082
+          ],
+          [
+            -76.3526122,
+            3.3257224
+          ],
+          [
+            -76.3526068,
+            3.3259366
+          ],
+          [
+            -76.3525961,
+            3.3262194
+          ],
+          [
+            -76.3525853,
+            3.3265284
+          ],
+          [
+            -76.3525773,
+            3.3267763
+          ],
+          [
+            -76.3525667,
+            3.3269789
+          ],
+          [
+            -76.3525638,
+            3.3272513
+          ],
+          [
+            -76.3525477,
+            3.3276061
+          ],
+          [
+            -76.3525316,
+            3.3279247
+          ],
+          [
+            -76.3525155,
+            3.3282367
+          ],
+          [
+            -76.35249,
+            3.3284388
+          ],
+          [
+            -76.3524605,
+            3.3285794
+          ],
+          [
+            -76.3524284,
+            3.3287066
+          ],
+          [
+            -76.3523775,
+            3.3288475
+          ],
+          [
+            -76.3523171,
+            3.3290055
+          ],
+          [
+            -76.3522346,
+            3.329223
+          ],
+          [
+            -76.3521281,
+            3.3295171
+          ],
+          [
+            -76.351898,
+            3.3301821
+          ],
+          [
+            -76.3515219,
+            3.331165
+          ],
+          [
+            -76.3513475,
+            3.3316416
+          ],
+          [
+            -76.3512724,
+            3.331873
+          ],
+          [
+            -76.3512054,
+            3.3321408
+          ],
+          [
+            -76.3511544,
+            3.3324262
+          ],
+          [
+            -76.351148,
+            3.3324803
+          ],
+          [
+            -76.3511249,
+            3.3326725
+          ],
+          [
+            -76.3511141,
+            3.3328343
+          ],
+          [
+            -76.3511088,
+            3.3329403
+          ],
+          [
+            -76.3511035,
+            3.3332306
+          ],
+          [
+            -76.3511115,
+            3.3334448
+          ],
+          [
+            -76.3511383,
+            3.333757
+          ],
+          [
+            -76.3511786,
+            3.3340232
+          ],
+          [
+            -76.3512805,
+            3.3346337
+          ],
+          [
+            -76.3513878,
+            3.3352335
+          ],
+          [
+            -76.351605,
+            3.3365375
+          ],
+          [
+            -76.3516873,
+            3.3370366
+          ],
+          [
+            -76.3517928,
+            3.3376691
+          ],
+          [
+            -76.3518584,
+            3.3381039
+          ],
+          [
+            -76.3520476,
+            3.3392489
+          ],
+          [
+            -76.3522488,
+            3.3405074
+          ],
+          [
+            -76.3523453,
+            3.3410279
+          ],
+          [
+            -76.3524392,
+            3.341467
+          ],
+          [
+            -76.352523,
+            3.3418737
+          ],
+          [
+            -76.3525612,
+            3.3420321
+          ],
+          [
+            -76.3526497,
+            3.3422597
+          ],
+          [
+            -76.3527945,
+            3.342596
+          ],
+          [
+            -76.3529635,
+            3.3429842
+          ],
+          [
+            -76.3533042,
+            3.3437474
+          ]
+        ]
+      },
+      "id": "way/269975491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/269975492",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Calle 2",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3486036,
+            3.3212626
+          ],
+          [
+            -76.3487327,
+            3.321367
+          ],
+          [
+            -76.3490797,
+            3.3216201
+          ],
+          [
+            -76.3496134,
+            3.3220084
+          ],
+          [
+            -76.3499716,
+            3.3222677
+          ],
+          [
+            -76.3500876,
+            3.3223532
+          ],
+          [
+            -76.3505624,
+            3.3226934
+          ],
+          [
+            -76.3508312,
+            3.3228894
+          ],
+          [
+            -76.3509851,
+            3.3230052
+          ],
+          [
+            -76.3513348,
+            3.3232464
+          ],
+          [
+            -76.3516466,
+            3.3234828
+          ],
+          [
+            -76.3518397,
+            3.3236525
+          ],
+          [
+            -76.3520274,
+            3.3238453
+          ]
+        ]
+      },
+      "id": "way/269975492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/309455698",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "130",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3923236,
+            3.234091
+          ],
+          [
+            -76.3920393,
+            3.2341253
+          ],
+          [
+            -76.3902273,
+            3.2343005
+          ],
+          [
+            -76.388616,
+            3.2344772
+          ],
+          [
+            -76.3880091,
+            3.2345448
+          ],
+          [
+            -76.3877223,
+            3.2345872
+          ],
+          [
+            -76.3874701,
+            3.2346609
+          ],
+          [
+            -76.3871865,
+            3.2347713
+          ],
+          [
+            -76.3869337,
+            3.2349046
+          ],
+          [
+            -76.3867713,
+            3.2350121
+          ],
+          [
+            -76.3865548,
+            3.2351811
+          ],
+          [
+            -76.3863307,
+            3.2354098
+          ],
+          [
+            -76.3861599,
+            3.235621
+          ],
+          [
+            -76.3858828,
+            3.2360036
+          ],
+          [
+            -76.3855442,
+            3.2365044
+          ],
+          [
+            -76.3852613,
+            3.2369298
+          ],
+          [
+            -76.3849916,
+            3.2373118
+          ],
+          [
+            -76.3844391,
+            3.2381835
+          ],
+          [
+            -76.3837873,
+            3.2390685
+          ],
+          [
+            -76.3836266,
+            3.239325
+          ],
+          [
+            -76.3830176,
+            3.2402146
+          ],
+          [
+            -76.3821902,
+            3.2414388
+          ],
+          [
+            -76.3814123,
+            3.2425746
+          ],
+          [
+            -76.381132,
+            3.2429762
+          ],
+          [
+            -76.3801209,
+            3.2444714
+          ],
+          [
+            -76.3795119,
+            3.2453375
+          ],
+          [
+            -76.3791586,
+            3.2458726
+          ],
+          [
+            -76.3788581,
+            3.2463176
+          ],
+          [
+            -76.378765,
+            3.2464566
+          ],
+          [
+            -76.3777971,
+            3.2478434
+          ],
+          [
+            -76.3766714,
+            3.2494856
+          ],
+          [
+            -76.3761744,
+            3.2502168
+          ],
+          [
+            -76.3756201,
+            3.2510323
+          ],
+          [
+            -76.3749979,
+            3.251983
+          ],
+          [
+            -76.3745415,
+            3.2526477
+          ],
+          [
+            -76.3736808,
+            3.2538907
+          ],
+          [
+            -76.373072,
+            3.2547905
+          ],
+          [
+            -76.3720126,
+            3.2563452
+          ],
+          [
+            -76.3713179,
+            3.2573628
+          ],
+          [
+            -76.3710478,
+            3.2577553
+          ],
+          [
+            -76.3707991,
+            3.2581281
+          ],
+          [
+            -76.3695798,
+            3.2599175
+          ],
+          [
+            -76.3686141,
+            3.2613126
+          ],
+          [
+            -76.3673347,
+            3.2632151
+          ],
+          [
+            -76.3665635,
+            3.2643196
+          ],
+          [
+            -76.3664161,
+            3.2645513
+          ],
+          [
+            -76.3640571,
+            3.2679806
+          ],
+          [
+            -76.3634839,
+            3.2688148
+          ]
+        ]
+      },
+      "id": "way/309455698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/309455700",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3276219,
+            3.4910072
+          ],
+          [
+            -76.3279277,
+            3.4918254
+          ],
+          [
+            -76.3281718,
+            3.4926594
+          ],
+          [
+            -76.32866,
+            3.4942871
+          ],
+          [
+            -76.3291347,
+            3.4959296
+          ],
+          [
+            -76.3293707,
+            3.4967542
+          ],
+          [
+            -76.3296257,
+            3.4975751
+          ],
+          [
+            -76.3305415,
+            3.499825
+          ],
+          [
+            -76.3310257,
+            3.5009387
+          ],
+          [
+            -76.3312617,
+            3.5015022
+          ],
+          [
+            -76.3314897,
+            3.5020884
+          ],
+          [
+            -76.3319081,
+            3.5030965
+          ],
+          [
+            -76.3323533,
+            3.5041175
+          ],
+          [
+            -76.3333163,
+            3.5060414
+          ],
+          [
+            -76.3343113,
+            3.5079646
+          ]
+        ]
+      },
+      "id": "way/309455700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/327884564",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt",
+        "unsigned_ref": "25 VL B"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3375518,
+            3.5239914
+          ],
+          [
+            -76.3375413,
+            3.5242395
+          ]
+        ]
+      },
+      "id": "way/327884564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/327884565",
+        "highway": "trunk",
+        "lanes": "3",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt",
+        "unsigned_ref": "25 VL B"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3377307,
+            3.5242243
+          ],
+          [
+            -76.3377611,
+            3.5237091
+          ]
+        ]
+      },
+      "id": "way/327884565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/486466353",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 5",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3295719,
+            3.4805475
+          ],
+          [
+            -76.3297152,
+            3.4793189
+          ],
+          [
+            -76.3298991,
+            3.4777873
+          ],
+          [
+            -76.3300333,
+            3.4765932
+          ],
+          [
+            -76.3301893,
+            3.4749929
+          ],
+          [
+            -76.3303224,
+            3.4735872
+          ],
+          [
+            -76.3303556,
+            3.4732365
+          ],
+          [
+            -76.3304234,
+            3.4725205
+          ],
+          [
+            -76.3304557,
+            3.4721795
+          ],
+          [
+            -76.3304717,
+            3.4720095
+          ]
+        ]
+      },
+      "id": "way/486466353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/486466354",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 5",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3305938,
+            3.4706255
+          ],
+          [
+            -76.3306287,
+            3.4704114
+          ],
+          [
+            -76.3306716,
+            3.4702052
+          ],
+          [
+            -76.330799,
+            3.4697728
+          ],
+          [
+            -76.33131,
+            3.4683284
+          ],
+          [
+            -76.3315996,
+            3.4670104
+          ],
+          [
+            -76.3316832,
+            3.4665802
+          ],
+          [
+            -76.3317597,
+            3.4663072
+          ],
+          [
+            -76.3318297,
+            3.4661026
+          ],
+          [
+            -76.3319636,
+            3.4657797
+          ],
+          [
+            -76.3320955,
+            3.4655195
+          ],
+          [
+            -76.3325986,
+            3.4648229
+          ],
+          [
+            -76.3327352,
+            3.4646321
+          ],
+          [
+            -76.3333571,
+            3.4637635
+          ],
+          [
+            -76.3337081,
+            3.4632732
+          ],
+          [
+            -76.333813,
+            3.4631267
+          ],
+          [
+            -76.3340619,
+            3.462779
+          ],
+          [
+            -76.3345977,
+            3.4620306
+          ],
+          [
+            -76.3346209,
+            3.4619981
+          ],
+          [
+            -76.3348691,
+            3.4616515
+          ]
+        ]
+      },
+      "id": "way/486466354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/486467026",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3348691,
+            3.4616515
+          ],
+          [
+            -76.335003,
+            3.4615272
+          ],
+          [
+            -76.3350591,
+            3.4614694
+          ],
+          [
+            -76.3351884,
+            3.4613123
+          ],
+          [
+            -76.3353241,
+            3.4611409
+          ],
+          [
+            -76.3353788,
+            3.461047
+          ],
+          [
+            -76.3356026,
+            3.4605951
+          ],
+          [
+            -76.3358047,
+            3.4601171
+          ]
+        ]
+      },
+      "id": "way/486467026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/486476594",
+        "destination:ref": "25-04A",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3923236,
+            3.234091
+          ],
+          [
+            -76.3930946,
+            3.2340266
+          ],
+          [
+            -76.3942975,
+            3.2338808
+          ],
+          [
+            -76.3944116,
+            3.233868
+          ],
+          [
+            -76.394551,
+            3.2338519
+          ],
+          [
+            -76.3946852,
+            3.2338198
+          ],
+          [
+            -76.3948112,
+            3.2337689
+          ],
+          [
+            -76.3949346,
+            3.2337019
+          ],
+          [
+            -76.3950204,
+            3.2336403
+          ],
+          [
+            -76.3951089,
+            3.2335493
+          ],
+          [
+            -76.3951814,
+            3.2334448
+          ],
+          [
+            -76.3952377,
+            3.2332815
+          ],
+          [
+            -76.3952645,
+            3.2331529
+          ],
+          [
+            -76.3952752,
+            3.2330324
+          ],
+          [
+            -76.3952752,
+            3.2329494
+          ],
+          [
+            -76.3952565,
+            3.2328289
+          ],
+          [
+            -76.3951154,
+            3.2321701
+          ],
+          [
+            -76.3950925,
+            3.2319772
+          ],
+          [
+            -76.395084,
+            3.2317833
+          ],
+          [
+            -76.3950954,
+            3.2315894
+          ],
+          [
+            -76.3951266,
+            3.2313978
+          ],
+          [
+            -76.3951772,
+            3.2312103
+          ],
+          [
+            -76.3952468,
+            3.231029
+          ],
+          [
+            -76.3953346,
+            3.2308558
+          ],
+          [
+            -76.3954397,
+            3.2306924
+          ],
+          [
+            -76.3955529,
+            3.2305341
+          ]
+        ]
+      },
+      "id": "way/486476594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582466",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4014361,
+            3.2235991
+          ],
+          [
+            -76.4008785,
+            3.2239154
+          ]
+        ]
+      },
+      "id": "way/503582466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582467",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4008785,
+            3.2239154
+          ],
+          [
+            -76.4001478,
+            3.224335
+          ]
+        ]
+      },
+      "id": "way/503582467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582470",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4001478,
+            3.224335
+          ],
+          [
+            -76.3996169,
+            3.2246735
+          ]
+        ]
+      },
+      "id": "way/503582470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582471",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3996169,
+            3.2246735
+          ],
+          [
+            -76.3993164,
+            3.2248991
+          ],
+          [
+            -76.3990381,
+            3.2251515
+          ],
+          [
+            -76.3987843,
+            3.2254285
+          ],
+          [
+            -76.3985572,
+            3.2257277
+          ],
+          [
+            -76.3983588,
+            3.2260466
+          ],
+          [
+            -76.39818,
+            3.2263717
+          ]
+        ]
+      },
+      "id": "way/503582471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582472",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4145486,
+            3.2178196
+          ],
+          [
+            -76.4137954,
+            3.2179636
+          ]
+        ]
+      },
+      "id": "way/503582472"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582474",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4137954,
+            3.2179636
+          ],
+          [
+            -76.4133091,
+            3.2180564
+          ]
+        ]
+      },
+      "id": "way/503582474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582476",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed:backward": "30",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4113792,
+            3.2184188
+          ],
+          [
+            -76.4100488,
+            3.2186839
+          ],
+          [
+            -76.4097891,
+            3.2187654
+          ],
+          [
+            -76.4096914,
+            3.218799
+          ],
+          [
+            -76.4095286,
+            3.2188649
+          ],
+          [
+            -76.4092791,
+            3.2189801
+          ],
+          [
+            -76.4090296,
+            3.2191231
+          ],
+          [
+            -76.4087882,
+            3.2193132
+          ],
+          [
+            -76.4085629,
+            3.2195275
+          ],
+          [
+            -76.4083376,
+            3.2197846
+          ],
+          [
+            -76.4081478,
+            3.2200417
+          ],
+          [
+            -76.4080695,
+            3.2201477
+          ],
+          [
+            -76.407643,
+            3.2207288
+          ],
+          [
+            -76.4071145,
+            3.2214583
+          ],
+          [
+            -76.4069555,
+            3.2216585
+          ],
+          [
+            -76.4067901,
+            3.221867
+          ],
+          [
+            -76.4065485,
+            3.2221251
+          ],
+          [
+            -76.4063125,
+            3.2223286
+          ],
+          [
+            -76.4060952,
+            3.2224813
+          ],
+          [
+            -76.4058672,
+            3.2226071
+          ],
+          [
+            -76.4055965,
+            3.2227266
+          ],
+          [
+            -76.4053578,
+            3.2228096
+          ],
+          [
+            -76.4051244,
+            3.2228712
+          ],
+          [
+            -76.4048078,
+            3.2229392
+          ],
+          [
+            -76.4045235,
+            3.2229821
+          ],
+          [
+            -76.404162,
+            3.22303
+          ]
+        ]
+      },
+      "id": "way/503582476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/503582477",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxheight": "4.5",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4154722,
+            3.2176062
+          ],
+          [
+            -76.4146582,
+            3.2177943
+          ],
+          [
+            -76.4145486,
+            3.2178196
+          ]
+        ]
+      },
+      "id": "way/503582477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/904057988",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4579762,
+            3.1648418
+          ],
+          [
+            -76.4579193,
+            3.1652013
+          ]
+        ]
+      },
+      "id": "way/904057988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/904114314",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4591258,
+            3.1582312
+          ],
+          [
+            -76.4590533,
+            3.1586602
+          ],
+          [
+            -76.4588447,
+            3.1598419
+          ],
+          [
+            -76.4586548,
+            3.1609034
+          ]
+        ]
+      },
+      "id": "way/904114314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/904931393",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4572956,
+            3.1677827
+          ],
+          [
+            -76.4572398,
+            3.1679084
+          ],
+          [
+            -76.4571593,
+            3.1680464
+          ],
+          [
+            -76.4570681,
+            3.1681937
+          ],
+          [
+            -76.4568445,
+            3.1685282
+          ]
+        ]
+      },
+      "id": "way/904931393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/904931394",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4579193,
+            3.1652013
+          ],
+          [
+            -76.4577052,
+            3.166418
+          ],
+          [
+            -76.4575933,
+            3.1670366
+          ]
+        ]
+      },
+      "id": "way/904931394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/905670530",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4303362,
+            3.2127273
+          ],
+          [
+            -76.4302827,
+            3.2127721
+          ]
+        ]
+      },
+      "id": "way/905670530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/905670531",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4303362,
+            3.2127273
+          ],
+          [
+            -76.4306839,
+            3.2122238
+          ]
+        ]
+      },
+      "id": "way/905670531"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907303841",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4469982,
+            3.188387
+          ],
+          [
+            -76.4469802,
+            3.1885321
+          ],
+          [
+            -76.4469086,
+            3.1889256
+          ]
+        ]
+      },
+      "id": "way/907303841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907303842",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4476174,
+            3.1885187
+          ],
+          [
+            -76.4479385,
+            3.1880486
+          ],
+          [
+            -76.4482731,
+            3.187565
+          ],
+          [
+            -76.4484832,
+            3.1872614
+          ]
+        ]
+      },
+      "id": "way/907303842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907303843",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4463033,
+            3.1903334
+          ],
+          [
+            -76.4466199,
+            3.1898936
+          ],
+          [
+            -76.4469771,
+            3.1894248
+          ]
+        ]
+      },
+      "id": "way/907303843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907303844",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4473518,
+            3.1862925
+          ],
+          [
+            -76.4473379,
+            3.1863421
+          ],
+          [
+            -76.4473244,
+            3.1863917
+          ],
+          [
+            -76.4473212,
+            3.1864036
+          ],
+          [
+            -76.4472247,
+            3.1867955
+          ],
+          [
+            -76.447145,
+            3.1871911
+          ],
+          [
+            -76.4470822,
+            3.1875898
+          ],
+          [
+            -76.4470364,
+            3.1879907
+          ],
+          [
+            -76.4470221,
+            3.1881736
+          ]
+        ]
+      },
+      "id": "way/907303844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907303845",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4478848,
+            3.1849622
+          ],
+          [
+            -76.4477902,
+            3.185206
+          ],
+          [
+            -76.4477425,
+            3.185316
+          ],
+          [
+            -76.447506,
+            3.185861
+          ],
+          [
+            -76.4474637,
+            3.1859793
+          ],
+          [
+            -76.4474505,
+            3.186014
+          ],
+          [
+            -76.4473518,
+            3.1862925
+          ]
+        ]
+      },
+      "id": "way/907303845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907309993",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4269311,
+            3.2175262
+          ],
+          [
+            -76.4273798,
+            3.2168938
+          ],
+          [
+            -76.4286593,
+            3.2150906
+          ]
+        ]
+      },
+      "id": "way/907309993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907309994",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4261233,
+            3.2177172
+          ],
+          [
+            -76.4262682,
+            3.2177413
+          ],
+          [
+            -76.4263997,
+            3.2177536
+          ],
+          [
+            -76.4265466,
+            3.2177436
+          ],
+          [
+            -76.4266927,
+            3.217681
+          ],
+          [
+            -76.4269311,
+            3.2175262
+          ]
+        ]
+      },
+      "id": "way/907309994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907309995",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4238998,
+            3.2169513
+          ],
+          [
+            -76.424046,
+            3.2170195
+          ],
+          [
+            -76.4244443,
+            3.2171495
+          ],
+          [
+            -76.4252248,
+            3.2174173
+          ],
+          [
+            -76.4256764,
+            3.2175696
+          ]
+        ]
+      },
+      "id": "way/907309995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/907884071",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.39818,
+            3.2263717
+          ],
+          [
+            -76.3975542,
+            3.2273867
+          ],
+          [
+            -76.3962339,
+            3.2294711
+          ],
+          [
+            -76.3955529,
+            3.2305341
+          ]
+        ]
+      },
+      "id": "way/907884071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/910351029",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "90",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3377707,
+            3.5219476
+          ],
+          [
+            -76.3378156,
+            3.5207108
+          ]
+        ]
+      },
+      "id": "way/910351029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/913611043",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Vía Villa Rica - Santander de Quilichao",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4584643,
+            3.1623539
+          ],
+          [
+            -76.4585259,
+            3.1619843
+          ]
+        ]
+      },
+      "id": "way/913611043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/913611044",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.458507,
+            3.1618235
+          ],
+          [
+            -76.4584588,
+            3.1621167
+          ],
+          [
+            -76.4584643,
+            3.1623539
+          ]
+        ]
+      },
+      "id": "way/913611044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/918476023",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3494597,
+            3.4150432
+          ],
+          [
+            -76.3494498,
+            3.4152909
+          ],
+          [
+            -76.3494504,
+            3.4153582
+          ],
+          [
+            -76.3494614,
+            3.4155665
+          ],
+          [
+            -76.3494656,
+            3.4156112
+          ],
+          [
+            -76.3495499,
+            3.4160865
+          ],
+          [
+            -76.3496319,
+            3.4163559
+          ],
+          [
+            -76.3497111,
+            3.4166838
+          ],
+          [
+            -76.350021,
+            3.4176499
+          ]
+        ]
+      },
+      "id": "way/918476023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/918476024",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.349574,
+            3.414414
+          ],
+          [
+            -76.3494868,
+            3.4148106
+          ],
+          [
+            -76.3494597,
+            3.4150432
+          ]
+        ]
+      },
+      "id": "way/918476024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/918476025",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3502653,
+            3.4165503
+          ],
+          [
+            -76.350052,
+            3.4160639
+          ],
+          [
+            -76.3498975,
+            3.4155559
+          ],
+          [
+            -76.3498094,
+            3.415127
+          ]
+        ]
+      },
+      "id": "way/918476025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/918476026",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3503943,
+            3.418826
+          ],
+          [
+            -76.3503459,
+            3.4185655
+          ],
+          [
+            -76.3503108,
+            3.4183179
+          ],
+          [
+            -76.3503003,
+            3.4180488
+          ],
+          [
+            -76.3503134,
+            3.4178332
+          ],
+          [
+            -76.3503378,
+            3.417524
+          ],
+          [
+            -76.3503483,
+            3.4172844
+          ],
+          [
+            -76.3503429,
+            3.4170353
+          ],
+          [
+            -76.3503083,
+            3.4167797
+          ],
+          [
+            -76.3502653,
+            3.4165503
+          ]
+        ]
+      },
+      "id": "way/918476026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936325997",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4592081,
+            3.1578009
+          ],
+          [
+            -76.4591258,
+            3.1582312
+          ]
+        ]
+      },
+      "id": "way/936325997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936325998",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4592993,
+            3.1572737
+          ],
+          [
+            -76.4592435,
+            3.1576136
+          ],
+          [
+            -76.4592337,
+            3.1576649
+          ],
+          [
+            -76.4592081,
+            3.1578009
+          ]
+        ]
+      },
+      "id": "way/936325998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936328985",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "60",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4555872,
+            3.1710228
+          ],
+          [
+            -76.455944,
+            3.1706313
+          ]
+        ]
+      },
+      "id": "way/936328985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936328987",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "maxspeed:backward": "60",
+        "maxspeed:forward": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4555872,
+            3.1710228
+          ],
+          [
+            -76.4554881,
+            3.1711691
+          ],
+          [
+            -76.4553103,
+            3.1714315
+          ],
+          [
+            -76.4552274,
+            3.1715538
+          ],
+          [
+            -76.4541308,
+            3.1731654
+          ],
+          [
+            -76.4519905,
+            3.1763901
+          ]
+        ]
+      },
+      "id": "way/936328987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936328988",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4568445,
+            3.1685282
+          ],
+          [
+            -76.4566633,
+            3.1687917
+          ]
+        ]
+      },
+      "id": "way/936328988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936335824",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4470221,
+            3.1881736
+          ],
+          [
+            -76.4469982,
+            3.188387
+          ]
+        ]
+      },
+      "id": "way/936335824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936335825",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4481857,
+            3.1843077
+          ],
+          [
+            -76.4481447,
+            3.1843882
+          ],
+          [
+            -76.4478848,
+            3.1849622
+          ]
+        ]
+      },
+      "id": "way/936335825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936344783",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "maxspeed:forward": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4392492,
+            3.2001726
+          ],
+          [
+            -76.4393849,
+            3.1999838
+          ],
+          [
+            -76.4396826,
+            3.1995698
+          ],
+          [
+            -76.4404836,
+            3.1984557
+          ],
+          [
+            -76.440625,
+            3.1982591
+          ],
+          [
+            -76.4410993,
+            3.1975994
+          ],
+          [
+            -76.4412106,
+            3.1974446
+          ],
+          [
+            -76.4414738,
+            3.1970786
+          ],
+          [
+            -76.4419246,
+            3.1964516
+          ],
+          [
+            -76.442078,
+            3.1962383
+          ],
+          [
+            -76.4420799,
+            3.1962357
+          ],
+          [
+            -76.4421785,
+            3.1960984
+          ],
+          [
+            -76.4421997,
+            3.196069
+          ],
+          [
+            -76.4422649,
+            3.1959783
+          ],
+          [
+            -76.4425005,
+            3.1956507
+          ],
+          [
+            -76.4427327,
+            3.1953277
+          ],
+          [
+            -76.442956,
+            3.1950171
+          ],
+          [
+            -76.4431414,
+            3.1947592
+          ],
+          [
+            -76.4439507,
+            3.1936337
+          ],
+          [
+            -76.443987,
+            3.1935832
+          ],
+          [
+            -76.4441115,
+            3.1934101
+          ],
+          [
+            -76.4443123,
+            3.1931307
+          ],
+          [
+            -76.4445037,
+            3.1928581
+          ]
+        ]
+      },
+      "id": "way/936344783"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/936344784",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4445037,
+            3.1928581
+          ],
+          [
+            -76.444789,
+            3.1924578
+          ],
+          [
+            -76.4449315,
+            3.1922579
+          ],
+          [
+            -76.4450736,
+            3.1920586
+          ],
+          [
+            -76.4455582,
+            3.1913787
+          ],
+          [
+            -76.4461727,
+            3.1905166
+          ],
+          [
+            -76.4463033,
+            3.1903334
+          ]
+        ]
+      },
+      "id": "way/936344784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/937035011",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.327504,
+            3.488713
+          ],
+          [
+            -76.3275495,
+            3.4883487
+          ],
+          [
+            -76.3278334,
+            3.4871628
+          ]
+        ]
+      },
+      "id": "way/937035011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/937035012",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Variante Norte de Palmira",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3277052,
+            3.4908655
+          ],
+          [
+            -76.3276596,
+            3.4907317
+          ],
+          [
+            -76.3275556,
+            3.490365
+          ],
+          [
+            -76.3274933,
+            3.4899874
+          ],
+          [
+            -76.327504,
+            3.488713
+          ]
+        ]
+      },
+      "id": "way/937035012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/937035590",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed:forward": "30",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3287565,
+            3.484223
+          ],
+          [
+            -76.3289082,
+            3.4837938
+          ]
+        ]
+      },
+      "id": "way/937035590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/937469007",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "maxspeed:backward": "60",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4133091,
+            3.2180564
+          ],
+          [
+            -76.4128307,
+            3.2181426
+          ],
+          [
+            -76.412456,
+            3.2182102
+          ],
+          [
+            -76.4113792,
+            3.2184188
+          ]
+        ]
+      },
+      "id": "way/937469007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/938905594",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed:backward": "80",
+        "maxspeed:forward": "30",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3423902,
+            3.4436006
+          ],
+          [
+            -76.3427487,
+            3.4427147
+          ],
+          [
+            -76.3430386,
+            3.4419984
+          ],
+          [
+            -76.3432997,
+            3.4413531
+          ],
+          [
+            -76.3434712,
+            3.4409293
+          ],
+          [
+            -76.3435255,
+            3.4407926
+          ],
+          [
+            -76.3455686,
+            3.4356461
+          ],
+          [
+            -76.3455889,
+            3.4356001
+          ],
+          [
+            -76.3457805,
+            3.4351668
+          ],
+          [
+            -76.3463196,
+            3.4342672
+          ]
+        ]
+      },
+      "id": "way/938905594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/939802345",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "maxspeed:backward": "60",
+        "maxspeed:forward": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3535968,
+            3.3924856
+          ],
+          [
+            -76.353557,
+            3.3921468
+          ],
+          [
+            -76.3535508,
+            3.3920929
+          ],
+          [
+            -76.3535327,
+            3.3919386
+          ],
+          [
+            -76.3534876,
+            3.3915522
+          ],
+          [
+            -76.3533667,
+            3.3905159
+          ],
+          [
+            -76.3533109,
+            3.390038
+          ],
+          [
+            -76.3532442,
+            3.3894666
+          ]
+        ]
+      },
+      "id": "way/939802345"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/939802347",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3519762,
+            3.4043801
+          ],
+          [
+            -76.3520917,
+            3.4038221
+          ],
+          [
+            -76.3521615,
+            3.4034151
+          ],
+          [
+            -76.3522366,
+            3.4030483
+          ],
+          [
+            -76.3523132,
+            3.4026574
+          ],
+          [
+            -76.352419,
+            3.402221
+          ],
+          [
+            -76.3526028,
+            3.4014927
+          ],
+          [
+            -76.3529849,
+            3.3999559
+          ],
+          [
+            -76.353339,
+            3.3988199
+          ]
+        ]
+      },
+      "id": "way/939802347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/940569155",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "maxspeed:backward": "50",
+        "maxspeed:forward": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3533042,
+            3.3437474
+          ],
+          [
+            -76.3538943,
+            3.3450433
+          ],
+          [
+            -76.3540375,
+            3.3453649
+          ],
+          [
+            -76.3544414,
+            3.3462724
+          ],
+          [
+            -76.3545702,
+            3.346591
+          ],
+          [
+            -76.3546909,
+            3.3469241
+          ],
+          [
+            -76.3547552,
+            3.3471774
+          ],
+          [
+            -76.3548008,
+            3.3473981
+          ],
+          [
+            -76.3548357,
+            3.3476283
+          ],
+          [
+            -76.3548518,
+            3.3478656
+          ],
+          [
+            -76.3548572,
+            3.348113
+          ],
+          [
+            -76.3548545,
+            3.3483379
+          ],
+          [
+            -76.3548464,
+            3.3485709
+          ],
+          [
+            -76.354825,
+            3.3488493
+          ],
+          [
+            -76.3547847,
+            3.3492472
+          ],
+          [
+            -76.3546991,
+            3.349941
+          ],
+          [
+            -76.3546836,
+            3.3500882
+          ],
+          [
+            -76.3544602,
+            3.3518659
+          ],
+          [
+            -76.35431,
+            3.3530853
+          ],
+          [
+            -76.3541973,
+            3.3539663
+          ],
+          [
+            -76.3541437,
+            3.3544257
+          ],
+          [
+            -76.3540766,
+            3.3550855
+          ],
+          [
+            -76.3540176,
+            3.3555193
+          ],
+          [
+            -76.3539479,
+            3.3560575
+          ],
+          [
+            -76.3538218,
+            3.3571392
+          ],
+          [
+            -76.3536636,
+            3.3584218
+          ],
+          [
+            -76.3535027,
+            3.3597113
+          ],
+          [
+            -76.3533659,
+            3.3608413
+          ],
+          [
+            -76.3532693,
+            3.3617045
+          ],
+          [
+            -76.3532359,
+            3.3619621
+          ],
+          [
+            -76.3532157,
+            3.3621177
+          ],
+          [
+            -76.3531245,
+            3.3628211
+          ],
+          [
+            -76.3529179,
+            3.3644437
+          ],
+          [
+            -76.3527624,
+            3.3656727
+          ],
+          [
+            -76.352676,
+            3.3663113
+          ],
+          [
+            -76.352639,
+            3.366748
+          ],
+          [
+            -76.3525987,
+            3.3671443
+          ],
+          [
+            -76.3525827,
+            3.3674614
+          ],
+          [
+            -76.3525853,
+            3.3678148
+          ],
+          [
+            -76.3525866,
+            3.3680556
+          ],
+          [
+            -76.352588,
+            3.3683289
+          ],
+          [
+            -76.3525773,
+            3.3689008
+          ],
+          [
+            -76.3525692,
+            3.369673
+          ],
+          [
+            -76.3525692,
+            3.3701523
+          ],
+          [
+            -76.35258,
+            3.3707216
+          ],
+          [
+            -76.35258,
+            3.370977
+          ],
+          [
+            -76.3525666,
+            3.3712207
+          ],
+          [
+            -76.3525451,
+            3.3715757
+          ],
+          [
+            -76.3525424,
+            3.3718274
+          ],
+          [
+            -76.3525397,
+            3.372779
+          ],
+          [
+            -76.3525397,
+            3.373269
+          ],
+          [
+            -76.352529,
+            3.3747379
+          ],
+          [
+            -76.3525263,
+            3.3753002
+          ],
+          [
+            -76.3525183,
+            3.3760403
+          ],
+          [
+            -76.3525022,
+            3.3766872
+          ],
+          [
+            -76.3525049,
+            3.3771611
+          ],
+          [
+            -76.3525156,
+            3.3778064
+          ],
+          [
+            -76.352521,
+            3.3786766
+          ],
+          [
+            -76.3525263,
+            3.3790889
+          ],
+          [
+            -76.3525183,
+            3.3794584
+          ],
+          [
+            -76.3525037,
+            3.3800205
+          ]
+        ]
+      },
+      "id": "way/940569155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/940570188",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "20",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3449169,
+            3.3186559
+          ],
+          [
+            -76.345338,
+            3.3189558
+          ],
+          [
+            -76.3455848,
+            3.3191331
+          ],
+          [
+            -76.3459978,
+            3.3194298
+          ],
+          [
+            -76.3470117,
+            3.3201501
+          ],
+          [
+            -76.3471035,
+            3.3202166
+          ],
+          [
+            -76.3479532,
+            3.3208318
+          ],
+          [
+            -76.3486036,
+            3.3212626
+          ]
+        ]
+      },
+      "id": "way/940570188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/940570189",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3431869,
+            3.3168244
+          ],
+          [
+            -76.3438601,
+            3.3176598
+          ],
+          [
+            -76.3441981,
+            3.3180454
+          ],
+          [
+            -76.34441,
+            3.3182569
+          ],
+          [
+            -76.3444796,
+            3.3183131
+          ],
+          [
+            -76.3445491,
+            3.3183692
+          ],
+          [
+            -76.3446567,
+            3.3184605
+          ],
+          [
+            -76.3449169,
+            3.3186559
+          ]
+        ]
+      },
+      "id": "way/940570189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001842879",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3574052,
+            3.2775816
+          ],
+          [
+            -76.3564154,
+            3.2789875
+          ],
+          [
+            -76.3553212,
+            3.2805781
+          ],
+          [
+            -76.3546669,
+            3.2814957
+          ],
+          [
+            -76.3545058,
+            3.2817216
+          ],
+          [
+            -76.3517404,
+            3.2857035
+          ],
+          [
+            -76.3515048,
+            3.2860554
+          ]
+        ]
+      },
+      "id": "way/1001842879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001842880",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3575294,
+            3.2774033
+          ],
+          [
+            -76.3574052,
+            3.2775816
+          ]
+        ]
+      },
+      "id": "way/1001842880"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001875067",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3535968,
+            3.3924856
+          ],
+          [
+            -76.3536517,
+            3.393311
+          ]
+        ]
+      },
+      "id": "way/1001875067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001875068",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "50",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3538363,
+            3.393297
+          ],
+          [
+            -76.3535968,
+            3.3924856
+          ]
+        ]
+      },
+      "id": "way/1001875068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001883041",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3538634,
+            3.3952753
+          ],
+          [
+            -76.3538688,
+            3.3954551
+          ],
+          [
+            -76.3538595,
+            3.3956679
+          ],
+          [
+            -76.3538361,
+            3.3958796
+          ],
+          [
+            -76.3537955,
+            3.3960887
+          ]
+        ]
+      },
+      "id": "way/1001883041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001883042",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3536517,
+            3.393311
+          ],
+          [
+            -76.3537455,
+            3.3939113
+          ],
+          [
+            -76.3538082,
+            3.394477
+          ],
+          [
+            -76.3538358,
+            3.394803
+          ],
+          [
+            -76.3538634,
+            3.3952753
+          ]
+        ]
+      },
+      "id": "way/1001883042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002731101",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Vía Villa Rica - Santander de Quilichao",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4599273,
+            3.1555285
+          ],
+          [
+            -76.4599087,
+            3.1554362
+          ],
+          [
+            -76.4598363,
+            3.1549528
+          ],
+          [
+            -76.4598456,
+            3.1546395
+          ],
+          [
+            -76.4598803,
+            3.1542979
+          ],
+          [
+            -76.4599326,
+            3.1539109
+          ],
+          [
+            -76.4599036,
+            3.1537508
+          ]
+        ]
+      },
+      "id": "way/1002731101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002764092",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Vía Villa Rica - Santander de Quilichao",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4585259,
+            3.1619843
+          ],
+          [
+            -76.4585754,
+            3.1617231
+          ],
+          [
+            -76.458636,
+            3.1614394
+          ],
+          [
+            -76.4587158,
+            3.1611241
+          ]
+        ]
+      },
+      "id": "way/1002764092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002764093",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4586548,
+            3.1609034
+          ],
+          [
+            -76.4585675,
+            3.1613911
+          ],
+          [
+            -76.458507,
+            3.1618235
+          ]
+        ]
+      },
+      "id": "way/1002764093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002774739",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4572459,
+            3.1690133
+          ],
+          [
+            -76.4574827,
+            3.1677948
+          ]
+        ]
+      },
+      "id": "way/1002774739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002774740",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.455944,
+            3.1706313
+          ],
+          [
+            -76.4560876,
+            3.1704873
+          ],
+          [
+            -76.4562415,
+            3.1703541
+          ],
+          [
+            -76.4564047,
+            3.1702326
+          ],
+          [
+            -76.4565722,
+            3.1701188
+          ]
+        ]
+      },
+      "id": "way/1002774740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002774741",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4566633,
+            3.1687917
+          ],
+          [
+            -76.4564538,
+            3.1691069
+          ],
+          [
+            -76.4562774,
+            3.1694373
+          ],
+          [
+            -76.4561392,
+            3.169786
+          ]
+        ]
+      },
+      "id": "way/1002774741"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002774742",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "60",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4575933,
+            3.1670366
+          ],
+          [
+            -76.4574514,
+            3.1674315
+          ],
+          [
+            -76.4572956,
+            3.1677827
+          ]
+        ]
+      },
+      "id": "way/1002774742"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1002774743",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4574827,
+            3.1677948
+          ],
+          [
+            -76.4575339,
+            3.1675443
+          ],
+          [
+            -76.4575708,
+            3.1672913
+          ],
+          [
+            -76.4575933,
+            3.1670366
+          ]
+        ]
+      },
+      "id": "way/1002774743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003175507",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4469086,
+            3.1889256
+          ],
+          [
+            -76.4468667,
+            3.1890878
+          ],
+          [
+            -76.4468164,
+            3.1892486
+          ],
+          [
+            -76.4467573,
+            3.1894398
+          ]
+        ]
+      },
+      "id": "way/1003175507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003186570",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4469771,
+            3.1894248
+          ],
+          [
+            -76.4470954,
+            3.1892542
+          ],
+          [
+            -76.4472228,
+            3.1890628
+          ],
+          [
+            -76.4476174,
+            3.1885187
+          ]
+        ]
+      },
+      "id": "way/1003186570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003191737",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4302827,
+            3.2127721
+          ],
+          [
+            -76.4302179,
+            3.2128349
+          ],
+          [
+            -76.4301248,
+            3.212903
+          ],
+          [
+            -76.4300022,
+            3.2129642
+          ],
+          [
+            -76.4299424,
+            3.2129702
+          ],
+          [
+            -76.4298571,
+            3.2129808
+          ],
+          [
+            -76.4297676,
+            3.212999
+          ],
+          [
+            -76.4295934,
+            3.2130569
+          ],
+          [
+            -76.4295197,
+            3.2130914
+          ],
+          [
+            -76.4294319,
+            3.2131412
+          ]
+        ]
+      },
+      "id": "way/1003191737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003196045",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4256764,
+            3.2175696
+          ],
+          [
+            -76.4259114,
+            3.2176502
+          ],
+          [
+            -76.4261233,
+            3.2177172
+          ]
+        ]
+      },
+      "id": "way/1003196045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003200364",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "50",
+        "name": "Vía Santander de Quilichao - Villa Rica",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4557632,
+            3.1706576
+          ],
+          [
+            -76.4555872,
+            3.1710228
+          ]
+        ]
+      },
+      "id": "way/1003200364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003200367",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4484832,
+            3.1872614
+          ],
+          [
+            -76.448547,
+            3.1870749
+          ],
+          [
+            -76.4485726,
+            3.1868771
+          ],
+          [
+            -76.4485661,
+            3.1867703
+          ],
+          [
+            -76.4485455,
+            3.1866654
+          ],
+          [
+            -76.4485112,
+            3.186564
+          ],
+          [
+            -76.4484638,
+            3.1864681
+          ],
+          [
+            -76.4484041,
+            3.1863792
+          ]
+        ]
+      },
+      "id": "way/1003200367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003291040",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4291016,
+            3.21353
+          ],
+          [
+            -76.4285732,
+            3.2142808
+          ]
+        ]
+      },
+      "id": "way/1003291040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003291041",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4294319,
+            3.2131412
+          ],
+          [
+            -76.4291624,
+            3.213434
+          ],
+          [
+            -76.4291016,
+            3.21353
+          ]
+        ]
+      },
+      "id": "way/1003291041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003707013",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Carrera 5",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3304852,
+            3.4718676
+          ],
+          [
+            -76.3305378,
+            3.4709898
+          ],
+          [
+            -76.3305938,
+            3.4706255
+          ]
+        ]
+      },
+      "id": "way/1003707013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003707014",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Carrera 5",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "no",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3304717,
+            3.4720095
+          ],
+          [
+            -76.3304852,
+            3.4718676
+          ]
+        ]
+      },
+      "id": "way/1003707014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1003747182",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Carrera 12",
+        "nat_name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "source": "Bing",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.350021,
+            3.4176499
+          ],
+          [
+            -76.3503081,
+            3.4185588
+          ],
+          [
+            -76.3503943,
+            3.418826
+          ]
+        ]
+      },
+      "id": "way/1003747182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1005355523",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.4484041,
+            3.1863792
+          ],
+          [
+            -76.4482971,
+            3.1862022
+          ],
+          [
+            -76.4482366,
+            3.1860915
+          ]
+        ]
+      },
+      "id": "way/1005355523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1005360206",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3944154,
+            3.231952
+          ],
+          [
+            -76.3943338,
+            3.2320925
+          ],
+          [
+            -76.3937787,
+            3.2331567
+          ]
+        ]
+      },
+      "id": "way/1005360206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1005360207",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "80",
+        "name": "Troncal de Occidente",
+        "oneway": "yes",
+        "ref": "25-04A",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.3955529,
+            3.2305341
+          ],
+          [
+            -76.3952662,
+            3.2308909
+          ],
+          [
+            -76.3949519,
+            3.2312821
+          ],
+          [
+            -76.394677,
+            3.2316242
+          ],
+          [
+            -76.3944154,
+            3.231952
+          ]
+        ]
+      },
+      "id": "way/1005360207"
+    }
+  ]
+}
