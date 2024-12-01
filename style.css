@@ -123,6 +123,19 @@ body {
   text-align: center;
 }
 
+.custom-control {
+        background: white;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0; /* Remove default margins */
+}
+
+.custom-control + .custom-control {
+        margin-top: 5px; /* Reduce the spacing between buttons */
+}
+
 .transp {
   background: none;
   /* border-radius: 8px; */

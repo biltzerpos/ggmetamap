@@ -1,0 +1,6498 @@
+[
+  {
+    "text": "AKAT AMNUAI",
+    "type": "name",
+    "lat": 17.647850450450466,
+    "lng": 103.98407027027027,
+    "fszl": 10
+  },
+  {
+    "text": "AMPHAWA",
+    "type": "name",
+    "lat": 13.390729577464793,
+    "lng": 99.93813380281692,
+    "fszl": 10
+  },
+  {
+    "text": "AMPHOE MUANG YASOTHON",
+    "type": "name",
+    "lat": 15.863071090047375,
+    "lng": 104.1156777251185,
+    "fszl": 10
+  },
+  {
+    "text": "AMPHOE SAI MUN",
+    "type": "name",
+    "lat": 15.989756034482756,
+    "lng": 104.19882586206893,
+    "fszl": 10
+  },
+  {
+    "text": "AO LUEK",
+    "type": "name",
+    "lat": 8.367808711670518,
+    "lng": 98.74177046136333,
+    "fszl": 10
+  },
+  {
+    "text": "ARANYAPRATHET",
+    "type": "name",
+    "lat": 13.6318370909091,
+    "lng": 102.45589999999989,
+    "fszl": 10
+  },
+  {
+    "text": "AT SAMAT",
+    "type": "name",
+    "lat": 15.856055483870977,
+    "lng": 103.87261935483865,
+    "fszl": 10
+  },
+  {
+    "text": "BACHO",
+    "type": "name",
+    "lat": 6.575711842105263,
+    "lng": 101.63871052631578,
+    "fszl": 10
+  },
+  {
+    "text": "BAMNET NARONG",
+    "type": "name",
+    "lat": 15.472536196319012,
+    "lng": 101.6156822085889,
+    "fszl": 10
+  },
+  {
+    "text": "BAN BUNG",
+    "type": "name",
+    "lat": 13.246762307692308,
+    "lng": 101.1772169230769,
+    "fszl": 10
+  },
+  {
+    "text": "BAN CHANG",
+    "type": "name",
+    "lat": 12.73602166666666,
+    "lng": 101.05182333333327,
+    "fszl": 10
+  },
+  {
+    "text": "BAN DAN LAN HOI",
+    "type": "name",
+    "lat": 17.057892307692317,
+    "lng": 99.47705927601812,
+    "fszl": 10
+  },
+  {
+    "text": "BAN DUNG",
+    "type": "name",
+    "lat": 17.720984871794894,
+    "lng": 103.27787564102564,
+    "fszl": 10
+  },
+  {
+    "text": "BAN FANG",
+    "type": "name",
+    "lat": 16.443071348935856,
+    "lng": 102.61124550851552,
+    "fszl": 10
+  },
+  {
+    "text": "BAN HONG",
+    "type": "name",
+    "lat": 18.25390827067669,
+    "lng": 98.84764436090225,
+    "fszl": 10
+  },
+  {
+    "text": "BAN KHAI",
+    "type": "name",
+    "lat": 12.794221176576398,
+    "lng": 101.3233371097123,
+    "fszl": 10
+  },
+  {
+    "text": "BAN KHOK",
+    "type": "name",
+    "lat": 18.157805405405423,
+    "lng": 101.06420054054063,
+    "fszl": 10
+  },
+  {
+    "text": "BAN KHWAO",
+    "type": "name",
+    "lat": 15.78257445887447,
+    "lng": 101.8457012987013,
+    "fszl": 10
+  },
+  {
+    "text": "BAN KRUAT",
+    "type": "name",
+    "lat": 14.431586928104567,
+    "lng": 103.13669542483667,
+    "fszl": 10
+  },
+  {
+    "text": "BAN LAEM",
+    "type": "name",
+    "lat": 13.168175675675682,
+    "lng": 99.98187927927923,
+    "fszl": 10
+  },
+  {
+    "text": "BAN LAT",
+    "type": "name",
+    "lat": 13.044556470588235,
+    "lng": 99.82571647058829,
+    "fszl": 10
+  },
+  {
+    "text": "BAN LUAM",
+    "type": "name",
+    "lat": 15.587315555555564,
+    "lng": 102.1265222222222,
+    "fszl": 10
+  },
+  {
+    "text": "BAN LUANG",
+    "type": "name",
+    "lat": 18.8786866197183,
+    "lng": 100.45351197183093,
+    "fszl": 10
+  },
+  {
+    "text": "BAN MAI CHAI PHO",
+    "type": "name",
+    "lat": 15.56769807692307,
+    "lng": 102.82168269230765,
+    "fszl": 10
+  },
+  {
+    "text": "BAN MI",
+    "type": "name",
+    "lat": 15.067051162790692,
+    "lng": 100.53975697674417,
+    "fszl": 10
+  },
+  {
+    "text": "BAN MO",
+    "type": "name",
+    "lat": 14.59914791666667,
+    "lng": 100.7157416666666,
+    "fszl": 10
+  },
+  {
+    "text": "BAN MUANG",
+    "type": "name",
+    "lat": 17.91930072463767,
+    "lng": 103.49251304347818,
+    "fszl": 10
+  },
+  {
+    "text": "BAN NA",
+    "type": "name",
+    "lat": 14.277119565217394,
+    "lng": 101.06308804347826,
+    "fszl": 10
+  },
+  {
+    "text": "BAN NA DOEM",
+    "type": "name",
+    "lat": 8.905192156862755,
+    "lng": 99.27333333333333,
+    "fszl": 10
+  },
+  {
+    "text": "BAN NA SAN",
+    "type": "name",
+    "lat": 8.802370000000005,
+    "lng": 99.37129333333343,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PHAENG",
+    "type": "name",
+    "lat": 17.84672384615386,
+    "lng": 104.20858999999999,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PHAEO",
+    "type": "name",
+    "lat": 13.592330927835059,
+    "lng": 100.13415773195871,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PHAI",
+    "type": "name",
+    "lat": 16.075731297709915,
+    "lng": 102.75189847328248,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PHO",
+    "type": "name",
+    "lat": 13.61480677966101,
+    "lng": 101.06927966101686,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PHRAEK",
+    "type": "name",
+    "lat": 14.64185939562836,
+    "lng": 100.54608370131294,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PHU",
+    "type": "name",
+    "lat": 17.721486521739113,
+    "lng": 102.46464304347819,
+    "fszl": 10
+  },
+  {
+    "text": "BAN PONG",
+    "type": "name",
+    "lat": 13.814147552447556,
+    "lng": 99.80969580419583,
+    "fszl": 10
+  },
+  {
+    "text": "BAN RAI",
+    "type": "name",
+    "lat": 15.269276056338047,
+    "lng": 99.33262042253537,
+    "fszl": 10
+  },
+  {
+    "text": "BAN SANG",
+    "type": "name",
+    "lat": 13.941560447761196,
+    "lng": 101.23764179104475,
+    "fszl": 10
+  },
+  {
+    "text": "BAN TA KHUN",
+    "type": "name",
+    "lat": 9.08788074324324,
+    "lng": 98.69729054054054,
+    "fszl": 10
+  },
+  {
+    "text": "BAN TAK",
+    "type": "name",
+    "lat": 17.117384000000005,
+    "lng": 99.10387466666667,
+    "fszl": 10
+  },
+  {
+    "text": "BAN THAEN",
+    "type": "name",
+    "lat": 16.41759007092199,
+    "lng": 102.35035744680846,
+    "fszl": 10
+  },
+  {
+    "text": "BAN THI",
+    "type": "name",
+    "lat": 18.650401612903227,
+    "lng": 99.1510806451613,
+    "fszl": 10
+  },
+  {
+    "text": "BANG BAN",
+    "type": "name",
+    "lat": 14.387431250000006,
+    "lng": 100.46228125,
+    "fszl": 10
+  },
+  {
+    "text": "BANG BO",
+    "type": "name",
+    "lat": 13.562464367816094,
+    "lng": 100.84643908045977,
+    "fszl": 10
+  },
+  {
+    "text": "BANG BON",
+    "type": "name",
+    "lat": 13.657064705882357,
+    "lng": 100.37181176470588,
+    "fszl": 10
+  },
+  {
+    "text": "BANG BUA THONG",
+    "type": "name",
+    "lat": 13.912446153846156,
+    "lng": 100.38863076923084,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KAEO",
+    "type": "name",
+    "lat": 7.407536065573768,
+    "lng": 100.15377049180329,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KAPI",
+    "type": "name",
+    "lat": 13.775175,
+    "lng": 100.64098888888891,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KHAE",
+    "type": "name",
+    "lat": 13.71902666666667,
+    "lng": 100.39554000000003,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KHAN",
+    "type": "name",
+    "lat": 7.9781931034482785,
+    "lng": 99.50347844827586,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KHEN",
+    "type": "name",
+    "lat": 13.873651515151513,
+    "lng": 100.63883333333332,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KHLA",
+    "type": "name",
+    "lat": 13.69235853596715,
+    "lng": 101.20995509790225,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KHO LAEM",
+    "type": "name",
+    "lat": 13.702769230769231,
+    "lng": 100.50711538461539,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KHON TI",
+    "type": "name",
+    "lat": 13.478622641509434,
+    "lng": 99.95599056603771,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KLAM",
+    "type": "name",
+    "lat": 7.060142867461222,
+    "lng": 100.40342356148444,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KRATHUM",
+    "type": "name",
+    "lat": 16.600060000000006,
+    "lng": 100.36504000000004,
+    "fszl": 10
+  },
+  {
+    "text": "BANG KRUAI",
+    "type": "name",
+    "lat": 13.814739999999997,
+    "lng": 100.43778571428567,
+    "fszl": 10
+  },
+  {
+    "text": "BANG LAMUNG",
+    "type": "name",
+    "lat": 12.927865347324197,
+    "lng": 100.97831320290254,
+    "fszl": 10
+  },
+  {
+    "text": "BANG LEN",
+    "type": "name",
+    "lat": 14.037719117647057,
+    "lng": 100.16886323529417,
+    "fszl": 10
+  },
+  {
+    "text": "BANG MUN NAK",
+    "type": "name",
+    "lat": 16.038402531645566,
+    "lng": 100.40085443037972,
+    "fszl": 10
+  },
+  {
+    "text": "BANG NA",
+    "type": "name",
+    "lat": 13.675838461538463,
+    "lng": 100.62084615384616,
+    "fszl": 10
+  },
+  {
+    "text": "BANG NAM PRIEO",
+    "type": "name",
+    "lat": 13.854470000000001,
+    "lng": 101.08857750000001,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PA-IN",
+    "type": "name",
+    "lat": 14.231701612903224,
+    "lng": 100.59978064516129,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PAHAN",
+    "type": "name",
+    "lat": 14.47398666666667,
+    "lng": 100.55288666666662,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PAKONG",
+    "type": "name",
+    "lat": 13.529141000000006,
+    "lng": 100.967435,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PHAE",
+    "type": "name",
+    "lat": 13.672600000000006,
+    "lng": 99.98843968253962,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PLA MA",
+    "type": "name",
+    "lat": 14.35062755981599,
+    "lng": 100.1373123801231,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PLAD",
+    "type": "name",
+    "lat": 13.790635714285715,
+    "lng": 100.48652142857144,
+    "fszl": 10
+  },
+  {
+    "text": "BANG PLEE",
+    "type": "name",
+    "lat": 13.621482692307683,
+    "lng": 100.71962115384615,
+    "fszl": 10
+  },
+  {
+    "text": "BANG RACHAN",
+    "type": "name",
+    "lat": 14.901375762784701,
+    "lng": 100.27822049935664,
+    "fszl": 10
+  },
+  {
+    "text": "BANG RAK",
+    "type": "name",
+    "lat": 13.730433333333334,
+    "lng": 100.51846666666667,
+    "fszl": 10
+  },
+  {
+    "text": "BANG RAKAM",
+    "type": "name",
+    "lat": 16.746510679611642,
+    "lng": 100.08179563106793,
+    "fszl": 10
+  },
+  {
+    "text": "BANG SAI",
+    "type": "name",
+    "lat": 14.224210167843136,
+    "lng": 100.47748144080327,
+    "fszl": 10
+  },
+  {
+    "text": "BANG SAPHAN",
+    "type": "name",
+    "lat": 11.304038414634148,
+    "lng": 99.44991097560978,
+    "fszl": 10
+  },
+  {
+    "text": "BANG SAPHAN NOI",
+    "type": "name",
+    "lat": 11.053958282208583,
+    "lng": 99.31709570552147,
+    "fszl": 10
+  },
+  {
+    "text": "BANG SU",
+    "type": "name",
+    "lat": 13.821441666666665,
+    "lng": 100.52578333333335,
+    "fszl": 10
+  },
+  {
+    "text": "BANG YAI",
+    "type": "name",
+    "lat": 13.863295348837212,
+    "lng": 100.37094883720933,
+    "fszl": 10
+  },
+  {
+    "text": "BANGKHUNTIEN",
+    "type": "name",
+    "lat": 13.582341071428576,
+    "lng": 100.43769464285718,
+    "fszl": 10
+  },
+  {
+    "text": "BANGKOK NOI",
+    "type": "name",
+    "lat": 13.765606666666663,
+    "lng": 100.46807333333335,
+    "fszl": 10
+  },
+  {
+    "text": "BANGKOK YAI",
+    "type": "name",
+    "lat": 13.739624999999998,
+    "lng": 100.47370833333335,
+    "fszl": 10
+  },
+  {
+    "text": "BANNANG STAR",
+    "type": "name",
+    "lat": 6.25082302631579,
+    "lng": 101.26735065789465,
+    "fszl": 10
+  },
+  {
+    "text": "BANPHOT PHISAI",
+    "type": "name",
+    "lat": 16.000930468750006,
+    "lng": 100.00569999999999,
+    "fszl": 10
+  },
+  {
+    "text": "BATONG",
+    "type": "name",
+    "lat": 5.903980257510733,
+    "lng": 101.25031373390564,
+    "fszl": 10
+  },
+  {
+    "text": "BENCHALAK",
+    "type": "name",
+    "lat": 14.776598181818175,
+    "lng": 104.67939181818176,
+    "fszl": 10
+  },
+  {
+    "text": "BO KLUEA",
+    "type": "name",
+    "lat": 19.036537210585944,
+    "lng": 101.20794762693848,
+    "fszl": 10
+  },
+  {
+    "text": "BO PHLOI",
+    "type": "name",
+    "lat": 14.379658426966296,
+    "lng": 99.464336516854,
+    "fszl": 10
+  },
+  {
+    "text": "BO RAI",
+    "type": "name",
+    "lat": 12.546242307692314,
+    "lng": 102.56468346153848,
+    "fszl": 10
+  },
+  {
+    "text": "BO THONG",
+    "type": "name",
+    "lat": 13.244601418439714,
+    "lng": 101.51505531914894,
+    "fszl": 10
+  },
+  {
+    "text": "BORABU",
+    "type": "name",
+    "lat": 16.014432558139532,
+    "lng": 103.1426093023256,
+    "fszl": 10
+  },
+  {
+    "text": "BUA CHET",
+    "type": "name",
+    "lat": 14.457527826086949,
+    "lng": 103.98837999999996,
+    "fszl": 10
+  },
+  {
+    "text": "BUA YAI",
+    "type": "name",
+    "lat": 15.575764423076913,
+    "lng": 102.42360769230767,
+    "fszl": 10
+  },
+  {
+    "text": "BUANG SAM PHAN",
+    "type": "name",
+    "lat": 15.83221904761905,
+    "lng": 101.09235952380949,
+    "fszl": 10
+  },
+  {
+    "text": "BUENG BUN",
+    "type": "name",
+    "lat": 15.305002598521995,
+    "lng": 104.05811248296854,
+    "fszl": 10
+  },
+  {
+    "text": "BUNG KAN",
+    "type": "name",
+    "lat": 18.26291610486893,
+    "lng": 103.63520224719082,
+    "fszl": 10
+  },
+  {
+    "text": "BUNG KHONG LONG",
+    "type": "name",
+    "lat": 17.997938235294132,
+    "lng": 104.07764509803927,
+    "fszl": 10
+  },
+  {
+    "text": "BUNG KUM",
+    "type": "name",
+    "lat": 13.814223076923076,
+    "lng": 100.64936923076925,
+    "fszl": 10
+  },
+  {
+    "text": "BUNTHARIK",
+    "type": "name",
+    "lat": 14.706175206611578,
+    "lng": 105.43189132231407,
+    "fszl": 10
+  },
+  {
+    "text": "CHA-AM",
+    "type": "name",
+    "lat": 12.749692380952393,
+    "lng": 99.88769999999998,
+    "fszl": 10
+  },
+  {
+    "text": "CHA-UAT",
+    "type": "name",
+    "lat": 7.967494949494946,
+    "lng": 99.95721111111114,
+    "fszl": 10
+  },
+  {
+    "text": "CHAE HOM",
+    "type": "name",
+    "lat": 18.76095294117649,
+    "lng": 99.65283039215684,
+    "fszl": 10
+  },
+  {
+    "text": "CHAI BADAN",
+    "type": "name",
+    "lat": 15.172232380952378,
+    "lng": 101.099010952381,
+    "fszl": 10
+  },
+  {
+    "text": "CHAI PRAKARN",
+    "type": "name",
+    "lat": 19.670521875,
+    "lng": 99.16836250000006,
+    "fszl": 10
+  },
+  {
+    "text": "CHAI WAN",
+    "type": "name",
+    "lat": 17.213750359712257,
+    "lng": 103.30957985611505,
+    "fszl": 10
+  },
+  {
+    "text": "CHAIBURI",
+    "type": "name",
+    "lat": 8.447263235294114,
+    "lng": 99.06865588235291,
+    "fszl": 10
+  },
+  {
+    "text": "CHAIYA",
+    "type": "name",
+    "lat": 9.456317843437901,
+    "lng": 99.01177732816076,
+    "fszl": 10
+  },
+  {
+    "text": "CHAIYO",
+    "type": "name",
+    "lat": 14.673608000000003,
+    "lng": 100.46815999999991,
+    "fszl": 10
+  },
+  {
+    "text": "CHAKKARAT",
+    "type": "name",
+    "lat": 15.0059181372549,
+    "lng": 102.4053352941176,
+    "fszl": 10
+  },
+  {
+    "text": "CHALERMPHRAKIET",
+    "type": "name",
+    "lat": 14.543215789473685,
+    "lng": 102.87769473684209,
+    "fszl": 10
+  },
+  {
+    "text": "CHALERMPHRAKIET",
+    "type": "name",
+    "lat": 14.998840860215045,
+    "lng": 102.28474301075279,
+    "fszl": 10
+  },
+  {
+    "text": "CHALERMPHRAKIET",
+    "type": "name",
+    "lat": 8.14819238095237,
+    "lng": 100.03971428571441,
+    "fszl": 10
+  },
+  {
+    "text": "CHALERMPHRAKIET",
+    "type": "name",
+    "lat": 19.509003825136585,
+    "lng": 101.11931256830601,
+    "fszl": 10
+  },
+  {
+    "text": "CHALERMPHRAKIET",
+    "type": "name",
+    "lat": 14.650012307692307,
+    "lng": 100.9217815384615,
+    "fszl": 10
+  },
+  {
+    "text": "CHAM NI",
+    "type": "name",
+    "lat": 14.791094871794865,
+    "lng": 102.82672820512818,
+    "fszl": 10
+  },
+  {
+    "text": "CHANA",
+    "type": "name",
+    "lat": 6.8882794117647,
+    "lng": 100.71256764705878,
+    "fszl": 10
+  },
+  {
+    "text": "CHANGHAN",
+    "type": "name",
+    "lat": 16.186124060150377,
+    "lng": 103.61516541353376,
+    "fszl": 10
+  },
+  {
+    "text": "CHANUMAN",
+    "type": "name",
+    "lat": 16.096031386543352,
+    "lng": 104.92068291468422,
+    "fszl": 10
+  },
+  {
+    "text": "CHAROEN SIN",
+    "type": "name",
+    "lat": 17.641344913953525,
+    "lng": 103.53612440418186,
+    "fszl": 10
+  },
+  {
+    "text": "CHAT TRAKAN",
+    "type": "name",
+    "lat": 17.412541317365267,
+    "lng": 100.70507574850302,
+    "fszl": 10
+  },
+  {
+    "text": "CHATTURAT",
+    "type": "name",
+    "lat": 15.628411731843572,
+    "lng": 101.87593016759777,
+    "fszl": 10
+  },
+  {
+    "text": "CHATUCHAK",
+    "type": "name",
+    "lat": 13.8253,
+    "lng": 100.55875384615388,
+    "fszl": 10
+  },
+  {
+    "text": "CHATURAPHAK PHIMAN",
+    "type": "name",
+    "lat": 15.837756716417916,
+    "lng": 103.55772238805973,
+    "fszl": 10
+  },
+  {
+    "text": "CHAWANG",
+    "type": "name",
+    "lat": 8.476165217391307,
+    "lng": 99.52841552795029,
+    "fszl": 10
+  },
+  {
+    "text": "CHIAN YAI",
+    "type": "name",
+    "lat": 8.129245744680855,
+    "lng": 100.14934574468084,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG DAO",
+    "type": "name",
+    "lat": 19.531614917127058,
+    "lng": 98.87940745856373,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG KHAM",
+    "type": "name",
+    "lat": 19.48361039603963,
+    "lng": 100.30923861386148,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG KHAN",
+    "type": "name",
+    "lat": 17.819259217945227,
+    "lng": 101.72163033505659,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG KHONG",
+    "type": "name",
+    "lat": 20.165755882352947,
+    "lng": 100.32303294117649,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG KLANG",
+    "type": "name",
+    "lat": 19.300511224489792,
+    "lng": 100.90146224489791,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG KWAN",
+    "type": "name",
+    "lat": 16.15336138242037,
+    "lng": 103.7445068186976,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG MUAN",
+    "type": "name",
+    "lat": 18.944995930232547,
+    "lng": 100.27328023255814,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG SAEN",
+    "type": "name",
+    "lat": 20.28436569037658,
+    "lng": 100.12770794979076,
+    "fszl": 10
+  },
+  {
+    "text": "CHIANG YUN",
+    "type": "name",
+    "lat": 16.426268224299072,
+    "lng": 103.07417757009344,
+    "fszl": 10
+  },
+  {
+    "text": "CHO-I-RONG",
+    "type": "name",
+    "lat": 6.227315254237286,
+    "lng": 101.85448474576269,
+    "fszl": 10
+  },
+  {
+    "text": "CHOK CHAI",
+    "type": "name",
+    "lat": 14.738348,
+    "lng": 102.20535399999994,
+    "fszl": 10
+  },
+  {
+    "text": "CHOM BUNG",
+    "type": "name",
+    "lat": 13.613228025477712,
+    "lng": 99.5266554140128,
+    "fszl": 10
+  },
+  {
+    "text": "CHOM PHRA",
+    "type": "name",
+    "lat": 15.148728125000002,
+    "lng": 103.55266979166676,
+    "fszl": 10
+  },
+  {
+    "text": "CHOM THONG",
+    "type": "name",
+    "lat": 13.687800000000001,
+    "lng": 100.46335555555555,
+    "fszl": 10
+  },
+  {
+    "text": "CHOM THONG",
+    "type": "name",
+    "lat": 18.349567179487174,
+    "lng": 98.60731076923085,
+    "fszl": 10
+  },
+  {
+    "text": "CHON DAEN",
+    "type": "name",
+    "lat": 16.091554736842113,
+    "lng": 100.8698110526316,
+    "fszl": 10
+  },
+  {
+    "text": "CHONNABOT",
+    "type": "name",
+    "lat": 16.026815422800457,
+    "lng": 102.54751505817421,
+    "fszl": 10
+  },
+  {
+    "text": "CHULAPHON",
+    "type": "name",
+    "lat": 8.073542857142856,
+    "lng": 99.84790714285712,
+    "fszl": 10
+  },
+  {
+    "text": "CHUM PHAE",
+    "type": "name",
+    "lat": 16.61228576388887,
+    "lng": 102.0846222222222,
+    "fszl": 10
+  },
+  {
+    "text": "CHUM PHUANG",
+    "type": "name",
+    "lat": 15.263663487158615,
+    "lng": 102.72178176300791,
+    "fszl": 10
+  },
+  {
+    "text": "CHUMPHON BURI",
+    "type": "name",
+    "lat": 15.368377887788775,
+    "lng": 103.35190165016499,
+    "fszl": 10
+  },
+  {
+    "text": "CHUMSAENG",
+    "type": "name",
+    "lat": 15.864714142537252,
+    "lng": 100.27762333340115,
+    "fszl": 10
+  },
+  {
+    "text": "CHUN",
+    "type": "name",
+    "lat": 19.38321748633881,
+    "lng": 100.14466120218584,
+    "fszl": 10
+  },
+  {
+    "text": "DAMNOEN SADUAK",
+    "type": "name",
+    "lat": 13.565964367816095,
+    "lng": 99.95575632183902,
+    "fszl": 10
+  },
+  {
+    "text": "DAN CHANG",
+    "type": "name",
+    "lat": 14.894445299145312,
+    "lng": 99.53363717948722,
+    "fszl": 10
+  },
+  {
+    "text": "DAN KHUN THOT",
+    "type": "name",
+    "lat": 15.199241564422287,
+    "lng": 101.74056968182157,
+    "fszl": 10
+  },
+  {
+    "text": "DAN MAKHAM TIA",
+    "type": "name",
+    "lat": 13.835753260869561,
+    "lng": 99.32539782608701,
+    "fszl": 10
+  },
+  {
+    "text": "DAN SAI",
+    "type": "name",
+    "lat": 17.23282741407596,
+    "lng": 101.21739274004199,
+    "fszl": 10
+  },
+  {
+    "text": "DEN CHAI",
+    "type": "name",
+    "lat": 17.90672516129032,
+    "lng": 100.01078709677414,
+    "fszl": 10
+  },
+  {
+    "text": "DET UDOM",
+    "type": "name",
+    "lat": 14.847850000000003,
+    "lng": 105.04643805309736,
+    "fszl": 10
+  },
+  {
+    "text": "DIN DANG",
+    "type": "name",
+    "lat": 13.779754545454544,
+    "lng": 100.56046363636365,
+    "fszl": 10
+  },
+  {
+    "text": "DOEMBANG NANGBUA",
+    "type": "name",
+    "lat": 14.875708433734943,
+    "lng": 100.0232174698795,
+    "fszl": 10
+  },
+  {
+    "text": "DOI SAKET",
+    "type": "name",
+    "lat": 18.92895693779905,
+    "lng": 99.20014976076554,
+    "fszl": 10
+  },
+  {
+    "text": "DOI TAO",
+    "type": "name",
+    "lat": 17.904914009661827,
+    "lng": 98.6624541062802,
+    "fszl": 10
+  },
+  {
+    "text": "DOK KHAM TAI",
+    "type": "name",
+    "lat": 19.15178092307691,
+    "lng": 100.04715907692308,
+    "fszl": 10
+  },
+  {
+    "text": "DON CHEDI",
+    "type": "name",
+    "lat": 14.649262962962954,
+    "lng": 99.94075061728395,
+    "fszl": 10
+  },
+  {
+    "text": "DON MUANG",
+    "type": "name",
+    "lat": 13.931755555555553,
+    "lng": 100.59631666666671,
+    "fszl": 10
+  },
+  {
+    "text": "DON PHUT",
+    "type": "name",
+    "lat": 14.602456250000003,
+    "lng": 100.62445312499997,
+    "fszl": 10
+  },
+  {
+    "text": "DON SAK",
+    "type": "name",
+    "lat": 9.206120253164555,
+    "lng": 99.68312721518981,
+    "fszl": 10
+  },
+  {
+    "text": "DON TAN",
+    "type": "name",
+    "lat": 16.29649099099099,
+    "lng": 104.80920450450449,
+    "fszl": 10
+  },
+  {
+    "text": "DON TUM",
+    "type": "name",
+    "lat": 13.954967164179104,
+    "lng": 100.08716417910449,
+    "fszl": 10
+  },
+  {
+    "text": "DONG LUANG",
+    "type": "name",
+    "lat": 16.781534782608723,
+    "lng": 104.34660241545896,
+    "fszl": 10
+  },
+  {
+    "text": "DONMOTDAENG",
+    "type": "name",
+    "lat": 15.38957352941176,
+    "lng": 105.01255098039216,
+    "fszl": 10
+  },
+  {
+    "text": "DUSIT",
+    "type": "name",
+    "lat": 13.782657142857143,
+    "lng": 100.51307142857144,
+    "fszl": 10
+  },
+  {
+    "text": "ERAWAN",
+    "type": "name",
+    "lat": 17.27283912871841,
+    "lng": 101.9750859019693,
+    "fszl": 10
+  },
+  {
+    "text": "FAK THA",
+    "type": "name",
+    "lat": 17.96765477386936,
+    "lng": 100.89776683417087,
+    "fszl": 10
+  },
+  {
+    "text": "FANG",
+    "type": "name",
+    "lat": 19.893683045301906,
+    "lng": 99.14772265340329,
+    "fszl": 10
+  },
+  {
+    "text": "FAO RAI",
+    "type": "name",
+    "lat": 17.999683870967743,
+    "lng": 103.29344086021509,
+    "fszl": 10
+  },
+  {
+    "text": "HAN KHA",
+    "type": "name",
+    "lat": 15.043611,
+    "lng": 99.97861500000003,
+    "fszl": 10
+  },
+  {
+    "text": "HANG CHAT",
+    "type": "name",
+    "lat": 18.355261593477554,
+    "lng": 99.30111591967908,
+    "fszl": 10
+  },
+  {
+    "text": "HANG DONG",
+    "type": "name",
+    "lat": 18.72475217391305,
+    "lng": 98.89279043478265,
+    "fszl": 10
+  },
+  {
+    "text": "HAT YAI",
+    "type": "name",
+    "lat": 6.972286725663711,
+    "lng": 100.44712964601773,
+    "fszl": 10
+  },
+  {
+    "text": "HOT",
+    "type": "name",
+    "lat": 18.117096987951818,
+    "lng": 98.46792138554208,
+    "fszl": 10
+  },
+  {
+    "text": "HUA HIN",
+    "type": "name",
+    "lat": 12.515354183266936,
+    "lng": 99.66063984063737,
+    "fszl": 10
+  },
+  {
+    "text": "HUA SAI",
+    "type": "name",
+    "lat": 8.016609859154926,
+    "lng": 100.21408873239432,
+    "fszl": 10
+  },
+  {
+    "text": "HUA TAPHAN",
+    "type": "name",
+    "lat": 15.676627777777764,
+    "lng": 104.504843888889,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI KHOT",
+    "type": "name",
+    "lat": 15.331036274509794,
+    "lng": 99.51974509803928,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI KRACHAO",
+    "type": "name",
+    "lat": 14.337941095890402,
+    "lng": 99.67052191780826,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI KWANG",
+    "type": "name",
+    "lat": 13.771533333333334,
+    "lng": 100.58511666666665,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI MEK",
+    "type": "name",
+    "lat": 16.620405940594043,
+    "lng": 103.2306188118812,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI PHUNG",
+    "type": "name",
+    "lat": 16.660914166666686,
+    "lng": 103.89727083333332,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI RAT",
+    "type": "name",
+    "lat": 14.988336507936511,
+    "lng": 103.21901269841271,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI THALANG",
+    "type": "name",
+    "lat": 15.074957936507943,
+    "lng": 102.65849920634913,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI THAP THAN",
+    "type": "name",
+    "lat": 15.022967275393349,
+    "lng": 104.04824703131774,
+    "fszl": 10
+  },
+  {
+    "text": "HUAI YOT",
+    "type": "name",
+    "lat": 7.776570078740157,
+    "lng": 99.62181614173222,
+    "fszl": 10
+  },
+  {
+    "text": "IN BURI",
+    "type": "name",
+    "lat": 15.008230882352947,
+    "lng": 100.32348970588231,
+    "fszl": 10
+  },
+  {
+    "text": "JA-NAE",
+    "type": "name",
+    "lat": 6.049082417582413,
+    "lng": 101.63420219780211,
+    "fszl": 10
+  },
+  {
+    "text": "K. BAN DAN",
+    "type": "name",
+    "lat": 15.131383333333336,
+    "lng": 103.18428666666667,
+    "fszl": 10
+  },
+  {
+    "text": "K. BAN HAET",
+    "type": "name",
+    "lat": 16.219760975609766,
+    "lng": 102.74517398373979,
+    "fszl": 10
+  },
+  {
+    "text": "K. BAN KHA",
+    "type": "name",
+    "lat": 13.312059042553193,
+    "lng": 99.35665319148943,
+    "fszl": 10
+  },
+  {
+    "text": "K. BANG SAO THON",
+    "type": "name",
+    "lat": 13.611281999999997,
+    "lng": 100.81251999999996,
+    "fszl": 10
+  },
+  {
+    "text": "K. BUA LAI",
+    "type": "name",
+    "lat": 15.659534782608699,
+    "lng": 102.51486376811594,
+    "fszl": 10
+  },
+  {
+    "text": "K. BUNG KHLA",
+    "type": "name",
+    "lat": 18.229415151515145,
+    "lng": 104.0051696969697,
+    "fszl": 10
+  },
+  {
+    "text": "K. BUNG NARANG",
+    "type": "name",
+    "lat": 16.179995604395607,
+    "lng": 100.15586373626374,
+    "fszl": 10
+  },
+  {
+    "text": "K. BUNG SAMAKKI",
+    "type": "name",
+    "lat": 16.217145070422525,
+    "lng": 99.97837746478872,
+    "fszl": 10
+  },
+  {
+    "text": "K. CHANG KLANG",
+    "type": "name",
+    "lat": 8.357210377358488,
+    "lng": 99.61420188679239,
+    "fszl": 10
+  },
+  {
+    "text": "K. CHUM TA BONG",
+    "type": "name",
+    "lat": 15.683303305785131,
+    "lng": 99.54460743801664,
+    "fszl": 10
+  },
+  {
+    "text": "K. CHUN CHOM",
+    "type": "name",
+    "lat": 16.53872166666667,
+    "lng": 103.14144333333337,
+    "fszl": 10
+  },
+  {
+    "text": "K. DAEN KONG",
+    "type": "name",
+    "lat": 15.32998125000001,
+    "lng": 103.16425781250003,
+    "fszl": 10
+  },
+  {
+    "text": "K. DOI LO",
+    "type": "name",
+    "lat": 18.536082222222216,
+    "lng": 98.76010777777772,
+    "fszl": 10
+  },
+  {
+    "text": "K. DOI LUANG",
+    "type": "name",
+    "lat": 20.13375,
+    "lng": 100.15172909090911,
+    "fszl": 10
+  },
+  {
+    "text": "K. DON CHAN",
+    "type": "name",
+    "lat": 16.474170491803278,
+    "lng": 103.71264590163935,
+    "fszl": 10
+  },
+  {
+    "text": "K. DONG CHAROEN",
+    "type": "name",
+    "lat": 15.98860704225352,
+    "lng": 100.59217887323948,
+    "fszl": 10
+  },
+  {
+    "text": "K. HAT SAMRAN",
+    "type": "name",
+    "lat": 7.227920192307691,
+    "lng": 99.59589903846148,
+    "fszl": 10
+  },
+  {
+    "text": "K. KHOK PHO CHA",
+    "type": "name",
+    "lat": 16.034126229508193,
+    "lng": 102.39685901639342,
+    "fszl": 10
+  },
+  {
+    "text": "K. KO SAM PI NAKHON",
+    "type": "name",
+    "lat": 16.626950000000004,
+    "lng": 99.32445882352938,
+    "fszl": 10
+  },
+  {
+    "text": "K. KONG CHAI",
+    "type": "name",
+    "lat": 16.241738613861394,
+    "lng": 103.4803821782178,
+    "fszl": 10
+  },
+  {
+    "text": "K. KRONG PI NUNG",
+    "type": "name",
+    "lat": 6.392235526315789,
+    "lng": 101.26552894736835,
+    "fszl": 10
+  },
+  {
+    "text": "K. KU KAEO",
+    "type": "name",
+    "lat": 17.153440350877194,
+    "lng": 103.17676315789477,
+    "fszl": 10
+  },
+  {
+    "text": "K. KUT RANG",
+    "type": "name",
+    "lat": 16.04860673076923,
+    "lng": 102.95277596153844,
+    "fszl": 10
+  },
+  {
+    "text": "K. KWAO SI NARIN",
+    "type": "name",
+    "lat": 14.98211714285715,
+    "lng": 103.62840857142857,
+    "fszl": 10
+  },
+  {
+    "text": "K. LAM THA MEN CHAI",
+    "type": "name",
+    "lat": 15.320358677685952,
+    "lng": 102.91420661157026,
+    "fszl": 10
+  },
+  {
+    "text": "K. LAO SUA KOK",
+    "type": "name",
+    "lat": 15.44858099999999,
+    "lng": 104.919708,
+    "fszl": 10
+  },
+  {
+    "text": "K. MA NANG",
+    "type": "name",
+    "lat": 6.998069531249998,
+    "lng": 99.91276640624997,
+    "fszl": 10
+  },
+  {
+    "text": "K. MAE ON",
+    "type": "name",
+    "lat": 18.733314093959738,
+    "lng": 99.3061127516778,
+    "fszl": 10
+  },
+  {
+    "text": "K. MAE POEN",
+    "type": "name",
+    "lat": 15.709782894736845,
+    "lng": 99.34100592105266,
+    "fszl": 10
+  },
+  {
+    "text": "K. MUANG YANG",
+    "type": "name",
+    "lat": 15.435524215246634,
+    "lng": 102.90713901345285,
+    "fszl": 10
+  },
+  {
+    "text": "K. NA DU",
+    "type": "name",
+    "lat": 16.750204000000007,
+    "lng": 104.007773,
+    "fszl": 10
+  },
+  {
+    "text": "K. NA TAN",
+    "type": "name",
+    "lat": 15.91926046511629,
+    "lng": 105.28913837209296,
+    "fszl": 10
+  },
+  {
+    "text": "K. NA YIA",
+    "type": "name",
+    "lat": 15.065158278145695,
+    "lng": 105.05247615894037,
+    "fszl": 10
+  },
+  {
+    "text": "K. NAM KHUN",
+    "type": "name",
+    "lat": 14.550110606060612,
+    "lng": 104.90247348484844,
+    "fszl": 10
+  },
+  {
+    "text": "K. NIKHOM PATTAN",
+    "type": "name",
+    "lat": 12.835787058823529,
+    "lng": 101.15515411764704,
+    "fszl": 10
+  },
+  {
+    "text": "K. NOEN KHAM",
+    "type": "name",
+    "lat": 14.977033870967741,
+    "lng": 99.8392419354839,
+    "fszl": 10
+  },
+  {
+    "text": "K. NONG HI",
+    "type": "name",
+    "lat": 15.556456603773587,
+    "lng": 104.01055377358493,
+    "fszl": 10
+  },
+  {
+    "text": "K. NONG MA MONG",
+    "type": "name",
+    "lat": 15.24854655172414,
+    "lng": 99.80733448275868,
+    "fszl": 10
+  },
+  {
+    "text": "K. NONG NA KHAM",
+    "type": "name",
+    "lat": 16.83965408163267,
+    "lng": 102.3076163265306,
+    "fszl": 10
+  },
+  {
+    "text": "K. NOPHI TAM",
+    "type": "name",
+    "lat": 8.758898611111107,
+    "lng": 99.66400555555552,
+    "fszl": 10
+  },
+  {
+    "text": "K. PHANOM DONG RAK",
+    "type": "name",
+    "lat": 14.438025301204819,
+    "lng": 103.28408554216878,
+    "fszl": 10
+  },
+  {
+    "text": "K. PHRA THONG KHAM",
+    "type": "name",
+    "lat": 15.339309090909094,
+    "lng": 101.99664204545458,
+    "fszl": 10
+  },
+  {
+    "text": "K. PHU PIENG",
+    "type": "name",
+    "lat": 18.79333,
+    "lng": 100.85865071428577,
+    "fszl": 10
+  },
+  {
+    "text": "K. PHU SANG",
+    "type": "name",
+    "lat": 19.623262162162177,
+    "lng": 100.35172882882877,
+    "fszl": 10
+  },
+  {
+    "text": "K. PRACHAK SILAPAKHOM",
+    "type": "name",
+    "lat": 17.234643750000004,
+    "lng": 103.00167343749999,
+    "fszl": 10
+  },
+  {
+    "text": "K. SAK LEK",
+    "type": "name",
+    "lat": 16.5036913580247,
+    "lng": 100.51724074074072,
+    "fszl": 10
+  },
+  {
+    "text": "K. SAM CHAI",
+    "type": "name",
+    "lat": 16.89535583333333,
+    "lng": 103.52871250000004,
+    "fszl": 10
+  },
+  {
+    "text": "K. SAM ROI YOT",
+    "type": "name",
+    "lat": 12.225147867298576,
+    "lng": 99.76760947867295,
+    "fszl": 10
+  },
+  {
+    "text": "K. SAM SUNG",
+    "type": "name",
+    "lat": 16.542360655737706,
+    "lng": 103.06346557377056,
+    "fszl": 10
+  },
+  {
+    "text": "K. SAP YAI",
+    "type": "name",
+    "lat": 15.600647321428582,
+    "lng": 101.62353750000003,
+    "fszl": 10
+  },
+  {
+    "text": "K. SAWANG WEERAW",
+    "type": "name",
+    "lat": 15.21686756756757,
+    "lng": 105.0711851351351,
+    "fszl": 10
+  },
+  {
+    "text": "K. SIDA",
+    "type": "name",
+    "lat": 15.569074712643681,
+    "lng": 102.54586436781607,
+    "fszl": 10
+  },
+  {
+    "text": "K. SILA LAT",
+    "type": "name",
+    "lat": 15.490078947368419,
+    "lng": 104.09378684210526,
+    "fszl": 10
+  },
+  {
+    "text": "K. SRI NAKARIN",
+    "type": "name",
+    "lat": 7.5547397590361465,
+    "lng": 99.90036506024092,
+    "fszl": 10
+  },
+  {
+    "text": "K. SRI NARONG",
+    "type": "name",
+    "lat": 14.8047768,
+    "lng": 103.87662959999996,
+    "fszl": 10
+  },
+  {
+    "text": "K. THUNG KAO LUA",
+    "type": "name",
+    "lat": 15.974644680851071,
+    "lng": 103.86975425531914,
+    "fszl": 10
+  },
+  {
+    "text": "K. WANG CHAO",
+    "type": "name",
+    "lat": 16.591463571428562,
+    "lng": 99.1459042857143,
+    "fszl": 10
+  },
+  {
+    "text": "K. WANG YANG",
+    "type": "name",
+    "lat": 17.05386555555555,
+    "lng": 104.42464222222216,
+    "fszl": 10
+  },
+  {
+    "text": "K. WIENG CHIANG",
+    "type": "name",
+    "lat": 20.026880373831805,
+    "lng": 100.08117383177563,
+    "fszl": 10
+  },
+  {
+    "text": "KA BANG",
+    "type": "name",
+    "lat": 6.360580952380948,
+    "lng": 100.94716666666669,
+    "fszl": 10
+  },
+  {
+    "text": "KA PHO",
+    "type": "name",
+    "lat": 6.6092375,
+    "lng": 101.54815625,
+    "fszl": 10
+  },
+  {
+    "text": "KABIN BURI",
+    "type": "name",
+    "lat": 13.906478785030885,
+    "lng": 101.78624064799516,
+    "fszl": 10
+  },
+  {
+    "text": "KAE DAM",
+    "type": "name",
+    "lat": 16.048836170212763,
+    "lng": 103.38762765957442,
+    "fszl": 10
+  },
+  {
+    "text": "KAENG HANG MAEO",
+    "type": "name",
+    "lat": 13.088178607700257,
+    "lng": 101.88405493176062,
+    "fszl": 10
+  },
+  {
+    "text": "KAENG KHLO",
+    "type": "name",
+    "lat": 16.1428652173913,
+    "lng": 102.22605217391303,
+    "fszl": 10
+  },
+  {
+    "text": "KAENG KHOI",
+    "type": "name",
+    "lat": 14.585197590361453,
+    "lng": 101.07154698795176,
+    "fszl": 10
+  },
+  {
+    "text": "KAENG KRACHAN",
+    "type": "name",
+    "lat": 12.900580417754563,
+    "lng": 99.46619608355103,
+    "fszl": 10
+  },
+  {
+    "text": "KAENG SANAM NANG",
+    "type": "name",
+    "lat": 15.724679605263145,
+    "lng": 102.21756776315785,
+    "fszl": 10
+  },
+  {
+    "text": "KAMALASAI",
+    "type": "name",
+    "lat": 16.25827266666667,
+    "lng": 103.61547933333328,
+    "fszl": 10
+  },
+  {
+    "text": "KAMPHAENG SAEN",
+    "type": "name",
+    "lat": 14.000818181818184,
+    "lng": 99.98257878787885,
+    "fszl": 10
+  },
+  {
+    "text": "KANCHANADIT",
+    "type": "name",
+    "lat": 9.066626890756305,
+    "lng": 99.54781554621849,
+    "fszl": 10
+  },
+  {
+    "text": "KANTHARALAK",
+    "type": "name",
+    "lat": 14.570732283464565,
+    "lng": 104.70927086614172,
+    "fszl": 10
+  },
+  {
+    "text": "KANTHARAROM",
+    "type": "name",
+    "lat": 15.098232589285702,
+    "lng": 104.60123080357145,
+    "fszl": 10
+  },
+  {
+    "text": "KANTHARAWICHAI",
+    "type": "name",
+    "lat": 16.25821360544216,
+    "lng": 103.28335306122445,
+    "fszl": 10
+  },
+  {
+    "text": "KANTRANG",
+    "type": "name",
+    "lat": 7.368038950276247,
+    "lng": 99.42753950276254,
+    "fszl": 10
+  },
+  {
+    "text": "KAO CHA KAN",
+    "type": "name",
+    "lat": 13.62296213461339,
+    "lng": 102.02018848837771,
+    "fszl": 10
+  },
+  {
+    "text": "KAO LIEO",
+    "type": "name",
+    "lat": 15.88548333333333,
+    "lng": 100.09793194444447,
+    "fszl": 10
+  },
+  {
+    "text": "KAP CHOENG",
+    "type": "name",
+    "lat": 14.450664227642264,
+    "lng": 103.59231300813005,
+    "fszl": 10
+  },
+  {
+    "text": "KAPOE",
+    "type": "name",
+    "lat": 9.549094523148431,
+    "lng": 98.6219925214212,
+    "fszl": 10
+  },
+  {
+    "text": "KAPONG",
+    "type": "name",
+    "lat": 8.734278400000003,
+    "lng": 98.45095520000002,
+    "fszl": 10
+  },
+  {
+    "text": "KASET SOMBON",
+    "type": "name",
+    "lat": 16.277131343283568,
+    "lng": 101.90791741293535,
+    "fszl": 10
+  },
+  {
+    "text": "KASET WISAI",
+    "type": "name",
+    "lat": 15.562755428571426,
+    "lng": 103.5232177142857,
+    "fszl": 10
+  },
+  {
+    "text": "KATHU",
+    "type": "name",
+    "lat": 7.920499999999999,
+    "lng": 98.29855689655176,
+    "fszl": 10
+  },
+  {
+    "text": "KHAI BANG RACHAN",
+    "type": "name",
+    "lat": 14.818998437500001,
+    "lng": 100.29783593750001,
+    "fszl": 10
+  },
+  {
+    "text": "KHAM KHUAN KAEO",
+    "type": "name",
+    "lat": 15.65043789473683,
+    "lng": 104.36288842105263,
+    "fszl": 10
+  },
+  {
+    "text": "KHAM MUANG",
+    "type": "name",
+    "lat": 16.949066091954023,
+    "lng": 103.63217586206902,
+    "fszl": 10
+  },
+  {
+    "text": "KHAM SAKAE SAENG",
+    "type": "name",
+    "lat": 15.367864814814814,
+    "lng": 102.17512037037038,
+    "fszl": 10
+  },
+  {
+    "text": "KHAM TA KLA",
+    "type": "name",
+    "lat": 17.840047297297293,
+    "lng": 103.79043378378373,
+    "fszl": 10
+  },
+  {
+    "text": "KHAM THALA SO",
+    "type": "name",
+    "lat": 15.000132926829272,
+    "lng": 101.93472317073166,
+    "fszl": 10
+  },
+  {
+    "text": "KHAMCHA-I",
+    "type": "name",
+    "lat": 16.62500337837839,
+    "lng": 104.34878581081085,
+    "fszl": 10
+  },
+  {
+    "text": "KHAN NA YAO",
+    "type": "name",
+    "lat": 13.829522222222222,
+    "lng": 100.67233703703705,
+    "fszl": 10
+  },
+  {
+    "text": "KHANOM",
+    "type": "name",
+    "lat": 9.20954812030075,
+    "lng": 99.81497744360905,
+    "fszl": 10
+  },
+  {
+    "text": "KHANU WORALAKSABURI",
+    "type": "name",
+    "lat": 15.996158241758243,
+    "lng": 99.63206153846151,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO CHAISON",
+    "type": "name",
+    "lat": 7.437460655737702,
+    "lng": 100.1017860655737,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO CHAMAO",
+    "type": "name",
+    "lat": 12.98070857142857,
+    "lng": 101.68402642857141,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO KHICHAKUT",
+    "type": "name",
+    "lat": 12.948939047619053,
+    "lng": 102.09132666666669,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO KHO",
+    "type": "name",
+    "lat": 16.705745882352954,
+    "lng": 100.98783882352942,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO PHANOM",
+    "type": "name",
+    "lat": 8.257809941520483,
+    "lng": 99.15305906432746,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO SAMING",
+    "type": "name",
+    "lat": 12.442614112903208,
+    "lng": 102.41890725806458,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO SUAN KWANG",
+    "type": "name",
+    "lat": 16.909362068965535,
+    "lng": 102.7912344827586,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO WONG",
+    "type": "name",
+    "lat": 16.68928630136986,
+    "lng": 104.09525068493146,
+    "fszl": 10
+  },
+  {
+    "text": "KHAO YOI",
+    "type": "name",
+    "lat": 13.249424418604667,
+    "lng": 99.80220232558138,
+    "fszl": 10
+  },
+  {
+    "text": "KHEMARAT",
+    "type": "name",
+    "lat": 15.960422222222233,
+    "lng": 105.19093968253965,
+    "fszl": 10
+  },
+  {
+    "text": "KHIAN SA",
+    "type": "name",
+    "lat": 8.741876774193553,
+    "lng": 99.15724387096775,
+    "fszl": 10
+  },
+  {
+    "text": "KHIRI MAT",
+    "type": "name",
+    "lat": 16.816665,
+    "lng": 99.72072833333333,
+    "fszl": 10
+  },
+  {
+    "text": "KHIRI RATTHANIKHOM",
+    "type": "name",
+    "lat": 8.997952046783624,
+    "lng": 98.92654269005845,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG HAT",
+    "type": "name",
+    "lat": 13.389548814203017,
+    "lng": 102.2956433918536,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG HOI KONG",
+    "type": "name",
+    "lat": 6.860633734939756,
+    "lng": 100.36476385542166,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG KHUAN",
+    "type": "name",
+    "lat": 13.774170968246626,
+    "lng": 101.15906430134301,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG LUANG",
+    "type": "name",
+    "lat": 14.08752,
+    "lng": 100.63363000000001,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG SAM WA",
+    "type": "name",
+    "lat": 13.874099999999997,
+    "lng": 100.72058163265307,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG SAN",
+    "type": "name",
+    "lat": 13.725950000000001,
+    "lng": 100.501225,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG THOM",
+    "type": "name",
+    "lat": 7.837261224489811,
+    "lng": 99.19411486880465,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG TOEY",
+    "type": "name",
+    "lat": 13.71146,
+    "lng": 100.5731,
+    "fszl": 10
+  },
+  {
+    "text": "KHLONG YAI",
+    "type": "name",
+    "lat": 11.80242266666667,
+    "lng": 102.8595946666667,
+    "fszl": 10
+  },
+  {
+    "text": "KHLUNG",
+    "type": "name",
+    "lat": 12.482258598463547,
+    "lng": 102.24829264393371,
+    "fszl": 10
+  },
+  {
+    "text": "KHO WANG",
+    "type": "name",
+    "lat": 15.383219117647055,
+    "lng": 104.34567205882354,
+    "fszl": 10
+  },
+  {
+    "text": "KHOK CHAROEN",
+    "type": "name",
+    "lat": 15.409186363636364,
+    "lng": 100.84920818181821,
+    "fszl": 10
+  },
+  {
+    "text": "KHOK PHO",
+    "type": "name",
+    "lat": 6.718229729729732,
+    "lng": 101.11716621621626,
+    "fszl": 10
+  },
+  {
+    "text": "KHOK SAMRONG",
+    "type": "name",
+    "lat": 15.061725663716812,
+    "lng": 100.7967115044248,
+    "fszl": 10
+  },
+  {
+    "text": "KHOK SRI SUPAN",
+    "type": "name",
+    "lat": 17.050582905982896,
+    "lng": 104.31478888888886,
+    "fszl": 10
+  },
+  {
+    "text": "KHOK SUNG",
+    "type": "name",
+    "lat": 13.865545764703695,
+    "lng": 102.66230501499756,
+    "fszl": 10
+  },
+  {
+    "text": "KHON BURI",
+    "type": "name",
+    "lat": 14.374053170731703,
+    "lng": 102.18514878048784,
+    "fszl": 10
+  },
+  {
+    "text": "KHON SAN",
+    "type": "name",
+    "lat": 16.565313368983958,
+    "lng": 101.76951898395704,
+    "fszl": 10
+  },
+  {
+    "text": "KHON SAWAN",
+    "type": "name",
+    "lat": 15.908906249999996,
+    "lng": 102.3163301136364,
+    "fszl": 10
+  },
+  {
+    "text": "KHONG",
+    "type": "name",
+    "lat": 15.40223428571429,
+    "lng": 102.3365228571429,
+    "fszl": 10
+  },
+  {
+    "text": "KHONG CHIAM",
+    "type": "name",
+    "lat": 15.421108724832205,
+    "lng": 105.48457449664416,
+    "fszl": 10
+  },
+  {
+    "text": "KHU MUANG",
+    "type": "name",
+    "lat": 15.297045600963617,
+    "lng": 103.00940537777983,
+    "fszl": 10
+  },
+  {
+    "text": "KHUAN DON",
+    "type": "name",
+    "lat": 6.764898437500002,
+    "lng": 100.11373125,
+    "fszl": 10
+  },
+  {
+    "text": "KHUAN KA LONG",
+    "type": "name",
+    "lat": 6.933185314685312,
+    "lng": 100.01022377622374,
+    "fszl": 10
+  },
+  {
+    "text": "KHUAN KHANUN",
+    "type": "name",
+    "lat": 7.755253658536587,
+    "lng": 100.04879512195123,
+    "fszl": 10
+  },
+  {
+    "text": "KHUAN NIANG",
+    "type": "name",
+    "lat": 7.190870093457946,
+    "lng": 100.37970000000001,
+    "fszl": 10
+  },
+  {
+    "text": "KHUANG NAI",
+    "type": "name",
+    "lat": 15.399388690476192,
+    "lng": 104.5763279761905,
+    "fszl": 10
+  },
+  {
+    "text": "KHUKHAN",
+    "type": "name",
+    "lat": 14.737253793103454,
+    "lng": 104.16845862068965,
+    "fszl": 10
+  },
+  {
+    "text": "KHUN HAN",
+    "type": "name",
+    "lat": 14.52394812575945,
+    "lng": 104.40991954041615,
+    "fszl": 10
+  },
+  {
+    "text": "KHUN TAN",
+    "type": "name",
+    "lat": 19.860952755905497,
+    "lng": 100.25320629921256,
+    "fszl": 10
+  },
+  {
+    "text": "KHUN YUAM",
+    "type": "name",
+    "lat": 18.84812851985561,
+    "lng": 97.90189314079421,
+    "fszl": 10
+  },
+  {
+    "text": "KHURA BURI",
+    "type": "name",
+    "lat": 9.138832985074616,
+    "lng": 98.3550094029849,
+    "fszl": 10
+  },
+  {
+    "text": "KLAENG",
+    "type": "name",
+    "lat": 12.771048679245284,
+    "lng": 101.68381018867922,
+    "fszl": 10
+  },
+  {
+    "text": "KLONG KHLUNG",
+    "type": "name",
+    "lat": 16.21649217391304,
+    "lng": 99.67231217391307,
+    "fszl": 10
+  },
+  {
+    "text": "KLONG LAN",
+    "type": "name",
+    "lat": 16.271632203389828,
+    "lng": 99.20668033898308,
+    "fszl": 10
+  },
+  {
+    "text": "KO CHAN",
+    "type": "name",
+    "lat": 13.396466474595018,
+    "lng": 101.38853774065683,
+    "fszl": 10
+  },
+  {
+    "text": "KO CHANG",
+    "type": "name",
+    "lat": 12.037996901637767,
+    "lng": 102.33809304383752,
+    "fszl": 10
+  },
+  {
+    "text": "KO KHA",
+    "type": "name",
+    "lat": 18.118406666666647,
+    "lng": 99.33470833333335,
+    "fszl": 10
+  },
+  {
+    "text": "KO KUT",
+    "type": "name",
+    "lat": 11.670243881176077,
+    "lng": 102.56340679405385,
+    "fszl": 10
+  },
+  {
+    "text": "KO LANTA",
+    "type": "name",
+    "lat": 7.66300350404313,
+    "lng": 99.08767277628041,
+    "fszl": 10
+  },
+  {
+    "text": "KO PHANGAN",
+    "type": "name",
+    "lat": 9.869236809815943,
+    "lng": 99.95877668711663,
+    "fszl": 10
+  },
+  {
+    "text": "KO SAMUI",
+    "type": "name",
+    "lat": 9.502010659289258,
+    "lng": 99.99474542518261,
+    "fszl": 10
+  },
+  {
+    "text": "KO SICHANG",
+    "type": "name",
+    "lat": 13.153449859109951,
+    "lng": 100.81023095746258,
+    "fszl": 10
+  },
+  {
+    "text": "KO YAO",
+    "type": "name",
+    "lat": 8.0515071443581,
+    "lng": 98.57848256037121,
+    "fszl": 10
+  },
+  {
+    "text": "KONG KRAILAT",
+    "type": "name",
+    "lat": 16.925557037037066,
+    "lng": 100.0050800000001,
+    "fszl": 10
+  },
+  {
+    "text": "KONG RA",
+    "type": "name",
+    "lat": 7.4175478742579495,
+    "lng": 99.9448822426108,
+    "fszl": 10
+  },
+  {
+    "text": "KOSUM PHISAI",
+    "type": "name",
+    "lat": 16.26947906976745,
+    "lng": 102.99891046511631,
+    "fszl": 10
+  },
+  {
+    "text": "KRA BURI",
+    "type": "name",
+    "lat": 10.502327173913047,
+    "lng": 98.85315905797106,
+    "fszl": 10
+  },
+  {
+    "text": "KRANUAN",
+    "type": "name",
+    "lat": 16.796705833333334,
+    "lng": 103.09776666666669,
+    "fszl": 10
+  },
+  {
+    "text": "KRASAE SINTHU",
+    "type": "name",
+    "lat": 7.580885106382977,
+    "lng": 100.31220000000002,
+    "fszl": 10
+  },
+  {
+    "text": "KRASANG",
+    "type": "name",
+    "lat": 14.92803783783783,
+    "lng": 103.35425459459461,
+    "fszl": 10
+  },
+  {
+    "text": "KRATHUM BAEN",
+    "type": "name",
+    "lat": 13.662220312499997,
+    "lng": 100.2589953125,
+    "fszl": 10
+  },
+  {
+    "text": "KROK PHRA",
+    "type": "name",
+    "lat": 15.58985977011494,
+    "lng": 100.02041379310343,
+    "fszl": 10
+  },
+  {
+    "text": "KUCHINARAI",
+    "type": "name",
+    "lat": 16.518337368421044,
+    "lng": 104.0270005263157,
+    "fszl": 10
+  },
+  {
+    "text": "KUI BURI",
+    "type": "name",
+    "lat": 12.117570344827595,
+    "lng": 99.77732965517244,
+    "fszl": 10
+  },
+  {
+    "text": "KUMPHAWAPI",
+    "type": "name",
+    "lat": 17.07940616113743,
+    "lng": 102.99654976303313,
+    "fszl": 10
+  },
+  {
+    "text": "KUSUMAN",
+    "type": "name",
+    "lat": 17.352664108840468,
+    "lng": 104.25761895622047,
+    "fszl": 10
+  },
+  {
+    "text": "KUT BAK",
+    "type": "name",
+    "lat": 17.090072727272727,
+    "lng": 103.81811363636369,
+    "fszl": 10
+  },
+  {
+    "text": "KUT CHAP",
+    "type": "name",
+    "lat": 17.4554887755102,
+    "lng": 102.56217551020413,
+    "fszl": 10
+  },
+  {
+    "text": "KUT CHUM",
+    "type": "name",
+    "lat": 16.058439634146332,
+    "lng": 104.27724999999998,
+    "fszl": 10
+  },
+  {
+    "text": "KUT KHAO PUN",
+    "type": "name",
+    "lat": 15.821262903225804,
+    "lng": 105.04481451612904,
+    "fszl": 10
+  },
+  {
+    "text": "LA-UN",
+    "type": "name",
+    "lat": 10.089382080924848,
+    "lng": 98.79000057803465,
+    "fszl": 10
+  },
+  {
+    "text": "LAEM NGOP",
+    "type": "name",
+    "lat": 12.219686206896554,
+    "lng": 102.35812931034478,
+    "fszl": 10
+  },
+  {
+    "text": "LAEM SING",
+    "type": "name",
+    "lat": 12.46412199453744,
+    "lng": 102.13040265827233,
+    "fszl": 10
+  },
+  {
+    "text": "LAHAN SAI",
+    "type": "name",
+    "lat": 14.284367549668875,
+    "lng": 102.86100198675506,
+    "fszl": 10
+  },
+  {
+    "text": "LAK SI",
+    "type": "name",
+    "lat": 13.880135794663422,
+    "lng": 100.56962990074157,
+    "fszl": 10
+  },
+  {
+    "text": "LAM LUK KA",
+    "type": "name",
+    "lat": 13.948060714285717,
+    "lng": 100.71061071428572,
+    "fszl": 10
+  },
+  {
+    "text": "LAM PLAI MAT",
+    "type": "name",
+    "lat": 15.013307692307693,
+    "lng": 102.86346923076917,
+    "fszl": 10
+  },
+  {
+    "text": "LAM SON THI",
+    "type": "name",
+    "lat": 15.301711194029846,
+    "lng": 101.35006417910454,
+    "fszl": 10
+  },
+  {
+    "text": "LAM THAP",
+    "type": "name",
+    "lat": 8.021809230769232,
+    "lng": 99.31182615384616,
+    "fszl": 10
+  },
+  {
+    "text": "LAMAE",
+    "type": "name",
+    "lat": 9.748020472440945,
+    "lng": 99.02342755905514,
+    "fszl": 10
+  },
+  {
+    "text": "LAMDUAN",
+    "type": "name",
+    "lat": 14.71426909090909,
+    "lng": 103.68879999999996,
+    "fszl": 10
+  },
+  {
+    "text": "LAN KRABU",
+    "type": "name",
+    "lat": 16.59364056603773,
+    "lng": 99.90369339622637,
+    "fszl": 10
+  },
+  {
+    "text": "LAN SAK",
+    "type": "name",
+    "lat": 15.537623696682463,
+    "lng": 99.46307393364927,
+    "fszl": 10
+  },
+  {
+    "text": "LAN SAKA",
+    "type": "name",
+    "lat": 8.36690168067227,
+    "lng": 99.79156974789913,
+    "fszl": 10
+  },
+  {
+    "text": "LANG SUAN",
+    "type": "name",
+    "lat": 9.955150276243097,
+    "lng": 99.04476022099448,
+    "fszl": 10
+  },
+  {
+    "text": "LANGU",
+    "type": "name",
+    "lat": 6.893627898550725,
+    "lng": 99.76930543478265,
+    "fszl": 10
+  },
+  {
+    "text": "LAO KHWAN",
+    "type": "name",
+    "lat": 14.614848101265826,
+    "lng": 99.6658120253164,
+    "fszl": 10
+  },
+  {
+    "text": "LAPLAE",
+    "type": "name",
+    "lat": 17.69730970149252,
+    "lng": 100.00727537313429,
+    "fszl": 10
+  },
+  {
+    "text": "LAT BUA LUANG",
+    "type": "name",
+    "lat": 14.178962162162165,
+    "lng": 100.34309999999996,
+    "fszl": 10
+  },
+  {
+    "text": "LAT KRABANG",
+    "type": "name",
+    "lat": 13.761539534883722,
+    "lng": 100.78803488372098,
+    "fszl": 10
+  },
+  {
+    "text": "LAT LUM KAEO",
+    "type": "name",
+    "lat": 14.049987257800412,
+    "lng": 100.40843577799676,
+    "fszl": 10
+  },
+  {
+    "text": "LAT PHRAO",
+    "type": "name",
+    "lat": 13.829074999999996,
+    "lng": 100.61004166666666,
+    "fszl": 10
+  },
+  {
+    "text": "LAT YAO",
+    "type": "name",
+    "lat": 15.769473228346454,
+    "lng": 99.77427165354337,
+    "fszl": 10
+  },
+  {
+    "text": "LI",
+    "type": "name",
+    "lat": 17.767446540405686,
+    "lng": 98.92695617017276,
+    "fszl": 10
+  },
+  {
+    "text": "LOENG NOK THA",
+    "type": "name",
+    "lat": 16.18446519337015,
+    "lng": 104.54248066298344,
+    "fszl": 10
+  },
+  {
+    "text": "LOM KAO",
+    "type": "name",
+    "lat": 16.992546496815304,
+    "lng": 101.29109745222931,
+    "fszl": 10
+  },
+  {
+    "text": "LOM SAK",
+    "type": "name",
+    "lat": 16.716861224489794,
+    "lng": 101.31307295918383,
+    "fszl": 10
+  },
+  {
+    "text": "LONG",
+    "type": "name",
+    "lat": 18.128412217194544,
+    "lng": 99.8901004524887,
+    "fszl": 10
+  },
+  {
+    "text": "LU AMNAT",
+    "type": "name",
+    "lat": 15.679672656250007,
+    "lng": 104.72471953125003,
+    "fszl": 10
+  },
+  {
+    "text": "MAE AI",
+    "type": "name",
+    "lat": 20.005961256544488,
+    "lng": 99.36490209424089,
+    "fszl": 10
+  },
+  {
+    "text": "MAE CHAEM",
+    "type": "name",
+    "lat": 18.623616554809853,
+    "lng": 98.3137384787472,
+    "fszl": 10
+  },
+  {
+    "text": "MAE CHAI",
+    "type": "name",
+    "lat": 19.370693181818183,
+    "lng": 99.80133522727274,
+    "fszl": 10
+  },
+  {
+    "text": "MAE CHAN",
+    "type": "name",
+    "lat": 20.173287939698497,
+    "lng": 99.88908894472353,
+    "fszl": 10
+  },
+  {
+    "text": "MAE CHARIM",
+    "type": "name",
+    "lat": 18.72185837837838,
+    "lng": 101.1008389189189,
+    "fszl": 10
+  },
+  {
+    "text": "MAE FA LUANG",
+    "type": "name",
+    "lat": 20.21421380952379,
+    "lng": 99.6272976190476,
+    "fszl": 10
+  },
+  {
+    "text": "MAE LA NOI",
+    "type": "name",
+    "lat": 18.474491774891767,
+    "lng": 97.99783852813846,
+    "fszl": 10
+  },
+  {
+    "text": "MAE LAN",
+    "type": "name",
+    "lat": 6.678478947368422,
+    "lng": 101.25571842105265,
+    "fszl": 10
+  },
+  {
+    "text": "MAE LAO",
+    "type": "name",
+    "lat": 19.75489344262297,
+    "lng": 99.70513770491802,
+    "fszl": 10
+  },
+  {
+    "text": "MAE MO",
+    "type": "name",
+    "lat": 18.464377049180328,
+    "lng": 99.84953155737693,
+    "fszl": 10
+  },
+  {
+    "text": "MAE PHRIK",
+    "type": "name",
+    "lat": 17.49698607594939,
+    "lng": 99.0417386075949,
+    "fszl": 10
+  },
+  {
+    "text": "MAE RAMAT",
+    "type": "name",
+    "lat": 17.06218403614457,
+    "lng": 98.57146204819274,
+    "fszl": 10
+  },
+  {
+    "text": "MAE RIM",
+    "type": "name",
+    "lat": 18.961447244094487,
+    "lng": 98.86474173228342,
+    "fszl": 10
+  },
+  {
+    "text": "MAE SAI",
+    "type": "name",
+    "lat": 20.381969375000008,
+    "lng": 99.94787437500005,
+    "fszl": 10
+  },
+  {
+    "text": "MAE SARIANG",
+    "type": "name",
+    "lat": 18.282814516129044,
+    "lng": 97.82409078341003,
+    "fszl": 10
+  },
+  {
+    "text": "MAE SOT",
+    "type": "name",
+    "lat": 16.732985858585874,
+    "lng": 98.69741245791239,
+    "fszl": 10
+  },
+  {
+    "text": "MAE SUAI",
+    "type": "name",
+    "lat": 19.724254850746274,
+    "lng": 99.47993059701483,
+    "fszl": 10
+  },
+  {
+    "text": "MAE TAENG",
+    "type": "name",
+    "lat": 19.16581952054793,
+    "lng": 98.86064589041082,
+    "fszl": 10
+  },
+  {
+    "text": "MAE THA",
+    "type": "name",
+    "lat": 18.07718085106384,
+    "lng": 99.54741276595742,
+    "fszl": 10
+  },
+  {
+    "text": "MAE THA",
+    "type": "name",
+    "lat": 18.38338009708737,
+    "lng": 99.09898786407773,
+    "fszl": 10
+  },
+  {
+    "text": "MAE WANG",
+    "type": "name",
+    "lat": 18.675052427184475,
+    "lng": 98.68761359223286,
+    "fszl": 10
+  },
+  {
+    "text": "MAE WONG",
+    "type": "name",
+    "lat": 15.852426315789476,
+    "lng": 99.37644449760765,
+    "fszl": 10
+  },
+  {
+    "text": "MAHA CHANA CHAI",
+    "type": "name",
+    "lat": 15.511843851339071,
+    "lng": 104.26088861983813,
+    "fszl": 10
+  },
+  {
+    "text": "MAHA RAT",
+    "type": "name",
+    "lat": 14.558493023255815,
+    "lng": 100.5268,
+    "fszl": 10
+  },
+  {
+    "text": "MAI KAEN",
+    "type": "name",
+    "lat": 6.622538333333333,
+    "lng": 101.66384333333333,
+    "fszl": 10
+  },
+  {
+    "text": "MAKHAM",
+    "type": "name",
+    "lat": 12.73207037037037,
+    "lng": 102.21710123456793,
+    "fszl": 10
+  },
+  {
+    "text": "MANCHAKHIRI",
+    "type": "name",
+    "lat": 16.206289139064413,
+    "lng": 102.52004718833652,
+    "fszl": 10
+  },
+  {
+    "text": "MANOROM",
+    "type": "name",
+    "lat": 15.329374647887313,
+    "lng": 100.13525633802817,
+    "fszl": 10
+  },
+  {
+    "text": "MAYO",
+    "type": "name",
+    "lat": 6.6987000000000005,
+    "lng": 101.40824736842106,
+    "fszl": 10
+  },
+  {
+    "text": "MIN BURI",
+    "type": "name",
+    "lat": 13.813828888888894,
+    "lng": 100.7492844444444,
+    "fszl": 10
+  },
+  {
+    "text": "MOEI WADI",
+    "type": "name",
+    "lat": 16.368255855855853,
+    "lng": 104.09686846846841,
+    "fszl": 10
+  },
+  {
+    "text": "MUAK LEK",
+    "type": "name",
+    "lat": 14.843187159749935,
+    "lng": 101.30007272785474,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG AMNAT CHAROEN",
+    "type": "name",
+    "lat": 15.884870935960604,
+    "lng": 104.62192364532027,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG ANG THONG",
+    "type": "name",
+    "lat": 14.580404081632658,
+    "lng": 100.44080816326532,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG BURI RAM",
+    "type": "name",
+    "lat": 14.963369402985082,
+    "lng": 103.08678805970152,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHACHOENGSAO",
+    "type": "name",
+    "lat": 13.709535632183902,
+    "lng": 101.04934367816091,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHAI NAT",
+    "type": "name",
+    "lat": 15.198934375,
+    "lng": 100.14317083333324,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHAIYAPHUM",
+    "type": "name",
+    "lat": 15.776913975155258,
+    "lng": 102.06601925465836,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHAN",
+    "type": "name",
+    "lat": 15.183050000000003,
+    "lng": 104.0111431034483,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHANTHABURI",
+    "type": "name",
+    "lat": 12.594056909197345,
+    "lng": 102.12183858759563,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHIANG MAI",
+    "type": "name",
+    "lat": 18.782840506329116,
+    "lng": 98.9717797468355,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHIANG RAI",
+    "type": "name",
+    "lat": 19.905540495867776,
+    "lng": 99.80143746556489,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHON BURI",
+    "type": "name",
+    "lat": 13.355283838383844,
+    "lng": 100.99914848484849,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG CHUMPHON",
+    "type": "name",
+    "lat": 10.441314788732406,
+    "lng": 99.15776197183084,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG KALASIN",
+    "type": "name",
+    "lat": 16.499527894736858,
+    "lng": 103.53957789473685,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG KANCHANABURI",
+    "type": "name",
+    "lat": 14.042284511784505,
+    "lng": 99.25561313131324,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG KHON KAEN",
+    "type": "name",
+    "lat": 16.456996832579183,
+    "lng": 102.85570090497738,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG KRABI",
+    "type": "name",
+    "lat": 8.141908178787912,
+    "lng": 98.85988588299712,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG LAMPANG",
+    "type": "name",
+    "lat": 18.448478499999993,
+    "lng": 99.5368090000002,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG LAMPHUN",
+    "type": "name",
+    "lat": 18.549964539007103,
+    "lng": 99.0526886524822,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG LOEI",
+    "type": "name",
+    "lat": 17.542079629629626,
+    "lng": 101.72768611111124,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG LOP BURI",
+    "type": "name",
+    "lat": 14.785648437499997,
+    "lng": 100.65385390624996,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG MAE HONG SON",
+    "type": "name",
+    "lat": 19.2753758807588,
+    "lng": 98.0171260162602,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG MAHA SARAKAM",
+    "type": "name",
+    "lat": 16.152465983606543,
+    "lng": 103.3311766393442,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG MUKDAHAN",
+    "type": "name",
+    "lat": 16.5396472103004,
+    "lng": 104.62256351931337,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAKHON NAYOK",
+    "type": "name",
+    "lat": 14.293918378378377,
+    "lng": 101.24257621621628,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAKHON PATHOM",
+    "type": "name",
+    "lat": 13.826145794392529,
+    "lng": 100.00817850467283,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAKHON PHANOM",
+    "type": "name",
+    "lat": 17.301392666666658,
+    "lng": 104.65644600000002,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAKHON RATCHASIMA",
+    "type": "name",
+    "lat": 14.967714649681529,
+    "lng": 102.07807261146505,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAKHON SAWAN",
+    "type": "name",
+    "lat": 15.714860273972606,
+    "lng": 100.09599863013698,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAKHON SI THAMMARAT",
+    "type": "name",
+    "lat": 8.439391860465111,
+    "lng": 99.97960465116272,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NAN",
+    "type": "name",
+    "lat": 18.88126056910569,
+    "lng": 100.68780325203254,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NARATHIWAT",
+    "type": "name",
+    "lat": 6.390919101123593,
+    "lng": 101.78593033707865,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NONG BUA LAM PHU",
+    "type": "name",
+    "lat": 17.17875437500002,
+    "lng": 102.395441875,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NONG KHAI",
+    "type": "name",
+    "lat": 17.838537682637085,
+    "lng": 102.77094393794049,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG NONTHABURI",
+    "type": "name",
+    "lat": 13.84905263157895,
+    "lng": 100.47547105263159,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PATHUM THANI",
+    "type": "name",
+    "lat": 13.998145238095228,
+    "lng": 100.53396666666666,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PATTANI",
+    "type": "name",
+    "lat": 6.8590037037037055,
+    "lng": 101.25694814814821,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHANGNGA",
+    "type": "name",
+    "lat": 8.430558075601361,
+    "lng": 98.51869278350526,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHATTHALUNG",
+    "type": "name",
+    "lat": 7.584149038461538,
+    "lng": 100.05225096153839,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHAYAO",
+    "type": "name",
+    "lat": 19.146870169633072,
+    "lng": 99.85076725477369,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHETCHABUN",
+    "type": "name",
+    "lat": 16.399118128654965,
+    "lng": 101.18758479532171,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHETCHABURI",
+    "type": "name",
+    "lat": 13.095287777777788,
+    "lng": 99.9607577777778,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHICHIT",
+    "type": "name",
+    "lat": 16.43483538461538,
+    "lng": 100.36459615384616,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHITSANULOK",
+    "type": "name",
+    "lat": 16.829971597633154,
+    "lng": 100.2803130177516,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHRAE",
+    "type": "name",
+    "lat": 18.142722844758318,
+    "lng": 100.22568992754405,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PHUKET",
+    "type": "name",
+    "lat": 7.801208982035932,
+    "lng": 98.38049610778458,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PRACHIN BURI",
+    "type": "name",
+    "lat": 14.094830821917789,
+    "lng": 101.38978904109585,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG PRACHUAP KHIRI KHAN",
+    "type": "name",
+    "lat": 11.82752250352314,
+    "lng": 99.72533070268595,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG RANONG",
+    "type": "name",
+    "lat": 9.84016406504065,
+    "lng": 98.55489300813011,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG RATCHABURI",
+    "type": "name",
+    "lat": 13.544759701492543,
+    "lng": 99.78830671641786,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG RAYONG",
+    "type": "name",
+    "lat": 12.673297495244727,
+    "lng": 101.32423019453935,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG ROI ET",
+    "type": "name",
+    "lat": 16.02202718446603,
+    "lng": 103.60986796116508,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SA KAEO",
+    "type": "name",
+    "lat": 13.913389855072456,
+    "lng": 102.09945120772944,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SAKON NAKHON",
+    "type": "name",
+    "lat": 17.18208406374501,
+    "lng": 104.1029972111555,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SAMSIP",
+    "type": "name",
+    "lat": 15.552013500000012,
+    "lng": 104.71859149999997,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SAMUT PRAKAN",
+    "type": "name",
+    "lat": 13.55962676056338,
+    "lng": 100.67020563380284,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SAMUT SAKHON",
+    "type": "name",
+    "lat": 13.533239534883718,
+    "lng": 100.25894496124035,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SAMUT SONGKHRAM",
+    "type": "name",
+    "lat": 13.394044000000001,
+    "lng": 99.99288266666663,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SARABURI",
+    "type": "name",
+    "lat": 14.499645588235293,
+    "lng": 100.93450735294114,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SATUN",
+    "type": "name",
+    "lat": 6.598381622306717,
+    "lng": 99.76844702154601,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SI SA KET",
+    "type": "name",
+    "lat": 15.088383192805209,
+    "lng": 104.35778538712427,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SING BURI",
+    "type": "name",
+    "lat": 14.899718181818184,
+    "lng": 100.40202545454541,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SONGKHLA",
+    "type": "name",
+    "lat": 7.146230769230769,
+    "lng": 100.58201538461542,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SUANG",
+    "type": "name",
+    "lat": 15.794025000000005,
+    "lng": 103.76426250000002,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SUKHOTHAI",
+    "type": "name",
+    "lat": 17.04169385964913,
+    "lng": 99.75880438596494,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SUPHANBURI",
+    "type": "name",
+    "lat": 14.492386666666667,
+    "lng": 100.06535444444441,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SURAT THANI",
+    "type": "name",
+    "lat": 9.129021383647796,
+    "lng": 99.33336477987427,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG SURIN",
+    "type": "name",
+    "lat": 14.908066952789712,
+    "lng": 103.46032317596564,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG TAK",
+    "type": "name",
+    "lat": 16.900590851735,
+    "lng": 99.14503501577285,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG TRANG",
+    "type": "name",
+    "lat": 7.62497868020304,
+    "lng": 99.62562994923863,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG TRAT",
+    "type": "name",
+    "lat": 12.250549279538925,
+    "lng": 102.59228876080697,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG UBON RATCHATANI",
+    "type": "name",
+    "lat": 15.291299253731353,
+    "lng": 104.82913805970146,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG UDON THANI",
+    "type": "name",
+    "lat": 17.363818644067788,
+    "lng": 102.79097344632763,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG UTHAI THANI",
+    "type": "name",
+    "lat": 15.402780188679248,
+    "lng": 100.02332075471692,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG UTTARADIT",
+    "type": "name",
+    "lat": 17.712802673796766,
+    "lng": 100.17658663101598,
+    "fszl": 10
+  },
+  {
+    "text": "MUANG YALA",
+    "type": "name",
+    "lat": 6.559486999999997,
+    "lng": 101.23963099999996,
+    "fszl": 10
+  },
+  {
+    "text": "MUEANG KAMPHAENG PHET",
+    "type": "name",
+    "lat": 16.44583428571431,
+    "lng": 99.46531771428575,
+    "fszl": 10
+  },
+  {
+    "text": "MUEANG PAN",
+    "type": "name",
+    "lat": 18.787037158469925,
+    "lng": 99.44573715846992,
+    "fszl": 10
+  },
+  {
+    "text": "NA BON",
+    "type": "name",
+    "lat": 8.276865822784806,
+    "lng": 99.55696329113923,
+    "fszl": 10
+  },
+  {
+    "text": "NA CHALUAI",
+    "type": "name",
+    "lat": 14.55652857142858,
+    "lng": 105.2138081632652,
+    "fszl": 10
+  },
+  {
+    "text": "NA CHUAK",
+    "type": "name",
+    "lat": 15.793293333333331,
+    "lng": 103.02809555555554,
+    "fszl": 10
+  },
+  {
+    "text": "NA DI",
+    "type": "name",
+    "lat": 14.201638839285712,
+    "lng": 101.81883660714284,
+    "fszl": 10
+  },
+  {
+    "text": "NA DUANG",
+    "type": "name",
+    "lat": 17.557690440005597,
+    "lng": 102.00242928043612,
+    "fszl": 10
+  },
+  {
+    "text": "NA DUN",
+    "type": "name",
+    "lat": 15.715109090909095,
+    "lng": 103.21307878787886,
+    "fszl": 10
+  },
+  {
+    "text": "NA HAEO",
+    "type": "name",
+    "lat": 17.454461490683226,
+    "lng": 100.9789751552795,
+    "fszl": 10
+  },
+  {
+    "text": "NA KAE",
+    "type": "name",
+    "lat": 16.975333187772907,
+    "lng": 104.49407117903922,
+    "fszl": 10
+  },
+  {
+    "text": "NA KLANG",
+    "type": "name",
+    "lat": 17.33172105263158,
+    "lng": 102.2244131578948,
+    "fszl": 10
+  },
+  {
+    "text": "NA MOM",
+    "type": "name",
+    "lat": 6.960426086956522,
+    "lng": 100.56928695652171,
+    "fszl": 10
+  },
+  {
+    "text": "NA MON",
+    "type": "name",
+    "lat": 16.583255769230753,
+    "lng": 103.79579615384614,
+    "fszl": 10
+  },
+  {
+    "text": "NA MUN",
+    "type": "name",
+    "lat": 18.11661307189545,
+    "lng": 100.59999869281042,
+    "fszl": 10
+  },
+  {
+    "text": "NA NOI",
+    "type": "name",
+    "lat": 18.315244599303128,
+    "lng": 100.7953864111497,
+    "fszl": 10
+  },
+  {
+    "text": "NA PHO",
+    "type": "name",
+    "lat": 15.695707692307694,
+    "lng": 102.97385865384612,
+    "fszl": 10
+  },
+  {
+    "text": "NA THAWI",
+    "type": "name",
+    "lat": 6.61717443609022,
+    "lng": 100.66439097744356,
+    "fszl": 10
+  },
+  {
+    "text": "NA THOM",
+    "type": "name",
+    "lat": 17.824324827586192,
+    "lng": 104.08861241379313,
+    "fszl": 10
+  },
+  {
+    "text": "NA WA",
+    "type": "name",
+    "lat": 17.495960952380944,
+    "lng": 104.11851428571426,
+    "fszl": 10
+  },
+  {
+    "text": "NA WANG",
+    "type": "name",
+    "lat": 17.333095270270277,
+    "lng": 102.06944391891896,
+    "fszl": 10
+  },
+  {
+    "text": "NA YAI AM",
+    "type": "name",
+    "lat": 12.744900877192983,
+    "lng": 101.8729552631578,
+    "fszl": 10
+  },
+  {
+    "text": "NA YONG",
+    "type": "name",
+    "lat": 7.558463013698632,
+    "lng": 99.74133561643829,
+    "fszl": 10
+  },
+  {
+    "text": "NA YUNG",
+    "type": "name",
+    "lat": 17.940898165137593,
+    "lng": 102.13123944954134,
+    "fszl": 10
+  },
+  {
+    "text": "NAKHON CHAISI",
+    "type": "name",
+    "lat": 13.822256363636356,
+    "lng": 100.16955818181816,
+    "fszl": 10
+  },
+  {
+    "text": "NAKHON LUANG",
+    "type": "name",
+    "lat": 14.483791666666665,
+    "lng": 100.61694583333333,
+    "fszl": 10
+  },
+  {
+    "text": "NAKHON THAI",
+    "type": "name",
+    "lat": 17.114538023952075,
+    "lng": 100.85872065868281,
+    "fszl": 10
+  },
+  {
+    "text": "NAM KLIANG",
+    "type": "name",
+    "lat": 14.933989361702134,
+    "lng": 104.5490347517731,
+    "fszl": 10
+  },
+  {
+    "text": "NAM NAO",
+    "type": "name",
+    "lat": 16.852424334600766,
+    "lng": 101.59408631178702,
+    "fszl": 10
+  },
+  {
+    "text": "NAM PAT",
+    "type": "name",
+    "lat": 17.733090370370395,
+    "lng": 100.75278111111099,
+    "fszl": 10
+  },
+  {
+    "text": "NAM PHONG",
+    "type": "name",
+    "lat": 16.68847729729731,
+    "lng": 102.85890378378372,
+    "fszl": 10
+  },
+  {
+    "text": "NAM SOM",
+    "type": "name",
+    "lat": 17.745898214285717,
+    "lng": 102.14053571428573,
+    "fszl": 10
+  },
+  {
+    "text": "NAM YUN",
+    "type": "name",
+    "lat": 14.452872146118718,
+    "lng": 105.09464246575351,
+    "fszl": 10
+  },
+  {
+    "text": "NANG RONG",
+    "type": "name",
+    "lat": 14.6321863305602,
+    "lng": 102.76484379421662,
+    "fszl": 10
+  },
+  {
+    "text": "NGAO",
+    "type": "name",
+    "lat": 18.74247532051282,
+    "lng": 99.92215480769232,
+    "fszl": 10
+  },
+  {
+    "text": "NIKHOM KHAM SOI",
+    "type": "name",
+    "lat": 16.37365371900825,
+    "lng": 104.5472123966942,
+    "fszl": 10
+  },
+  {
+    "text": "NIKHOM NAM UN",
+    "type": "name",
+    "lat": 17.15919438202248,
+    "lng": 103.74198426966296,
+    "fszl": 10
+  },
+  {
+    "text": "NOEN MAPRANG",
+    "type": "name",
+    "lat": 16.557528220858906,
+    "lng": 100.75011963190185,
+    "fszl": 10
+  },
+  {
+    "text": "NOEN SA-NGA",
+    "type": "name",
+    "lat": 15.60131844660195,
+    "lng": 102.00825339805826,
+    "fszl": 10
+  },
+  {
+    "text": "NON DAENG",
+    "type": "name",
+    "lat": 15.447613043478254,
+    "lng": 102.54756521739134,
+    "fszl": 10
+  },
+  {
+    "text": "NON DIN DAENG",
+    "type": "name",
+    "lat": 14.214128037383183,
+    "lng": 102.64412242990655,
+    "fszl": 10
+  },
+  {
+    "text": "NON KHUN",
+    "type": "name",
+    "lat": 14.928308264462819,
+    "lng": 104.66305785123969,
+    "fszl": 10
+  },
+  {
+    "text": "NON SA-AT",
+    "type": "name",
+    "lat": 16.955259124087586,
+    "lng": 102.86806934306568,
+    "fszl": 10
+  },
+  {
+    "text": "NON SANG",
+    "type": "name",
+    "lat": 16.909050666666662,
+    "lng": 102.47393733333334,
+    "fszl": 10
+  },
+  {
+    "text": "NON SILA",
+    "type": "name",
+    "lat": 15.972060784313737,
+    "lng": 102.6832254901961,
+    "fszl": 10
+  },
+  {
+    "text": "NON SUNG",
+    "type": "name",
+    "lat": 15.142744059405942,
+    "lng": 102.31468613861395,
+    "fszl": 10
+  },
+  {
+    "text": "NON SUWAN",
+    "type": "name",
+    "lat": 14.56412045454545,
+    "lng": 102.58381363636364,
+    "fszl": 10
+  },
+  {
+    "text": "NON THAI",
+    "type": "name",
+    "lat": 15.205445901639346,
+    "lng": 102.01732868852463,
+    "fszl": 10
+  },
+  {
+    "text": "NONG BUA",
+    "type": "name",
+    "lat": 15.873741071428578,
+    "lng": 100.62349642857147,
+    "fszl": 10
+  },
+  {
+    "text": "NONG BUA DAENG",
+    "type": "name",
+    "lat": 16.205721929824566,
+    "lng": 101.56350087719306,
+    "fszl": 10
+  },
+  {
+    "text": "NONG BUA RAWAE",
+    "type": "name",
+    "lat": 15.801144897959178,
+    "lng": 101.65331071428571,
+    "fszl": 10
+  },
+  {
+    "text": "NONG BUNNAK",
+    "type": "name",
+    "lat": 14.734714000000004,
+    "lng": 102.38515300000006,
+    "fszl": 10
+  },
+  {
+    "text": "NONG CHANG",
+    "type": "name",
+    "lat": 15.362649549549545,
+    "lng": 99.77031981981985,
+    "fszl": 10
+  },
+  {
+    "text": "NONG CHIK",
+    "type": "name",
+    "lat": 6.813877837832918,
+    "lng": 101.15791518657994,
+    "fszl": 10
+  },
+  {
+    "text": "NONG CHOK",
+    "type": "name",
+    "lat": 13.826797777777779,
+    "lng": 100.8334622222222,
+    "fszl": 10
+  },
+  {
+    "text": "NONG DON",
+    "type": "name",
+    "lat": 14.697318604651162,
+    "lng": 100.67759767441865,
+    "fszl": 10
+  },
+  {
+    "text": "NONG HAN",
+    "type": "name",
+    "lat": 17.37906388888889,
+    "lng": 103.1458993055556,
+    "fszl": 10
+  },
+  {
+    "text": "NONG HIN",
+    "type": "name",
+    "lat": 17.094548683135425,
+    "lng": 101.83072087600573,
+    "fszl": 10
+  },
+  {
+    "text": "NONG HONG",
+    "type": "name",
+    "lat": 14.866260273972598,
+    "lng": 102.67690547945213,
+    "fszl": 10
+  },
+  {
+    "text": "NONG KHAE",
+    "type": "name",
+    "lat": 14.39362702702703,
+    "lng": 100.83937567567571,
+    "fszl": 10
+  },
+  {
+    "text": "NONG KHAYANG",
+    "type": "name",
+    "lat": 15.34728645833333,
+    "lng": 99.94717500000004,
+    "fszl": 10
+  },
+  {
+    "text": "NONG KI",
+    "type": "name",
+    "lat": 14.740930769230769,
+    "lng": 102.56469615384617,
+    "fszl": 10
+  },
+  {
+    "text": "NONG KUNG SI",
+    "type": "name",
+    "lat": 16.743300862068953,
+    "lng": 103.30706206896554,
+    "fszl": 10
+  },
+  {
+    "text": "NONG MUANG",
+    "type": "name",
+    "lat": 15.274016326530603,
+    "lng": 100.69390408163272,
+    "fszl": 10
+  },
+  {
+    "text": "NONG MUANG KAI",
+    "type": "name",
+    "lat": 18.28711588785049,
+    "lng": 100.17000560747667,
+    "fszl": 10
+  },
+  {
+    "text": "NONG PHAI",
+    "type": "name",
+    "lat": 16.0300321969697,
+    "lng": 101.15521060606065,
+    "fszl": 10
+  },
+  {
+    "text": "NONG PHOK",
+    "type": "name",
+    "lat": 16.280524827586206,
+    "lng": 104.20061586206893,
+    "fszl": 10
+  },
+  {
+    "text": "NONG PRUE",
+    "type": "name",
+    "lat": 14.682894285714282,
+    "lng": 99.39281357142853,
+    "fszl": 10
+  },
+  {
+    "text": "NONG RUA",
+    "type": "name",
+    "lat": 16.486246590909083,
+    "lng": 102.41735000000008,
+    "fszl": 10
+  },
+  {
+    "text": "NONG SAENG",
+    "type": "name",
+    "lat": 14.486007843137255,
+    "lng": 100.79511372549021,
+    "fszl": 10
+  },
+  {
+    "text": "NONG SAENG",
+    "type": "name",
+    "lat": 17.14888672566373,
+    "lng": 102.77531681415924,
+    "fszl": 10
+  },
+  {
+    "text": "NONG SONG HONG",
+    "type": "name",
+    "lat": 15.758826126126134,
+    "lng": 102.76273963963955,
+    "fszl": 10
+  },
+  {
+    "text": "NONG SUA",
+    "type": "name",
+    "lat": 14.21226875,
+    "lng": 100.875425,
+    "fszl": 10
+  },
+  {
+    "text": "NONG SUNG",
+    "type": "name",
+    "lat": 16.45063636363637,
+    "lng": 104.33766590909093,
+    "fszl": 10
+  },
+  {
+    "text": "NONG WUA SO",
+    "type": "name",
+    "lat": 17.21445213675215,
+    "lng": 102.59556923076924,
+    "fszl": 10
+  },
+  {
+    "text": "NONG YA PLONG",
+    "type": "name",
+    "lat": 13.119626972010161,
+    "lng": 99.41501246819344,
+    "fszl": 10
+  },
+  {
+    "text": "NONG YA SAI",
+    "type": "name",
+    "lat": 14.79297874015747,
+    "lng": 99.84342992125987,
+    "fszl": 10
+  },
+  {
+    "text": "NONG YAI",
+    "type": "name",
+    "lat": 13.12646166666667,
+    "lng": 101.35075333333336,
+    "fszl": 10
+  },
+  {
+    "text": "NONGKHEAM",
+    "type": "name",
+    "lat": 13.699458823529408,
+    "lng": 100.34477647058824,
+    "fszl": 10
+  },
+  {
+    "text": "NONNARAI",
+    "type": "name",
+    "lat": 15.18687055130516,
+    "lng": 103.91055795505844,
+    "fszl": 10
+  },
+  {
+    "text": "NUA KHLONG",
+    "type": "name",
+    "lat": 7.939026984126985,
+    "lng": 99.02271206349197,
+    "fszl": 10
+  },
+  {
+    "text": "OMKOI",
+    "type": "name",
+    "lat": 17.695122340425552,
+    "lng": 98.31333031914899,
+    "fszl": 10
+  },
+  {
+    "text": "ONGKHARAK",
+    "type": "name",
+    "lat": 14.07521224489796,
+    "lng": 101.06599591836729,
+    "fszl": 10
+  },
+  {
+    "text": "PA BON",
+    "type": "name",
+    "lat": 7.216866250000004,
+    "lng": 100.13160687499999,
+    "fszl": 10
+  },
+  {
+    "text": "PA DAET",
+    "type": "name",
+    "lat": 19.526815079365072,
+    "lng": 99.97779761904764,
+    "fszl": 10
+  },
+  {
+    "text": "PA KHAM",
+    "type": "name",
+    "lat": 14.395275,
+    "lng": 102.67623499999998,
+    "fszl": 10
+  },
+  {
+    "text": "PA MOK",
+    "type": "name",
+    "lat": 14.486292665444743,
+    "lng": 100.45964803572765,
+    "fszl": 10
+  },
+  {
+    "text": "PA PAYOM",
+    "type": "name",
+    "lat": 7.835481818181811,
+    "lng": 99.86083363636355,
+    "fszl": 10
+  },
+  {
+    "text": "PA SANG",
+    "type": "name",
+    "lat": 18.410788034188027,
+    "lng": 98.89685042735044,
+    "fszl": 10
+  },
+  {
+    "text": "PA TIU",
+    "type": "name",
+    "lat": 15.826204320987664,
+    "lng": 104.41238395061725,
+    "fszl": 10
+  },
+  {
+    "text": "PAI",
+    "type": "name",
+    "lat": 19.34824294871794,
+    "lng": 98.4021673076925,
+    "fszl": 10
+  },
+  {
+    "text": "PAK CHOM",
+    "type": "name",
+    "lat": 17.88965365853659,
+    "lng": 101.94610926829279,
+    "fszl": 10
+  },
+  {
+    "text": "PAK CHONG",
+    "type": "name",
+    "lat": 14.617577566539923,
+    "lng": 101.4235064638783,
+    "fszl": 10
+  },
+  {
+    "text": "PAK KHAT",
+    "type": "name",
+    "lat": 18.279206521739148,
+    "lng": 103.32137101449274,
+    "fszl": 10
+  },
+  {
+    "text": "PAK KRET",
+    "type": "name",
+    "lat": 13.933596774193548,
+    "lng": 100.48512580645162,
+    "fszl": 10
+  },
+  {
+    "text": "PAK PHANANG",
+    "type": "name",
+    "lat": 8.357249704142015,
+    "lng": 100.17308994082843,
+    "fszl": 10
+  },
+  {
+    "text": "PAK PHAYUN",
+    "type": "name",
+    "lat": 7.360766985645928,
+    "lng": 100.32638947368432,
+    "fszl": 10
+  },
+  {
+    "text": "PAK PHLI",
+    "type": "name",
+    "lat": 14.205394736842118,
+    "lng": 101.3270269736841,
+    "fszl": 10
+  },
+  {
+    "text": "PAK THO",
+    "type": "name",
+    "lat": 13.349119230769231,
+    "lng": 99.65201263736259,
+    "fszl": 10
+  },
+  {
+    "text": "PAK THONG CHAI",
+    "type": "name",
+    "lat": 14.668472727272714,
+    "lng": 101.90708116883125,
+    "fszl": 10
+  },
+  {
+    "text": "PALIAN",
+    "type": "name",
+    "lat": 7.167556207674932,
+    "lng": 99.69856952595934,
+    "fszl": 10
+  },
+  {
+    "text": "PANARE",
+    "type": "name",
+    "lat": 6.8167459999999975,
+    "lng": 101.49927800000007,
+    "fszl": 10
+  },
+  {
+    "text": "PANG MA PHA",
+    "type": "name",
+    "lat": 19.609839682539697,
+    "lng": 98.1995121693122,
+    "fszl": 10
+  },
+  {
+    "text": "PANG SILA THONG",
+    "type": "name",
+    "lat": 16.0275646153846,
+    "lng": 99.30317423076932,
+    "fszl": 10
+  },
+  {
+    "text": "PANOM PHRAI",
+    "type": "name",
+    "lat": 15.680762499999991,
+    "lng": 104.088365625,
+    "fszl": 10
+  },
+  {
+    "text": "PATHIU",
+    "type": "name",
+    "lat": 10.784020784313746,
+    "lng": 99.35984980392158,
+    "fszl": 10
+  },
+  {
+    "text": "PATHUM RAT",
+    "type": "name",
+    "lat": 15.613847445255468,
+    "lng": 103.39596277372274,
+    "fszl": 10
+  },
+  {
+    "text": "PATHUM RATWONGSA",
+    "type": "name",
+    "lat": 15.902809677419349,
+    "lng": 104.88820752688164,
+    "fszl": 10
+  },
+  {
+    "text": "PATHUM WAN",
+    "type": "name",
+    "lat": 13.742833333333332,
+    "lng": 100.53333333333333,
+    "fszl": 10
+  },
+  {
+    "text": "PHA KHAO",
+    "type": "name",
+    "lat": 17.044771999999995,
+    "lng": 102.03346100000003,
+    "fszl": 10
+  },
+  {
+    "text": "PHACHI",
+    "type": "name",
+    "lat": 14.437964473684211,
+    "lng": 100.74091052631582,
+    "fszl": 10
+  },
+  {
+    "text": "PHAISALI",
+    "type": "name",
+    "lat": 15.539883333333341,
+    "lng": 100.68875757575759,
+    "fszl": 10
+  },
+  {
+    "text": "PHAK HAI",
+    "type": "name",
+    "lat": 14.454006228040255,
+    "lng": 100.34124791999393,
+    "fszl": 10
+  },
+  {
+    "text": "PHAKDI CHUMPHOL",
+    "type": "name",
+    "lat": 15.99242810810811,
+    "lng": 101.39954702702708,
+    "fszl": 10
+  },
+  {
+    "text": "PHAN",
+    "type": "name",
+    "lat": 19.577594786729858,
+    "lng": 99.73761421800943,
+    "fszl": 10
+  },
+  {
+    "text": "PHAN THONG",
+    "type": "name",
+    "lat": 13.47297065217392,
+    "lng": 101.08264782608704,
+    "fszl": 10
+  },
+  {
+    "text": "PHANA",
+    "type": "name",
+    "lat": 15.623518333333347,
+    "lng": 104.86338749999999,
+    "fszl": 10
+  },
+  {
+    "text": "PHANAT NIKHOM",
+    "type": "name",
+    "lat": 13.468643877551012,
+    "lng": 101.22213265306125,
+    "fszl": 10
+  },
+  {
+    "text": "PHANG KHON",
+    "type": "name",
+    "lat": 17.393033962264152,
+    "lng": 103.73767169811323,
+    "fszl": 10
+  },
+  {
+    "text": "PHANNA NIKHOM",
+    "type": "name",
+    "lat": 17.30186027397262,
+    "lng": 103.92662146118722,
+    "fszl": 10
+  },
+  {
+    "text": "PHANOM",
+    "type": "name",
+    "lat": 8.821436440677958,
+    "lng": 98.68055932203391,
+    "fszl": 10
+  },
+  {
+    "text": "PHANOM SARAKHAM",
+    "type": "name",
+    "lat": 13.737401041666663,
+    "lng": 101.44195104166667,
+    "fszl": 10
+  },
+  {
+    "text": "PHANOM THUAN",
+    "type": "name",
+    "lat": 14.165726415094344,
+    "lng": 99.69026320754715,
+    "fszl": 10
+  },
+  {
+    "text": "PHASI CHAROEN",
+    "type": "name",
+    "lat": 13.726996153846152,
+    "lng": 100.44287692307694,
+    "fszl": 10
+  },
+  {
+    "text": "PHATO",
+    "type": "name",
+    "lat": 9.796750510204086,
+    "lng": 98.79750255102054,
+    "fszl": 10
+  },
+  {
+    "text": "PHATTHANA NIKHOM",
+    "type": "name",
+    "lat": 14.89199887640449,
+    "lng": 101.04500561797747,
+    "fszl": 10
+  },
+  {
+    "text": "PHAYA MENGRAI",
+    "type": "name",
+    "lat": 19.85985555555555,
+    "lng": 100.17461666666667,
+    "fszl": 10
+  },
+  {
+    "text": "PHAYA THAI",
+    "type": "name",
+    "lat": 13.782816666666669,
+    "lng": 100.54535000000001,
+    "fszl": 10
+  },
+  {
+    "text": "PHAYAKKHAPHUM PHISAI",
+    "type": "name",
+    "lat": 15.546983950617276,
+    "lng": 103.2208827160494,
+    "fszl": 10
+  },
+  {
+    "text": "PHAYU",
+    "type": "name",
+    "lat": 14.891943396226411,
+    "lng": 104.39359811320752,
+    "fszl": 10
+  },
+  {
+    "text": "PHAYUHA KHIRI",
+    "type": "name",
+    "lat": 15.499831132075467,
+    "lng": 100.21166037735846,
+    "fszl": 10
+  },
+  {
+    "text": "PHEN",
+    "type": "name",
+    "lat": 17.676356160458457,
+    "lng": 102.93790830945542,
+    "fszl": 10
+  },
+  {
+    "text": "PHI PUN",
+    "type": "name",
+    "lat": 8.593525833333342,
+    "lng": 99.60457083333344,
+    "fszl": 10
+  },
+  {
+    "text": "PHIBUN MANGSAHAN",
+    "type": "name",
+    "lat": 15.174287623762373,
+    "lng": 105.21487326732675,
+    "fszl": 10
+  },
+  {
+    "text": "PHIBUN RAK",
+    "type": "name",
+    "lat": 17.539536496350358,
+    "lng": 103.05622408759132,
+    "fszl": 10
+  },
+  {
+    "text": "PHICHAI",
+    "type": "name",
+    "lat": 17.31788749999998,
+    "lng": 100.08422430555558,
+    "fszl": 10
+  },
+  {
+    "text": "PHIMAI",
+    "type": "name",
+    "lat": 15.289862264024194,
+    "lng": 102.56121075915358,
+    "fszl": 10
+  },
+  {
+    "text": "PHLAPPHLACHAI",
+    "type": "name",
+    "lat": 14.729408247422676,
+    "lng": 103.19120927835054,
+    "fszl": 10
+  },
+  {
+    "text": "PHO CHAI",
+    "type": "name",
+    "lat": 16.278216935483872,
+    "lng": 103.80572822580646,
+    "fszl": 10
+  },
+  {
+    "text": "PHO PRATHAP CHAN",
+    "type": "name",
+    "lat": 16.30703402061855,
+    "lng": 100.17922886597938,
+    "fszl": 10
+  },
+  {
+    "text": "PHO SI",
+    "type": "name",
+    "lat": 15.766506015037585,
+    "lng": 105.34294210526309,
+    "fszl": 10
+  },
+  {
+    "text": "PHO SI SUWAN",
+    "type": "name",
+    "lat": 15.243103278880817,
+    "lng": 104.06596007252378,
+    "fszl": 10
+  },
+  {
+    "text": "PHO TAK",
+    "type": "name",
+    "lat": 17.868246323529412,
+    "lng": 102.44141617647057,
+    "fszl": 10
+  },
+  {
+    "text": "PHO THALE",
+    "type": "name",
+    "lat": 16.050613953488387,
+    "lng": 100.24907441860468,
+    "fszl": 10
+  },
+  {
+    "text": "PHO THONG",
+    "type": "name",
+    "lat": 14.68087448979592,
+    "lng": 100.34661632653066,
+    "fszl": 10
+  },
+  {
+    "text": "PHON",
+    "type": "name",
+    "lat": 15.79580879120879,
+    "lng": 102.58943516483518,
+    "fszl": 10
+  },
+  {
+    "text": "PHON CHAROEN",
+    "type": "name",
+    "lat": 18.08022810457517,
+    "lng": 103.61769281045746,
+    "fszl": 10
+  },
+  {
+    "text": "PHON NA KAEO",
+    "type": "name",
+    "lat": 17.202176289471023,
+    "lng": 104.31343401734766,
+    "fszl": 10
+  },
+  {
+    "text": "PHON PHISAI",
+    "type": "name",
+    "lat": 17.946458575197877,
+    "lng": 103.11184195250644,
+    "fszl": 10
+  },
+  {
+    "text": "PHON SAI",
+    "type": "name",
+    "lat": 15.504184210526311,
+    "lng": 103.9433578947369,
+    "fszl": 10
+  },
+  {
+    "text": "PHON SAWAN",
+    "type": "name",
+    "lat": 17.475813274336275,
+    "lng": 104.41479557522126,
+    "fszl": 10
+  },
+  {
+    "text": "PHON THONG",
+    "type": "name",
+    "lat": 16.28653146551723,
+    "lng": 103.99312500000002,
+    "fszl": 10
+  },
+  {
+    "text": "PHOP PHRA",
+    "type": "name",
+    "lat": 16.458887711864385,
+    "lng": 98.83723389830512,
+    "fszl": 10
+  },
+  {
+    "text": "PHOTHARAM",
+    "type": "name",
+    "lat": 13.713157142857149,
+    "lng": 99.75884625850338,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA NAKHON",
+    "type": "name",
+    "lat": 13.75677777777778,
+    "lng": 100.49558888888889,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA NAKHON SI AYUTTHAYA",
+    "type": "name",
+    "lat": 14.353288000000001,
+    "lng": 100.55735600000001,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA PHROM",
+    "type": "name",
+    "lat": 8.305188888888894,
+    "lng": 99.92542716049384,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA PHUTTHABAT",
+    "type": "name",
+    "lat": 14.715066666666667,
+    "lng": 100.8219236111111,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA PRA DAENG",
+    "type": "name",
+    "lat": 13.65172105263158,
+    "lng": 100.55302631578945,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA SAMUT JADEE",
+    "type": "name",
+    "lat": 13.552819117647058,
+    "lng": 100.52090294117652,
+    "fszl": 10
+  },
+  {
+    "text": "PHRA YUN",
+    "type": "name",
+    "lat": 16.294213402061864,
+    "lng": 102.68051855670109,
+    "fszl": 10
+  },
+  {
+    "text": "PHRAI BUNG",
+    "type": "name",
+    "lat": 14.785913725490204,
+    "lng": 104.37614411764696,
+    "fszl": 10
+  },
+  {
+    "text": "PHRAN KRATAI",
+    "type": "name",
+    "lat": 16.72933782051282,
+    "lng": 99.53530769230771,
+    "fszl": 10
+  },
+  {
+    "text": "PHRAO",
+    "type": "name",
+    "lat": 19.298590438247007,
+    "lng": 99.21086653386465,
+    "fszl": 10
+  },
+  {
+    "text": "PHRASAT",
+    "type": "name",
+    "lat": 14.645792857142862,
+    "lng": 103.37265454545458,
+    "fszl": 10
+  },
+  {
+    "text": "PHROM BURI",
+    "type": "name",
+    "lat": 14.776216666666661,
+    "lng": 100.45053666666662,
+    "fszl": 10
+  },
+  {
+    "text": "PHROM PHIRAM",
+    "type": "name",
+    "lat": 17.031496984924615,
+    "lng": 100.1167396984925,
+    "fszl": 10
+  },
+  {
+    "text": "PHROMMAKHIRI",
+    "type": "name",
+    "lat": 8.544111904761905,
+    "lng": 99.79622142857144,
+    "fszl": 10
+  },
+  {
+    "text": "PHU KAM YAO",
+    "type": "name",
+    "lat": 19.306805682584905,
+    "lng": 99.97176048661497,
+    "fszl": 10
+  },
+  {
+    "text": "PHU KHIEO",
+    "type": "name",
+    "lat": 16.39778313953489,
+    "lng": 102.15518313953487,
+    "fszl": 10
+  },
+  {
+    "text": "PHU KRADUENG",
+    "type": "name",
+    "lat": 16.89967347406007,
+    "lng": 101.85551610514338,
+    "fszl": 10
+  },
+  {
+    "text": "PHU LUANG",
+    "type": "name",
+    "lat": 17.098974089537492,
+    "lng": 101.63736401348669,
+    "fszl": 10
+  },
+  {
+    "text": "PHU PHAN",
+    "type": "name",
+    "lat": 16.921259440559442,
+    "lng": 103.92159370629369,
+    "fszl": 10
+  },
+  {
+    "text": "PHU RUEA",
+    "type": "name",
+    "lat": 17.315742222222216,
+    "lng": 101.4073099999999,
+    "fszl": 10
+  },
+  {
+    "text": "PHU SING",
+    "type": "name",
+    "lat": 14.479245038167937,
+    "lng": 104.15741374045791,
+    "fszl": 10
+  },
+  {
+    "text": "PHU WIANG",
+    "type": "name",
+    "lat": 16.607477011494247,
+    "lng": 102.42587011494255,
+    "fszl": 10
+  },
+  {
+    "text": "PHUNPHIN",
+    "type": "name",
+    "lat": 9.062838197424892,
+    "lng": 99.16504763948504,
+    "fszl": 10
+  },
+  {
+    "text": "PHUPA MAN",
+    "type": "name",
+    "lat": 16.69041428571429,
+    "lng": 101.86091428571424,
+    "fszl": 10
+  },
+  {
+    "text": "PHUTTHA MON THON",
+    "type": "name",
+    "lat": 13.811762962962964,
+    "lng": 100.28495925925927,
+    "fszl": 10
+  },
+  {
+    "text": "PHUTTHAISONG",
+    "type": "name",
+    "lat": 15.514992369477916,
+    "lng": 102.98649036144582,
+    "fszl": 10
+  },
+  {
+    "text": "PLA PAK",
+    "type": "name",
+    "lat": 17.20651360544218,
+    "lng": 104.57303061224488,
+    "fszl": 10
+  },
+  {
+    "text": "PLAENG YAO",
+    "type": "name",
+    "lat": 13.55264318181818,
+    "lng": 101.34603749999997,
+    "fszl": 10
+  },
+  {
+    "text": "PLAI PHRAYA",
+    "type": "name",
+    "lat": 8.538952212389379,
+    "lng": 98.81892654867254,
+    "fszl": 10
+  },
+  {
+    "text": "PLUAK DAENG",
+    "type": "name",
+    "lat": 12.982265217391307,
+    "lng": 101.24070434782607,
+    "fszl": 10
+  },
+  {
+    "text": "POM PRAM SATTRU",
+    "type": "name",
+    "lat": 13.75542,
+    "lng": 100.50902000000002,
+    "fszl": 10
+  },
+  {
+    "text": "PONG",
+    "type": "name",
+    "lat": 19.16472533783783,
+    "lng": 100.38958479729726,
+    "fszl": 10
+  },
+  {
+    "text": "PONG NAM RON",
+    "type": "name",
+    "lat": 12.914383571428573,
+    "lng": 102.40468000000007,
+    "fszl": 10
+  },
+  {
+    "text": "PRA THAI",
+    "type": "name",
+    "lat": 15.560115481171563,
+    "lng": 102.71620502092046,
+    "fszl": 10
+  },
+  {
+    "text": "PRACHANTAKHAM",
+    "type": "name",
+    "lat": 14.20896340206184,
+    "lng": 101.55048092783498,
+    "fszl": 10
+  },
+  {
+    "text": "PRAKANONG",
+    "type": "name",
+    "lat": 13.69714375,
+    "lng": 100.61309999999997,
+    "fszl": 10
+  },
+  {
+    "text": "PRAKHON CHAI",
+    "type": "name",
+    "lat": 14.597660493827172,
+    "lng": 103.10689197530868,
+    "fszl": 10
+  },
+  {
+    "text": "PRAN BURI",
+    "type": "name",
+    "lat": 12.414910679611644,
+    "lng": 99.67175970873795,
+    "fszl": 10
+  },
+  {
+    "text": "PRANG KU",
+    "type": "name",
+    "lat": 14.8558862385321,
+    "lng": 104.07192752293582,
+    "fszl": 10
+  },
+  {
+    "text": "PRASAENG",
+    "type": "name",
+    "lat": 8.502648214285713,
+    "lng": 99.1722017857143,
+    "fszl": 10
+  },
+  {
+    "text": "PRAWET",
+    "type": "name",
+    "lat": 13.69156,
+    "lng": 100.669256,
+    "fszl": 10
+  },
+  {
+    "text": "PUA",
+    "type": "name",
+    "lat": 19.144786829268295,
+    "lng": 100.97571853658532,
+    "fszl": 10
+  },
+  {
+    "text": "PUAI NOI",
+    "type": "name",
+    "lat": 15.894472058823526,
+    "lng": 102.87987205882348,
+    "fszl": 10
+  },
+  {
+    "text": "RAMAN",
+    "type": "name",
+    "lat": 6.4876237410071935,
+    "lng": 101.45136043165458,
+    "fszl": 10
+  },
+  {
+    "text": "RANGAE",
+    "type": "name",
+    "lat": 6.23274608695652,
+    "lng": 101.70065739130429,
+    "fszl": 10
+  },
+  {
+    "text": "RANOT",
+    "type": "name",
+    "lat": 7.791306153846155,
+    "lng": 100.26468923076925,
+    "fszl": 10
+  },
+  {
+    "text": "RASADA",
+    "type": "name",
+    "lat": 7.94720505050505,
+    "lng": 99.64498888888896,
+    "fszl": 10
+  },
+  {
+    "text": "RASI SALAI",
+    "type": "name",
+    "lat": 15.367849645390061,
+    "lng": 104.1472808510638,
+    "fszl": 10
+  },
+  {
+    "text": "RAT BURANA",
+    "type": "name",
+    "lat": 13.67582,
+    "lng": 100.492408,
+    "fszl": 10
+  },
+  {
+    "text": "RATCHASAN",
+    "type": "name",
+    "lat": 13.790773846153847,
+    "lng": 101.27185846153849,
+    "fszl": 10
+  },
+  {
+    "text": "RATCHATHEWI",
+    "type": "name",
+    "lat": 13.759942857142855,
+    "lng": 100.54111428571429,
+    "fszl": 10
+  },
+  {
+    "text": "RATTANA BURI",
+    "type": "name",
+    "lat": 15.349493777777782,
+    "lng": 103.93264444444445,
+    "fszl": 10
+  },
+  {
+    "text": "RATTANA WAPI",
+    "type": "name",
+    "lat": 18.192300192971135,
+    "lng": 103.22494507734396,
+    "fszl": 10
+  },
+  {
+    "text": "RATTAPHUM",
+    "type": "name",
+    "lat": 7.0916270833333295,
+    "lng": 100.19031666666666,
+    "fszl": 10
+  },
+  {
+    "text": "RENU NAKHON",
+    "type": "name",
+    "lat": 17.01603034482758,
+    "lng": 104.62057724137935,
+    "fszl": 10
+  },
+  {
+    "text": "RON PHI PUN",
+    "type": "name",
+    "lat": 8.204237362637349,
+    "lng": 99.90199285714283,
+    "fszl": 10
+  },
+  {
+    "text": "RONG KHAM",
+    "type": "name",
+    "lat": 16.272982692307696,
+    "lng": 103.71024038461539,
+    "fszl": 10
+  },
+  {
+    "text": "RONG KWANG",
+    "type": "name",
+    "lat": 18.352231249999985,
+    "lng": 100.3918903409091,
+    "fszl": 10
+  },
+  {
+    "text": "RUSO",
+    "type": "name",
+    "lat": 6.3684787671232925,
+    "lng": 101.50811575342462,
+    "fszl": 10
+  },
+  {
+    "text": "SA KHRAI",
+    "type": "name",
+    "lat": 17.655596825396827,
+    "lng": 102.7104650793651,
+    "fszl": 10
+  },
+  {
+    "text": "SABA YOI",
+    "type": "name",
+    "lat": 6.491824418604655,
+    "lng": 100.91574127906972,
+    "fszl": 10
+  },
+  {
+    "text": "SADAO",
+    "type": "name",
+    "lat": 6.663860309278352,
+    "lng": 100.43116855670105,
+    "fszl": 10
+  },
+  {
+    "text": "SAHATSAKHAN",
+    "type": "name",
+    "lat": 16.73701590909093,
+    "lng": 103.59527045454547,
+    "fszl": 10
+  },
+  {
+    "text": "SAI BURI",
+    "type": "name",
+    "lat": 6.683262068965518,
+    "lng": 101.58746091954023,
+    "fszl": 10
+  },
+  {
+    "text": "SAI MAI",
+    "type": "name",
+    "lat": 13.90078333333333,
+    "lng": 100.65701666666673,
+    "fszl": 10
+  },
+  {
+    "text": "SAI NGAM",
+    "type": "name",
+    "lat": 16.468973999999992,
+    "lng": 99.88262800000003,
+    "fszl": 10
+  },
+  {
+    "text": "SAI NOI",
+    "type": "name",
+    "lat": 13.980233333333333,
+    "lng": 100.31075333333335,
+    "fszl": 10
+  },
+  {
+    "text": "SAI THONG WATTHANA",
+    "type": "name",
+    "lat": 16.304157074856292,
+    "lng": 99.86507028919678,
+    "fszl": 10
+  },
+  {
+    "text": "SAI YOK",
+    "type": "name",
+    "lat": 14.240463430420714,
+    "lng": 98.93543236245962,
+    "fszl": 10
+  },
+  {
+    "text": "SAM CHUK",
+    "type": "name",
+    "lat": 14.761456310679613,
+    "lng": 100.06794466019424,
+    "fszl": 10
+  },
+  {
+    "text": "SAM KHOK",
+    "type": "name",
+    "lat": 14.085515000000001,
+    "lng": 100.5246375,
+    "fszl": 10
+  },
+  {
+    "text": "SAM NGAM",
+    "type": "name",
+    "lat": 16.410599527358713,
+    "lng": 100.14107142938805,
+    "fszl": 10
+  },
+  {
+    "text": "SAM NGAO",
+    "type": "name",
+    "lat": 17.412855324074055,
+    "lng": 98.8352875,
+    "fszl": 10
+  },
+  {
+    "text": "SAM PHRAN",
+    "type": "name",
+    "lat": 13.707707894736837,
+    "lng": 100.19340526315789,
+    "fszl": 10
+  },
+  {
+    "text": "SAMKO",
+    "type": "name",
+    "lat": 14.583359999999999,
+    "lng": 100.25283428571433,
+    "fszl": 10
+  },
+  {
+    "text": "SAMOENG",
+    "type": "name",
+    "lat": 18.89894713114757,
+    "lng": 98.64604385245893,
+    "fszl": 10
+  },
+  {
+    "text": "SAMPHANTAWONG",
+    "type": "name",
+    "lat": 13.740585714285718,
+    "lng": 100.50915714285715,
+    "fszl": 10
+  },
+  {
+    "text": "SAMRONG",
+    "type": "name",
+    "lat": 14.98542121212122,
+    "lng": 104.77810101010108,
+    "fszl": 10
+  },
+  {
+    "text": "SAMRONG THAP",
+    "type": "name",
+    "lat": 15.061952631578938,
+    "lng": 103.963432330827,
+    "fszl": 10
+  },
+  {
+    "text": "SAN KAMPHAENG",
+    "type": "name",
+    "lat": 18.762383098591542,
+    "lng": 99.17841690140844,
+    "fszl": 10
+  },
+  {
+    "text": "SAN PA TONG",
+    "type": "name",
+    "lat": 18.60775943396227,
+    "lng": 98.87097264150941,
+    "fszl": 10
+  },
+  {
+    "text": "SAN SAI",
+    "type": "name",
+    "lat": 18.947123972602736,
+    "lng": 99.03210479452054,
+    "fszl": 10
+  },
+  {
+    "text": "SANAM CHAIKHET",
+    "type": "name",
+    "lat": 13.626886666666664,
+    "lng": 101.64361500000007,
+    "fszl": 10
+  },
+  {
+    "text": "SANG KHOM",
+    "type": "name",
+    "lat": 18.045115463917526,
+    "lng": 102.21260000000001,
+    "fszl": 10
+  },
+  {
+    "text": "SANG KHOM",
+    "type": "name",
+    "lat": 17.79698235294119,
+    "lng": 103.07937142857143,
+    "fszl": 10
+  },
+  {
+    "text": "SANGKHA",
+    "type": "name",
+    "lat": 14.536486206896553,
+    "lng": 103.85744425287366,
+    "fszl": 10
+  },
+  {
+    "text": "SANGKHLA BURI",
+    "type": "name",
+    "lat": 15.161903551912568,
+    "lng": 98.51359890710373,
+    "fszl": 10
+  },
+  {
+    "text": "SANKHA BURI",
+    "type": "name",
+    "lat": 15.027254761904768,
+    "lng": 100.17128571428569,
+    "fszl": 10
+  },
+  {
+    "text": "SANOM",
+    "type": "name",
+    "lat": 15.188514705882348,
+    "lng": 103.78431176470592,
+    "fszl": 10
+  },
+  {
+    "text": "SANPHAYA",
+    "type": "name",
+    "lat": 15.131284090909094,
+    "lng": 100.24214090909088,
+    "fszl": 10
+  },
+  {
+    "text": "SANTI SUK",
+    "type": "name",
+    "lat": 18.92026184210527,
+    "lng": 100.97564671052632,
+    "fszl": 10
+  },
+  {
+    "text": "SAO HAI",
+    "type": "name",
+    "lat": 14.57729411764706,
+    "lng": 100.82986764705885,
+    "fszl": 10
+  },
+  {
+    "text": "SAPHAN SUNG",
+    "type": "name",
+    "lat": 13.76027222222222,
+    "lng": 100.68336666666669,
+    "fszl": 10
+  },
+  {
+    "text": "SARAPHI",
+    "type": "name",
+    "lat": 18.693102985074635,
+    "lng": 99.01285223880599,
+    "fszl": 10
+  },
+  {
+    "text": "SATHING PHRA",
+    "type": "name",
+    "lat": 7.46058787878788,
+    "lng": 100.41544242424247,
+    "fszl": 10
+  },
+  {
+    "text": "SATHORN",
+    "type": "name",
+    "lat": 13.714676470588234,
+    "lng": 100.53146470588236,
+    "fszl": 10
+  },
+  {
+    "text": "SATTAHIP",
+    "type": "name",
+    "lat": 12.669489338235286,
+    "lng": 100.90612573529403,
+    "fszl": 10
+  },
+  {
+    "text": "SATUK",
+    "type": "name",
+    "lat": 15.26447341772151,
+    "lng": 103.35553502109711,
+    "fszl": 10
+  },
+  {
+    "text": "SAWAENGHA",
+    "type": "name",
+    "lat": 14.747119718309868,
+    "lng": 100.29109014084501,
+    "fszl": 10
+  },
+  {
+    "text": "SAWANG AROM",
+    "type": "name",
+    "lat": 15.608793103448274,
+    "lng": 99.78889655172411,
+    "fszl": 10
+  },
+  {
+    "text": "SAWANG DAEN DIN",
+    "type": "name",
+    "lat": 17.46750909090909,
+    "lng": 103.43119666666664,
+    "fszl": 10
+  },
+  {
+    "text": "SAWANKHALOK",
+    "type": "name",
+    "lat": 17.294706206896553,
+    "lng": 99.86821793103445,
+    "fszl": 10
+  },
+  {
+    "text": "SAWI",
+    "type": "name",
+    "lat": 10.232886046511645,
+    "lng": 99.06003798449613,
+    "fszl": 10
+  },
+  {
+    "text": "SEKA",
+    "type": "name",
+    "lat": 17.95795555555554,
+    "lng": 103.90102380952382,
+    "fszl": 10
+  },
+  {
+    "text": "SELAPHUM",
+    "type": "name",
+    "lat": 16.01272430769231,
+    "lng": 104.01251753846157,
+    "fszl": 10
+  },
+  {
+    "text": "SENA",
+    "type": "name",
+    "lat": 14.296835185185182,
+    "lng": 100.37682962962964,
+    "fszl": 10
+  },
+  {
+    "text": "SENANGKHANIKHOM",
+    "type": "name",
+    "lat": 16.04374745762714,
+    "lng": 104.67063644067802,
+    "fszl": 10
+  },
+  {
+    "text": "SI BANPHOT",
+    "type": "name",
+    "lat": 7.698458653846154,
+    "lng": 99.85951923076924,
+    "fszl": 10
+  },
+  {
+    "text": "SI BUN RUANG",
+    "type": "name",
+    "lat": 16.974196092959257,
+    "lng": 102.22100345534741,
+    "fszl": 10
+  },
+  {
+    "text": "SI CHIANG MAI",
+    "type": "name",
+    "lat": 17.920198113207544,
+    "lng": 102.49826792452832,
+    "fszl": 10
+  },
+  {
+    "text": "SI CHOMPHU",
+    "type": "name",
+    "lat": 16.79708199999998,
+    "lng": 102.11716800000006,
+    "fszl": 10
+  },
+  {
+    "text": "SI MAHOSOT",
+    "type": "name",
+    "lat": 13.872618553856103,
+    "lng": 101.41789351736979,
+    "fszl": 10
+  },
+  {
+    "text": "SI MUANG MAI",
+    "type": "name",
+    "lat": 15.57776508875739,
+    "lng": 105.39351420118346,
+    "fszl": 10
+  },
+  {
+    "text": "SI NAKHON",
+    "type": "name",
+    "lat": 17.446324661051385,
+    "lng": 99.94591981125268,
+    "fszl": 10
+  },
+  {
+    "text": "SI PRACHAN",
+    "type": "name",
+    "lat": 14.652346250000003,
+    "lng": 100.14255625000004,
+    "fszl": 10
+  },
+  {
+    "text": "SI RACHA",
+    "type": "name",
+    "lat": 13.11394519774012,
+    "lng": 101.01928135593218,
+    "fszl": 10
+  },
+  {
+    "text": "SI RIN TON",
+    "type": "name",
+    "lat": 15.09161749999999,
+    "lng": 105.4536365,
+    "fszl": 10
+  },
+  {
+    "text": "SI SAKHON",
+    "type": "name",
+    "lat": 6.201071653543308,
+    "lng": 101.51603622047246,
+    "fszl": 10
+  },
+  {
+    "text": "SI SAM RONG",
+    "type": "name",
+    "lat": 17.161925786163522,
+    "lng": 99.73765031446537,
+    "fszl": 10
+  },
+  {
+    "text": "SI SATCHANALAI",
+    "type": "name",
+    "lat": 17.631449174917478,
+    "lng": 99.69155808580857,
+    "fszl": 10
+  },
+  {
+    "text": "SI SAWAT",
+    "type": "name",
+    "lat": 14.687627627627624,
+    "lng": 99.13578198198194,
+    "fszl": 10
+  },
+  {
+    "text": "SI SOMDET",
+    "type": "name",
+    "lat": 16.01739259259259,
+    "lng": 103.50733148148151,
+    "fszl": 10
+  },
+  {
+    "text": "SI SONGKHRAM",
+    "type": "name",
+    "lat": 17.642108173076917,
+    "lng": 104.21561298076925,
+    "fszl": 10
+  },
+  {
+    "text": "SI THAT",
+    "type": "name",
+    "lat": 17.037432044198873,
+    "lng": 103.22746629834248,
+    "fszl": 10
+  },
+  {
+    "text": "SI THEP",
+    "type": "name",
+    "lat": 15.459487142857151,
+    "lng": 101.14426214285717,
+    "fszl": 10
+  },
+  {
+    "text": "SI WILAI",
+    "type": "name",
+    "lat": 18.142499999999988,
+    "lng": 103.77488378378382,
+    "fszl": 10
+  },
+  {
+    "text": "SICHON",
+    "type": "name",
+    "lat": 8.952854054054049,
+    "lng": 99.78771351351342,
+    "fszl": 10
+  },
+  {
+    "text": "SIKAO",
+    "type": "name",
+    "lat": 7.592404452054797,
+    "lng": 99.34164006849309,
+    "fszl": 10
+  },
+  {
+    "text": "SIKHIU",
+    "type": "name",
+    "lat": 14.902365408805036,
+    "lng": 101.6072094339623,
+    "fszl": 10
+  },
+  {
+    "text": "SIKHORAPHUM",
+    "type": "name",
+    "lat": 14.930392465753428,
+    "lng": 103.80469726027388,
+    "fszl": 10
+  },
+  {
+    "text": "SINGHA NAKHON",
+    "type": "name",
+    "lat": 7.260117857142855,
+    "lng": 100.51076785714285,
+    "fszl": 10
+  },
+  {
+    "text": "SO PHISAI",
+    "type": "name",
+    "lat": 18.14608501628665,
+    "lng": 103.46899381107497,
+    "fszl": 10
+  },
+  {
+    "text": "SOEM NGAM",
+    "type": "name",
+    "lat": 18.087414792899416,
+    "lng": 99.16736153846152,
+    "fszl": 10
+  },
+  {
+    "text": "SOENG SANG",
+    "type": "name",
+    "lat": 14.337862601626005,
+    "lng": 102.4875756097561,
+    "fszl": 10
+  },
+  {
+    "text": "SOI DAO",
+    "type": "name",
+    "lat": 13.153632789421096,
+    "lng": 102.2512363260803,
+    "fszl": 10
+  },
+  {
+    "text": "SOMDET",
+    "type": "name",
+    "lat": 16.782429251700698,
+    "lng": 103.76385850340134,
+    "fszl": 10
+  },
+  {
+    "text": "SONG",
+    "type": "name",
+    "lat": 18.55598834951455,
+    "lng": 100.21289352750807,
+    "fszl": 10
+  },
+  {
+    "text": "SONG DAO",
+    "type": "name",
+    "lat": 17.299637791376462,
+    "lng": 103.44670582938238,
+    "fszl": 10
+  },
+  {
+    "text": "SONG KWAE",
+    "type": "name",
+    "lat": 19.409140800000007,
+    "lng": 100.67009599999999,
+    "fszl": 10
+  },
+  {
+    "text": "SONG PHI NONG",
+    "type": "name",
+    "lat": 14.196029999999993,
+    "lng": 99.95240833333334,
+    "fszl": 10
+  },
+  {
+    "text": "SONGKHLA LAKE",
+    "type": "name",
+    "lat": 7.431174311926599,
+    "lng": 100.32105183486239,
+    "fszl": 10
+  },
+  {
+    "text": "SONGKHLA LAKE",
+    "type": "name",
+    "lat": 7.517148514851483,
+    "lng": 100.33561089108915,
+    "fszl": 10
+  },
+  {
+    "text": "SOP MOEI",
+    "type": "name",
+    "lat": 17.886547006034142,
+    "lng": 97.84340058821282,
+    "fszl": 10
+  },
+  {
+    "text": "SOP PRAP",
+    "type": "name",
+    "lat": 17.89546916666666,
+    "lng": 99.35058166666661,
+    "fszl": 10
+  },
+  {
+    "text": "SRA BOTH",
+    "type": "name",
+    "lat": 15.23834591836734,
+    "lng": 100.87986938775512,
+    "fszl": 10
+  },
+  {
+    "text": "SRI MAHAR PHO",
+    "type": "name",
+    "lat": 13.888234545454548,
+    "lng": 101.55983181818182,
+    "fszl": 10
+  },
+  {
+    "text": "SRI RATANA",
+    "type": "name",
+    "lat": 14.79523238095238,
+    "lng": 104.4713123809524,
+    "fszl": 10
+  },
+  {
+    "text": "SU-NGAI KO LOK",
+    "type": "name",
+    "lat": 6.051622727272725,
+    "lng": 101.9922454545455,
+    "fszl": 10
+  },
+  {
+    "text": "SUAN LUANG",
+    "type": "name",
+    "lat": 13.727937499999996,
+    "lng": 100.62626666666668,
+    "fszl": 10
+  },
+  {
+    "text": "SUAN PHUNG",
+    "type": "name",
+    "lat": 13.559764285714289,
+    "lng": 99.28103035714284,
+    "fszl": 10
+  },
+  {
+    "text": "SUK SAMRAN",
+    "type": "name",
+    "lat": 9.412961676905587,
+    "lng": 98.48065333422647,
+    "fszl": 10
+  },
+  {
+    "text": "SUKHIRIN",
+    "type": "name",
+    "lat": 5.914168152866245,
+    "lng": 101.74372165605102,
+    "fszl": 10
+  },
+  {
+    "text": "SUNG MEN",
+    "type": "name",
+    "lat": 18.030521527777776,
+    "lng": 100.12808819444436,
+    "fszl": 10
+  },
+  {
+    "text": "SUNG NOEN",
+    "type": "name",
+    "lat": 14.837582389937108,
+    "lng": 101.81297735849054,
+    "fszl": 10
+  },
+  {
+    "text": "SUNGAI PADI",
+    "type": "name",
+    "lat": 6.102667391304349,
+    "lng": 101.87429891304352,
+    "fszl": 10
+  },
+  {
+    "text": "SUWAN KHUHA",
+    "type": "name",
+    "lat": 17.53983173076922,
+    "lng": 102.2220374999999,
+    "fszl": 10
+  },
+  {
+    "text": "SUWANNAPHUM",
+    "type": "name",
+    "lat": 15.52751459459458,
+    "lng": 103.81451945945939,
+    "fszl": 10
+  },
+  {
+    "text": "TA PHRAYA",
+    "type": "name",
+    "lat": 14.06995617283951,
+    "lng": 102.73069629629633,
+    "fszl": 10
+  },
+  {
+    "text": "TAK BAI",
+    "type": "name",
+    "lat": 6.20571875,
+    "lng": 102.02475781249996,
+    "fszl": 10
+  },
+  {
+    "text": "TAK FA",
+    "type": "name",
+    "lat": 15.370044366197185,
+    "lng": 100.47167535211267,
+    "fszl": 10
+  },
+  {
+    "text": "TAKHLI",
+    "type": "name",
+    "lat": 15.25009114536763,
+    "lng": 100.34704441107758,
+    "fszl": 10
+  },
+  {
+    "text": "TAKUA PA",
+    "type": "name",
+    "lat": 8.870141156462578,
+    "lng": 98.3252853741497,
+    "fszl": 10
+  },
+  {
+    "text": "TAKUA THUNG",
+    "type": "name",
+    "lat": 8.27983156565657,
+    "lng": 98.43282424242435,
+    "fszl": 10
+  },
+  {
+    "text": "TALING CHAN",
+    "type": "name",
+    "lat": 13.763537499999998,
+    "lng": 100.44473125000002,
+    "fszl": 10
+  },
+  {
+    "text": "TAMOT",
+    "type": "name",
+    "lat": 7.289676699029122,
+    "lng": 100.03437184466023,
+    "fszl": 10
+  },
+  {
+    "text": "TAN SUM",
+    "type": "name",
+    "lat": 15.400234177215191,
+    "lng": 105.1406683544304,
+    "fszl": 10
+  },
+  {
+    "text": "TAO NGOI",
+    "type": "name",
+    "lat": 16.942097752808987,
+    "lng": 104.13017303370789,
+    "fszl": 10
+  },
+  {
+    "text": "TAPHAN HIN",
+    "type": "name",
+    "lat": 16.204627906976743,
+    "lng": 100.41652170542639,
+    "fszl": 10
+  },
+  {
+    "text": "THA BO",
+    "type": "name",
+    "lat": 17.8081708074534,
+    "lng": 102.51646211180118,
+    "fszl": 10
+  },
+  {
+    "text": "THA CHANA",
+    "type": "name",
+    "lat": 9.638179687500012,
+    "lng": 99.02686250000004,
+    "fszl": 10
+  },
+  {
+    "text": "THA CHANG",
+    "type": "name",
+    "lat": 14.776099999999998,
+    "lng": 100.38457241379312,
+    "fszl": 10
+  },
+  {
+    "text": "THA CHANG",
+    "type": "name",
+    "lat": 9.352798168498165,
+    "lng": 98.93007252747257,
+    "fszl": 10
+  },
+  {
+    "text": "THA KHANTHO",
+    "type": "name",
+    "lat": 16.89267401574803,
+    "lng": 103.21460078740165,
+    "fszl": 10
+  },
+  {
+    "text": "THA LI",
+    "type": "name",
+    "lat": 17.613723567924286,
+    "lng": 101.44211054217115,
+    "fszl": 10
+  },
+  {
+    "text": "THA LUANG",
+    "type": "name",
+    "lat": 15.044620183486234,
+    "lng": 101.17732110091748,
+    "fszl": 10
+  },
+  {
+    "text": "THA MAI",
+    "type": "name",
+    "lat": 12.654941512121322,
+    "lng": 102.00790867954369,
+    "fszl": 10
+  },
+  {
+    "text": "THA MAKA",
+    "type": "name",
+    "lat": 13.950975471698117,
+    "lng": 99.77432452830189,
+    "fszl": 10
+  },
+  {
+    "text": "THA MUANG",
+    "type": "name",
+    "lat": 13.910198837209302,
+    "lng": 99.60930930232556,
+    "fszl": 10
+  },
+  {
+    "text": "THA PHAE",
+    "type": "name",
+    "lat": 6.770495918367348,
+    "lng": 99.92168571428574,
+    "fszl": 10
+  },
+  {
+    "text": "THA PLA",
+    "type": "name",
+    "lat": 17.852843065693428,
+    "lng": 100.45620729927008,
+    "fszl": 10
+  },
+  {
+    "text": "THA RUA",
+    "type": "name",
+    "lat": 14.535090740740738,
+    "lng": 100.71089814814812,
+    "fszl": 10
+  },
+  {
+    "text": "THA SAE",
+    "type": "name",
+    "lat": 10.785196797153018,
+    "lng": 99.09102491103204,
+    "fszl": 10
+  },
+  {
+    "text": "THA SALA",
+    "type": "name",
+    "lat": 8.680859541984729,
+    "lng": 99.88387557251905,
+    "fszl": 10
+  },
+  {
+    "text": "THA SONG YANG",
+    "type": "name",
+    "lat": 17.44549337717908,
+    "lng": 98.14538151158436,
+    "fszl": 10
+  },
+  {
+    "text": "THA TA KIAP",
+    "type": "name",
+    "lat": 13.377671428571432,
+    "lng": 101.72025867346939,
+    "fszl": 10
+  },
+  {
+    "text": "THA TAKO",
+    "type": "name",
+    "lat": 15.5892923076923,
+    "lng": 100.48080439560435,
+    "fszl": 10
+  },
+  {
+    "text": "THA TUM",
+    "type": "name",
+    "lat": 15.346798455598465,
+    "lng": 103.65401776061778,
+    "fszl": 10
+  },
+  {
+    "text": "THA UTHEN",
+    "type": "name",
+    "lat": 17.62422884615384,
+    "lng": 104.46691217948714,
+    "fszl": 10
+  },
+  {
+    "text": "THA WANG PHA",
+    "type": "name",
+    "lat": 19.10968975609754,
+    "lng": 100.76415658536591,
+    "fszl": 10
+  },
+  {
+    "text": "THA WUNG",
+    "type": "name",
+    "lat": 14.787382995228192,
+    "lng": 100.52211998087043,
+    "fszl": 10
+  },
+  {
+    "text": "THA YANG",
+    "type": "name",
+    "lat": 12.824722352941183,
+    "lng": 99.79175941176467,
+    "fszl": 10
+  },
+  {
+    "text": "THAI CHAROEN",
+    "type": "name",
+    "lat": 16.073854166666656,
+    "lng": 104.44560083333324,
+    "fszl": 10
+  },
+  {
+    "text": "THAI MUANG",
+    "type": "name",
+    "lat": 8.531246071428553,
+    "lng": 98.16187928571416,
+    "fszl": 10
+  },
+  {
+    "text": "THALANG",
+    "type": "name",
+    "lat": 8.059304830917881,
+    "lng": 98.37312125603873,
+    "fszl": 10
+  },
+  {
+    "text": "THAM PHANNARA",
+    "type": "name",
+    "lat": 8.448411504424785,
+    "lng": 99.36738141592916,
+    "fszl": 10
+  },
+  {
+    "text": "THAN TO",
+    "type": "name",
+    "lat": 6.076135748792278,
+    "lng": 101.2690173913043,
+    "fszl": 10
+  },
+  {
+    "text": "THANYABURI",
+    "type": "name",
+    "lat": 14.010230769230766,
+    "lng": 100.70966153846155,
+    "fszl": 10
+  },
+  {
+    "text": "THAP KHLO",
+    "type": "name",
+    "lat": 16.215417999999996,
+    "lng": 100.581114,
+    "fszl": 10
+  },
+  {
+    "text": "THAP PUT",
+    "type": "name",
+    "lat": 8.494327737226273,
+    "lng": 98.63535036496346,
+    "fszl": 10
+  },
+  {
+    "text": "THAP SAKAE",
+    "type": "name",
+    "lat": 11.555656834532375,
+    "lng": 99.55677625899277,
+    "fszl": 10
+  },
+  {
+    "text": "THAP THAN",
+    "type": "name",
+    "lat": 15.483470967741923,
+    "lng": 99.83569247311824,
+    "fszl": 10
+  },
+  {
+    "text": "THAT PHANOM",
+    "type": "name",
+    "lat": 16.968325000000004,
+    "lng": 104.70008965517242,
+    "fszl": 10
+  },
+  {
+    "text": "THAWATCHABURI",
+    "type": "name",
+    "lat": 16.007682692307686,
+    "lng": 103.7841961538461,
+    "fszl": 10
+  },
+  {
+    "text": "THAWI WATTANA",
+    "type": "name",
+    "lat": 13.776914285714286,
+    "lng": 100.35691428571428,
+    "fszl": 10
+  },
+  {
+    "text": "THEP SATHIT",
+    "type": "name",
+    "lat": 15.587195734597158,
+    "lng": 101.50845734597155,
+    "fszl": 10
+  },
+  {
+    "text": "THEPHA",
+    "type": "name",
+    "lat": 6.794646979865775,
+    "lng": 100.92999530201332,
+    "fszl": 10
+  },
+  {
+    "text": "THEPHARAK",
+    "type": "name",
+    "lat": 15.287718181818176,
+    "lng": 101.51041666666663,
+    "fszl": 10
+  },
+  {
+    "text": "THOEN",
+    "type": "name",
+    "lat": 17.56919649681533,
+    "lng": 99.30011401273887,
+    "fszl": 10
+  },
+  {
+    "text": "THOENG",
+    "type": "name",
+    "lat": 19.657838785868943,
+    "lng": 100.16403122355733,
+    "fszl": 10
+  },
+  {
+    "text": "THON BURI",
+    "type": "name",
+    "lat": 13.718768750000004,
+    "lng": 100.4830875,
+    "fszl": 10
+  },
+  {
+    "text": "THONG PHA PHUM",
+    "type": "name",
+    "lat": 14.832777753779704,
+    "lng": 98.65971079913602,
+    "fszl": 10
+  },
+  {
+    "text": "THONG SAEN KHAN",
+    "type": "name",
+    "lat": 17.494244692737418,
+    "lng": 100.42866145251391,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG CHANG",
+    "type": "name",
+    "lat": 19.480254716981133,
+    "lng": 100.93130691823897,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG FON",
+    "type": "name",
+    "lat": 17.48631816829432,
+    "lng": 103.21900846756787,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG HUA CHANG",
+    "type": "name",
+    "lat": 17.977953472222215,
+    "lng": 99.06807638888894,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG SALIAM",
+    "type": "name",
+    "lat": 17.37395111111112,
+    "lng": 99.53898222222227,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG SI UDOM",
+    "type": "name",
+    "lat": 14.737298823529413,
+    "lng": 104.9153494117647,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG SONG",
+    "type": "name",
+    "lat": 8.091260526315786,
+    "lng": 99.67286368421051,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG TAKO",
+    "type": "name",
+    "lat": 10.091516541353378,
+    "lng": 99.07271879699246,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG WA",
+    "type": "name",
+    "lat": 7.049232624113475,
+    "lng": 99.76181134751774,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG YAI",
+    "type": "name",
+    "lat": 8.32922768595042,
+    "lng": 99.3386892561984,
+    "fszl": 10
+  },
+  {
+    "text": "THUNG YANG DAENG",
+    "type": "name",
+    "lat": 6.629320000000004,
+    "lng": 101.45004266666672,
+    "fszl": 10
+  },
+  {
+    "text": "THUNGKRU",
+    "type": "name",
+    "lat": 13.632805714285716,
+    "lng": 100.49577714285711,
+    "fszl": 10
+  },
+  {
+    "text": "TRAKAN PHUTPHON",
+    "type": "name",
+    "lat": 15.5774865284974,
+    "lng": 105.03493937823843,
+    "fszl": 10
+  },
+  {
+    "text": "TRON",
+    "type": "name",
+    "lat": 17.457439175257747,
+    "lng": 100.09011443298971,
+    "fszl": 10
+  },
+  {
+    "text": "U THONG",
+    "type": "name",
+    "lat": 14.417208910891091,
+    "lng": 99.89477524752468,
+    "fszl": 10
+  },
+  {
+    "text": "UBOL RATANA",
+    "type": "name",
+    "lat": 16.758195294117648,
+    "lng": 102.6985388235294,
+    "fszl": 10
+  },
+  {
+    "text": "UMPHANG",
+    "type": "name",
+    "lat": 15.847697977528101,
+    "lng": 98.90978629213485,
+    "fszl": 10
+  },
+  {
+    "text": "UTHAI",
+    "type": "name",
+    "lat": 14.362887999999995,
+    "lng": 100.70726999999997,
+    "fszl": 10
+  },
+  {
+    "text": "UTHUMPHON PHISAI",
+    "type": "name",
+    "lat": 15.118667317012079,
+    "lng": 104.16124329399015,
+    "fszl": 10
+  },
+  {
+    "text": "VIBHAVADI",
+    "type": "name",
+    "lat": 9.231560517767798,
+    "lng": 98.88201573562576,
+    "fszl": 10
+  },
+  {
+    "text": "WACHIRABARAMI",
+    "type": "name",
+    "lat": 16.523344222004173,
+    "lng": 100.11225201071835,
+    "fszl": 10
+  },
+  {
+    "text": "WAENG",
+    "type": "name",
+    "lat": 5.8952951048951086,
+    "lng": 101.88060279720281,
+    "fszl": 10
+  },
+  {
+    "text": "WAENG NOI",
+    "type": "name",
+    "lat": 15.811697142857145,
+    "lng": 102.38976000000001,
+    "fszl": 10
+  },
+  {
+    "text": "WAENG YAI",
+    "type": "name",
+    "lat": 15.941911428571421,
+    "lng": 102.4236552380952,
+    "fszl": 10
+  },
+  {
+    "text": "WAN YAI",
+    "type": "name",
+    "lat": 16.725793281117852,
+    "lng": 104.7288979186277,
+    "fszl": 10
+  },
+  {
+    "text": "WANG CHAN",
+    "type": "name",
+    "lat": 12.955690000000004,
+    "lng": 101.514224,
+    "fszl": 10
+  },
+  {
+    "text": "WANG CHIN",
+    "type": "name",
+    "lat": 17.850152559726965,
+    "lng": 99.6733122866894,
+    "fszl": 10
+  },
+  {
+    "text": "WANG HIN",
+    "type": "name",
+    "lat": 14.980087218045112,
+    "lng": 104.17606240601508,
+    "fszl": 10
+  },
+  {
+    "text": "WANG MUANG",
+    "type": "name",
+    "lat": 14.816457692307699,
+    "lng": 101.1289853846154,
+    "fszl": 10
+  },
+  {
+    "text": "WANG NAM KHIAO",
+    "type": "name",
+    "lat": 14.441671031746008,
+    "lng": 101.84510317460322,
+    "fszl": 10
+  },
+  {
+    "text": "WANG NAM YEN",
+    "type": "name",
+    "lat": 13.502029158843918,
+    "lng": 102.08777932919259,
+    "fszl": 10
+  },
+  {
+    "text": "WANG NOI",
+    "type": "name",
+    "lat": 14.260299999999992,
+    "lng": 100.69429500000001,
+    "fszl": 10
+  },
+  {
+    "text": "WANG NUA",
+    "type": "name",
+    "lat": 19.15411762114537,
+    "lng": 99.63753039647577,
+    "fszl": 10
+  },
+  {
+    "text": "WANG PONG",
+    "type": "name",
+    "lat": 16.345393913043477,
+    "lng": 100.82356956521745,
+    "fszl": 10
+  },
+  {
+    "text": "WANG SAI PHUN",
+    "type": "name",
+    "lat": 16.403237755102044,
+    "lng": 100.52653061224487,
+    "fszl": 10
+  },
+  {
+    "text": "WANG SAM MO",
+    "type": "name",
+    "lat": 17.02558538812787,
+    "lng": 103.48424885844744,
+    "fszl": 10
+  },
+  {
+    "text": "WANG SAPHUNG",
+    "type": "name",
+    "lat": 17.27728586387436,
+    "lng": 101.71566125654451,
+    "fszl": 10
+  },
+  {
+    "text": "WANG SOMBUN",
+    "type": "name",
+    "lat": 13.382131208348467,
+    "lng": 102.10700781526165,
+    "fszl": 10
+  },
+  {
+    "text": "WANG THONG",
+    "type": "name",
+    "lat": 16.842757394366174,
+    "lng": 100.6042799295775,
+    "fszl": 10
+  },
+  {
+    "text": "WANG THONGLANG",
+    "type": "name",
+    "lat": 13.785805263157892,
+    "lng": 100.6096894736842,
+    "fszl": 10
+  },
+  {
+    "text": "WANG WISET",
+    "type": "name",
+    "lat": 7.75495396039604,
+    "lng": 99.43503316831695,
+    "fszl": 10
+  },
+  {
+    "text": "WANON NIWAT",
+    "type": "name",
+    "lat": 17.600134420289834,
+    "lng": 103.7435340579709,
+    "fszl": 10
+  },
+  {
+    "text": "WAPI PATHUM",
+    "type": "name",
+    "lat": 15.861955371900828,
+    "lng": 103.31941239669423,
+    "fszl": 10
+  },
+  {
+    "text": "WARIN CHAMRAP",
+    "type": "name",
+    "lat": 15.101934615384616,
+    "lng": 104.8525608974359,
+    "fszl": 10
+  },
+  {
+    "text": "WARITCHAPHUM",
+    "type": "name",
+    "lat": 17.263136448598146,
+    "lng": 103.611538317757,
+    "fszl": 10
+  },
+  {
+    "text": "WAT BOT",
+    "type": "name",
+    "lat": 17.16327247191011,
+    "lng": 100.38944101123589,
+    "fszl": 10
+  },
+  {
+    "text": "WAT PHLENG",
+    "type": "name",
+    "lat": 13.456147826086955,
+    "lng": 99.85961739130437,
+    "fszl": 10
+  },
+  {
+    "text": "WAT SING",
+    "type": "name",
+    "lat": 15.219295238095231,
+    "lng": 99.99075595238098,
+    "fszl": 10
+  },
+  {
+    "text": "WATTANA",
+    "type": "name",
+    "lat": 13.731341666666665,
+    "lng": 100.58891666666665,
+    "fszl": 10
+  },
+  {
+    "text": "WATTHANA NAKHON",
+    "type": "name",
+    "lat": 13.856217760197179,
+    "lng": 102.3145875016921,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG CHAI",
+    "type": "name",
+    "lat": 19.85918559322032,
+    "lng": 99.98859745762716,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG HAENG",
+    "type": "name",
+    "lat": 19.591172472716217,
+    "lng": 98.6577838002262,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG KAO",
+    "type": "name",
+    "lat": 16.68963260869565,
+    "lng": 102.25068695652175,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG NONG LONG",
+    "type": "name",
+    "lat": 18.4136052631579,
+    "lng": 98.74966315789477,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG PA PAO",
+    "type": "name",
+    "lat": 19.304244888888903,
+    "lng": 99.4399782222222,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG SA",
+    "type": "name",
+    "lat": 18.553877235772347,
+    "lng": 100.6953184281842,
+    "fszl": 10
+  },
+  {
+    "text": "WIANG SA",
+    "type": "name",
+    "lat": 8.59750457516339,
+    "lng": 99.34290588235287,
+    "fszl": 10
+  },
+  {
+    "text": "WICHIAN BURI",
+    "type": "name",
+    "lat": 15.621310628019328,
+    "lng": 101.07132270531413,
+    "fszl": 10
+  },
+  {
+    "text": "WIENG KAEN",
+    "type": "name",
+    "lat": 20.023756249999987,
+    "lng": 100.46854285714284,
+    "fszl": 10
+  },
+  {
+    "text": "WIHAN DAENG",
+    "type": "name",
+    "lat": 14.337491525423728,
+    "lng": 100.96036440677965,
+    "fszl": 10
+  },
+  {
+    "text": "WISET CHAI CHAN",
+    "type": "name",
+    "lat": 14.547069892473111,
+    "lng": 100.30940752688171,
+    "fszl": 10
+  },
+  {
+    "text": "YAHA",
+    "type": "name",
+    "lat": 6.384285148514847,
+    "lng": 101.1061306930693,
+    "fszl": 10
+  },
+  {
+    "text": "YAN TA KHAO",
+    "type": "name",
+    "lat": 7.405234254143645,
+    "lng": 99.71397127071829,
+    "fszl": 10
+  },
+  {
+    "text": "YANG CHUM NOI",
+    "type": "name",
+    "lat": 15.229746938775513,
+    "lng": 104.38499387755104,
+    "fszl": 10
+  },
+  {
+    "text": "YANG SI SURAT",
+    "type": "name",
+    "lat": 15.64812307692308,
+    "lng": 103.06051153846154,
+    "fszl": 10
+  },
+  {
+    "text": "YANG TALAT",
+    "type": "name",
+    "lat": 16.445490184049074,
+    "lng": 103.38924969325163,
+    "fszl": 10
+  },
+  {
+    "text": "YANNAWA",
+    "type": "name",
+    "lat": 13.69630526315789,
+    "lng": 100.53819473684209,
+    "fszl": 10
+  },
+  {
+    "text": "YARANG",
+    "type": "name",
+    "lat": 6.695521782178225,
+    "lng": 101.29920396039603,
+    "fszl": 10
+  },
+  {
+    "text": "YARING",
+    "type": "name",
+    "lat": 6.871979787234046,
+    "lng": 101.36131063829792,
+    "fszl": 10
+  },
+  {
+    "text": "YI-NGO",
+    "type": "name",
+    "lat": 6.397661538461538,
+    "lng": 101.70418461538456,
+    "fszl": 10
+  }
+]
