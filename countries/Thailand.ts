@@ -29,4 +29,7 @@ export class Thailand extends Country {
   public sandbox(): void {
     loadGeoJSONFile('/Layers/Thailand/Level2.geojson', "boundaryLayer", partial(markerInMiddle, "NAME_2", true));
   }
+public auxBehaviour(): void {
+
+  }
 }

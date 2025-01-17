@@ -22,5 +22,6 @@ static getInstance(): Country {
   // Abstract method that must be implemented by subclasses
   abstract show(): void;
   abstract sandbox(): void;
+  abstract auxBehaviour(): void
 }
 

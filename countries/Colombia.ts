@@ -43,5 +43,8 @@ export class Colombia extends Country {
   }
 
   public sandbox(): void { }
+public auxBehaviour(): void {
+
+  }
 }
 

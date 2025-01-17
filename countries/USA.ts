@@ -27,5 +27,8 @@ export class USA extends Country {
   }
 
   public sandbox(): void { }
+public auxBehaviour(): void {
+
+  }
 }
 

@@ -66,4 +66,7 @@ export class France extends Country {
   public sandbox(): void {
     loadGeoJSONFile('/Layers/France/Level2.geojson', "boundaryLayer", partial(markerInMiddle, "NAME_2"));
   }
+public auxBehaviour(): void {
+
+  }
 }

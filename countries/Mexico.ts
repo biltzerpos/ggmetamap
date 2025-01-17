@@ -1,10 +1,9 @@
-import { markers, countryMenu, layerMenu, settings, getGlobals } from '../globals';
+import { markers, countryMenu, layerMenu, auxButton, flags, settings, getGlobals } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
 import { newLayerReset, showAuxButton } from '../index';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
 
-let showAreas = true;
 function showAllAreas() {
   loadGeoJSONFile('Layers/Mexico/' + "Phone Codes200" + '.geojson', "secondaryLayerClear");
   for (let i = 3; i <= 9; i++) {
@@ -49,12 +48,12 @@ export class Mexico extends Country {
     layerMenu.onchange = async () => {
       if (!newLayerReset()) return;
       settings.colourDigit = 0;
-      showAreas = true;
+      flags.showAreas = true;
       if (layerMenu.value == "License Plates") {
         loadMarkerLayer(countryMenu.value, layerMenu.value);
       }
       else if (layerMenu.value == "Phone Codesall") {
-        showAuxButton("Hide Area Boundaries");
+        showAuxButton("Hide Area Boundaries", this.auxBehaviour);
         showAllAreas();
         for (let i = 2; i <= 9; i++) {
           let layerName = "Phone Codes" + i + "00";
@@ -63,7 +62,7 @@ export class Mexico extends Country {
         zoom(getGlobals().map);
       }
       else {
-        showAuxButton("Hide Area Boundaries");
+        showAuxButton("Hide Area Boundaries", this.auxBehaviour);
         settings.colourDigit = 1;
         loadMarkerLayer(countryMenu.value, layerMenu.value);
         await loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
@@ -73,6 +72,19 @@ export class Mexico extends Country {
   }
 
   public sandbox(): void { }
-  
+
+  public auxBehaviour(): void {
+    flags.showAreas = !flags.showAreas;
+    if (flags.showAreas) {
+      auxButton.textContent = "Hide Area Boundaries";
+      if (layerMenu.value == "Phone Codesall") showAllAreas();
+      else loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
+    }
+    else {
+      clearSecondaryLayer();
+      auxButton.textContent = "Show Area Boundaries";
+    }
+  }
+
 }
 

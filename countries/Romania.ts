@@ -26,5 +26,8 @@ export class Romania extends Country {
   }
 
   public sandbox(): void { }
+public auxBehaviour(): void {
+
+  }
 }
 

@@ -27,5 +27,8 @@ export class Jordan extends Country {
   }
 
   public sandbox(): void { }
+public auxBehaviour(): void {
+
+  }
 }
 

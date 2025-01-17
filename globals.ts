@@ -6,6 +6,7 @@ export let markers: google.maps.marker.AdvancedMarkerElement[] = [];
 export let overlays: google.maps.GroundOverlay[] = [];
 export let countryMenu: HTMLSelectElement = document.createElement('select');
 export let layerMenu: HTMLSelectElement = document.createElement('select');
+export let auxButton: HTMLButtonElement = document.createElement('button');
 export const flags = {
     editMode: false, 
     debugMode: false,
@@ -13,7 +14,9 @@ export const flags = {
     terrainMode: false,
     coverageMode: false,
     askToSave: false,
-    displayPopups: true
+    displayPopups: true,
+    showAreas: true,
+    showBorders: false
 };
 export const settings = {
     layerMin: 0,

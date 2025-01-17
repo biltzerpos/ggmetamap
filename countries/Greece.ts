@@ -28,4 +28,7 @@ export class Greece extends Country {
   public sandbox(): void {
     loadGeoJSONFile('/Layers/Greece/Level3.geojson', "boundaryLayer", partial(markerInMiddle, "NL_NAME_3", true));
   }
+public auxBehaviour(): void {
+
+  }
 }

@@ -25,3 +25,7 @@ export function splitCamelCase(name: any) {
     }
     return result;
 }
+
+export function resolveToNumber(input: number | (() => number)): number {
+    return typeof input === "number" ? input : input();
+}

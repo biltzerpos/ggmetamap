@@ -46,5 +46,9 @@ export class Ireland extends Country {
   }
 
   public sandbox(): void { }
+public auxBehaviour(): void {
+
+  }
 }
+
 

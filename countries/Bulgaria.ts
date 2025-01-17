@@ -29,5 +29,8 @@ export class Bulgaria extends Country {
   }
 
   public sandbox(): void {}
+public auxBehaviour(): void {
+
+  }
 }
 

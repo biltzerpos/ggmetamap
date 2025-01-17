@@ -1,6 +1,6 @@
 import { markers, countryMenu, layerMenu, settings } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
-import { newLayerReset, showAuxButton } from '../index';
+import { newLayerReset, showAuxButton, cycleLayers } from '../index';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
 import { partial } from '../utilities';
@@ -35,7 +35,7 @@ export class SouthAfrica extends Country {
     }
     layerMenu.onchange = async () => {
       if (!newLayerReset()) return;
-      showAuxButton("Next option");
+      showAuxButton("Next option", cycleLayers);
       //   const styleOptions = {
       //       strokeColor: 'black',
       //       strokeOpacity: '1',
@@ -56,5 +56,8 @@ export class SouthAfrica extends Country {
   }
 
   public sandbox(): void { }
+
+  public auxBehaviour(): void {}
+  
 }
 

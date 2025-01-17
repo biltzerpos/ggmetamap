@@ -25,5 +25,8 @@ export class Chile extends Country {
   }
 
   public sandbox(): void { }
+public auxBehaviour(): void {
+
+  }
 }
 
