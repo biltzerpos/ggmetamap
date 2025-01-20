@@ -3,32 +3,39 @@ import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '.
 import { newLayerReset } from '../index';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
+import { Layer } from './Layer';
+
 
 
 export class USA extends Country {
 
   private constructor() {
     super();
+    this.mainGeoJSONpath = '/Layers/USA/States.geojson';
+    this.layers.push(new LicensePlates());
   }
 
   public static override getInstance(): USA {
     return this.instance ? this.instance : (this.instance = new USA());
   }
 
+  public sandbox(): void { }
+
+}
+
+class LicensePlates extends Layer {
+
+  public constructor() {
+    super();
+    this.displayName = "License Plates";
+    this.mainGeoJSONopacity = 0.1;
+  }
+
   public show(): void {
-    loadGeoJSONFile('/Layers/USA/States.geojson');
-    const newtop = new Option("License Plates", "License Plates");
-    layerMenu.appendChild(newtop);
-    layerMenu.onchange = () => {
-      if (!newLayerReset()) return;
-      loadMarkerLayer(countryMenu.value, layerMenu.value);
-      settings.layerMin = 0; // Images can get arbitrarily small
-    };
+    settings.layerMin = 0; // Images can get arbitrarily small
+    loadMarkerLayer(countryMenu.value, layerMenu.value);
   }
 
   public sandbox(): void { }
-public auxBehaviour(): void {
-
-  }
+  public auxBehaviour(): void { }
 }
-

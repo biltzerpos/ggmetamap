@@ -98,13 +98,13 @@ export function colorCodingBasedOnField(farr, field, digit = 0, colArray, w = 5)
             //&& feature[field][field2])
             //     name = feature[field][field2].toString();
             // if (field in feature.properties) 
-            name = feature.getProperty(field);
+            name = feature.getProperty(field).toString();
             if (name === undefined) {
                 name = "00000000000";
                 colog("Feature with no " + field);
                 colog(feature);
             }
-
+            colog(name);
             if (digit < 0) {
                 let index = name.indexOf(";");
                 let rname = index !== -1 ? name.substring(0, index) : name;

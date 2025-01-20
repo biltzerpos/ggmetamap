@@ -33,7 +33,6 @@ const params = new URLSearchParams(currentUrl.search);
 let urlCountry, urlLayer;
 let streetViewLayer;
 let lastCountry, lastLayer;
-let boundaryFeatures = [], secondaryFeatures = [];
 interface markerLoc {
     text: string;
     type: string;
@@ -855,7 +854,9 @@ async function initMap(): Promise<void> {
 
     //@ts-ignore
     const { Map } = await google.maps.importLibrary("maps");
+    //@ts-ignore
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    //@ts-ignore
     const { StreetViewCoverageLayer } = await google.maps.importLibrary("streetView");
     streetViewLayer = new google.maps.StreetViewCoverageLayer();
 
@@ -864,24 +865,9 @@ async function initMap(): Promise<void> {
     map = globals.map;
     boundaryLayer = globals.boundaryLayer;
     secondaryLayer = globals.secondaryLayer;
+    streetViewLayer = new google.maps.StreetViewCoverageLayer();
     infoWindow = globals.infoWindow;
 
-    // map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-    //     center: new google.maps.LatLng(0, 0),
-    //     zoom: 2,
-    //     mapId: 'DEMO_MAP_ID',
-    //     zoomControl: false,
-    //     scaleControl: true,
-    //     streetViewControl: true,
-    //     disableDoubleClickZoom: true,
-    //     mapTypeControl: false,
-    //     // mapTypeControlOptions: {
-    //     //     style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-    //     //     mapTypeIds: ["roadmap", "terrain"],
-    //     // },
-    // });
-
-    //boundaryLayer = new google.maps.Data();
     boundaryLayer.setMap(map);
     boundaryLayer.setStyle({
         zIndex: 1,
@@ -889,7 +875,6 @@ async function initMap(): Promise<void> {
         strokeOpacity: 1
     });
 
-    //secondaryLayer = new google.maps.Data();
     secondaryLayer.setMap(map);
     secondaryLayer.setStyle({
         zIndex: 2,
@@ -921,7 +906,7 @@ async function initMap(): Promise<void> {
         }
     });
 
-    // List of events you want to propagate from the data layer to the map
+    // List of events you want to propagate from the data layers to the map
     const eventsToPropagate = ["click", "mouseup", "dblclick", "rightclick"];
 
     // Function to propagate events from the data layer to the map
@@ -929,11 +914,9 @@ async function initMap(): Promise<void> {
         boundaryLayer.addListener(eventType, (event) => {
             colog(event);
             google.maps.event.trigger(map, eventType, event);
-            //google.maps.event.trigger(map, `layer_${eventType}`, event);
         });
         secondaryLayer.addListener(eventType, (event) => {
             google.maps.event.trigger(map, eventType, event);
-            //google.maps.event.trigger(map, `layer_${eventType}`, event);
         });
     });
 
@@ -951,129 +934,16 @@ async function initMap(): Promise<void> {
 
     map.addListener('click', function (event) {
         if (flags.editMode && event.feature) {
-            //secondaryLayer.remove(event.feature);
             colog(event.feature);
         }
         else infoWindow.close();
-        // if (editMode && event.domEvent.shiftKey) {
-        //     if (!rec) {
-        //         startLatLng = event.latLng;
-        //         const newLatLng = new google.maps.LatLng(
-        //             startLatLng.lat() + 1,
-        //             startLatLng.lng() + 1
-        //           );
-        //         rectangle = new google.maps.Rectangle({
-        //             bounds: new google.maps.LatLngBounds(startLatLng, newLatLng),
-        //             map: map,
-        //             editable: true,
-        //             draggable: true,
-        //         });
-        //         rec = true;
-        //     }
-        //     else if (rec) {
-        //         const bounds = rectangle.getBounds();
-        //         console.log("Rectangle Bounds:", bounds.toJSON());
-        //         rec = false;
-        //     }
-        // }
     });
 
     map.addListener('mouseup', function (e) {
         infoWindow.close();
     });
 
-    //       // Start drawing the rectangle on mouse down
-    //   map.addListener("mousedown", (event) => {
-    //     startLatLng = event.latLng;
-    //     rectangle = new google.maps.Rectangle({
-    //       bounds: new google.maps.LatLngBounds(startLatLng, startLatLng),
-    //       map: map,
-    //       editable: true,
-    //       draggable: true,
-    //     });
-    //     rec = true;
-    //     // map.addListener("mousemove", onMouseMove);
-    //     // map.addListener("mouseup", onMouseUp);
-    //   });
-
-    //   map.addListener("mousemove", (event) => {
-    //     if (editMode && event.domEvent.shiftKey && rec) {
-    //     const bounds = new google.maps.LatLngBounds(startLatLng, event.latLng);
-    //     rectangle.setBounds(bounds);
-    //     }
-    //   });
-
-    //   map.addListener("mouseup", (event) => {
-    //     if (rec) {
-    //         const bounds = rectangle.getBounds();
-    //         console.log("Rectangle Bounds:", bounds.toJSON());
-    //         rec = false;
-    //         map.setOptions({ draggable: true });
-    //     }
-    //   });
-
-    // // Update the rectangle as the mouse moves
-    // function onMouseMove(event) {
-    //   const bounds = new google.maps.LatLngBounds(startLatLng, event.latLng);
-    //   rectangle.setBounds(bounds);
-    // }
-
-    // // Stop drawing on mouse up
-    // function onMouseUp() {
-    //   google.maps.event.clearListeners(map, "mousemove");
-    //   google.maps.event.clearListeners(map, "mouseup");
-
-    //   // Log the coordinates of the rectangle bounds
-    //   const bounds = rectangle.getBounds();
-    //   console.log("Rectangle Bounds:", bounds.toJSON());
-    // }
-
-    // map.addListener("mousedown", (event) => {
-    // // Initialize the Drawing Manager
-    // const drawingManager = new google.maps.drawing.DrawingManager({
-    //     drawingMode: google.maps.drawing.OverlayType.RECTANGLE,
-    //     drawingControl: true,
-    //     drawingControlOptions: {
-    //       position: google.maps.ControlPosition.TOP_CENTER,
-    //       //drawingModes: ["rectangle"], // Only enable rectangle drawing
-    //     },
-    //     rectangleOptions: {
-    //       fillColor: "#FF0000",
-    //       fillOpacity: 0.2,
-    //       strokeWeight: 2,
-    //       clickable: true,
-    //       editable: true,
-    //       draggable: true,
-    //     },
-    //   });
-
-    //   // Add the Drawing Manager to the map
-    //   drawingManager.setMap(map);
-
-    //   // Add an event listener to capture the bounds of the drawn rectangle
-    //   google.maps.event.addListener(drawingManager, "rectanglecomplete", function(rectangle) {
-    //     const bounds = rectangle.getBounds();
-    //     console.log("Rectangle bounds:", bounds.toString());
-
-    //     // You can use `bounds.getNorthEast()` and `bounds.getSouthWest()` 
-    //     // to get the coordinates of the corners if needed.
-
-    //     // Optional: Remove the rectangle after drawing
-    //     drawingManager.setDrawingMode(null); // Switch off drawing mode
-    //   });
-    // });
-
-    // boundaryLayer.addListener('click', function (e) {
-    //         infoWindow.close();
-    //         colog(e.feature);
-    //     });
-
-    //     boundaryLayer.addListener('mouseup', function (e) {
-    //         infoWindow.close();
-    //     });
-
     boundaryLayer.addListener('mousedown', function (e) {
-        // infoWindow.close();
         // colog(e.feature);
         if (flags.displayPopups && !flags.editMode) {
             let name = e.feature.getProperty(settings.popupPropertyName);
@@ -1086,14 +956,6 @@ async function initMap(): Promise<void> {
             };
         }
     });
-
-    // secondaryLayer.addListener('click', function (e) {
-    //     infoWindow.close();
-    // });
-
-    // secondaryLayer.addListener('mouseup', function (e) {
-    //     infoWindow.close();
-    // });
 
     secondaryLayer.addListener('mousedown', function (e) {
         infoWindow.close();
@@ -1110,10 +972,6 @@ async function initMap(): Promise<void> {
             };
         }
     });
-
-    // boundaryLayer.addListener('dblclick',function(e){
-    //   if (editMode) placeNewMarker(map, e.latLng);
-    // });
 
     document.addEventListener('keydown', function (event) {
         if (!event.repeat) {
@@ -1139,18 +997,14 @@ async function initMap(): Promise<void> {
         console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
             //let fszl = Number(markers[i].getAttribute("fszl"));
-            markers[i].content.style.transform = getTransform(markers[i]);
-            // if (markers[i].content instanceof google.maps.LatLng)
+            const content = markers[i].content; 
+            if (content && content instanceof HTMLElement) {
+                content.style.transform = getTransform(markers[i]);
+            } else {
+                console.error("Marker content is not an HTMLElement, weird!");
+            }
         }
     });
-
-    // const maxw = Math.floor(window.screen.width * 0.9);
-    // infoWindow = new google.maps.InfoWindow({
-    //     maxWidth: maxw // Set a maximum width for the InfoWindow
-    //     // maxHeight: 1800 // No such option
-    // });
-
-
 
     const terrainDiv = createButtonDiv("terrainButton");
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(terrainDiv);
@@ -1173,7 +1027,6 @@ async function initMap(): Promise<void> {
     countrySelectDiv.appendChild(countryMenu);
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(countryMenu);
 
-
     // Create the layer drop down menu
     const layerSelectDiv = document.createElement('div');
     //layerMenu = 
@@ -1195,7 +1048,6 @@ async function initMap(): Promise<void> {
         layerMenu.value = urlLayer;
         layerMenu.dispatchEvent(new Event('change'));
     }
-
 }
 
 /**
@@ -1638,27 +1490,9 @@ function loadMarkersBootStrap(): void {
     }
 }
 
-/* DOM (drag/drop) functions */
 function initEvents() {
-    //[...document.getElementsByClassName("file")].forEach((fileElement) => {
-    //    fileElement.addEventListener(
-    //        "dragstart",
-    //        (e: Event) => {
-    //            // @ts-ignore
-    //            e.dataTransfer.setData(
-    //                "text/plain",
-    //                JSON.stringify(files[Number((e.target as HTMLElement).dataset.value)])
-    //            );
-    //            console.log(e);
-    //            console.log("ERTERT");
-    //        },
-    //        false
-    //    );
-    //});
-
-    // set up the drag & drop events
+    // Drag & drop events
     const mapContainer = document.getElementById("map") as HTMLElement;
-
     mapContainer.addEventListener("dragenter", addClassToDropTarget, false);
     mapContainer.addEventListener("dragover", addClassToDropTarget, false);
     mapContainer.addEventListener("drop", handleDrop, false);
@@ -1826,10 +1660,6 @@ async function handleDrop(e: DragEvent) {
     return false;
 }
 
-//function startsWithLetter(str) {
-//    return /^[A-Za-z]/.test(str);
-//}
-
 function separateLines(str: string) {
     // Split the string into an array of lines
     const lines = str.split(/\r?\n/);
@@ -1867,12 +1697,4 @@ function initialize() {
     initEvents();
 }
 
-//declare global {
-//  interface Window {
-//    initialize: () => void;
-//  }
-//}
-
-//window.initialize = initialize;
 initialize();
-//export { };

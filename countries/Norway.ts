@@ -4,6 +4,7 @@ import { newLayerReset, showAuxButton, removeAllMarkers } from '../index';
 import { colorCodingBasedOnField } from '../postprocess';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
+import { Layer } from './Layer';
 import { partial } from '../utilities';
 
 let colll = {
@@ -27,32 +28,39 @@ export class Norway extends Country {
 
   private constructor() {
     super();
+    this.mainGeoJSONpath = '/Layers/Norway/Level1.geojson';
+    this.layers.push(new Highways());
   }
 
   public static override getInstance(): Norway {
     return this.instance ? this.instance : (this.instance = new Norway());
   }
 
-  public show(): void {
-    loadGeoJSONFile('/Layers/Norway/Level1.geojson');
-    layerMenu.appendChild(new Option("Highways", "Highways"));
-    layerMenu.onchange = () => {
-      if (!newLayerReset(0)) return;
-      if (layerMenu.value == "Highways") {
-        showAuxButton("Next set of highways", this.auxBehaviour);
-        const geopath = 'Layers/Norway/HE.geojson';
-        loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", -1, colll));
-        loadMarkerLayer(countryMenu.value, "Ex");
-      }
-    };
+  public sandbox(): void { }
+
+}
+
+class Highways extends Layer {
+
+  public constructor() {
+    super();
+    this.displayName = "Highways";
+    this.mainGeoJSONopacity = 0;
   }
+
+  public show(): void {
+    showAuxButton("Next set of highways", this.auxBehaviour);
+    const geopath = 'Layers/Norway/HE.geojson';
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", -1, colll));
+    loadMarkerLayer(countryMenu.value, "Ex");
+}
 
   public sandbox(): void { }
 
   public auxBehaviour(): void {
     if (layerMenu.value == "Highways") {
       clearSecondaryLayer();
-      let spornum = markers[0].content.textContent.substring(9, 10);
+      let spornum = markers[0].content?.textContent?.substring(9, 10);
       let numb;
       if (spornum == "H") numb = 0;
       else if (spornum == " ") numb = 1;
@@ -84,4 +92,3 @@ export class Norway extends Country {
     }
   }
 }
-

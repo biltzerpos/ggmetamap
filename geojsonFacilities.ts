@@ -2,6 +2,7 @@ import { getGlobals } from './globals';
 import { colog } from './utilities.js';
 
 export async function loadGeoJSONFile(path: string, layer = "boundaryLayer", postProcess?) {
+    colog(path);
     let response = await fetch(path);
     let contents = await response.text();
     if (contents) {
