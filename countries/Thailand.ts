@@ -1,8 +1,8 @@
-import { markers, countryMenu, layerMenu, flags, settings } from '../globals';
+import { markers, countryMenu, layerMenu, flags, auxButton } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
 import { newLayerReset, showAuxButton } from '../index';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
-import { markerInMiddle } from '../postprocess';
+import { markerInMiddle, thickBlue } from '../postprocess';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial } from '../utilities';
@@ -32,10 +32,26 @@ class Districts extends Layer {
     this.displayName = "Districts";
   }
 
+  private showBorders: boolean = false;
+
   public show(): void {
-      loadMarkerLayer(countryMenu.value, layerMenu.value);
+    flags.displayPopups = false;
+    showAuxButton("Show Province borders", this.auxBehaviour);
+    loadMarkerLayer(countryMenu.value, layerMenu.value);
   }
 
   public sandbox(): void { }
-  public auxBehaviour(): void {}
+
+  public auxBehaviour(): void {
+    this.showBorders = !this.showBorders;
+    if (this.showBorders) {
+      auxButton.textContent = "Hide Province Borders";
+      loadGeoJSONFile('/Layers/Thailand/Level1.geojson', "secondaryLayer", thickBlue);
+    }
+    else {
+      clearSecondaryLayer();
+      auxButton.textContent = "Show Province Borders";
+    }
+  }
 }
+

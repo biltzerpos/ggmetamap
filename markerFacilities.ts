@@ -1,11 +1,28 @@
-import { getGlobals } from './globals';
+import { getGlobals, flags, settings, colors } from './globals';
+import { markers, selectedMarkers, unselectAllMarkers } from './globals';
 import { colog } from './utilities.js';
-import { markers, countryMenu, layerMenu, flags, settings, colors } from './globals';
 
 export function loadMarkerLayer(country, layer) {
     const path = '/Layers/' + country + '/' + layer + '.json';
     const imagepath = '/Layers/' + country + '/' + layer + ' Images/';
     loadMarkers(path, imagepath);
+}
+
+export function removeAllMarkers() {
+    hideAllMarkers();
+    markers.length = 0;
+}
+
+export function hideAllMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].map = null;
+    }
+}
+
+export function showAllMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+        markers[i].map = getGlobals().map;
+    }
 }
 
 async function loadMarkers(path: string, imagepathdir: string): Promise<void> {
@@ -51,7 +68,8 @@ export function placeNewMarker(map, position, content = "00", imagepath = "", ty
                 fszl--;
                 marker.setAttribute("fszl", fszl.toString());
                 if (marker.content && marker.content instanceof HTMLElement) {
-                    marker.content.style.transform = getTransform(marker);
+                    //marker.content.style.transform = 
+                    updateSize(marker);
                 } else {
                     console.error("Marker content is not an HTMLElement, weird!");
                 }
@@ -63,7 +81,8 @@ export function placeNewMarker(map, position, content = "00", imagepath = "", ty
                 fszl++;
                 marker.setAttribute("fszl", fszl.toString());
                 if (marker.content && marker.content instanceof HTMLElement) {
-                    marker.content.style.transform = getTransform(marker);
+                    //marker.content.style.transform = 
+                    updateSize(marker);
                 } else {
                     console.error("Marker content is not an HTMLElement, weird!");
                 }
@@ -76,14 +95,14 @@ export function placeNewMarker(map, position, content = "00", imagepath = "", ty
                 markers.splice(index, 1); // 2nd parameter means remove one item only
             }
             colog(markers.length);
-        } else if (flags.editMode && event.domEvent.altKey) { // Option-Click = Change to red backgroung
+        } else if (flags.editMode && event.domEvent.altKey && marker.content && marker.content instanceof HTMLElement) { // Option-Click = Change to red backgroung
             const mtype = marker.getAttribute("ggmmtype");
             colog(mtype);
             if (mtype == "name") {
                 marker.content.style.setProperty('--marker-color', colors[3]);
                 marker.setAttribute("ggmmtype", "text3");
             }
-            else if (mtype.startsWith("text")) {
+            else if (mtype && mtype.startsWith("text")) {
                 let col = Number(mtype[4]);
                 col++;
                 if (col == 10) col = 0;
@@ -99,20 +118,23 @@ export function placeNewMarker(map, position, content = "00", imagepath = "", ty
                 img.src = imagepath;
                 img.onload = function () {
                     // Once the image is loaded, get its dimensions
-                    var width = this.naturalWidth;
-                    var height = this.naturalHeight;
+                    const width = marker.getAttribute("ggmmWidth"); //this.naturalWidth;
+                    const height = marker.getAttribute("ggmmHeight"); //this.naturalHeight;
+                    if (!width || !height) return;
+                    const h = Number(height);
+                    const w = Number(width);
                     //console.log(window.screen.height);
                     //console.log(window.screen.width);
                     const maxh = Math.floor(window.screen.height * 0.9);
                     // Set max height
-                    if (height > maxh) {
+                    if (h > maxh) {
                         img.style.setProperty('--iwmh', maxh.toString());
                     }
                     else {
-                        img.style.setProperty('--iwmh', height.toString());
+                        img.style.setProperty('--iwmh', h.toString());
                     }
                     const maxw = Math.floor(window.screen.width * 0.9);
-                    if (width > maxw) {
+                    if (w > maxw) {
                         // Set max width
                         getGlobals().infoWindow.setOptions({
                             maxWidth: maxw
@@ -120,11 +142,11 @@ export function placeNewMarker(map, position, content = "00", imagepath = "", ty
                     }
                     else {
                         getGlobals().infoWindow.setOptions({
-                            maxWidth: Math.floor(width * 1.1)
+                            maxWidth: Math.floor(w * 1.2)
                         });
                     }
                     getGlobals().infoWindow.setContent(img);
-                    getGlobals().infoWindow.class = "custom-infowindow";
+                    //getGlobals().infoWindow.class = "custom-infowindow";
 
                     const bounds = map.getBounds();
                     const northLat = bounds.getNorthEast().lat();
@@ -132,16 +154,16 @@ export function placeNewMarker(map, position, content = "00", imagepath = "", ty
                     const latDifference = northLat - southLat;
                     const mapHeight = map.getDiv().offsetHeight;
                     const cen = map.getCenter();
-                    const goDown = (height / 2) * latDifference / mapHeight;
+                    const goDown = (h / 2) * latDifference / mapHeight;
                     const newLat = cen.lat() - goDown;
                     getGlobals().infoWindow.setPosition({ lat: newLat, lng: cen.lng() });
                     getGlobals().infoWindow.open(map);
                 };
             }
-            else if (flags.editMode) {
-                var result = prompt("Enter new value for marker:", marker.content.textContent);
-                let thistype = marker.getAttribute("ggmmtype");
-                if (result) setMarkerContent(marker, result, marker.content.src, marker.getAttribute("ggmmtype"), fszl);
+            else if (flags.editMode) { // text marker
+                var result = prompt("Enter new value for marker:", marker.content?.textContent?.toString());
+                //if (result) setMarkerContent(marker, result, marker.content.src, marker.getAttribute("ggmmtype"), fszl);
+                if (result) setMarkerContent(marker, result, "", marker.getAttribute("ggmmtype"), fszl);
             }
         }
     });
@@ -154,17 +176,31 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
         const img = document.createElement('img');
         img.src = imagepath;
         img.onload = function () {
+            img.alt = text;
             var height = this.height;
+            var width = this.width;
+            marker.setAttribute("ggmmHeight", height.toString());
+            marker.setAttribute("ggmmWidth", width.toString());
             let zoomReduction = 0;
             while (height > 200) {
                 zoomReduction++;
                 height = height / 2.0;
+                width = width / 2.0;
             }
             if (fszl == -1) fszl = getGlobals().map.getZoom() + zoomReduction;
             marker.setAttribute("fszl", fszl.toString());
-            img.style.transform = getTransform(marker);
-            img.alt = text;
+
+            // img.style.height = height;
+            // img.style.width = width;
+
+            //img.style.transform = getTransform(marker);
+
             marker.content = img;
+            // marker.content.style.width = width;
+            // marker.content.style.height = height;
+            updateSize(marker);
+            colog(marker.content.style.width);
+            colog(marker.content.style.height);
         };
     }
     else { // We are dealing with a text marker
@@ -182,12 +218,23 @@ function setMarkerContent(marker, text, imagepath, type, fszl) {
             }
         }
         markerDiv.textContent = text.toString();
+        markerDiv.addEventListener("contextmenu", (event) => {
+            event.preventDefault(); // Prevent the default browser context menu
+            event.stopPropagation();
+            colog("Right-click detected on the marker!");
+            colog("Marker position:" + marker.position);
+            colog(event);
+            unselectAllMarkers();
+            selectedMarkers.push(marker);
+            google.maps.event.trigger(getGlobals().map, "contextmenu", event);
+        });
         marker.content = markerDiv;
-        marker.content.style.transform = getTransform(marker);
+        //marker.content.style.transform = 
+        updateSize(marker);
     }
 }
 
-export function getTransform(marker) {
+export function updateSize(marker) {
     let sc = 1;
     let fszl = Number(marker.getAttribute("fszl"));
     let mtype = marker.getAttribute("ggmmtype");
@@ -202,7 +249,15 @@ export function getTransform(marker) {
         //let isName = marker.getAttribute("ggmmtype") == "name";
         //if ((mtype == "name") && (sc > 1)) sc = 1;
     }
-    let transform = "scale(" + sc + "," + sc + ")";
-    if (isImage) transform = 'translateY(50%) ' + transform;
-    return transform;
+    if (isImage) {
+        let newWidth = marker.getAttribute("ggmmWidth");
+        newWidth = newWidth * sc;
+        marker.content.style.width = newWidth + "px";
+        let newHeight = marker.getAttribute("ggmmHeight");
+        newHeight = newHeight * sc;
+        marker.content.style.heigth = newHeight + "px";
+    }
+    else { // text marker
+        marker.content.style.transform = "scale(" + sc + "," + sc + ")";
+    }
 }

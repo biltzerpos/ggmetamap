@@ -32,6 +32,8 @@ class Kabupaten extends Layer {
     this.displayName = "Kabupaten";
   }
 
+  private showBorders: boolean = false;
+
   public show(): void {
     flags.displayPopups = false;
     showAuxButton("Show Province borders", this.auxBehaviour);
@@ -41,8 +43,8 @@ class Kabupaten extends Layer {
   public sandbox(): void { }
 
   public auxBehaviour(): void {
-    flags.showBorders = !flags.showBorders;
-    if (flags.showBorders) {
+    this.showBorders = !this.showBorders;
+    if (this.showBorders) {
       auxButton.textContent = "Hide Province Borders";
       loadGeoJSONFile('/Layers/Indonesia/Level1.geojson', "secondaryLayer", thickBlue);
     }

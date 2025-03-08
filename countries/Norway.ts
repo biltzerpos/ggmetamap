@@ -1,13 +1,13 @@
 import { markers, countryMenu, layerMenu } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
-import { newLayerReset, showAuxButton, removeAllMarkers } from '../index';
-import { colorCodingBasedOnField } from '../postprocess';
-import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
+import { newLayerReset, showAuxButton } from '../index';
+import { processFeatures } from '../postprocess';
+import { loadMarkerLayer, removeAllMarkers } from '../markerFacilities';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial } from '../utilities';
 
-let colll = {
+let colll: { [key: string]: number } = {
   "E 6": 0,
   "E 12": 1,
   "E 14": 2,
@@ -51,9 +51,11 @@ class Highways extends Layer {
   public show(): void {
     showAuxButton("Next set of highways", this.auxBehaviour);
     const geopath = 'Layers/Norway/HE.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", -1, colll));
+    //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", -1, colll));
+    const options = { type: "array-based", field: "ref", colArray: colll };
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
     loadMarkerLayer(countryMenu.value, "Ex");
-}
+  }
 
   public sandbox(): void { }
 
@@ -70,21 +72,27 @@ class Highways extends Layer {
       }
       if (numb == 10) {
         const geopath = 'Layers/Norway/HE.geojson';
-        loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", -1, colll));
+        //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", -1, colll));
+        const options = { type: "array-based", field: "ref", colArray: colll };
+        loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
         removeAllMarkers();
         loadMarkerLayer(countryMenu.value, "Ex");
         //markers[0].content.textContent = "European Highways";
       }
       else if (numb == 0) {
         const geopath = 'Layers/Norway/H .geojson';
-        loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 0));
+        //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 0));
+        const options = { type: "field-based", field: "ref", digit: 0 };
+        loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
         removeAllMarkers();
         loadMarkerLayer(countryMenu.value, "0x");
         //markers[0].content.textContent = "Highways  2-9";
       }
       else {
         const geopath = 'Layers/Norway/H' + numb + '.geojson';
-        loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 1));
+        //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 1));
+        const options = { type: "field-based", field: "ref", digit: 1 };
+        loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
         //markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
         removeAllMarkers();
         loadMarkerLayer(countryMenu.value, numb + "x");

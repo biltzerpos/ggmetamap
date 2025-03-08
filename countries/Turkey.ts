@@ -1,8 +1,8 @@
-import { markers, countryMenu, layerMenu, flags, settings } from '../globals';
+import { markers, countryMenu, layerMenu, flags, settings, colors } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
 import { newLayerReset, showAuxButton, cycleLayers } from '../index';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
-import { colorCodingFixed, markerInMiddleRemoveNodes } from '../postprocess';
+import { processFeatures, markerInMiddleRemoveNodes } from '../postprocess';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial } from '../utilities';
@@ -53,8 +53,11 @@ class Highways extends Layer {
     const group = this.displayName.substring(1, 2);
       hnames[group].forEach(async (name, index) => {
         const col = Number(name.substring(1, 2));
-        const geopath = 'Layers/Turkey/geojson/D' + name + '.geojson';
-        loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, col));
+        const fileName = 'D' + name + '.geojson';
+        const geopath = 'Layers/Turkey/geojson/' + fileName;
+        // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, col));
+        const options = { type: "specified", colour: colors[col], fileName: fileName};
+        loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
       });
       loadMarkerLayer("Turkey", "D" + group);
   }

@@ -1,5 +1,6 @@
-import { getGlobals } from './globals';
-import { colog } from './utilities.js';
+import { getGlobals, selectedFeatures, unselectAllFeatures } from './globals';
+import { colog, partial } from './utilities.js';
+import { processFeatures } from './postprocess';
 
 export async function loadGeoJSONFile(path: string, layer = "boundaryLayer", postProcess?) {
     colog(path);
@@ -10,6 +11,23 @@ export async function loadGeoJSONFile(path: string, layer = "boundaryLayer", pos
     }
 }
 
+export function readGeoJSONFile(file: any) {
+    const reader = new FileReader();
+
+    reader.onload = function (e) {
+        //(reader.result as string, "secondaryLayer", colorCodingFixed);
+        const options = { type: "inherent", fileName: file.name };
+        //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCoding, options));
+        loadGeoJsonString(reader.result as string, "secondaryLayer", partial(processFeatures, options));
+    };
+
+    reader.onerror = function (e) {
+        console.error("reading failed");
+    };
+
+    reader.readAsText(file);
+}
+
 export function loadGeoJsonString(geoString: string, layer = "boundaryLayer", postProcess) {
     try {
         //colog(geoString);
@@ -17,15 +35,13 @@ export function loadGeoJsonString(geoString: string, layer = "boundaryLayer", po
         //colog(geojson);
         if (layer == "boundaryLayer") {
             let newFeatures = getGlobals().boundaryLayer.addGeoJson(geojson);
-            
+
             if (postProcess) postProcess(newFeatures);
             zoom(getGlobals().map);
         }
         else if (layer.startsWith("secondaryLayer")) {
             if (layer == "secondaryLayerClear") clearSecondaryLayer();
             let newFeatures = getGlobals().secondaryLayer.addGeoJson(geojson);
-            colog("newFeatures");
-            colog(newFeatures);
             if (postProcess) postProcess(newFeatures);
         }
         else console.log("Unknown layer");
@@ -35,7 +51,37 @@ export function loadGeoJsonString(geoString: string, layer = "boundaryLayer", po
     }
 }
 
+export function select(layer, feature, clear: boolean) {
+    if (clear) {
+        //Un-highlight the selected features
+        processFeatures(selectedFeatures, { selected: false });
+        unselectAllFeatures();
+    }
+    layer.forEach(function (f) {
+        if (f.getProperty("ggmmFileName") === feature.getProperty("ggmmFileName")) {
+            selectedFeatures.push(f);
+        }
+    });
+    // Highlight the selected features
+    processFeatures(selectedFeatures, { selected: true });
+}
+
+export function clearBoundaryLayer() {
+    getGlobals().boundaryLayer.forEach(function (feature) {
+        getGlobals().boundaryLayer.remove(feature);
+    });
+}
+
 export function clearSecondaryLayer() {
+    getGlobals().secondaryLayer.forEach(function (feature) {
+        getGlobals().secondaryLayer.remove(feature);
+    });
+}
+
+export function removeAllFeatures() {
+    getGlobals().boundaryLayer.forEach(function (feature) {
+        getGlobals().boundaryLayer.remove(feature);
+    });
     getGlobals().secondaryLayer.forEach(function (feature) {
         getGlobals().secondaryLayer.remove(feature);
     });

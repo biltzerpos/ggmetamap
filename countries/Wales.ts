@@ -1,8 +1,8 @@
-import { markers, countryMenu, layerMenu, flags, settings, getGlobals } from '../globals';
+import { markers, countryMenu, layerMenu, flags, settings, getGlobals, colors } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile, downloadGeoJson } from '../geojsonFacilities';
 import { newLayerReset, showAuxButton } from '../index';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
-import { markerInMiddle, colorCodingBasedOnField, colorCodingFixed } from '../postprocess';
+import { markerInMiddle, processFeatures } from '../postprocess';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial, colog } from '../utilities';
@@ -92,7 +92,10 @@ class MostUsefulHighwayMeta extends Layer {
   public show(): void {
     showAuxButton("Next set of highways", this.auxBehaviour);
     const geopath = 'Layers/Wales/A5x.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     placeNewMarker(getGlobals().map, { lat: 52.5, lng: -4.8 }, "A5xxx");
   }
 
@@ -102,7 +105,10 @@ class MostUsefulHighwayMeta extends Layer {
     let hnames = ["A5x", "B5x", "A46", "A49", "B42"];
     let index: number = findNextIndex(hnames);
     const geopath = 'Layers/Wales/' + hnames[index] + '.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     if (markers[0].content) markers[0].content.textContent = hnames[index] + "xx";
   }
 }
@@ -117,7 +123,10 @@ class AHighways extends Layer {
   public show(): void {
     showAuxButton("Next set of highways", this.auxBehaviour);
     const geopath = 'Layers/Wales/A40.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 7));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 7));
+    const options = { type: "specified", colour: colors[3], weight: 3};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     placeNewMarker(getGlobals().map, { lat: 52.5, lng: -4.8 }, "A40xx");
   }
 
@@ -127,7 +136,10 @@ class AHighways extends Layer {
     let hnames = ["A40", "A41", "A42", "A46", "A47", "A48", "A49", "A5x", "A50", "A51", "A52", "A53", "A54", "A55"];
     let index: number = findNextIndex(hnames);
     const geopath = 'Layers/Wales/' + hnames[index] + '.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 3));
+    const options = { type: "specified", colour: colors[3], weight: 3};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     if (markers[0].content) markers[0].content.textContent = hnames[index] + "xx";
   }
 }
@@ -142,7 +154,10 @@ class BHighways extends Layer {
   public show(): void {
     showAuxButton("Next set of highways", this.auxBehaviour);
     const geopath = 'Layers/Wales/B42.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 7));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 7));
+    const options = { type: "specified", colour: colors[3], weight: 3};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     placeNewMarker(getGlobals().map, { lat: 52.5, lng: -4.8 }, "B42xx");
   }
 
@@ -152,7 +167,10 @@ class BHighways extends Layer {
     let hnames = ["B42", "B43", "B44", "B45", "B46", "B48", "B5x", "B50", "B51", "B53", "B54"];
     let index: number = findNextIndex(hnames);
     const geopath = 'Layers/Wales/' + hnames[index] + '.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 3));
+    const options = { type: "specified", colour: colors[3], weight: 3};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     if (markers[0].content) markers[0].content.textContent = hnames[index] + "xx";
   }
 }
@@ -166,7 +184,10 @@ class MainBikeRoutes extends Layer {
 
   public show(): void {
     const geopath = 'Layers/Wales/Bike458.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref"));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref"));
+    const options = { type: "field-based", field: "ref", digit: 0};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     loadMarkerLayer(countryMenu.value, "Bike458");
   }
 
@@ -183,7 +204,10 @@ class AllBikeRoutes extends Layer {
 
   public show(): void {
     const geopath = 'Layers/Wales/BikeAll.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref"));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref"));
+    const options = { type: "field-based", field: "ref", digit: 0};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     loadMarkerLayer(countryMenu.value, "BikeAll");
   }
 

@@ -1,7 +1,7 @@
-import { markers, countryMenu, layerMenu, getGlobals } from '../globals';
+import { markers, countryMenu, layerMenu, getGlobals, colors } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
 import { newLayerReset, showAuxButton } from '../index';
-import { colorCodingFixed } from '../postprocess';
+import { processFeatures } from '../postprocess';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
 import { Layer } from './Layer';
@@ -51,7 +51,10 @@ class MainBikeRoutes extends Layer {
   public show(): void {
     showAuxButton("Next route", this.auxBehaviour);
     const geopath = 'Layers/Estonia/geojson/B1.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     placeNewMarker(getGlobals().map, { lat: 59.3, lng: 22.7 }, "Bike Route 1");
   }
 
@@ -64,7 +67,10 @@ class MainBikeRoutes extends Layer {
     if (numb == 7) numb = 11;
     if (numb == 17) numb = 1;
     const geopath = 'Layers/Estonia/geojson/B' + numb + '.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    //loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     if (markers[0].content) markers[0].content.textContent = "Bike Route " + numb;
   }
 }
@@ -79,7 +85,10 @@ class ThreeDigitBikeRoutes extends Layer {
   public show(): void {
     showAuxButton("Next set of routes", this.auxBehaviour);
     const geopath = 'Layers/Estonia/geojson/B14x.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     placeNewMarker(getGlobals().map, { lat: 59.3, lng: 22.7 }, "Bike Routes 140-149");
   }
 
@@ -98,7 +107,10 @@ class ThreeDigitBikeRoutes extends Layer {
     if (numb == 31) numb = 32;
     if (numb == 38) numb = 14;
     const geopath = 'Layers/Estonia/geojson/B' + numb + 'x.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
     if (markers[0].content) markers[0].content.textContent = "Bike Routes " + numb + "0-" + numb + "9";
   }
@@ -114,7 +126,10 @@ class Highways extends Layer {
   public show(): void {
     showAuxButton("Next set of highways", this.auxBehaviour);
     const geopath = 'Layers/Estonia/geojson/H1.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     placeNewMarker(getGlobals().map, { lat: 59.3, lng: 22.7 }, "Highways 12-19");
   }
 
@@ -126,7 +141,10 @@ class Highways extends Layer {
     numb++;
     if (numb == 10) numb = 1;
     const geopath = 'Layers/Estonia/geojson/H' + numb + '.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
+    const options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
     if (markers[0].content) markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
   }
@@ -141,7 +159,10 @@ class Rivers extends Layer {
 
   public show(): void {
     const geopath = 'Layers/Estonia/Rivers.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 7, 7));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 7, 7));
+    const options = { type: "specified", colour: colors[7], weight: 7};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     loadMarkerLayer(countryMenu.value, layerMenu.value);
   }
 

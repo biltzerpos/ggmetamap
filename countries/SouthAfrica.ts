@@ -5,7 +5,7 @@ import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial } from '../utilities';
-import { colorCodingBasedOnField } from '../postprocess';
+import { processFeatures } from '../postprocess';
 
 export class SouthAfrica extends Country {
 
@@ -110,7 +110,10 @@ class Highways extends Layer {
     //const group = layerMenu.value.substring(0, 2).replace(/\s/g, '');
     const group = this.displayName.substring(0, 2).replace(/\s/g, '');
     const geopath = 'Layers/South Africa/geojson/' + group + 'x.geojson';
-    loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 9));
+    // loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 9));
+    const options = { type: "field-based", field: "ref", digit: 9};
+    loadGeoJSONFile(geopath, "secondaryLayer", partial(processFeatures, options));
+
     loadMarkerLayer("South Africa", "markers/" + group);
   }
 

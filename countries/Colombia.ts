@@ -1,8 +1,8 @@
-import { markers, countryMenu, layerMenu, settings } from '../globals';
+import { markers, countryMenu, layerMenu, settings, colors } from '../globals';
 import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from '../geojsonFacilities';
 import { loadMarkerLayer, placeNewMarker } from '../markerFacilities';
 import { Country } from './Country';
-import { colorCodingFixed } from '../postprocess';
+import { processFeatures } from '../postprocess';
 import { partial } from '../utilities';
 import { Layer } from './Layer';
 
@@ -34,15 +34,39 @@ class Highways extends Layer {
 
   public show(): void {
     loadMarkerLayer(countryMenu.value, layerMenu.value);
-    loadGeoJSONFile('Layers/Colombia/05.geojson', "secondaryLayer", partial(colorCodingFixed, 0));
+    //loadGeoJSONFile('Layers/Colombia/05.geojson', "secondaryLayer", partial(colorCodingFixed, 0));
+    let options = { type: "specified", colour: colors[0]};
+    loadGeoJSONFile('Layers/Colombia/05.geojson', "secondaryLayer", partial(processFeatures, options));
+
     //loadGeoJSONFile('Layers/Colombia/25.geojson', "secondaryLayer");
-    loadGeoJSONFile('Layers/Colombia/4001.geojson', "secondaryLayer", partial(colorCodingFixed, 1));
-    loadGeoJSONFile('Layers/Colombia/4002345.geojson', "secondaryLayer", partial(colorCodingFixed, 6));
-    loadGeoJSONFile('Layers/Colombia/400678.geojson', "secondaryLayer", partial(colorCodingFixed, 7));
-    loadGeoJSONFile('Layers/Colombia/2501A.geojson', "secondaryLayer", partial(colorCodingFixed, 2));
-    loadGeoJSONFile('Layers/Colombia/2501B.geojson', "secondaryLayer", partial(colorCodingFixed, 3));
-    loadGeoJSONFile('Layers/Colombia/2504A.geojson', "secondaryLayer", partial(colorCodingFixed, 4));
-    loadGeoJSONFile('Layers/Colombia/2505B.geojson', "secondaryLayer", partial(colorCodingFixed, 5));
+
+    //loadGeoJSONFile('Layers/Colombia/4001.geojson', "secondaryLayer", partial(colorCodingFixed, 1));
+    options = { type: "specified", colour: colors[1]};
+    loadGeoJSONFile('Layers/Colombia/4001.geojson', "secondaryLayer", partial(processFeatures, options));
+
+    //loadGeoJSONFile('Layers/Colombia/4002345.geojson', "secondaryLayer", partial(colorCodingFixed, 6));
+    options = { type: "specified", colour: colors[6]};
+    loadGeoJSONFile('Layers/Colombia/4002345.geojson', "secondaryLayer", partial(processFeatures, options));
+
+    //loadGeoJSONFile('Layers/Colombia/400678.geojson', "secondaryLayer", partial(colorCodingFixed, 7));
+    options = { type: "specified", colour: colors[7]};
+    loadGeoJSONFile('Layers/Colombia/400678.geojson', "secondaryLayer", partial(processFeatures, options));
+    
+    //loadGeoJSONFile('Layers/Colombia/2501A.geojson', "secondaryLayer", partial(colorCodingFixed, 2));
+    options = { type: "specified", colour: colors[2]};
+    loadGeoJSONFile('Layers/Colombia/2501A.geojson', "secondaryLayer", partial(processFeatures, options));
+
+    //loadGeoJSONFile('Layers/Colombia/2501B.geojson', "secondaryLayer", partial(colorCodingFixed, 3));
+    options = { type: "specified", colour: colors[3]};
+    loadGeoJSONFile('Layers/Colombia/2501B.geojson', "secondaryLayer", partial(processFeatures, options));
+    
+    //loadGeoJSONFile('Layers/Colombia/2504A.geojson', "secondaryLayer", partial(colorCodingFixed, 4));
+    options = { type: "specified", colour: colors[4]};
+    loadGeoJSONFile('Layers/Colombia/2504A.geojson', "secondaryLayer", partial(processFeatures, options));
+    
+    //loadGeoJSONFile('Layers/Colombia/2505B.geojson', "secondaryLayer", partial(colorCodingFixed, 5));
+    options = { type: "specified", colour: colors[5]};
+    loadGeoJSONFile('Layers/Colombia/2505B.geojson', "secondaryLayer", partial(processFeatures, options));
 }
 
   public sandbox(): void { }

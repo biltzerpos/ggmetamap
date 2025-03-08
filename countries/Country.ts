@@ -36,7 +36,6 @@ export abstract class Country {
     layerMenu.selectedIndex = 1;
     const event = new Event("change");
     layerMenu.dispatchEvent(event);
-
   }
 
   // Abstract method that must be implemented by subclasses
@@ -45,6 +44,6 @@ export abstract class Country {
   // Top-level layers
   protected layers: Layer[] = [];
 
-  mainGeoJSONpath: string = "";
+  protected mainGeoJSONpath: string = "";
 }
 

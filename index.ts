@@ -1,19 +1,24 @@
-//import turf from './turf.min.js';
-import { markers, countryMenu, layerMenu, auxButton, flags, settings, colors, overlays } from './globals';
-import { initializeGlobals, getGlobals } from './globals';
-import { colog, partial, splitCamelCase, resolveToNumber } from './utilities';
-import { zoom, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile } from './geojsonFacilities';
-import { loadMarkerLayer, placeNewMarker, getTransform } from './markerFacilities';
-import { colorCodingFixed } from './postprocess';
+import { markers, countryMenu, layerMenu, auxButton, flags, infoButton, overlays, selectedFeatures, unselectAllFeatures, unselectAllMarkers } from './globals';
+import { initializeGlobals, getGlobals, infoWindowContent, selectedMarkers, quizBehaviour } from './globals';
+import { colog, partial, readZip, resolveToNumber, renameFile, calculateDistance } from './utilities';
+import { readGeoJSONFile, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile, select, removeAllFeatures } from './geojsonFacilities';
+import { loadMarkerLayer, placeNewMarker, updateSize, hideAllMarkers, showAllMarkers, removeAllMarkers } from './markerFacilities';
+import { processFeatures } from './postprocess';
+import { CustomOverlay } from './CustomOverlay';
+
+await google.maps.importLibrary("maps");
+await google.maps.importLibrary("marker");
+await google.maps.importLibrary("streetView");
 
 let boundaryLayer: google.maps.Data;
 let secondaryLayer: google.maps.Data;
 let map: google.maps.Map;
 let infoWindow: google.maps.InfoWindow;
-let rectangle;
+let customOverlay: CustomOverlay;
+let rectangle: google.maps.Rectangle;
 let startLatLng;
 let rec = false;
-let auxListener;
+let auxListener, infoListener;
 let saveLocsDiv, saveLayerDiv, saveGeoJsonDiv, editDocDiv;
 const modules: Record<string, () => Promise<any>> = import.meta.glob('./countries/*.ts');
 
@@ -68,12 +73,7 @@ function removeAllOverlays() {
     }
 }
 
-function removeAccentsAndUpperCase(str) {
-    return str
-        .normalize('NFD') // Normalize the string to decompose accented characters
-        .replace(/[\u0300-\u036f]/g, '') // Remove diacritical marks
-        .toUpperCase(); // Convert to uppercase
-}
+
 
 function newCountryReset() {
     lastCountry = countryMenu.value;
@@ -119,6 +119,7 @@ export function newLayerReset(opacity = 0.1) {
         secondaryLayer.setStyle({ strokeColor: 'black', strokeWeight: 3, zIndex: 2 });
         removeAllMarkers();
         hideAuxButton();
+        hideInfoButton();
         removeAllOverlays();
         flags.askToSave = false;
         if (flags.editMode) {
@@ -187,6 +188,7 @@ function createCountryChooser() {
     if (flags.localMode) countryMenu.appendChild(new Option("France Sandbox", "France Sandbox"));
     countryMenu.appendChild(new Option("Greece", "Greece"));
     if (flags.localMode) countryMenu.appendChild(new Option("Greece Sandbox", "Greece Sandbox"));
+    countryMenu.appendChild(new Option("Hungary", "Hungary"));
     countryMenu.appendChild(new Option("Indonesia", "Indonesia"));
     if (flags.localMode) countryMenu.appendChild(new Option("Indonesia Sandbox", "Indonesia Sandbox"));
     countryMenu.appendChild(new Option("Ireland", "Ireland"));
@@ -196,6 +198,7 @@ function createCountryChooser() {
     countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));
+    if (flags.localMode) countryMenu.appendChild(new Option("South Korea", "South Korea"));
     countryMenu.appendChild(new Option("Thailand", "Thailand"));
     if (flags.localMode) countryMenu.appendChild(new Option("Thailand Sandbox", "Thailand Sandbox"));
     countryMenu.appendChild(new Option("Turkey", "Turkey"));
@@ -234,32 +237,6 @@ function createCountryChooser() {
             selectOption(countryMenu, lastCountry);
         }
     };
-}
-
-function removeAllFeatures() {
-    boundaryLayer.forEach(function (feature) {
-        boundaryLayer.remove(feature);
-    });
-    secondaryLayer.forEach(function (feature) {
-        secondaryLayer.remove(feature);
-    });
-}
-
-export function removeAllMarkers() {
-    hideAllMarkers();
-    markers.length = 0;
-}
-
-function hideAllMarkers() {
-    for (let i = 0; i < markers.length; i++) {
-        markers[i].map = null;
-    }
-}
-
-function showAllMarkers() {
-    for (let i = 0; i < markers.length; i++) {
-        markers[i].map = map;
-    }
 }
 
 function saveGeoJsonBehaviour() {
@@ -327,6 +304,9 @@ function editModeOffGUI() {
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].pop();
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].pop();
     gui.editModeButton.textContent = 'Turn Edit Mode ON';
+    //Un-highlight selected features
+    processFeatures(selectedFeatures, { selected: false });
+    unselectAllFeatures();
 }
 
 function createButtonDiv(guibutton, text = "", tooltip = "", callback = null) {
@@ -419,7 +399,10 @@ async function saveLayerBehaviour() {
         if (markers[i].content instanceof HTMLImageElement) {
             text = markers[i].content.alt;
             type = "image";
-            images.push(markers[i].content);
+            const img = markers[i].content as HTMLImageElement;
+            const w = markers[i].getAttribute("ggmmWidth");
+            const h = markers[i].getAttribute("ggmmHeight");
+            images.push({content: img, width: w, height: h});
         }
         else {
             //console.log(markers[1].style.getProperty('--marker-color'));
@@ -440,10 +423,12 @@ async function saveLayerBehaviour() {
         return 0;
     });
 
-    const fileContent = JSON.stringify(markerLocData, null, 2);
-    zip.file(layerName + ".json", fileContent);
+    const markerFileContent = JSON.stringify(markerLocData, null, 2);
+    zip.file(layerName + ".ggmm.json", markerFileContent);
 
     await addImagesToZip(zip, images, layerName + " Images");
+
+    await addGeoJSONToZip(zip, layerName);
 
     // Generate the ZIP file and trigger the download
     const zipBlob = await zip.generateAsync({ type: 'blob' });
@@ -453,16 +438,6 @@ async function saveLayerBehaviour() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
-    // Do the actual download
-    // const a = document.createElement("a");
-    // a.href = URL.createObjectURL(new Blob([JSON.stringify(markerLocData, null, 2)], {
-    //     type: "application/json"
-    // }));
-    // a.setAttribute("download", "locs.json");
-    // document.body.appendChild(a);
-    // a.click();
-    // document.body.removeChild(a);
 }
 
 /**
@@ -548,21 +523,24 @@ function replaceFeatureWithLineStrings(dataLayer, feature) {
         }
     };
 
-    // Replace the feature with the new LineStrings
+    // Replace each feature with LineStrings
     const lineStrings = handleGeometry(geometry);
 
     // Remove the original feature
     dataLayer.remove(feature);
 
+    const allFeatures: google.maps.Data.Feature[] = [];
+
     // Add new LineStrings as separate features
     lineStrings.forEach((lineString) => {
-        dataLayer.add(new google.maps.Data.Feature({
+        const thisFeature = dataLayer.add(new google.maps.Data.Feature({
             geometry: lineString,
             properties: properties,
         }));
+        allFeatures.push(thisFeature);
     });
+    processFeatures(allFeatures, { type: "inherent" });
 }
-
 
 function exportFeaturesToGeoJSON(dataLayer) {
     const geoJson = getGeoJson(dataLayer);
@@ -583,13 +561,14 @@ function exportFeaturesToGeoJSON(dataLayer) {
     document.body.removeChild(link);
 }
 
-function getGeoJson(dataLayer: any) {
+function getGeoJson(dataLayer: any, ggmmfileName?: string) {
     const geoJson = turf.featureCollection([]);
     dataLayer.forEach((feature) => {
+        if (ggmmfileName && feature.getProperty("ggmmFileName") != ggmmfileName) return;
         const geometry = feature.getGeometry();
         const properties = {};
         feature.forEachProperty((value, key) => {
-            properties[key] = value;
+            if ((key != "ggmmSessionID") && (key != "ggmmFileName")) properties[key] = value;
         });
         if (geometry) {
             let turfFeature;
@@ -599,7 +578,51 @@ function getGeoJson(dataLayer: any) {
                     turfFeature = turf.point(geometry.get());
                     break;
                 case 'Polygon':
-                    turfFeature = turf.polygon(geometry.get().coordinates);
+                    const coordinates: number[][][] = [];
+
+                    // Extract rings from the Google Maps polygon
+                    (geometry as google.maps.Data.Polygon).getArray().forEach((linearRing) => {
+                        const ringCoords: number[][] = linearRing.getArray().map(latLng => [
+                            latLng.lng(),  // Longitude first
+                            latLng.lat()   // Latitude second
+                        ]);
+
+                        // Ensure the ring is closed (first and last point must be the same)
+                        if (ringCoords.length > 0 && (ringCoords[0][0] !== ringCoords[ringCoords.length - 1][0] ||
+                            ringCoords[0][1] !== ringCoords[ringCoords.length - 1][1])) {
+                            ringCoords.push(ringCoords[0]); // Close the ring
+                        }
+
+                        coordinates.push(ringCoords);
+                    });
+                    turfFeature = turf.polygon(coordinates);
+                    break;
+                case 'MultiPolygon':
+                    const multiPolygonCoordinates: number[][][][] = [];
+
+                    // Loop through each Polygon inside the MultiPolygon
+                    (geometry as google.maps.Data.MultiPolygon).getArray().forEach(polygon => {
+                        const polygonCoordinates: number[][][] = [];
+
+                        // Extract each ring (outer + holes)
+                        polygon.getArray().forEach(linearRing => {
+                            const ringCoords: number[][] = linearRing.getArray().map(latLng => [
+                                latLng.lng(), // Longitude first
+                                latLng.lat()  // Latitude second
+                            ]);
+
+                            // Ensure the ring is closed
+                            if (ringCoords.length > 0 && (ringCoords[0][0] !== ringCoords[ringCoords.length - 1][0] ||
+                                ringCoords[0][1] !== ringCoords[ringCoords.length - 1][1])) {
+                                ringCoords.push(ringCoords[0]); // Close the ring
+                            }
+
+                            polygonCoordinates.push(ringCoords);
+                        });
+
+                        multiPolygonCoordinates.push(polygonCoordinates);
+                    });
+                    turfFeature = turf.multiPolygon(multiPolygonCoordinates);
                     break;
                 case 'LineString':
                     turfFeature = turf.lineString(geometry.getArray().map(coord => [coord.lng(), coord.lat()]));
@@ -624,180 +647,6 @@ function getGeoJson(dataLayer: any) {
     return geoJson;
 }
 
-// function createSaveGeoJsonControl(map) {
-//     const saveGeoJsonButton = document.createElement('button');
-//     saveGeoJsonButton.className = "buttons";
-
-//     saveGeoJsonButton.textContent = 'Save GeoJson';
-//     saveGeoJsonButton.title = 'Click to save the displayed geojson objects';
-//     saveGeoJsonButton.type = 'button';
-
-//     // Setup the click event listener
-//     saveGeoJsonButton.addEventListener('click', () => {
-//         exportFeaturesToGeoJSON(secondaryLayer);
-//     });
-
-//     return saveGeoJsonButton;
-// }
-
-function createAuxButton() {
-    //auxButton = document.createElement('button');
-    auxButton.className = "buttons";
-    auxButton.textContent = "Default text";
-    auxButton.type = 'button';
-    // auxButton.addEventListener('click', () => {
-    //     if (countryMenu.value == "Mexico") {
-    //         showAreas = !showAreas;
-    //         if (showAreas) {
-    //             auxButton.textContent = "Hide Area Boundaries";
-    //             if (layerMenu.value == "Phone Codesall") showAllAreas();
-    //             else loadGeoJSONFile('Layers/Mexico/' + layerMenu.value + '.geojson', "secondaryLayerClear");
-    //         }
-    //         else {
-    //             clearSecondaryLayer();
-    //             auxButton.textContent = "Show Area Boundaries";
-    //         }
-    //     }
-    //     else if ((countryMenu.value == "South Africa") || (countryMenu.value == "Turkey") || (countryMenu.value == "Turkey Sandbox")) {
-    //         // Get the currently selected index
-    //         const currentSelection = layerMenu.selectedIndex;
-    //         if (currentSelection < layerMenu.options.length - 1) {
-    //             layerMenu.selectedIndex = currentSelection + 1;
-    //         }
-    //         else layerMenu.selectedIndex = 1;
-    //         const event = new Event("change");
-    //         layerMenu.dispatchEvent(event);
-    //     }
-    //     else if (countryMenu.value == "Indonesia") {
-    //         showBorders = !showBorders;
-    //         if (showBorders) {
-    //             auxButton.textContent = "Hide Province Borders";
-    //             loadGeoJSONFile('/Layers/Indonesia/Level1.geojson', "secondaryLayer", thickBlue);
-    //         }
-    //         else {
-    //             clearSecondaryLayer();
-    //             auxButton.textContent = "Show Province Borders";
-    //         }
-    //     }
-    //     else if ((countryMenu.value == "Estonia") && (layerMenu.value == "Bike routes 1-16")) {
-    //         clearSecondaryLayer();
-    //         let numb = Number(markers[0].content.textContent.substring(11));
-    //         numb++;
-    //         if (numb == 7) numb = 11;
-    //         if (numb == 17) numb = 1;
-    //         const geopath = 'Layers/Estonia/geojson/B' + numb + '.geojson';
-    //         loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
-    //         //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
-    //         markers[0].content.textContent = "Bike Route " + numb;
-    //     }
-    //     else if ((countryMenu.value == "Estonia") && (layerMenu.value == "3-digit bike routes")) {
-    //         clearSecondaryLayer();
-    //         let numb = Number(markers[0].content.textContent.substring(12, 14));
-    //         colog(numb);
-    //         numb++;
-    //         if (numb == 15) numb = 16;
-    //         if (numb == 17) numb = 20;
-    //         if (numb == 21) numb = 22;
-    //         if (numb == 24) numb = 26;
-    //         if (numb == 27) numb = 28;
-    //         if (numb == 29) numb = 30;
-    //         if (numb == 31) numb = 32;
-    //         if (numb == 38) numb = 14;
-    //         const geopath = 'Layers/Estonia/geojson/B' + numb + 'x.geojson';
-    //         loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
-    //         //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
-    //         markers[0].content.textContent = "Bike Routes " + numb + "0-" + numb + "9";
-    //     }
-    //     else if ((countryMenu.value == "Estonia") && (layerMenu.value == "Highways")) {
-    //         clearSecondaryLayer();
-    //         let numb = Number(markers[0].content.textContent.substring(9, 10));
-    //         colog(numb);
-    //         numb++;
-    //         if (numb == 10) numb = 1;
-    //         const geopath = 'Layers/Estonia/geojson/H' + numb + '.geojson';
-    //         loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
-    //         //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
-    //         markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
-    //     }
-    //     else if ((countryMenu.value == "Wales") && (layerMenu.value == "Most useful highway meta")) {
-    //         clearSecondaryLayer();
-    //         let hnames = ["A5x", "B5x", "A46", "A49", "B42"];
-    //         let numb = markers[0].content.textContent.substring(0, 3);
-    //         colog(numb);
-    //         let index = hnames.indexOf(numb);
-    //         index++;
-    //         if (index == 5) index = 0;
-    //         const geopath = 'Layers/Wales/' + hnames[index] + '.geojson';
-    //         loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3));
-    //         //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
-    //         markers[0].content.textContent = hnames[index] + "xx";
-    //         //"Highways " + numb + "0-" + numb + "9";
-    //     } else if ((countryMenu.value == "Wales") && (layerMenu.value == "A Highways")) {
-    //         clearSecondaryLayer();
-    //         let hnames = ["A40", "A41", "A42", "A46", "A47", "A48", "A49", "A5x", "A50", "A51", "A52", "A53", "A54", "A55"];
-    //         let numb = markers[0].content.textContent.substring(0, 3);
-    //         colog(numb);
-    //         let index = hnames.indexOf(numb);
-    //         index++;
-    //         if (index == 14) index = 0;
-    //         const geopath = 'Layers/Wales/' + hnames[index] + '.geojson';
-    //         loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 3));
-    //         //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
-    //         markers[0].content.textContent = hnames[index] + "xx";
-    //         //"Highways " + numb + "0-" + numb + "9";
-    //     }
-    //     else if ((countryMenu.value == "Wales") && (layerMenu.value == "B Highways")) {
-    //         clearSecondaryLayer();
-    //         let hnames = ["B42", "B43", "B44", "B45", "B46", "B48", "B5x", "B50", "B51", "B53", "B54"];
-    //         let numb = markers[0].content.textContent.substring(0, 3);
-    //         colog(numb);
-    //         let index = hnames.indexOf(numb);
-    //         index++;
-    //         if (index == 11) index = 0;
-    //         const geopath = 'Layers/Wales/' + hnames[index] + '.geojson';
-    //         loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingFixed, 3, 3));
-    //         //placeNewMarker(map, { lat: 59.3, lng: 22.7 }, "Bike Route 2");
-    //         markers[0].content.textContent = hnames[index] + "xx";
-    //         //"Highways " + numb + "0-" + numb + "9";
-    //     }
-    //     else if ((countryMenu.value == "Norway") && (layerMenu.value == "Highways")) {
-    //         clearSecondaryLayer();
-    //         let spornum = markers[0].content.textContent.substring(9, 10);
-    //         let numb;
-    //         if (spornum == "H") numb = 0;
-    //         else if (spornum == " ") numb = 1;
-    //         else {
-    //             numb = Number(spornum);
-    //             numb++;
-    //         }
-    //         colog(numb);
-    //         if (numb == 10) {
-    //             const geopath = 'Layers/Norway/HE.geojson';
-
-    //             loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "Fg", -1, colll));
-    //             removeAllMarkers();
-    //             loadMarkerLayer(countryMenu.value, "Ex");
-    //             //markers[0].content.textContent = "European Highways";
-    //         }
-    //         else if (numb == 0) {
-    //             const geopath = 'Layers/Norway/H .geojson';
-    //             loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "Fg", 0));
-    //             removeAllMarkers();
-    //             loadMarkerLayer(countryMenu.value, "0x");
-    //             //markers[0].content.textContent = "Highways  2-9";
-    //         }
-    //         else {
-    //             const geopath = 'Layers/Norway/H' + numb + '.geojson';
-    //             loadGeoJSONFile(geopath, "secondaryLayer", partial(colorCodingBasedOnField, "ref", 1));
-    //             //markers[0].content.textContent = "Highways " + numb + "0-" + numb + "9";
-    //             removeAllMarkers();
-    //             loadMarkerLayer(countryMenu.value, numb + "x");
-    //         }
-    //     }
-    // });
-    //return auxButton;
-}
-
 export function showAuxButton(name: string, listener) {
     auxButton.textContent = name;
     auxButton.removeEventListener('click', auxListener);
@@ -812,6 +661,20 @@ function hideAuxButton() {
     if (buttons.getLength() == 3) buttons.pop();
 }
 
+export function showInfoButton(name: string, listener) {
+    infoButton.textContent = name;
+    infoButton.removeEventListener('click', infoListener);
+    infoButton.addEventListener('click', listener);
+    infoListener = listener;
+    const buttons = map.controls[google.maps.ControlPosition.BOTTOM_CENTER];
+    if (buttons.getLength() == 0) buttons.push(infoButton);
+}
+
+function hideInfoButton() {
+    const buttons = map.controls[google.maps.ControlPosition.BOTTOM_CENTER];
+    if (buttons.getLength() == 1) buttons.pop();
+}
+
 function showContextMenu(event, menuItems) {
     // Create the context menu container dynamically
     if (!contextMenu) {
@@ -819,7 +682,6 @@ function showContextMenu(event, menuItems) {
         contextMenu.className = "contextMenu";
         document.body.appendChild(contextMenu);
     }
-
     // Clear the existing menu items
     const menuList = document.createElement("ul");
     contextMenu.innerHTML = ''; // Clear any existing content
@@ -838,8 +700,13 @@ function showContextMenu(event, menuItems) {
     // colog(point);
 
     // Set the position of the context menu
-    contextMenu.style.left = `${event.domEvent.clientX}px`;
-    contextMenu.style.top = `${event.domEvent.clientY}px`;
+    if (event.domEvent) {
+        contextMenu.style.left = `${event.domEvent.clientX}px`;
+        contextMenu.style.top = `${event.domEvent.clientY}px`;
+    } else {
+        contextMenu.style.left = `${event.clientX}px`;
+        contextMenu.style.top = `${event.clientY}px`;
+    }
 
     // Display the context menu
     contextMenu.style.display = "block";
@@ -852,13 +719,8 @@ function showContextMenu(event, menuItems) {
 
 async function initMap(): Promise<void> {
 
-    //@ts-ignore
-    const { Map } = await google.maps.importLibrary("maps");
-    //@ts-ignore
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-    //@ts-ignore
-    const { StreetViewCoverageLayer } = await google.maps.importLibrary("streetView");
-    streetViewLayer = new google.maps.StreetViewCoverageLayer();
+
+    //streetViewLayer = new google.maps.StreetViewCoverageLayer();
 
     await initializeGlobals();
     const globals = getGlobals();
@@ -883,8 +745,11 @@ async function initMap(): Promise<void> {
         strokeColor: 'black'
     });
 
-    google.maps.event.addListener(map, "rightclick", function (event) {
-        //colog(event);
+    // Right Click behaviour
+    map.addListener("contextmenu", (event) => {
+        colog("Map Layer rightclick");
+        colog(event);
+        //colog(event.domEvent.target);
 
         if (flags.editMode) {
             let menuItems: { label: string; action: () => void }[] = [];
@@ -895,11 +760,97 @@ async function initMap(): Promise<void> {
                     { label: "Hide Rectangle", action: hideRectangleAndContextMenu },
                 ];
             }
+            else if (selectedFeatures.length > 0) {
+                menuItems = [
+                    {
+                        label: "Change colour of selection", action: function () {
+                            contextMenu.style.display = "none";
+                            const overlayPosition = event.latLng;
+                            let startColour = "#000000";
+                            const realColour = selectedFeatures[0].getProperty('ggmmColour');
+                            if (realColour) startColour = realColour.toString();
+                            customOverlay = new CustomOverlay(overlayPosition, createColorPicker(startColour));
+                            customOverlay.setMap(map);
+                        }
+                    },
+                    {
+                        label: "Adjust line width of selection", action: function () {
+                            contextMenu.style.display = "none";
+                            const overlayPosition = event.latLng;
+                            let currentWidth = 5;
+                            const realWidth = selectedFeatures[0].getProperty('ggmmWeight');
+                            if (realWidth) currentWidth = Number(realWidth);
+                            customOverlay = new CustomOverlay(overlayPosition, createWeightAdjuster(currentWidth));
+                            customOverlay.setMap(map);
+                        }
+                    },
+                    {
+                        label: "Set info to display", action: function () {
+                            contextMenu.style.display = "none";
+                            const overlayPosition = event.latLng;
+                            // let currentWidth = 5;
+                            const fileName = selectedFeatures[0].getProperty('ggmmFileName');
+                            // if (realWidth) currentWidth = Number(realWidth);
+                            if (fileName) {
+                                customOverlay = new CustomOverlay(overlayPosition, createImageAndTextInput(fileName.toString()));
+                                customOverlay.setMap(map);
+                            }
+                        }
+                    },
+                ];
+            }
+            else if (selectedMarkers.length > 0) {
+                let labels: string[] = [];
+                if (selectedMarkers.length = 1) labels = [
+                    "Change marker text",
+                    "Change marker background colour",
+                    "Delete marker"];
+                else labels = [
+                    "Change text of selected markers",
+                    "Change background colour of selected markers",
+                    "Delete selected markers"];
+                menuItems = [
+                    {
+                        label: labels[0], action: function () {
+                            contextMenu.style.display = "none";
+                            const overlayPosition = event.latLng;
+                            let startColour = "#000000";
+                            const realColour = selectedFeatures[0].getProperty('ggmmColour');
+                            if (realColour) startColour = realColour.toString();
+                            customOverlay = new CustomOverlay(overlayPosition, createColorPicker(startColour));
+                            customOverlay.setMap(map);
+                        }
+                    },
+                    {
+                        label: labels[1], action: function () {
+                            contextMenu.style.display = "none";
+                            const overlayPosition = event.latLng;
+                            let startColour = "#000000";
+                            let realColour: string | null = null;
+                            const firstContent = selectedMarkers[0].content as HTMLElement;;
+                            if (firstContent) realColour = firstContent.style.getPropertyValue('--marker-color');
+                            if (realColour) startColour = realColour.toString();
+                            customOverlay = new CustomOverlay(overlayPosition, createColorPicker(startColour));
+                            customOverlay.setMap(map);
+                        }
+                    },
+                    {
+                        label: labels[2], action: function () {
+                            contextMenu.style.display = "none";
+                            selectedMarkers.forEach((marker) => {
+                                marker.map = null;
+                                const index = markers.indexOf(marker);
+                                if (index > -1) { // only splice array when item is found
+                                    markers.splice(index, 1); // 2nd parameter means remove one item only
+                                }
+                            });
+                        }
+                    },
+                ];
+            }
             else {
                 menuItems = [
-                    { label: "Select using rectangle", action: () => showRectangle(event) },
-                    { label: "Option 2", action: function () { alert("Option 2 clicked!"); } },
-                    { label: "Option 3", action: function () { alert("Option 3 clicked!"); } },
+                    { label: "Edit using rectangle", action: () => showRectangle(event) },
                 ];
             }
             showContextMenu(event, menuItems);
@@ -912,63 +863,89 @@ async function initMap(): Promise<void> {
     // Function to propagate events from the data layer to the map
     eventsToPropagate.forEach((eventType) => {
         boundaryLayer.addListener(eventType, (event) => {
+            colog("Boundary Layer " + eventType);
             colog(event);
             google.maps.event.trigger(map, eventType, event);
         });
-        secondaryLayer.addListener(eventType, (event) => {
-            google.maps.event.trigger(map, eventType, event);
-        });
+        // secondaryLayer.addListener(eventType, (event) => {
+        //     google.maps.event.trigger(map, eventType, event);
+        // });
     });
 
     map.addListener('dblclick', function (event) {
         if (flags.editMode) {
-            if (event.domEvent.shiftKey) {
-                if (!rec) showRectangle(event);
-                else if (rec) {
-                    deleteTouchingGeojsonFeatures();
-                }
-            }
-            else placeNewMarker(map, event.latLng);
+            placeNewMarker(map, event.latLng);
         }
     });
 
     map.addListener('click', function (event) {
+        colog(event);
         if (flags.editMode && event.feature) {
-            colog(event.feature);
+            //colog(event.feature);
         }
-        else infoWindow.close();
-    });
-
-    map.addListener('mouseup', function (e) {
-        infoWindow.close();
-    });
-
-    boundaryLayer.addListener('mousedown', function (e) {
-        // colog(e.feature);
-        if (flags.displayPopups && !flags.editMode) {
-            let name = e.feature.getProperty(settings.popupPropertyName);
-            if (name) {
-                name = removeAccentsAndUpperCase(splitCamelCase(name));
-                infoWindow.setContent('<h2 style="color: black;">' + name + '</h2>');
-                //infoWindow.setStyle = "popup-infowindow";
-                infoWindow.setPosition(e.latLng);
-                infoWindow.open(map);
-            };
+        else if (flags.quizOn) {
+            colog("here");
+            if (quizBehaviour.callback) quizBehaviour.callback(event);
+            else colog("Quiz callback was null!");
+        }
+        else {
+            infoWindow.close();
+            if (customOverlay) customOverlay.setMap(null);
+            //Un-highlight selected features
+            processFeatures(selectedFeatures, { selected: false });
+            unselectAllFeatures();
+            //event.stop();
         }
     });
 
-    secondaryLayer.addListener('mousedown', function (e) {
+    // Old popup code
+    // boundaryLayer.addListener('click', function (e) {
+    //     // colog(e.feature);
+    //     if (flags.displayPopups && !flags.editMode) {
+    //         let name = e.feature.getProperty(settings.popupPropertyName);
+    //         if (name) {
+    //             name = removeAccentsAndUpperCase(splitCamelCase(name));
+    //             infoWindow.setContent('<h2 style="color: black;">' + name + '</h2>');
+    //             //infoWindow.setStyle = "popup-infowindow";
+    //             infoWindow.setPosition(e.latLng);
+    //             infoWindow.open(map);
+    //         };
+    //     }
+    // });
+
+    secondaryLayer.addListener('click', function (e) {
         infoWindow.close();
+        if (customOverlay) customOverlay.setMap(null);
+        colog("sec");
+        colog(e);
+        colog(e.feature);
         //To remove the feature being clicked on
-        if (flags.editMode && e.domEvent.shiftKey) colog("hi"); //secondaryLayer.remove(e.feature);
+        if (flags.editMode && e.domEvent.shiftKey) { // Shift - Click to select more   
+            select(secondaryLayer, e.feature, false);
+        } else if (flags.editMode && e.domEvent.altKey) { // Opt - Click to delete
+            secondaryLayer.remove(e.feature);
+        } else if (flags.editMode) { // Click to select
+            select(secondaryLayer, e.feature, true);
+        }
         else {
             //colog(e);
-            let name = e.feature.getProperty('ref');
-            if (name) {
-                infoWindow.setContent('<h2 style="color: black;">' + name + '</h2>');
+            let infoContent;
+            const fileName = e.feature.getProperty('ggmmFileName');
+            if (fileName) infoContent = infoWindowContent[fileName];
+            if (!infoContent) { //let's also try ref
+                const refName = e.feature.getProperty('ref');
+                if (refName) {
+                    const infotext = '<h2 style="color: black;">' + refName + '</h2>';
+                    infoWindow.setContent(infotext);
+                    infoWindow.setPosition(e.latLng);
+                    infoWindow.open(map);
+                }
+            }
+            if (infoContent) {
                 //infoWindow.content.class = "popup-infowindow";
-                infoWindow.setPosition(e.latLng);
-                infoWindow.open(map);
+                //Show the info!
+                customOverlay = new CustomOverlay(e.latLng, createInfoOverlayDiv(infoContent.text, infoContent.img));
+                customOverlay.setMap(map);
             };
         }
     });
@@ -994,12 +971,10 @@ async function initMap(): Promise<void> {
     });
 
     map.addListener('zoom_changed', function () {
-        console.log(map.getZoom());
         for (let i = 0; i < markers.length; i++) {
-            //let fszl = Number(markers[i].getAttribute("fszl"));
-            const content = markers[i].content; 
+            const content = markers[i].content;
             if (content && content instanceof HTMLElement) {
-                content.style.transform = getTransform(markers[i]);
+                updateSize(markers[i]);
             } else {
                 console.error("Marker content is not an HTMLElement, weird!");
             }
@@ -1034,11 +1009,9 @@ async function initMap(): Promise<void> {
     layerSelectDiv.appendChild(layerMenu);
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(layerMenu);
 
-    // Create the aux button
-    //const auxDiv = document.createElement('div');
-    createAuxButton();
-    //auxDiv.appendChild(auxButton);
-    //map.controls[google.maps.ControlPosition.TOP_CENTER].push(auxButton);
+    auxButton.className = "buttons";
+    auxButton.textContent = "Default text";
+    auxButton.type = 'button';
 
     if (urlCountry) {
         countryMenu.value = urlCountry;
@@ -1048,6 +1021,431 @@ async function initMap(): Promise<void> {
         layerMenu.value = urlLayer;
         layerMenu.dispatchEvent(new Event('change'));
     }
+}
+
+function createColorPicker(startColour: string): HTMLDivElement {
+
+    let selectedColour = startColour;
+    // Create the main div container
+    const div = document.createElement("div");
+    div.className = "custom-overlay";
+    div.style.zIndex = "9999";
+    div.style.width = "300px";
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+
+    // Create the label
+    const label = document.createElement("label");
+    label.textContent = "Click below to pick colour";
+    label.style.marginBottom = "10px";
+
+    // Create the div to hold the color picker and cancel button
+    const buttonContainer = document.createElement("div");
+    buttonContainer.style.display = "flex";
+    buttonContainer.style.alignItems = "center";
+    buttonContainer.style.gap = "10px";
+
+    // Create the color picker input
+    const colorPicker = document.createElement("input");
+    colorPicker.type = "color";
+    colorPicker.style.flex = "3"; // Takes 60% of the space
+    colorPicker.value = startColour;
+
+    // Create the select button
+    const selectButton = document.createElement("button");
+    selectButton.textContent = "Select";
+    selectButton.style.flex = "1"; // Takes 20% of the space
+    selectButton.style.cursor = "pointer";
+    selectButton.style.fontSize = "13px";
+    selectButton.disabled = true;
+    selectButton.style.opacity = "0.5";
+
+    // Create the cancel button
+    const cancelButton = document.createElement("button");
+    cancelButton.textContent = "Cancel";
+    cancelButton.style.flex = "1"; // Takes 20% of the space
+    cancelButton.style.cursor = "pointer";
+    cancelButton.style.fontSize = "13px";
+
+    // Add event to the cancel button (to hide the div for example)
+    cancelButton.addEventListener("click", () => {
+        div.style.display = "none";
+        customOverlay.setMap(null);
+    });
+
+    selectButton.addEventListener("click", () => {
+        processFeatures(selectedFeatures, { type: "specified", colour: selectedColour });
+        unselectAllFeatures();
+        selectedMarkers.forEach((marker) => {
+            const markerContent = marker.content as HTMLElement;
+            if (markerContent) markerContent.style.setProperty('--marker-color', selectedColour);
+        });
+        unselectAllMarkers();
+        div.style.display = "none";
+        customOverlay.setMap(null);
+    });
+
+    // Append the elements to the container div
+    buttonContainer.appendChild(colorPicker);
+    buttonContainer.appendChild(selectButton);
+    buttonContainer.appendChild(cancelButton);
+    div.appendChild(label);
+    div.appendChild(buttonContainer);
+
+    stopDivEvents(div);
+
+    colorPicker.addEventListener("input", (event) => {
+        event.stopPropagation();
+        selectButton.disabled = false;
+        selectButton.style.opacity = "1";
+        selectedColour = (event.target as HTMLInputElement).value;
+        console.log("Selected color:", selectedColour);
+    });
+    // colorPicker.addEventListener("change", (event) => {
+    //     if (event.target) {
+    //         event.stopPropagation();
+    //         selectedColour = (event.target as HTMLInputElement).value;
+    //         console.log("Color selected:", selectedColour);
+    //         processFeatures(selectedFeatures, { type: "specified", colour: selectedColour });
+    //         unselectAllFeatures();
+    //         customOverlay.setMap(null);
+    //     }
+    // });
+    return div;
+}
+
+function createWeightAdjuster(defaultValue: number): HTMLDivElement {
+    // Validate default value
+    if (defaultValue < 1) {
+        throw new Error("Default value must be at least 1.");
+    }
+
+    // Create the main container div
+    const div = document.createElement("div");
+    div.className = "custom-overlay";
+    div.style.zIndex = "9999";
+    div.style.border = "1px solid black";
+    div.style.padding = "10px";
+    //div.style.width = "300px";
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+    div.style.gap = "10px";
+    div.style.alignItems = "center";
+
+    // Create the label
+    const label = document.createElement("label");
+    label.textContent = "Adjust line width";
+    label.style.fontWeight = "bold";
+
+    // Create the value container (textarea and buttons)
+    const valueContainer = document.createElement("div");
+    valueContainer.style.display = "flex";
+    valueContainer.style.alignItems = "center";
+    valueContainer.style.gap = "5px";
+
+    // Create the text area
+    const textArea = document.createElement("textarea");
+    textArea.value = defaultValue.toString();
+    textArea.style.width = "50px";
+    textArea.style.height = "25px";
+    textArea.style.resize = "none";
+    textArea.style.textAlign = "center";
+
+    // Function to update the value in the textarea
+    const updateValue = (increment: number) => {
+        const currentValue = parseInt(textArea.value, 10) || 0;
+        const newValue = Math.max(1, currentValue + increment); // Ensure value is >= 1
+        textArea.value = newValue.toString();
+    };
+
+    // Create the "+" button
+    const plusButton = document.createElement("button");
+    plusButton.textContent = "+";
+    plusButton.style.cursor = "pointer";
+    plusButton.style.padding = "5px";
+    plusButton.addEventListener("click", () => updateValue(1));
+
+    // Create the "−" button
+    const minusButton = document.createElement("button");
+    minusButton.textContent = "−";
+    minusButton.style.cursor = "pointer";
+    minusButton.style.padding = "5px";
+    minusButton.addEventListener("click", () => updateValue(-1));
+
+    // Append buttons and textarea to the value container
+    valueContainer.appendChild(label);
+    valueContainer.appendChild(minusButton);
+    valueContainer.appendChild(textArea);
+    valueContainer.appendChild(plusButton);
+
+    // Create the button container for Select and Cancel buttons
+    const buttonContainer = document.createElement("div");
+    buttonContainer.style.display = "flex";
+    buttonContainer.style.gap = "10px";
+    buttonContainer.style.justifyContent = "flex-end";
+
+    // Create the "Select" button
+    const selectButton = document.createElement("button");
+    selectButton.textContent = "Select";
+    selectButton.style.cursor = "pointer";
+    selectButton.addEventListener("click", () => {
+        console.log("Selected value:", textArea.value); // Log the adjusted value
+        processFeatures(selectedFeatures, { type: "specified", weight: Number(textArea.value) });
+        unselectAllFeatures();
+        div.remove(); // Remove the entire div
+    });
+
+    // Create the "Cancel" button
+    const cancelButton = document.createElement("button");
+    cancelButton.textContent = "Cancel";
+    cancelButton.style.cursor = "pointer";
+    cancelButton.addEventListener("click", () => {
+        div.remove(); // Remove the entire div
+    });
+
+    // Append buttons to the button container
+    buttonContainer.appendChild(selectButton);
+    buttonContainer.appendChild(cancelButton);
+
+    // Append all elements to the main div
+    div.appendChild(label);
+    div.appendChild(valueContainer);
+    div.appendChild(buttonContainer);
+
+    stopDivEvents(div);
+
+    return div;
+}
+
+function createImageAndTextInput(fileName: string): HTMLDivElement {
+    // Create the main container div
+    const container = document.createElement("div");
+    container.className = "custom-overlay";
+    container.style.zIndex = "9999";
+    container.style.border = "2px solid black";
+    container.style.borderRadius = "8px";
+    container.style.padding = "20px";
+    container.style.width = "300px";
+    container.style.display = "flex";
+    container.style.flexDirection = "column";
+    container.style.alignItems = "center";
+    container.style.gap = "10px";
+    container.style.backgroundColor = "#f9f9f9";
+
+    // --- Image Drop Zone ---
+    const dropZone = document.createElement("div");
+    dropZone.style.border = "2px dashed #ccc";
+    dropZone.style.borderRadius = "4px";
+    dropZone.style.padding = "6px";
+    dropZone.style.width = "100%";
+    dropZone.style.height = "150px";
+    dropZone.style.display = "flex";
+    dropZone.style.justifyContent = "center";
+    dropZone.style.alignItems = "center";
+    dropZone.style.textAlign = "center";
+    dropZone.style.backgroundColor = "#f9f9f9";
+    dropZone.style.cursor = "pointer";
+    dropZone.textContent = "Drag and drop an image here or click to select";
+
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/*";
+    fileInput.style.display = "none";
+
+    const imagePreview = document.createElement("img");
+    imagePreview.style.maxWidth = "100%";
+    imagePreview.style.maxHeight = "100%";
+    imagePreview.style.borderRadius = "4px";
+    imagePreview.style.padding = "8px";
+    imagePreview.style.display = "none";
+
+    let storedImageFile: File | null = null;
+
+    const handleImageUpload = (file: File) => {
+        if (!file.type.startsWith("image/")) {
+            alert("Only image files are supported!");
+            return;
+        }
+        storedImageFile = file;
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            imagePreview.src = event.target?.result as string;
+            imagePreview.style.display = "block";
+            dropZone.textContent = "";
+            dropZone.appendChild(imagePreview);
+        };
+        reader.readAsDataURL(file);
+    };
+
+    dropZone.addEventListener("dragover", (event) => {
+        event.preventDefault();
+        dropZone.style.borderColor = "#007bff";
+        dropZone.style.backgroundColor = "#e9f7fe";
+    });
+
+    dropZone.addEventListener("dragleave", () => {
+        dropZone.style.borderColor = "#ccc";
+        dropZone.style.backgroundColor = "#f9f9f9";
+    });
+
+    dropZone.addEventListener("drop", (event) => {
+        event.preventDefault();
+        dropZone.style.borderColor = "#ccc";
+        dropZone.style.backgroundColor = "#f9f9f9";
+        if (event.dataTransfer?.files.length) {
+            const file = event.dataTransfer.files[0];
+            handleImageUpload(file);
+        }
+        removeClassFromDropTarget(event);
+    });
+
+    dropZone.addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", () => {
+        if (fileInput.files?.length) {
+            const file = fileInput.files[0];
+            handleImageUpload(file);
+        }
+    });
+
+    dropZone.appendChild(fileInput);
+
+    // --- Text Area ---
+    const textArea = document.createElement("textarea");
+    textArea.style.width = "100%";
+    textArea.style.height = "100px";
+    textArea.style.border = "1px solid #ccc";
+    textArea.style.borderRadius = "4px";
+    textArea.style.padding = "8px";
+    textArea.style.resize = "none";
+    textArea.placeholder = "Enter your text here...";
+
+    // --- Button Container ---
+    const buttonContainer = document.createElement("div");
+    buttonContainer.style.display = "flex";
+    buttonContainer.style.width = "100%";
+    buttonContainer.style.justifyContent = "space-around";
+    buttonContainer.style.marginTop = "10px";
+
+    // Save Button
+    const saveButton = document.createElement("button");
+    saveButton.textContent = "Save";
+    saveButton.style.padding = "8px 16px";
+    saveButton.style.cursor = "pointer";
+    saveButton.style.border = "none";
+    saveButton.style.borderRadius = "4px";
+    saveButton.style.backgroundColor = "#007bff";
+    saveButton.style.color = "#fff";
+    saveButton.style.fontWeight = "bold";
+    saveButton.addEventListener("click", () => {
+        console.log("Saved Data:");
+        console.log("Text:", textArea.value);
+        console.log("Image:", storedImageFile);
+        let renamedFile: File | null = null;
+        if (storedImageFile) {
+            const baseName = fileName.substring(0, fileName.lastIndexOf('.')) || fileName;
+            const extension = storedImageFile.name.substring(storedImageFile.name.lastIndexOf('.')) || '';
+            const newName = baseName + extension;
+            renamedFile = renameFile(storedImageFile, newName);
+        }
+        const newContent: infoWindowContent = {
+            text: textArea.value,
+            img: imagePreview,
+            imgFile: renamedFile
+        }
+        infoWindowContent[fileName] = newContent;
+        container.remove();
+    });
+
+    // Cancel Button
+    const cancelButton = document.createElement("button");
+    cancelButton.textContent = "Cancel";
+    cancelButton.style.padding = "8px 16px";
+    cancelButton.style.cursor = "pointer";
+    cancelButton.style.border = "none";
+    cancelButton.style.borderRadius = "4px";
+    cancelButton.style.backgroundColor = "#f44336";
+    cancelButton.style.color = "#fff";
+    cancelButton.style.fontWeight = "bold";
+    cancelButton.addEventListener("click", () => {
+        container.remove();
+    });
+
+    // Append buttons to button container
+    buttonContainer.appendChild(saveButton);
+    buttonContainer.appendChild(cancelButton);
+
+    // Append all elements to the main container
+    container.appendChild(dropZone);
+    container.appendChild(textArea);
+    container.appendChild(buttonContainer);
+
+    stopDivEvents(container);
+    // Return the container
+    return container;
+}
+
+function createInfoOverlayDiv(text: string, image: HTMLImageElement): HTMLDivElement {
+    // Create the main container div
+    const container = document.createElement("div");
+    container.className = "custom-overlay";
+    container.style.zIndex = "9999";
+    container.style.border = "2px solid black";
+    container.style.borderRadius = "8px";
+    container.style.padding = "20px";
+    container.style.display = "flex";
+    container.style.flexDirection = "column";
+    container.style.alignItems = "center";
+    container.style.gap = "10px";
+    container.style.backgroundColor = "#f9f9f9";
+    //container.style.width = "min(50%, 300px)";
+    container.style.width = "80%";
+    container.style.boxSizing = "border-box";
+
+    // Add the image element
+    image.style.maxWidth = "100%";
+    image.style.borderRadius = "4px";
+    container.appendChild(image);
+
+    // Add the non-editable textarea
+    const textArea = document.createElement("textarea");
+    textArea.style.width = "100%";
+    textArea.style.height = "100px";
+    textArea.style.border = "1px solid #ccc";
+    textArea.style.borderRadius = "4px";
+    textArea.style.padding = "8px";
+    textArea.style.resize = "none";
+    textArea.style.backgroundColor = "#f0f0f0";
+    textArea.style.color = "#333";
+    textArea.style.fontSize = "14px";
+    textArea.style.textAlign = "center";
+    textArea.readOnly = true;
+    textArea.value = text;
+
+    container.appendChild(textArea);
+    stopDivEvents(container);
+    // Return the container div
+    return container;
+}
+
+function stopDivEvents(div: HTMLDivElement) {
+    const eventsToStop = ["click", "mouseup", "mousedown", "dblclick", "rightclick", "drop"];
+    eventsToStop.forEach((eventType) => {
+        div.addEventListener(eventType, (event) => {
+            event.stopPropagation();
+        });
+    });
+    // div.addEventListener("mousedown", (event) => {
+    //     event.stopPropagation();
+    // });
+    // div.addEventListener("mouseup", (event) => {
+    //     event.stopPropagation();
+    // });
+    // div.addEventListener("click", (event) => {
+    //     event.stopPropagation();
+    // });
+    // div.addEventListener("dblclick", (event) => {
+    //     event.stopPropagation();
+    // });
 }
 
 /**
@@ -1089,7 +1487,9 @@ function createProportionalRectangle(map, center, widthKm, heightKm) {
 
 function showRectangle(event: any) {
     startLatLng = event.latLng;
-    const side = Math.pow(2, (13 - map.getZoom()));
+    let side = Math.pow(2, 13);
+    const zoom = map.getZoom();
+    if (zoom) side = Math.pow(2, (13 - zoom));
     rectangle = createProportionalRectangle(map, startLatLng, side, side);
     rec = true;
     contextMenu.style.display = "none";
@@ -1178,36 +1578,7 @@ function showRectangle(event: any) {
 //     dataLayer.add(new google.maps.Data.Feature({ geometry: newLineString }));
 //   }
 
-/**
-* Calculates the distance between two google.maps.LatLng points using the Haversine formula.
-*
-* @param {google.maps.LatLng} point1 - The first point.
-* @param {google.maps.LatLng} point2 - The second point.
-* @returns {number} - The distance between the two points in kilometers.
-*/
-function calculateDistance(point1, point2) {
-    const toRadians = (degrees) => degrees * (Math.PI / 180);
 
-    const R = 6371; // Radius of the Earth in kilometers
-    const lat1 = point1.lat();
-    const lng1 = point1.lng();
-    const lat2 = point2.lat();
-    const lng2 = point2.lng();
-
-    const dLat = toRadians(lat2 - lat1);
-    const dLng = toRadians(lng2 - lng1);
-
-    const a =
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(toRadians(lat1)) *
-        Math.cos(toRadians(lat2)) *
-        Math.sin(dLng / 2) *
-        Math.sin(dLng / 2);
-
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-
-    return R * c; // Distance in kilometers
-}
 
 /**
 * Processes a LineString, splitting it into two LineStrings whenever a segment intersects the given bounds.
@@ -1334,6 +1705,8 @@ function splitAndDeleteLineString(dataLayer, lineString, bounds) {
 
     // Remove the original LineString and add the new segments
     dataLayer.remove(lineString);
+
+    const allFeatures: google.maps.Data.Feature[] = [];
     newLineStrings.forEach((newLineString) => {
         let l = newLineString.getArray().length;
         if (l < 2) {
@@ -1343,11 +1716,15 @@ function splitAndDeleteLineString(dataLayer, lineString, bounds) {
             if (l == 1) colog(newLineString.getArray()[0]);
             if (l == 1) placeNewMarker(map, newLineString.getArray()[0], "Here");
         }
-        dataLayer.add(new google.maps.Data.Feature({ geometry: newLineString, properties: properties }));
-
+        const thisFeature = dataLayer.add(new google.maps.Data.Feature({
+            geometry: newLineString,
+            properties: properties
+        }));
+        allFeatures.push(thisFeature);
     }
     );
 
+    processFeatures(allFeatures, { type: "inherent" });
     colog(newLineStrings);
     // Indicate if an intersection was found
     return intersectionFound;
@@ -1384,9 +1761,12 @@ function splitAndDelete() {
         replaceFeatureWithLineStrings(secondaryLayer, feature);
     });
     secondaryLayer.forEach((feature) => {
-        const geometryType = feature.getGeometry().getType();
-        //colog(geometryType);
-        if (geometryType == "LineString") splitAndDeleteLineString(secondaryLayer, feature, bounds);
+        const geom = feature.getGeometry();
+        if (geom) {
+            const geometryType = geom.getType();
+            //colog(geometryType);
+            if (geometryType == "LineString") splitAndDeleteLineString(secondaryLayer, feature, bounds);
+        }
     });
     hideRectangleAndContextMenu();
 }
@@ -1401,27 +1781,28 @@ function deleteTouchingGeojsonFeatures() {
     const bounds = rectangle.getBounds();
     secondaryLayer.forEach((feature) => {
         const geometry = feature.getGeometry();
-
-        // For Point geometries
-        if (geometry.getType() === "Point") {
-            const position = geometry.get();
-            if (bounds.contains(position)) {
-                console.log("Feature within bounds:", feature);
-                secondaryLayer.remove(feature);
-            }
-        }
-
-        // For other geometry types like LineString or Polygon
-        else {
-            let isInBounds = false;
-            geometry.forEachLatLng((latLng) => {
-                if (bounds.contains(latLng)) {
-                    isInBounds = true;
+        if (geometry) {
+            // For Point geometries
+            if (geometry.getType() === "Point") {
+                const point = geometry as google.maps.Data.Point;
+                const position = point.get();
+                if (bounds?.contains(position)) {
+                    console.log("Feature within bounds:", feature);
+                    secondaryLayer.remove(feature);
                 }
-            });
-            if (isInBounds) {
-                console.log("Feature within bounds:", feature);
-                secondaryLayer.remove(feature);
+            }
+            // For other geometry types like LineString or Polygon
+            else {
+                let isInBounds = false;
+                geometry.forEachLatLng((latLng) => {
+                    if (bounds?.contains(latLng)) {
+                        isInBounds = true;
+                    }
+                });
+                if (isInBounds) {
+                    console.log("Feature within bounds:", feature);
+                    secondaryLayer.remove(feature);
+                }
             }
         }
     });
@@ -1434,16 +1815,16 @@ async function addImagesToZip(zip, images, folderName) {
     const folder = zip.folder(folderName);
 
     for (let i = 0; i < images.length; i++) {
-        const img = images[i];
+        const img = images[i].content;
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
 
         // Set the canvas dimensions to match the image
-        canvas.width = img.width;
-        canvas.height = img.height;
+        canvas.width = images[i].width;
+        canvas.height = images[i].height;
 
         // Draw the image onto the canvas
-        ctx.drawImage(img, 0, 0, img.width, img.height);
+        ctx.drawImage(img, 0, 0, images[i].width, images[i].height);
 
         let extension = img.alt.split('.').pop();
         if (extension == "jpg") extension = "jpeg";
@@ -1461,33 +1842,38 @@ async function addImagesToZip(zip, images, folderName) {
     return zip;
 }
 
-function loadMarkersBootStrap(): void {
+async function addGeoJSONToZip(zip, folderName) {
+    // Create three folder in the ZIP
+    const geojsonFolder = zip.folder(folderName + " geojson");
+    const geoimagesFolder = zip.folder(folderName + " geoimages");
+    const geotextFolder = zip.folder(folderName + " geotext");
 
-    const infoWindow = new google.maps.InfoWindow();
+    let allggmmFileNames: Set<string> = new Set();
+    secondaryLayer.forEach((feature) => {
+        const name = feature.getProperty("ggmmFileName");
+        if (name) allggmmFileNames.add(name.toString());
+    });
+    allggmmFileNames.forEach((name) => {
+        // Save the geojson file
+        const geoJSON = getGeoJson(secondaryLayer, name);
+        const geoJSONcontent = JSON.stringify(geoJSON, null, 2);
+        geojsonFolder.file(name, geoJSONcontent);
+        // Save the info text
+        if (infoWindowContent[name]) {
+            const infoText = infoWindowContent[name].text;
+            if (infoText) {
+                const baseName = name.substring(0, name.lastIndexOf('.')) || name;
+                geotextFolder.file(baseName + ".txt", infoText);
+            }
+        }
+        // Save the image file
+        if (infoWindowContent[name]) {
+            const imageFile = infoWindowContent[name].imgFile;
+            if (imageFile) geoimagesFolder.file(imageFile.name, imageFile);
+        }
+    });
 
-    for (let i = 0; i < 70; i++) {
-
-        const phoneCode = document.createElement('div');
-        phoneCode.className = 'area-code';
-        let code = 20 + i;
-        phoneCode.textContent = code.toString();
-
-        let marker = new google.maps.marker.AdvancedMarkerElement({
-            map,
-            position: { lat: 40 + i / 9.9, lng: 25 },
-            content: phoneCode,
-            gmpDraggable: true,
-        });
-
-        markers.push(marker);
-
-        markers[i].addListener('dragend', (event) => {
-            const position = markers[i].position as google.maps.LatLng;
-            infoWindow.close();
-            infoWindow.setContent(`Pin dropped at: ${position.lat}, ${position.lng}`);
-            infoWindow.open(markers[i].map, markers[i]);
-        });
-    }
+    return zip;
 }
 
 function initEvents() {
@@ -1510,13 +1896,14 @@ function removeClassFromDropTarget(e: Event) {
     document.getElementById("map")!.classList.remove("over");
 }
 
-async function handleDrop(e: DragEvent) {
 
-    e.preventDefault();
-    e.stopPropagation();
-    removeClassFromDropTarget(e);
+async function handleDrop(dragEvent: DragEvent) {
+
+    dragEvent.preventDefault();
+    dragEvent.stopPropagation();
+    removeClassFromDropTarget(dragEvent);
     if (!flags.editMode) return;
-    const files = (e.dataTransfer as DataTransfer).files;
+    const files = (dragEvent.dataTransfer as DataTransfer).files;
 
     if (files.length) {
         for (let i = 0, file; (file = files[i]); i++) {
@@ -1526,46 +1913,14 @@ async function handleDrop(e: DragEvent) {
                 const jszip = new JSZip();
                 try {
                     const zip = await jszip.loadAsync(zipFile); // Load the ZIP file
-                    const folderNames = Object.keys(zip.files).filter(name => name.endsWith("/"));
-                    const fileNames = Object.keys(zip.files).filter(name => !name.endsWith("/"));
-                    const imageDir = folderNames.find(name => name.endsWith(" Images/"));
-                    if (!imageDir) {
-                        colog("No image directory found in the main folder.");
-                        return;
-                    }
-                    const geoJsonDir = folderNames.find(name => name.endsWith(" geojson/"));
-                    const jsonFile = fileNames.find(name => name.endsWith(".json"));
-                    if (!jsonFile) {
-                        colog("No JSON file found in the main folder.");
-                        return;
-                    }
-                    const jsonContent = await zip.files[jsonFile].async("string");
-                    const markerLocData = JSON.parse(jsonContent);
-                    for (let markerLoc of markerLocData) {
-                        let position = { lat: markerLoc.lat, lng: markerLoc.lng };
-                        let text = markerLoc.text.toString();
-                        const fileName = Object.keys(zip.files).find((name => name.endsWith(text)));
-                        const fileBlob = await zip.file(fileName).async("blob");
-                        const objectURL = URL.createObjectURL(fileBlob);
-                        placeNewMarker(map, position, text, objectURL, markerLoc.type, markerLoc.fszl);
-                    }
+                    readZip(zip);
                 } catch (error) {
                     console.error("Error handling ZIP file:", error);
                     colog("An error occurred while processing the ZIP file.");
                 }
             }
             else if (file.type == 'application/geo+json') {
-                const reader = new FileReader();
-
-                reader.onload = function (e) {
-                    loadGeoJsonString(reader.result as string, "secondaryLayer", colorCodingFixed);
-                };
-
-                reader.onerror = function (e) {
-                    console.error("reading failed");
-                };
-
-                reader.readAsText(file);
+                readGeoJSONFile(file);
             } else if (file.type == 'application/json') {
                 const reader = new FileReader();
 
@@ -1586,15 +1941,13 @@ async function handleDrop(e: DragEvent) {
 
                 reader.readAsText(file);
             }
-            else if (file.type.startsWith("image")) { //((file.type == 'image/jpeg') || (file.type == 'image/svg+xml')) {
-
-                // read the image...
+            else if (file.type.startsWith("image")) {
                 colog("Image dropped");
                 var reader = new FileReader();
                 reader.readAsDataURL(file);
                 reader.onload = function (e) {
                     placeNewMarker(map, map.getCenter(), file.name, e.target.result, "image", -1);
-                    console.log(file);
+                    //colog(file);
                 }
             }
             else
@@ -1604,7 +1957,7 @@ async function handleDrop(e: DragEvent) {
         // process non-file (e.g. text or html) content being dropped
         // grab the plain text version of the data
         // Left over from working on Mexico
-        const plainText = (e.dataTransfer as DataTransfer).getData("text/plain");
+        const plainText = (dragEvent.dataTransfer as DataTransfer).getData("text/plain");
 
         console.log(plainText);
 
@@ -1659,6 +2012,8 @@ async function handleDrop(e: DragEvent) {
     // prevent drag event from bubbling further
     return false;
 }
+
+
 
 function separateLines(str: string) {
     // Split the string into an array of lines
