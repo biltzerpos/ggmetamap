@@ -198,7 +198,7 @@ function createCountryChooser() {
     countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));
-    if (flags.localMode) countryMenu.appendChild(new Option("South Korea", "South Korea"));
+    //if (flags.localMode) countryMenu.appendChild(new Option("South Korea", "South Korea"));
     countryMenu.appendChild(new Option("Thailand", "Thailand"));
     if (flags.localMode) countryMenu.appendChild(new Option("Thailand Sandbox", "Thailand Sandbox"));
     countryMenu.appendChild(new Option("Turkey", "Turkey"));

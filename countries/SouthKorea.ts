@@ -6,7 +6,7 @@ import { markerInMiddle, thickBlue } from '../postprocess';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial, colog, calculateDistance } from '../utilities';
-import { TxtOverlay } from '../TxtOverlay';
+//import { TxtOverlay } from '../TxtOverlay';
 
 export class SouthKorea extends Country {
 
@@ -33,7 +33,7 @@ class Grid extends Layer {
   private middleLat = 35.919544; // correspond to grid 35
   private middleLng = 127.971095; // corresponds to grid 44
   private recs: google.maps.Rectangle[] = [];
-  private allTxtOverlays: TxtOverlay[][] = [];
+  //private allTxtOverlays: TxtOverlay[][] = [];
 
   public constructor() {
     super();
@@ -67,10 +67,10 @@ class Grid extends Layer {
         strokeColor: 'red'
       });
       this.recs.push(rectangleCenter);
-      this.allTxtOverlays.push([]);
+      //this.allTxtOverlays.push([]);
       for (let j = 0; j < 8; j++) {
-        const txtOverlay = new TxtOverlay(new google.maps.LatLng(0, 0), "", null);
-        this.allTxtOverlays[i].push(txtOverlay);
+        //const txtOverlay = new TxtOverlay(new google.maps.LatLng(0, 0), "", null);
+        //this.allTxtOverlays[i].push(txtOverlay);
       }
     }
     this.drawrecs(start, start2);
@@ -83,13 +83,13 @@ class Grid extends Layer {
   }
 
   private drawrecs(midSW: google.maps.LatLng, midNE: google.maps.LatLng) {
-    this.drawtxtOverlays(this.allTxtOverlays[0], new google.maps.LatLngBounds(midSW, midNE));
+    //this.drawtxtOverlays(this.allTxtOverlays[0], new google.maps.LatLngBounds(midSW, midNE));
     const rec1bounds = new google.maps.LatLngBounds(
       this.getPoint(midSW, 200, "north"),
       this.getPoint(midNE, 200, "north")
     );
     this.recs[1].setBounds(rec1bounds);
-    this.drawtxtOverlays(this.allTxtOverlays[1], rec1bounds);
+    //this.drawtxtOverlays(this.allTxtOverlays[1], rec1bounds);
     this.recs[2].setBounds(new google.maps.LatLngBounds(
       this.getPoint(midSW, 200, "south"),
       this.getPoint(midNE, 200, "south")
@@ -120,101 +120,101 @@ class Grid extends Layer {
     ));
   }
 
-  private drawtxtOverlays(txtOverlays: TxtOverlay[], bounds: google.maps.LatLngBounds) {
-    colog(txtOverlays);
-    colog(txtOverlays[0]);
-    colog(bounds);
-    // 0-1:north
-    txtOverlays[0].setMap(null);
-    txtOverlays[1].setMap(null);
-    const gridNorth = Math.trunc((this.latitudeDistanceKm(bounds.getNorthEast().lat(), this.originLat) / 2) % 100);
-    let gridNorthText = gridNorth.toString();
-    if (gridNorthText.length == 1) gridNorthText = "0" + gridNorthText;
-    txtOverlays[0].setText(gridNorthText);
-    txtOverlays[1].setText(gridNorthText);
-    txtOverlays[0].setPosition(new google.maps.LatLng(
-      bounds.getNorthEast().lat(),
-      (3 * bounds.getNorthEast().lng() + bounds.getSouthWest().lng()) / 4
-    ));
-    txtOverlays[1].setPosition(new google.maps.LatLng(
-      bounds.getNorthEast().lat(),
-      (bounds.getNorthEast().lng() + 3 * bounds.getSouthWest().lng()) / 4
-    ));
-    txtOverlays[0].setMap(getGlobals().map);
-    txtOverlays[1].setMap(getGlobals().map);
-    // 2-3:south
-    txtOverlays[2].setMap(null);
-    txtOverlays[3].setMap(null);
-    const gridSouth = Math.trunc((this.latitudeDistanceKm(bounds.getSouthWest().lat(), this.originLat) / 2) % 100);
-    let gridSouthText = gridSouth.toString();
-    if (gridSouthText.length == 1) gridSouthText = "0" + gridSouthText;
-    txtOverlays[2].setText(gridSouthText);
-    txtOverlays[3].setText(gridSouthText);
-    txtOverlays[2].setPosition(new google.maps.LatLng(
-      bounds.getSouthWest().lat(),
-      (3 * bounds.getNorthEast().lng() + bounds.getSouthWest().lng()) / 4
-    ));
-    txtOverlays[3].setPosition(new google.maps.LatLng(
-      bounds.getSouthWest().lat(),
-      (bounds.getNorthEast().lng() + 3 * bounds.getSouthWest().lng()) / 4
-    ));
-    txtOverlays[2].setMap(getGlobals().map);
-    txtOverlays[3].setMap(getGlobals().map);
-    // 4-5:west
-    txtOverlays[4].setMap(null);
-    txtOverlays[5].setMap(null);
-    const distToMiddle = this.preciseLongitudeDistanceKm(bounds.getSouthWest().lng(), this.middleLng, this.middleLat);
-    const gridPointsOff = Math.trunc((distToMiddle / 2));
-    let gridWest = 0;
-    if (bounds.getSouthWest().lng() < this.middleLng) {
-      gridWest = 44 - gridPointsOff;
-      while (gridWest < 0) gridWest += 100;
-    } else {
-      gridWest = 44 + gridPointsOff;
-      while (gridWest > 99) gridWest -= 100;
-    }
-    let gridWestText = gridWest.toString();
-    if (gridWestText.length == 1) gridWestText = "0" + gridWestText;
-    txtOverlays[4].setText(gridWestText);
-    txtOverlays[5].setText(gridWestText);
-    txtOverlays[4].setPosition(new google.maps.LatLng(
-      (3 * bounds.getNorthEast().lat() + bounds.getSouthWest().lat()) / 4,
-      bounds.getSouthWest().lng()
-    ));
-    txtOverlays[5].setPosition(new google.maps.LatLng(
-      (bounds.getNorthEast().lat() + 3 * bounds.getSouthWest().lat()) / 4,
-      bounds.getSouthWest().lng()
-    ));
-    txtOverlays[4].setMap(getGlobals().map);
-    txtOverlays[5].setMap(getGlobals().map);
-    // 6-7:west
-    txtOverlays[6].setMap(null);
-    txtOverlays[7].setMap(null);
-    const distToMiddle2 = this.preciseLongitudeDistanceKm(bounds.getNorthEast().lng(), this.middleLng, this.middleLat);
-    const gridPointsOff2 = Math.trunc((distToMiddle2 / 2));
-    let gridEast = 0;
-    if (bounds.getNorthEast().lng() < this.middleLng) {
-      gridEast = 44 - gridPointsOff2;
-      while (gridEast < 0) gridEast += 100;
-    } else {
-      gridEast = 44 + gridPointsOff2;
-      while (gridEast > 99) gridEast -= 100;
-    }
-    let gridEastText = gridEast.toString();
-    if (gridEastText.length == 1) gridEastText = "0" + gridEastText;
-    txtOverlays[6].setText(gridEastText);
-    txtOverlays[7].setText(gridEastText);
-    txtOverlays[6].setPosition(new google.maps.LatLng(
-      (3 * bounds.getNorthEast().lat() + bounds.getSouthWest().lat()) / 4,
-      bounds.getNorthEast().lng()
-    ));
-    txtOverlays[7].setPosition(new google.maps.LatLng(
-      (bounds.getNorthEast().lat() + 3 * bounds.getSouthWest().lat()) / 4,
-      bounds.getNorthEast().lng()
-    ));
-    txtOverlays[6].setMap(getGlobals().map);
-    txtOverlays[7].setMap(getGlobals().map);
-  }
+  // private drawtxtOverlays(txtOverlays: TxtOverlay[], bounds: google.maps.LatLngBounds) {
+  //   colog(txtOverlays);
+  //   colog(txtOverlays[0]);
+  //   colog(bounds);
+  //   // 0-1:north
+  //   txtOverlays[0].setMap(null);
+  //   txtOverlays[1].setMap(null);
+  //   const gridNorth = Math.trunc((this.latitudeDistanceKm(bounds.getNorthEast().lat(), this.originLat) / 2) % 100);
+  //   let gridNorthText = gridNorth.toString();
+  //   if (gridNorthText.length == 1) gridNorthText = "0" + gridNorthText;
+  //   txtOverlays[0].setText(gridNorthText);
+  //   txtOverlays[1].setText(gridNorthText);
+  //   txtOverlays[0].setPosition(new google.maps.LatLng(
+  //     bounds.getNorthEast().lat(),
+  //     (3 * bounds.getNorthEast().lng() + bounds.getSouthWest().lng()) / 4
+  //   ));
+  //   txtOverlays[1].setPosition(new google.maps.LatLng(
+  //     bounds.getNorthEast().lat(),
+  //     (bounds.getNorthEast().lng() + 3 * bounds.getSouthWest().lng()) / 4
+  //   ));
+  //   txtOverlays[0].setMap(getGlobals().map);
+  //   txtOverlays[1].setMap(getGlobals().map);
+  //   // 2-3:south
+  //   txtOverlays[2].setMap(null);
+  //   txtOverlays[3].setMap(null);
+  //   const gridSouth = Math.trunc((this.latitudeDistanceKm(bounds.getSouthWest().lat(), this.originLat) / 2) % 100);
+  //   let gridSouthText = gridSouth.toString();
+  //   if (gridSouthText.length == 1) gridSouthText = "0" + gridSouthText;
+  //   txtOverlays[2].setText(gridSouthText);
+  //   txtOverlays[3].setText(gridSouthText);
+  //   txtOverlays[2].setPosition(new google.maps.LatLng(
+  //     bounds.getSouthWest().lat(),
+  //     (3 * bounds.getNorthEast().lng() + bounds.getSouthWest().lng()) / 4
+  //   ));
+  //   txtOverlays[3].setPosition(new google.maps.LatLng(
+  //     bounds.getSouthWest().lat(),
+  //     (bounds.getNorthEast().lng() + 3 * bounds.getSouthWest().lng()) / 4
+  //   ));
+  //   txtOverlays[2].setMap(getGlobals().map);
+  //   txtOverlays[3].setMap(getGlobals().map);
+  //   // 4-5:west
+  //   txtOverlays[4].setMap(null);
+  //   txtOverlays[5].setMap(null);
+  //   const distToMiddle = this.preciseLongitudeDistanceKm(bounds.getSouthWest().lng(), this.middleLng, this.middleLat);
+  //   const gridPointsOff = Math.trunc((distToMiddle / 2));
+  //   let gridWest = 0;
+  //   if (bounds.getSouthWest().lng() < this.middleLng) {
+  //     gridWest = 44 - gridPointsOff;
+  //     while (gridWest < 0) gridWest += 100;
+  //   } else {
+  //     gridWest = 44 + gridPointsOff;
+  //     while (gridWest > 99) gridWest -= 100;
+  //   }
+  //   let gridWestText = gridWest.toString();
+  //   if (gridWestText.length == 1) gridWestText = "0" + gridWestText;
+  //   txtOverlays[4].setText(gridWestText);
+  //   txtOverlays[5].setText(gridWestText);
+  //   txtOverlays[4].setPosition(new google.maps.LatLng(
+  //     (3 * bounds.getNorthEast().lat() + bounds.getSouthWest().lat()) / 4,
+  //     bounds.getSouthWest().lng()
+  //   ));
+  //   txtOverlays[5].setPosition(new google.maps.LatLng(
+  //     (bounds.getNorthEast().lat() + 3 * bounds.getSouthWest().lat()) / 4,
+  //     bounds.getSouthWest().lng()
+  //   ));
+  //   txtOverlays[4].setMap(getGlobals().map);
+  //   txtOverlays[5].setMap(getGlobals().map);
+  //   // 6-7:west
+  //   txtOverlays[6].setMap(null);
+  //   txtOverlays[7].setMap(null);
+  //   const distToMiddle2 = this.preciseLongitudeDistanceKm(bounds.getNorthEast().lng(), this.middleLng, this.middleLat);
+  //   const gridPointsOff2 = Math.trunc((distToMiddle2 / 2));
+  //   let gridEast = 0;
+  //   if (bounds.getNorthEast().lng() < this.middleLng) {
+  //     gridEast = 44 - gridPointsOff2;
+  //     while (gridEast < 0) gridEast += 100;
+  //   } else {
+  //     gridEast = 44 + gridPointsOff2;
+  //     while (gridEast > 99) gridEast -= 100;
+  //   }
+  //   let gridEastText = gridEast.toString();
+  //   if (gridEastText.length == 1) gridEastText = "0" + gridEastText;
+  //   txtOverlays[6].setText(gridEastText);
+  //   txtOverlays[7].setText(gridEastText);
+  //   txtOverlays[6].setPosition(new google.maps.LatLng(
+  //     (3 * bounds.getNorthEast().lat() + bounds.getSouthWest().lat()) / 4,
+  //     bounds.getNorthEast().lng()
+  //   ));
+  //   txtOverlays[7].setPosition(new google.maps.LatLng(
+  //     (bounds.getNorthEast().lat() + 3 * bounds.getSouthWest().lat()) / 4,
+  //     bounds.getNorthEast().lng()
+  //   ));
+  //   txtOverlays[6].setMap(getGlobals().map);
+  //   txtOverlays[7].setMap(getGlobals().map);
+  // }
 
   private latitudeDistanceKm(lat1: number, lat2: number): number {
     const kmPerDegree = 111.32; // Approximate distance in km per 1 degree of latitude
