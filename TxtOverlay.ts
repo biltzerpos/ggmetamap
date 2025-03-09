@@ -1,4 +1,4 @@
-//await google.maps.importLibrary("maps");
+await google.maps.importLibrary("maps");
 
 export class TxtOverlay extends google.maps.OverlayView {
   private pos: google.maps.LatLng;
