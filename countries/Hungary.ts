@@ -6,7 +6,6 @@ import { markerInMiddle, thickBlue } from '../postprocess';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { partial, loadZipLayer, colog, createButtonContainer } from '../utilities';
-import { CustomOverlay } from '../CustomOverlay';
 
 export class Hungary extends Country {
 

@@ -6,7 +6,6 @@ import { showAuxButton } from '../index';
 import { Country } from './Country';
 import { Layer } from './Layer';
 import { colog, splitCamelCase, partial, removeAccentsAndUpperCase, getRandomArray } from '../utilities.js';
-import { CustomOverlay } from '../CustomOverlay';
 
 export class Greece extends Country {
 
