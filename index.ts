@@ -5,68 +5,14 @@ import { readGeoJSONFile, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFil
 import { loadMarkerLayer, placeNewMarker, updateSize, hideAllMarkers, showAllMarkers, removeAllMarkers } from './markerFacilities';
 import { processFeatures } from './postprocess';
 
-await google.maps.importLibrary("maps");
-await google.maps.importLibrary("marker");
-await google.maps.importLibrary("streetView");
 
-class CustomOverlay extends google.maps.OverlayView {
-    private position: google.maps.LatLng;
-    private div: HTMLElement | null;
-    private fixedPosition: boolean = false;
-    private x: number | undefined;
-    private y: number | undefined;
 
-    constructor(position: google.maps.LatLng, div: HTMLElement, fixedPosition?: boolean, fixedX?: number, fixedY?: number) {
-        super();
-        this.position = position;
-        this.div = div;
-        if (fixedPosition && fixedX !== undefined && fixedY !== undefined) {
-            this.fixedPosition = true;
-            this.x = fixedX;
-            this.y = fixedY;
-        }
-    }
 
-    // Called when the overlay is added to the map
-    onAdd() {
-        // Add the overlay to the map's overlay pane
-        const panes = this.getPanes();
-        if (this.div) panes?.overlayMouseTarget.appendChild(this.div);
-    }
-
-    // Called when the map is drawn
-    draw() {
-        if (!this.div) return;
-
-        if (this.fixedPosition) {
-            this.div.style.left = this.x + "px";
-            this.div.style.top = this.y + "px";
-        }
-        else {
-            const projection = this.getProjection();
-            const position = projection.fromLatLngToDivPixel(this.position);
-
-            if (position) {
-                this.div.style.left = position.x + "px";
-                this.div.style.top = position.y + "px";
-            }
-        }
-    }
-
-    // Called when the overlay is removed
-    onRemove() {
-        if (this.div) {
-            this.div.parentNode?.removeChild(this.div);
-            this.div = null;
-        }
-    }
-}
 
 let boundaryLayer: google.maps.Data;
 let secondaryLayer: google.maps.Data;
 let map: google.maps.Map;
 let infoWindow: google.maps.InfoWindow;
-let customOverlay: CustomOverlay;
 let rectangle: google.maps.Rectangle;
 let startLatLng;
 let rec = false;
@@ -454,7 +400,7 @@ async function saveLayerBehaviour() {
             const img = markers[i].content as HTMLImageElement;
             const w = markers[i].getAttribute("ggmmWidth");
             const h = markers[i].getAttribute("ggmmHeight");
-            images.push({content: img, width: w, height: h});
+            images.push({ content: img, width: w, height: h });
         }
         else {
             //console.log(markers[1].style.getProperty('--marker-color'));
@@ -774,6 +720,10 @@ async function initMap(): Promise<void> {
 
     //streetViewLayer = new google.maps.StreetViewCoverageLayer();
 
+    await google.maps.importLibrary("maps");
+    await google.maps.importLibrary("marker");
+    await google.maps.importLibrary("streetView");
+
     await initializeGlobals();
     const globals = getGlobals();
     map = globals.map;
@@ -781,6 +731,61 @@ async function initMap(): Promise<void> {
     secondaryLayer = globals.secondaryLayer;
     streetViewLayer = new google.maps.StreetViewCoverageLayer();
     infoWindow = globals.infoWindow;
+
+    class CustomOverlay extends google.maps.OverlayView {
+        private position: google.maps.LatLng;
+        private div: HTMLElement | null;
+        private fixedPosition: boolean = false;
+        private x: number | undefined;
+        private y: number | undefined;
+    
+        constructor(position: google.maps.LatLng, div: HTMLElement, fixedPosition?: boolean, fixedX?: number, fixedY?: number) {
+            super();
+            this.position = position;
+            this.div = div;
+            if (fixedPosition && fixedX !== undefined && fixedY !== undefined) {
+                this.fixedPosition = true;
+                this.x = fixedX;
+                this.y = fixedY;
+            }
+        }
+    
+        // Called when the overlay is added to the map
+        onAdd() {
+            // Add the overlay to the map's overlay pane
+            const panes = this.getPanes();
+            if (this.div) panes?.overlayMouseTarget.appendChild(this.div);
+        }
+    
+        // Called when the map is drawn
+        draw() {
+            if (!this.div) return;
+    
+            if (this.fixedPosition) {
+                this.div.style.left = this.x + "px";
+                this.div.style.top = this.y + "px";
+            }
+            else {
+                const projection = this.getProjection();
+                const position = projection.fromLatLngToDivPixel(this.position);
+    
+                if (position) {
+                    this.div.style.left = position.x + "px";
+                    this.div.style.top = position.y + "px";
+                }
+            }
+        }
+    
+        // Called when the overlay is removed
+        onRemove() {
+            if (this.div) {
+                this.div.parentNode?.removeChild(this.div);
+                this.div = null;
+            }
+        }
+    }
+
+    let customOverlay: CustomOverlay;
 
     boundaryLayer.setMap(map);
     boundaryLayer.setStyle({
@@ -1122,7 +1127,7 @@ function createColorPicker(startColour: string): HTMLDivElement {
     // Add event to the cancel button (to hide the div for example)
     cancelButton.addEventListener("click", () => {
         div.style.display = "none";
-        customOverlay.setMap(null);
+        //customOverlay.setMap(null);
     });
 
     selectButton.addEventListener("click", () => {
@@ -1134,7 +1139,7 @@ function createColorPicker(startColour: string): HTMLDivElement {
         });
         unselectAllMarkers();
         div.style.display = "none";
-        customOverlay.setMap(null);
+        //customOverlay.setMap(null);
     });
 
     // Append the elements to the container div
