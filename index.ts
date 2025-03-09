@@ -4,10 +4,7 @@ import { colog, partial, readZip, resolveToNumber, renameFile, calculateDistance
 import { readGeoJSONFile, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile, select, removeAllFeatures } from './geojsonFacilities';
 import { loadMarkerLayer, placeNewMarker, updateSize, hideAllMarkers, showAllMarkers, removeAllMarkers } from './markerFacilities';
 import { processFeatures } from './postprocess';
-
-
-
-
+import JSZip from "jszip"
 
 let boundaryLayer: google.maps.Data;
 let secondaryLayer: google.maps.Data;

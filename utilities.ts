@@ -1,6 +1,7 @@
 import { flags, getGlobals, infoWindowContent } from './globals';
 import { loadMarkerLayer, placeNewMarker, updateSize, hideAllMarkers, showAllMarkers, removeAllMarkers } from './markerFacilities';
 import { readGeoJSONFile, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFile, select, removeAllFeatures } from './geojsonFacilities';
+import JSZip from "jszip"
 
 export function colog(a) {
     if (flags.debugMode) console.log(a);
