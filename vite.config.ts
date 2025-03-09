@@ -19,7 +19,7 @@ export default defineConfig(async ({ mode }) => {
     plugins: [],
     build: {
       // minify: false,
-      // target: "es2015",
+      target: "esnext",
       outDir: 'dist_web',
       sourcemap: true,
       commonjsOptions: { include: [] },

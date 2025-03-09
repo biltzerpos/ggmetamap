@@ -6,9 +6,9 @@ import { loadMarkerLayer, placeNewMarker, updateSize, hideAllMarkers, showAllMar
 import { processFeatures } from './postprocess';
 import { CustomOverlay } from './CustomOverlay';
 
-// await google.maps.importLibrary("maps");
-// await google.maps.importLibrary("marker");
-// await google.maps.importLibrary("streetView");
+await google.maps.importLibrary("maps");
+await google.maps.importLibrary("marker");
+await google.maps.importLibrary("streetView");
 
 let boundaryLayer: google.maps.Data;
 let secondaryLayer: google.maps.Data;
