@@ -1,4 +1,4 @@
-await google.maps.importLibrary("maps");
+const { OverlayView } = await google.maps.importLibrary("maps");
 
 export class CustomOverlay extends google.maps.OverlayView {
     private position: google.maps.LatLng;
