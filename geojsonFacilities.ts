@@ -1,6 +1,26 @@
 import { getGlobals, selectedFeatures, unselectAllFeatures } from './globals';
 import { colog, partial } from './utilities.js';
 import { processFeatures } from './postprocess';
+import * as turf from "@turf/turf";
+import { Feature, Polygon } from "geojson"; // Import types from @turf/helpers
+
+export function getConcaveGeoJSON(points: [number, number][]): string | null {
+    const geoPoints = turf.featureCollection(points.map((p) => turf.point(p)));
+    colog(geoPoints);
+    // Generate a concave hull (adjust "maxEdge" for concavity)
+    const concaveHull = turf.concave(geoPoints, { units: 'miles', maxEdge: 10 }) as Feature<Polygon>;
+    colog(concaveHull);
+    if (concaveHull) return JSON.stringify(concaveHull) // as Feature<Polygon>; // Explicitly cast to correct type
+    console.error("Could not generate a concave hull. Falling back to convex hull.");
+    const convexHull = turf.convex(geoPoints);
+    colog(convexHull);
+    if (convexHull) {
+        const featureCollection = turf.featureCollection([convexHull]);
+        return JSON.stringify(featureCollection); //turf.convex(geoPoints) as Feature<Polygon>; // Ensure return type matches
+    }
+    console.error("Could not generate a convex hull.");
+    return null;
+}
 
 export async function loadGeoJSONFile(path: string, layer = "boundaryLayer", postProcess?) {
     colog(path);
@@ -41,6 +61,7 @@ export function loadGeoJsonString(geoString: string, layer = "boundaryLayer", po
         }
         else if (layer.startsWith("secondaryLayer")) {
             if (layer == "secondaryLayerClear") clearSecondaryLayer();
+            colog("sure");
             let newFeatures = getGlobals().secondaryLayer.addGeoJson(geojson);
             if (postProcess) postProcess(newFeatures);
         }

@@ -53,22 +53,22 @@ export function renameFile(originalFile, newName) {
 
 export function getRandomArray(n: number): number[] {
     if (n <= 0) {
-      throw new Error("Input must be a positive integer.");
+        throw new Error("Input must be a positive integer.");
     }
-  
+
     // Create an array [1, 2, ..., n]
-    const arr = Array.from({ length: n }, (_, i) => i + 1);
-  
+    const arr = Array.from({ length: n }, (_, i) => i);
+
     // Fisher-Yates shuffle algorithm
     for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
-      [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+        const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
+        [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
     }
-  
+
     return arr;
-  }
-  
-  /**
+}
+
+/**
 * Calculates the distance between two google.maps.LatLng points using the Haversine formula.
 *
 * @param {google.maps.LatLng} point1 - The first point.
@@ -140,98 +140,89 @@ export async function loadZipLayer(path: string): Promise<void> {
 export async function readZip(zip) {
     const folderNames = Object.keys(zip.files).filter(name => name.endsWith("/"));
     const fileNames = Object.keys(zip.files).filter(name => !name.endsWith("/"));
-    const imageDir = folderNames.find(name => name.endsWith(" Images/"));
-    if (!imageDir) {
-        colog("No image directory found in the main folder.");
-        return;
-    }
-    const geojsonDir = folderNames.find(name => name.endsWith(" geojson/"));
-    if (!geojsonDir) {
-        colog("No geojson directory found in the main folder.");
-        return;
-    }
-    const jsonFile = fileNames.find(name => name.endsWith(".ggmm.json"));
-    if (!jsonFile) {
-        colog("No .ggmm.json file found in the main folder.");
-        return;
-    }
 
     // Load all markers
-    const jsonContent = await zip.files[jsonFile].async("string");
-    const markerLocData = JSON.parse(jsonContent);
-    for (let markerLoc of markerLocData) {
-        let position = { lat: markerLoc.lat, lng: markerLoc.lng };
-        let text = markerLoc.text.toString();
-        colog(text);
-        let imagePath = "";
-        const fileName = Object.keys(zip.files).find((name => {
-            let baseName = name;
-            const hasSlash = name.includes("/");
-            if (hasSlash) baseName = name.split("/").pop();
-            colog(baseName);
-            return baseName === text;
-    }));
-        if (fileName) {
-            const fileBlob = await zip.file(fileName).async("blob");
-            imagePath = URL.createObjectURL(fileBlob);
+    const jsonFile = fileNames.find(name => name.endsWith(".ggmm.json"));
+    if (jsonFile) {        
+        const jsonContent = await zip.files[jsonFile].async("string");
+        const markerLocData = JSON.parse(jsonContent);
+        for (let markerLoc of markerLocData) {
+            let position = { lat: markerLoc.lat, lng: markerLoc.lng };
+            let text = markerLoc.text.toString();
+            colog(text);
+            let imagePath = "";
+            const fileName = Object.keys(zip.files).find((name => {
+                let baseName = name;
+                const hasSlash = name.includes("/");
+                if (hasSlash) baseName = name.split("/").pop()!;
+                colog(baseName);
+                return baseName === text;
+            }));
+            if (fileName) {
+                const fileBlob = await zip.file(fileName).async("blob");
+                imagePath = URL.createObjectURL(fileBlob);
+            }
+            colog(markerLoc.type);
+            placeNewMarker(getGlobals().map, position, text, imagePath, markerLoc.type, markerLoc.fszl);
         }
-        placeNewMarker(getGlobals().map, position, text, imagePath, markerLoc.type, markerLoc.fszl);
     }
 
-    //Load all geojson
-    const geoimagesDir = folderNames.find(name => name.endsWith(" geoimages/"));
-    const geotextDir = folderNames.find(name => name.endsWith(" geotext/"));
-    colog(geojsonDir);
-    const geojsonNames = getFilesInFolder(zip, geojsonDir);
-    geojsonNames.forEach(async (name) => {
+    //Load geojson data
+    const geojsonDir = folderNames.find(name => name.endsWith(" geojson/"));
+    if (geojsonDir) {
+        const geoimagesDir = folderNames.find(name => name.endsWith(" geoimages/"));
+        const geotextDir = folderNames.find(name => name.endsWith(" geotext/"));
+        const geojsonNames = getFilesInFolder(zip, geojsonDir);
+        geojsonNames.forEach(async (name) => {
 
-        // The geojson itself
-        const geojsonFile = zip.files[name];
-        if (!geojsonFile) {
-            throw new Error(`File not found: ${name}`);
-        }
-        const blob = await geojsonFile.async("blob");
-        readGeoJSONFile(new File([blob], name, { type: blob.type }));
+            // The geojson itself
+            const geojsonFile = zip.files[name];
+            if (!geojsonFile) {
+                throw new Error(`File not found: ${name}`);
+            }
+            const blob = await geojsonFile.async("blob");
+            readGeoJSONFile(new File([blob], name, { type: blob.type }));
 
-        // The geotext
-        let txtContent = "";
-        const baseName = name.substring(0, name.lastIndexOf('.')).substring(name.indexOf('/') + 1) || name;
-        const txtPath = geotextDir + baseName + '.txt';
-        const txtFile = zip.files[txtPath]
-        if (txtFile) txtContent = await zip.files[txtPath].async("string");
+            // The geotext
+            let txtContent = "";
+            const baseName = name.substring(0, name.lastIndexOf('.')).substring(name.indexOf('/') + 1) || name;
+            const txtPath = geotextDir + baseName + '.txt';
+            const txtFile = zip.files[txtPath];
+            if (txtFile) txtContent = await zip.files[txtPath].async("string");
 
-        // The geoimage
-        let imagePreview: HTMLImageElement | null = null;
-        let storedImageFile: File | null = null;
-        const imagePrefix = geoimagesDir + baseName;
-        const geoimagesFile = zip.files[Object.keys(zip.files).filter(name => name.startsWith(imagePrefix))];
-        if (geoimagesFile) {
-            const imgblob = await geoimagesFile.async("blob");
-            storedImageFile = new File([imgblob], name, { type: imgblob.type });
-            imagePreview = document.createElement("img");
-            imagePreview.style.maxWidth = "100%";
-            imagePreview.style.maxHeight = "100%";
-            imagePreview.style.borderRadius = "4px";
-            imagePreview.style.padding = "8px";
-            imagePreview.style.display = "none";
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                if (imagePreview) {
-                    imagePreview.src = event.target?.result as string;
-                    imagePreview.style.display = "block";
-                }
-            };
-            reader.readAsDataURL(storedImageFile);
-        }
+            // The geoimage
+            let imagePreview: HTMLImageElement | null = null;
+            let storedImageFile: File | null = null;
+            const imagePrefix = geoimagesDir + baseName;
+            const geoimagesFile = zip.files[Object.keys(zip.files).filter(name => name.startsWith(imagePrefix))];
+            if (geoimagesFile) {
+                const imgblob = await geoimagesFile.async("blob");
+                storedImageFile = new File([imgblob], name, { type: imgblob.type });
+                imagePreview = document.createElement("img");
+                imagePreview.style.maxWidth = "100%";
+                imagePreview.style.maxHeight = "100%";
+                imagePreview.style.borderRadius = "4px";
+                imagePreview.style.padding = "8px";
+                imagePreview.style.display = "none";
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    if (imagePreview) {
+                        imagePreview.src = event.target?.result as string;
+                        imagePreview.style.display = "block";
+                    }
+                };
+                reader.readAsDataURL(storedImageFile);
+            }
 
-        // Update indoWindowContent
-        const newContent: infoWindowContent = {
-            text: txtContent,
-            img: imagePreview,
-            imgFile: storedImageFile
-        }
-        infoWindowContent[name] = newContent;
-    })
+            // Update indoWindowContent
+            const newContent: infoWindowContent = {
+                text: txtContent,
+                img: imagePreview,
+                imgFile: storedImageFile
+            }
+            infoWindowContent[name] = newContent;
+        })
+    }
 }
 
 export function createButtonContainer(

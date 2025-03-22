@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API 0.7.62.5 1bd436f1">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2025-03-11T18:53:45Z" areas="2025-02-06T02:17:44Z"/>
+
+  <node id="25553427" lat="46.3484884" lon="18.7016630">
+    <tag k="alt_name:de" v="Sechsard"/>
+    <tag k="capital" v="6"/>
+    <tag k="ksh_ref" v="22761"/>
+    <tag k="name" v="Szekszárd"/>
+    <tag k="name:de" v="Sechshard"/>
+    <tag k="name:hr" v="Seksar"/>
+    <tag k="name:hu" v="Szekszárd"/>
+    <tag k="name:ml" v="സെക്‌സാർഡ്"/>
+    <tag k="name:ru" v="Сексард"/>
+    <tag k="name:sr" v="Сексард"/>
+    <tag k="place" v="city"/>
+    <tag k="place:hu" v="megyeszékhely, megyei jogú város"/>
+    <tag k="population" v="29707"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7100"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+    <tag k="wikidata" v="Q189761"/>
+    <tag k="wikipedia" v="hu:Szekszárd"/>
+  </node>
+  <node id="76675066" lat="46.5300110" lon="18.8118978">
+    <tag k="ksh_ref" v="09539"/>
+    <tag k="name" v="Dunaszentgyörgy"/>
+    <tag k="name:ru" v="Дунасентдьёрдь"/>
+    <tag k="name:sr" v="Дунасентђерђ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="2408"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7135"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="76705492" lat="46.2051149" lon="18.8123654">
+    <tag k="ksh_ref" v="33570"/>
+    <tag k="name" v="Pörböly"/>
+    <tag k="name:sr" v="Пербељ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="493"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7142"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="76705495" lat="46.1932111" lon="18.7231457">
+    <tag k="ksh_ref" v="08864"/>
+    <tag k="name" v="Bátaszék"/>
+    <tag k="name:de" v="Badeseck"/>
+    <tag k="name:hr" v="Bacik"/>
+    <tag k="name:ru" v="Батасек"/>
+    <tag k="name:sr" v="Батосек"/>
+    <tag k="place" v="town"/>
+    <tag k="place:hu" v="város"/>
+    <tag k="population" v="5851"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7140"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="206235375" lat="46.4936110" lon="18.9032424">
+    <tag k="ksh_ref" v="05731"/>
+    <tag k="name" v="Gerjen"/>
+    <tag k="name:de" v="Gerien"/>
+    <tag k="name:ru" v="Герьен"/>
+    <tag k="name:sr" v="Герјен"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1151"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7134"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="206235431" lat="46.4663938" lon="18.8252567">
+    <tag k="ksh_ref" v="18980"/>
+    <tag k="name" v="Fadd"/>
+    <tag k="name:ru" v="Фадд"/>
+    <tag k="name:sr" v="Фад"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="nagyközség"/>
+    <tag k="population" v="3925"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7133"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+    <tag k="wikidata" v="Q747724"/>
+    <tag k="wikipedia" v="hu:Fadd"/>
+  </node>
+  <node id="206235481" lat="46.4226584" lon="18.7887741">
+    <tag k="ksh_ref" v="25274"/>
+    <tag k="name" v="Tolna"/>
+    <tag k="name:de" v="Tolnau"/>
+    <tag k="name:ru" v="Тольна"/>
+    <tag k="name:sr" v="Толна"/>
+    <tag k="place" v="town"/>
+    <tag k="place:hu" v="város"/>
+    <tag k="population" v="10640"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7130"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+    <tag k="wikidata" v="Q843021"/>
+    <tag k="wikipedia" v="hu:Tolna (Magyarország)"/>
+  </node>
+  <node id="206240543" lat="46.4480102" lon="18.7361471">
+    <tag k="ksh_ref" v="24192"/>
+    <tag k="name" v="Fácánkert"/>
+    <tag k="name:sr" v="Фацанкерт"/>
+    <tag k="old_name:-1936" v="Simonmajor"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="652"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7136"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="206250767" lat="46.3907879" lon="18.6535953">
+    <tag k="ksh_ref" v="25645"/>
+    <tag k="name" v="Sióagárd"/>
+    <tag k="name:ru" v="Шиогард"/>
+    <tag k="name:sr" v="Шиогард"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1186"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7171"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="206292956" lat="46.4672701" lon="18.5287590">
+    <tag k="ksh_ref" v="15820"/>
+    <tag k="name" v="Felsőnána"/>
+    <tag k="name:de" v="Falschnone"/>
+    <tag k="name:sr" v="Фелшенана"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="571"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7175"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="206297491" lat="46.4957481" lon="18.4187415">
+    <tag k="ksh_ref" v="26055"/>
+    <tag k="name" v="Hőgyész"/>
+    <tag k="name:de" v="Hidjess"/>
+    <tag k="name:ru" v="Хёдьес"/>
+    <tag k="name:sr" v="Хеђес"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="nagyközség"/>
+    <tag k="population" v="2643"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7191"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="206298281" lat="46.5015402" lon="18.4745194">
+    <tag k="ksh_ref" v="23791"/>
+    <tag k="name" v="Kalaznó"/>
+    <tag k="name:de" v="Gallas"/>
+    <tag k="name:sr" v="Калазно"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="117"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7194"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="213383214" lat="46.2984212" lon="18.5321910">
+    <tag k="ksh_ref" v="06497"/>
+    <tag k="name" v="Bonyhád"/>
+    <tag k="name:de" v="Bonnhard"/>
+    <tag k="name:ru" v="Боньхад"/>
+    <tag k="name:sr" v="Боњхад"/>
+    <tag k="place" v="town"/>
+    <tag k="place:hu" v="város"/>
+    <tag k="population" v="12031"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7150"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="220951771" lat="46.1286819" lon="18.7749192">
+    <tag k="ksh_ref" v="11712"/>
+    <tag k="name" v="Báta"/>
+    <tag k="name:ru" v="Бата"/>
+    <tag k="name:sr" v="Бата"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1401"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7149"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="275854286" lat="46.4403964" lon="18.5177398">
+    <tag k="ksh_ref" v="21731"/>
+    <tag k="name" v="Kéty"/>
+    <tag k="name:de" v="Gieck"/>
+    <tag k="name:ru" v="Кеть"/>
+    <tag k="name:sr" v="Кећ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="639"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7174"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="275887337" lat="46.4108094" lon="18.5659247">
+    <tag k="ksh_ref" v="21625"/>
+    <tag k="name" v="Zomba"/>
+    <tag k="name:ru" v="Зомба"/>
+    <tag k="name:sr" v="Зомба"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1817"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7173"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+    <tag k="wikidata" v="Q576672"/>
+    <tag k="wikipedia" v="hu:Zomba"/>
+  </node>
+  <node id="275888897" lat="46.3907426" lon="18.4943188">
+    <tag k="ksh_ref" v="17710"/>
+    <tag k="name" v="Kisdorog"/>
+    <tag k="name:de" v="Kleindorog"/>
+    <tag k="name:ru" v="Кишдорог"/>
+    <tag k="name:sr" v="Кишдорог"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="643"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7159"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="275894294" lat="46.4029948" lon="18.6177254">
+    <tag k="ksh_ref" v="14164"/>
+    <tag k="name" v="Harc"/>
+    <tag k="name:ru" v="Харц"/>
+    <tag k="name:sr" v="Харц"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="760"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7172"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="275895175" lat="46.3703376" lon="18.4799664">
+    <tag k="ksh_ref" v="14818"/>
+    <tag k="name" v="Bonyhádvarasd"/>
+    <tag k="name:de" v="Warasch"/>
+    <tag k="name:sr" v="Боњхадварашд"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="376"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7158"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="275895750" lat="46.4607536" lon="18.4879246">
+    <tag k="ksh_ref" v="18917"/>
+    <tag k="name" v="Murga"/>
+    <tag k="name:de" v="Murgau"/>
+    <tag k="name:sr" v="Мурга"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="41"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7176"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="279160286" lat="46.3295939" lon="18.4486863">
+    <tag k="ksh_ref" v="26125"/>
+    <tag k="name" v="Aparhant"/>
+    <tag k="name:ru" v="Апархант"/>
+    <tag k="name:sr" v="Апархант"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="910"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7186"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="279163542" lat="46.3488336" lon="18.3725516">
+    <tag k="ksh_ref" v="07366"/>
+    <tag k="name" v="Szárász"/>
+    <tag k="name:de" v="Sarasposten"/>
+    <tag k="name:hr" v="Sras"/>
+    <tag k="name:sr" v="Сарас"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="38"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7188"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="289696546" lat="46.3118597" lon="18.7589115">
+    <tag k="ksh_ref" v="08961"/>
+    <tag k="name" v="Őcsény"/>
+    <tag k="name:ru" v="Эчень"/>
+    <tag k="name:sr" v="Ечењ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="2163"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7143"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="289696576" lat="46.2843291" lon="18.7600689">
+    <tag k="ksh_ref" v="24989"/>
+    <tag k="name" v="Decs"/>
+    <tag k="name:ru" v="Дечь"/>
+    <tag k="name:sr" v="Деч"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="nagyközség"/>
+    <tag k="population" v="3764"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7144"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="289696619" lat="46.2470572" lon="18.7371932">
+    <tag k="ksh_ref" v="04747"/>
+    <tag k="name" v="Sárpilis"/>
+    <tag k="name:sr" v="Шарпилиш"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="564"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7145"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="290192167" lat="46.2485727" lon="18.6848572">
+    <tag k="ksh_ref" v="09414"/>
+    <tag k="name" v="Várdomb"/>
+    <tag k="name:de" v="Wardum"/>
+    <tag k="name:sr" v="Вардомб"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1078"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7146"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="315203541" lat="46.3832444" lon="18.8166969">
+    <tag k="ksh_ref" v="03425"/>
+    <tag k="name" v="Bogyiszló"/>
+    <tag k="name:sr" v="Бођисло"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1973"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7132"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="323210883" lat="46.4124800" lon="18.4555663">
+    <tag k="ksh_ref" v="31459"/>
+    <tag k="name" v="Tevel"/>
+    <tag k="name:ru" v="Тевель"/>
+    <tag k="name:sr" v="Тевел"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1234"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7181"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="338256231" lat="46.2773672" lon="18.6372014">
+    <tag k="ksh_ref" v="14711"/>
+    <tag k="name" v="Szálka"/>
+    <tag k="name:de" v="Salkau"/>
+    <tag k="name:sr" v="Салка"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="579"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7121"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862662" lat="46.3750193" lon="18.3686395">
+    <tag k="ksh_ref" v="24411"/>
+    <tag k="name" v="Lengyel"/>
+    <tag k="name:de" v="Lendl"/>
+    <tag k="name:sr" v="Ленђел"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="472"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7184"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862665" lat="46.3551245" lon="18.4190576">
+    <tag k="ksh_ref" v="13620"/>
+    <tag k="name" v="Mucsfa"/>
+    <tag k="name:sr" v="Мучфа"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="289"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7185"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862666" lat="46.3810979" lon="18.4140286">
+    <tag k="ksh_ref" v="31185"/>
+    <tag k="name" v="Kisvejke"/>
+    <tag k="name:de" v="Kleinwecken"/>
+    <tag k="name:ru" v="Кишвейке"/>
+    <tag k="name:sr" v="Кишвејке"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="355"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7183"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862668" lat="46.3773416" lon="18.4444788">
+    <tag k="ksh_ref" v="16452"/>
+    <tag k="name" v="Nagyvejke"/>
+    <tag k="name:sr" v="Нађвејке"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="154"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7186"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862694" lat="46.2536800" lon="18.5591237">
+    <tag k="ksh_ref" v="19284"/>
+    <tag k="name" v="Cikó"/>
+    <tag k="name:de" v="Zickau"/>
+    <tag k="name:ru" v="Цико"/>
+    <tag k="name:sr" v="Цико"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="857"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7161"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862696" lat="46.2592031" lon="18.5902060">
+    <tag k="ksh_ref" v="33349"/>
+    <tag k="name" v="Mőcsény"/>
+    <tag k="name:de" v="Metschke"/>
+    <tag k="name:sr" v="Мечењ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="327"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7163"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862698" lat="46.2219082" lon="18.5989117">
+    <tag k="ksh_ref" v="28909"/>
+    <tag k="name" v="Bátaapáti"/>
+    <tag k="name:de" v="Abstdorf"/>
+    <tag k="name:sr" v="Батаапати"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="351"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7164"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862700" lat="46.2158276" lon="18.6429525">
+    <tag k="ksh_ref" v="20701"/>
+    <tag k="name" v="Mórágy"/>
+    <tag k="name:de" v="Maratz"/>
+    <tag k="name:ru" v="Морадь"/>
+    <tag k="name:sr" v="Морађ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="649"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7165"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862702" lat="46.2890651" lon="18.6069363">
+    <tag k="ksh_ref" v="26727"/>
+    <tag k="name" v="Grábóc"/>
+    <tag k="name:de" v="Grawitz"/>
+    <tag k="name:sr" v="Грабовац"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="139"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7162"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862704" lat="46.2510122" lon="18.6624125">
+    <tag k="ksh_ref" v="29665"/>
+    <tag k="name" v="Alsónána"/>
+    <tag k="name:de" v="Unternanau"/>
+    <tag k="name:ru" v="Альшонана"/>
+    <tag k="name:sr" v="Алшонана"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="648"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7147"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862706" lat="46.3462709" lon="18.5927004">
+    <tag k="ksh_ref" v="02033"/>
+    <tag k="name" v="Kakasd"/>
+    <tag k="name:de" v="Kockrsch"/>
+    <tag k="name:ru" v="Какашд"/>
+    <tag k="name:sr" v="Какашд"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1496"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7122"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862709" lat="46.2025600" lon="18.7374137">
+    <tag k="ksh_ref" v="11563"/>
+    <tag k="name" v="Alsónyék"/>
+    <tag k="name:sr" v="Алшоњек"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="652"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7148"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862712" lat="46.5244309" lon="18.3839101">
+    <tag k="ksh_ref" v="04464"/>
+    <tag k="name" v="Szakály"/>
+    <tag k="name:ru" v="Сакай"/>
+    <tag k="name:sr" v="Сакаљ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="1203"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7192"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="353862715" lat="46.4272278" lon="18.3950016">
+    <tag k="ksh_ref" v="07029"/>
+    <tag k="name" v="Mucsi"/>
+    <tag k="name:de" v="Mutsching"/>
+    <tag k="name:ru" v="Мучи"/>
+    <tag k="name:sr" v="Мучи"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="419"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7195"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="411315905" lat="46.3936226" lon="18.4145825">
+    <tag k="ksh_ref" v="14304"/>
+    <tag k="name" v="Závod"/>
+    <tag k="name:sr" v="Завод"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="248"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7182"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="742241350" lat="46.4104756" lon="18.7553896">
+    <tag k="name" v="Mözs"/>
+    <tag k="name:ru" v="Мёж"/>
+    <tag k="place" v="suburb"/>
+    <tag k="postal_code" v="7131"/>
+  </node>
+  <node id="1215810956" lat="46.5786721" lon="18.3904744">
+    <tag k="ksh_ref" v="15459"/>
+    <tag k="name" v="Regöly"/>
+    <tag k="name:ru" v="Регёй"/>
+    <tag k="name:sr" v="Регељ"/>
+    <tag k="place" v="village"/>
+    <tag k="place:hu" v="község"/>
+    <tag k="population" v="963"/>
+    <tag k="population:date" v="2024-01-01"/>
+    <tag k="postal_code" v="7193"/>
+    <tag k="source:population" v="KSH (www.ksh.hu)"/>
+    <tag k="source:population:date" v="2024-01-01"/>
+    <tag k="source:postal_code" v="Magyar Posta (posta.hu)"/>
+    <tag k="source:postal_code:date" v="2009-03-01"/>
+  </node>
+  <node id="1362084514" lat="46.2997766" lon="18.4912065">
+    <tag k="name" v="Majos"/>
+    <tag k="place" v="suburb"/>
+    <tag k="postal_code" v="7187"/>
+  </node>
+  <node id="3554659393" lat="46.1426848" lon="18.7269437">
+    <tag k="name" v="Furkótelep"/>
+    <tag k="name:sr" v="Фуркотелеп"/>
+    <tag k="place" v="hamlet"/>
+    <tag k="postal_code" v="7149"/>
+  </node>
+
+</osm>

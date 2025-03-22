@@ -5,6 +5,7 @@ import { readGeoJSONFile, clearSecondaryLayer, loadGeoJsonString, loadGeoJSONFil
 import { loadMarkerLayer, placeNewMarker, updateSize, hideAllMarkers, showAllMarkers, removeAllMarkers } from './markerFacilities';
 import { processFeatures } from './postprocess';
 import JSZip from "jszip"
+import * as turf from "@turf/turf";
 
 let boundaryLayer: google.maps.Data;
 let secondaryLayer: google.maps.Data;
@@ -190,6 +191,7 @@ function createCountryChooser() {
     countryMenu.appendChild(new Option("Jordan", "Jordan"));
     countryMenu.appendChild(new Option("Mexico", "Mexico"));
     countryMenu.appendChild(new Option("Norway", "Norway"));
+    countryMenu.appendChild(new Option("Peru", "Peru"));
     countryMenu.appendChild(new Option("Romania", "Romania"));
     countryMenu.appendChild(new Option("Sweden", "Sweden"));
     countryMenu.appendChild(new Option("South Africa", "South Africa"));

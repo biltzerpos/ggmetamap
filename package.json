@@ -33,8 +33,9 @@
   },
   "private": true,
   "dependencies": {
-    "@turf/turf": "^7.1.0",
+    "@turf/turf": "^7.2.0",
     "decimate": "^1.0.1",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "turf": "^3.0.14"
   }
 }
