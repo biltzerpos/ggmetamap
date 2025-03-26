@@ -63,12 +63,58 @@ export async function initializeGlobals() {
   map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
     center: new google.maps.LatLng(0, 0),
     zoom: 2,
-    mapId: 'DEMO_MAP_ID',
+    mapId: '6450da106f8483b3',
     zoomControl: false,
     scaleControl: true,
     streetViewControl: true,
     disableDoubleClickZoom: true,
     mapTypeControl: false,
+    // styles: [
+    //   {
+    //     "featureType": "road.highway",
+    //     "elementType": "geometry",
+    //     "stylers": [
+    //       { "color": "#fcdc82" }  // yellow for highways
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "road.highway",
+    //     "elementType": "geometry.stroke",
+    //     "stylers": [
+    //       { "color": "#f79d07" }  // slightly darker yellow stroke
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "road.arterial",
+    //     "elementType": "geometry",
+    //     "stylers": [
+    //       { "color": "#ffffff" }  // white for arterial roads
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "road.arterial",
+    //     "elementType": "geometry.stroke",
+    //     "stylers": [
+    //       { "color": "#d9dcde" }  // grey stroke for arterial roads
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "road.local",
+    //     "elementType": "geometry",
+    //     "stylers": [
+    //       { "color": "#ffffff" }  // white for local roads
+    //     ]
+    //   },
+    //   {
+    //     "featureType": "road.local",
+    //     "elementType": "geometry.stroke",
+    //     "stylers": [
+    //       { "color": "#d9dcde" }  // grey stroke for arterial roads
+    //     ]
+    //   },
+    // ]
+    
+    
     // mapTypeControlOptions: {
     //     style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     //     mapTypeIds: ["roadmap", "terrain"],
